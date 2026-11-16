@@ -54,7 +54,7 @@
     { n: 45, title: "关于英国的一些笔记", en: "Some Notes about England", kind: "Reading" }
   ];
 
-  const lessons = [1, 2, 3, 5, 6, 9, 10, 12];
+  const lessons = [1, 2, 3, 5, 6, 9, 10, 12, 13, 15];
 
   function vocab(items) {
     return '<div class="lesson-words">' + items.map(function (w) {
@@ -95,8 +95,8 @@
       '<header class="course-hero"><p class="course-kicker">C. K. OGDEN · 1930 ORIGINAL COURSE</p>' +
       '<h1>从 850 个词，学会说完整的英语</h1>' +
       '<p>按原版 45 Steps 的顺序学习。每课把词汇放进句子、阅读和练习中，而不是孤立地背单词。</p>' +
-      '<div class="course-note">目前已完成 8 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10、12。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
-      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：8 课 · 待补：Step 4、7、8、11</span></div>' +
+      '<div class="course-note">目前已完成 10 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10、12、13、15。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
+      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：10 课 · 待补：Step 4、7、8、11、14</span></div>' +
       '<div class="course-grid">' + cards + '</div></section>';
   }
 
@@ -428,6 +428,68 @@
       answer('step12-reading','查看参考答案','<p>1. The competition for the bath makes him angry.</p><p>2. He asks him to get a new bit of soap.</p><p>3. He gives the door a kick.</p><p>4. The man outside goes down on his back.</p><p>5. The water is almost cold.</p>'));
 
 
+  lessonHTML[13] =
+    panel('1. 本课词汇', '<p>本课学习船只、旅行、消息和表达方式。</p>' +
+      vocab([['boat','小船'],['harbor','港口'],['letter','信件'],['island','岛屿'],['sail','帆'],['ship','船'],['journey','旅程'],['news','消息'],['person','人'],['word','词；单词'],['first','第一的'],['last','最后的'],['say','说'],['how','怎样；如何']])) +
+    panel('2. news 与 it 的特殊用法', '<p><b>news</b> 按物质名词的方式使用：即使包含多条消息，也不加复数 -s，也不与 a 连用。</p>' +
+      '<div class="lesson-examples"><p>No news is good news.</p></div>' +
+      '<p><b>it</b> 可以不指代前面提到的某个名词，而是作非人称主语，用于说明时间、日期、天气、温度等情况。</p>' +
+      '<div class="lesson-examples"><p>It is still quite early.</p><p>It will be late in the morning when we get to the island.</p><p>Put on a coat if it is cold.</p><p>My mother will not go out because it is dark.</p></div>') +
+    panel('3. say 的现在时与将来时', '<div class="lesson-table"><div><b>原形</b><b>过去</b><b>现在</b><b>将来</b></div><div><span>say</span><span>said</span><span>say / says</span><span>will say</span></div></div>' +
+      '<p>say 后面用 to 指出说话的对象。</p><div class="lesson-examples"><p>I say this every day.</p><p>If he says a word to her, she will be angry.</p><p>We will not say much.</p></div>') +
+    panel('4. 一般疑问句：什么时候用 do / does', '<p>be、have、will、may 可以通过把 operator / 助动词放到主语前面构成一般疑问句。其他 operator（例如 go、get、make、say）在一般现在时的一般疑问句中，要使用 do / does。</p>' +
+      '<div class="lesson-examples"><p>I see a ship. → Do I see a ship?</p><p>The news seems good. → Does the news seem good?</p><p>These boats go far. → Do these boats go far?</p></div>' +
+      '<p>does 后面使用 operator 原形，不再加第三人称单数 -s：Does he say...? 而不是 Does he says...?</p>' +
+      '<p>一般现在时的 do / does 疑问句通常询问习惯、规律或一般事实。要询问正在发生的动作，其他 operator 要使用 be + -ing：Are great ships coming into the harbor?</p>') +
+    panel('5. 特殊疑问词：who / whom / whose / what / which', '<div class="lesson-rule"><b>who：问主语是谁</b><p>Who has a pain? — The woman in the house.</p><p>Who will go to the island? — The workmen and their families.</p></div>' +
+      '<div class="lesson-rule"><b>whom：问动作涉及的对象</b><p>Whom does he see? — Joan.</p><p>To whom will your friend give the news? — To me.</p></div>' +
+      '<div class="lesson-rule"><b>whose：问所属关系</b><p>Whose boat are you in? — His boat.</p><p>Whose books have you? — Your books.</p></div>' +
+      '<div class="lesson-rule"><b>what：问事物，或放在名词前限定事物</b><p>What makes the room cold? — The open window.</p><p>What building has a high roof? — The library.</p></div>' +
+      '<div class="lesson-rule"><b>which：从一个特定范围中选择</b><p>Which of these girls is your sister? — The girl in the middle.</p><p>Which of the boats is this sail for? — The small boat.</p></div>') +
+    panel('6. how / when / where / why', '<p>这四个词放在一般疑问句前面，构成需要具体信息的特殊疑问句。</p>' +
+      '<div class="lesson-examples"><p>How does he take a tooth out? — He gives a pull.</p><p>When does the first train go? — Early in the morning.</p><p>Where is the net? — In that first drawer.</p><p>Why is the bathroom full of steam? — Because the window is shut.</p></div>' +
+      '<p>how 问方式；when 问时间；where 问地点或方向；why 问原因。回答 why 时，原因通常由 because 引出。</p>') +
+    panel('7. 练习', '<p><b>A. 根据答案，写出合适的问题。</b></p><div class="lesson-examples"><p>1. Because the harbor is very narrow.</p><p>2. In the middle of the island.</p><p>3. The small boat.</p><p>4. The workmen and their families.</p><p>5. Early in the morning.</p><p>6. To the harbor.</p></div>' +
+      answer('step13-questions','查看参考答案','<p>1. Why are the ships waiting?</p><p>2. Where is the house?</p><p>3. Which boat will you take?</p><p>4. Who will go to the island?</p><p>5. When does the first train go?</p><p>6. To what part of the town are you going?</p>') +
+      '<p><b>B. 把陈述句改为一般疑问句。</b></p><div class="lesson-examples"><p>1. The news seems good.</p><p>2. These small boats go far from the land.</p><p>3. The great ships are coming into the harbor.</p><p>4. He will say a word to her.</p></div>' +
+      answer('step13-yesno','查看参考答案','<p>1. Does the news seem good?</p><p>2. Do these small boats go far from the land?</p><p>3. Are the great ships coming into the harbor?</p><p>4. Will he say a word to her?</p>') +
+      writingBox('step13-writing','Write six questions: one with who, one with whose, one with what, one with which, one with how, and one with why.');
+
+  lessonHTML[15] =
+    panel('1. 本课词汇', '<p>本课进入 operator 的过去时，并学习邮寄、行走、田地和日常物品。</p>' +
+      vocab([['dress','连衣裙；衣服'],['drink','饮料'],['earth','泥土；地球'],['field','田地'],['foot','脚'],['parcel','包裹'],['reading','阅读'],['spade','铁锹'],['stocking','长袜'],['week','星期；周'],['change','改变'],['walk','散步；步行'],['opposite','相反的；对面的'],['tired','疲倦的'],['send','发送'],['among','在……之中'],['through','穿过'],['together','一起']])) +
+    panel('2. 名词复数与 opposite', '<p><b>foot</b> 的复数是不规则形式 <b>feet</b>。</p><div class="lesson-examples"><p>one foot → two feet</p></div>' +
+      '<p><b>opposite</b> 表示两个事物之间相对的位置或关系。它可以放在名词前，也可以像介词一样放在名词或代词前面；有时也使用 opposite to。</p>' +
+      '<div class="lesson-examples"><p>The opposite wall has no pictures.</p><p>The field is opposite the house.</p><p>The men opposite to us have spades.</p></div>') +
+    panel('3. send 的形式与双宾语', '<div class="lesson-table"><div><b>原形</b><b>过去</b><b>现在</b><b>将来</b></div><div><span>send</span><span>sent</span><span>send / sends</span><span>will send</span></div></div>' +
+      '<p>send 的对象可以先写接收的物品，再用 to 指出接收者；也可以省略 to，把接收者放在物品前面。</p>' +
+      '<div class="lesson-examples"><p>I send parcels to my sister.</p><p>I sent my friend a dress for her daughter.</p><p>His mother may send him a parcel.</p></div>') +
+    panel('4. 过去时：不同 operator 的变化', '<p>过去时对所有人称和单复数使用同一个形式（be 除外）。过去时的变化方式并不只有一种。</p>' +
+      '<div class="lesson-table"><div><b>变化方式</b><b>operator</b><b>过去时</b></div>' +
+      '<div><span>词尾变化</span><span>seem</span><span>seemed</span></div>' +
+      '<div><span>拼写/词尾变化</span><span>send</span><span>sent</span></div>' +
+      '<div><span>元音变化</span><span>get / give / take / come</span><span>got / gave / took / came</span></div>' +
+      '<div><span>不规则</span><span>go / be</span><span>went / was, were</span></div>' +
+      '<div><span>形式不变</span><span>let / put</span><span>let / put</span></div></div>' +
+      '<p>其他常见过去时：do → did；have → had；keep → kept；make → made；say → said；see → saw。</p>' +
+      '<div class="lesson-examples"><p>Someone sent these flowers to my mother.</p><p>The man made a hole under the roof.</p><p>The boys went to the harbor.</p><p>The drink was bitter.</p></div>') +
+    panel('5. operator 的 -ing 形式作名词', '<p>已经学过的 operator + -ing，不仅可以放在 be 后表示动作正在进行，也可以直接作名词，表示某种活动。</p>' +
+      '<div class="lesson-examples"><p>His work is making sails.</p><p>Keeping the window open will let the smoke out.</p><p>What was your reason for saying that?</p><p>Reading a book gives me pleasure.</p></div>' +
+      '<p>这种活动名词按物质名词的规则使用：不与 a 连用，不加复数 -s，通常也不在前面加描述性形容词。</p>' +
+      '<p>要指出动作是谁做的，可以在 -ing 名词前使用物主形容词：his coming、my reading、their going。</p>') +
+    panel('6. let us：邀请自己一起做', '<p>命令或请求通常使用 operator 原形，不写主语。如果说话者也要参加这个动作，可以使用 <b>let us + operator 原形</b>。</p>' +
+      '<div class="lesson-examples"><p>Let us take the earth off the potatoes.</p><p>Let us say nothing to him.</p><p>Let us be the first persons there.</p></div>') +
+    panel('7. among、through、together', '<div class="lesson-rule"><b>among</b><p>用于涉及三个或更多对象的范围；只涉及两个对象时使用 between。</p><p>There are flowers among the trees.</p></div>' +
+      '<div class="lesson-rule"><b>through</b><p>表示从某物内部或一端穿过到另一端，也可以作副词。</p><p>He got through a hole in the wall.</p><p>These curtains let the light through.</p></div>' +
+      '<div class="lesson-rule"><b>together</b><p>可以表示空间上在一起，也可以表示时间上同时进行。</p><p>Keep your feet together.</p><p>We had a meal together.</p></div>') +
+    panel('8. 练习', '<p><b>A. 写出过去时。</b> send、do、have、keep、make、say、see、come、get、give、take、go、be、seem、let、put。</p>' +
+      answer('step15-past','查看参考答案','<p>sent；did；had；kept；made；said；saw；came；got；gave；took；went；was / were；seemed；let；put。</p>') +
+      '<p><b>B. 把句子改为过去时。</b></p><div class="lesson-examples"><p>1. They send a parcel to us every week.</p><p>2. The church has a loud bell.</p><p>3. The old man seems tired.</p><p>4. The workman takes his spade to the field.</p></div>' +
+      answer('step15-sentences','查看参考答案','<p>1. They sent a parcel to us every week.</p><p>2. The church had a loud bell.</p><p>3. The old man seemed tired.</p><p>4. The workman took his spade to the field.</p>') +
+      '<p><b>C. 用 -ing 形式作名词造句。</b></p>' +
+      writingBox('step15-writing','Write three sentences using an -ing form as a noun, and one sentence with let us.');
+
+
   function render() {
     const main = document.getElementById('main-content');
     if (main) main.innerHTML = courseShell();
@@ -438,7 +500,7 @@
     if (!main) return;
     if (!lessonHTML[n]) return openOriginal(n);
     const step = steps.find(function (s) { return s.n === n; });
-    const prerequisite = n === 12 ? '<div class="course-note">前置知识：本课会用到 Step 11 引入的数词 one。Step 11 尚未完成中文改编，请先查看原版课程。</div><button class="course-primary" onclick="BE.course.openOriginal(11)">打开原版 Step 11</button>' : '';
+    const prerequisite = n === 12 ? '<div class="course-note">前置知识：本课会用到 Step 11 引入的数词 one。Step 11 尚未完成中文改编，请先查看原版课程。</div><button class="course-primary" onclick="BE.course.openOriginal(11)">打开原版 Step 11</button>' : (n === 15 ? '<div class="course-note">前置知识：Step 14 是阅读课，目前尚未完成中文改编。可以先打开原版 Step 14，再继续本课。</div><button class="course-primary" onclick="BE.course.openOriginal(14)">打开原版 Step 14</button>' : '');
     main.innerHTML = '<section class="course-page">' +
       lessonHeader(n, step.en, step.title + ' · ' + step.kind) +
       '<div class="course-lesson-meta">本课是 45 步原版课程中的第 ' + n + ' 步。按顺序学习词汇、句型、阅读和练习。</div>' +
