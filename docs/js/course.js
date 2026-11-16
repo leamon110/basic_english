@@ -124,12 +124,12 @@
     if (!box || !feedback) return;
     const text = box.value.trim();
     if (!text) { feedback.textContent = '先写一句英语，再检查。'; return; }
-    const result = window.BE.validator.validateText(text);
+    const result = window.BE.validate(text);
     if (result && result.valid) {
       feedback.textContent = '词汇检查通过：句子中的词都能在当前 Basic 词汇规则中找到。语法仍需自己核对。';
       feedback.classList.add('is-ok');
     } else {
-      const bad = result && result.invalid ? result.invalid.join(', ') : '无法识别的词';
+      const bad = result && result.errors ? result.errors.map(function (item) { return item.word }).join(', ') : '无法识别的词';
       feedback.textContent = '发现不在词汇规则中的词：' + bad + '。请尝试换成 850 词或允许的派生形式。';
       feedback.classList.remove('is-ok');
     }
