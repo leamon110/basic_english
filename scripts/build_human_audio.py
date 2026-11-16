@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+import concurrent.futures
 import html
 import json
 import os
@@ -772,7 +773,7 @@ def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
     if manifest.get("missing_words"):
         raise SystemExit(f"Refusing partial build: {len(manifest['missing_words'])} words lack human recordings.")
 
-    # Check every staged SWAC file before downloading or converting anything.
+    # Validate all staged originals before starting downloads or conversions.
     missing_sources = [
         (word, item["local_path"])
         for word, item in manifest["recordings"].items()
@@ -787,98 +788,156 @@ def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
     output_dir.mkdir(parents=True, exist_ok=True)
     temp_dir = output_dir.parent / "_audio-originals"
     temp_dir.mkdir(parents=True, exist_ok=True)
-    credits = [
-        "# Human pronunciation audio credits",
-        "",
-        "850 human word recordings sourced from Lingua Libre and Wiktionary/Wikimedia Commons.",
-        "Each audio file retains its own Commons licence. CC BY and CC BY-SA files are attributed below.",
-        "US/General-American recordings are preferred; UK and other English accents are used only when no US recording is available.",
-        "WAV sources are converted to compact mono MP3 for offline playback; MP3 transcodes from Wikimedia are kept unchanged.",
-        f"Dataset index: {DATASET_CARD_URL}",
-        f"Speaker/licence reference: {RECORDING_CREDITS_URL}",
-        f"Shtooka collection archive index: {SHTOOKA_COLLECTION_PAGE}",
-        "",
-        "| Word | Speaker / Author | Accent tag | Licence | Original Commons file | Source |",
-        "|---|---|---|---|---|",
-    ]
-    total_bytes = 0
-    for number, (word, item) in enumerate(manifest["recordings"].items(), 1):
+
+    def process_one(number, word, item):
         target = output_dir / (slug(word) + ".mp3")
         if item.get("local_path"):
             source_path = Path(item["local_path"])
-            if not source_path.exists():
+            if not source_path.is_file():
                 raise RuntimeError(f"Local Shtooka source missing for {word}: {source_path}")
             command = [
-                "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+                "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
                 "-i", str(source_path), "-vn", "-ac", "1", "-ar", "22050",
                 "-b:a", "64k", "-map_metadata", "-1", str(target),
             ]
-            result = subprocess.run(command, capture_output=True, text=True)
+            result = subprocess.run(command, capture_output=True, text=True, timeout=90)
             if result.returncode != 0 or not target.exists():
                 raise RuntimeError(f"Shtooka MP3 conversion failed for {word}: {result.stderr[-1000:]}")
             source_path.unlink(missing_ok=True)
         else:
-            url = item["audio_url"]
+            url = item.get("audio_url", "")
+            if not url:
+                raise RuntimeError(f"No audio URL or staged source for {word}")
             extension = Path(urllib.parse.urlparse(url).path).suffix.lower()
             request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
             last_error, data = None, None
             for attempt in range(6):
                 try:
                     with urllib.request.urlopen(request, timeout=90) as response:
-                        content_type = response.headers.get("Content-Type", "").lower()
+                        content_type = response.headers.get("Content-Type", "").lower().split(";")[0].strip()
                         data = response.read()
-                    mp3_frame = len(data or b"") > 2 and data[0] == 0xff and (data[1] & 0xe0) == 0xe0
                     if len(data or b"") < 500:
                         raise RuntimeError(f"Audio response too small: {len(data or b'')} bytes")
-                    if extension != ".wav" and "audio" not in content_type and not data.startswith(b"ID3") and not mp3_frame:
-                        raise RuntimeError(f"Unexpected audio response: {content_type}, {len(data)} bytes")
+
+                    # Wikimedia serves valid OGG files as application/ogg on
+                    # some endpoints. Validate the actual container signature
+                    # as well as the MIME type instead of rejecting that type.
+                    is_mp3 = (
+                        data.startswith(b"ID3")
+                        or (len(data) > 2 and data[0] == 0xff and (data[1] & 0xe0) == 0xe0)
+                    )
+                    is_ogg = data.startswith(b"OggS")
+                    is_flac = data.startswith(b"fLaC")
+                    is_wav = len(data) >= 12 and data[:4] == b"RIFF" and data[8:12] == b"WAVE"
+                    valid_mime = (
+                        content_type.startswith("audio/")
+                        or content_type in ("application/ogg", "application/x-ogg")
+                    )
+                    if not (valid_mime or is_mp3 or is_ogg or is_flac or is_wav):
+                        raise RuntimeError(
+                            f"Unexpected audio response: {content_type}, {len(data)} bytes, "
+                            f"signature={data[:12]!r}"
+                        )
                     last_error = None
                     break
                 except Exception as exc:
                     last_error = exc
-                    time.sleep(min(2 ** attempt, 30))
+                    if attempt < 5:
+                        time.sleep(min(2 ** attempt, 30))
             if last_error or data is None:
                 raise RuntimeError(f"Download failed for {word}: {last_error}")
 
-            if extension in (".wav", ".ogg", ".oga", ".flac", ".opus", ".spx"):
-                raw_path = temp_dir / (slug(word) + extension)
+            if extension in (".wav", ".ogg", ".oga", ".flac", ".opus", ".spx") or not is_mp3:
+                raw_path = temp_dir / (slug(word) + (extension or ".audio"))
                 raw_path.write_bytes(data)
-                command = [
-                    "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
-                    "-i", str(raw_path), "-vn", "-ac", "1", "-ar", "22050",
-                    "-b:a", "64k", "-map_metadata", "-1", str(target),
-                ]
-                result = subprocess.run(command, capture_output=True, text=True)
-                raw_path.unlink(missing_ok=True)
+                try:
+                    command = [
+                        "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
+                        "-i", str(raw_path), "-vn", "-ac", "1", "-ar", "22050",
+                        "-b:a", "64k", "-map_metadata", "-1", str(target),
+                    ]
+                    result = subprocess.run(command, capture_output=True, text=True, timeout=90)
+                finally:
+                    raw_path.unlink(missing_ok=True)
                 if result.returncode != 0 or not target.exists():
                     raise RuntimeError(f"MP3 conversion failed for {word}: {result.stderr[-1000:]}")
             else:
                 target.write_bytes(data)
-        if target.stat().st_size < 500:
-            raise RuntimeError(f"Output audio too small for {word}")
-        total_bytes += target.stat().st_size
 
+        if not target.is_file() or target.stat().st_size < 500:
+            raise RuntimeError(f"Output audio missing or too small for {word}")
         speaker = item.get("speaker") or item.get("artist") or "Unknown contributor"
         title = item["title"]
         commons_page = "https://commons.wikimedia.org/wiki/File:" + urllib.parse.quote(title.replace(" ", "_"))
         source_page = item.get("source_page") or commons_page
-        accent = ", ".join(item.get("audio_tags", [])) or ("General-American" if speaker == "Wodencafe" else "Accent not tagged")
+        accent = ", ".join(item.get("audio_tags", [])) or (
+            "General-American" if speaker == "Wodencafe" else "Accent not tagged"
+        )
         if item.get("origin") == "Shtooka human recording":
             commons_page = source_page
-        credits.append(
+        credit_line = (
             f"| {word} | {speaker} | {accent} | {item['license']} | "
             f"[{title}]({commons_page}) | [source]({source_page}) |"
         )
-        if number % 50 == 0:
-            print(f"[audio] packaged {number}/850 · {total_bytes / 1024 / 1024:.1f} MB", flush=True)
-        time.sleep(0.05)
+        return number, target.stat().st_size, credit_line
 
-    # Remove the temporary FLAC/WAV staging area after every source has been
-    # converted. These originals are not shipped in the APK.
+    credits_header = [
+        "# Human pronunciation audio credits",
+        "",
+        "850 human word recordings sourced from Lingua Libre and Wiktionary/Wikimedia Commons.",
+        "Each audio file retains its own Commons licence. CC BY and CC BY-SA files are attributed below.",
+        "US/General-American recordings are preferred; UK and other English accents are used only when no US recording is available.",
+        "Original WAV/OGG/FLAC sources are converted to compact mono MP3 for offline playback; existing MP3 files are retained.",
+        f"Dataset index: {DATASET_CARD_URL}",
+        f"Speaker/licence reference: {RECORDING_CREDITS_URL}",
+        f"Shtooka collection archive index: {SHTOOKA_COLLECTION_PAGE}",
+        "",
+        "| Word | Speaker / Author | Accent tag | Licence | Original Commons file | Source |",
+        "|---|---|---|---|---|---|",
+    ]
+
+    recordings = list(manifest["recordings"].items())
+    credit_lines = [None] * len(recordings)
+    total_bytes = 0
+    errors = []
+    completed = 0
+
+    # These are short single-word clips. Three workers keep network and FFmpeg
+    # work bounded while avoiding a long serial wait for hundreds of files.
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+        futures = {
+            executor.submit(process_one, index, word, item): (index, word)
+            for index, (word, item) in enumerate(recordings, 1)
+        }
+        for future in concurrent.futures.as_completed(futures):
+            index, word = futures[future]
+            try:
+                number, size, credit_line = future.result()
+                credit_lines[number - 1] = credit_line
+                total_bytes += size
+            except Exception as exc:
+                errors.append((word, str(exc)))
+                print(f"[audio] ERROR {word}: {exc}", file=sys.stderr, flush=True)
+            completed += 1
+            if completed % 50 == 0 or completed == len(recordings):
+                print(
+                    f"[audio] processed {completed}/{len(recordings)} · "
+                    f"{total_bytes / 1024 / 1024:.1f} MB · errors={len(errors)}",
+                    flush=True,
+                )
+
+    if errors:
+        preview = "; ".join(f"{word}: {error}" for word, error in errors[:12])
+        raise RuntimeError(f"{len(errors)} of 850 audio files failed: {preview}")
+
+    if any(line is None for line in credit_lines):
+        raise RuntimeError("Audio credits list is incomplete")
+
+    # Remove temporary FLAC/WAV staging files only after every conversion succeeds.
     shutil.rmtree("android-offline/app/src/main/assets/.shtooka-selected", ignore_errors=True)
 
     credits_path.parent.mkdir(parents=True, exist_ok=True)
-    credits_path.write_text("\n".join(credits) + "\n", encoding="utf-8")
+    credits_path.write_text("\n".join(credits_header + credit_lines) + "\n", encoding="utf-8")
     (output_dir.parent / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8"
     )
