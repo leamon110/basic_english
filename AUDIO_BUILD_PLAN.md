@@ -28,7 +28,7 @@ Do not report completion until the APK contents and playback behavior have been 
 
 The current implementation is on branch `basic-english-learning-upgrade`.
 
-Latest audio implementation commit: `bf1281e97fa8db1ee46129c7b82f9b82f2485be1`. The plan-only repository update was subsequently committed as `9531de15eda133186d1074935651fb7b2ad2a0bf`.
+Original audio implementation commit: `bf1281e97fa8db1ee46129c7b82f9b82f2485be1`. Latest word-pronunciation interaction update: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
 
 The build script is `scripts/build_human_word_audio.py`. The workflow is `.github/workflows/build-android-offline.yml`.
 
@@ -82,18 +82,50 @@ Important: these changes have been committed, but the cache mechanism is not con
 - Android `MainActivity` loads `file:///android_asset/www/index.html`, enables WebView JavaScript, allows media playback without a second user gesture, and has no native `TextToSpeech` integration.
 - Word Cards and the word-detail modal call `BE.teaching.playWord` → `BE.speak` → local `Audio('audio/words/<word>.mp3')`.
 - Course vocabulary buttons call `BE.course.say` → the same `BE.speak` local-audio path.
-- Static wiring is verified. Actual installation and offline playback on a physical Android device have not yet been tested.
+- Static wiring is verified. The user installed the Run 34 APK and reported that Word Cards, the word-detail modal pronunciation button, and Course Step 1 pronunciation all played human recordings normally, without stutter or noticeable delay; all three continued to work with Wi-Fi and mobile data disabled; the existing interface was normal. This is user-reported physical-device verification.
 
-### Current delivery status
+### Current delivery status after user device test
 
-- A real installable APK has been built, uploaded, downloaded and independently inspected.
-- Audio source coverage, local APK contents, file integrity, decoding, cache persistence and static playback wiring are verified.
-- The only remaining acceptance item is physical-device testing of Word Cards, the word-detail pronunciation button, course vocabulary pronunciation, and playback with network disabled.
-- Do not mark final acceptance complete until that device test is reported.
-- Latest branch documentation commit before this status update: `eac710e5d8c96c692b77831961058482b6435648`.
-- Latest code commit built by Run 34: `0037aafad0bad9a436488332dd5928e854100668`.
+- Run 34 APK was built, uploaded, downloaded, independently inspected, installed and tested on the user's Android phone.
+- The user confirmed Word Cards pronunciation works; the detail modal exists and its pronunciation button works; Course Step 1 vocabulary pronunciation works; all three work offline with Wi-Fi/mobile data disabled; existing interface behavior is normal.
+- The user additionally confirmed human voice quality: no stutter and no noticeable delay.
+- Therefore the audio delivery acceptance criteria, including physical-device offline playback, are user-reported as passed for the Run 34 APK.
+- A new UI interaction request is being implemented and must be verified in a new APK before that revised UI is accepted.
+- Run 34 built code commit: `0037aafad0bad9a436488332dd5928e854100668`.
+- Latest interaction-change commit: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
 
 Refresh GitHub before making any later current-state claim.
+
+
+## UI interaction follow-up — Run 35
+
+User request:
+- In Teaching / Word Cards, remove the separate pronunciation button. Tapping the word text itself plays its human recording. Tapping elsewhere on that word card opens the existing detail modal. Do not change the detail modal's contents or its existing pronunciation button.
+- In every locally adapted course Step vocabulary tile, remove the separate visible "▶ 发音" label; tapping any part of the whole vocabulary tile plays the word.
+
+Implementation committed:
+- Commit: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
+- Changed files: `docs/js/teaching.js`, `docs/js/course.js`, `docs/css/style.css`.
+- Teaching word text is now a button that stops event propagation and calls `BE.teaching.playWord(word)`; the parent word card retains its existing `showWordDetail(word)` click behavior for all other card areas.
+- The detail modal HTML was checked after the edit and is unchanged, including its pronunciation control, translation and category.
+- Course vocabulary tiles remain full-size buttons calling `BE.course.say(word)`; the visible `<small>▶ 发音</small>` was removed. The common `vocab()` helper applies this to all locally adapted course steps using it.
+- Word Cards grid minimum width on mobile was increased from 100px to 120px; word text now uses `white-space: nowrap` to prevent wrapping.
+- Static read-back checks passed for both click routes, unchanged modal markup, removal of the course label, and responsive CSS.
+
+Build state:
+- Run: [Run 35](https://github.com/leamon110/basic_english/actions/runs/43979897738), ID `43979897738`.
+- Built commit: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
+- Last checked: `in_progress`, at `Install FFmpeg`; no artifacts had been uploaded at that time.
+- Workflow concurrency is `cancel-in-progress: true`. Do not push changes under `docs/**` while Run 35 is active.
+- A stale CSS selector `body.speech-unavailable .word-card-sound` remains after the button was removed. It is harmless because no such element is rendered, but remove the obsolete selector after Run 35 completes, then run a new build if the cleanup changes a watched path.
+
+Run 35 acceptance:
+1. Wait for the run to finish; inspect steps, logs, and APK/report artifacts.
+2. Confirm the build packages all 850 cached human recordings and APK upload succeeds.
+3. Inspect the new APK archive and verify its 850 local MP3s and attribution files.
+4. Ask the user to install the new APK and verify: word text tap plays; other Teaching card area opens detail; modal content and modal pronunciation button are unchanged; any part of course vocabulary tile plays; offline playback and existing UI still work.
+5. Only after the revised APK is tested can the UI follow-up be marked accepted.
+
 
 ## Mandatory startup check for every new conversation
 
