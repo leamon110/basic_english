@@ -381,7 +381,7 @@ const CHINESE_TRANSLATIONS = {
   // ---- Things 400 General ----
   "account":"账户","act":"行为","addition":"加法","adjustment":"调整","advertisement":"广告","agreement":"协议","air":"空气","amount":"数量","amusement":"娱乐","animal":"动物",
   "answer":"回答","apparatus":"器械","approval":"批准","argument":"争论","art":"艺术","attack":"攻击","attempt":"尝试","attention":"注意","attraction":"吸引力","authority":"权威",
-  "back":"背部","balance":"平衡","base":"基础","behavior":"行为","belief":"信念","birth":"出生","bit":"一点","bite":"咬","blood":"血液","blow":"吹","body":"身体","brass":"黄铜","bread":"面包","breath":"呼吸","brother":"兄弟","building":"建筑","burn":"烧伤","burst":"爆裂","business":"生意",
+  "back":"背部","balance":"平衡","base":"基础","behavior":"行为","belief":"信念","birth":"出生","bit":"一点","bite":"咬","blood":"血液","blow":"吹","body":"身体","brass":"黄铜","bread":"面包","breath":"呼吸","brother":"兄弟","building":"建筑","burn":"烧伤","burst":"爆裂","business":"生意","butter":"黄油",
   "canvas":"帆布","care":"关心","cause":"原因","chalk":"粉笔","chance":"机会","change":"改变","cloth":"布","coal":"煤","color":"颜色","comfort":"舒适","committee":"委员会","company":"公司","comparison":"比较","competition":"竞赛","condition":"条件","connection":"连接","control":"控制","cook":"烹饪","copper":"铜","copy":"副本","cork":"软木","cotton":"棉花","cough":"咳嗽","country":"国家","cover":"封面","crack":"裂缝","credit":"信用","crime":"犯罪","crush":"压碎","cry":"哭泣",
   "current":"水流","curve":"曲线",
   "damage":"损坏","danger":"危险","daughter":"女儿","day":"天","death":"死亡","debt":"债务","decision":"决定","degree":"程度","design":"设计","desire":"欲望","destruction":"破坏","detail":"细节","development":"发展","digestion":"消化","direction":"方向","discovery":"发现","discussion":"讨论","disease":"疾病","disgust":"厌恶","distance":"距离","distribution":"分配","division":"分割","doubt":"怀疑","drink":"饮料","driving":"驾驶","dust":"灰尘",
@@ -392,7 +392,7 @@ const CHINESE_TRANSLATIONS = {
   "ice":"冰","idea":"想法","impulse":"冲动","increase":"增加","industry":"工业","ink":"墨水","insect":"昆虫","instrument":"工具","insurance":"保险","interest":"兴趣","invention":"发明","iron":"铁",
   "jelly":"果冻","join":"加入","journey":"旅行","judge":"法官","jump":"跳跃",
   "kick":"踢","kiss":"亲吻","knowledge":"知识",
-  "land":"土地","language":"语言","laugh":"笑","law":"法律","lead":"领导","learning":"学习","leather":"皮革","letter":"信件","level":"水平","linen":"亚麻","liquid":"液体","list":"列表","look":"看","loss":"损失","love":"爱",
+  "land":"土地","language":"语言","laugh":"笑","law":"法律","lead":"领导","learning":"学习","leather":"皮革","letter":"信件","level":"水平","lift":"举起；提起；电梯","light":"光；灯光","limit":"限制；界限","linen":"亚麻","liquid":"液体","list":"列表","look":"看","loss":"损失","love":"爱",
   "machine":"机器","man":"男人","manager":"经理","mark":"标记","market":"市场","mass":"大量","meal":"餐","measure":"测量","meat":"肉","meeting":"会议","memory":"记忆","metal":"金属","middle":"中间","milk":"牛奶","mind":"头脑","mine":"矿山","minute":"分钟","mist":"薄雾","money":"钱","month":"月","morning":"早晨","mother":"母亲","motion":"运动","mountain":"山","move":"移动","music":"音乐",
   "name":"名字","nation":"民族","need":"需要","news":"新闻","night":"夜晚","noise":"噪音","note":"笔记","number":"数字",
   "observation":"观察","offer":"提供","oil":"油","operation":"操作","opinion":"意见","order":"命令","organization":"组织","ornament":"装饰","owner":"主人",
