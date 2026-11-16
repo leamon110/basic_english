@@ -34,7 +34,13 @@ jobs:
       - name: Use the Android SDK preinstalled on the runner
         run: |
           echo "ANDROID_HOME=$ANDROID_HOME"
-          sdkmanager --version
+          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager | head -n 1)"
+          if [ -z "$SDKMANAGER" ]; then
+            echo "Android SDK command-line tools were not found."
+            exit 1
+          fi
+          echo "$(dirname "$SDKMANAGER")" >> "$GITHUB_PATH"
+          "$SDKMANAGER" --version
 
       - name: Install Android platform and build tools
         run: |
