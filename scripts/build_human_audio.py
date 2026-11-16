@@ -11,6 +11,8 @@ import re
 import subprocess
 import sys
 import time
+import shutil
+import tarfile
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -22,6 +24,12 @@ COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 USER_AGENT = "BasicEnglishHumanAudio/1.0 (https://github.com/leamon110/basic_english/issues)"
 DATASET_CARD_URL = "https://huggingface.co/datasets/Reza2kn/wiktionary-ipa-audio-en"
 RECORDING_CREDITS_URL = "https://lexcellent.app/data-sources/recordings"
+SHTOOKA_PACKS = [
+    ("emmanuel", "https://shtooka-downloads.yojik.eu/eng-balm-emmanuel_ogg.tar.bz2", 1),
+    ("verbs", "https://shtooka-downloads.yojik.eu/eng-balm-verbs_ogg.tar.bz2", 2),
+    ("judith", "https://shtooka-downloads.yojik.eu/eng-balm-judith_ogg.tar.bz2", 3),
+]
+SHTOOKA_COLLECTION_PAGE = "https://www.yojik.eu/audiocollections/audiocollections.html"
 
 # These are the General-American speakers explicitly used/identified by
 # open pronunciation projects. If their Wiktionary row lacks a dialect tag,
@@ -227,6 +235,7 @@ def fetch_hf_candidates(words: list[str], groups: dict):
                 "pos": str(row.get("pos", "")).lower(),
                 "audio_tags": get_audio_tags(row),
                 "accent_rank": accent_rank(row, speaker, filename),
+                "source_priority": 2,
                 "ipa": row.get("ipa", ""),
                 "origin": "Wiktionary/Wikimedia Commons",
                 "audio_format": "mp3",
@@ -241,6 +250,7 @@ def fetch_hf_candidates(words: list[str], groups: dict):
         hint = ""
         options.sort(key=lambda item: (
             item.get("accent_rank", 4),
+            item.get("source_priority", 2),
             SPEAKER_PRIORITY.index(item["speaker"]) if item["speaker"] in SPEAKER_PRIORITY else 999,
             0 if (not hint or item.get("pos") == hint) else 1,
             item["title"].lower(),
@@ -273,6 +283,132 @@ def fetch_wodencafe_map(words: list[str]):
             "audio_format": "wav",
         }
     return found
+
+
+def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
+    """Read human recordings and per-collection licences from SWAC audio tags."""
+    try:
+        from mutagen import File as MutagenFile
+    except ImportError as exc:
+        raise RuntimeError("mutagen is required to inspect SWAC recording tags") from exc
+
+    targets = {norm(w) for w in words}
+    selected = {}
+    downloads_dir = work_dir / "shtooka-downloads"
+    temp_dir = work_dir / "shtooka-temp"
+    selected_dir = work_dir / "shtooka-selected"
+    downloads_dir.mkdir(parents=True, exist_ok=True)
+    temp_dir.mkdir(parents=True, exist_ok=True)
+    selected_dir.mkdir(parents=True, exist_ok=True)
+
+    def tag_value(tags, key):
+        value = tags.get(key)
+        if isinstance(value, (list, tuple)):
+            value = value[0] if value else ""
+        return str(value or "").strip()
+
+    def country_rank(country):
+        value = (country or "").strip().upper()
+        if value in ("US", "USA", "UNITED STATES"):
+            return 0
+        if value in ("GB", "UK", "UNITED KINGDOM", "ENGLAND"):
+            return 1
+        if value in ("CA", "AU", "NZ", "IE"):
+            return 2
+        return 3
+
+    for pack_name, url, pack_priority in SHTOOKA_PACKS:
+        archive_path = downloads_dir / (pack_name + ".tar.bz2")
+        print(f"[Shtooka] downloading {pack_name} collection", flush=True)
+        request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        last_error = None
+        for attempt in range(6):
+            try:
+                with urllib.request.urlopen(request, timeout=120) as response, open(archive_path, "wb") as output:
+                    shutil.copyfileobj(response, output)
+                if archive_path.stat().st_size < 1000:
+                    raise RuntimeError("Shtooka archive is unexpectedly small")
+                last_error = None
+                break
+            except Exception as exc:
+                last_error = exc
+                time.sleep(min(2 ** attempt, 30))
+        if last_error:
+            print(f"[Shtooka] collection unavailable ({pack_name}): {last_error}", file=sys.stderr, flush=True)
+            archive_path.unlink(missing_ok=True)
+            continue
+
+        matched_in_pack = 0
+        with tarfile.open(archive_path, "r:bz2") as archive:
+            for member in archive:
+                if not member.isfile() or not member.name.lower().endswith((".ogg", ".flac", ".wav", ".mp3")):
+                    continue
+                source = archive.extractfile(member)
+                if source is None:
+                    continue
+                temp_path = temp_dir / (pack_name + "-" + Path(member.name).name)
+                try:
+                    with source, open(temp_path, "wb") as output:
+                        shutil.copyfileobj(source, output)
+                    audio = MutagenFile(temp_path)
+                    tags = getattr(audio, "tags", None) if audio else None
+                    if not tags:
+                        continue
+                    tag_map = {str(k).upper(): v for k, v in tags.items()}
+                    word_text = tag_value(tag_map, "SWAC_TEXT")
+                    word = norm(word_text)
+                    language = tag_value(tag_map, "SWAC_LANG").lower()
+                    if word not in targets or (language and not language.startswith(("eng", "en"))):
+                        continue
+
+                    licence = tag_value(tag_map, "SWAC_COLL_LICENSE") or tag_value(tag_map, "LICENSE")
+                    if not licence_allowed(licence):
+                        continue
+
+                    speaker = tag_value(tag_map, "SWAC_SPEAK_NAME") or tag_value(tag_map, "SWAC_COLL_AUTHORS") or pack_name
+                    country = tag_value(tag_map, "SWAC_SPEAK_LANG_COUNTRY")
+                    accent_note = tag_value(tag_map, "SWAC_SPEAK_PRON") or tag_value(tag_map, "SWAC_SPEAK_LANG_REGION")
+                    collection_name = tag_value(tag_map, "SWAC_COLL_NAME") or ("Shtooka " + pack_name)
+                    collection_url = tag_value(tag_map, "SWAC_COLL_URL") or SHTOOKA_COLLECTION_PAGE
+                    accent = country or accent_note or "English accent not specified"
+                    ext = temp_path.suffix.lower()
+                    destination = selected_dir / (slug(word) + "-" + pack_name + ext)
+                    shutil.copy2(temp_path, destination)
+                    candidate = {
+                        "word": word,
+                        "speaker": speaker,
+                        "artist": speaker,
+                        "license": licence,
+                        "license_url": "",
+                        "title": member.name,
+                        "source_page": collection_url,
+                        "audio_url": "",
+                        "local_path": str(destination),
+                        "audio_format": ext.lstrip("."),
+                        "audio_tags": [accent],
+                        "accent_rank": country_rank(country),
+                        "source_priority": pack_priority,
+                        "origin": "Shtooka human recording",
+                        "collection": collection_name,
+                    }
+                    current = selected.get(word)
+                    score = (candidate["accent_rank"], candidate["source_priority"])
+                    current_score = (current["accent_rank"], current["source_priority"]) if current else (999, 999)
+                    if score < current_score:
+                        if current:
+                            Path(current["local_path"]).unlink(missing_ok=True)
+                        selected[word] = candidate
+                        matched_in_pack += 1
+                    else:
+                        destination.unlink(missing_ok=True)
+                finally:
+                    temp_path.unlink(missing_ok=True)
+
+        archive_path.unlink(missing_ok=True)
+        print(f"[Shtooka] {pack_name}: matched {matched_in_pack} Basic English words", flush=True)
+
+    print(f"[Shtooka] total unique words matched: {len(selected)}", flush=True)
+    return selected
 
 
 def commons_api(params: dict) -> dict:
@@ -310,8 +446,8 @@ def clean_meta(value: str) -> str:
 
 
 def licence_allowed(licence: str) -> bool:
-    value = clean_meta(licence).lower()
-    if "noncommercial" in value or "non-commercial" in value or "no derivatives" in value:
+    value = re.sub(r"\\s+", " ", clean_meta(licence).lower().replace("-", " ").replace("_", " ")).strip()
+    if "noncommercial" in value or "non commercial" in value or "no derivatives" in value:
         return False
     if value == "cc0" or "public domain" in value:
         return True
@@ -447,49 +583,64 @@ def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
         "WAV sources are converted to compact mono MP3 for offline playback; MP3 transcodes from Wikimedia are kept unchanged.",
         f"Dataset index: {DATASET_CARD_URL}",
         f"Speaker/licence reference: {RECORDING_CREDITS_URL}",
+        f"Shtooka collection archive index: {SHTOOKA_COLLECTION_PAGE}",
         "",
         "| Word | Speaker / Author | Accent tag | Licence | Original Commons file | Source |",
         "|---|---|---|---|---|",
     ]
     total_bytes = 0
     for number, (word, item) in enumerate(manifest["recordings"].items(), 1):
-        url = item["audio_url"]
-        extension = Path(urllib.parse.urlparse(url).path).suffix.lower()
-        request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-        last_error, data = None, None
-        for attempt in range(6):
-            try:
-                with urllib.request.urlopen(request, timeout=90) as response:
-                    content_type = response.headers.get("Content-Type", "").lower()
-                    data = response.read()
-                mp3_frame = len(data or b"") > 2 and data[0] == 0xff and (data[1] & 0xe0) == 0xe0
-                if len(data or b"") < 500:
-                    raise RuntimeError(f"Audio response too small: {len(data or b'')} bytes")
-                if extension != ".wav" and "audio" not in content_type and not data.startswith(b"ID3") and not mp3_frame:
-                    raise RuntimeError(f"Unexpected audio response: {content_type}, {len(data)} bytes")
-                last_error = None
-                break
-            except Exception as exc:
-                last_error = exc
-                time.sleep(min(2 ** attempt, 30))
-        if last_error or data is None:
-            raise RuntimeError(f"Download failed for {word}: {last_error}")
-
         target = output_dir / (slug(word) + ".mp3")
-        if extension == ".wav":
-            raw_path = temp_dir / (slug(word) + ".wav")
-            raw_path.write_bytes(data)
+        if item.get("local_path"):
+            source_path = Path(item["local_path"])
+            if not source_path.exists():
+                raise RuntimeError(f"Local Shtooka source missing for {word}: {source_path}")
             command = [
                 "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
-                "-i", str(raw_path), "-vn", "-ac", "1", "-ar", "22050",
+                "-i", str(source_path), "-vn", "-ac", "1", "-ar", "22050",
                 "-b:a", "64k", "-map_metadata", "-1", str(target),
             ]
             result = subprocess.run(command, capture_output=True, text=True)
-            raw_path.unlink(missing_ok=True)
             if result.returncode != 0 or not target.exists():
-                raise RuntimeError(f"MP3 conversion failed for {word}: {result.stderr[-1000:]}")
+                raise RuntimeError(f"Shtooka MP3 conversion failed for {word}: {result.stderr[-1000:]}")
+            source_path.unlink(missing_ok=True)
         else:
-            target.write_bytes(data)
+            url = item["audio_url"]
+            extension = Path(urllib.parse.urlparse(url).path).suffix.lower()
+            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            last_error, data = None, None
+            for attempt in range(6):
+                try:
+                    with urllib.request.urlopen(request, timeout=90) as response:
+                        content_type = response.headers.get("Content-Type", "").lower()
+                        data = response.read()
+                    mp3_frame = len(data or b"") > 2 and data[0] == 0xff and (data[1] & 0xe0) == 0xe0
+                    if len(data or b"") < 500:
+                        raise RuntimeError(f"Audio response too small: {len(data or b'')} bytes")
+                    if extension != ".wav" and "audio" not in content_type and not data.startswith(b"ID3") and not mp3_frame:
+                        raise RuntimeError(f"Unexpected audio response: {content_type}, {len(data)} bytes")
+                    last_error = None
+                    break
+                except Exception as exc:
+                    last_error = exc
+                    time.sleep(min(2 ** attempt, 30))
+            if last_error or data is None:
+                raise RuntimeError(f"Download failed for {word}: {last_error}")
+
+            if extension == ".wav":
+                raw_path = temp_dir / (slug(word) + ".wav")
+                raw_path.write_bytes(data)
+                command = [
+                    "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
+                    "-i", str(raw_path), "-vn", "-ac", "1", "-ar", "22050",
+                    "-b:a", "64k", "-map_metadata", "-1", str(target),
+                ]
+                result = subprocess.run(command, capture_output=True, text=True)
+                raw_path.unlink(missing_ok=True)
+                if result.returncode != 0 or not target.exists():
+                    raise RuntimeError(f"MP3 conversion failed for {word}: {result.stderr[-1000:]}")
+            else:
+                target.write_bytes(data)
         if target.stat().st_size < 500:
             raise RuntimeError(f"Output audio too small for {word}")
         total_bytes += target.stat().st_size
@@ -499,6 +650,8 @@ def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
         commons_page = "https://commons.wikimedia.org/wiki/File:" + urllib.parse.quote(title.replace(" ", "_"))
         source_page = item.get("source_page") or commons_page
         accent = ", ".join(item.get("audio_tags", [])) or ("General-American" if speaker == "Wodencafe" else "Accent not tagged")
+        if item.get("origin") == "Shtooka human recording":
+            commons_page = source_page
         credits.append(
             f"| {word} | {speaker} | {accent} | {item['license']} | "
             f"[{title}]({commons_page}) | [source]({source_page}) |"
@@ -542,7 +695,11 @@ def main():
     print("[source] scanning Wiktionary US/General-American recordings", flush=True)
     candidates = fetch_hf_candidates(words, groups)
     candidate_count = sum(len(v) for v in candidates.values())
-    print(f"[source] candidate rows: {candidate_count}", flush=True)
+    print(f"[source] Wiktionary candidate rows: {candidate_count}", flush=True)
+
+    shtooka = fetch_shtooka_candidates(words, groups, Path("build"))
+    for word, item in shtooka.items():
+        candidates.setdefault(norm(word), []).append(item)
 
     # Verify Commons file licences for candidate files. Wodencafe CC0 files
     # already have a direct source manifest and do not need another API lookup.
