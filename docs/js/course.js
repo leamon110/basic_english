@@ -602,15 +602,15 @@
       '<div class="lesson-rule"><b>come out / come up / come off</b><p>花朵开放、植物长出地面、物品脱落等含义要结合具体对象判断。</p></div>' +
       '<div class="lesson-rule"><b>anywhere / everywhere / nowhere</b><p>分别表示任何地方、每个地方、没有任何地方。</p></div>') +
     panel('8. 阅读：A Talk about the Weather', '<p class="lesson-instruction">以下按原版 Step 20 的天气对话改写，保留天气变化、方向词和 so / such 等重点，不是原文逐字抄录。</p>' +
-      '<div class="lesson-passage"><p>A woman and another woman are talking outside a store. One says, “It is not a bad day, is it?” The other says, “There was some mist earlier this morning when I took the boys to school, but the sky is clear now and we will see the sun soon.”</p>' +
+      '<div class="lesson-passage"><p>A woman and another woman are talking outside a store. One says, “It is not a bad day, is it?” The other says, “There was some mist earlier this morning when I took the boys to school, but the sky is clear now and we will see the sun in a short time.”</p>' +
       '<p class="lesson-translation">一个女人和另一个女人在商店外交谈。一个人说：“今天不算坏天气，对吧？”另一个人说：“今天早些时候我送男孩们去学校时有薄雾，但现在天空晴朗了，我们很快就能看到太阳。”</p>' +
       '<p>They talk about a ring round the moon, the direction of the wind, and rain clouds. One woman says that the wind was so violent in the night that the noise kept her awake. The other says that trees keep the wind out of her garden, but the river makes the land wet.</p>' +
       '<p class="lesson-translation">她们谈到月亮周围的光环、风向和雨云。一个女人说，夜里的风太猛烈，噪声让她无法入睡。另一个女人说，树木挡住了吹进花园的风，但河流让土地变得潮湿。</p>' +
       '<p>One day, the woman went to the market and did not take an umbrella. There was not a cloud in the sky when she went out. On the way back, dark grey clouds came from nowhere. She got under a tree, but the rain came through the branches and she got wet.</p>' +
       '<p class="lesson-translation">有一天，这个女人去市场时没有带雨伞。她出门时天空中一朵云也没有。回来的路上，深灰色的云突然从不知哪里出现。她躲到树下，但雨水穿过树枝，她还是淋湿了。</p>' +
-      '<p>They talk about health, coughs and sneezes. One woman says that her son had such a bad cough that they sent him south to get well. They say that summer will be better. One woman likes snow and ice; she and the boys made snowmen and sent snowballs at one another.</p>' +
+      '<p>They talk about being healthy, coughs and sneezes. One woman says that her son had such a bad cough that they sent him south to get well. They say that summer will be better. One woman likes snow and ice; she and the boys made snowmen and sent snowballs at one another.</p>' +
       '<p class="lesson-translation">她们谈到健康、咳嗽和打喷嚏。一个女人说，她的儿子咳嗽得很厉害，所以家人把他送到南方养病。她们认为夏天会好一些。一个女人喜欢雪和冰；她和男孩们堆雪人，还互相投掷雪球。</p>' +
-      '<p>Then thunder comes and the sky gets dark. More rain is coming, so the woman goes home quickly. She has been foolish again and has no umbrella with her.</p>' +
+      '<p>Then thunder comes and the sky gets dark. More rain is coming, so the woman goes to her house quickly. She has been foolish again and has no umbrella with her.</p>' +
       '<p class="lesson-translation">随后雷声响起，天空变暗。更多的雨就要来了，所以这个女人赶紧回家。她又一次忘记带雨伞了。</p></div>') +
     panel('9. 练习', '<p><b>A. 用四个方向词各造一句。</b> north、south、east、west。</p>' +
       writingBox('step20-directions','Write four sentences, one for each compass direction.') +
