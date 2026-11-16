@@ -43,70 +43,59 @@ Implemented in the latest commit:
 
 Important: these changes have been committed, but the cache mechanism is not considered proven until an Actions run has successfully saved a cache and a subsequent run has restored and reused it.
 
-## Verified status after Run 32 artifact inspection and Run 33 start
+## Verified status after Run 33 completion and Run 34 start
 
-### Run 32 — completed and independently inspected
+### Run 32 — initial successful APK
 
 - Run: [Run 32](https://github.com/leamon110/basic_english/actions/runs/43956129814), ID `43956129814`.
-- Conclusion: `success`.
-- Built code commit: `bf1281e97fa8db1ee46129c7b82f9b82f2485be1`.
-- Audio download/conversion step: success.
-- Cache-save step: success.
-- Debug APK build: success.
-- APK upload and coverage-report upload: success.
-- APK artifact ID: `14274275039`, name `basic-english-human-voice-apk`.
-- Coverage report artifact ID: `14274115136`, name `basic-english-human-audio-coverage`.
-- Downloaded APK: `Basic-English-Human-Voice.apk`, 9,808,578 bytes.
-- APK SHA-256: `50456a1eba4d7deb0ee2ff646e5d7370f7942d481ff61bbd655efdaa4429a523`.
+- Conclusion: `success`; built code commit `bf1281e97fa8db1ee46129c7b82f9b82f2485be1`.
+- Artifact IDs: APK `14274275039`; coverage report `14274115136`.
+- Its APK was independently inspected: ZIP integrity passed, exactly 850 unique word MP3s, report keys exactly matched APK filenames, all 850 MP3s passed a single FFmpeg decode pass, no identical MP3 hashes, and credits JSON/Markdown were present.
+- Static code inspection verified local audio wiring for Word Cards, word-detail modal and course vocabulary. Physical-device playback remains unverified.
 
-Independent artifact checks:
-
-- APK ZIP integrity passed.
-- `AndroidManifest.xml`, `classes.dex`, `resources.arsc`, `assets/www/index.html`, and the relevant JavaScript files are present.
-- Exactly 850 files exist under `assets/www/audio/words/`; all 850 basenames are unique.
-- Coverage report contains exactly 850 source records; its keys exactly match the APK word MP3 filenames.
-- Report totals: target 850; matched 850; missing 0; downloaded 850; cached 0; completed 850; attempted 850; pending 0; failed 0; download errors 0.
-- Encoded audio total: 9,446,648 bytes; average 11,114 bytes.
-- SHA-256 comparison found 850 unique audio files; no two word files contain identical MP3 bytes.
-- All 850 extracted MP3s passed one FFmpeg concat-demuxer decode pass (exit code 0).
-- APK contains `assets/www/audio/credits.json` and `assets/www/audio/THIRD_PARTY_AUDIO_CREDITS.md`.
-
-Static playback inspection:
-
-- Android `MainActivity` loads `file:///android_asset/www/index.html`, enables WebView JavaScript, and sets `setMediaPlaybackRequiresUserGesture(false)`; it has no native `TextToSpeech` integration.
-- Word Cards and the word-detail modal call `BE.teaching.playWord`; this delegates to `BE.speak`.
-- A single word is routed to local `Audio('audio/words/<word>.mp3')` before sentence-level browser speech fallback.
-- Course vocabulary buttons call `BE.course.say`, which delegates to the same `BE.speak` function.
-- Static wiring is verified; actual installation and offline playback on a physical Android device remain unverified.
-
-Attribution review:
-
-- The report had two entries labelled `Unknown`: `cough` and `measure`.
-- The Commons page for `cough` explicitly says the pronunciation was recorded by Dvortygirl.
-- The Commons page for `measure` identifies uploader Muke and a Public Domain self-release, but does not identify the speaker. The credits must distinguish "speaker not identified" from the uploader rather than claim Muke spoke it.
-- Three entries (`tin`, `oven`, `sock`) use the verbose Commons fallback author text even though their descriptions say they were recorded by Dvortygirl.
-- Source pages reviewed: [cough](https://commons.wikimedia.org/wiki/File:En-us-cough.ogg), [measure](https://commons.wikimedia.org/wiki/File:En-us-measure.ogg), [tin](https://commons.wikimedia.org/wiki/File:En-us-tin.ogg), [oven](https://commons.wikimedia.org/wiki/File:En-us-oven.ogg), [sock](https://commons.wikimedia.org/wiki/File:En-us-sock.ogg).
-
-### Run 33 — currently active
+### Run 33 — cache verification build
 
 - Run: [Run 33](https://github.com/leamon110/basic_english/actions/runs/43960903223), ID `43960903223`.
-- Built code commit: `43a39bcfcfbe1fafa62906795b54c840e916ec1d`.
-- Last observed state: `in_progress`; the job was still in environment setup (Install FFmpeg) at the last check.
-- No Run 33 artifacts were present at the last check.
-- Run 33 was triggered by an attribution-report improvement. Its script now records the Commons uploader separately and attempts to extract an explicit speaker from the Commons description.
-- A review of the committed script found that the regex in this parser is double-escaped (`\\b` and `\\s` in the Python raw string), so the intended "recorded by" extraction will not match. This is a known issue in the active Run 33 code.
-- Do not push another change to `scripts/**` while Run 33 is active: the workflow uses `cancel-in-progress: true`. Let Run 33 finish, inspect its report/artifacts and cache result, then correct the regex and rebuild only after the run completes.
-- Expected cache behavior: because Run 32 saved the 850 MP3s and the source fingerprint does not include speaker/uploader labels, Run 33 should restore and reuse the 850 MP3s. Verify the actual report counts; do not assume cache hit from the restore step's green status alone.
+- Conclusion: `success`; built code commit `43a39bcfcfbe1fafa62906795b54c840e916ec1d`.
+- APK artifact ID: `14273886627`.
+- Coverage report artifact ID: `14274056539`.
+- Report counts: target 850; matched 850; missing 0; downloaded 0; cached 850; completed 850; attempted 850; pending 0; failed 0; errors 0.
+- This proves that the GitHub Actions cache saved by Run 32 was restored and all 850 validated MP3 files were reused in Run 33 without downloading them again.
+- The Run 33 report still showed five `Not identified` speakers and one unnormalized `recorded by Dvortygirl` label. Its uploader fields were blank because the Commons API request did not request `imageinfo.user`. The parser regex was also double-escaped. These are metadata/report defects, not audio-file defects.
+
+### Run 34 — attribution correction build, currently active
+
+- Run: [Run 34](https://github.com/leamon110/basic_english/actions/runs/43961510814), ID `43961510814`.
+- Built code commit: `0037aafad0bad9a436488332dd5928e854100668`.
+- Last observed state: `in_progress`; Android SDK setup was the active step at the last check.
+- Changes in this run's script:
+  - request Commons `imageinfo.user` so uploader attribution is populated;
+  - correct the "recorded by" regular expressions;
+  - explicitly set the cough speaker to Dvortygirl based on the Commons page description;
+  - leave the measure speaker as "Not identified" and record Muke separately as uploader, rather than inventing the speaker.
+- Do not modify watched paths while Run 34 is active; the workflow uses `cancel-in-progress: true`.
+- After completion, inspect the report for speaker labels, uploader values, 850 cached / 0 downloaded counts, then inspect the APK artifact.
+
+### Verified audio and app facts
+
+- Run 32 coverage report: 850 source records; 850 downloaded; 0 cached; 0 missing; 0 failed.
+- Encoded MP3 total: 9,446,648 bytes; average 11,114 bytes.
+- Run 32 APK: 9,808,578 bytes; SHA-256 `50456a1eba4d7deb0ee2ff646e5d7370f7942d481ff61bbd655efdaa4429a523`.
+- The APK includes `assets/www/audio/credits.json` and `assets/www/audio/THIRD_PARTY_AUDIO_CREDITS.md`.
+- Android `MainActivity` loads the local asset page and has no native `TextToSpeech` integration.
+- Word Cards and word-detail buttons route through `BE.teaching.playWord` → `BE.speak` → local `Audio('audio/words/<word>.mp3')`.
+- Course vocabulary buttons route through `BE.course.say` → the same `BE.speak` function.
+- These playback paths are statically verified; physical-device installation and offline playback remain unverified.
 
 ### Remaining acceptance work
 
-1. Correct speaker metadata parsing after Run 33 completes; preserve uploader separately and do not invent a speaker for `measure`.
-2. Verify the next run actually restores the 850-file cache (expected `cached_count=850`, `downloaded_count=0`).
-3. Inspect the resulting APK again: exactly 850 unique MP3s, report/source keys match, audio decodes, and attribution files are present.
-4. Install the APK on a physical Android device and test Word Cards, word-detail pronunciation, course vocabulary pronunciation, and offline playback.
-5. Only then mark the project delivered.
+1. Let Run 34 finish; do not cancel it.
+2. Verify Run 34's report: 850 cached, 0 newly downloaded, 0 missing, 0 failed; inspect speaker and uploader metadata for the six reviewed Commons records.
+3. Download and inspect Run 34's APK: exactly 850 unique MP3s, report/source keys match, APK ZIP passes integrity, all MP3s decode, and attribution files are present.
+4. Install on a physical Android device and test Word Cards, word-detail pronunciation, course vocabulary pronunciation, and offline playback.
+5. Only then mark final delivery complete.
 
-The Run 32 APK is a real installable test artifact, but final acceptance remains open until the attribution and physical-device checks are complete. Refresh the branch and Actions status before any later action.
+Refresh GitHub before making any later current-state claim.
 
 ## Mandatory startup check for every new conversation
 
