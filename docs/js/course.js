@@ -717,7 +717,13 @@
   }
 
   function say(word) {
-    if (window.BE && window.BE.speak) window.BE.speak(word, 0.85);
+    // Single-word lesson pronunciation uses the same bundled human recording
+    // as Word Cards; TTS remains for full sentences and chat playback.
+    if (window.BE && window.BE.teaching && window.BE.teaching.playWord) {
+      window.BE.teaching.playWord(word);
+    } else if (window.BE && window.BE.speak) {
+      window.BE.speak(word, 0.85);
+    }
   }
 
   function checkWriting(inputId, feedbackId) {
