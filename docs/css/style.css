@@ -1168,3 +1168,25 @@ body.speech-unavailable .word-sound {
 .builder-answer-reveal{margin-top:16px;padding:12px;background:#f0fdf4;border-radius:9px;color:#166534;line-height:1.6}
 .builder-navigation{justify-content:space-between}
 @media(max-width:640px){.sentence-mode-tabs{display:grid;grid-template-columns:1fr 1fr}.sentence-mode-tab{padding:9px 7px;font-size:13px}.builder-progress{flex-direction:column;gap:4px}.builder-question h2{font-size:19px}.builder-workspace{padding:13px}.builder-pool-token,.builder-selected-token{padding:9px 11px}}
+
+
+/* Basic English dialogue practice */
+.dialogue-tabs{display:flex;gap:8px;overflow-x:auto;padding:4px 0 12px;margin:12px 0}
+.dialogue-tab{flex:0 0 auto;border:1px solid #d6deea;background:#fff;color:#34445b;border-radius:999px;padding:9px 13px;font:inherit;font-size:13px;cursor:pointer}
+.dialogue-tab.active{background:#eaf1ff;border-color:#8eace4;color:#244f91;font-weight:700}
+.dialogue-scene{background:#f7f9fc;border:1px solid #e1e7f0;border-radius:12px;padding:16px 18px;margin:12px 0}
+.dialogue-scene h2{font-size:19px;margin:7px 0}
+.dialogue-scene p{color:#536176;line-height:1.6;margin:7px 0}
+.dialogue-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.dialogue-actions button,.dialogue-line-actions button{border:1px solid #d6deea;background:#fff;color:#315b9d;border-radius:8px;padding:7px 10px;font:inherit;font-size:12px;cursor:pointer}
+.dialogue-list{display:flex;flex-direction:column;gap:10px}
+.dialogue-line{display:flex;align-items:flex-start;gap:10px;max-width:88%}
+.dialogue-line-b{align-self:flex-end;flex-direction:row-reverse}
+.dialogue-speaker{flex:0 0 32px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#eaf1ff;color:#315b9d;font-weight:700}
+.dialogue-line-b .dialogue-speaker{background:#eef2f7;color:#526174}
+.dialogue-content{min-width:0;border:1px solid #e1e6ef;border-radius:12px;padding:12px 14px;background:#fff}
+.dialogue-line-b .dialogue-content{background:#f8fafc}
+.dialogue-english{font-size:15px;line-height:1.6;color:#202938}
+.dialogue-chinese{margin-top:8px;padding-top:8px;border-top:1px solid #e8edf4;color:#526174;line-height:1.6}
+.dialogue-line-actions{display:flex;gap:7px;margin-top:10px}
+@media(max-width:640px){.dialogue-line{max-width:96%}.dialogue-content{padding:10px 12px}.dialogue-english{font-size:14px}}
