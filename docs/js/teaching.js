@@ -13,21 +13,19 @@ const CATEGORIES = [
 
 // ---- RENDER TEACHING MODE ----
 function renderTeaching(container) {
-  const BE = window.BE.WORDS
-
   container.innerHTML = `
     <div class="teaching-layout">
       <div class="teaching-tabs">
-        <button class="tab-btn active" data-tab="cards" onclick="BE.teaching.switchTab('cards')">📖 Word Cards</button>
-        <button class="tab-btn" data-tab="exercises" onclick="BE.teaching.switchTab('exercises')">✏ Rule Exercises</button>
-        <button class="tab-btn" data-tab="spaced" onclick="BE.teaching.switchTab('spaced')">🧠 Spaced Repetition</button>
-        <button class="tab-btn" data-tab="reference" onclick="BE.teaching.switchTab('reference')">📚 Quick Reference</button>
+        <button class="tab-btn active" data-tab="cards" onclick="BE.teaching.switchTab('cards')">📖 单词卡 Word Cards</button>
+        <button class="tab-btn" data-tab="exercises" onclick="BE.teaching.switchTab('exercises')">✏ 规则练习</button>
+        <button class="tab-btn" data-tab="spaced" onclick="BE.teaching.switchTab('spaced')">🧠 间隔复习</button>
+        <button class="tab-btn" data-tab="reference" onclick="BE.teaching.switchTab('reference')">📚 规则速查</button>
       </div>
       <div id="teaching-content" class="teaching-content"></div>
     </div>
   `
 
-  BE.teaching.switchTab('cards')
+  window.BE.teaching.switchTab('cards')
 }
 
 function switchTab(tab) {
@@ -68,9 +66,10 @@ function renderWordCards(container) {
     <div class="cards-section">
       <div class="cards-controls">
         <div class="cards-search">
-          <input type="text" id="card-search" placeholder="Search words..." value="${cardFilter}" oninput="BE.teaching.filterCards()" />
+          <input type="text" id="card-search" placeholder="搜索850个单词..." value="${cardFilter}" oninput="BE.teaching.filterCards()" />
         </div>
         <div class="cards-categories" id="cards-categories">
+          <button class="cat-btn ${cardCategory==='all'?'active':''}" data-cat="all" style="--cat-color:#315b9d">全部 850 词</button>
           ${CATEGORIES.map(c =>
             `<button class="cat-btn ${cardCategory===c.id?'active':''}" data-cat="${c.id}" style="--cat-color:${c.color}">${c.name}</button>`
           ).join('')}
@@ -149,10 +148,10 @@ function updateCards() {
   // Pagination controls
   const pagEl = document.getElementById('cards-pagination')
   if (totalPages <= 1) {
-    pagEl.innerHTML = '<span class="page-info">' + allWords.length + ' words</span>'
+    pagEl.innerHTML = '<span class="page-info">共 ' + allWords.length + ' 个词</span>'
   } else {
     pagEl.innerHTML = '<button class="btn btn-sm" onclick="BE.teaching.goPage(-1)"' + (cardPage <= 0 ? ' disabled' : '') + '>&#9664; Prev</button>' +
-      '<span class="page-info">' + (cardPage + 1) + ' / ' + totalPages + ' (' + allWords.length + ' words)</span>' +
+      '<span class="page-info">第 ' + (cardPage + 1) + ' / ' + totalPages + ' 页（共 ' + allWords.length + ' 个词）</span>' +
       '<button class="btn btn-sm" onclick="BE.teaching.goPage(1)"' + (cardPage >= totalPages - 1 ? ' disabled' : '') + '>Next &#9654;</button>'
   }
 }
