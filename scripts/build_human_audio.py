@@ -67,8 +67,8 @@ SHTOOKA_PACKS = [
         "name": "wcp-us",
         "url": "https://fsi-languages.yojik.eu/audiocollections/archives/eng-wcp-us_flac.tar.xz",
         "priority": 5,
-        "license": "CC BY 2.0 FR",
-        "license_url": "https://creativecommons.org/licenses/by/2.0/fr/",
+        "license": "",
+        "license_url": "",
         "author": "Dvortygirl (collection packaged by Nicolas Vion)",
         "readme": "https://fsi-languages.yojik.eu/audiocollections/detailled/eng-wcp-us/readme.txt",
     },
@@ -409,7 +409,6 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
         swac_text_count = 0
         target_text_count = 0
         accepted_license_count = 0
-        diagnostic_samples = 0
         with tarfile.open(archive_path, "r:xz") as archive:
             for member in archive:
                 if not member.isfile() or not member.name.lower().endswith((".ogg", ".flac", ".wav", ".mp3")):
@@ -426,26 +425,9 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                     tags = getattr(audio, "tags", None) if audio else None
                     if tags:
                         tagged_member_count += 1
-                    if diagnostic_samples < 4:
-                        tag_keys = list(tags.keys()) if tags else []
-                        print(
-                            f"[Shtooka debug] {pack_name} sample={member.name!r} "
-                            f"audio_type={type(audio).__name__ if audio else None} "
-                            f"tag_keys={tag_keys[:24]}",
-                            flush=True,
-                        )
-                        if tags:
-                            print(
-                                f"[Shtooka debug] {pack_name} values="
-                                + json.dumps(
-                                    {str(k): str(v)[:160] for k, v in list(tags.items())[:16]},
-                                    ensure_ascii=False,
-                                ),
-                                flush=True,
-                            )
-                        diagnostic_samples += 1
                     if not tags:
                         continue
+                    # Mutagen preserves the SWAC keys in lower case.
                     tag_map = {str(k).upper(): v for k, v in tags.items()}
                     word_text = tag_value(tag_map, "SWAC_TEXT")
                     word = norm(word_text)
@@ -458,26 +440,41 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                         continue
 
                     raw_licence = tag_value(tag_map, "SWAC_COLL_LICENSE") or tag_value(tag_map, "LICENSE")
-                    licence = raw_licence
-                    if not licence_allowed(licence):
-                        raw_lower = raw_licence.lower()
-                        blocked = any(token in raw_lower for token in (
-                            "noncommercial", "non-commercial", "non commercial",
-                            "no derivatives", "no-derivatives", "cc by-nc", "cc by-nd",
-                        ))
-                        # Some SWAC files store the Creative Commons URL rather
-                        # than its short name. Use the collection README's
-                        # licence only for those URL/description forms.
-                        url_or_description = (
-                            "creativecommons.org/licenses/" in raw_lower
-                            or "creative commons attribution" in raw_lower
-                        )
-                        if blocked or (raw_licence and not url_or_description):
+                    if pack_name == "wcp-us":
+                        # This archive contains copies of Commons pronunciation
+                        # files. Their licences differ by original file, so do
+                        # not infer one from the archive-level README or the
+                        # incomplete "Creative Commons BY-SA" tag. Commons API
+                        # metadata will verify the exact original .ogg file.
+                        licence = ""
+                    else:
+                        licence = raw_licence
+                        if not licence_allowed(licence):
+                            raw_lower = raw_licence.lower()
+                            blocked = any(token in raw_lower for token in (
+                                "noncommercial", "non-commercial", "non commercial",
+                                "no derivatives", "no-derivatives", "cc by-nc", "cc by-nd",
+                            ))
+                            # These legacy SWAC collections use descriptive
+                            # licence text ("Creative Commons BY" or
+                            # "Creative Commons BY 3.0 U.S"). Their collection
+                            # README states the exact applicable licence.
+                            descriptive_cc_by = (
+                                "creative commons by" in raw_lower
+                                or "creativecommons.org/licenses/" in raw_lower
+                            )
+                            # Never downgrade a file explicitly tagged BY-SA
+                            # to a collection README that says BY only.
+                            conflicts_with_pack = (
+                                "by-sa" in raw_lower
+                                and "by-sa" not in pack["license"].lower()
+                            )
+                            if blocked or conflicts_with_pack or (raw_licence and not descriptive_cc_by):
+                                continue
+                            licence = pack["license"]
+                        if not licence_allowed(licence):
                             continue
-                        licence = pack["license"]
-                    if not licence_allowed(licence):
-                        continue
-                    accepted_license_count += 1
+                        accepted_license_count += 1
 
                     speaker = (
                         tag_value(tag_map, "SWAC_SPEAK_NAME")
@@ -487,26 +484,40 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                     country = tag_value(tag_map, "SWAC_SPEAK_LANG_COUNTRY")
                     accent_note = tag_value(tag_map, "SWAC_SPEAK_PRON") or tag_value(tag_map, "SWAC_SPEAK_LANG_REGION")
                     collection_name = tag_value(tag_map, "SWAC_COLL_NAME") or ("Shtooka " + pack_name)
-                    collection_url = tag_value(tag_map, "SWAC_COLL_URL") or pack["readme"]
-                    accent = country or accent_note or "English accent not specified"
                     ext = temp_path.suffix.lower()
                     destination = selected_dir / (slug(word) + "-" + pack_name + ext)
                     shutil.copy2(temp_path, destination)
+
+                    if pack_name == "wcp-us":
+                        # SWAC stores a FLAC copy of the original Commons OGG.
+                        original_title = Path(member.name).name
+                        if original_title.lower().endswith(".flac"):
+                            original_title = original_title[:-5] + ".ogg"
+                        source_page = (
+                            "https://commons.wikimedia.org/wiki/File:"
+                            + urllib.parse.quote(original_title.replace(" ", "_"))
+                        )
+                        title = original_title
+                    else:
+                        source_page = tag_value(tag_map, "SWAC_COLL_URL") or pack["readme"]
+                        title = member.name
+
+                    accent = country or accent_note or "English accent not specified"
                     candidate = {
                         "word": word,
                         "speaker": speaker,
                         "artist": speaker,
                         "license": licence,
-                        "license_url": pack["license_url"],
-                        "title": member.name,
-                        "source_page": collection_url,
+                        "license_url": pack["license_url"] if pack_name != "wcp-us" else "",
+                        "title": title,
+                        "source_page": source_page,
                         "audio_url": "",
                         "local_path": str(destination),
                         "audio_format": ext.lstrip("."),
                         "audio_tags": [accent],
                         "accent_rank": country_rank(country),
                         "source_priority": pack_priority,
-                        "origin": "Shtooka human recording",
+                        "origin": "Wikimedia Commons (Shtooka archive)" if pack_name == "wcp-us" else "Shtooka human recording",
                         "collection": collection_name,
                         "collection_readme": pack["readme"],
                     }
