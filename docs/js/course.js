@@ -1,7 +1,7 @@
 // ============================================================
 // BASIC ENGLISH COURSE — Chinese-guided lessons
 // Course order and lesson scope follow C. K. Ogden's 1930 course index.
-// Lessons 1, 2, 3, 5 and 6 are adapted in-app from the original course.
+// Lessons 1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18, 20 and 25 are adapted in-app from the original course.
 // Other steps remain linked to their original pages until adapted.
 // ============================================================
 
@@ -54,7 +54,7 @@
     { n: 45, title: "关于英国的一些笔记", en: "Some Notes about England", kind: "Reading" }
   ];
 
-  const lessons = [1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18, 20];
+  const lessons = [1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18, 20, 25];
 
   function vocab(items) {
     return '<div class="lesson-words">' + items.map(function (w) {
@@ -95,8 +95,8 @@
       '<header class="course-hero"><p class="course-kicker">C. K. OGDEN · 1930 ORIGINAL COURSE</p>' +
       '<h1>从 850 个词，学会说完整的英语</h1>' +
       '<p>按原版 45 Steps 的顺序学习。每课把词汇放进句子、阅读和练习中，而不是孤立地背单词。</p>' +
-      '<div class="course-note">目前已完成 13 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10、12、13、15、17、18、20。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
-      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：13 课 · 待补：Step 4、7、8、11、14、16、19</span></div>' +
+      '<div class="course-note">目前已完成 14 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10、12、13、15、17、18、20、25。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
+      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：14 课 · 待补：Step 4、7、8、11、14、16、19、21–24、26–45</span></div>' +
       '<div class="course-grid">' + cards + '</div></section>';
   }
 
@@ -622,6 +622,81 @@
       answer('step20-reading','查看参考答案','<p>1. There was some mist.</p><p>2. It was a sign of wet weather.</p><p>3. The rain came through the branches of the tree.</p><p>4. He had a bad cough and was sent south to get well.</p><p>5. They made snowmen and sent snowballs at one another.</p><p>6. Thunder came, the sky got dark and more rain was coming.</p>'));
 
 
+  lessonHTML[25] =
+    panel('1. 本课词汇', '<p>本课以办公室为场景，学习信件、文件、工作关系和表达方式。</p>' +
+      vocab([['pen','钢笔'],['pencil','铅笔'],['secretary','秘书'],['stamp','邮票；印章'],['attention','注意'],['copy','副本；复制'],['damage','损坏；损害'],['fact','事实'],['guide','指南；指导'],['insurance','保险'],['list','清单；列表'],['profit','利润'],['receipt','收据'],['record','记录'],['representative','代表'],['request','请求'],['statement','陈述；声明'],['dependent','依赖的'],['important','重要的'],['necessary','必要的'],['private','私人的'],['public','公共的'],['responsible','负责的'],['separate','分开的']])) +
+      '<div class="course-note">原版 Step 25 还列出 link。它不在本项目当前 850 个基础词条中，因此单独标记为课文扩展词，不计入 850 词卡片。</div>' +
+      '<div class="lesson-examples"><p>make a request（提出请求）</p><p>give attention to a letter（注意一封信）</p><p>make a statement（作出陈述）</p><p>make a profit（获得利润）</p><p>be responsible for the damage（对损坏负责）</p><p>be dependent on a person（依赖某人）</p></div>') +
+    panel('2. -ing 形式作名词和形容词', '<p>原版 Step 25 继续扩展前面学过的 -ing 形式。它们不只表示正在发生的动作，也可以直接表示一项活动，或者描述某物正在进行的状态。</p>' +
+      '<div class="lesson-examples"><p>The men are building a bridge.</p><p>Are you feeling any pain?</p><p>I will be meeting the secretary tomorrow.</p><p>Reading gives me pleasure.</p><p>Waiting makes one very tired.</p></div>' +
+      '<p>原版列举的活动名词包括 hearing、learning、teaching、reading、writing；本课新增 building、meeting、feeling。它们可以作名词，也可以在句中作形容词或构成进行时。</p>' +
+      '<p>原版还说明：除 meeting 外，这组 -ing 名词可以把 -ing 换成 -er，形成表示动作执行者的名词，例如 hearer、learner、writer。这里的 -er 是构词扩展，不是把任意动词都机械地加上 -er。</p>') +
+    panel('3. 形容词的 -ing / -er 形式', '<p>原版列出六个可以使用 -ing 形式的形容词：clean、cut、dry、open、separate、shut。</p>' +
+      '<div class="lesson-table"><div><b>基础形容词</b><b>-ing 形式</b><b>执行动作的人或物</b></div>' +
+      '<div><span>clean</span><span>cleaning</span><span>cleaner</span></div>' +
+      '<div><span>cut</span><span>cutting</span><span>cutter</span></div>' +
+      '<div><span>dry</span><span>drying</span><span>dryer</span></div>' +
+      '<div><span>open</span><span>opening</span><span>opener</span></div>' +
+      '<div><span>shut</span><span>shutting</span><span>shutter</span></div>' +
+      '<div><span>separate</span><span>separating</span><span>separator</span></div></div>' +
+      '<p>-ing 形式可以表示使某物进入该状态的动作，也可以表示正在变成该状态；-er / -or 形式表示执行动作的人或物。separate 的对应形式使用 -or，而不是 -er。</p>' +
+      '<div class="lesson-examples"><p>She has no time for cleaning the house.</p><p>The gardener is cleaning his spade.</p><p>The dress has come back from the cleaner.</p><p>The wind is drying the shirts.</p><p>Our shoes are drying by the fire.</p></div>') +
+    panel('4. 已学 -ing 形容词的 -er 扩展', '<p>原版还指出，已经学过的 boiling、hanging、waiting 可以换成 -er 形式，但新词的意思已经具体化。</p>' +
+      '<div class="lesson-table"><div><b>-ing 形式</b><b>-er 形式</b><b>原版给出的具体意思</b></div>' +
+      '<div><span>boiling</span><span>boiler</span><span>产生蒸汽或加热水的锅炉</span></div>' +
+      '<div><span>hanging</span><span>hanger</span><span>衣架</span></div>' +
+      '<div><span>waiting</span><span>waiter</span><span>餐厅中提供服务的人</span></div></div>' +
+      '<div class="lesson-examples"><p>Workmen are putting new boilers into the ship.</p><p>All her dresses are on hangers.</p><p>The waiter put some more wine in my glass.</p></div>' +
+      '<p>这些 -ing 形式也可以作名词：We let him have some water after boiling it. / Hanging all the pictures may take a long time. / Waiting makes one very tired.</p>') +
+    panel('5. please 的 -ing / -ed 形式', '<p>please 可以加 -ing 和 -ed。</p>' +
+      '<div class="lesson-rule"><b>pleasing</b><p>表示“使人愉快的、令人满意的”，可以作名词或形容词。</p><p>There is a very pleasing picture in the library.</p></div>' +
+      '<div class="lesson-rule"><b>pleased</b><p>表示“感到高兴、满意的”，说明人的感受。</p><p>We were pleased by the secretary’s statement.</p></div>' +
+      '<p>注意区别：pleasing 描述引起愉快感的事物；pleased 描述产生这种感受的人。</p>') +
+    panel('6. 前缀 un-：表示 not', '<p>un- 加在部分 Basic 形容词前，表示 not，也就是形成相反的意思。</p>' +
+      '<div class="lesson-examples"><p>able → unable（不能够）</p><p>broken → unbroken（未破损的）</p><p>clean → unclean（不干净的）</p><p>clear → unclear（不清楚的）</p><p>cut → uncut（未切开的）</p><p>healthy → unhealthy（不健康的）</p><p>important → unimportant（不重要的）</p><p>like → unlike（不像的）</p><p>married → unmarried（未婚的）</p><p>natural → unnatural（不自然的）</p><p>necessary → unnecessary（不必要的）</p><p>ready → unready（未准备好的）</p><p>true → untrue（不真实的）</p><p>wise → unwise（不明智的）</p></div>' +
+      '<p>原版特别提醒：able 只有在后面接 to 时，才能使用 unable，例如 unable to give an answer。</p>') +
+    panel('7. 阅读：At the Office', '<p class="lesson-instruction">以下按原版 Step 25 的办公室对话改写，保留信件、保险、清单、记录和秘书之间的主要事件，并将表达限制在本项目的 Basic 词汇规则内；不是原文逐字抄录。</p>' +
+      '<div class="lesson-passage"><p>A man is in his office. His secretary is opening letters. The man says, “I will have a meeting with some men from the committee this morning. We will have a private meeting before the public meeting. I will be out for most of the morning. I will look at the letters before I go. What is there?”</p>' +
+      '<p class="lesson-translation">一个男人在办公室里。他的秘书正在拆信。男人说：“今天上午我要和委员会的一些人开会。我们会先开一个内部会议，再开公开会议。我上午大部分时间都不在。走之前我会看看这些信。有什么信？”</p>' +
+      '<p>The secretary says, “This letter is about some goods that got wet on the way here. Your letter with the facts has gone to the train company. The men say the insurance was for loss only, not for damage.”</p>' +
+      '<p class="lesson-translation">秘书说：“这封信是关于一些货物在运送途中被淋湿的事。你那封写明事实的信已经寄给火车公司。对方说保险只包括遗失，不包括损坏。”</p>' +
+      '<p>The man says, “It was unwise not to get more insurance. If the goods have damage before they get here, the men are responsible. We will get money from them even if they are not able to get it from the train company.”</p>' +
+      '<p class="lesson-translation">男人说：“没有买更全面的保险是不明智的。如果货物在到达这里之前就有损坏，那些人就要负责。即使他们不能从火车公司拿到钱，我们也会向他们要钱。”</p>' +
+      '<p>She says, “The receipt is here.” He says, “Put it with the other receipts on the small table by the window. We will go through them before the end of the month. What is that letter in your hand?”</p>' +
+      '<p class="lesson-translation">秘书说：“收据在这里。”男人说：“把它和其他收据放在窗边的小桌子上。月底前我们会一起检查。你手里那封信是什么？”</p>' +
+      '<p>She says, “It is from some men in another town. They make a request for our price list. The man who made it was not able to get one from our man there.” He says, “Send the old list if our man says yes. It will be a guide. Make it clear that there have been changes. The new list will be sent later.”</p>' +
+      '<p class="lesson-translation">秘书说：“这是另一个城镇的人寄来的。他们请求我们提供价格清单。写信的人没能从我们在当地的代表那里拿到清单。”男人说：“如果我们的代表同意，就把旧清单寄给他们作参考。要说明清单已经有变化，新清单之后再寄。”</p>' +
+      '<p>She says, “This letter is about paper. The man says there has been no increase in the price. But the paper he sent us last time was different. He asked for more money. It does not seem better. The stamp on the box makes clear that it is different.”</p>' +
+      '<p class="lesson-translation">秘书说：“这封信是关于纸的。对方说价格没有上涨，但上次寄来的纸和以前不同，而且他要了更多的钱。纸看起来并没有更好。箱子上的印记说明它确实不同。”</p>' +
+      '<p>She says, “This letter says that if you do not put up the price of the new machine for cutting, you will make no profit.” He says, “I would have made the price higher at the start, but one of the men in his office said there was great competition. Does he give his reasons?”</p>' +
+      '<p class="lesson-translation">秘书说：“这封信说，如果你不提高新切割机器的价格，就不会有利润。”男人说：“我一开始就会把价格定得更高，但他办公室里有个人说竞争很激烈。他说明理由了吗？”</p>' +
+      '<p>She says, “Yes. It is a long letter.” He says, “Give it to me. I have no time to give attention to it now, but I will look at it on my way to the meeting. Will the copy of my letter be ready when I get back?”</p>' +
+      '<p class="lesson-translation">秘书说：“说明了，是一封很长的信。”男人说：“把信给我。我现在没有时间仔细看，但我会在去开会的路上看。等我回来时，我那封信的副本能准备好吗？”</p>' +
+      '<p>She says, “It is almost done, but one word is not clear.” He says, “Let me see it.” She gets the letter. He says, “The statement he made is not true. I did not say yes to this. You are right. I made the letter with a broken pencil. I will send the second copy to a friend for his opinion. A man who has no knowledge of the facts will see if my statement is clear. Put my stamp at the top of the page.”</p>' +
+      '<p class="lesson-translation">秘书说：“快写好了，但有一个词不清楚。”男人说：“让我看看。”秘书把信拿来。男人说：“他写的陈述不真实。我没有同意这件事。你说得对。我用一支坏铅笔写了这封信。我会把第二份副本寄给朋友，请他提出意见。一个不了解事实的人也能看出我的陈述是否清楚。把我的印章放在这一页的顶部。”</p>' +
+      '<p>She says, “It will be ready when you put your name on it.” He says, “Where are the records of the last meeting? I put them in the middle drawer, but they are not there now. Did you put them in another place?” She says, “You said you would keep them in a separate place. I saw you put them in a box on the shelf by the door.”</p>' +
+      '<p class="lesson-translation">秘书说：“你签上名字后，它就准备好了。”男人说：“上次会议的记录在哪里？我把它们放在中间的抽屉里，但现在不在那里。是你把它们放到别处了吗？”秘书说：“你说过要把它们放在一个单独的地方。我看见你把它们放进门边架子上的一个盒子里了。”</p>' +
+      '<p>He says, “You are right. I am dependent on your good memory. My memory is bad. The man in the school said I was the worst in the school. I might have done better if I had a secretary.” He says, “I have to go now. If some man comes this morning, say I will be back later. Are there any plays on tonight? Is there something beautiful that will make a tired man happy?” She says, “This play is said to be good.” He says, “Then get some seats for it tonight.”</p>' +
+      '<p class="lesson-translation">男人说：“你说得对。我很依赖你的好记性。我的记性不好。学校里的人曾说我是学校里最差的学生。如果我当时有一位秘书，我的表现也许会好一些。”他又说：“我现在得走了。如果今天上午有人来，就说我晚些时候回来。今晚有什么戏剧上演吗？有没有好看的节目能让疲惫的人高兴起来？”秘书说：“这出戏据说不错。”男人说：“那就订一些今晚的座位。”</p></div>') +
+    panel('8. 阅读中的表达', '<div class="lesson-rule"><b>representative</b><p>在本课中指代表别人办事的人，不是“一个典型样本”。</p></div>' +
+      '<div class="lesson-rule"><b>the way to do something</b><p>way 可以表示达到某个结果的方法：the way to get decisions made。</p></div>' +
+      '<div class="lesson-rule"><b>make a request / make a profit</b><p>request 和 profit 前面使用 make：提出请求、获得利润。</p></div>' +
+      '<div class="lesson-rule"><b>answer</b><p>answer 后面可以直接接问题或提问的人，不需要再加 to：answer a question。</p></div>' +
+      '<div class="lesson-rule"><b>increase in</b><p>increase 后面用 in 指出增加发生在哪个方面：an increase in the price。</p></div>' +
+      '<div class="lesson-rule"><b>put up / put down</b><p>价格高低的比喻延伸到价格变化：put up the price 表示提高价格；put down the price 表示降低价格。</p></div>' +
+      '<div class="lesson-rule"><b>dependent on</b><p>指出依赖的对象时使用 on：be dependent on a person。</p></div>') +
+    panel('9. 练习', '<p><b>A. 判断 -ing 形式的作用。</b></p><div class="lesson-examples"><p>1. The men are building a bridge.</p><p>2. Waiting makes one very tired.</p><p>3. I will be meeting the secretary tomorrow.</p><p>4. There is a very pleasing picture in the library.</p></div>' +
+      answer('step25-ing-answers','查看参考答案','<p>1. building 表示正在进行的动作。</p><p>2. Waiting 作名词，表示等待这件事。</p><p>3. meeting 与 be 一起构成进行时。</p><p>4. pleasing 作形容词，表示令人愉快的。</p>') +
+      '<p><b>B. 用 un- 构成相反意思。</b> true、wise、important、clear、necessary、healthy。</p>' +
+      answer('step25-un-answers','查看参考答案','<p>untrue；unwise；unimportant；unclear；unnecessary；unhealthy。</p>') +
+      '<p><b>C. 选择 -ing 或 -er / -or 形式。</b></p><div class="lesson-examples"><p>1. The wind is _____ the shirts. (dry)</p><p>2. The _____ put some more wine in my glass. (wait)</p><p>3. The _____ is heating the water. (boil)</p><p>4. The woman is _____ the house. (clean)</p><p>5. The _____ part of the machine is broken. (cut)</p></div>' +
+      answer('step25-endings-answers','查看参考答案','<p>1. drying　2. waiter　3. boiler　4. cleaning　5. cutting。</p>') +
+      '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. Why did the man want more insurance?</p><p>2. What did the men in another town ask for?</p><p>3. Why did the man want the old list sent?</p><p>4. What was wrong with the paper sent last time?</p><p>5. Why did the secretary ask the man for help with the letter?</p><p>6. Where were the records of the last meeting?</p><p>7. What did the man say about his memory?</p></div>' +
+      answer('step25-reading-answers','查看参考答案','<p>1. Because the insurance was for loss only, not for damage.</p><p>2. They asked for the price list.</p><p>3. It would be a guide until the new list was ready.</p><p>4. It was different, and it did not seem better.</p><p>5. One word was not clear.</p><p>6. They were in a box on the shelf by the door.</p><p>7. He said his memory was bad and that he was dependent on the secretary’s good memory.</p>') +
+      writingBox('step25-writing','Write a short description of an office. Use at least three of these words: secretary, letter, copy, record, list, stamp, meeting, attention.') +
+      '<div class="course-note">原版 Step 25 的结尾说明：到这一课，Basic English 的结构部分已经学完；再经过十课，学习者将接触完整的 850 词汇。</div>');
+
+
   function render() {
     const main = document.getElementById('main-content');
     if (main) main.innerHTML = courseShell();
@@ -632,7 +707,7 @@
     if (!main) return;
     if (!lessonHTML[n]) return openOriginal(n);
     const step = steps.find(function (s) { return s.n === n; });
-    const prerequisite = n === 12 ? '<div class="course-note">前置知识：本课会用到 Step 11 引入的数词 one。Step 11 尚未完成中文改编，请先查看原版课程。</div><button class="course-primary" onclick="BE.course.openOriginal(11)">打开原版 Step 11</button>' : ((n === 15 || n === 17 || n === 20) ? '<div class="course-note">前置知识：Step ' + (n - 1) + ' 是阅读课，目前尚未完成中文改编。可以先打开原版课程，再继续本课。</div><button class="course-primary" onclick="BE.course.openOriginal(' + (n - 1) + ')">打开原版 Step ' + (n - 1) + '</button>' : '');
+    const prerequisite = n === 12 ? '<div class="course-note">前置知识：本课会用到 Step 11 引入的数词 one。Step 11 尚未完成中文改编，请先查看原版课程。</div><button class="course-primary" onclick="BE.course.openOriginal(11)">打开原版 Step 11</button>' : ((n === 15 || n === 17 || n === 20 || n === 25) ? '<div class="course-note">前置知识：Step ' + (n - 1) + ' 尚未完成中文改编。可以先打开原版 Step ' + (n - 1) + '，再继续本课。</div><button class="course-primary" onclick="BE.course.openOriginal(' + (n - 1) + ')">打开原版 Step ' + (n - 1) + '</button>' : '');
     main.innerHTML = '<section class="course-page">' +
       lessonHeader(n, step.en, step.title + ' · ' + step.kind) +
       '<div class="course-lesson-meta">本课是 45 步原版课程中的第 ' + n + ' 步。按顺序学习词汇、句型、阅读和练习。</div>' +
