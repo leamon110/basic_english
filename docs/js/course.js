@@ -175,7 +175,7 @@
       '<p><b>练习 C：填入 is / are / a / the。</b></p><div class="lesson-examples"><p>1. _____ window in this room _____ round.</p><p>2. This _____ _____ room in my house.</p><p>3. The pot _____ on the table.</p><p>4. I take _____ pot off the table.</p><p>5. That _____ my flower.</p><p>6. _____ flower _____ in a pot.</p></div>' +
       answer('step1-fill','查看参考答案','<p>1. The / is　2. is / a　3. is　4. the　5. is　6. The / is。</p>') +
       '<p><b>练习 D：把句子改成复数。</b> This narrow bed is between the windows.</p>' +
-      answer('step1-plural','查看参考答案','<p>These narrow beds are between the windows.</p>');
+      answer('step1-plural','查看参考答案','<p>These narrow beds are between the windows.</p>'));
 
   lessonHTML[2] =
     panel('1. 本课词汇', '<p>先学习本课新增的 10 个名词和 2 个形容词。点击单词可以听发音。</p>' +
@@ -204,11 +204,11 @@
       writingBox('step2-writing-c','Write at least four sentences using the patterns above.') +
       answer('step2-models','查看参考句','<p>Put the cushion against the wall.</p><p>Put the seat between the table and the bed.</p><p>Put the book by the books.</p><p>I take the book off the table.</p><p>The books are on the table.</p><p>The flower is under the table.</p><p>The picture is over the books.</p><p>The flowers are in the pot.</p>') +
       '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. Which table are the seats by?</p><p>2. Where is the white flower?</p><p>3. Where are your books?</p><p>4. What do you do with the cover on your bed?</p><p>5. What color are the curtains?</p><p>6. Describe the pot on the table.</p></div>' +
-      answer('step2-reading-answers','查看参考答案','<p>1. The round table.</p><p>2. It is on the floor under the table.</p><p>3. They are on the narrow, black table between the bed and the door.</p><p>4. I take it off my bed and put it on a seat.</p><p>5. They are black.</p><p>6. It is round and black.</p>');
+      answer('step2-reading-answers','查看参考答案','<p>1. The round table.</p><p>2. It is on the floor under the table.</p><p>3. They are on the narrow, black table between the bed and the door.</p><p>4. I take it off my bed and put it on a seat.</p><p>5. They are black.</p><p>6. It is round and black.</p>'));
 
   lessonHTML[3] =
     panel('1. 本课词汇', '<p>本课增加与人物、物品、移动和交付有关的词。</p>' +
-      vocab([['arm','手臂'],['box','盒子'],['hand','手'],['man','男人'],['office','办公室'],['pocket','口袋'],['shelf','架子'],['ticket','票'],['side','侧面'],['other','其他的'],['another','另一个'],['across','穿过']])) +
+      vocab([['arm','手臂'],['box','盒子'],['hand','手'],['man','男人'],['office','办公室'],['pocket','口袋'],['shelf','架子'],['ticket','票'],['side','侧面'],['other','其他的'],['across','穿过']])) +
     panel('2. 名词复数的变化', '<p>本课在规则复数之外，加入三类拼写变化。</p>' +
       '<div class="lesson-examples"><p>man → men；woman → women（不规则）</p><p>box → boxes（以 x 结尾，加 -es）</p><p>shelf → shelves（部分以 f / fe 结尾的词变为 -ves）</p></div>' +
       '<p>名词放在另一个名词前作限定时，通常保持单数：office floor（办公室的地板）、side door（侧门）。</p>') +
@@ -232,7 +232,7 @@
       '<p><b>B. 选择正确的介词。</b></p><div class="lesson-examples"><p>I give a book _____ my friend.</p><p>She goes _____ me.</p><p>This side _____ the ticket is white.</p><p>I put the ticket _____ my pocket.</p></div>' +
       answer('step3-preps','查看参考答案','<p>to；with；of；in / into（按句意表示放入时，原课程说明 in 与 into 均可用于此类语境）。</p>') +
       writingBox('step3-writing','Write four sentences using give, get, come, go, with, across, at or of.') +
-      answer('step3-model','查看参考句','<p>I give a ticket to the man.</p><p>She gets a book from me.</p><p>He comes to the office with her.</p><p>They go across the room.</p>');
+      answer('step3-model','查看参考句','<p>I give a ticket to the man.</p><p>She gets a book from me.</p><p>He comes to the office with her.</p><p>They go across the room.</p>'));
 
   lessonHTML[5] =
     panel('1. 本课词汇', '<p>本课从具体物品扩展到食物、工作、家庭和时间。</p>' +
@@ -272,7 +272,7 @@
       '<p><b>C. 用否定形式改写。</b></p><div class="lesson-examples"><p>They make wide roads.</p><p>She has a bag under her arm.</p><p>The family will go to the country.</p></div>' +
       answer('step5-negative','查看参考答案','<p>They do not make wide roads.</p><p>She has not a bag under her arm.（按本课原文所教的 have 否定结构）</p><p>The family will not go to the country.</p>') +
       writingBox('step5-writing','Write five sentences. Use some, have, make, do, will, may, before, after, for, when or while.') +
-      answer('step5-model','查看参考句','<p>Some food is on the table.</p><p>They will have a meal after work.</p><p>She may come before the meal.</p><p>I do work while my friends are here.</p>');
+      answer('step5-model','查看参考句','<p>Some food is on the table.</p><p>They will have a meal after work.</p><p>She may come before the meal.</p><p>I do work while my friends are here.</p>'));
 
   lessonHTML[6] =
     panel('1. 本课词汇', '<p>本课通过一个家庭的日常生活，把家庭成员、时间和日常活动放进连续阅读中。</p>' +
@@ -297,7 +297,7 @@
       '<p><b>C. 使用 or、but、while 各造一个句子。</b></p>' +
       writingBox('step6-writing','Write three sentences: one with or, one with but, and one with while.') +
       '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. What does Ellen take with her when she goes out to work?</p><p>2. Which bedroom do Tom and Fred have?</p><p>3. What work does Ellen do?</p><p>4. Where do Tom and Fred sometimes take their mother and sister?</p><p>5. What does Mr. Robinson do after his meal?</p></div>' +
-      answer('step6-reading','查看参考答案','<p>1. She takes some food with her.</p><p>2. They have a bedroom at the back of the house.</p><p>3. She makes cushions and curtains in a store.</p><p>4. They take them to the pictures.</p><p>5. He takes a book and goes to the place by the fire.</p>');
+      answer('step6-reading','查看参考答案','<p>1. She takes some food with her.</p><p>2. They have a bedroom at the back of the house.</p><p>3. She makes cushions and curtains in a store.</p><p>4. They take them to the pictures.</p><p>5. He takes a book and goes to the place by the fire.</p>'));
 
   function render() {
     const main = document.getElementById('main-content');
