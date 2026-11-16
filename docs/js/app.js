@@ -45,14 +45,14 @@ function renderHome(container) {
       <div class="home-cards">
         <div class="home-card" onclick="navigateTo('course')">
           <div class="home-card-icon">🧭</div>
-          <h2>课程学习</h2>
-          <p>从单词进入句子、阅读和自己造句。无需 AI 服务。</p>
-          <span class="home-card-link">开始系统学习 →</span>
+          <h2>原版 45 步课程</h2>
+          <p>按照 Ogden 原版 45 个 Step 学习。目前 14 课完成中文改编，其余仍是原版网页入口。</p>
+          <span class="home-card-link">进入课程目录 →</span>
         </div>
         <div class="home-card" onclick="navigateTo('sentences')">
           <div class="home-card-icon">🧩</div>
           <h2>句型练习</h2>
-          <p>通过 100 个完整例句，练习用基础词汇组织表达，并查看中文对照。</p>
+          <p>100 个完整例句、20 道句子组装练习、10 组情景对话，帮助你练习用基础词汇组织表达。</p>
           <span class="home-card-link">开始练习 →</span>
         </div>
         <div class="home-card" onclick="navigateTo('conversation')">
@@ -63,9 +63,9 @@ function renderHome(container) {
         </div>
         <div class="home-card" onclick="navigateTo('teaching')">
           <div class="home-card-icon">📖</div>
-          <h2>Teaching</h2>
-          <p>Learn the 850 words by category. Practice Ogden's grammar rules with interactive exercises.</p>
-          <span class="home-card-link">Start Learning →</span>
+          <h2>850 词汇学习 · Teaching</h2>
+          <p>浏览完整 850 个基础词。点击单词打开独立词卡，查看中文释义和英语发音；还可练习构词与语法规则。</p>
+          <span class="home-card-link">进入单词卡 →</span>
         </div>
       </div>
       <div class="home-stats">
