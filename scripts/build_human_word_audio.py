@@ -46,6 +46,11 @@ ACCENTS = {
     "au": "Australian English",
     "ca": "Canadian English",
 }
+# Commons pages whose human recording attribution is explicit in the page
+# text but absent from the machine-readable ImageDescription field.
+SPEAKER_OVERRIDES = {
+    "File:En-us-cough.ogg": "Dvortygirl",
+}
 
 def read_words():
     source = DATA_JS.read_text(encoding="utf-8")
@@ -125,7 +130,7 @@ def fetch_candidates(records):
         data = api({
             "action": "query",
             "prop": "imageinfo",
-            "iiprop": "url|size|extmetadata",
+            "iiprop": "url|size|user|extmetadata",
             "iiextmetadatafilter": "LicenseShortName|Artist|ImageDescription",
             "titles": "|".join(chunk),
         })
@@ -150,13 +155,17 @@ def fetch_candidates(records):
             uploader = page.get("imageinfo", [{}])[0].get("user", "")
             speaker = record.get("speaker") or ""
             if not speaker:
-                recorded_by = re.search(r"\\brecorded\\s+by\\s+([^,.;]+)", description, re.I)
+                recorded_by = re.search(r"\brecorded\s+by\s+([^,.;]+)", description, re.I)
                 if recorded_by:
                     speaker = recorded_by.group(1).strip()
                 elif artist and artist.lower() not in ("unknown", "not identified") and not artist.lower().startswith("no machine-readable author provided"):
-                    speaker = re.sub(r"^recorded\\s+by\\s+", "", artist, flags=re.I).strip()
+                    speaker = re.sub(r"^recorded\s+by\s+", "", artist, flags=re.I).strip()
                 else:
                     speaker = "Not identified"
+            if title in SPEAKER_OVERRIDES:
+                speaker = SPEAKER_OVERRIDES[title]
+                if not description:
+                    description = "Pronunciation of the word 'cough' in US English, recorded by Dvortygirl"
             metadata[title] = dict(
                 record,
                 url=info["url"].split("?")[0],
