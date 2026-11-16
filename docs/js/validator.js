@@ -166,8 +166,8 @@ function validateBasicEnglish(text) {
   for (let i = 0; i < words.length; i++) {
     const raw = words[i]
     // Remove leading/trailing punctuation for checking
-    const clean = raw.replace(/^[^a-zA-Z0-9']+|[,.;:!?\"'()\[\]{}<>]+$/g, '')
-                     .replace(/^[,.!?;:'"()]+/, "")
+    const clean = raw.replace(/^[^a-zA-Z0-9']+|[,.;:!?\"'()\[\]{}<>“”‘’—–…]+$/g, '')
+                     .replace(/^[,.!?;:'"()“”‘’—–…]+/, "")
     if (!clean || clean.length === 0) continue
 
     // Skip proper names (capitalized in middle of sentence)
