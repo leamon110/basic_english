@@ -223,7 +223,7 @@
     { title: "问路", lines: [
       ["A","Where is the station?","车站在哪里？"],
       ["B","Go down this road.","沿着这条路走。"],
-      ["A","Turn at the street.","在这条街转弯。"],
+      ["A","Turn at the next street.","在下一条街转弯。"],
       ["B","Is it far from here?","离这里远吗？"],
       ["A","It is near the river.","它在河边。"],
       ["B","Go across the bridge.","走过那座桥。"],
@@ -232,9 +232,9 @@
     ]},
     { title: "在车站", lines: [
       ["A","When does the train go?","火车什么时候开？"],
-      ["B","It goes at this time.","它这个时候开。"],
+      ["B","It goes in the morning.","它上午开。"],
       ["A","Does it stop at the next town?","它在下一个城镇停吗？"],
-      ["B","It stops at the town.","它在这个城镇停。"],
+      ["B","Yes. It stops there.","是的。它在那里停。"],
       ["A","What is the price of a ticket?","一张票的价格是多少？"],
       ["B","The price is high.","价格很高。"],
       ["A","Where do I get a ticket?","我在哪里拿票？"],
@@ -277,7 +277,7 @@
       ["B","Please make a copy of this letter.","请把这封信复印一份。"],
       ["A","Where do I put it?","我把它放在哪里？"],
       ["B","Put it in the top drawer.","把它放在最上面的抽屉里。"],
-      ["A","Is there other work?","还有其他工作吗？"],
+      ["A","Is there any other work?","还有其他工作吗？"],
       ["B","No. This is all.","没有了。就这些。"]
     ]},
     { title: "安排一天", lines: [
@@ -298,7 +298,7 @@
       ["A","Please give him this letter.","请把这封信交给他。"],
       ["B","I will give it to him.","我会把它交给他。"],
       ["A","Say to him that I will be here.","告诉他我会在这里。"],
-      ["B","I will say it to him.","我会告诉他。"]
+      ["B","I will say that to him.","我会把这件事告诉他。"]
     ]}
   ];
 
