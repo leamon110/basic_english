@@ -624,7 +624,7 @@
 
   lessonHTML[25] =
     panel('1. 本课词汇', '<p>本课以办公室为场景，学习信件、文件、工作关系和表达方式。</p>' +
-      vocab([['pen','钢笔'],['pencil','铅笔'],['secretary','秘书'],['stamp','邮票；印章'],['attention','注意'],['copy','副本；复制'],['damage','损坏；损害'],['fact','事实'],['guide','指南；指导'],['insurance','保险'],['list','清单；列表'],['profit','利润'],['receipt','收据'],['record','记录'],['representative','代表'],['request','请求'],['statement','陈述；声明'],['dependent','依赖的'],['important','重要的'],['necessary','必要的'],['private','私人的'],['public','公共的'],['responsible','负责的'],['separate','分开的']])) +
+      vocab([['pen','钢笔'],['pencil','铅笔'],['secretary','秘书'],['stamp','邮票；印章'],['attention','注意'],['copy','副本；复制'],['damage','损坏；损害'],['fact','事实'],['guide','指南；指导'],['insurance','保险'],['list','清单；列表'],['profit','利润'],['receipt','收据'],['record','记录'],['representative','代表'],['request','请求'],['statement','陈述；声明'],['dependent','依赖的'],['important','重要的'],['necessary','必要的'],['private','私人的'],['public','公共的'],['responsible','负责的'],['separate','分开的']]) +
       '<div class="course-note">原版 Step 25 还列出 link。它不在本项目当前 850 个基础词条中，因此单独标记为课文扩展词，不计入 850 词卡片。</div>' +
       '<div class="lesson-examples"><p>make a request（提出请求）</p><p>give attention to a letter（注意一封信）</p><p>make a statement（作出陈述）</p><p>make a profit（获得利润）</p><p>be responsible for the damage（对损坏负责）</p><p>be dependent on a person（依赖某人）</p></div>') +
     panel('2. -ing 形式作名词和形容词', '<p>原版 Step 25 继续扩展前面学过的 -ing 形式。它们不只表示正在发生的动作，也可以直接表示一项活动，或者描述某物正在进行的状态。</p>' +
