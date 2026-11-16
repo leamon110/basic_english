@@ -54,7 +54,7 @@
     { n: 45, title: "关于英国的一些笔记", en: "Some Notes about England", kind: "Reading" }
   ];
 
-  const lessons = [1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18];
+  const lessons = [1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18, 20];
 
   function vocab(items) {
     return '<div class="lesson-words">' + items.map(function (w) {
@@ -95,8 +95,8 @@
       '<header class="course-hero"><p class="course-kicker">C. K. OGDEN · 1930 ORIGINAL COURSE</p>' +
       '<h1>从 850 个词，学会说完整的英语</h1>' +
       '<p>按原版 45 Steps 的顺序学习。每课把词汇放进句子、阅读和练习中，而不是孤立地背单词。</p>' +
-      '<div class="course-note">目前已完成 12 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10、12、13、15、17、18。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
-      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：12 课 · 待补：Step 4、7、8、11、14、16</span></div>' +
+      '<div class="course-note">目前已完成 13 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10、12、13、15、17、18、20。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
+      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：13 课 · 待补：Step 4、7、8、11、14、16、19</span></div>' +
       '<div class="course-grid">' + cards + '</div></section>';
   }
 
@@ -573,6 +573,55 @@
       writingBox('step18-writing','Write five sentences. Use one possessive noun, one possessive pronoun, one omitted relative pronoun, and two contractions.'));
 
 
+  lessonHTML[20] =
+    panel('1. 本课词汇', '<p>本课学习天气、自然现象、方向和季节。</p>' +
+      vocab([['bulb','球茎；灯泡'],['cough','咳嗽'],['ice','冰'],['moon','月亮'],['rain','雨'],['ring','环；戒指'],['sneeze','打喷嚏'],['snow','雪'],['star','星星'],['sun','太阳'],['thunder','雷声'],['umbrella','雨伞'],['air','空气'],['heat','热量'],['mist','薄雾'],['month','月份'],['noise','噪声'],['ray','光线'],['slope','斜坡'],['summer','夏天'],['weather','天气'],['wind','风'],['winter','冬天'],['year','年'],['grey','灰色的'],['healthy','健康的'],['violent','猛烈的'],['wet','湿的'],['dry','干的'],['so','如此；因此'],['east','东'],['west','西'],['north','北'],['south','南'],['such','这样的']])) +
+    panel('2. such：指示形容词与程度', '<p><b>such</b> 表示“这样的、那样的、这种程度的”。</p>' +
+      '<div class="lesson-rule"><b>指回前文已经提到的事物</b><p>Men who make such journeys in such weather are foolish.</p><p>I said no such thing.</p><p>All such houses are cold in winter.</p></div>' +
+      '<div class="lesson-rule"><b>such ... as：举例或指出属于哪一类</b><p>He gave such answers as “Yes” and “No”.</p><p>A noise such as a cough or a sneeze keeps me awake.</p></div>' +
+      '<div class="lesson-rule"><b>such ... that：程度达到某种结果</b><p>The women gave the boy such a violent blow that he gave a cry of pain.</p><p>The weather was such that the ships went back to the harbor.</p></div>' +
+      '<p>两个位置规则：such 后面接单数可数名词时，要有 a / an；与数量形容词搭配时，such 放在数量词之后，例如 some such help、no such thing、all such houses。</p>') +
+    panel('3. 四个方向词：north / south / east / west', '<p>四个方向词可以作形容词、副词，也可以作名词。</p>' +
+      '<div class="lesson-table"><div><b>方向</b><b>反方向</b><b>形容词例子</b><b>副词例子</b></div><div><span>north</span><span>south</span><span>the north wall</span><span>go north</span></div><div><span>east</span><span>west</span><span>the east window</span><span>go east</span></div></div>' +
+      '<div class="lesson-examples"><p>The town is on the north side of the island.</p><p>The ship is waiting for a south wind.</p><p>The wind is coming from the east.</p><p>The weather is less cold in the west.</p></div>') +
+    panel('4. it 作形式主语', '<p>当真正的主语是后面的 to + operator 或 that 从句时，可以先用 it 放在句首，再把真正的内容放在后面。</p>' +
+      '<div class="lesson-examples"><p>It is wise to take an umbrella.</p><p>It is my opinion that the air is colder tonight.</p><p>It is clear that there has been some rain.</p><p>It gives me a pain in my back to do this work.</p></div>' +
+      '<p>it 在这里不指代前文的某个具体物品，而是先占据主语位置。</p>') +
+    panel('5. so 的四种用法', '<div class="lesson-rule"><b>so + 形容词 / 副词 + that</b><p>表示程度很高，以至于产生后面的结果：The wind was so violent that it took away my umbrella.</p></div>' +
+      '<div class="lesson-rule"><b>so 代替前面说过的动作或内容</b><p>May I take the boys on the ice? — Please do not do so.</p><p>You gave him a blow and he said so.</p><p>Is the weather warmer? — It seems so.</p></div>' +
+      '<div class="lesson-rule"><b>so + operator + 主语</b><p>用于表示“另一个人也一样”：Your hat seems dry and so does your coat. He says it is false and so do I.</p></div>' +
+      '<div class="lesson-rule"><b>so 作连接词</b><p>表示“因此、所以”：The weather is cold, so the flowers will be late this year.</p></div>' +
+      '<p>在否定句后面，不用 so 来代替前面的否定动作；要重复否定结构：The girls did not get wet, and the boys did not.</p>') +
+    panel('6. 天气表达与反意疑问句', '<p>描述天气时，可以用 good、bad、wet、warm、cold 等形容词描述 day 或 season。</p>' +
+      '<div class="lesson-examples"><p>It is not a bad day, is it?</p><p>The sky is clear now, isn't it?</p><p>It was cold last night, wasn't it?</p></div>' +
+      '<p>反意疑问句常用来邀请对方表示同意：前面是否定陈述，后面接肯定疑问；前面是肯定陈述，后面接否定疑问。</p>' +
+      '<p>school、church、hospital、market、prison 等词在表示相应活动或机构时，可以不加 a / the：go to school、be at church、take him to hospital。</p>') +
+    panel('7. 其他重要表达', '<div class="lesson-rule"><b>one day</b><p>表示“某一天”时使用 one day，不用 a day；前面通常不加 on。</p></div>' +
+      '<div class="lesson-rule"><b>one another</b><p>表示相互作用：The boys sent snowballs at one another.</p></div>' +
+      '<div class="lesson-rule"><b>keep ... from + -ing</b><p>表示阻止某事发生：The trees keep the wind from coming into the garden.</p></div>' +
+      '<div class="lesson-rule"><b>come out / come up / come off</b><p>花朵开放、植物长出地面、物品脱落等含义要结合具体对象判断。</p></div>' +
+      '<div class="lesson-rule"><b>anywhere / everywhere / nowhere</b><p>分别表示任何地方、每个地方、没有任何地方。</p></div>') +
+    panel('8. 阅读：A Talk about the Weather', '<p class="lesson-instruction">以下按原版 Step 20 的天气对话改写，保留天气变化、方向词和 so / such 等重点，不是原文逐字抄录。</p>' +
+      '<div class="lesson-passage"><p>A woman and another woman are talking outside a store. One says, “It is not a bad day, is it?” The other says, “There was some mist earlier this morning when I took the boys to school, but the sky is clear now and we will see the sun soon.”</p>' +
+      '<p class="lesson-translation">一个女人和另一个女人在商店外交谈。一个人说：“今天不算坏天气，对吧？”另一个人说：“今天早些时候我送男孩们去学校时有薄雾，但现在天空晴朗了，我们很快就能看到太阳。”</p>' +
+      '<p>They talk about a ring round the moon, the direction of the wind, and rain clouds. One woman says that the wind was so violent in the night that the noise kept her awake. The other says that trees keep the wind out of her garden, but the river makes the land wet.</p>' +
+      '<p class="lesson-translation">她们谈到月亮周围的光环、风向和雨云。一个女人说，夜里的风太猛烈，噪声让她无法入睡。另一个女人说，树木挡住了吹进花园的风，但河流让土地变得潮湿。</p>' +
+      '<p>One day, the woman went to the market and did not take an umbrella. There was not a cloud in the sky when she went out. On the way back, dark grey clouds came from nowhere. She got under a tree, but the rain came through the branches and she got wet.</p>' +
+      '<p class="lesson-translation">有一天，这个女人去市场时没有带雨伞。她出门时天空中一朵云也没有。回来的路上，深灰色的云突然从不知哪里出现。她躲到树下，但雨水穿过树枝，她还是淋湿了。</p>' +
+      '<p>They talk about health, coughs and sneezes. One woman says that her son had such a bad cough that they sent him south to get well. They say that summer will be better. One woman likes snow and ice; she and the boys made snowmen and sent snowballs at one another.</p>' +
+      '<p class="lesson-translation">她们谈到健康、咳嗽和打喷嚏。一个女人说，她的儿子咳嗽得很厉害，所以家人把他送到南方养病。她们认为夏天会好一些。一个女人喜欢雪和冰；她和男孩们堆雪人，还互相投掷雪球。</p>' +
+      '<p>Then thunder comes and the sky gets dark. More rain is coming, so the woman goes home quickly. She has been foolish again and has no umbrella with her.</p>' +
+      '<p class="lesson-translation">随后雷声响起，天空变暗。更多的雨就要来了，所以这个女人赶紧回家。她又一次忘记带雨伞了。</p></div>') +
+    panel('9. 练习', '<p><b>A. 用四个方向词各造一句。</b> north、south、east、west。</p>' +
+      writingBox('step20-directions','Write four sentences, one for each compass direction.') +
+      '<p><b>B. 选择 so 或 such。</b></p><div class="lesson-examples"><p>1. The wind was _____ violent that it took away my umbrella.</p><p>2. I have never seen _____ weather as this.</p><p>3. There was _____ a loud noise that I put my hands over my ears.</p><p>4. We do not get _____ cold weather every summer.</p></div>' +
+      answer('step20-so-such','查看参考答案','<p>1. so　2. such　3. such　4. such。</p>') +
+      '<p><b>C. 用 such、so、one another、anywhere、nowhere 造句。</b></p>' +
+      writingBox('step20-writing','Write five sentences using the words shown above.') +
+      '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. What was there when the woman took the boys to school?</p><p>2. What was the ring round the moon a sign of?</p><p>3. Why did the woman get wet on the way back from the market?</p><p>4. Why was the boy sent south?</p><p>5. What did the woman and the boys make on the ice?</p><p>6. Why did the woman go home quickly?</p></div>' +
+      answer('step20-reading','查看参考答案','<p>1. There was some mist.</p><p>2. It was a sign of wet weather.</p><p>3. The rain came through the branches of the tree.</p><p>4. He had a bad cough and was sent south to get well.</p><p>5. They made snowmen and sent snowballs at one another.</p><p>6. Thunder came, the sky got dark and more rain was coming.</p>'));
+
+
   function render() {
     const main = document.getElementById('main-content');
     if (main) main.innerHTML = courseShell();
@@ -583,7 +632,7 @@
     if (!main) return;
     if (!lessonHTML[n]) return openOriginal(n);
     const step = steps.find(function (s) { return s.n === n; });
-    const prerequisite = n === 12 ? '<div class="course-note">前置知识：本课会用到 Step 11 引入的数词 one。Step 11 尚未完成中文改编，请先查看原版课程。</div><button class="course-primary" onclick="BE.course.openOriginal(11)">打开原版 Step 11</button>' : ((n === 15 || n === 17) ? '<div class="course-note">前置知识：Step 14 / Step 16 是阅读课，目前尚未完成中文改编。可以先打开相应原版课程，再继续本课。</div><button class="course-primary" onclick="BE.course.openOriginal(' + (n - 1) + ')">打开原版 Step ' + (n - 1) + '</button>' : '');
+    const prerequisite = n === 12 ? '<div class="course-note">前置知识：本课会用到 Step 11 引入的数词 one。Step 11 尚未完成中文改编，请先查看原版课程。</div><button class="course-primary" onclick="BE.course.openOriginal(11)">打开原版 Step 11</button>' : ((n === 15 || n === 17 || n === 20) ? '<div class="course-note">前置知识：Step ' + (n - 1) + ' 是阅读课，目前尚未完成中文改编。可以先打开原版课程，再继续本课。</div><button class="course-primary" onclick="BE.course.openOriginal(' + (n - 1) + ')">打开原版 Step ' + (n - 1) + '</button>' : '');
     main.innerHTML = '<section class="course-page">' +
       lessonHeader(n, step.en, step.title + ' · ' + step.kind) +
       '<div class="course-lesson-meta">本课是 45 步原版课程中的第 ' + n + ' 步。按顺序学习词汇、句型、阅读和练习。</div>' +
