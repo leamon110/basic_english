@@ -519,8 +519,52 @@ function showWordDetail(word) {
   document.body.appendChild(modal)
 }
 
+// Play the bundled human recording for this word. The Android APK includes
+// audio/words/<word>.mp3 for every one of the 850 Basic English words.
+// Browser builds without the bundled files retain the existing TTS fallback.
+var _beWordAudioCache = window._beWordAudioCache || (window._beWordAudioCache = Object.create(null))
+var _beActiveWordAudio = null
+
 function playWord(word) {
-  window.BE.speak(word, 0.9)
+  var slug = String(word).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')
+  if (!slug) return
+
+  var audio = _beWordAudioCache[slug]
+  if (!audio) {
+    audio = new Audio('audio/words/' + slug + '.mp3')
+    audio.preload = 'auto'
+    audio.addEventListener('error', function() {
+      console.warn('[Basic English] Human pronunciation file unavailable:', slug)
+    }, { once: true })
+    _beWordAudioCache[slug] = audio
+  }
+
+  if (_beActiveWordAudio && _beActiveWordAudio !== audio) {
+    _beActiveWordAudio.pause()
+    _beActiveWordAudio.currentTime = 0
+  }
+  _beActiveWordAudio = audio
+
+  try {
+    audio.pause()
+    audio.currentTime = 0
+    var playback = audio.play()
+    if (playback && typeof playback.catch === 'function') {
+      playback.catch(function(error) {
+        console.warn('[Basic English] Human audio playback failed:', slug, error)
+        // The public web build does not bundle the large offline audio pack.
+        // Keep its original browser TTS behavior as a fallback.
+        if (window.BE && typeof window.BE.speak === 'function') {
+          window.BE.speak(word, 0.9)
+        }
+      })
+    }
+  } catch (error) {
+    console.warn('[Basic English] Human audio playback failed:', slug, error)
+    if (window.BE && typeof window.BE.speak === 'function') {
+      window.BE.speak(word, 0.9)
+    }
+  }
 }
 
 // ============================================================
