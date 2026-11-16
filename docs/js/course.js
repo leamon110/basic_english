@@ -278,12 +278,12 @@
     panel('1. 本课词汇', '<p>本课通过一个家庭的日常生活，把家庭成员、时间和日常活动放进连续阅读中。</p>' +
       vocab([['day','白天；一天'],['morning','早晨'],['night','夜晚'],['fire','火；炉火'],['potato','土豆'],['father','父亲'],['mother','母亲'],['daughter','女儿'],['son','儿子'],['manager','经理'],['brother','兄弟'],['sister','姐妹'],['great','大的；很好的'],['small','小的'],['married','已婚的']])) +
     panel('2. 阅读：An English Family', '<p class="lesson-instruction">以下是依据原版故事人物和情节编写的简化阅读，不是原文逐字抄录。重点是观察已学词汇如何组成连续句子。</p>' +
-      '<div class="lesson-passage"><p>The Robinson family has a small house. There are white curtains and boxes of flowers at the windows. Mr. Robinson is the manager of a small store. Mrs. Robinson does the work of the house. They have two sons and two daughters. One daughter is in the country. Their other daughter, Ellen, works in a large store. Tom works with his father, and Fred works in an office.</p>' +
-      '<p class="lesson-translation">罗宾逊一家有一所小房子。窗户旁有白色窗帘和装着花的盒子。罗宾逊先生是一家小商店的经理。罗宾逊太太做家务。他们有两个儿子和两个女儿。一个女儿住在乡村。另一个女儿埃伦在一家大商店工作。汤姆和父亲一起工作，弗雷德在办公室工作。</p>' +
-      '<p>In the morning, Ellen goes to work and takes some food with her. Tom and his father get their meal at the store. Fred has his food at the office. Mrs. Robinson gets food for the meal at night. When the family comes in, she puts potatoes and meat on the table.</p>' +
-      '<p class="lesson-translation">早晨，埃伦去上班，并带一些食物。汤姆和父亲在商店吃饭。弗雷德在办公室吃东西。罗宾逊太太准备晚餐。家人回来时，她把土豆和肉放在桌子上。</p>' +
-      '<p>After the meal, Mr. Robinson takes a book and sits by the fire. Ellen and her mother take the plates off the table. Tom and Fred may go out with their friends. On some nights, the family goes to the pictures. Mr. Robinson stays at home.</p>' +
-      '<p class="lesson-translation">晚饭后，罗宾逊先生拿起一本书，坐在炉火旁。埃伦和母亲把盘子从桌上拿走。汤姆和弗雷德可能和朋友外出。有些晚上，全家会去看电影。罗宾逊先生待在家里。</p></div>') +
+      '<div class="lesson-passage"><p>The family has a small house with white curtains and boxes of flowers at the windows. The father is the manager of a small store. The mother does the work of the house. They have a daughter in the country. Their other daughter is with them. She makes cushions and curtains in the work room of a great store. Their sons are not married. A son is in the office and the other is in the store with his father.</p>
+      <p class="lesson-translation">这个家庭有一所小房子，窗户旁有白色窗帘和装着花的盒子。父亲是一家小商店的经理。母亲做家务。他们有一个女儿住在乡村，另一个女儿和他们住在一起。她在一家大商店的工作间里制作靠垫和窗帘。他们的儿子都没有结婚。一个儿子在办公室，另一个和父亲一起在商店工作。</p>
+      <p>In the morning, the daughter goes to work and takes some food with her. The men do not take food with them. The mother gets food for the meal at night. When the family comes in, she puts potatoes and meat on the table.</p>
+      <p class="lesson-translation">早晨，女儿去上班，并带一些食物。男人们不带食物。母亲准备晚餐。家人回来时，她把土豆和肉放在桌子上。</p>
+      <p>After the meal, the father takes a book and goes to the place by the fire. The daughter and her mother take the plates off the table. The sons may go out with their friends. On some nights, the family goes to the pictures. The father does not go to the pictures.</p>
+      <p class="lesson-translation">晚饭后，父亲拿起一本书，去炉火旁边。女儿和母亲把盘子从桌上拿走。儿子们可能和朋友外出。有些晚上，全家会去看电影。父亲不去看电影。</p></div>') +
     panel('3. 阅读中的表达', '<div class="lesson-rule"><b>full of flowers</b><p>full 后面用 of 指出里面装着什么：boxes full of flowers（装满花的盒子）。</p></div>' +
       '<div class="lesson-rule"><b>形容词 + 后置补充</b><p>当形容词后面还有介词短语等补充时，形容词可以放在名词后面，例如 a box full of flowers。</p></div>' +
       '<div class="lesson-rule"><b>时间表达</b><p>in the morning；at night；on the days / on the nights。注意这几个搭配不能简单互换。</p></div>' +
