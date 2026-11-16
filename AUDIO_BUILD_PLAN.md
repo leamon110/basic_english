@@ -28,7 +28,7 @@ Do not report completion until the APK contents and playback behavior have been 
 
 The current implementation is on branch `basic-english-learning-upgrade`.
 
-Latest code commit at the time this plan was recorded: `bf1281e97fa8db1ee46129c7b82f9b82f2485be1`.
+Latest audio implementation commit: `bf1281e97fa8db1ee46129c7b82f9b82f2485be1`. The plan-only repository update was subsequently committed as `9531de15eda133186d1074935651fb7b2ad2a0bf`.
 
 The build script is `scripts/build_human_word_audio.py`. The workflow is `.github/workflows/build-android-offline.yml`.
 
@@ -55,6 +55,20 @@ Important: these changes have been committed, but the cache mechanism is not con
 - The previous workflow attempts did not produce a deliverable APK. Do not count their source-matching results as downloaded audio.
 
 This status is a snapshot, not a live status feed. Refresh the GitHub Actions run before making any current-state claim.
+
+## Mandatory startup check for every new conversation
+
+A plan file by itself does not force a new conversation to read it. Therefore the repository also contains `AGENTS.md`, which tells AI assistants the required startup procedure.
+
+Before doing any work in a new conversation, the assistant must:
+1. Read `AGENTS.md` and the complete `AUDIO_BUILD_PLAN.md`.
+2. Fetch the live branch head and latest Actions run(s) for `basic-english-learning-upgrade`.
+3. Inspect the newest run's job steps and artifacts, and logs when required.
+4. Check whether a run is active before any push or workflow trigger. The current workflow uses `cancel-in-progress: true`.
+5. Reconcile the plan's historical status snapshot with live GitHub facts.
+6. Only then continue with the next action.
+
+If the assistant cannot perform one of these checks, it must state the limitation and must not pretend that the check happened. These repository files are durable instructions for agents that read them; they do not technically force every ChatGPT conversation to load them. For ChatGPT, also add the companion rule to this Project's instructions.
 
 ## Execution sequence
 
