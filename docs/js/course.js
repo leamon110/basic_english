@@ -300,8 +300,8 @@
       answer('step6-preps','查看参考答案','<p>at；On；of；in。</p>') +
       '<p><b>C. 使用 or、but、while 各造一个句子。</b></p>' +
       writingBox('step6-writing','Write three sentences: one with or, one with but, and one with while.') +
-      '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. What does the daughter take with her when she goes to work?</p><p>2. Where does a son work?</p><p>3. What does the other daughter make?</p><p>4. Where do the sons sometimes go with their friends?</p><p>5. What does the father do after his meal?</p></div>' +
-      answer('step6-reading','查看参考答案','<p>1. She takes some food with her.</p><p>2. He works in the office.</p><p>3. She makes cushions and curtains.</p><p>4. They go out with their friends.</p><p>5. He takes a book and goes to the place by the fire.</p>'));
+      '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. What does the daughter take with her when she goes to work?</p><p>2. Where do the sons work?</p><p>3. What does the other daughter make?</p><p>4. Where do the sons sometimes go with their friends?</p><p>5. What does the father do after his meal?</p></div>' +
+      answer('step6-reading','查看参考答案','<p>1. She takes some food with her.</p><p>2. One son works in the office; the other works in the store with his father.</p><p>3. She makes cushions and curtains.</p><p>4. They go out with their friends.</p><p>5. He takes a book and goes to the place by the fire.</p>'));
 
   function render() {
     const main = document.getElementById('main-content');
