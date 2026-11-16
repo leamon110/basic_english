@@ -11,8 +11,8 @@ The app has two main modes:
   Both your input and the AI's reply are checked against the 850-word list.
 - **📖 Teaching** — browse the 850 words by category, drill Ogden's word-building
   and grammar rules, run spaced-repetition review, and look up the rules quickly.
-- **🧭 Course learning** — follow Ogden's original 45-step order. Ten lessons
-  (Steps 1, 2, 3, 5, 6, 9, 10, 12, 13 and 15) currently have Chinese-guided vocabulary, grammar,
+- **🧭 Course learning** — follow Ogden's original 45-step order. Twelve lessons
+  (Steps 1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17 and 18) currently have Chinese-guided vocabulary, grammar,
   reading and practice; other steps link to the original course until adapted.
 
 It is built with plain HTML, CSS, and vanilla JavaScript — **no build step, no
