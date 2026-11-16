@@ -336,7 +336,7 @@
       '<p><b>B. 把陈述句改成一般疑问句。</b></p><div class="lesson-examples"><p>All the bridges are new.</p><p>They will be ready before you see them.</p><p>The girls are going across the river.</p><p>I have a part of the branch in my hand.</p><p>The train may not go.</p></div>' +
       answer('step9-questions','查看参考答案','<p>Are all the bridges new?</p><p>Will they be ready before you see them?</p><p>Are the girls going across the river?</p><p>Have I a part of the branch in my hand?</p><p>May the train not go?</p>') +
       writingBox('step9-writing','Write three orders: one negative order with let, one with be, and one with come.') +
-      answer('step9-orders','查看参考答案','<p>Do not let the girl go.</p><p>Be quick.</p><p>Come with me.</p>');
+      answer('step9-orders','查看参考答案','<p>Do not let the girl go.</p><p>Be quick.</p><p>Come with me.</p>'));
 
   lessonHTML[10] =
     panel('1. 本课词汇', '<p>本课通过城镇里的建筑和街道学习新名词，以及 high / low。</p>' +
