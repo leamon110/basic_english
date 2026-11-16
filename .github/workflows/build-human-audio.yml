@@ -63,6 +63,7 @@ jobs:
         run: |
           echo "Only ${{ steps.coverage.outputs.matched }}/850 words have a verified, redistributable human recording."
           echo "No partial APK will be built."
+          exit 1
 
       - name: Set up Java
         if: steps.coverage.outputs.complete == 'true'

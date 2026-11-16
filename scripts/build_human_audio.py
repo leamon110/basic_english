@@ -25,11 +25,73 @@ USER_AGENT = "BasicEnglishHumanAudio/1.0 (https://github.com/leamon110/basic_eng
 DATASET_CARD_URL = "https://huggingface.co/datasets/Reza2kn/wiktionary-ipa-audio-en"
 RECORDING_CREDITS_URL = "https://lexcellent.app/data-sources/recordings"
 SHTOOKA_PACKS = [
-    ("emmanuel", "https://shtooka-downloads.yojik.eu/eng-balm-emmanuel_ogg.tar.bz2", 1),
-    ("verbs", "https://shtooka-downloads.yojik.eu/eng-balm-verbs_ogg.tar.bz2", 2),
-    ("judith", "https://shtooka-downloads.yojik.eu/eng-balm-judith_ogg.tar.bz2", 3),
+    # Archive URLs and collection-wide licences are taken from the Yojik
+    # collection index and each collection's own README.
+    {
+        "name": "emmanuel",
+        "url": "https://fsi-languages.yojik.eu/audiocollections/archives/eng-balm-emmanuel_flac.tar.xz",
+        "priority": 1,
+        "license": "CC BY 2.0 FR",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/fr/",
+        "author": "Emmanuel Revah",
+        "readme": "https://fsi-languages.yojik.eu/audiocollections/detailled/eng-balm-emmanuel/readme.txt",
+    },
+    {
+        "name": "verbs",
+        "url": "https://fsi-languages.yojik.eu/audiocollections/archives/eng-balm-verbs_flac.tar.xz",
+        "priority": 2,
+        "license": "CC BY 2.0 FR",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/fr/",
+        "author": "Alyson Heimer, Flora Bouillaguet, Charles Bouillaguet, Nicolas Vion",
+        "readme": "https://fsi-languages.yojik.eu/audiocollections/detailled/eng-balm-verbs/readme.txt",
+    },
+    {
+        "name": "judith",
+        "url": "https://fsi-languages.yojik.eu/audiocollections/archives/eng-balm-judith_flac.tar.xz",
+        "priority": 3,
+        "license": "CC BY 3.0 US",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/us/",
+        "author": "Judith Franck (Association Shtooka)",
+        "readme": "https://fsi-languages.yojik.eu/audiocollections/detailled/eng-balm-judith/readme.txt",
+    },
+    {
+        "name": "judith-proverbs",
+        "url": "https://fsi-languages.yojik.eu/audiocollections/archives/eng-balm-judith-proverbs_flac.tar.xz",
+        "priority": 4,
+        "license": "CC BY 3.0 US",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/us/",
+        "author": "Judith Franck (Association Shtooka)",
+        "readme": "https://fsi-languages.yojik.eu/audiocollections/detailled/eng-balm-judith-proverbs/readme.txt",
+    },
+    {
+        "name": "wcp-us",
+        "url": "https://fsi-languages.yojik.eu/audiocollections/archives/eng-wcp-us_flac.tar.xz",
+        "priority": 5,
+        "license": "CC BY 2.0 FR",
+        "license_url": "https://creativecommons.org/licenses/by/2.0/fr/",
+        "author": "Dvortygirl (collection packaged by Nicolas Vion)",
+        "readme": "https://fsi-languages.yojik.eu/audiocollections/detailled/eng-wcp-us/readme.txt",
+    },
+    {
+        "name": "wims-mary",
+        "url": "https://fsi-languages.yojik.eu/audiocollections/archives/eng-wims-mary_flac.tar.xz",
+        "priority": 6,
+        "license": "CC BY 3.0 US",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/us/",
+        "author": "Bernadette Perrin-Riou, Mary Maury",
+        "readme": "https://fsi-languages.yojik.eu/audiocollections/detailled/eng-wims-mary/readme.txt",
+    },
+    {
+        "name": "wims-mary-num",
+        "url": "https://fsi-languages.yojik.eu/audiocollections/archives/eng-wims-mary-num_flac.tar.xz",
+        "priority": 7,
+        "license": "CC BY 3.0 US",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/us/",
+        "author": "Bernadette Perrin-Riou, Mary Maury",
+        "readme": "https://fsi-languages.yojik.eu/audiocollections/detailled/eng-wims-mary-num/readme.txt",
+    },
 ]
-SHTOOKA_COLLECTION_PAGE = "https://www.yojik.eu/audiocollections/audiocollections.html"
+SHTOOKA_COLLECTION_PAGE = "https://fsi-languages.yojik.eu/audiocollections/audiocollections.html"
 
 # These are the General-American speakers explicitly used/identified by
 # open pronunciation projects. If their Wiktionary row lacks a dialect tag,
@@ -317,9 +379,12 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
             return 2
         return 3
 
-    for pack_name, url, pack_priority in SHTOOKA_PACKS:
-        archive_path = downloads_dir / (pack_name + ".tar.bz2")
-        print(f"[Shtooka] downloading {pack_name} collection", flush=True)
+    for pack in SHTOOKA_PACKS:
+        pack_name = pack["name"]
+        url = pack["url"]
+        pack_priority = pack["priority"]
+        archive_path = downloads_dir / (pack_name + ".tar.xz")
+        print(f"[Shtooka] downloading {pack_name} FLAC collection", flush=True)
         request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
         last_error = None
         for attempt in range(6):
@@ -339,7 +404,7 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
             continue
 
         matched_in_pack = 0
-        with tarfile.open(archive_path, "r:bz2") as archive:
+        with tarfile.open(archive_path, "r:xz") as archive:
             for member in archive:
                 if not member.isfile() or not member.name.lower().endswith((".ogg", ".flac", ".wav", ".mp3")):
                     continue
@@ -361,15 +426,36 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                     if word not in targets or (language and not language.startswith(("eng", "en"))):
                         continue
 
-                    licence = tag_value(tag_map, "SWAC_COLL_LICENSE") or tag_value(tag_map, "LICENSE")
+                    raw_licence = tag_value(tag_map, "SWAC_COLL_LICENSE") or tag_value(tag_map, "LICENSE")
+                    licence = raw_licence
+                    if not licence_allowed(licence):
+                        raw_lower = raw_licence.lower()
+                        blocked = any(token in raw_lower for token in (
+                            "noncommercial", "non-commercial", "non commercial",
+                            "no derivatives", "no-derivatives", "cc by-nc", "cc by-nd",
+                        ))
+                        # Some SWAC files store the Creative Commons URL rather
+                        # than its short name. Use the collection README's
+                        # licence only for those URL/description forms.
+                        url_or_description = (
+                            "creativecommons.org/licenses/" in raw_lower
+                            or "creative commons attribution" in raw_lower
+                        )
+                        if blocked or (raw_licence and not url_or_description):
+                            continue
+                        licence = pack["license"]
                     if not licence_allowed(licence):
                         continue
 
-                    speaker = tag_value(tag_map, "SWAC_SPEAK_NAME") or tag_value(tag_map, "SWAC_COLL_AUTHORS") or pack_name
+                    speaker = (
+                        tag_value(tag_map, "SWAC_SPEAK_NAME")
+                        or tag_value(tag_map, "SWAC_COLL_AUTHORS")
+                        or pack["author"]
+                    )
                     country = tag_value(tag_map, "SWAC_SPEAK_LANG_COUNTRY")
                     accent_note = tag_value(tag_map, "SWAC_SPEAK_PRON") or tag_value(tag_map, "SWAC_SPEAK_LANG_REGION")
                     collection_name = tag_value(tag_map, "SWAC_COLL_NAME") or ("Shtooka " + pack_name)
-                    collection_url = tag_value(tag_map, "SWAC_COLL_URL") or SHTOOKA_COLLECTION_PAGE
+                    collection_url = tag_value(tag_map, "SWAC_COLL_URL") or pack["readme"]
                     accent = country or accent_note or "English accent not specified"
                     ext = temp_path.suffix.lower()
                     destination = selected_dir / (slug(word) + "-" + pack_name + ext)
@@ -379,7 +465,7 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                         "speaker": speaker,
                         "artist": speaker,
                         "license": licence,
-                        "license_url": "",
+                        "license_url": pack["license_url"],
                         "title": member.name,
                         "source_page": collection_url,
                         "audio_url": "",
@@ -390,6 +476,7 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                         "source_priority": pack_priority,
                         "origin": "Shtooka human recording",
                         "collection": collection_name,
+                        "collection_readme": pack["readme"],
                     }
                     current = selected.get(word)
                     score = (candidate["accent_rank"], candidate["source_priority"])
@@ -446,7 +533,7 @@ def clean_meta(value: str) -> str:
 
 
 def licence_allowed(licence: str) -> bool:
-    value = re.sub(r"\\s+", " ", clean_meta(licence).lower().replace("-", " ").replace("_", " ")).strip()
+    value = re.sub(r"\s+", " ", clean_meta(licence).lower().replace("-", " ").replace("_", " ")).strip()
     if "noncommercial" in value or "non commercial" in value or "no derivatives" in value:
         return False
     if value == "cc0" or "public domain" in value:
