@@ -14,4 +14,4 @@ This is a small Android WebView wrapper that packages the complete static site f
 
 The GitHub Actions workflow `.github/workflows/build-android-offline.yml` copies `docs/` into the Android assets directory, builds a debug APK, and uploads it as an Actions artifact.
 
-The package ID for this voice-fix test build is `org.basicenglish.offline.voicefix`, with the launcher label `Basic English Voice Fix`. It is intentionally a separate app identity so it can be installed alongside the existing `org.basicenglish.offline` app without uninstalling it or risking its local learning data. After the new build is verified, the package identity can be reconciled in a later release.
+The package ID for this voice-fix test build is `org.basicenglish.offline.voicefix2`, with the launcher label `Basic English Voice Fix 2`. It is intentionally a separate app identity so it can be installed alongside the existing `org.basicenglish.offline` app without uninstalling it or risking its local learning data. After the new build is verified, the package identity can be reconciled in a later release.
