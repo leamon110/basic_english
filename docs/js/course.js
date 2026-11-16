@@ -54,7 +54,7 @@
     { n: 45, title: "关于英国的一些笔记", en: "Some Notes about England", kind: "Reading" }
   ];
 
-  const lessons = [1, 2, 3, 5, 6, 9, 10];
+  const lessons = [1, 2, 3, 5, 6, 9, 10, 12];
 
   function vocab(items) {
     return '<div class="lesson-words">' + items.map(function (w) {
@@ -95,8 +95,8 @@
       '<header class="course-hero"><p class="course-kicker">C. K. OGDEN · 1930 ORIGINAL COURSE</p>' +
       '<h1>从 850 个词，学会说完整的英语</h1>' +
       '<p>按原版 45 Steps 的顺序学习。每课把词汇放进句子、阅读和练习中，而不是孤立地背单词。</p>' +
-      '<div class="course-note">目前已完成 7 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
-      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：7 课 · 待补：Step 4、7、8</span></div>' +
+      '<div class="course-note">目前已完成 8 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10、12。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
+      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：8 课 · 待补：Step 4、7、8、11</span></div>' +
       '<div class="course-grid">' + cards + '</div></section>';
   }
 
@@ -372,6 +372,62 @@
       answer('step10-reading','查看参考答案','<p>1. No. Some are made of glass and steel.</p><p>2. Yes, it is.</p><p>3. He sees buildings in another town.</p><p>4. A young woman.</p><p>5. A new arch.</p><p>6. The streets are narrow and the windows are small, so the rooms get almost no light.</p>'));
 
 
+  lessonHTML[12] =
+    panel('1. 本课词汇', '<p>本课词汇来自浴室、洗澡、声音和情绪等场景。</p>' +
+      vocab([['basin','洗脸盆'],['bath','浴缸；洗澡'],['drain','排水口'],['drop','水滴'],['ear','耳朵'],['kick','踢'],['laugh','笑'],['soap','肥皂'],['sponge','海绵'],['steam','蒸汽'],['waste','浪费'],['water','水'],['argument','争论'],['blow','吹；一击'],['competition','竞争'],['hour','小时'],['minute','分钟'],['song','歌曲'],['sound','声音'],['voice','嗓音'],['angry','生气的'],['quiet','安静的'],['loud','响亮的'],['waiting','等待中的'],['warm','温暖的'],['cold','寒冷的']])) +
+    panel('2. 前置知识：one / ones', '<div class="course-note">原版 Step 12 使用了 Step 11 已介绍的数词 one。Step 11 的中文改编尚未完成，建议先打开原版 Step 11，再学习本节。</div>' +
+      '<button class="course-primary" onclick="BE.course.openOriginal(11)">打开原版 Step 11：Trouble with a Tooth</button>' +
+      '<p>one / ones 可以代替前面已经出现、而且可以计数的名词，避免重复。</p>' +
+      '<div class="lesson-examples"><p>This building is a school and that one is a hospital.</p><p>Are these girls the ones with the beautiful voices?</p><p>Take another one.</p><p>Do not take my sponge. It is the one in the basin.</p></div>' +
+      '<p>one 用于单数，ones 用于复数。它们可以与 a / an、no、some 等限定词，以及形容词组合：a new one、an old one、no red ones、some green ones。</p>' +
+      '<p>one 也可以代替 a / an 加名词；that / those 可以代替前面提到的名词，尤其用于 of 前表示所属关系：The voice is that of my mother. My hands are warm but those of my sister are cold.</p>') +
+    panel('3. do 代替前面出现过的 operator', '<p>do 除了作 operator 和构成否定句，还可以代替前面已经说过的 operator 或整个动作短语，避免重复。</p>' +
+      '<div class="lesson-examples"><p>Make no sound till I do.（do = make a sound）</p><p>My son will go if the others do.（do = go）</p></div>' +
+      '<p>do 不能代替 be。</p>') +
+    panel('4. only、still、why、again', '<div class="lesson-rule"><b>only</b><p>only 放在它所限定的部分前面，不只可以限定副词，也可以限定名词或代词。</p><p>There is only water in the pot.</p><p>The house has only one door.</p></div>' +
+      '<div class="lesson-rule"><b>still</b><p>普通 operator 前：The water still seems cold.</p><p>be 后：He is still here.</p><p>助动词后、完成 operator 前：Your friend will still be waiting.</p><p>疑问句主语后：Is she still angry?</p><p>注意否定位置会改变意思：He is not still here = 他已经不在这里；He is still not here = 他到现在还没来。</p></div>' +
+      '<div class="lesson-rule"><b>why</b><p>why 可以表示“……的原因”，引出原因相关的说明：That is why the room is full of steam.</p></div>' +
+      '<div class="lesson-rule"><b>again</b><p>again 通常放在它所修饰的陈述句末尾：You will not see that advertisement again.</p></div>') +
+    panel('5. high / low / early / late 作副词', '<p>表示空间或时间位置的形容词，可以不加 -ly，直接作副词使用。</p>' +
+      '<div class="lesson-examples"><p>Do not go very high.</p><p>The birds will not come low.</p><p>She has her meal early.</p><p>The trains go from this station quite late.</p></div>') +
+    panel('6. 时间介词：at / in / on', '<p>英语用 at、in、on 表达时间时，与空间位置的思路相似：at 表示时间点，on 表示时间线上的某一天或某个具体时段，in 表示一段时间范围。</p>' +
+      '<div class="lesson-rule"><b>at：时间点</b><p>at this minute；at that time。</p></div>' +
+      '<div class="lesson-rule"><b>in：一段时间范围</b><p>in the morning；in the day。in the night 特指夜晚中间的时段。</p></div>' +
+      '<div class="lesson-rule"><b>on：某个具体的早晨、白天或夜晚</b><p>on dark nights；on some mornings；on that night。限定词已经明确时，on 有时可以省略。</p></div>' +
+      '<p>记忆方法：时间点用 at，时间线上的某一天或某个具体时段用 on，一段时间范围用 in。</p>') +
+    panel('7. 阅读：At the Bathroom Door', '<p class="lesson-instruction">以下按原版 Step 12 的人物关系和事件顺序改写，保留本课重点词汇与句型，不是原文逐字抄录。</p>' +
+      '<div class="lesson-passage"><p>A man is waiting outside the bathroom door. The other man is in the bath. The man outside says, “Are you in the bath?” The other man says, “Yes.” The man outside says, “Please be quick. I am waiting. Do not take all the warm water.”</p>' +
+      '<p class="lesson-translation">一个男人正在浴室门外等候。另一个男人正在洗澡。门外的男人问：“你在洗澡吗？”里面的男人回答：“是。”门外的男人说：“请快一点。我还在等。不要把温水都用完。”</p>' +
+      '<p>The man in the bath says, “I am only letting in some cold water. The water is very warm this morning.” Some time goes by. The man outside is still waiting. The sound of a song comes from the bathroom. The man outside gives the door a blow.</p>' +
+      '<p class="lesson-translation">浴缸里的男人说：“我只是在放进一些冷水。今天早晨的水很暖和。”过了一段时间。门外的男人仍在等待。浴室里传出歌声。门外的男人敲了一下门。</p>' +
+      '<p>The man in the bath says, “Are you still there?” The man outside says, “I will be late for work again if I do not get my bath.” The man in the bath says, “You will get a bath before I do if you get up before I do.” The man outside says, “The water is not warm early in the morning. This competition for the bath makes me angry.”</p>' +
+      '<p class="lesson-translation">浴缸里的男人说：“你还在外面吗？”门外的男人说：“如果我不能尽快洗澡，我上班又要迟到了。”浴缸里的男人说：“如果你比我早起，你就会比我先洗澡。”门外的男人说：“清晨的水不暖和。每天为了洗澡而竞争让我很生气。”</p>' +
+      '<p>The man in the bath says, “This argument is a great waste of time. Be quiet for a minute. Go and get a new bit of soap while you are waiting.” The man outside goes to his room and gets soap. When he comes back, the other man is still in the bathroom. He gives the door a kick.</p>' +
+      '<p class="lesson-translation">浴缸里的男人说：“这场争论真是浪费时间。安静一分钟。等着的时候去拿一块新肥皂。”门外的男人回房间拿肥皂。他回来时，另一个男人仍在浴室里。他踢了一下门。</p>' +
+      '<p>The man in the bath lets the water out. The man outside gives the door a pull. The other man gives a push from the other side. The man outside goes down on his back. The other man comes out and gives a laugh. He says, “Your bath is ready. Be quick.” He gives a sponge and a bit of soap to the man.</p>' +
+      '<p class="lesson-translation">浴缸里的男人把水放掉。门外的男人拉门，里面的男人从另一边推门。门外的男人仰面倒下。里面的男人出来后笑了。他说：“你的浴缸准备好了。快一点。”他把海绵和一块肥皂递给门外的男人。</p>' +
+      '<p>The man goes into the bathroom. It is full of steam and water. He puts his hand in the bath. The water is almost cold. He lets out the water and has a wash.</p>' +
+      '<p class="lesson-translation">门外的男人走进浴室。里面满是蒸汽和水。他把手伸进浴缸。水几乎是冷的。他把水放掉，然后洗了洗。</p></div>') +
+    panel('8. 阅读中的 operator 搭配', '<div class="lesson-rule"><b>do work / give a blow / have a bath</b><p>英语常用 operator + 动作名词表达动作：do work、give a blow、have a bath。选择哪个 operator 取决于固定搭配和动作含义；原版给出的分类只是理解方向，不是可以机械套用的绝对规则。</p></div>' +
+      '<div class="lesson-rule"><b>in a minute</b><p>in + a/an + 时间词，可以表示经过这段时间之后：I will be out in a minute。</p><p>have my bath in an hour 则可以表示洗澡这个过程需要一小时，具体意思由语境决定。</p></div>' +
+      '<div class="lesson-rule"><b>go back to bed / get up</b><p>bed 表示睡觉、休息的状态时，可以不加 a / the；get up 可以表示从床上起来。</p></div>' +
+      '<div class="lesson-rule"><b>angry with</b><p>angry 后面用 with 指出产生愤怒情绪的对象：angry with me。</p></div>' +
+      '<div class="lesson-rule"><b>angrily</b><p>以辅音字母 + y 结尾的形容词加 -ly 时，y 改为 i：angry → angrily。</p></div>' +
+      '<div class="lesson-rule"><b>take + 时间</b><p>take 可以表示占用或需要一段时间：The bath takes almost an hour。</p></div>' +
+      '<div class="lesson-rule"><b>everywhere / somewhere / nowhere</b><p>这些复合副词分别表示每个地方、某个地方、没有任何地方。</p></div>') +
+    panel('9. 练习', '<p><b>A. 用 one / ones 填空。</b></p><div class="lesson-examples"><p>1. This building is a school and that _____ is a hospital.</p><p>2. Are these girls the _____ with the beautiful voices?</p><p>3. Take another _____.</p><p>4. We have no red _____.</p></div>' +
+      answer('step12-ones','查看参考答案','<p>one；ones；one；ones。</p>') +
+      '<p><b>B. 用 do 代替重复的 operator。</b></p><div class="lesson-examples"><p>Make no sound till I make a sound.</p><p>My son will go if the others go.</p></div>' +
+      answer('step12-do','查看参考答案','<p>Make no sound till I do.</p><p>My son will go if the others do.</p>') +
+      '<p><b>C. 选择 at / in / on。</b></p><div class="lesson-examples"><p>1. I am in pain _____ this minute.</p><p>2. She does no work _____ the day.</p><p>3. My mother does not go out _____ dark nights.</p><p>4. _____ some mornings he is late.</p><p>5. The men may get out of the prison _____ the night.</p></div>' +
+      answer('step12-time','查看参考答案','<p>at；in；on；On；in。</p>') +
+      '<p><b>D. 用 only、still、again、why 造句。</b></p>' +
+      writingBox('step12-writing','Write four sentences, one with each of these words: only, still, again, why.') +
+      answer('step12-model','查看参考句','<p>There is only water in the pot.</p><p>He is still here.</p><p>You will not see that advertisement again.</p><p>That is why the room is full of steam.</p>') +
+      '<p><b>E. 阅读理解。</b></p><div class="lesson-examples"><p>1. Why is the man outside the bathroom angry?</p><p>2. What does the man in the bath ask the other man to get?</p><p>3. What does the man outside do when he comes back?</p><p>4. What happens when one man pulls the door and the other pushes it?</p><p>5. What is the water like when the man puts his hand in the bath?</p></div>' +
+      answer('step12-reading','查看参考答案','<p>1. The competition for the bath makes him angry.</p><p>2. He asks him to get a new bit of soap.</p><p>3. He gives the door a kick.</p><p>4. The man outside goes down on his back.</p><p>5. The water is almost cold.</p>'));
+
+
   function render() {
     const main = document.getElementById('main-content');
     if (main) main.innerHTML = courseShell();
@@ -382,10 +438,11 @@
     if (!main) return;
     if (!lessonHTML[n]) return openOriginal(n);
     const step = steps.find(function (s) { return s.n === n; });
+    const prerequisite = n === 12 ? '<div class="course-note">前置知识：本课会用到 Step 11 引入的数词 one。Step 11 尚未完成中文改编，请先查看原版课程。</div><button class="course-primary" onclick="BE.course.openOriginal(11)">打开原版 Step 11</button>' : '';
     main.innerHTML = '<section class="course-page">' +
       lessonHeader(n, step.en, step.title + ' · ' + step.kind) +
       '<div class="course-lesson-meta">本课是 45 步原版课程中的第 ' + n + ' 步。按顺序学习词汇、句型、阅读和练习。</div>' +
-      lessonHTML[n] +
+      prerequisite + lessonHTML[n] +
       '<button class="course-back" onclick="BE.course.render()">← 返回课程目录</button></section>';
     window.scrollTo(0, 0);
   }
