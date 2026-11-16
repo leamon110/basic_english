@@ -323,7 +323,6 @@ def fetch_commons_licences(candidates: dict):
         item["title"].replace("_", " ")
         for options in candidates.values()
         for item in options
-        if not item.get("license")
     })
     metadata = {}
     print(f"[Commons API] checking {len(titles)} candidate files for licence metadata", flush=True)
