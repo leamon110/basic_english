@@ -591,6 +591,7 @@ body {
   padding: 12px 8px;
   text-align: center;
   transition: all .15s;
+  cursor: pointer;
 }
 
 .word-card:hover {
@@ -598,10 +599,50 @@ body {
   box-shadow: var(--shadow);
 }
 
+.word-card-word-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 26px;
+  margin-bottom: 4px;
+}
+
 .word-card-word {
   font-size: .95rem;
   font-weight: 600;
-  margin-bottom: 4px;
+  overflow-wrap: anywhere;
+}
+
+.word-card-sound {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 26px;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--surface2);
+  color: var(--primary);
+  font-size: .85rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform .15s, background .15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.word-card-sound:hover {
+  transform: scale(1.12);
+  background: rgba(79,140,255,.12);
+}
+
+.word-card-sound:active { transform: scale(.95); }
+
+.word-card-sound:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .word-card-cat {
