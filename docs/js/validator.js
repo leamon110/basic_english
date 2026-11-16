@@ -143,8 +143,12 @@ function isAllowedWord(word) {
     }
   }
 
-  // 11. Check for single-letter words that should be valid
-  if (lower === "a" || lower === "i") return { ok: true }
+  // 11. Articles and compounds explicitly taught in the Basic course
+  // "an" is the grammatical form of "a" before a vowel sound.
+  // "another", "into", and these compounds are taught as Basic constructions.
+  if (["a", "an", "i", "another", "into", "bedroom", "bookshelf", "ticket-office", "work-room"].includes(lower)) {
+    return { ok: true, isBasicConstruction: true }
+  }
 
   // 12. Numerals (basic)
   if (/^\d+(?:st|nd|rd|th)?$/.test(lower)) return { ok: true, isNumeral: true }
