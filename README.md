@@ -73,10 +73,12 @@ basic_english/
 └── ogden-rules-and-techniques.md  # Reference notes on Ogden's rules
 ```
 
-> The app lives in a single folder, `docs/`, which is also what GitHub Pages
-> serves (Settings → Pages → Source: `main` branch, `/docs` folder). It is
-> published at <https://mythquan.github.io/basic_english/>. All asset paths are
-> relative so the app works correctly under that sub-path.
+> The app lives in a single folder, `docs/`. This repository is a fork of
+> `mythquan/basic_english`; the upstream site at
+> <https://mythquan.github.io/basic_english/> is separate and is not updated by
+> commits to this fork. The fork's planned project-site URL is
+> <https://leamon110.github.io/basic_english/> after GitHub Pages is enabled.
+> All asset paths are relative so the app works correctly under a sub-path.
 
 ---
 
@@ -116,13 +118,20 @@ The default preset is DeepSeek (`https://api.deepseek.com`, `deepseek-chat`).
 
 ## Deployment
 
-The app is fully static. It is published with **GitHub Pages** from the `/docs`
-folder of the `main` branch (Settings → Pages → Source). No build step is
-required — commit to `docs/` and the live site updates.
+The app is fully static. The workflow
+`.github/workflows/deploy-pages.yml` publishes the `docs/` folder when changes
+reach the `master` branch, or when the workflow is run manually. No site build
+step is required.
+
+**One-time fork setup:** GitHub Pages is not enabled for this fork yet. A
+repository administrator must open Settings → Pages and set **Source** to
+**GitHub Actions**. After that, merging the course changes to `master` will
+trigger the deployment workflow.
 
 The Android package in `basic-english-package/` was generated with
 [PWABuilder](https://www.pwabuilder.com/); the included `Readme.html` links to
-the signing / next-steps guide.
+the signing / next-steps guide. A refreshed APK has not yet been built from this
+fork's updated course.
 
 ---
 
