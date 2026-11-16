@@ -1,0 +1,127 @@
+name: Build Basic English with Human Word Audio
+
+on:
+  push:
+    branches:
+      - basic-english-human-pronunciation
+    paths:
+      - 'docs/js/data.js'
+      - 'docs/js/teaching.js'
+      - 'docs/js/course.js'
+      - 'scripts/build_human_audio.py'
+      - 'android-offline/**'
+      - '.github/workflows/build-human-audio.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      complete: ${{ steps.coverage.outputs.complete }}
+      matched: ${{ steps.coverage.outputs.matched }}
+      missing: ${{ steps.coverage.outputs.missing }}
+    steps:
+      - name: Check out the isolated human-audio branch
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install audio encoder
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Match all 850 words against licensed human recordings
+        id: coverage
+        run: |
+          python scripts/build_human_audio.py \
+            --check-only \
+            --manifest build/human-audio-manifest.json \
+            --report build/human-audio-coverage.json
+
+      - name: Upload the full coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: basic-english-human-audio-coverage
+          path: |
+            build/human-audio-coverage.json
+            build/human-audio-manifest.json
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Stop if any of the 850 words has no verified human recording
+        if: steps.coverage.outputs.complete != 'true'
+        run: |
+          echo "Only ${{ steps.coverage.outputs.matched }}/850 words have a verified, redistributable human recording."
+          echo "No partial APK will be built."
+
+      - name: Set up Java
+        if: steps.coverage.outputs.complete == 'true'
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        if: steps.coverage.outputs.complete == 'true'
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Use the Android SDK preinstalled on the runner
+        if: steps.coverage.outputs.complete == 'true'
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager | head -n 1)"
+          if [ -z "$SDKMANAGER" ]; then
+            echo "Android SDK command-line tools were not found."
+            exit 1
+          fi
+          echo "$(dirname "$SDKMANAGER")" >> "$GITHUB_PATH"
+          "$SDKMANAGER" --version
+
+      - name: Install Android platform and build tools
+        if: steps.coverage.outputs.complete == 'true'
+        run: |
+          yes | sdkmanager --licenses
+          sdkmanager "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Package the current learning site as local app assets
+        if: steps.coverage.outputs.complete == 'true'
+        run: |
+          mkdir -p android-offline/app/src/main/assets/www
+          cp -R docs/. android-offline/app/src/main/assets/www/
+
+      - name: Download and package all 850 human recordings
+        if: steps.coverage.outputs.complete == 'true'
+        run: |
+          python scripts/build_human_audio.py \
+            --download \
+            --manifest build/human-audio-manifest.json \
+            --output android-offline/app/src/main/assets/www/audio/words \
+            --credits android-offline/app/src/main/assets/www/audio/CREDITS.md
+
+      - name: Build the Android APK
+        if: steps.coverage.outputs.complete == 'true'
+        working-directory: android-offline
+        run: gradle --no-daemon --stacktrace :app:assembleDebug
+
+      - name: Give the APK a clear file name
+        if: steps.coverage.outputs.complete == 'true'
+        run: cp android-offline/app/build/outputs/apk/debug/app-debug.apk Basic-English-Human-Voice.apk
+
+      - name: Upload the complete human-audio APK
+        if: steps.coverage.outputs.complete == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: basic-english-human-voice-apk
+          path: Basic-English-Human-Voice.apk
+          if-no-files-found: error
+          retention-days: 30
