@@ -24,6 +24,7 @@ function renderPage(page) {
   if (page === 'home') renderHome(main)
   else if (page === 'conversation') window.BE.chat.renderChat(main)
   else if (page === 'teaching') window.BE.teaching.renderTeaching(main)
+  else if (page === 'course') window.BE.course.render()
 }
 
 function renderHome(container) {
@@ -41,6 +42,12 @@ function renderHome(container) {
         </p>
       </div>
       <div class="home-cards">
+        <div class="home-card" onclick="navigateTo('course')">
+          <div class="home-card-icon">🧭</div>
+          <h2>课程学习</h2>
+          <p>从单词进入句子、阅读和自己造句。无需 AI 服务。</p>
+          <span class="home-card-link">开始系统学习 →</span>
+        </div>
         <div class="home-card" onclick="navigateTo('conversation')">
           <div class="home-card-icon">💬</div>
           <h2>Conversation</h2>
