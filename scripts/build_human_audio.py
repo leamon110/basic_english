@@ -120,12 +120,16 @@ def get_speaker(filename: str):
         return None, None
 
     for speaker in sorted(SPEAKER_LICENSE, key=len, reverse=True):
-        tokens = {speaker, speaker.replace(" ", "_")}
+        aliases = SPEAKER_FILE_ALIASES.get(speaker, [speaker])
+        tokens = set()
+        for alias in aliases:
+            tokens.add(alias)
+            tokens.add(alias.replace(" ", "_"))
         for token in tokens:
             prefix = token + "-"
             if body.startswith(prefix):
                 word_part = body[len(prefix):]
-                word_part = re.sub(r"\.(wav|ogg|oga|mp3|flac|m4a|opus)(\.mp3)?$", "", word_part, flags=re.I)
+                word_part = re.sub(r"\\.(wav|ogg|oga|mp3|flac|m4a|opus)(\\.mp3)?$", "", word_part, flags=re.I)
                 return speaker, norm(word_part)
     return None, None
 
@@ -281,8 +285,9 @@ def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
                 with urllib.request.urlopen(request, timeout=90) as response:
                     content_type = response.headers.get("Content-Type", "").lower()
                     data = response.read()
-                if len(data) < 500 or ("audio" not in content_type and not data.startswith(b"ID3") and data[:2] != b"\xff\xfb"):
-                    raise RuntimeError(f"Unexpected audio response: {content_type}, {len(data)} bytes")
+                mp3_frame = len(data) > 2 and data[0] == 0xff and (data[1] & 0xe0) == 0xe0
+                if len(data) < 500 or ("audio" not in content_type and not data.startswith(b"ID3") and not mp3_frame):
+                    raise RuntimeError(f"Unexpected audio response: {content_type}, {len(data)} bytes)
                 last_error = None
                 break
             except Exception as exc:
