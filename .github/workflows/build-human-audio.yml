@@ -98,6 +98,12 @@ jobs:
           mkdir -p android-offline/app/src/main/assets/www
           cp -R docs/. android-offline/app/src/main/assets/www/
 
+      - name: Install audio encoder for original WAV recordings
+        if: steps.coverage.outputs.complete == 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
       - name: Download and package all 850 human recordings
         if: steps.coverage.outputs.complete == 'true'
         run: |
