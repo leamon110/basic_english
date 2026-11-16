@@ -91,20 +91,27 @@ function renderHome(container) {
 }
 
 // ============================================================
-// SPEECH SYNTHESIS (cross-browser)
-// Use the browser's SpeechSynthesis API and let the OS select the
-// matching voice from the utterance language when getVoices() is empty.
-// An empty voice list is NOT proof that speech synthesis is unavailable:
-// some Android/Chrome combinations populate it late or leave it empty.
+// SPEECH SYNTHESIS
+// Prefer the Android app's native TextToSpeech bridge when available.
+// Fall back to the browser SpeechSynthesis API for normal browsers/TWA.
+// An empty getVoices() list is not proof that the browser cannot speak.
 // ============================================================
 var _beVoices = []
 var _beSpeechAvailable = false
 var _beSpeechLastState = 'not-initialized'
 var _beSpeechLastError = null
 
-function _beHasSpeechApi() {
+function _beHasBrowserSpeechApi() {
   return !!(window.speechSynthesis &&
             typeof window.SpeechSynthesisUtterance === 'function')
+}
+
+function _beHasNativeSpeechApi() {
+  return !!(window.AndroidTTS && typeof window.AndroidTTS.speak === 'function')
+}
+
+function _beHasSpeechApi() {
+  return _beHasNativeSpeechApi() || _beHasBrowserSpeechApi()
 }
 
 function _beSetSpeechAvailable(available) {
@@ -126,15 +133,18 @@ function _beLoadVoices() {
     return
   }
 
-  try {
-    _beVoices = window.speechSynthesis.getVoices() || []
-  } catch (e) {
-    // Voice enumeration can fail independently of the speak() API.
+  // Voice enumeration is optional. Native Android TTS does not need it,
+  // and Android/Chrome may return an empty list while still being able to speak.
+  if (_beHasBrowserSpeechApi()) {
+    try {
+      _beVoices = window.speechSynthesis.getVoices() || []
+    } catch (e) {
+      _beVoices = []
+    }
+  } else {
     _beVoices = []
   }
 
-  // API presence is enough to attempt playback. If no explicit English
-  // voice is listed, the utterance's en-US language is passed to the OS.
   _beSetSpeechAvailable(true)
 }
 
@@ -148,21 +158,24 @@ function _beInitSpeech() {
   _beSetSpeechAvailable(true)
   _beLoadVoices()
 
-  // Voice enumeration may complete asynchronously. This event is useful
-  // for selecting an explicit English voice, but is not required to speak.
-  var synth = window.speechSynthesis
-  try {
-    if (typeof synth.addEventListener === 'function') {
-      synth.addEventListener('voiceschanged', _beLoadVoices)
-    } else {
-      synth.onvoiceschanged = _beLoadVoices
+  // Browser voice lists may load asynchronously. This is only for choosing
+  // a named voice; it is not a prerequisite for sending speech to the OS.
+  if (_beHasBrowserSpeechApi()) {
+    var synth = window.speechSynthesis
+    try {
+      if (typeof synth.addEventListener === 'function') {
+        synth.addEventListener('voiceschanged', _beLoadVoices)
+      } else {
+        synth.onvoiceschanged = _beLoadVoices
+      }
+    } catch (e) {
+      // Keep speech enabled; voiceschanged is optional.
     }
-  } catch (e) {
-    // Keep the API enabled; getVoices()/voiceschanged are optional helpers.
   }
 }
 
 function _bePickEnglishVoice() {
+  if (!_beHasBrowserSpeechApi()) return null
   if (!_beVoices.length) _beLoadVoices()
   return _beVoices.find(function(v) { return /en[-_]US/i.test(v.lang) }) ||
          _beVoices.find(function(v) { return /^en/i.test(v.lang) }) ||
@@ -170,7 +183,25 @@ function _bePickEnglishVoice() {
 }
 
 function speak(text, rate) {
-  if (!_beHasSpeechApi() || !text) {
+  if (!text) return false
+
+  // The offline Android wrapper exposes the system TextToSpeech engine
+  // directly. Prefer it so playback does not depend on WebView's voice list.
+  if (_beHasNativeSpeechApi()) {
+    try {
+      var accepted = window.AndroidTTS.speak(String(text), rate || 0.9)
+      if (accepted !== false) {
+        _beSpeechLastState = 'native-queued'
+        _beSpeechLastError = null
+        return true
+      }
+    } catch (e) {
+      _beSpeechLastError = String(e)
+      console.warn('[Basic English] Native Android TTS failed; trying browser TTS.', e)
+    }
+  }
+
+  if (!_beHasBrowserSpeechApi()) {
     _beSpeechLastState = 'unsupported'
     _beSpeechLastError = 'speech-api-unavailable'
     _beSetSpeechAvailable(false)
@@ -186,8 +217,8 @@ function speak(text, rate) {
       u.volume = 1
       u.pitch = 1
 
-      // An explicit voice is optional. When getVoices() is empty, keep
-      // voice unset so Android/Chrome can select its system en-US voice.
+      // If no explicit English voice is listed, leave voice unset and let
+      // Android/Chrome select the system voice from the en-US language tag.
       var v = _bePickEnglishVoice()
       if (v) u.voice = v
 
@@ -214,7 +245,6 @@ function speak(text, rate) {
     }
   }
 
-  // Resume a paused Android/Chrome speech queue before submitting a new word.
   try {
     if (synth.paused && typeof synth.resume === 'function') synth.resume()
     if (synth.speaking || synth.pending) {
@@ -237,8 +267,14 @@ function isSpeechAvailable() {
 }
 
 function getSpeechDiagnostics() {
+  var nativeStatus = null
+  if (_beHasNativeSpeechApi() && typeof window.AndroidTTS.getStatus === 'function') {
+    try { nativeStatus = window.AndroidTTS.getStatus() } catch (e) {}
+  }
   return {
     supported: _beHasSpeechApi(),
+    nativeAndroidTTS: _beHasNativeSpeechApi(),
+    nativeStatus: nativeStatus,
     voiceCount: _beVoices.length,
     voices: _beVoices.map(function(v) {
       return { name: v.name, lang: v.lang, isDefault: !!v.default }
