@@ -201,6 +201,7 @@
       writingBox('step2-writing-a','Write five sentences about the room. Use words from this lesson.') +
       '<p><b>B. 写出房子的五个部分。</b> 可以使用 wall、floor、door、window 等词。</p>' +
       writingBox('step2-writing-b','Write five parts of a house in English.') +
+      answer('step2-house-parts','查看参考答案','<p>wall；floor；roof；door；window。</p>') +
       '<p><b>C. 按句型造句。</b> 练习 put + against / between / by，take + off；再用 is / are + in / on / over / under。</p>' +
       writingBox('step2-writing-c','Write at least four sentences using the patterns above.') +
       answer('step2-models','查看参考句','<p>Put the cushion against the wall.</p><p>Put the seat between the table and the bed.</p><p>Put the book by the books.</p><p>I take the book off the table.</p><p>The books are on the table.</p><p>The flower is under the table.</p><p>The picture is over the books.</p><p>The flowers are in the pot.</p>') +
@@ -210,7 +211,8 @@
   lessonHTML[3] =
     panel('1. 本课词汇', '<p>本课增加与人物、物品、移动和交付有关的词。</p>' +
       vocab([['arm','手臂'],['box','盒子'],['hand','手'],['man','男人'],['office','办公室'],['pocket','口袋'],['shelf','架子'],['ticket','票'],['side','侧面'],['other','其他的'],['across','穿过']])) +
-    panel('本课结构词', '<p>本课同时学习以下方向词、关系词和代词。点击可听发音。</p>' + vocab([['come','来'],['go','去'],['give','给'],['get','得到；拿到'],['across','穿过'],['at','在；位于'],['of','……的'],['to','到；给'],['from','从'],['with','和；带有'],['he','他'],['she','她'],['here','这里'],['there','那里']])) +
+    panel('本课结构词', '<p>本课同时学习以下方向词、关系词和代词。点击可听发音。</p>' + vocab([['come','来'],['go','去'],['give','给'],['get','得到；拿到'],['across','穿过'],['at','在；位于'],['of','……的'],['to','到；给'],['from','从'],['with','和；带有'],['here','这里'],['there','那里']])) +
+    panel('代词形式（语法形式）', '<p>原版课程在本课学习 he / she 等第三人称代词形式。这些由代词表管理，不另计入 850 个基础词。</p>' + vocab([['he','他'],['she','她'],['him','他（宾格）'],['her','她（宾格／所有格）'],['his','他的'],['me','我（宾格）'],['my','我的']])) +
     panel('2. 名词复数的变化', '<p>本课在规则复数之外，加入三类拼写变化。</p>' +
       '<div class="lesson-examples"><p>man → men；woman → women（不规则）</p><p>box → boxes（以 x 结尾，加 -es）</p><p>shelf → shelves（部分以 f / fe 结尾的词变为 -ves）</p></div>' +
       '<p>名词放在另一个名词前作限定时，通常保持单数：office floor（办公室的地板）、side door（侧门）。</p>') +
@@ -301,7 +303,7 @@
       '<p><b>C. 使用 or、but、while 各造一个句子。</b></p>' +
       writingBox('step6-writing','Write three sentences: one with or, one with but, and one with while.') +
       '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. What does the daughter take with her when she goes to work?</p><p>2. Where do the sons work?</p><p>3. What does the other daughter make?</p><p>4. Where do the sons sometimes go with their friends?</p><p>5. What does the father do after his meal?</p></div>' +
-      answer('step6-reading','查看参考答案','<p>1. She takes some food with her.</p><p>2. One son works in the office; the other works in the store with his father.</p><p>3. She makes cushions and curtains.</p><p>4. They go out with their friends.</p><p>5. He takes a book and goes to the place by the fire.</p>'));
+      answer('step6-reading','查看参考答案','<p>1. She takes some food with her.</p><p>2. A son works in the office; the other works in the store with his father.</p><p>3. She makes cushions and curtains.</p><p>4. They go out with their friends.</p><p>5. He takes a book and goes to the place by the fire.</p>'));
 
   function render() {
     const main = document.getElementById('main-content');
