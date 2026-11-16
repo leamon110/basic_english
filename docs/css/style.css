@@ -1089,7 +1089,8 @@ body {
 
 /* ---- SPEECH UNAVAILABLE (Android WebView, WeChat browser, etc.) ---- */
 body.speech-unavailable .msg-sound,
-body.speech-unavailable .word-sound {
+body.speech-unavailable .word-sound,
+body.speech-unavailable .word-card-sound {
   display: none !important;
 }
 
