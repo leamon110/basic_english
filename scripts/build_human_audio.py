@@ -141,17 +141,28 @@ def get_speaker(filename: str, word: str = ""):
     return None
 
 
-def has_us_audio(row: dict, speaker: str | None) -> bool:
-    if speaker in GA_SPEAKERS:
-        return True
+def get_audio_tags(row: dict) -> list[str]:
     tags = row.get("audio_tags") or []
     if isinstance(tags, str):
         try:
             tags = json.loads(tags)
         except Exception:
             tags = [tags]
-    normalized = {str(tag).strip().lower().replace("_", "-") for tag in tags}
-    return bool(normalized & {"general-american", "us", "american-english"})
+    return [str(tag).strip() for tag in tags if str(tag).strip()]
+
+
+def accent_rank(row: dict, speaker: str | None, filename: str) -> int:
+    tags = {tag.lower().replace("_", "-") for tag in get_audio_tags(row)}
+    name = urllib.parse.unquote(str(filename or "")).lower()
+    if speaker in GA_SPEAKERS or name.startswith("en-us-") or tags & {"general-american", "us", "american-english"}:
+        return 0
+    if name.startswith("en-uk-") or tags & {"received-pronunciation", "uk", "british", "southern-england", "scotland"}:
+        return 1
+    if tags & {"canada", "canadian", "australia", "new-zealand", "ireland"}:
+        return 2
+    if tags:
+        return 3
+    return 4
 
 
 def get_original_commons_title(row: dict) -> str:
@@ -200,8 +211,6 @@ def fetch_hf_candidates(words: list[str], groups: dict):
                 continue
             filename = row.get("audio_filename", "")
             speaker = get_speaker(filename, word)
-            if not has_us_audio(row, speaker):
-                continue
             audio_url = row.get("audio_url", "")
             if not isinstance(audio_url, str) or not audio_url.startswith("https://upload.wikimedia.org/"):
                 continue
@@ -216,11 +225,27 @@ def fetch_hf_candidates(words: list[str], groups: dict):
                 "audio_url": audio_url,
                 "source_page": row.get("source_page", ""),
                 "pos": str(row.get("pos", "")).lower(),
-                "audio_tags": row.get("audio_tags", []),
+                "audio_tags": get_audio_tags(row),
+                "accent_rank": accent_rank(row, speaker, filename),
                 "ipa": row.get("ipa", ""),
                 "origin": "Wiktionary/Wikimedia Commons",
                 "audio_format": "mp3",
             })
+    # Keep up to three candidates per word, preferring US, then UK, then
+    # other English accents. Commons licence metadata is checked afterwards.
+    for word, options in list(candidates.items()):
+        unique = {}
+        for item in options:
+            unique[item["title"]] = item
+        options = list(unique.values())
+        hint = ""
+        options.sort(key=lambda item: (
+            item.get("accent_rank", 4),
+            SPEAKER_PRIORITY.index(item["speaker"]) if item["speaker"] in SPEAKER_PRIORITY else 999,
+            0 if (not hint or item.get("pos") == hint) else 1,
+            item["title"].lower(),
+        ))
+        candidates[word] = options[:3]
     print(f"[HF dataset] rows scanned: {rows_seen:,}")
     return candidates
 
@@ -354,9 +379,9 @@ def choose_recordings(words: list[str], groups: dict, wodencafe: dict, candidate
         options = list(unique.values())
         hint = get_pos_hint(groups[norm(word)])
         options.sort(key=lambda item: (
+            item.get("accent_rank", 4),
             SPEAKER_PRIORITY.index(item["speaker"]) if item["speaker"] in SPEAKER_PRIORITY else 999,
             0 if (not hint or item.get("pos") == hint or (hint == "adjective" and item.get("pos") == "adj")) else 1,
-            0 if "General-American" in item.get("audio_tags", []) else 1,
             item["title"].lower(),
         ))
         for item in options:
@@ -419,11 +444,12 @@ def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
         "",
         "850 human word recordings sourced from Lingua Libre and Wiktionary/Wikimedia Commons.",
         "Each audio file retains its own Commons licence. CC BY and CC BY-SA files are attributed below.",
+        "US/General-American recordings are preferred; UK and other English accents are used only when no US recording is available.",
         "WAV sources are converted to compact mono MP3 for offline playback; MP3 transcodes from Wikimedia are kept unchanged.",
         f"Dataset index: {DATASET_CARD_URL}",
         f"Speaker/licence reference: {RECORDING_CREDITS_URL}",
         "",
-        "| Word | Speaker / Author | Licence | Original Commons file | Source |",
+        "| Word | Speaker / Author | Accent tag | Licence | Original Commons file | Source |",
         "|---|---|---|---|---|",
     ]
     total_bytes = 0
@@ -473,8 +499,9 @@ def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
         title = item["title"]
         commons_page = "https://commons.wikimedia.org/wiki/File:" + urllib.parse.quote(title.replace(" ", "_"))
         source_page = item.get("source_page") or commons_page
+        accent = ", ".join(item.get("audio_tags", [])) or ("General-American" if speaker == "Wodencafe" else "Accent not tagged")
         credits.append(
-            f"| {word} | {speaker} | {item['license']} | "
+            f"| {word} | {speaker} | {accent} | {item['license']} | "
             f"[{title}]({commons_page}) | [source]({source_page}) |"
         )
         if number % 50 == 0:
