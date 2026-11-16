@@ -287,7 +287,7 @@ def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
                     data = response.read()
                 mp3_frame = len(data) > 2 and data[0] == 0xff and (data[1] & 0xe0) == 0xe0
                 if len(data) < 500 or ("audio" not in content_type and not data.startswith(b"ID3") and not mp3_frame):
-                    raise RuntimeError(f"Unexpected audio response: {content_type}, {len(data)} bytes)
+                    raise RuntimeError(f"Unexpected audio response: {content_type}, {len(data)} bytes")
                 last_error = None
                 break
             except Exception as exc:
