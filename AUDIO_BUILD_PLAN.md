@@ -97,34 +97,66 @@ Important: these changes have been committed, but the cache mechanism is not con
 Refresh GitHub before making any later current-state claim.
 
 
-## UI interaction follow-up — Run 35
+## UI interaction follow-up — Run 35 completed; device retest pending
 
 User request:
 - In Teaching / Word Cards, remove the separate pronunciation button. Tapping the word text itself plays its human recording. Tapping elsewhere on that word card opens the existing detail modal. Do not change the detail modal's contents or its existing pronunciation button.
 - In every locally adapted course Step vocabulary tile, remove the separate visible "▶ 发音" label; tapping any part of the whole vocabulary tile plays the word.
 
-Implementation committed:
-- Commit: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
+Implementation:
+- Code commit: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
 - Changed files: `docs/js/teaching.js`, `docs/js/course.js`, `docs/css/style.css`.
-- Teaching word text is now a button that stops event propagation and calls `BE.teaching.playWord(word)`; the parent word card retains its existing `showWordDetail(word)` click behavior for all other card areas.
-- The detail modal HTML was checked after the edit and is unchanged, including its pronunciation control, translation and category.
-- Course vocabulary tiles remain full-size buttons calling `BE.course.say(word)`; the visible `<small>▶ 发音</small>` was removed. The common `vocab()` helper applies this to all locally adapted course steps using it.
-- Word Cards grid minimum width on mobile was increased from 100px to 120px; word text now uses `white-space: nowrap` to prevent wrapping.
-- Static read-back checks passed for both click routes, unchanged modal markup, removal of the course label, and responsive CSS.
+- Teaching word text is a button that stops event propagation and calls `BE.teaching.playWord(word)`; the parent word card retains its existing `showWordDetail(word)` click behavior for other card areas.
+- Detail modal HTML was read back and verified unchanged, including its pronunciation button, Chinese translation and category.
+- Course vocabulary tiles remain full-size buttons calling `BE.course.say(word)`; the visible `<small>▶ 发音</small>` was removed. The shared `vocab()` helper applies this to all locally adapted course steps using it.
+- Word Cards grid minimum width on mobile increased from 100px to 120px; word text now uses `white-space: nowrap`.
+- Static source checks passed for the two click routes, unchanged modal markup, removal of the course label and the no-wrap rule.
 
-Build state:
+### Run 35 — successful APK build
+
 - Run: [Run 35](https://github.com/leamon110/basic_english/actions/runs/43979897738), ID `43979897738`.
-- Built commit: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
-- Last checked: `in_progress`, at `Install FFmpeg`; no artifacts had been uploaded at that time.
-- Workflow concurrency is `cancel-in-progress: true`. Do not push changes under `docs/**` while Run 35 is active.
-- A stale CSS selector `body.speech-unavailable .word-card-sound` remains after the button was removed. It is harmless because no such element is rendered, but remove the obsolete selector after Run 35 completes, then run a new build if the cleanup changes a watched path.
+- Conclusion: `success`.
+- Built code commit: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
+- All 22 job steps completed successfully; APK build and both artifact uploads succeeded.
+- APK artifact ID: `14282513900`, name `basic-english-human-voice-apk`, artifact ZIP size 9,216,571 bytes.
+- Coverage report artifact ID: `14281622981`, name `basic-english-human-audio-coverage`, artifact ZIP size 21,467 bytes.
+- Extracted APK: `Basic-English-Human-Voice-Run35.apk`, 9,812,357 bytes.
+- APK SHA-256: `292722b8352a5c1f208edb76dda7af9009762d8e45eb848efa257a677d79d9ef`.
 
-Run 35 acceptance:
-1. Wait for the run to finish; inspect steps, logs, and APK/report artifacts.
-2. Confirm the build packages all 850 cached human recordings and APK upload succeeds.
-3. Inspect the new APK archive and verify its 850 local MP3s and attribution files.
-4. Ask the user to install the new APK and verify: word text tap plays; other Teaching card area opens detail; modal content and modal pronunciation button are unchanged; any part of course vocabulary tile plays; offline playback and existing UI still work.
-5. Only after the revised APK is tested can the UI follow-up be marked accepted.
+### Run 35 artifact verification
+
+- Report counts: target 850; matched 850; missing 0; downloaded 0; cached 850; completed 850; attempted 850; pending 0; failed 0; download errors 0.
+- Workflow log explicitly reports `Packaged all 850 human recordings; MP3 total 9.45 MB (0 new, 850 cached)`.
+- Downloaded APK artifact ZIP integrity passed.
+- Extracted APK ZIP integrity passed.
+- Exactly 850 word MP3 files are present; all 850 basenames are unique and exactly match the 850 report source keys.
+- Both audio attribution files are present.
+- Compared each of the 850 MP3 entries against the previously verified Run 34 APK: all 850 audio payloads are byte-identical. Run 34's 850 files had already passed the FFmpeg decode check.
+- Static checks inside the APK passed:
+  - Teaching word text plays pronunciation.
+  - Tapping other areas of the Teaching word card opens the detail modal.
+  - The detail modal pronunciation control remains.
+  - Course vocabulary tiles retain their full-tile click action and no longer show the separate pronunciation label.
+  - Word Cards text has the no-wrap CSS rule.
+- One harmless obsolete CSS selector, `body.speech-unavailable .word-card-sound`, remains although the corresponding element was removed. It has no rendered target and does not affect the new behavior. Defer this cosmetic cleanup to avoid creating an unnecessary extra build.
+
+### Remaining acceptance — install and retest Run 35
+
+The Run 34 APK's audio playback and offline behavior were already confirmed by the user. The revised Run 35 UI has not yet been tested on the phone.
+
+Ask the user to install Run 35 and verify:
+1. Teaching: tapping the word text plays the human recording.
+2. Teaching: tapping the same card outside the word text opens the detail modal.
+3. Detail modal: its content and its own pronunciation button remain unchanged and work.
+4. Course: tapping any area of a vocabulary tile plays the word; no separate "▶ 发音" label is shown.
+5. The above playback still works offline and the rest of the interface remains normal.
+
+Only mark the interaction follow-up accepted after the user reports these Run 35 phone tests.
+
+Latest code commit built by Run 35: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
+Latest plan/documentation commit before this update: `aa9df74c6ee77d74d9634be1125d4dd02d486244`.
+
+Refresh GitHub before making any later current-state claim.
 
 
 ## Mandatory startup check for every new conversation
