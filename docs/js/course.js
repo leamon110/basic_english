@@ -58,8 +58,8 @@
 
   function vocab(items) {
     return '<div class="lesson-words">' + items.map(function (w) {
-      return '<button class="lesson-word" onclick="BE.course.say(\'' + w[0] + '\')"><b>' + w[0] +
-        '</b><span>' + w[1] + '</span><small>▶ 发音</small></button>';
+      return '<button type="button" class="lesson-word" onclick="BE.course.say(\'' + w[0] + '\')" aria-label="播放 ' + w[0] + ' 发音" title="播放 ' + w[0] + ' 发音"><b>' + w[0] +
+        '</b><span>' + w[1] + '</span></button>';
     }).join('') + '</div>';
   }
 

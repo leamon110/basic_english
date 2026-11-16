@@ -142,8 +142,7 @@ function updateCards() {
     var cat = item.category
     html += '<div class="word-card" style="border-color:' + cat.color + '" onclick="BE.teaching.showWordDetail(\'' + item.word + '\')">' +
       '<div class="word-card-word-row">' +
-      '<button type="button" class="word-card-sound" onclick="event.stopPropagation(); BE.teaching.playWord(\'' + item.word + '\')" aria-label="播放 ' + item.word + ' 发音" title="播放发音">&#9654;</button>' +
-      '<div class="word-card-word">' + item.word + '</div>' +
+      '<button type="button" class="word-card-word" onclick="event.stopPropagation(); BE.teaching.playWord(\'' + item.word + '\')" aria-label="播放 ' + item.word + ' 发音" title="播放发音">' + item.word + '</button>' +
       '</div>' +
       '<div class="word-card-cat" style="background:' + cat.color + '">' + cat.name + '</div>' +
       '</div>'

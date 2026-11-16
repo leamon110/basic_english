@@ -603,46 +603,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
   min-height: 26px;
   margin-bottom: 4px;
 }
 
 .word-card-word {
-  font-size: .95rem;
-  font-weight: 600;
-  overflow-wrap: anywhere;
-}
-
-.word-card-sound {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex: 0 0 26px;
-  width: 26px;
-  height: 26px;
+  max-width: 100%;
   padding: 0;
   border: 0;
-  border-radius: 50%;
-  background: var(--surface2);
-  color: var(--primary);
-  font-size: .85rem;
-  line-height: 1;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: .95rem;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
   cursor: pointer;
-  transition: transform .15s, background .15s;
   -webkit-tap-highlight-color: transparent;
 }
 
-.word-card-sound:hover {
-  transform: scale(1.12);
-  background: rgba(79,140,255,.12);
-}
+.word-card-word:hover { color: var(--primary); }
 
-.word-card-sound:active { transform: scale(.95); }
-
-.word-card-sound:focus-visible {
+.word-card-word:focus-visible {
   outline: 2px solid var(--primary);
-  outline-offset: 2px;
+  outline-offset: 3px;
+  border-radius: 3px;
 }
 
 .word-card-cat {
@@ -1080,7 +1065,7 @@ body {
   .home-cards { grid-template-columns: 1fr; }
   .home-hero h1 { font-size: 1.8rem; }
   .home-stats { flex-wrap: wrap; gap: 16px; }
-  .cards-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); }
+  .cards-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); }
   .exercise-selector { flex-direction: column; }
   .teaching-tabs { flex-direction: column; }
   .chat-message { max-width: 95%; }
@@ -1115,8 +1100,8 @@ body.speech-unavailable .word-card-sound {
 .lesson-panel h2{font-size:19px;margin:0 0 12px}
 .lesson-panel p{line-height:1.75}
 .lesson-words{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
-.lesson-word{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:10px;border:1px solid #e1e6ef;background:#fbfcfe;border-radius:9px;cursor:pointer;color:#202938}
-.lesson-word b{font-size:16px}.lesson-word span{font-size:13px}.lesson-word small{font-size:11px;color:#5574aa}
+.lesson-word{display:flex;width:100%;box-sizing:border-box;flex-direction:column;align-items:flex-start;gap:3px;padding:10px;border:1px solid #e1e6ef;background:#fbfcfe;border-radius:9px;cursor:pointer;color:#202938;text-align:left;font:inherit}
+.lesson-word b{font-size:16px}.lesson-word span{font-size:13px}
 .lesson-passage{background:#f8fafc;border-radius:10px;padding:16px}
 .lesson-passage p{margin:8px 0}
 .lesson-passage p:nth-child(even){color:#53647b;font-size:14px;border-left:3px solid #d5dfef;padding-left:12px}
