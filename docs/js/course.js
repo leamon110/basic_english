@@ -311,7 +311,7 @@
     const step = steps.find(function (s) { return s.n === n; });
     main.innerHTML = '<section class="course-page">' +
       lessonHeader(n, step.en, step.title + ' · ' + step.kind) +
-      '<div class="course-lesson-meta">本课是 45 步原版课程中的第 ' + n + 步。按顺序学习词汇、句型、阅读和练习。</div>' +
+      '<div class="course-lesson-meta">本课是 45 步原版课程中的第 ' + n + ' 步。按顺序学习词汇、句型、阅读和练习。</div>' +
       lessonHTML[n] +
       '<button class="course-back" onclick="BE.course.render()">← 返回课程目录</button></section>';
     window.scrollTo(0, 0);
