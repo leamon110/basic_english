@@ -412,7 +412,7 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
         target_text_count = 0
         accepted_license_count = 0
         with tarfile.open(archive_path, "r:xz") as archive:
-            for member in archive:
+            for member_index, member in enumerate(archive):
                 if not member.isfile() or not member.name.lower().endswith((".ogg", ".flac", ".wav", ".mp3")):
                     continue
                 audio_member_count += 1
@@ -487,7 +487,10 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                     accent_note = tag_value(tag_map, "SWAC_SPEAK_PRON") or tag_value(tag_map, "SWAC_SPEAK_LANG_REGION")
                     collection_name = tag_value(tag_map, "SWAC_COLL_NAME") or ("Shtooka " + pack_name)
                     ext = temp_path.suffix.lower()
-                    destination = selected_dir / (slug(word) + "-" + pack_name + ext)
+                    # Each archive member needs a unique staging path. A collection
+                    # can contain several recordings for the same word; sharing one
+                    # destination lets a rejected duplicate delete the selected file.
+                    destination = selected_dir / (slug(word) + "-" + pack_name + "-" + str(member_index) + ext)
                     shutil.copy2(temp_path, destination)
 
                     if pack_name == "wcp-us":
@@ -545,6 +548,16 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
             flush=True,
         )
 
+    missing_staged = [
+        (word, item["local_path"])
+        for word, item in selected.items()
+        if not Path(item["local_path"]).is_file()
+    ]
+    if missing_staged:
+        preview = ", ".join(f"{word}: {path}" for word, path in missing_staged[:12])
+        raise RuntimeError(
+            f"Shtooka selection contains {len(missing_staged)} missing staged files: {preview}"
+        )
     print(f"[Shtooka] total unique words matched: {len(selected)}", flush=True)
     return selected
 
