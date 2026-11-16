@@ -92,53 +92,74 @@ function renderHome(container) {
 
 // ============================================================
 // SPEECH SYNTHESIS (cross-browser)
-// Chrome works with a bare speak(); Firefox/Safari need extra care:
-//  - voices load asynchronously (getVoices() is empty at first)
-//  - an explicit English voice avoids silent/wrong-language playback
-//  - calling cancel() right before speak() in the same tick is swallowed
-// Android WebView / WeChat browser often have speechSynthesis API but
-// no actual TTS engine — we detect this and hide speak buttons.
+// Use the browser's SpeechSynthesis API and let the OS select the
+// matching voice from the utterance language when getVoices() is empty.
+// An empty voice list is NOT proof that speech synthesis is unavailable:
+// some Android/Chrome combinations populate it late or leave it empty.
 // ============================================================
 var _beVoices = []
-var _beSpeechAvailable = false // true only if TTS actually works
+var _beSpeechAvailable = false
+var _beSpeechLastState = 'not-initialized'
+var _beSpeechLastError = null
 
-function _beLoadVoices() {
-  if (!window.speechSynthesis) return
-  _beVoices = window.speechSynthesis.getVoices() || []
-  // If we have voices, speech is likely available
-  if (_beVoices.length > 0) {
-    _beSpeechAvailable = true
+function _beHasSpeechApi() {
+  return !!(window.speechSynthesis &&
+            typeof window.SpeechSynthesisUtterance === 'function')
+}
+
+function _beSetSpeechAvailable(available) {
+  _beSpeechAvailable = !!available
+  if (!document.body) return
+  if (_beSpeechAvailable) {
     document.body.classList.add('speech-available')
     document.body.classList.remove('speech-unavailable')
+  } else {
+    document.body.classList.add('speech-unavailable')
+    document.body.classList.remove('speech-available')
   }
 }
 
-function _beInitSpeech() {
-  if (!window.speechSynthesis) {
-    _beSpeechAvailable = false
-    document.body.classList.add('speech-unavailable')
+function _beLoadVoices() {
+  if (!_beHasSpeechApi()) {
+    _beVoices = []
+    _beSetSpeechAvailable(false)
     return
   }
-  
-  _beLoadVoices()
-  
-  // Fired when voices become available (Firefox/Safari/some Android load them async)
-  try { 
-    window.speechSynthesis.addEventListener('voiceschanged', _beLoadVoices) 
-  } catch (e) { 
-    window.speechSynthesis.onvoiceschanged = _beLoadVoices 
+
+  try {
+    _beVoices = window.speechSynthesis.getVoices() || []
+  } catch (e) {
+    // Voice enumeration can fail independently of the speak() API.
+    _beVoices = []
   }
-  
-  // Give async voice loading 2 seconds, then check
-  setTimeout(function() {
-    _beLoadVoices()
-    if (_beVoices.length === 0) {
-      // No voices available — TTS won't work
-      _beSpeechAvailable = false
-      document.body.classList.add('speech-unavailable')
-      document.body.classList.remove('speech-available')
+
+  // API presence is enough to attempt playback. If no explicit English
+  // voice is listed, the utterance's en-US language is passed to the OS.
+  _beSetSpeechAvailable(true)
+}
+
+function _beInitSpeech() {
+  if (!_beHasSpeechApi()) {
+    _beSpeechLastState = 'unsupported'
+    _beSetSpeechAvailable(false)
+    return
+  }
+
+  _beSetSpeechAvailable(true)
+  _beLoadVoices()
+
+  // Voice enumeration may complete asynchronously. This event is useful
+  // for selecting an explicit English voice, but is not required to speak.
+  var synth = window.speechSynthesis
+  try {
+    if (typeof synth.addEventListener === 'function') {
+      synth.addEventListener('voiceschanged', _beLoadVoices)
+    } else {
+      synth.onvoiceschanged = _beLoadVoices
     }
-  }, 2000)
+  } catch (e) {
+    // Keep the API enabled; getVoices()/voiceschanged are optional helpers.
+  }
 }
 
 function _bePickEnglishVoice() {
@@ -149,42 +170,90 @@ function _bePickEnglishVoice() {
 }
 
 function speak(text, rate) {
-  if (!_beSpeechAvailable || !window.speechSynthesis || !text) return false
-  try {
-    var synth = window.speechSynthesis
-    var speakNow = function() {
-      var u = new SpeechSynthesisUtterance(text)
+  if (!_beHasSpeechApi() || !text) {
+    _beSpeechLastState = 'unsupported'
+    _beSpeechLastError = 'speech-api-unavailable'
+    _beSetSpeechAvailable(false)
+    return false
+  }
+
+  var synth = window.speechSynthesis
+  var speakNow = function() {
+    try {
+      var u = new window.SpeechSynthesisUtterance(String(text))
       u.lang = 'en-US'
       u.rate = rate || 0.9
       u.volume = 1
       u.pitch = 1
+
+      // An explicit voice is optional. When getVoices() is empty, keep
+      // voice unset so Android/Chrome can select its system en-US voice.
       var v = _bePickEnglishVoice()
       if (v) u.voice = v
+
+      u.onstart = function() {
+        _beSpeechLastState = 'speaking'
+        _beSpeechLastError = null
+      }
+      u.onend = function() {
+        _beSpeechLastState = 'ended'
+      }
+      u.onerror = function(event) {
+        _beSpeechLastState = 'error'
+        _beSpeechLastError = event && event.error ? event.error : 'unknown'
+        console.warn('[Basic English] Speech synthesis error:', _beSpeechLastError)
+      }
+
+      _beSpeechLastState = 'queued'
+      _beSpeechLastError = null
       synth.speak(u)
+    } catch (e) {
+      _beSpeechLastState = 'error'
+      _beSpeechLastError = String(e)
+      console.warn('[Basic English] Speech synthesis failed:', e)
     }
-    // Only cancel when something is actually playing, and defer the new
-    // utterance a tick — otherwise Safari/Firefox swallow it.
+  }
+
+  // Resume a paused Android/Chrome speech queue before submitting a new word.
+  try {
+    if (synth.paused && typeof synth.resume === 'function') synth.resume()
     if (synth.speaking || synth.pending) {
       synth.cancel()
-      setTimeout(speakNow, 80)
+      setTimeout(speakNow, 100)
     } else {
       speakNow()
     }
     return true
-  } catch (e) { 
+  } catch (e) {
+    _beSpeechLastState = 'error'
+    _beSpeechLastError = String(e)
+    console.warn('[Basic English] Speech synthesis failed:', e)
     return false
   }
 }
 
 function isSpeechAvailable() {
-  return _beSpeechAvailable
+  return _beHasSpeechApi()
+}
+
+function getSpeechDiagnostics() {
+  return {
+    supported: _beHasSpeechApi(),
+    voiceCount: _beVoices.length,
+    voices: _beVoices.map(function(v) {
+      return { name: v.name, lang: v.lang, isDefault: !!v.default }
+    }),
+    state: _beSpeechLastState,
+    lastError: _beSpeechLastError
+  }
 }
 
 window.BE = window.BE || {}
 window.BE.speak = speak
 window.BE.isSpeechAvailable = isSpeechAvailable
+window.BE.getSpeechDiagnostics = getSpeechDiagnostics
 
-// Initialize speech detection on DOMContentLoaded
+// Initialize speech support on DOMContentLoaded.
 document.addEventListener('DOMContentLoaded', _beInitSpeech)
 
 // ---- INIT ----
