@@ -21,7 +21,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 180
     steps:
       - name: Check out source
         uses: actions/checkout@v4
@@ -68,8 +68,32 @@ jobs:
           mkdir -p android-offline/app/src/main/assets/www
           cp -R docs/. android-offline/app/src/main/assets/www/
 
+      - name: Prepare human recording cache directories
+        run: |
+          mkdir -p android-offline/app/src/main/assets/www/audio/words
+          mkdir -p .audio-build-cache/words
+
+      - name: Restore previously downloaded human recordings
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            android-offline/app/src/main/assets/www/audio/words
+            .audio-build-cache/words
+          key: basic-english-human-audio-v1-${{ hashFiles('docs/js/data.js') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            basic-english-human-audio-v1-${{ hashFiles('docs/js/data.js') }}-
+
       - name: Fetch and package all 850 human word recordings
         run: python scripts/build_human_word_audio.py
+
+      - name: Save completed and partial human recording cache
+        if: always() && hashFiles('android-offline/app/src/main/assets/www/audio/words/*.mp3') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            android-offline/app/src/main/assets/www/audio/words
+            .audio-build-cache/words
+          key: basic-english-human-audio-v1-${{ hashFiles('docs/js/data.js') }}-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Build debug APK
         working-directory: android-offline

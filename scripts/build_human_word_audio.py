@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Find and package one openly licensed human recording for every Basic English 850 word."""
 import collections
-import concurrent.futures
+import email.utils
 import hashlib
 import html
 import json
@@ -10,7 +10,9 @@ import subprocess
 import time
 import urllib.parse
 import urllib.request
+from datetime import timezone
 from pathlib import Path
+from urllib.error import HTTPError
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_JS = ROOT / "docs/js/data.js"
@@ -19,9 +21,14 @@ REPORT = ROOT / "audio-coverage-report.json"
 CREDITS_JSON = ROOT / "android-offline/app/src/main/assets/www/audio/credits.json"
 CREDITS_MD = ROOT / "android-offline/app/src/main/assets/www/audio/THIRD_PARTY_AUDIO_CREDITS.md"
 TMP_DIR = ROOT / ".audio-build-tmp"
+CACHE_DIR = ROOT / ".audio-build-cache/words"
+
+DOWNLOAD_INTERVAL_SECONDS = 1.2
+MAX_DOWNLOAD_ATTEMPTS = 6
+LAST_MEDIA_REQUEST = 0.0
 
 UA = {
-    "User-Agent": "BasicEnglish850AudioBuilder/1.0 (https://github.com/leamon110/basic_english)"
+    "User-Agent": "BasicEnglish850AudioBuilder/1.1 (+https://github.com/leamon110/basic_english; contact via repository issues)"
 }
 GA_SPEAKERS = [
     "Wodencafe",
@@ -176,37 +183,140 @@ def rank_candidate(item):
         speaker_rank = 0
     return (accent_rank, speaker_rank, license_rank(item.get("license")), item.get("size", 0))
 
+class RateLimitError(RuntimeError):
+    pass
+
+
+def sha256_file(path):
+    digest = hashlib.sha256()
+    with path.open("rb") as source:
+        for chunk in iter(lambda: source.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def source_fingerprint(item):
+    identity = "|".join(str(item.get(key, "")) for key in ("title", "url", "license", "source_url"))
+    return hashlib.sha256(identity.encode("utf-8")).hexdigest()
+
+
+def is_valid_cached_mp3(output_path, marker_path, fingerprint):
+    if not output_path.is_file() or output_path.stat().st_size < 1000 or not marker_path.is_file():
+        return False
+    try:
+        marker = json.loads(marker_path.read_text(encoding="utf-8"))
+        return (
+            marker.get("source_fingerprint") == fingerprint
+            and marker.get("audio_sha256") == sha256_file(output_path)
+            and marker.get("audio_size_bytes") == output_path.stat().st_size
+        )
+    except Exception:
+        return False
+
+
+def wait_for_media_slot():
+    global LAST_MEDIA_REQUEST
+    now = time.monotonic()
+    if LAST_MEDIA_REQUEST:
+        delay = DOWNLOAD_INTERVAL_SECONDS - (now - LAST_MEDIA_REQUEST)
+        if delay > 0:
+            time.sleep(delay)
+    LAST_MEDIA_REQUEST = time.monotonic()
+
+
+def retry_after_seconds(exc, attempt):
+    headers = getattr(exc, "headers", None)
+    raw = headers.get("Retry-After") if headers else None
+    if raw:
+        try:
+            return max(5.0, float(raw))
+        except (TypeError, ValueError):
+            try:
+                parsed = email.utils.parsedate_to_datetime(raw)
+                if parsed.tzinfo is None:
+                    parsed = parsed.replace(tzinfo=timezone.utc)
+                return max(5.0, parsed.timestamp() - time.time())
+            except Exception:
+                pass
+    return min(300.0, 60.0 * (2 ** attempt))
+
+
 def download_and_encode(word, item):
     OUT_DIR.mkdir(parents=True, exist_ok=True)
+    CACHE_DIR.mkdir(parents=True, exist_ok=True)
     TMP_DIR.mkdir(parents=True, exist_ok=True)
+
     digest = hashlib.sha1((word + "|" + item["title"]).encode("utf-8")).hexdigest()
     source_ext = Path(urllib.parse.urlparse(item["url"]).path).suffix or ".audio"
     source_path = TMP_DIR / (digest + source_ext)
     output_path = OUT_DIR / (word + ".mp3")
+    marker_path = CACHE_DIR / (word + ".json")
+    fingerprint = source_fingerprint(item)
+
+    if is_valid_cached_mp3(output_path, marker_path, fingerprint):
+        return {"size": output_path.stat().st_size, "cached": True}
+
     last_error = None
-    for attempt in range(5):
-        try:
-            req = urllib.request.Request(item["url"], headers=UA)
-            with urllib.request.urlopen(req, timeout=45) as response:
-                source_path.write_bytes(response.read())
-            break
-        except Exception as exc:
-            last_error = exc
-            if attempt < 4:
-                time.sleep(1 + 2 ** attempt)
-    else:
-        raise RuntimeError("download failed for %s: %s" % (word, last_error))
     try:
+        for attempt in range(MAX_DOWNLOAD_ATTEMPTS):
+            wait_for_media_slot()
+            try:
+                req = urllib.request.Request(item["url"], headers=UA)
+                with urllib.request.urlopen(req, timeout=90) as response:
+                    source_bytes = response.read()
+                if not source_bytes:
+                    raise RuntimeError("download returned an empty file")
+                source_path.write_bytes(source_bytes)
+                break
+            except HTTPError as exc:
+                last_error = exc
+                if exc.code == 429:
+                    delay = retry_after_seconds(exc, attempt)
+                    print(
+                        "Wikimedia HTTP 429 for %s; pausing %.0f seconds before retry %d/%d"
+                        % (word, delay, attempt + 1, MAX_DOWNLOAD_ATTEMPTS),
+                        flush=True,
+                    )
+                    if attempt + 1 >= MAX_DOWNLOAD_ATTEMPTS:
+                        raise RateLimitError(
+                            "HTTP 429 persisted after %d attempts: %s"
+                            % (MAX_DOWNLOAD_ATTEMPTS, exc)
+                        ) from exc
+                    time.sleep(delay)
+                else:
+                    if attempt + 1 >= MAX_DOWNLOAD_ATTEMPTS:
+                        raise RuntimeError("download failed for %s: %s" % (word, exc)) from exc
+                    time.sleep(min(30, 2 ** (attempt + 1)))
+            except Exception as exc:
+                last_error = exc
+                if attempt + 1 >= MAX_DOWNLOAD_ATTEMPTS:
+                    raise RuntimeError("download failed for %s: %s" % (word, exc)) from exc
+                time.sleep(min(30, 2 ** (attempt + 1)))
+        else:
+            raise RuntimeError("download failed for %s: %s" % (word, last_error))
+
         subprocess.run([
             "ffmpeg", "-nostdin", "-hide_banner", "-loglevel", "error", "-y",
             "-i", str(source_path), "-vn", "-ac", "1", "-ar", "24000",
             "-codec:a", "libmp3lame", "-b:a", "96k", str(output_path)
-        ], check=True, timeout=90)
+        ], check=True, timeout=120)
+
         if not output_path.exists() or output_path.stat().st_size < 1000:
             raise RuntimeError("encoded file missing or too small")
+
+        audio_size = output_path.stat().st_size
+        audio_hash = sha256_file(output_path)
+        marker_path.write_text(json.dumps({
+            "word": word,
+            "source_fingerprint": fingerprint,
+            "audio_sha256": audio_hash,
+            "audio_size_bytes": audio_size,
+            "format": "MP3 mono 24 kHz 96 kbps",
+        }, ensure_ascii=False, indent=2), encoding="utf-8")
+        return {"size": audio_size, "cached": False}
     finally:
         source_path.unlink(missing_ok=True)
-    return output_path.stat().st_size
+
 
 def main():
     words = read_words()
@@ -280,6 +390,15 @@ def main():
             }
             for word, item in chosen.items()
         },
+        "downloaded_count": 0,
+        "cached_count": 0,
+        "completed_count": 0,
+        "attempted_count": 0,
+        "pending_count": 850,
+        "failed_count": 0,
+        "download_errors": [],
+        "downloaded_words": [],
+        "cached_words": [],
     })
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
     print("Final human audio coverage:", len(chosen), "/ 850", flush=True)
@@ -287,23 +406,60 @@ def main():
         print("Words with no matching openly licensed human recording:", ", ".join(missing), flush=True)
         raise SystemExit(2)
 
-    results = {}
+    downloaded_words = []
+    cached_words = []
+    completed_words = []
     errors = []
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-        future_map = {executor.submit(download_and_encode, word, item): word for word, item in chosen.items()}
-        for future in concurrent.futures.as_completed(future_map):
-            word = future_map[future]
-            try:
-                results[word] = future.result()
-            except Exception as exc:
-                errors.append({"word": word, "error": str(exc)})
-                print("Audio error:", word, exc, flush=True)
+    attempted = 0
 
-    if errors or len(results) != 850:
-        report["download_errors"] = errors
-        report["downloaded_count"] = len(results)
+    def save_progress():
+        report.update({
+            "downloaded_count": len(downloaded_words),
+            "cached_count": len(cached_words),
+            "completed_count": len(completed_words),
+            "attempted_count": attempted,
+            "pending_count": len(words) - attempted,
+            "failed_count": len(errors),
+            "download_errors": errors,
+            "downloaded_words": downloaded_words,
+            "cached_words": cached_words,
+        })
         REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-        raise SystemExit("Refusing to build: not all 850 audio files downloaded and encoded.")
+
+    # One request at a time, with a minimum interval between media requests.
+    # Validated files from previous runs are reused without contacting Commons.
+    for word in words:
+        attempted += 1
+        try:
+            result = download_and_encode(word, chosen[word])
+            completed_words.append(word)
+            if result["cached"]:
+                cached_words.append(word)
+            else:
+                downloaded_words.append(word)
+        except RateLimitError as exc:
+            errors.append({"word": word, "kind": "http_429", "error": str(exc)})
+            print("Stopping media downloads after persistent HTTP 429:", word, flush=True)
+            save_progress()
+            break
+        except Exception as exc:
+            errors.append({"word": word, "kind": "download_or_encode", "error": str(exc)})
+            print("Audio error:", word, exc, flush=True)
+
+        if attempted % 10 == 0 or errors:
+            save_progress()
+            print(
+                "Audio progress: %d / 850 complete (%d downloaded, %d restored from cache, %d errors)"
+                % (len(completed_words), len(downloaded_words), len(cached_words), len(errors)),
+                flush=True,
+            )
+
+    save_progress()
+    if errors or len(completed_words) != 850:
+        raise SystemExit(
+            "Refusing to build: completed %d/850 recordings; %d failed; %d still pending."
+            % (len(completed_words), len(errors), len(words) - attempted)
+        )
 
     CREDITS_JSON.parent.mkdir(parents=True, exist_ok=True)
     credits = {
@@ -335,12 +491,27 @@ def main():
         ))
     CREDITS_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-    report["downloaded_count"] = len(results)
-    report["encoded_total_bytes"] = sum(results.values())
-    report["average_mp3_bytes"] = round(sum(results.values()) / max(1, len(results)))
+    total_bytes = sum((OUT_DIR / (word + ".mp3")).stat().st_size for word in words)
+    report.update({
+        "downloaded_count": len(downloaded_words),
+        "cached_count": len(cached_words),
+        "completed_count": len(completed_words),
+        "attempted_count": attempted,
+        "pending_count": 0,
+        "failed_count": 0,
+        "download_errors": [],
+        "downloaded_words": downloaded_words,
+        "cached_words": cached_words,
+        "encoded_total_bytes": total_bytes,
+        "average_mp3_bytes": round(total_bytes / len(words)),
+    })
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("Packaged all 850 human recordings; MP3 total %.2f MB" %
-          (sum(results.values()) / 1_000_000), flush=True)
+    print(
+        "Packaged all 850 human recordings; MP3 total %.2f MB (%d new, %d cached)"
+        % (total_bytes / 1_000_000, len(downloaded_words), len(cached_words)),
+        flush=True,
+    )
+
 
 if __name__ == "__main__":
     main()
