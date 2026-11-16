@@ -135,12 +135,14 @@ fork's updated course.
 
 ---
 
+- **Sentence practice** — 100 complete example sentences in ten groups, each with Chinese translation and a short pattern explanation.
+
 ## Tech notes
 
 - **No dependencies / no build.** Scripts load in a fixed order in `index.html`:
-  `data.js → validator.js → chat.js → teaching.js → course.js → app.js`. Each module attaches
+  `data.js → validator.js → chat.js → teaching.js → course.js → sentence-practice.js → app.js`. Each module attaches
   itself to a single global `window.BE` namespace.
-- **Routing** is hash-based (`#conversation`, `#teaching`, `#course`) in `app.js`.
+- **Routing** is hash-based (`#conversation`, `#teaching`, `#course`, `#sentences`) in `app.js`.
 - **Pronunciation** uses the browser's `SpeechSynthesis` API and degrades
   gracefully when unavailable.
 - **Persistence** (API settings, SR progress) uses `localStorage` only — there
