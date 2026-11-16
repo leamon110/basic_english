@@ -143,10 +143,16 @@ function isAllowedWord(word) {
     }
   }
 
+  // Possessive nouns and contractions formed with apostrophe-s.
+  if (lower.endsWith("'s")) {
+    const base = lower.slice(0, -2)
+    if (isAllowedWord(base).ok) return { ok: true, isPossessiveOrContraction: true }
+  }
+
   // 11. Articles and compounds explicitly taught in the Basic course
   // "an" is the grammatical form of "a" before a vowel sound.
   // "another", "into", and these compounds are taught as Basic constructions.
-  if (["a", "an", "i", "one", "ones", "what", "which", "another", "into", "bedroom", "bookshelf", "ticket-office", "work-room", "bathroom", "inside", "outside", "everything", "something", "someone", "nothing", "everywhere", "somewhere", "nowhere", "workman", "workmen"].includes(lower)) {
+  if (["a", "an", "i", "one", "ones", "what", "which", "another", "into", "bedroom", "bookshelf", "ticket-office", "work-room", "bathroom", "inside", "outside", "everything", "something", "someone", "nothing", "everywhere", "somewhere", "nowhere", "workman", "workmen", "gotten", "completed", "i've", "i'll", "its"].includes(lower)) {
     return { ok: true, isBasicConstruction: true }
   }
 
@@ -166,8 +172,9 @@ function validateBasicEnglish(text) {
   for (let i = 0; i < words.length; i++) {
     const raw = words[i]
     // Remove leading/trailing punctuation for checking
-    const clean = raw.replace(/^[^a-zA-Z0-9']+|[,.;:!?\"'()\[\]{}<>“”‘’—–…]+$/g, '')
-                     .replace(/^[,.!?;:'"()“”‘’—–…]+/, "")
+    const normalized = raw.replace(/[’‘]/g, "'")
+    const clean = normalized.replace(/^[^a-zA-Z0-9']+|[,.;:!?\"'()\[\]{}<>“”‘’—–…]+$/g, '')
+                             .replace(/^[,.!?;:'"()“”‘’—–…]+/, "")
     if (!clean || clean.length === 0) continue
 
     // Skip proper names (capitalized in middle of sentence)
