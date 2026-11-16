@@ -1089,3 +1089,29 @@ body.speech-unavailable .word-sound {
 .course-feedback{margin-top:12px;padding:10px;border-radius:8px;background:#fff3e8;color:#94521b;font-size:14px}
 .course-feedback.is-ok{background:#eaf7ee;color:#22663a}
 @media(max-width:600px){.course-hero{padding:20px}.course-progress{flex-direction:column;gap:4px}.lesson-panel{padding:15px}}
+
+
+/* Extended course lesson layout */
+.course-step-kind{font-size:11px;color:#7b8493}
+.course-lesson-meta{font-size:13px;color:#68778d;margin:8px 2px 16px}
+.lesson-table{display:grid;gap:0;border:1px solid #e1e6ef;border-radius:9px;overflow:hidden;margin:12px 0}
+.lesson-table>div{display:grid;grid-auto-flow:column;grid-auto-columns:1fr}
+.lesson-table>div:first-child{background:#edf3fc;font-weight:700}
+.lesson-table span,.lesson-table b{padding:9px 10px;border-right:1px solid #e1e6ef;border-bottom:1px solid #e1e6ef;font-size:13px}
+.lesson-table>div:last-child span{border-bottom:0}
+.lesson-table span:last-child,.lesson-table b:last-child{border-right:0}
+.lesson-examples{background:#f7f9fc;border-radius:9px;padding:12px 15px;margin:12px 0}
+.lesson-examples p{margin:7px 0;font-family:inherit}
+.lesson-translation{color:#596b82;border-left:3px solid #cbd8ea;padding-left:12px;font-size:14px}
+.lesson-answer{border:1px solid #dce4ef;border-radius:9px;margin:12px 0;padding:10px 13px;background:#fbfcfe}
+.lesson-answer summary{cursor:pointer;color:#315f9e;font-weight:600}
+.lesson-answer>div{padding:10px 2px 2px;line-height:1.7}
+.lesson-writing{margin:12px 0}
+.lesson-writing textarea{width:100%;box-sizing:border-box;border:1px solid #ccd5e2;border-radius:9px;padding:12px;font:inherit;resize:vertical}
+.room-picture-wrap{overflow-x:auto;border:1px solid #e1e6ef;border-radius:10px;padding:8px;background:#fbfcfe}
+.room-picture{display:block;width:100%;min-width:520px;height:auto}
+.room-match-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:14px 0}
+.room-match-row{display:flex;align-items:center;gap:10px;font-size:14px}
+.room-match-row>span{display:grid;place-items:center;flex:0 0 28px;width:28px;height:28px;border-radius:50%;background:#edf3ff;color:#315b9d;font-weight:700}
+.room-match-row select{min-width:0;flex:1;padding:8px;border:1px solid #ccd5e2;border-radius:8px;background:white;color:#202938}
+@media(max-width:560px){.room-match-grid{grid-template-columns:1fr}.lesson-table span,.lesson-table b{padding:8px 5px;font-size:12px}}
