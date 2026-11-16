@@ -144,6 +144,7 @@
   lessonHTML[1] =
     panel('1. 本课词汇', '<p>第一课先从房间里的常见物品和形状开始。</p>' +
       vocab([['bed','床'],['building','建筑物'],['door','门'],['flower','花'],['house','房子'],['pot','花盆；罐'],['room','房间'],['table','桌子'],['window','窗户'],['round','圆的'],['wide','宽的'],['narrow','窄的']])) +
+    panel('补充提示：本课基础形式', '<p><b>I</b> 始终使用大写字母。<b>it</b> 是代词；<b>am / is / are</b> 是 be 的现在时形式。</p>') +
     panel('2. 名词的单数与复数', '<p>本课先学习规则复数：通常在名词后加 <b>-s</b>。</p>' +
       '<div class="lesson-examples"><p>bed → beds</p><p>door → doors</p><p>pot → pots</p></div>' +
       '<p>一个名词指一个对象时，要留意它前面的限定词；复数名词不使用 a。</p>') +
@@ -209,6 +210,7 @@
   lessonHTML[3] =
     panel('1. 本课词汇', '<p>本课增加与人物、物品、移动和交付有关的词。</p>' +
       vocab([['arm','手臂'],['box','盒子'],['hand','手'],['man','男人'],['office','办公室'],['pocket','口袋'],['shelf','架子'],['ticket','票'],['side','侧面'],['other','其他的'],['across','穿过']])) +
+    panel('本课结构词', '<p>本课同时学习以下方向词、关系词和代词。点击可听发音。</p>' + vocab([['come','来'],['go','去'],['give','给'],['get','得到；拿到'],['across','穿过'],['at','在；位于'],['of','……的'],['to','到；给'],['from','从'],['with','和；带有'],['he','他'],['she','她'],['here','这里'],['there','那里']])) +
     panel('2. 名词复数的变化', '<p>本课在规则复数之外，加入三类拼写变化。</p>' +
       '<div class="lesson-examples"><p>man → men；woman → women（不规则）</p><p>box → boxes（以 x 结尾，加 -es）</p><p>shelf → shelves（部分以 f / fe 结尾的词变为 -ves）</p></div>' +
       '<p>名词放在另一个名词前作限定时，通常保持单数：office floor（办公室的地板）、side door（侧门）。</p>') +
@@ -237,6 +239,7 @@
   lessonHTML[5] =
     panel('1. 本课词汇', '<p>本课从具体物品扩展到食物、工作、家庭和时间。</p>' +
       vocab([['country','乡村；国家'],['family','家庭'],['food','食物'],['meal','一餐'],['meat','肉'],['plate','盘子'],['town','城镇'],['place','地方'],['work','工作'],['early','早的'],['late','晚的；迟的'],['some','一些']])) +
+    panel('本课结构词', '<p>这些词会在本课句子和语法说明中反复出现。</p>' + vocab([['be','是；处于'],['before','在……之前'],['after','在……之后'],['or','或者'],['do','做'],['for','为了；给'],['when','当……时'],['have','有；吃'],['will','将；会'],['where','在哪里；……的地方'],['make','制作'],['come','来'],['while','当……期间'],['may','可能；可以'],['some','一些'],['out','向外'],['but','但是']])) +
     panel('2. 名词：family 与 substance words', '<p>以辅音字母 + y 结尾的名词，变复数时把 y 改为 ies。</p>' +
       '<div class="lesson-examples"><p>family → families</p></div>' +
       '<p>本课开始区分可数名词和表示物质、活动、性质或状态的名词。后者通常不按一个一个的个体计数。</p>' +
@@ -289,15 +292,16 @@
       '<div class="lesson-rule"><b>时间表达</b><p>in the morning；at night；on the days / on the nights。注意这几个搭配不能简单互换。</p></div>' +
       '<div class="lesson-rule"><b>have a meal</b><p>have 与 food / meal 等词搭配时，可以表达吃饭。</p></div>' +
       '<div class="lesson-rule"><b>come in / go out</b><p>come in 可以表示回到屋内；go out 可以表示离开家外出。</p></div>' +
-      '<div class="lesson-rule"><b>the pictures</b><p>在本课语境中，the pictures 指电影或电影院活动。</p></div>') +
+      '<div class="lesson-rule"><b>the pictures</b><p>在本课语境中，the pictures 指电影或电影院活动。</p></div>' +
+      '<div class="lesson-rule"><b>day / night</b><p>day 可以指 24 小时的一天，也可以指有日光的白天；night 可以指黑暗时段，也可以在本课语境中指傍晚。</p></div>') +
     panel('4. 语法练习', '<p><b>A. 写出复数。</b></p><div class="lesson-examples"><p>family · potato · woman · day · box · shelf</p></div>' +
       answer('step6-plurals','查看参考答案','<p>families；potatoes；women；days；boxes；shelves。</p>') +
       '<p><b>B. 选择时间或位置介词。</b></p><div class="lesson-examples"><p>He goes to this bedroom _____ night.</p><p>_____ the day when my daughter comes from the country, I will not go out.</p><p>She has a pot _____ food in her hand.</p><p>The manager goes to his office _____ the morning.</p></div>' +
       answer('step6-preps','查看参考答案','<p>at；On；of；in。</p>') +
       '<p><b>C. 使用 or、but、while 各造一个句子。</b></p>' +
       writingBox('step6-writing','Write three sentences: one with or, one with but, and one with while.') +
-      '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. What does Ellen take with her when she goes out to work?</p><p>2. Which bedroom do Tom and Fred have?</p><p>3. What work does Ellen do?</p><p>4. Where do Tom and Fred sometimes take their mother and sister?</p><p>5. What does Mr. Robinson do after his meal?</p></div>' +
-      answer('step6-reading','查看参考答案','<p>1. She takes some food with her.</p><p>2. They have a bedroom at the back of the house.</p><p>3. She makes cushions and curtains in a store.</p><p>4. They take them to the pictures.</p><p>5. He takes a book and goes to the place by the fire.</p>'));
+      '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. What does the daughter take with her when she goes to work?</p><p>2. Where does a son work?</p><p>3. What does the other daughter make?</p><p>4. Where do the sons sometimes go with their friends?</p><p>5. What does the father do after his meal?</p></div>' +
+      answer('step6-reading','查看参考答案','<p>1. She takes some food with her.</p><p>2. He works in the office.</p><p>3. She makes cushions and curtains.</p><p>4. They go out with their friends.</p><p>5. He takes a book and goes to the place by the fire.</p>'));
 
   function render() {
     const main = document.getElementById('main-content');
