@@ -43,18 +43,52 @@ Implemented in the latest commit:
 
 Important: these changes have been committed, but the cache mechanism is not considered proven until an Actions run has successfully saved a cache and a subsequent run has restored and reused it.
 
-## Verified status at 2026-11-16 21:13 UTC
+## Verified status after Run 32 completed (2026-11-16 21:23 UTC)
 
 - Latest workflow run: [Run 32](https://github.com/leamon110/basic_english/actions/runs/43956129814)
 - Run ID: `43956129814`
-- Commit being built: `bf1281e97fa8db1ee46129c7b82f9b82f2485be1`
-- Last observed run state: `in_progress`.
-- Last observed active step: `Fetch and package all 850 human word recordings`.
-- APK build and APK upload steps had not started at the last status check.
-- Therefore, no completed APK is confirmed by this status entry.
-- The previous workflow attempts did not produce a deliverable APK. Do not count their source-matching results as downloaded audio.
+- Built code commit: `bf1281e97fa8db1ee46129c7b82f9b82f2485be1`
+- Run conclusion: `success`.
+- The audio download/conversion step completed successfully.
+- The cache-save step completed successfully.
+- The debug APK build completed successfully.
+- APK upload and audio coverage/licence report upload completed successfully.
+- APK artifact ID: `14274275039`, name `basic-english-human-voice-apk`.
+- Coverage report artifact ID: `14274115136`, name `basic-english-human-audio-coverage`.
+- Downloaded APK file: `Basic-English-Human-Voice.apk`, 9,808,578 bytes, SHA-256 `50456a1eba4d7deb0ee2ff646e5d7370f7942d481ff61bbd655efdaa4429a523`.
 
-This status is a snapshot, not a live status feed. Refresh the GitHub Actions run before making any current-state claim.
+### Verified artifact contents
+
+The downloaded APK was opened and checked locally:
+
+- APK ZIP integrity: passed.
+- AndroidManifest.xml, classes.dex, resources.arsc, local index.html, app.js, teaching.js and course.js are present.
+- Word MP3 entries under `assets/www/audio/words/`: exactly 850.
+- Unique word MP3 basenames: exactly 850.
+- Coverage report source records: exactly 850.
+- APK word basenames and report source keys: exact match; no missing or extra words.
+- Report totals: target 850; matched 850; missing 0; downloaded 850; cached 0; completed 850; attempted 850; pending 0; failed 0; download errors 0.
+- Encoded MP3 total: 9,446,648 bytes; average 11,114 bytes.
+- All 850 MP3 files were extracted and passed a single FFmpeg concat-demuxer decode check (exit code 0).
+- APK includes `assets/www/audio/credits.json` and `assets/www/audio/THIRD_PARTY_AUDIO_CREDITS.md`.
+
+### Static playback-path inspection
+
+- Android `MainActivity` loads `file:///android_asset/www/index.html`, enables WebView JavaScript and permits media playback without a second user gesture; it contains no native `TextToSpeech` integration.
+- Word Cards button and the word-detail modal both call `BE.teaching.playWord`.
+- `BE.teaching.playWord` delegates to `window.BE.speak`.
+- `BE.speak` routes a single word to `new Audio('audio/words/' + word + '.mp3')` before any sentence-level browser speech fallback.
+- Course vocabulary buttons call `BE.course.say`, which delegates to the same `BE.speak` path.
+- This confirms the code wiring statically; physical-device installation and offline playback have not yet been tested.
+
+### Remaining quality checks
+
+- The coverage report contains two records whose speaker field is `Unknown` (`cough` and `measure`). The Commons page for `cough` explicitly says it was recorded by Dvortygirl. The `measure` page identifies uploader Muke and a Public Domain self-release, but does not identify the speaker.
+- Three records (`tin`, `oven`, `sock`) currently carry the verbose fallback text "No machine-readable author provided. Dvortygirl assumed..."; their Commons descriptions explicitly say recorded by Dvortygirl. Normalize these attribution labels without inventing a speaker for `measure`.
+- The current APK is a successfully built and inspectable test artifact, but final acceptance is not complete until attribution labels are made clear and a real Android device verifies Word Cards and course playback offline.
+- The Run 32 cache-save step succeeded. A subsequent run must verify that cache restore reuses the 850 MP3s (expected report: 850 cached, 0 newly downloaded) before the cache mechanism is considered proven.
+
+This is the latest verified snapshot. Refresh GitHub before making any later current-state claim.
 
 ## Mandatory startup check for every new conversation
 
