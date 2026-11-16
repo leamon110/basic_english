@@ -36,6 +36,9 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install SWAC audio tag reader
+        run: python -m pip install --disable-pip-version-check mutagen
+
       - name: Match all 850 words against licensed human recordings
         id: coverage
         run: |
