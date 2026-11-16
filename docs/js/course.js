@@ -453,7 +453,7 @@
       answer('step13-questions','查看参考答案','<p>1. Why are the ships waiting?</p><p>2. Where is the house?</p><p>3. Which boat will you take?</p><p>4. Who will go to the island?</p><p>5. When does the first train go?</p><p>6. To what part of the town are you going?</p>') +
       '<p><b>B. 把陈述句改为一般疑问句。</b></p><div class="lesson-examples"><p>1. The news seems good.</p><p>2. These small boats go far from the land.</p><p>3. The great ships are coming into the harbor.</p><p>4. He will say a word to her.</p></div>' +
       answer('step13-yesno','查看参考答案','<p>1. Does the news seem good?</p><p>2. Do these small boats go far from the land?</p><p>3. Are the great ships coming into the harbor?</p><p>4. Will he say a word to her?</p>') +
-      writingBox('step13-writing','Write six questions: one with who, one with whose, one with what, one with which, one with how, and one with why.');
+      writingBox('step13-writing','Write six questions: one with who, one with whose, one with what, one with which, one with how, and one with why.'));
 
   lessonHTML[15] =
     panel('1. 本课词汇', '<p>本课进入 operator 的过去时，并学习邮寄、行走、田地和日常物品。</p>' +
@@ -487,7 +487,7 @@
       '<p><b>B. 把句子改为过去时。</b></p><div class="lesson-examples"><p>1. They send a parcel to us every week.</p><p>2. The church has a loud bell.</p><p>3. The old man seems tired.</p><p>4. The workman takes his spade to the field.</p></div>' +
       answer('step15-sentences','查看参考答案','<p>1. They sent a parcel to us every week.</p><p>2. The church had a loud bell.</p><p>3. The old man seemed tired.</p><p>4. The workman took his spade to the field.</p>') +
       '<p><b>C. 用 -ing 形式作名词造句。</b></p>' +
-      writingBox('step15-writing','Write three sentences using an -ing form as a noun, and one sentence with let us.');
+      writingBox('step15-writing','Write three sentences using an -ing form as a noun, and one sentence with let us.'));
 
 
   function render() {
