@@ -10,6 +10,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.UtteranceProgressListener;
 import android.view.View;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebChromeClient;
@@ -28,6 +29,8 @@ public class MainActivity extends Activity {
     private TextToSpeech textToSpeech;
     private volatile boolean ttsReady = false;
     private volatile String ttsStatus = "initializing";
+    private volatile int ttsLanguageResult = Integer.MIN_VALUE;
+    private volatile String ttsEnginePackage = "unknown";
     private String pendingSpeechText;
     private float pendingSpeechRate = 0.9f;
 
@@ -108,11 +111,12 @@ public class MainActivity extends Activity {
     private void finishTextToSpeechInitialization(int status) {
         if (status != TextToSpeech.SUCCESS || textToSpeech == null) {
             ttsReady = false;
-            ttsStatus = "initialization-failed";
+            ttsStatus = "initialization-failed:initStatus=" + status;
             return;
         }
 
         // Prefer US English; fall back to UK English, then generic English.
+        ttsEnginePackage = textToSpeech.getDefaultEngine();
         int languageResult = textToSpeech.setLanguage(Locale.US);
         if (languageResult < TextToSpeech.LANG_AVAILABLE) {
             languageResult = textToSpeech.setLanguage(Locale.UK);
@@ -121,8 +125,33 @@ public class MainActivity extends Activity {
             languageResult = textToSpeech.setLanguage(Locale.ENGLISH);
         }
 
+        ttsLanguageResult = languageResult;
         ttsReady = languageResult >= TextToSpeech.LANG_AVAILABLE;
-        ttsStatus = ttsReady ? "ready" : "english-language-unavailable";
+        ttsStatus = ttsReady
+                ? "ready:engine=" + ttsEnginePackage + ":languageResult=" + languageResult
+                : "english-language-unavailable:engine=" + ttsEnginePackage + ":languageResult=" + languageResult;
+
+        textToSpeech.setOnUtteranceProgressListener(new UtteranceProgressListener() {
+            @Override
+            public void onStart(String utteranceId) {
+                ttsStatus = "speaking";
+            }
+
+            @Override
+            public void onDone(String utteranceId) {
+                ttsStatus = "finished";
+            }
+
+            @Override
+            public void onError(String utteranceId) {
+                ttsStatus = "utterance-error";
+            }
+
+            @Override
+            public void onError(String utteranceId, int errorCode) {
+                ttsStatus = "utterance-error:" + errorCode;
+            }
+        });
 
         if (ttsReady) {
             String queuedText;
@@ -153,10 +182,12 @@ public class MainActivity extends Activity {
         );
         if (result == TextToSpeech.ERROR) {
             ttsStatus = "speak-error";
+        } else {
+            ttsStatus = "queued";
         }
     }
 
-    private final class AndroidTtsBridge {
+    public final class AndroidTtsBridge {
         @JavascriptInterface
         public boolean isReady() {
             return ttsReady;
@@ -164,12 +195,18 @@ public class MainActivity extends Activity {
 
         @JavascriptInterface
         public String getStatus() {
-            return ttsStatus;
+            return ttsStatus + ";engine=" + ttsEnginePackage + ";languageResult=" + ttsLanguageResult;
         }
 
         @JavascriptInterface
         public boolean speak(String text, float rate) {
             if (text == null || text.trim().isEmpty()) {
+                return false;
+            }
+            // If native TTS initialization definitively failed, allow the
+            // JavaScript layer to try its browser SpeechSynthesis fallback.
+            if (ttsStatus.startsWith("initialization-failed")
+                    || ttsStatus.startsWith("english-language-unavailable")) {
                 return false;
             }
 
