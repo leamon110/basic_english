@@ -6,16 +6,30 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.os.Message;
+import android.speech.tts.TextToSpeech;
 import android.view.View;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebChromeClient;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import java.util.Locale;
+
 public class MainActivity extends Activity {
     private WebView webView;
+
+    private final Handler mainHandler = new Handler(Looper.getMainLooper());
+    private final Object ttsLock = new Object();
+    private TextToSpeech textToSpeech;
+    private volatile boolean ttsReady = false;
+    private volatile String ttsStatus = "initializing";
+    private String pendingSpeechText;
+    private float pendingSpeechRate = 0.9f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +37,8 @@ public class MainActivity extends Activity {
 
         getWindow().setStatusBarColor(Color.WHITE);
         getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+
+        initializeTextToSpeech();
 
         webView = new WebView(this);
         webView.setBackgroundColor(Color.WHITE);
@@ -38,6 +54,10 @@ public class MainActivity extends Activity {
         settings.setSupportMultipleWindows(true);
         settings.setMediaPlaybackRequiresUserGesture(false);
         settings.setMixedContentMode(WebSettings.MIXED_CONTENT_NEVER_ALLOW);
+
+        // Expose Android's system TextToSpeech directly to the local learning app.
+        // The app content is packaged in assets/www; external links leave this WebView.
+        webView.addJavascriptInterface(new AndroidTtsBridge(), "AndroidTTS");
 
         webView.setWebViewClient(new WebViewClient() {
             @Override
@@ -80,6 +100,95 @@ public class MainActivity extends Activity {
         webView.loadUrl("file:///android_asset/www/index.html");
     }
 
+    private void initializeTextToSpeech() {
+        textToSpeech = new TextToSpeech(getApplicationContext(), status ->
+                mainHandler.post(() -> finishTextToSpeechInitialization(status)));
+    }
+
+    private void finishTextToSpeechInitialization(int status) {
+        if (status != TextToSpeech.SUCCESS || textToSpeech == null) {
+            ttsReady = false;
+            ttsStatus = "initialization-failed";
+            return;
+        }
+
+        // Prefer US English; fall back to UK English, then generic English.
+        int languageResult = textToSpeech.setLanguage(Locale.US);
+        if (languageResult < TextToSpeech.LANG_AVAILABLE) {
+            languageResult = textToSpeech.setLanguage(Locale.UK);
+        }
+        if (languageResult < TextToSpeech.LANG_AVAILABLE) {
+            languageResult = textToSpeech.setLanguage(Locale.ENGLISH);
+        }
+
+        ttsReady = languageResult >= TextToSpeech.LANG_AVAILABLE;
+        ttsStatus = ttsReady ? "ready" : "english-language-unavailable";
+
+        if (ttsReady) {
+            String queuedText;
+            float queuedRate;
+            synchronized (ttsLock) {
+                queuedText = pendingSpeechText;
+                queuedRate = pendingSpeechRate;
+                pendingSpeechText = null;
+            }
+            if (queuedText != null) {
+                speakWithTextToSpeech(queuedText, queuedRate);
+            }
+        }
+    }
+
+    private void speakWithTextToSpeech(String text, float rate) {
+        if (textToSpeech == null || !ttsReady || text == null || text.trim().isEmpty()) {
+            return;
+        }
+
+        float safeRate = Math.max(0.5f, Math.min(2.0f, rate));
+        textToSpeech.setSpeechRate(safeRate);
+        int result = textToSpeech.speak(
+                text,
+                TextToSpeech.QUEUE_FLUSH,
+                null,
+                "basic-english-" + System.nanoTime()
+        );
+        if (result == TextToSpeech.ERROR) {
+            ttsStatus = "speak-error";
+        }
+    }
+
+    private final class AndroidTtsBridge {
+        @JavascriptInterface
+        public boolean isReady() {
+            return ttsReady;
+        }
+
+        @JavascriptInterface
+        public String getStatus() {
+            return ttsStatus;
+        }
+
+        @JavascriptInterface
+        public boolean speak(String text, float rate) {
+            if (text == null || text.trim().isEmpty()) {
+                return false;
+            }
+
+            // JavaScript bridge calls arrive off the UI thread. Serialize all
+            // TextToSpeech operations on Android's main thread.
+            mainHandler.post(() -> {
+                if (textToSpeech == null || !ttsReady) {
+                    synchronized (ttsLock) {
+                        pendingSpeechText = text;
+                        pendingSpeechRate = rate;
+                    }
+                    return;
+                }
+                speakWithTextToSpeech(text, rate);
+            });
+            return true;
+        }
+    }
+
     private boolean openExternal(Uri uri) {
         String scheme = uri.getScheme();
         if (!"http".equalsIgnoreCase(scheme) && !"https".equalsIgnoreCase(scheme)) {
@@ -105,6 +214,12 @@ public class MainActivity extends Activity {
 
     @Override
     protected void onDestroy() {
+        ttsReady = false;
+        if (textToSpeech != null) {
+            textToSpeech.stop();
+            textToSpeech.shutdown();
+            textToSpeech = null;
+        }
         if (webView != null) {
             webView.destroy();
             webView = null;
