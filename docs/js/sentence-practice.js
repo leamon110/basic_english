@@ -199,13 +199,119 @@
     return { sentence: item[0], chinese: item[1], hint: item[2], tokens: item[0].split(" "), scramble: item[3] };
   });
 
+  const dialogues = [
+    { title: "在家", lines: [
+      ["A","Good morning. Are you ready?","早上好。你准备好了吗？"],
+      ["B","Yes. I am ready.","是的，我准备好了。"],
+      ["A","Have you had your meal?","你吃过饭了吗？"],
+      ["B","No. I have not had a meal.","还没有。我还没吃饭。"],
+      ["A","The water is cold. The bread is on the table.","水是凉的。面包在桌子上。"],
+      ["B","Please give me some water.","请给我一些水。"],
+      ["A","Is there more bread?","还有面包吗？"],
+      ["B","No. That is all.","没有了。就这些。"]
+    ]},
+    { title: "在门口", lines: [
+      ["A","Who is at the door?","谁在门口？"],
+      ["B","It is my friend.","是我的朋友。"],
+      ["A","Please come in.","请进。"],
+      ["B","My father is here.","我父亲在这里。"],
+      ["A","I am pleased to see you.","见到你我很高兴。"],
+      ["B","I was away for a month.","我离开了一个月。"],
+      ["A","Take a seat.","请坐。"],
+      ["B","We have some water.","我们有一些水。"]
+    ]},
+    { title: "问路", lines: [
+      ["A","Where is the station?","车站在哪里？"],
+      ["B","Go down this road.","沿着这条路走。"],
+      ["A","Turn at the street.","在这条街转弯。"],
+      ["B","Is it far from here?","离这里远吗？"],
+      ["A","It is near the river.","它在河边。"],
+      ["B","Go across the bridge.","走过那座桥。"],
+      ["A","The station is on your left.","车站在你的左边。"],
+      ["B","Please go with me.","请跟我走。"]
+    ]},
+    { title: "在车站", lines: [
+      ["A","When does the train go?","火车什么时候开？"],
+      ["B","It goes at this time.","它这个时候开。"],
+      ["A","Does it stop at the next town?","它在下一个城镇停吗？"],
+      ["B","It stops at the town.","它在这个城镇停。"],
+      ["A","What is the price of a ticket?","一张票的价格是多少？"],
+      ["B","The price is high.","价格很高。"],
+      ["A","Where do I get a ticket?","我在哪里拿票？"],
+      ["B","At that window.","在那个窗口。"]
+    ]},
+    { title: "在商店", lines: [
+      ["A","I need a new coat.","我需要一件新外套。"],
+      ["B","What size do you take?","你穿什么尺码？"],
+      ["A","This coat is small.","这件外套很小。"],
+      ["B","Put this coat on.","把这件外套穿上。"],
+      ["A","It is good, but the price is high.","它不错，但是价格很高。"],
+      ["B","Please make the price less.","请把价格降一些。"],
+      ["A","The price is less now.","现在价格低一些了。"],
+      ["B","I will take it.","我买这件。"]
+    ]},
+    { title: "遇到问题", lines: [
+      ["A","What is the trouble?","有什么问题？"],
+      ["B","I have pain in my head.","我头疼。"],
+      ["A","Is the pain bad?","疼得厉害吗？"],
+      ["B","Yes. It is very bad.","是的。很严重。"],
+      ["A","You are not well.","你身体不舒服。"],
+      ["B","I am tired.","我累了。"],
+      ["A","Go to bed.","去睡觉吧。"],
+      ["B","I will go now.","我现在就去。"]
+    ]},
+    { title: "谈论天气", lines: [
+      ["A","What is the weather like?","天气怎么样？"],
+      ["B","It is cold and wet.","天气又冷又潮湿。"],
+      ["A","Is there rain?","下雨了吗？"],
+      ["B","There is rain in the morning.","早上下雨。"],
+      ["A","Then we will be in the house.","那么我们就待在屋里。"],
+      ["B","We will have a talk.","我们聊一会儿。"],
+      ["A","The fire is good.","火很好。"],
+      ["B","It will make the room warm.","它会让房间暖和起来。"]
+    ]},
+    { title: "在工作中", lines: [
+      ["A","Are you at work?","你在工作吗？"],
+      ["B","Yes. I have work to do.","是的。我有工作要做。"],
+      ["A","May I help you?","我可以帮你吗？"],
+      ["B","Please make a copy of this letter.","请把这封信复印一份。"],
+      ["A","Where do I put it?","我把它放在哪里？"],
+      ["B","Put it in the top drawer.","把它放在最上面的抽屉里。"],
+      ["A","Is there other work?","还有其他工作吗？"],
+      ["B","No. This is all.","没有了。就这些。"]
+    ]},
+    { title: "安排一天", lines: [
+      ["A","What will you do?","你要做什么？"],
+      ["B","I will go to the market in the morning.","我上午去市场。"],
+      ["A","What will you do after that?","之后你做什么？"],
+      ["B","I will see a friend.","我会见一位朋友。"],
+      ["A","Will you come back before night?","你会在晚上之前回来吗？"],
+      ["B","Yes. I will be in the house at night.","是的。我晚上会在家里。"],
+      ["A","We will go to the pictures.","我们将去看电影。"],
+      ["B","That is a good idea.","那是个好主意。"]
+    ]},
+    { title: "给朋友的信", lines: [
+      ["A","Is the man here?","那个人在这里吗？"],
+      ["B","No. He is out.","不在。他出去了。"],
+      ["A","When will he come?","他什么时候来？"],
+      ["B","He will come in an hour.","他一小时后会来。"],
+      ["A","Please give him this letter.","请把这封信交给他。"],
+      ["B","I will give it to him.","我会把它交给他。"],
+      ["A","Say to him that I will be here.","告诉他我会在这里。"],
+      ["B","I will say it to him.","我会告诉他。"]
+    ]}
+  ];
+
   let activeGroup = 0;
   let mode = "examples";
   let activeExercise = 0;
   let selectedTokens = [];
   let builderFeedback = "";
   let builderAnswerVisible = false;
+  let activeDialogue = 0;
+  let dialogueFeedback = "";
   const visible = new Set();
+  const visibleDialogueLines = new Set();
 
   function escapeHtml(value) {
     return String(value).replace(/[&<>"']/g, function (ch) {
@@ -218,11 +324,13 @@
     if (!target) return;
 
     if (mode === "builder") return renderBuilder(target);
+    if (mode === "dialogues") return renderDialogues(target);
 
     const group = groups[activeGroup];
     const modeTabs = '<div class="sentence-mode-tabs">' +
       '<button class="sentence-mode-tab active" onclick="BE.sentences.selectMode(\'examples\')">例句学习</button>' +
-      '<button class="sentence-mode-tab" onclick="BE.sentences.selectMode(\'builder\')">句子组装 · 20 题</button></div>';
+      '<button class="sentence-mode-tab" onclick="BE.sentences.selectMode(\'builder\')">句子组装 · 20 题</button>' +
+      '<button class="sentence-mode-tab" onclick="BE.sentences.selectMode(\'dialogues\')">情景对话 · 10 组</button></div>';
     const tabs = groups.map(function (item, index) {
       return '<button class="sentence-tab' + (index === activeGroup ? ' active' : '') +
         '" onclick="BE.sentences.selectGroup(' + index + ')">' +
@@ -246,7 +354,7 @@
         '<header class="sentence-hero">' +
           '<div class="sentence-kicker">BASIC ENGLISH · SENTENCE PRACTICE</div>' +
           '<h1>用 850 个基础词组织完整句子</h1>' +
-          '<p>100 个例句，分为 10 组。先读英文，试着理解句子结构，再打开中文对照。</p>' +
+          '<p>100 个例句、20 道组句练习和 10 组情景对话。先读英文，再查看中文或练习自己组织句子。</p>' +
           '<p class="sentence-hero-note">例句已逐句通过本项目的 Basic 词汇检查器。它们是配套练习，不冒充 Ogden 原版 45 课的原文。</p>' +
         '</header>' +
         modeTabs +
@@ -294,7 +402,8 @@
         '</header>' +
         '<div class="sentence-mode-tabs">' +
           '<button class="sentence-mode-tab" onclick="BE.sentences.selectMode(\'examples\')">例句学习</button>' +
-          '<button class="sentence-mode-tab active" onclick="BE.sentences.selectMode(\'builder\')">句子组装 · 20 题</button></div>' +
+          '<button class="sentence-mode-tab active" onclick="BE.sentences.selectMode(\'builder\')">句子组装 · 20 题</button>' +
+          '<button class="sentence-mode-tab" onclick="BE.sentences.selectMode(\'dialogues\')">情景对话 · 10 组</button></div>' +
         progress +
         '<section class="builder-question">' +
           '<div class="sentence-pattern-label">中文意思</div>' +
@@ -321,8 +430,112 @@
       '</section>';
   }
 
+  function renderDialogues(target) {
+    const dialogue = dialogues[activeDialogue];
+    const tabs = dialogues.map(function (item, index) {
+      return '<button class="dialogue-tab' + (index === activeDialogue ? ' active' : '') +
+        '" onclick="BE.sentences.selectDialogue(' + index + ')">' +
+        (index + 1) + '. ' + escapeHtml(item.title) + '</button>';
+    }).join("");
+    const lines = dialogue.lines.map(function (line, index) {
+      const key = activeDialogue + "-" + index;
+      const shown = visibleDialogueLines.has(key);
+      return '<article class="dialogue-line dialogue-line-' + line[0].toLowerCase() + '">' +
+        '<div class="dialogue-speaker">' + (line[0] === "A" ? "甲" : "乙") + '</div>' +
+        '<div class="dialogue-content">' +
+          '<div class="dialogue-english">' + escapeHtml(line[1]) + '</div>' +
+          (shown ? '<div class="dialogue-chinese">' + escapeHtml(line[2]) + '</div>' : '') +
+          '<div class="dialogue-line-actions">' +
+            '<button onclick="BE.sentences.toggleDialogueLine(' + index + ')">' + (shown ? '隐藏中文' : '显示中文') + '</button>' +
+            '<button onclick="BE.sentences.speakDialogueLine(' + index + ')">▶ 播放</button>' +
+          '</div>' +
+        '</div>' +
+      '</article>';
+    }).join("");
+    const feedback = dialogueFeedback ? '<div class="builder-feedback">' + escapeHtml(dialogueFeedback) + '</div>' : "";
+
+    target.innerHTML =
+      '<section class="sentence-page">' +
+        '<header class="sentence-hero">' +
+          '<div class="sentence-kicker">BASIC ENGLISH · ORIGINAL PRACTICE DIALOGUES</div>' +
+          '<h1>情景对话</h1>' +
+          '<p>10 个生活和工作场景，每组 8 轮对话，共 80 句。逐句查看中文，也可以播放英文语音。</p>' +
+          '<p class="sentence-hero-note">这些是为本项目编写的原创练习对话，不是 Ogden 原版 45 课的原文；每句均通过项目的 Basic 词汇检查器。</p>' +
+        '</header>' +
+        '<div class="sentence-mode-tabs">' +
+          '<button class="sentence-mode-tab" onclick="BE.sentences.selectMode(\'examples\')">例句学习</button>' +
+          '<button class="sentence-mode-tab" onclick="BE.sentences.selectMode(\'builder\')">句子组装 · 20 题</button>' +
+          '<button class="sentence-mode-tab active" onclick="BE.sentences.selectMode(\'dialogues\')">情景对话 · 10 组</button></div>' +
+        '<nav class="dialogue-tabs">' + tabs + '</nav>' +
+        '<section class="dialogue-scene">' +
+          '<div class="sentence-pattern-label">当前场景</div>' +
+          '<h2>' + escapeHtml(dialogue.title) + '</h2>' +
+          '<p>甲乙双方轮流说话。先尝试理解英文，再按需显示中文。</p>' +
+          '<div class="dialogue-actions">' +
+            '<button onclick="BE.sentences.showDialogueTranslations()">显示本组全部中文</button>' +
+            '<button onclick="BE.sentences.hideDialogueTranslations()">隐藏本组全部中文</button>' +
+          '</div>' +
+        '</section>' +
+        '<div class="dialogue-list">' + lines + '</div>' +
+        feedback +
+        '<div class="builder-navigation">' +
+          '<button onclick="BE.sentences.previousDialogue()" ' + (activeDialogue === 0 ? 'disabled' : '') + '>上一组</button>' +
+          '<button onclick="BE.sentences.nextDialogue()">' + (activeDialogue === dialogues.length - 1 ? '回到第一组' : '下一组') + '</button>' +
+        '</div>' +
+      '</section>';
+  }
+
+  function selectDialogue(index) {
+    if (index < 0 || index >= dialogues.length) return;
+    activeDialogue = index;
+    dialogueFeedback = "";
+    render();
+  }
+
+  function toggleDialogueLine(index) {
+    const key = activeDialogue + "-" + index;
+    if (visibleDialogueLines.has(key)) visibleDialogueLines.delete(key);
+    else visibleDialogueLines.add(key);
+    render();
+  }
+
+  function showDialogueTranslations() {
+    dialogues[activeDialogue].lines.forEach(function (_, index) {
+      visibleDialogueLines.add(activeDialogue + "-" + index);
+    });
+    render();
+  }
+
+  function hideDialogueTranslations() {
+    dialogues[activeDialogue].lines.forEach(function (_, index) {
+      visibleDialogueLines.delete(activeDialogue + "-" + index);
+    });
+    render();
+  }
+
+  function speakDialogueLine(index) {
+    const line = dialogues[activeDialogue].lines[index];
+    if (!line) return;
+    if (!window.BE || !window.BE.speak || !window.BE.speak(line[1], 0.85)) {
+      dialogueFeedback = "当前浏览器没有可用的英语语音播放功能。";
+      render();
+    }
+  }
+
+  function previousDialogue() {
+    if (activeDialogue > 0) activeDialogue--;
+    dialogueFeedback = "";
+    render();
+  }
+
+  function nextDialogue() {
+    activeDialogue = (activeDialogue + 1) % dialogues.length;
+    dialogueFeedback = "";
+    render();
+  }
+
   function selectMode(nextMode) {
-    mode = nextMode === "builder" ? "builder" : "examples";
+    mode = nextMode === "builder" || nextMode === "dialogues" ? nextMode : "examples";
     render();
   }
 
@@ -423,7 +636,17 @@
     previousExercise: previousExercise,
     nextExercise: nextExercise,
     builderState: function () { return { mode: mode, activeExercise: activeExercise, selectedTokens: selectedTokens.slice(), feedback: builderFeedback, showAnswer: builderAnswerVisible }; },
+    selectDialogue: selectDialogue,
+    toggleDialogueLine: toggleDialogueLine,
+    showDialogueTranslations: showDialogueTranslations,
+    hideDialogueTranslations: hideDialogueTranslations,
+    speakDialogueLine: speakDialogueLine,
+    previousDialogue: previousDialogue,
+    nextDialogue: nextDialogue,
+    dialogueState: function () { return { mode: mode, activeDialogue: activeDialogue, visibleLines: Array.from(visibleDialogueLines), feedback: dialogueFeedback }; },
     count: function () { return groups.reduce(function (sum, group) { return sum + group.sentences.length; }, 0); },
-    builderCount: function () { return builderExercises.length; }
+    builderCount: function () { return builderExercises.length; },
+    dialogueCount: function () { return dialogues.length; },
+    dialogueLineCount: function () { return dialogues.reduce(function (sum, dialogue) { return sum + dialogue.lines.length; }, 0); }
   };
 })();
