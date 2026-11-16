@@ -529,7 +529,7 @@
       answer('step17-passive','查看参考答案','<p>1. The jewels were taken from the house.</p><p>2. The boys were seen getting on a train.</p><p>3. The young man is let in by the servant every night.</p><p>4. The pot is put on the fire by my mother.</p>') +
       '<p><b>B. 把过去时改成现在完成时。</b></p><div class="lesson-examples"><p>1. I saw the jewels today.</p><p>2. She sent no letters.</p><p>3. The ship went out of the harbor.</p></div>' +
       answer('step17-perfect','查看参考答案','<p>1. I have seen the jewels today.</p><p>2. She has sent no letters.</p><p>3. The ship has gone out of the harbor.</p>') +
-      writingBox('step17-writing','Write one sentence with as ... as, one with than, and one with that after say or see.');
+      writingBox('step17-writing','Write one sentence with as ... as, one with than, and one with that after say or see.'));
 
   lessonHTML[18] =
     panel('1. 本课词汇', '<p>本课通过一天结束时的家庭谈话，学习所属关系、代词、省略和补充说明。</p>' +
@@ -570,7 +570,7 @@
       answer('step18-relative','查看参考答案','<p>1. The book I am reading is small.</p><p>2. The friend I was with yesterday will come.</p><p>3. The men waiting for the train are here.</p>') +
       '<p><b>D. 写出缩写的完整形式。</b> what’s、there’s、that’s、don’t、I’ve、they’ll、he’s、haven’t、hasn’t。</p>' +
       answer('step18-contractions','查看参考答案','<p>what is；there is；that is；do not；I have；they will；he is；have not；has not。</p>') +
-      writingBox('step18-writing','Write five sentences. Use one possessive noun, one possessive pronoun, one omitted relative pronoun, and two contractions.');
+      writingBox('step18-writing','Write five sentences. Use one possessive noun, one possessive pronoun, one omitted relative pronoun, and two contractions.'));
 
 
   function render() {
