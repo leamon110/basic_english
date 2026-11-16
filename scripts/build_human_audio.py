@@ -404,10 +404,17 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
             continue
 
         matched_in_pack = 0
+        audio_member_count = 0
+        tagged_member_count = 0
+        swac_text_count = 0
+        target_text_count = 0
+        accepted_license_count = 0
+        diagnostic_samples = 0
         with tarfile.open(archive_path, "r:xz") as archive:
             for member in archive:
                 if not member.isfile() or not member.name.lower().endswith((".ogg", ".flac", ".wav", ".mp3")):
                     continue
+                audio_member_count += 1
                 source = archive.extractfile(member)
                 if source is None:
                     continue
@@ -417,12 +424,36 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                         shutil.copyfileobj(source, output)
                     audio = MutagenFile(temp_path)
                     tags = getattr(audio, "tags", None) if audio else None
+                    if tags:
+                        tagged_member_count += 1
+                    if diagnostic_samples < 4:
+                        tag_keys = list(tags.keys()) if tags else []
+                        print(
+                            f"[Shtooka debug] {pack_name} sample={member.name!r} "
+                            f"audio_type={type(audio).__name__ if audio else None} "
+                            f"tag_keys={tag_keys[:24]}",
+                            flush=True,
+                        )
+                        if tags:
+                            print(
+                                f"[Shtooka debug] {pack_name} values="
+                                + json.dumps(
+                                    {str(k): str(v)[:160] for k, v in list(tags.items())[:16]},
+                                    ensure_ascii=False,
+                                ),
+                                flush=True,
+                            )
+                        diagnostic_samples += 1
                     if not tags:
                         continue
                     tag_map = {str(k).upper(): v for k, v in tags.items()}
                     word_text = tag_value(tag_map, "SWAC_TEXT")
                     word = norm(word_text)
                     language = tag_value(tag_map, "SWAC_LANG").lower()
+                    if word_text:
+                        swac_text_count += 1
+                    if word in targets:
+                        target_text_count += 1
                     if word not in targets or (language and not language.startswith(("eng", "en"))):
                         continue
 
@@ -446,6 +477,7 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                         licence = pack["license"]
                     if not licence_allowed(licence):
                         continue
+                    accepted_license_count += 1
 
                     speaker = (
                         tag_value(tag_map, "SWAC_SPEAK_NAME")
@@ -492,7 +524,13 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                     temp_path.unlink(missing_ok=True)
 
         archive_path.unlink(missing_ok=True)
-        print(f"[Shtooka] {pack_name}: matched {matched_in_pack} Basic English words", flush=True)
+        print(
+            f"[Shtooka] {pack_name}: audio_files={audio_member_count}, "
+            f"tagged={tagged_member_count}, SWAC_TEXT={swac_text_count}, "
+            f"target_text={target_text_count}, licensed={accepted_license_count}, "
+            f"matched={matched_in_pack}",
+            flush=True,
+        )
 
     print(f"[Shtooka] total unique words matched: {len(selected)}", flush=True)
     return selected
