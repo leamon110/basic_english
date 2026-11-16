@@ -54,7 +54,7 @@
     { n: 45, title: "关于英国的一些笔记", en: "Some Notes about England", kind: "Reading" }
   ];
 
-  const lessons = [1, 2, 3, 5, 6, 9, 10, 12, 13, 15];
+  const lessons = [1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18];
 
   function vocab(items) {
     return '<div class="lesson-words">' + items.map(function (w) {
@@ -95,8 +95,8 @@
       '<header class="course-hero"><p class="course-kicker">C. K. OGDEN · 1930 ORIGINAL COURSE</p>' +
       '<h1>从 850 个词，学会说完整的英语</h1>' +
       '<p>按原版 45 Steps 的顺序学习。每课把词汇放进句子、阅读和练习中，而不是孤立地背单词。</p>' +
-      '<div class="course-note">目前已完成 10 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10、12、13、15。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
-      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：10 课 · 待补：Step 4、7、8、11、14</span></div>' +
+      '<div class="course-note">目前已完成 12 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10、12、13、15、17、18。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
+      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：12 课 · 待补：Step 4、7、8、11、14、16</span></div>' +
       '<div class="course-grid">' + cards + '</div></section>';
   }
 
@@ -490,6 +490,89 @@
       writingBox('step15-writing','Write three sentences using an -ing form as a noun, and one sentence with let us.'));
 
 
+  lessonHTML[17] =
+    panel('1. 本课词汇', '<p>本课围绕被动表达、比较和判断展开。</p>' +
+      vocab([['ball','球'],['bottle','瓶子'],['jewel','宝石'],['judge','法官；判断'],['money','钱'],['discussion','讨论'],['broken','坏了的；破损的'],['like','像；相似'],['wise','明智的'],['foolish','愚蠢的'],['as','像；如同'],['well','好地'],['than','比']])) +
+    panel('2. money：集合名词', '<p>money 与 fruit、grass 类似，作为集合名词使用，按物质名词的方式处理。</p>' +
+      '<div class="lesson-examples"><p>There is some money on the table.</p><p>She does the work for money.</p></div>') +
+    panel('3. like 的三种用法', '<div class="lesson-rule"><b>like 作介词：像、如同</b><p>The letter S is like a snake.</p><p>The pain was like a fire in his head.</p></div>' +
+      '<div class="lesson-rule"><b>like 作形容词：相似的</b><p>The two friends have like ideas.</p></div>' +
+      '<div class="lesson-rule"><b>like 表示“以……的方式”</b><p>The steam makes a sound like a snake.</p></div>') +
+    panel('4. 过去分词：动作的承受者或结果', '<p>过去分词有一组形式变化。它与 -ing 形式不同：-ing 常描述动作的执行者或正在进行的动作；过去分词常描述承受动作的对象或动作完成后的状态。</p>' +
+      '<div class="lesson-table"><div><b>operator</b><b>过去分词</b></div><div><span>be</span><span>been</span></div><div><span>do</span><span>done</span></div><div><span>get</span><span>got / gotten</span></div><div><span>give</span><span>given</span></div><div><span>go</span><span>gone</span></div><div><span>take</span><span>taken</span></div><div><span>see</span><span>seen</span></div></div>' +
+      '<p>come、let、put 的过去分词与原形相同；have、keep、make、say、seem、send 的过去分词与它们的过去时相同。</p>') +
+    panel('5. 被动结构：be + 过去分词', '<p>当主语是动作的承受者，而不是执行者时，可以使用 <b>be + 过去分词</b>。动作执行者可以用 by 引出，也可以不说。</p>' +
+      '<div class="lesson-examples"><p>The housework is done by the servants.</p><p>Why were the socks given to the cook?</p><p>Where is the money kept?</p><p>These stockings were not made for my sister.</p><p>A fish was seen in the water.</p><p>The letter was not sent by me.</p></div>' +
+      '<p>made、done 还可以描述完成后的状态，不强调是谁做的：The housework is done.</p>') +
+    panel('6. get + 过去分词', '<p>get 后面可以接过去分词，表示使某件事由别人完成，或使某物进入完成后的状态。</p>' +
+      '<div class="lesson-examples"><p>I will get some stockings made by my sister.</p><p>He gets food sent from the country.</p><p>He got the work done tonight.</p></div>' +
+      '<p>注意：get 不与 got、let、made 后面再接 operator 的形式这样使用；been、come、gone、seemed 也不适用于这种“对某物执行动作”的结构。</p>') +
+    panel('7. 完成时：have + 过去分词', '<p>have + 过去分词表示某个动作或状态发生在所谈时间点之前。时间点可以是现在、过去或将来。</p>' +
+      '<div class="lesson-table"><div><b>时间</b><b>结构</b><b>例子</b></div><div><span>现在完成</span><span>have / has + 过去分词</span><span>She has done the work.</span></div><div><span>过去完成</span><span>had + 过去分词</span><span>He had given the money before she went.</span></div><div><span>将来完成</span><span>will have + 过去分词</span><span>He will have sent the parcel by then.</span></div></div>' +
+      '<p>完成时可以说明动作已经完成，也可以说明某种状态从更早以前开始并持续到所谈时间点。</p>' +
+      '<div class="lesson-examples"><p>I have kept the money.</p><p>He has had these socks on for a week.</p><p>When I got to the station, he had been waiting for an hour.</p><p>The socks have been put in a drawer.</p></div>') +
+    panel('8. 程度：more / most / less / least', '<p>much 的比较和最高程度形式是 more / most；little 的形式是 less / least。它们既可以表示数量，也可以表示程度。</p>' +
+      '<div class="lesson-examples"><p>There is more wine in this bottle.</p><p>She has the most jewels.</p><p>He is less foolish than his friend.</p></div>' +
+      '<p>其他形容词可以在前面加 more / most / less / least。短形容词也可能使用 -er / -est。</p>' +
+      '<div class="lesson-examples"><p>small → smaller → smallest</p><p>wise → wiser → wisest</p><p>early → earlier → earliest</p><p>red → redder → reddest</p><p>good → better → best</p><p>bad → worse → worst</p><p>near → nearer → nearest</p><p>far → farther → farthest</p></div>' +
+      '<p>very 不用来修饰比较级或最高级：不能说 very better 或 very best。</p>') +
+    panel('9. 比较句：as ... as 与 than', '<div class="lesson-rule"><b>as + 形容词 / 副词 + as</b><p>表示两者在某方面相等或不相等：Her eyes are as bright as jewels. He is not as wise as his father.</p></div>' +
+      '<div class="lesson-rule"><b>比较级 + than</b><p>表示一方在某方面超过或低于另一方：The snake was quicker than we were.</p></div>' +
+      '<p>比较句后半部分如果与前半部分重复，能够从语境中理解时可以省略；需要重复 operator 时，简单时态常用 do 代替。</p>' +
+      '<p>注意单数可数名词的 a / an 位置：as old a man as my father，而不是 as a old man as。</p>') +
+    panel('10. well / badly 与 that 从句', '<p><b>well</b> 是 good 的副词形式，比较级和最高级为 better / best；badly 对应 worse / worst。</p>' +
+      '<div class="lesson-examples"><p>The woman made the socks well.</p><p>Our eyes see better at night.</p><p>He does the work worst.</p></div>' +
+      '<p><b>that</b> 可以连接 say 或 see 后面的内容，也可以跟在 answer、news、opinion、idea 等名词后面，引出具体内容；that 从句也可以作 be / seem 的主语。</p>' +
+      '<div class="lesson-examples"><p>I say that he will come again.</p><p>He said that he kept the money in a drawer.</p><p>I see that the work has been done well.</p><p>The opinion that men are wiser than women makes me angry.</p><p>That he has no money seems clear.</p></div>' +
+      '<p>过去时 say 引出的 that 从句，通常也把时态放到过去；现在时或将来时 say 后面的从句保留其原有时态。</p>') +
+    panel('11. 练习', '<p><b>A. 把主动句改成被动句。</b></p><div class="lesson-examples"><p>1. Someone took the jewels from the house.</p><p>2. The porter saw the boys getting on a train.</p><p>3. The servant lets the young man in every night.</p><p>4. My mother puts the pot on the fire.</p></div>' +
+      answer('step17-passive','查看参考答案','<p>1. The jewels were taken from the house.</p><p>2. The boys were seen getting on a train.</p><p>3. The young man is let in by the servant every night.</p><p>4. The pot is put on the fire by my mother.</p>') +
+      '<p><b>B. 把过去时改成现在完成时。</b></p><div class="lesson-examples"><p>1. I saw the jewels today.</p><p>2. She sent no letters.</p><p>3. The ship went out of the harbor.</p></div>' +
+      answer('step17-perfect','查看参考答案','<p>1. I have seen the jewels today.</p><p>2. She has sent no letters.</p><p>3. The ship has gone out of the harbor.</p>') +
+      writingBox('step17-writing','Write one sentence with as ... as, one with than, and one with that after say or see.');
+
+  lessonHTML[18] =
+    panel('1. 本课词汇', '<p>本课通过一天结束时的家庭谈话，学习所属关系、代词、省略和补充说明。</p>' +
+      vocab([['bite','咬；一口'],['knee','膝盖'],['meeting','会议'],['mine','我的；矿井'],['neck','脖子'],['page','页'],['spring','弹簧；春天'],['stomach','胃'],['wool','羊毛'],['amusement','乐趣'],['apparatus','设备；器械'],['behavior','行为'],['business','生意；业务'],['debt','债务'],['decision','决定'],['detail','细节'],['event','事件'],['humor','幽默；情绪'],['knowledge','知识'],['print','印刷字；印刷'],['completed','已完成的'],['right','右边；正确的'],['left','左边'],['second','第二；秒'],['strange','奇怪的']])) +
+    panel('2. 名词所有格：名词 + ’s', '<p>名词也可以像代词一样形成所属限定词，放在被拥有的事物前面。</p>' +
+      '<div class="lesson-table"><div><b>名词</b><b>所属形式</b><b>例子</b></div><div><span>单数名词</span><span>加 ’s</span><span>friend → friend’s</span></div><div><span>以 s 结尾的复数</span><span>只加 ’</span><span>girls → girls’</span></div><div><span>不以 s 结尾的复数</span><span>加 ’s</span><span>women → women’s</span></div></div>' +
+      '<div class="lesson-examples"><p>My friend’s son does work in the mine.</p><p>The woman’s decision will make the men angry.</p><p>The girls’ behavior seems strange.</p></div>' +
+      '<p>原版给初学者的稳妥建议：人的姓名、动物可以使用 ’s；抽象名词和物质名词的所属关系，优先使用 the ... of ... 结构。</p>') +
+    panel('3. 物主代词：mine / yours / his / hers / ours / theirs', '<p>物主代词代替“物主限定词 + 名词”，当名词已经明确时，不必重复。</p>' +
+      '<div class="lesson-table"><div><b>物主限定词</b><b>物主代词</b></div><div><span>my</span><span>mine</span></div><div><span>your</span><span>yours</span></div><div><span>his</span><span>his</span></div><div><span>her</span><span>hers</span></div><div><span>our</span><span>ours</span></div><div><span>their</span><span>theirs</span></div></div>' +
+      '<div class="lesson-examples"><p>That wool is not mine.</p><p>His is on the first page and hers is on the second.</p><p>Is their apparatus better than ours?</p><p>Whose is this decision? It is ours.</p></div>' +
+      '<p>原版的表格不列 its；原版脚注另外指出，现代英语也使用 its 表示 it 的所属关系。</p>') +
+    panel('4. 关系代词省略', '<p>who(m) 或 which 在限定性关系从句中作 operator 或介词的宾语时，经常可以省略。</p>' +
+      '<div class="lesson-examples"><p>The person (whom) I saw on her knees was your mother.</p><p>The book (which) I am reading is small.</p><p>The friend (whom) I was with yesterday will give you his opinion.</p></div>' +
+      '<p>当被省略的关系代词是介词的宾语时，介词要留在从句末尾：the friend I was with。</p>' +
+      '<p>如果关系代词在从句中作主语，不能直接省略；但当它后面是 be 时，关系代词和 be 可以一起省略。</p>' +
+      '<div class="lesson-examples"><p>The porter said something to the men (who are) waiting for the train.</p><p>This strange suggestion, (which was) made at the end of the meeting, was a surprise.</p><p>She has a drawer full of his letters.</p><p>My office is in the building opposite the station.</p></div>') +
+    panel('5. 同位补充说明', '<p>可以在名词或代词后面再放一个名词或代词，说明它就是谁或什么；这个补充部分与前面的对象指向同一个人或事物。</p>' +
+      '<div class="lesson-examples"><p>The manager, a strange man, was not at the meeting.</p><p>I, his sister, had no knowledge of his decision.</p></div>' +
+      '<p>we men、you women 这样的结构，可以用来说明说话者所属的群体或对话对象的身份。</p>') +
+    panel('6. 阅读：At the End of the Day', '<p class="lesson-instruction">以下是根据原版对话改写的简化阅读，保留主要事件和本课语法重点，不是原文逐字抄录。</p>' +
+      '<div class="lesson-passage"><p>At the end of the day, a man comes home and sits by the fire. His wife asks about the news. He says that he is very tired. She says, “What’s the news? Is there anything about the ship?” He says, “There’s no news of the ship tonight.”</p>' +
+      '<p class="lesson-translation">一天结束时，一个男人回到家，坐在炉火旁。他的妻子询问消息。他说自己很累。妻子问：“有什么新消息吗？有那艘船的消息吗？”他说：“今晚没有那艘船的消息。”</p>' +
+      '<p>He gives an account of his day. He went to the works and had a discussion with the manager about new apparatus. Then he went to the office and did accounts. Later he had a meal with a friend. They went to a place by the river, but it was full and they were kept waiting.</p>' +
+      '<p class="lesson-translation">他讲述了自己一天的经历。他去了工厂，与经理讨论新设备。然后他去了办公室做账。后来他和朋友一起吃饭。他们去了河边的一家店，但那里客人很多，他们等了很久。</p>' +
+      '<p>After that, he went to a committee meeting. The committee had a long discussion about his suggestions. He saw that the others were against them, got angry and came away before they made a decision. His wife says that she took her mother to the station and got new blue curtains. Their friends will come tonight.</p>' +
+      '<p class="lesson-translation">之后，他去参加委员会会议。委员会长时间讨论他的建议。他发现其他人反对这些建议，于是生气地离开了，没有等他们作出决定。妻子说，她送母亲去了车站，还买了新的蓝色窗帘。他们的朋友今晚会来。</p>' +
+      '<p>He asks for the book he is reading. His wife says, “No, that’s mine. Here is yours.” He says, “I’ll take it with me to my room.” His wife takes up a page of the newspaper and looks at a picture.</p>' +
+      '<p class="lesson-translation">他寻找自己正在读的书。妻子说：“不，那是我的。这本才是你的。”他说：“我把它带回房间。”妻子拿起报纸的一页，看着上面的一张图片。</p></div>') +
+    panel('7. 缩写形式：apostrophe', '<p>口语中会把一些常用词连在一起读；非正式书写中用撇号表示省略的字母。</p>' +
+      '<div class="lesson-table"><div><b>缩写</b><b>完整形式</b></div><div><span>what’s</span><span>what is</span></div><div><span>there’s</span><span>there is</span></div><div><span>that’s</span><span>that is</span></div><div><span>don’t</span><span>do not</span></div><div><span>I’ve</span><span>I have</span></div><div><span>they’ll</span><span>they will</span></div><div><span>he’s</span><span>he is</span></div><div><span>haven’t</span><span>have not</span></div><div><span>hasn’t</span><span>has not</span></div></div>' +
+      '<p>注意 he’s 也可能表示 he has，具体由后面的结构和语境判断。否定疑问句中的 not 有时会与 operator 或助动词合并成缩写。</p>') +
+    panel('8. 练习', '<p><b>A. 写出名词所有格。</b> friend、woman、girls、men。</p>' +
+      answer('step18-possessive','查看参考答案','<p>friend’s；woman’s；girls’；men’s。</p>') +
+      '<p><b>B. 写出物主代词。</b> my、your、her、our、their。</p>' +
+      answer('step18-pronouns','查看参考答案','<p>mine；yours；hers；ours；theirs。</p>') +
+      '<p><b>C. 省略关系代词，改写句子。</b></p><div class="lesson-examples"><p>1. The book which I am reading is small.</p><p>2. The friend whom I was with yesterday will come.</p><p>3. The men who are waiting for the train are here.</p></div>' +
+      answer('step18-relative','查看参考答案','<p>1. The book I am reading is small.</p><p>2. The friend I was with yesterday will come.</p><p>3. The men waiting for the train are here.</p>') +
+      '<p><b>D. 写出缩写的完整形式。</b> what’s、there’s、that’s、don’t、I’ve、they’ll、he’s、haven’t、hasn’t。</p>' +
+      answer('step18-contractions','查看参考答案','<p>what is；there is；that is；do not；I have；they will；he is；have not；has not。</p>') +
+      writingBox('step18-writing','Write five sentences. Use one possessive noun, one possessive pronoun, one omitted relative pronoun, and two contractions.');
+
+
   function render() {
     const main = document.getElementById('main-content');
     if (main) main.innerHTML = courseShell();
@@ -500,7 +583,7 @@
     if (!main) return;
     if (!lessonHTML[n]) return openOriginal(n);
     const step = steps.find(function (s) { return s.n === n; });
-    const prerequisite = n === 12 ? '<div class="course-note">前置知识：本课会用到 Step 11 引入的数词 one。Step 11 尚未完成中文改编，请先查看原版课程。</div><button class="course-primary" onclick="BE.course.openOriginal(11)">打开原版 Step 11</button>' : (n === 15 ? '<div class="course-note">前置知识：Step 14 是阅读课，目前尚未完成中文改编。可以先打开原版 Step 14，再继续本课。</div><button class="course-primary" onclick="BE.course.openOriginal(14)">打开原版 Step 14</button>' : '');
+    const prerequisite = n === 12 ? '<div class="course-note">前置知识：本课会用到 Step 11 引入的数词 one。Step 11 尚未完成中文改编，请先查看原版课程。</div><button class="course-primary" onclick="BE.course.openOriginal(11)">打开原版 Step 11</button>' : ((n === 15 || n === 17) ? '<div class="course-note">前置知识：Step 14 / Step 16 是阅读课，目前尚未完成中文改编。可以先打开相应原版课程，再继续本课。</div><button class="course-primary" onclick="BE.course.openOriginal(' + (n - 1) + ')">打开原版 Step ' + (n - 1) + '</button>' : '');
     main.innerHTML = '<section class="course-page">' +
       lessonHeader(n, step.en, step.title + ' · ' + step.kind) +
       '<div class="course-lesson-meta">本课是 45 步原版课程中的第 ' + n + ' 步。按顺序学习词汇、句型、阅读和练习。</div>' +
