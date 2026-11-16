@@ -8,6 +8,7 @@ on:
       - 'docs/js/data.js'
       - 'docs/js/teaching.js'
       - 'docs/js/course.js'
+      - 'docs/js/app.js'
       - 'scripts/build_human_audio.py'
       - 'android-offline/**'
       - '.github/workflows/build-human-audio.yml'
@@ -102,7 +103,7 @@ jobs:
           mkdir -p android-offline/app/src/main/assets/www
           cp -R docs/. android-offline/app/src/main/assets/www/
 
-      - name: Install audio encoder for original WAV recordings
+      - name: Install FFmpeg for original audio conversion
         if: steps.coverage.outputs.complete == 'true'
         run: |
           sudo apt-get update

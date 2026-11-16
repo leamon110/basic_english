@@ -91,27 +91,19 @@ function renderHome(container) {
 }
 
 // ============================================================
-// SPEECH SYNTHESIS
-// Prefer the Android app's native TextToSpeech bridge when available.
-// Fall back to the browser SpeechSynthesis API for normal browsers/TWA.
-// An empty getVoices() list is not proof that the browser cannot speak.
+// SPEECH PLAYBACK
+// Basic English words use bundled human recordings. Browser TTS remains
+// only as a fallback for multi-word sentences and other text not in the 850.
 // ============================================================
 var _beVoices = []
 var _beSpeechAvailable = false
 var _beSpeechLastState = 'not-initialized'
 var _beSpeechLastError = null
+var _beCurrentWordAudio = null
 
 function _beHasBrowserSpeechApi() {
   return !!(window.speechSynthesis &&
             typeof window.SpeechSynthesisUtterance === 'function')
-}
-
-function _beHasNativeSpeechApi() {
-  return !!(window.AndroidTTS && typeof window.AndroidTTS.speak === 'function')
-}
-
-function _beHasSpeechApi() {
-  return _beHasNativeSpeechApi() || _beHasBrowserSpeechApi()
 }
 
 function _beSetSpeechAvailable(available) {
@@ -126,159 +118,139 @@ function _beSetSpeechAvailable(available) {
   }
 }
 
-function _beLoadVoices() {
-  if (!_beHasSpeechApi()) {
-    _beVoices = []
-    _beSetSpeechAvailable(false)
-    return
-  }
+function _beInitSpeech() {
+  // Audio playback is available independently of Android's selected TTS engine.
+  _beSetSpeechAvailable(typeof window.Audio === 'function')
 
-  // Voice enumeration is optional. Native Android TTS does not need it,
-  // and Android/Chrome may return an empty list while still being able to speak.
+  // Load browser voices only for sentence fallback; word cards do not use them.
   if (_beHasBrowserSpeechApi()) {
     try {
       _beVoices = window.speechSynthesis.getVoices() || []
-    } catch (e) {
-      _beVoices = []
-    }
-  } else {
-    _beVoices = []
-  }
-
-  _beSetSpeechAvailable(true)
-}
-
-function _beInitSpeech() {
-  if (!_beHasSpeechApi()) {
-    _beSpeechLastState = 'unsupported'
-    _beSetSpeechAvailable(false)
-    return
-  }
-
-  _beSetSpeechAvailable(true)
-  _beLoadVoices()
-
-  // Browser voice lists may load asynchronously. This is only for choosing
-  // a named voice; it is not a prerequisite for sending speech to the OS.
-  if (_beHasBrowserSpeechApi()) {
-    var synth = window.speechSynthesis
-    try {
+      var synth = window.speechSynthesis
       if (typeof synth.addEventListener === 'function') {
-        synth.addEventListener('voiceschanged', _beLoadVoices)
+        synth.addEventListener('voiceschanged', function() {
+          try { _beVoices = synth.getVoices() || [] } catch (e) {}
+        })
       } else {
-        synth.onvoiceschanged = _beLoadVoices
+        synth.onvoiceschanged = function() {
+          try { _beVoices = synth.getVoices() || [] } catch (e) {}
+        }
       }
     } catch (e) {
-      // Keep speech enabled; voiceschanged is optional.
+      _beVoices = []
     }
   }
 }
 
 function _bePickEnglishVoice() {
-  if (!_beHasBrowserSpeechApi()) return null
-  if (!_beVoices.length) _beLoadVoices()
   return _beVoices.find(function(v) { return /en[-_]US/i.test(v.lang) }) ||
          _beVoices.find(function(v) { return /^en/i.test(v.lang) }) ||
          null
 }
 
+function _bePlayHumanWord(word) {
+  if (typeof window.Audio !== 'function') return false
+  var normalized = String(word || '').trim().toLowerCase()
+  if (!/^[a-z]+$/.test(normalized)) return false
+
+  if (_beCurrentWordAudio) {
+    try {
+      _beCurrentWordAudio.pause()
+      _beCurrentWordAudio.currentTime = 0
+    } catch (e) {}
+  }
+
+  var audio = new Audio('audio/words/' + encodeURIComponent(normalized) + '.mp3')
+  _beCurrentWordAudio = audio
+  audio.onplay = function() {
+    _beSpeechLastState = 'human-audio-playing'
+    _beSpeechLastError = null
+  }
+  audio.onended = function() {
+    _beSpeechLastState = 'human-audio-ended'
+  }
+  audio.onerror = function() {
+    _beSpeechLastState = 'human-audio-error'
+    _beSpeechLastError = 'audio-file-unavailable:' + normalized
+    console.warn('[Basic English] Human pronunciation file failed:', normalized)
+  }
+
+  try {
+    var result = audio.play()
+    if (result && typeof result.catch === 'function') {
+      result.catch(function(error) {
+        _beSpeechLastState = 'human-audio-error'
+        _beSpeechLastError = String(error)
+        console.warn('[Basic English] Human pronunciation playback failed:', error)
+      })
+    }
+    _beSpeechLastState = 'human-audio-queued'
+    return true
+  } catch (e) {
+    _beSpeechLastState = 'human-audio-error'
+    _beSpeechLastError = String(e)
+    return false
+  }
+}
+
 function speak(text, rate) {
   if (!text) return false
 
-  // The offline Android wrapper exposes the system TextToSpeech engine
-  // directly. Prefer it so playback does not depend on WebView's voice list.
-  if (_beHasNativeSpeechApi()) {
-    try {
-      var accepted = window.AndroidTTS.speak(String(text), rate || 0.9)
-      if (accepted !== false) {
-        _beSpeechLastState = 'native-queued'
-        _beSpeechLastError = null
-        return true
-      }
-    } catch (e) {
-      _beSpeechLastError = String(e)
-      console.warn('[Basic English] Native Android TTS failed; trying browser TTS.', e)
-    }
-  }
+  // A single word from the 850-word list is played from its local human recording.
+  var raw = String(text).trim()
+  var word = raw.replace(/^[^A-Za-z]+|[^A-Za-z]+$/g, '')
+  if (word && !/\s/.test(raw) && _bePlayHumanWord(word)) return true
 
+  // Keep existing sentence playback as a browser fallback. This path is not
+  // used for the 850 single-word pronunciation buttons.
   if (!_beHasBrowserSpeechApi()) {
-    _beSpeechLastState = 'unsupported'
-    _beSpeechLastError = 'speech-api-unavailable'
-    _beSetSpeechAvailable(false)
+    _beSpeechLastState = 'unsupported-for-sentence'
+    _beSpeechLastError = 'browser-speech-api-unavailable'
     return false
   }
 
   var synth = window.speechSynthesis
-  var speakNow = function() {
-    try {
-      var u = new window.SpeechSynthesisUtterance(String(text))
-      u.lang = 'en-US'
-      u.rate = rate || 0.9
-      u.volume = 1
-      u.pitch = 1
-
-      // If no explicit English voice is listed, leave voice unset and let
-      // Android/Chrome select the system voice from the en-US language tag.
-      var v = _bePickEnglishVoice()
-      if (v) u.voice = v
-
-      u.onstart = function() {
-        _beSpeechLastState = 'speaking'
-        _beSpeechLastError = null
-      }
-      u.onend = function() {
-        _beSpeechLastState = 'ended'
-      }
-      u.onerror = function(event) {
-        _beSpeechLastState = 'error'
-        _beSpeechLastError = event && event.error ? event.error : 'unknown'
-        console.warn('[Basic English] Speech synthesis error:', _beSpeechLastError)
-      }
-
-      _beSpeechLastState = 'queued'
-      _beSpeechLastError = null
-      synth.speak(u)
-    } catch (e) {
-      _beSpeechLastState = 'error'
-      _beSpeechLastError = String(e)
-      console.warn('[Basic English] Speech synthesis failed:', e)
-    }
-  }
-
   try {
-    if (synth.paused && typeof synth.resume === 'function') synth.resume()
-    if (synth.speaking || synth.pending) {
-      synth.cancel()
-      setTimeout(speakNow, 100)
-    } else {
-      speakNow()
+    var u = new window.SpeechSynthesisUtterance(String(text))
+    u.lang = 'en-US'
+    u.rate = rate || 0.9
+    u.volume = 1
+    u.pitch = 1
+    var v = _bePickEnglishVoice()
+    if (v) u.voice = v
+    u.onstart = function() {
+      _beSpeechLastState = 'sentence-speaking'
+      _beSpeechLastError = null
     }
+    u.onend = function() {
+      _beSpeechLastState = 'sentence-ended'
+    }
+    u.onerror = function(event) {
+      _beSpeechLastState = 'sentence-error'
+      _beSpeechLastError = event && event.error ? event.error : 'unknown'
+      console.warn('[Basic English] Sentence speech error:', _beSpeechLastError)
+    }
+    if (synth.paused && typeof synth.resume === 'function') synth.resume()
+    if (synth.speaking || synth.pending) synth.cancel()
+    synth.speak(u)
     return true
   } catch (e) {
-    _beSpeechLastState = 'error'
+    _beSpeechLastState = 'sentence-error'
     _beSpeechLastError = String(e)
-    console.warn('[Basic English] Speech synthesis failed:', e)
+    console.warn('[Basic English] Sentence speech failed:', e)
     return false
   }
 }
 
 function isSpeechAvailable() {
-  return _beHasSpeechApi()
+  return typeof window.Audio === 'function' || _beHasBrowserSpeechApi()
 }
 
 function getSpeechDiagnostics() {
-  var nativeStatus = null
-  if (_beHasNativeSpeechApi() && typeof window.AndroidTTS.getStatus === 'function') {
-    try { nativeStatus = window.AndroidTTS.getStatus() } catch (e) {}
-  }
   return {
-    supported: _beHasSpeechApi(),
-    nativeAndroidTTS: _beHasNativeSpeechApi(),
-    nativeStatus: nativeStatus,
+    humanWordAudio: typeof window.Audio === 'function',
+    browserSentenceTTS: _beHasBrowserSpeechApi(),
     voiceCount: _beVoices.length,
-    voices: _beVoices.map(function(v) {
-      return { name: v.name, lang: v.lang, isDefault: !!v.default }
-    }),
     state: _beSpeechLastState,
     lastError: _beSpeechLastError
   }
@@ -289,7 +261,6 @@ window.BE.speak = speak
 window.BE.isSpeechAvailable = isSpeechAvailable
 window.BE.getSpeechDiagnostics = getSpeechDiagnostics
 
-// Initialize speech support on DOMContentLoaded.
 document.addEventListener('DOMContentLoaded', _beInitSpeech)
 
 // ---- INIT ----

@@ -1,17 +1,20 @@
-# Basic English Offline for Android
+# Basic English Offline — Human Word Audio
 
-This is a small Android WebView wrapper that packages the complete static site from `docs/` inside the APK.
+This Android WebView app packages the Basic English learning site and its 850 word-pronunciation recordings inside the APK.
 
 ## Offline behavior
 
-- The learning pages, word cards, Chinese translations, sentence examples, sentence assembly exercises, dialogues, CSS, JavaScript and images are bundled as local app assets.
-- The app opens `file:///android_asset/www/index.html`; it does not need GitHub Pages or a network connection to open the learning content.
-- Word pronunciation uses Android's native `TextToSpeech` engine through a JavaScript bridge, with browser SpeechSynthesis as a fallback.
+- The learning pages, vocabulary, Chinese translations, exercises, CSS, JavaScript and images are bundled as local app assets.
+- All 850 single-word pronunciation buttons play bundled human recordings from Wikimedia Commons / Lingua Libre / Wiktionary.
+- Single-word playback does not use Android system TextToSpeech and does not need an installed TTS voice or an internet connection.
+- The original recording, speaker or contributor, accent and per-file licence are listed in `audio/CREDITS.md`.
+- Multi-word sentence playback retains the existing browser SpeechSynthesis fallback; the 850 vocabulary-word buttons use the local human MP3 files.
+- The app opens `file:///android_asset/www/index.html`; learning content and word audio work offline.
 - The conversation page's external AI providers still require a network connection and a user-supplied API configuration.
 - External web links are opened by the device browser.
 
 ## Build
 
-The GitHub Actions workflow `.github/workflows/build-android-offline.yml` copies `docs/` into the Android assets directory, builds a debug APK, and uploads it as an Actions artifact.
+The workflow `.github/workflows/build-human-audio.yml` verifies the source and licence for every word, refuses to build if any of the 850 words is missing, packages the human recordings, builds the APK, and uploads the installable artifact.
 
-The package ID for this voice-fix test build is `org.basicenglish.offline.voicefix2`, with the launcher label `Basic English Voice Fix 2`. It is intentionally a separate app identity so it can be installed alongside the existing `org.basicenglish.offline` app without uninstalling it or risking its local learning data. After the new build is verified, the package identity can be reconciled in a later release.
+The package ID is `org.basicenglish.offline.humanaudio`, with launcher label `Basic English Human Audio`. It is a separate app identity so it can be installed alongside the existing Basic English app.
