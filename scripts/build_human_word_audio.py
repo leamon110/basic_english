@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch and package human English word recordings for the Basic English 850 list.
-
-Sources are Wikimedia Commons / Lingua Libre. Only openly licensed files
-(CC0, CC BY, CC BY-SA, or public domain) are accepted. The script refuses to
-build an incomplete 850-word set.
-"""
+"""Find and package one openly licensed human recording for every Basic English 850 word."""
 import collections
 import concurrent.futures
 import hashlib
@@ -12,7 +7,6 @@ import html
 import json
 import re
 import subprocess
-import sys
 import time
 import urllib.parse
 import urllib.request
@@ -27,16 +21,8 @@ CREDITS_MD = ROOT / "android-offline/app/src/main/assets/www/audio/THIRD_PARTY_A
 TMP_DIR = ROOT / ".audio-build-tmp"
 
 UA = {
-    "User-Agent": "BasicEnglish850AudioBuilder/1.0 (one-time fetch of openly licensed English pronunciation recordings)"
+    "User-Agent": "BasicEnglish850AudioBuilder/1.0 (https://github.com/leamon110/basic_english)"
 }
-CATEGORIES = [
-    "Category:Lingua Libre pronunciation-eng",
-    "Category:U.S. English pronunciation",
-    "Category:British English pronunciation",
-    "Category:Australian English pronunciation",
-    "Category:Canadian English pronunciation",
-    "Category:English pronunciation",
-]
 GA_SPEAKERS = [
     "Wodencafe",
     "Grendelkhan",
@@ -46,7 +32,13 @@ GA_SPEAKERS = [
     "Simplificationalizer",
     "Semperosculto",
 ]
-SPEAKER_RANK = {name: i for i, name in enumerate(GA_SPEAKERS)}
+GA_RANK = {name: i for i, name in enumerate(GA_SPEAKERS)}
+ACCENTS = {
+    "us": "US English",
+    "uk": "British English",
+    "au": "Australian English",
+    "ca": "Canadian English",
+}
 
 def read_words():
     source = DATA_JS.read_text(encoding="utf-8")
@@ -54,8 +46,7 @@ def read_words():
     words = []
     for _, body in groups:
         words.extend(re.findall(r'"([^"]+)"', body))
-    words = [w.strip().lower() for w in words if w.strip()]
-    unique = list(dict.fromkeys(words))
+    unique = list(dict.fromkeys(w.strip().lower() for w in words if w.strip()))
     if len(unique) != 850:
         raise RuntimeError("Expected 850 unique source words; found %d" % len(unique))
     return unique
@@ -64,111 +55,19 @@ def api(params):
     query = urllib.parse.urlencode(dict(params, format="json", maxlag="5"))
     url = "https://commons.wikimedia.org/w/api.php?" + query
     last_error = None
-    for attempt in range(7):
+    for attempt in range(4):
         try:
             req = urllib.request.Request(url, headers=UA)
-            with urllib.request.urlopen(req, timeout=60) as response:
+            with urllib.request.urlopen(req, timeout=25) as response:
                 data = json.load(response)
             if "error" in data:
                 raise RuntimeError(str(data["error"]))
             return data
         except Exception as exc:
             last_error = exc
-            time.sleep(min(2 ** attempt, 30))
-    raise RuntimeError("Wikimedia API failed: %s" % last_error)
-
-def category_titles(category):
-    titles = []
-    continuation = {}
-    page = 0
-    while True:
-        params = {
-            "action": "query",
-            "list": "categorymembers",
-            "cmtitle": category,
-            "cmtype": "file",
-            "cmlimit": "500",
-        }
-        params.update(continuation)
-        data = api(params)
-        members = data.get("query", {}).get("categorymembers", [])
-        titles.extend(item["title"] for item in members)
-        page += 1
-        if page % 20 == 0:
-            print("Commons category", category, "pages", page, "files", len(titles), flush=True)
-        continuation = data.get("continue", {})
-        if not continuation:
-            break
-        time.sleep(0.12)
-    return titles
-
-def add_candidate(candidates, word, title, accent, kind, speaker=None):
-    word = word.lower()
-    if word not in candidates:
-        return
-    candidates[word][title] = {
-        "title": title,
-        "accent": accent,
-        "kind": kind,
-        "speaker": speaker,
-    }
-
-def discover_candidates(words):
-    word_set = set(words)
-    candidates = {word: {} for word in words}
-    all_titles = set()
-    category_counts = {}
-    for category in CATEGORIES:
-        try:
-            titles = category_titles(category)
-            category_counts[category] = len(titles)
-            all_titles.update(titles)
-            print("Category loaded:", category, len(titles), flush=True)
-        except Exception as exc:
-            category_counts[category] = "unavailable: " + str(exc)
-            print("Skipping category:", category, exc, flush=True)
-
-    # Lingua Libre: use a vetted allowlist of General American speakers.
-    ll_prefix = "File:LL-Q1860 (eng)-"
-    for title in all_titles:
-        normalized = title.replace("_", " ")
-        if not normalized.startswith(ll_prefix) or not normalized.lower().endswith(".wav"):
-            continue
-        body = normalized[len(ll_prefix):-4]
-        for speaker in GA_SPEAKERS:
-            prefix = speaker + "-"
-            if body.startswith(prefix):
-                word = body[len(prefix):].lower()
-                add_candidate(candidates, word, normalized, "General American", "Lingua Libre", speaker)
-                break
-
-    # Wikimedia's conventional En-us / En-uk / En-au / En-ca one-word files.
-    accent_names = {
-        "us": "US English",
-        "uk": "British English",
-        "au": "Australian English",
-        "ca": "Canadian English",
-    }
-    for title in all_titles:
-        normalized = title.replace("_", " ")
-        m = re.match(r"^File:En-(us|uk|au|ca)-([A-Za-z][A-Za-z'-]*)\.(ogg|oga|wav|mp3)$", normalized, re.I)
-        if m:
-            accent_code = m.group(1).lower()
-            word = m.group(2).lower()
-            add_candidate(candidates, word, normalized, accent_names[accent_code], "Wikimedia Commons")
-            continue
-        m = re.match(r"^File:En-([A-Za-z][A-Za-z'-]*)\.(ogg|oga|wav|mp3)$", normalized, re.I)
-        if m:
-            word = m.group(1).lower()
-            add_candidate(candidates, word, normalized, "English (accent unspecified)", "Wikimedia Commons")
-
-    counts = collections.Counter()
-    for word in words:
-        counts.update(c["speaker"] for c in candidates[word].values() if c["speaker"])
-    total_candidates = sum(len(v) for v in candidates.values())
-    print("Target words:", len(words), "candidate files:", total_candidates,
-          "candidate speakers:", counts.most_common(10), flush=True)
-    return candidates, category_counts, counts
+            if attempt < 3:
+                time.sleep(1 + (2 ** attempt))
+    raise RuntimeError("Wikimedia API failed after retries: %s" % last_error)
 
 def strip_html(value):
     return re.sub(r"\s+", " ", re.sub(r"<[^>]*>", "", html.unescape(value or ""))).strip()
@@ -193,12 +92,26 @@ def license_rank(lic):
         return 2
     return 3
 
-def fetch_metadata(candidates):
-    title_to_candidate = {}
-    for per_word in candidates.values():
-        for title, candidate in per_word.items():
-            title_to_candidate[title] = candidate
-    titles = list(title_to_candidate)
+def candidate_title(word, kind, speaker=None, accent=None, extension=None):
+    if kind == "Lingua Libre":
+        title = "File:LL-Q1860 (eng)-%s-%s.wav" % (speaker, word)
+    elif kind == "Wikimedia Commons":
+        title = "File:En-%s-%s.%s" % (accent, word, extension)
+    else:
+        title = "File:En-%s.%s" % (word, extension)
+    return {
+        "word": word,
+        "title": title,
+        "kind": kind,
+        "speaker": speaker,
+        "accent": "General American" if kind == "Lingua Libre" else (
+            ACCENTS.get(accent, "English (accent unspecified)") if accent else "English (accent unspecified)"
+        ),
+    }
+
+def fetch_candidates(records):
+    by_title = {r["title"]: r for r in records}
+    titles = list(by_title)
     metadata = {}
     for offset in range(0, len(titles), 50):
         chunk = titles[offset:offset + 50]
@@ -219,35 +132,33 @@ def fetch_metadata(candidates):
             lic = strip_html(ext.get("LicenseShortName", {}).get("value", ""))
             if not allowed_license(lic):
                 continue
-            candidate = title_to_candidate.get(title)
-            if not candidate:
-                # MediaWiki may normalize underscores/spaces; compare normalized names.
-                candidate = next((v for k, v in title_to_candidate.items()
-                                  if k.replace("_", " ") == title.replace("_", " ")), None)
-            if not candidate:
+            record = by_title.get(title)
+            if not record:
+                record = next((v for k, v in by_title.items()
+                               if k.replace("_", " ") == title.replace("_", " ")), None)
+            if not record:
                 continue
             artist = strip_html(ext.get("Artist", {}).get("value", ""))
-            uploader = page.get("imageinfo", [{}])[0].get("user", "")
             metadata[title] = dict(
-                candidate,
+                record,
                 url=info["url"].split("?")[0],
                 license=lic,
-                artist=artist or candidate.get("speaker") or uploader or "Unknown",
-                uploader=uploader,
+                artist=artist or record.get("speaker") or page.get("imageinfo", [{}])[0].get("user", "Unknown"),
+                uploader=page.get("imageinfo", [{}])[0].get("user", ""),
                 size=info.get("size", 0),
                 source_url="https://commons.wikimedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":()_-."),
             )
         if offset % 500 == 0:
-            print("Commons metadata", min(offset + 50, len(titles)), "/", len(titles),
-                  "valid", len(metadata), flush=True)
-        time.sleep(0.15)
+            print("Checked Commons titles", min(offset + 50, len(titles)), "/", len(titles),
+                  "valid recordings", len(metadata), flush=True)
+        time.sleep(0.18)
     return metadata
 
-def candidate_rank(item, speaker_counts):
+def rank_candidate(item):
     accent = item["accent"]
     if accent == "General American":
         accent_rank = 0
-        speaker_rank = -speaker_counts.get(item.get("speaker"), 0)
+        speaker_rank = GA_RANK.get(item.get("speaker"), 99)
     elif accent == "US English":
         accent_rank = 1
         speaker_rank = 0 if "dvortygirl" in item.get("artist", "").lower() else 1
@@ -273,15 +184,16 @@ def download_and_encode(word, item):
     source_path = TMP_DIR / (digest + source_ext)
     output_path = OUT_DIR / (word + ".mp3")
     last_error = None
-    for attempt in range(6):
+    for attempt in range(5):
         try:
             req = urllib.request.Request(item["url"], headers=UA)
-            with urllib.request.urlopen(req, timeout=90) as response:
+            with urllib.request.urlopen(req, timeout=45) as response:
                 source_path.write_bytes(response.read())
             break
         except Exception as exc:
             last_error = exc
-            time.sleep(min(2 ** attempt, 20))
+            if attempt < 4:
+                time.sleep(1 + 2 ** attempt)
     else:
         raise RuntimeError("download failed for %s: %s" % (word, last_error))
     try:
@@ -298,30 +210,61 @@ def download_and_encode(word, item):
 
 def main():
     words = read_words()
-    candidates, category_counts, speaker_counts = discover_candidates(words)
-    metadata = fetch_metadata(candidates)
-
     chosen = {}
-    missing = []
-    for word in words:
-        valid = []
-        for title in candidates[word]:
-            item = metadata.get(title)
-            if item:
-                valid.append(item)
-        if not valid:
-            missing.append(word)
-            continue
-        valid.sort(key=lambda item: candidate_rank(item, speaker_counts))
-        chosen[word] = valid[0]
-
     report = {
-        "target_words": len(words),
+        "target_words": 850,
+        "primary_coverage": 0,
+        "matched_words": 0,
+        "missing_words": [],
+        "candidate_search": "Exact Wikimedia Commons file titles; no full-category crawl",
+    }
+
+    # First pass: two high-coverage General American Lingua Libre speakers,
+    # plus conventional US English dictionary recordings.
+    primary = []
+    for word in words:
+        primary.append(candidate_title(word, "Lingua Libre", speaker="Wodencafe"))
+        primary.append(candidate_title(word, "Lingua Libre", speaker="Grendelkhan"))
+        for ext in ("ogg", "oga", "wav", "mp3"):
+            primary.append(candidate_title(word, "Wikimedia Commons", accent="us", extension=ext))
+    primary_meta = fetch_candidates(primary)
+    by_word = collections.defaultdict(list)
+    for item in primary_meta.values():
+        by_word[item["word"]].append(item)
+    for word in words:
+        if by_word[word]:
+            by_word[word].sort(key=rank_candidate)
+            chosen[word] = by_word[word][0]
+    report["primary_coverage"] = len(chosen)
+    print("Primary human recording coverage:", len(chosen), "/ 850", flush=True)
+
+    # Second pass: only words still missing. Search additional vetted
+    # General American Lingua Libre speakers and openly licensed English variants.
+    missing = [word for word in words if word not in chosen]
+    fallback = []
+    other_speakers = GA_SPEAKERS[2:]
+    for word in missing:
+        for speaker in other_speakers:
+            fallback.append(candidate_title(word, "Lingua Libre", speaker=speaker))
+        for accent in ("us", "uk", "au", "ca"):
+            for ext in ("ogg", "oga", "wav", "mp3"):
+                fallback.append(candidate_title(word, "Wikimedia Commons", accent=accent, extension=ext))
+        for ext in ("ogg", "oga", "wav", "mp3"):
+            fallback.append(candidate_title(word, "Wikimedia Commons", extension=ext))
+    fallback_meta = fetch_candidates(fallback) if fallback else {}
+    fallback_by_word = collections.defaultdict(list)
+    for item in fallback_meta.values():
+        fallback_by_word[item["word"]].append(item)
+    for word in missing:
+        if fallback_by_word[word]:
+            fallback_by_word[word].sort(key=rank_candidate)
+            chosen[word] = fallback_by_word[word][0]
+
+    missing = [word for word in words if word not in chosen]
+    report.update({
         "matched_words": len(chosen),
         "missing_count": len(missing),
         "missing_words": missing,
-        "category_file_counts": category_counts,
-        "speaker_counts_in_candidates": dict(speaker_counts),
         "chosen_speakers": dict(collections.Counter(item.get("speaker") or item.get("artist") for item in chosen.values())),
         "chosen_accents": dict(collections.Counter(item["accent"] for item in chosen.values())),
         "chosen_licenses": dict(collections.Counter(item["license"] for item in chosen.values())),
@@ -337,21 +280,17 @@ def main():
             }
             for word, item in chosen.items()
         },
-    }
+    })
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("Human audio coverage:", len(chosen), "/", len(words), flush=True)
-    print("Missing:", ", ".join(missing[:100]), flush=True)
+    print("Final human audio coverage:", len(chosen), "/ 850", flush=True)
     if missing:
-        print("Refusing to build: every one of the 850 words must have a human recording.", flush=True)
+        print("Words with no matching openly licensed human recording:", ", ".join(missing), flush=True)
         raise SystemExit(2)
 
     results = {}
     errors = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
-        future_map = {
-            executor.submit(download_and_encode, word, item): word
-            for word, item in chosen.items()
-        }
+        future_map = {executor.submit(download_and_encode, word, item): word for word, item in chosen.items()}
         for future in concurrent.futures.as_completed(future_map):
             word = future_map[future]
             try:
@@ -390,17 +329,17 @@ def main():
     for word in words:
         item = chosen[word]
         speaker = (item.get("speaker") or item.get("artist") or "Unknown").replace("|", "/")
-        accent = item["accent"].replace("|", "/")
-        lic = item["license"].replace("|", "/")
-        url = item["source_url"]
-        lines.append("| %s | %s | %s | %s | [Commons file](%s) |" % (word, speaker, accent, lic, url))
+        lines.append("| %s | %s | %s | %s | [Commons file](%s) |" % (
+            word, speaker, item["accent"].replace("|", "/"),
+            item["license"].replace("|", "/"), item["source_url"]
+        ))
     CREDITS_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     report["downloaded_count"] = len(results)
     report["encoded_total_bytes"] = sum(results.values())
     report["average_mp3_bytes"] = round(sum(results.values()) / max(1, len(results)))
     REPORT.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
-    print("Packaged 850 human recordings; MP3 total %.2f MB" %
+    print("Packaged all 850 human recordings; MP3 total %.2f MB" %
           (sum(results.values()) / 1_000_000), flush=True)
 
 if __name__ == "__main__":
