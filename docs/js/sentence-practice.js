@@ -174,7 +174,37 @@
     }
   ];
 
+  const builderExercises = [
+    ["This is my room.", "这是我的房间。", "用 This is... 介绍一个对象。", [2,0,3,1]],
+    ["The book is on the table.", "书在桌子上。", "用 on 表示物品的位置。", [5,2,0,3,1,4]],
+    ["The cat is under the bed.", "猫在床底下。", "用 under 表示在某物下面。", [1,4,0,3,5,2]],
+    ["She has a letter from her mother.", "她有一封母亲寄来的信。", "have / has 表示拥有；from 表示来源。", [4,1,6,0,3,5,2]],
+    ["We have some water for the boys.", "我们有一些水给男孩们喝。", "for 表示给某人使用或享用。", [3,0,5,2,6,1,4]],
+    ["The boys play in the garden.", "男孩们在花园里玩。", "主语 + 动作 + 地点。", [4,2,0,5,1,3]],
+    ["The man takes the letter from the table.", "男人从桌子上拿起那封信。", "take 表示拿取；from 表示起点。", [5,1,0,4,7,2,3,6]],
+    ["The woman sends a letter to her friend.", "女人给朋友寄了一封信。", "send ... to ... 表示把东西寄给某人。", [4,0,6,2,5,1,3,7]],
+    ["I go to school in the morning.", "我早上去学校。", "时间短语 in the morning 可以放在句尾。", [4,1,5,0,3,2,6]],
+    ["We will go to the market tomorrow.", "我们明天去市场。", "will + 动词原形表示将来。", [5,2,0,6,3,1,4]],
+    ["Where is my book?", "我的书在哪里？", "疑问词 + be + 主语。", [3,1,0,2]],
+    ["Does the woman have a letter?", "这个女人有一封信吗？", "does 放在主语前，后面的 have 保持原形。", [4,0,3,1,2,5]],
+    ["Please give me the book.", "请把书给我。", "祈使句以动词原形开头。", [4,1,0,3,2]],
+    ["Do not put the glass on the floor.", "不要把玻璃杯放在地板上。", "Do not + 动词原形构成否定命令。", [6,2,0,5,4,1,3,7]],
+    ["The river is as wide as the road.", "这条河和这条路一样宽。", "as + 形容词 + as 表示“和……一样”。", [4,0,6,3,1,5,2,7]],
+    ["My new book is better than the old one.", "我的新书比旧书好。", "better than 表示比较；one 代替前面提到的名词。", [8,2,0,6,4,1,7,3,5]],
+    ["The man is reading a letter.", "男人正在读一封信。", "be + -ing 表示正在进行的动作。", [3,0,5,2,1,4]],
+    ["The letter was sent yesterday.", "这封信昨天寄出了。", "was + 过去分词构成一般过去时的被动表达。", [3,0,2,1,4]],
+    ["The boy is happy because he has a new book.", "男孩很高兴，因为他有一本新书。", "because 引出原因。", [5,1,0,7,4,2,6,8,3,9]],
+    ["If the weather is good, we will go out.", "如果天气好，我们就出去。", "If 引出条件；主句使用 will。", [4,2,0,5,3,8,1,6,7]]
+  ].map(function (item) {
+    return { sentence: item[0], chinese: item[1], hint: item[2], tokens: item[0].split(" "), scramble: item[3] };
+  });
+
   let activeGroup = 0;
+  let mode = "examples";
+  let activeExercise = 0;
+  let selectedTokens = [];
+  let builderFeedback = "";
+  let builderAnswerVisible = false;
   const visible = new Set();
 
   function escapeHtml(value) {
@@ -187,7 +217,12 @@
     const target = container || document.getElementById("main-content");
     if (!target) return;
 
+    if (mode === "builder") return renderBuilder(target);
+
     const group = groups[activeGroup];
+    const modeTabs = '<div class="sentence-mode-tabs">' +
+      '<button class="sentence-mode-tab active" onclick="BE.sentences.selectMode(\'examples\')">例句学习</button>' +
+      '<button class="sentence-mode-tab" onclick="BE.sentences.selectMode(\'builder\')">句子组装 · 20 题</button></div>';
     const tabs = groups.map(function (item, index) {
       return '<button class="sentence-tab' + (index === activeGroup ? ' active' : '') +
         '" onclick="BE.sentences.selectGroup(' + index + ')">' +
@@ -214,6 +249,7 @@
           '<p>100 个例句，分为 10 组。先读英文，试着理解句子结构，再打开中文对照。</p>' +
           '<p class="sentence-hero-note">例句已逐句通过本项目的 Basic 词汇检查器。它们是配套练习，不冒充 Ogden 原版 45 课的原文。</p>' +
         '</header>' +
+        modeTabs +
         '<nav class="sentence-tabs">' + tabs + '</nav>' +
         '<section class="sentence-pattern">' +
           '<div class="sentence-pattern-label">本组句型</div>' +
@@ -227,6 +263,121 @@
         '</div>' +
         '<div class="sentence-list">' + cards + '</div>' +
       '</section>';
+  }
+
+  function renderBuilder(target) {
+    const exercise = builderExercises[activeExercise];
+    const selectedSet = new Set(selectedTokens);
+    const selectedHtml = selectedTokens.map(function (tokenIndex) {
+      return '<button class="builder-selected-token" onclick="BE.sentences.removeToken(' + tokenIndex + ')" title="点击移回词库">' +
+        escapeHtml(exercise.tokens[tokenIndex]) + '</button>';
+    }).join("");
+    const poolHtml = exercise.scramble.filter(function (tokenIndex) {
+      return !selectedSet.has(tokenIndex);
+    }).map(function (tokenIndex) {
+      return '<button class="builder-pool-token" onclick="BE.sentences.pickToken(' + tokenIndex + ')">' +
+        escapeHtml(exercise.tokens[tokenIndex]) + '</button>';
+    }).join("");
+    const completed = selectedTokens.length === exercise.tokens.length;
+    const status = builderFeedback ? '<div class="builder-feedback ' +
+      (builderFeedback.indexOf("正确") >= 0 ? 'is-ok' : '') + '">' + escapeHtml(builderFeedback) + '</div>' : "";
+    const progress = '<div class="builder-progress"><span>第 ' + (activeExercise + 1) + ' / ' + builderExercises.length + ' 题</span>' +
+      '<span>已选择 ' + selectedTokens.length + ' / ' + exercise.tokens.length + ' 个词</span></div>';
+
+    target.innerHTML =
+      '<section class="sentence-page">' +
+        '<header class="sentence-hero">' +
+          '<div class="sentence-kicker">BASIC ENGLISH · SENTENCE PRACTICE</div>' +
+          '<h1>句子组装</h1>' +
+          '<p>把打乱的词语按正确顺序排列，组成完整句子。点选词语即可放入句子；点已选词语可以移回词库。</p>' +
+          '<p class="sentence-hero-note">共 20 题，覆盖陈述、位置、所属、动作、时间、疑问、否定、比较、时态和连接句子。</p>' +
+        '</header>' +
+        '<div class="sentence-mode-tabs">' +
+          '<button class="sentence-mode-tab" onclick="BE.sentences.selectMode(\'examples\')">例句学习</button>' +
+          '<button class="sentence-mode-tab active" onclick="BE.sentences.selectMode(\'builder\')">句子组装 · 20 题</button></div>' +
+        progress +
+        '<section class="builder-question">' +
+          '<div class="sentence-pattern-label">中文意思</div>' +
+          '<h2>' + escapeHtml(exercise.chinese) + '</h2>' +
+          '<p class="builder-hint">' + escapeHtml(exercise.hint) + '</p>' +
+        '</section>' +
+        '<section class="builder-workspace">' +
+          '<div class="builder-section-label">你的句子（按顺序点击下方单词）</div>' +
+          '<div class="builder-answer-line">' + (selectedHtml || '<span class="builder-placeholder">从下方词库选择第一个词……</span>') + '</div>' +
+          '<div class="builder-section-label">打乱的词语</div>' +
+          '<div class="builder-pool">' + (poolHtml || '<span class="builder-placeholder">所有词语已选完</span>') + '</div>' +
+          status +
+          '<div class="builder-controls">' +
+            '<button onclick="BE.sentences.checkBuilder()" ' + (completed ? '' : 'disabled') + '>检查答案</button>' +
+            '<button onclick="BE.sentences.resetBuilder()">重新排列</button>' +
+            '<button onclick="BE.sentences.showBuilderAnswer()">显示答案</button>' +
+          '</div>' +
+          (builderAnswerVisible ? '<div class="builder-answer-reveal"><b>参考句子：</b> ' + escapeHtml(exercise.sentence) + '</div>' : '') +
+        '</section>' +
+        '<div class="builder-navigation">' +
+          '<button onclick="BE.sentences.previousExercise()" ' + (activeExercise === 0 ? 'disabled' : '') + '>上一题</button>' +
+          '<button onclick="BE.sentences.nextExercise()">' + (activeExercise === builderExercises.length - 1 ? '回到第一题' : '下一题') + '</button>' +
+        '</div>' +
+      '</section>';
+  }
+
+  function selectMode(nextMode) {
+    mode = nextMode === "builder" ? "builder" : "examples";
+    render();
+  }
+
+  function pickToken(tokenIndex) {
+    if (selectedTokens.indexOf(tokenIndex) >= 0) return;
+    const exercise = builderExercises[activeExercise];
+    if (tokenIndex < 0 || tokenIndex >= exercise.tokens.length) return;
+    selectedTokens.push(tokenIndex);
+    builderFeedback = "";
+    builderAnswerVisible = false;
+    render();
+  }
+
+  function removeToken(tokenIndex) {
+    selectedTokens = selectedTokens.filter(function (item) { return item !== tokenIndex; });
+    builderFeedback = "";
+    builderAnswerVisible = false;
+    render();
+  }
+
+  function checkBuilder() {
+    const exercise = builderExercises[activeExercise];
+    if (selectedTokens.length !== exercise.tokens.length) {
+      builderFeedback = "还没有选完所有词语。";
+    } else if (selectedTokens.every(function (tokenIndex, index) { return tokenIndex === index; })) {
+      builderFeedback = "正确！你已经把这些词语排成完整句子。";
+    } else {
+      builderFeedback = "顺序还不正确。请检查主语、动词、宾语和位置或时间短语。";
+    }
+    render();
+  }
+
+  function resetBuilder() {
+    selectedTokens = [];
+    builderFeedback = "";
+    builderAnswerVisible = false;
+    render();
+  }
+
+  function showBuilderAnswer() {
+    const exercise = builderExercises[activeExercise];
+    selectedTokens = exercise.tokens.map(function (_, index) { return index; });
+    builderFeedback = "已显示参考答案。";
+    builderAnswerVisible = true;
+    render();
+  }
+
+  function previousExercise() {
+    if (activeExercise > 0) activeExercise--;
+    resetBuilder();
+  }
+
+  function nextExercise() {
+    activeExercise = (activeExercise + 1) % builderExercises.length;
+    resetBuilder();
   }
 
   function selectGroup(index) {
@@ -263,6 +414,16 @@
     toggle: toggle,
     showAll: showAll,
     hideAll: hideAll,
-    count: function () { return groups.reduce(function (sum, group) { return sum + group.sentences.length; }, 0); }
+    selectMode: selectMode,
+    pickToken: pickToken,
+    removeToken: removeToken,
+    checkBuilder: checkBuilder,
+    resetBuilder: resetBuilder,
+    showBuilderAnswer: showBuilderAnswer,
+    previousExercise: previousExercise,
+    nextExercise: nextExercise,
+    builderState: function () { return { mode: mode, activeExercise: activeExercise, selectedTokens: selectedTokens.slice(), feedback: builderFeedback, showAnswer: builderAnswerVisible }; },
+    count: function () { return groups.reduce(function (sum, group) { return sum + group.sentences.length; }, 0); },
+    builderCount: function () { return builderExercises.length; }
   };
 })();
