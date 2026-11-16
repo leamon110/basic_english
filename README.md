@@ -11,6 +11,9 @@ The app has two main modes:
   Both your input and the AI's reply are checked against the 850-word list.
 - **📖 Teaching** — browse the 850 words by category, drill Ogden's word-building
   and grammar rules, run spaced-repetition review, and look up the rules quickly.
+- **🧭 Course learning** — follow Ogden's original 45-step order. Five lessons
+  (Steps 1, 2, 3, 5 and 6) currently have Chinese-guided vocabulary, grammar,
+  reading and practice; other steps link to the original course until adapted.
 
 It is built with plain HTML, CSS, and vanilla JavaScript — **no build step, no
 frameworks, no runtime dependencies.**
@@ -61,6 +64,7 @@ basic_english/
 │       ├── validator.js        # Basic English word/forms validator
 │       ├── chat.js             # Conversation mode + LLM API client
 │       ├── teaching.js         # Word cards, exercises, SR, reference
+│       ├── course.js           # Chinese-guided 45-step course module
 │       └── app.js              # Router + home page
 │
 ├── basic-english-package/      # PWA Builder output: Android APK/AAB
@@ -125,9 +129,9 @@ the signing / next-steps guide.
 ## Tech notes
 
 - **No dependencies / no build.** Scripts load in a fixed order in `index.html`:
-  `data.js → validator.js → chat.js → teaching.js → app.js`. Each module attaches
+  `data.js → validator.js → chat.js → teaching.js → course.js → app.js`. Each module attaches
   itself to a single global `window.BE` namespace.
-- **Routing** is hash-based (`#conversation`, `#teaching`) in `app.js`.
+- **Routing** is hash-based (`#conversation`, `#teaching`, `#course`) in `app.js`.
 - **Pronunciation** uses the browser's `SpeechSynthesis` API and degrades
   gracefully when unavailable.
 - **Persistence** (API settings, SR progress) uses `localStorage` only — there
