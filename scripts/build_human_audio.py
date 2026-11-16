@@ -75,6 +75,9 @@ SPEAKER_PRIORITY = [
     "Mikemoral♪♫", "Neskaya", "StuckInLagToad", "Sylvanmoon",
     "Tharthan", "TreeMama", "VCcortex",
 ]
+SPEAKER_FILE_ALIASES = {
+    "NaomiAmethyst": ["NaomiAmethyst", "Naomi Persephone Amethyst (NaomiAmethyst)"],
+}
 DATASET_CARD_URL = "https://huggingface.co/datasets/Reza2kn/wiktionary-ipa-audio-en"
 RECORDING_CREDITS_URL = "https://lexcellent.app/data-sources/recordings"
 
