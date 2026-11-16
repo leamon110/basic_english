@@ -25,6 +25,7 @@ function renderPage(page) {
   else if (page === 'conversation') window.BE.chat.renderChat(main)
   else if (page === 'teaching') window.BE.teaching.renderTeaching(main)
   else if (page === 'course') window.BE.course.render()
+  else if (page === 'sentences') window.BE.sentences.render(main)
 }
 
 function renderHome(container) {
@@ -47,6 +48,12 @@ function renderHome(container) {
           <h2>课程学习</h2>
           <p>从单词进入句子、阅读和自己造句。无需 AI 服务。</p>
           <span class="home-card-link">开始系统学习 →</span>
+        </div>
+        <div class="home-card" onclick="navigateTo('sentences')">
+          <div class="home-card-icon">🧩</div>
+          <h2>句型练习</h2>
+          <p>通过 100 个完整例句，练习用基础词汇组织表达，并查看中文对照。</p>
+          <span class="home-card-link">开始练习 →</span>
         </div>
         <div class="home-card" onclick="navigateTo('conversation')">
           <div class="home-card-icon">💬</div>
