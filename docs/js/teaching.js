@@ -490,8 +490,7 @@ function renderReference(container) {
 // WORD DETAIL MODAL (Chinese Translation + Pronunciation)
 // ============================================================
 function showWordDetail(word) {
-  const cn = window.BE.WORDS.CHINESE_TRANSLATIONS[word]
-  if (!cn) return
+  const cn = window.BE.WORDS.CHINESE_TRANSLATIONS[word] || '暂无中文释义'
   let catName = 'General'
   let catColor = '#4f8cff'
   for (const c of CATEGORIES) {
@@ -599,7 +598,7 @@ function srShowCard() {
   var word = session.words[session.idx]
   var p = srLoad(SR_KEY) || { w: {}, s: { sc: 0, tl: 0, ms: 0 } }
   var wp = p.w[word]
-  var cn = window.BE.WORDS.CHINESE_TRANSLATIONS[word] || ''
+  var cn = window.BE.WORDS.CHINESE_TRANSLATIONS[word] || '暂无中文释义'
   var level = wp ? wp.l : 0
   var area = document.getElementById('sr-area')
   if (!area) return
