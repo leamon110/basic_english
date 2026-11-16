@@ -57,12 +57,12 @@ jobs:
         run: gradle --no-daemon --stacktrace :app:assembleDebug
 
       - name: Give the APK a clear file name
-        run: cp android-offline/app/build/outputs/apk/debug/app-debug.apk Basic-English-Voice-Fix.apk
+        run: cp android-offline/app/build/outputs/apk/debug/app-debug.apk Basic-English-Voice-Fix-v2.apk
 
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: basic-english-voice-fix-apk
+          name: basic-english-voice-fix-v2-apk
           path: Basic-English-Voice-Fix.apk
           if-no-files-found: error
           retention-days: 30
