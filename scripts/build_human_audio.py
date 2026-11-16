@@ -547,6 +547,49 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
     return selected
 
 
+
+def add_manual_commons_candidates(candidates: dict, groups: dict):
+    """Add verified Wiktionary audio references omitted by the bulk audio index."""
+    manual = [
+        ("disgust", "en-us-disgust.ogg", "", "US English", 1,
+         "https://simple.wiktionary.org/wiki/disgust"),
+        ("porter", "LL-Q1860 (eng)-Wodencafe-porter.wav", "Wodencafe", "General American", 0,
+         "https://en.wiktionary.org/wiki/porter"),
+        ("property", "en-us-property.ogg", "", "US English", 1,
+         "https://simple.wiktionary.org/wiki/property"),
+        ("feather", "en-us-feather.ogg", "", "US English", 1,
+         "https://en.wiktionary.org/wiki/feather"),
+        ("stomach", "en-us-stomach.ogg", "", "US English", 1,
+         "https://en.wiktionary.org/wiki/stomach"),
+        ("cheap", "En-uk-cheap.ogg", "", "British English", 3,
+         "https://en.wiktionary.org/wiki/cheap"),
+        ("bitter", "en-us-bitter.ogg", "", "US English", 1,
+         "https://en.wiktionary.org/wiki/bitter"),
+    ]
+    added = 0
+    for word, title, speaker, accent, rank, source_page in manual:
+        candidate = {
+            "word": norm(word),
+            "speaker": speaker,
+            "artist": speaker,
+            "license": "",
+            "license_url": "",
+            "title": title,
+            "source_page": source_page,
+            "audio_url": "",
+            "pos": get_pos_hint(groups.get(norm(word), "")),
+            "audio_tags": [accent],
+            "accent_rank": rank,
+            "source_priority": 0,
+            "origin": "Wiktionary/Wikimedia Commons",
+            "audio_format": Path(title).suffix.lstrip(".").lower(),
+        }
+        candidates.setdefault(norm(word), []).append(candidate)
+        added += 1
+    print(f"[source] added {added} individually referenced Wiktionary recordings for final coverage gaps", flush=True)
+    return candidates
+
+
 def commons_api(params: dict) -> dict:
     query = urllib.parse.urlencode({"format": "json", "maxlag": 5, **params}, doseq=True)
     request = urllib.request.Request(COMMONS_API + "?" + query, headers={
@@ -603,7 +646,7 @@ def fetch_commons_licences(candidates: dict):
         data = commons_api({
             "action": "query",
             "prop": "imageinfo",
-            "iiprop": "extmetadata",
+            "iiprop": "url|extmetadata",
             "iiextmetadatafilter": "LicenseShortName|Artist|Credit|LicenseUrl|ImageDescription",
             "titles": "|".join("File:" + title for title in batch),
         })
@@ -622,6 +665,7 @@ def fetch_commons_licences(candidates: dict):
                     "artist": artist,
                     "description": description,
                     "license_url": clean_meta(ext.get("LicenseUrl", {}).get("value", "")),
+                    "url": infos[0].get("url", ""),
                 }
         print(f"[Commons API] verified {min(offset + len(batch), len(titles))}/{len(titles)} files", flush=True)
         time.sleep(1.2)
@@ -634,6 +678,11 @@ def fetch_commons_licences(candidates: dict):
                 item["artist"] = meta["artist"] or item.get("speaker", "")
                 item["description"] = meta["description"]
                 item["license_url"] = meta["license_url"]
+                if not item.get("local_path") and not item.get("audio_url"):
+                    item["audio_url"] = meta.get("url", "")
+                    item["audio_format"] = Path(urllib.parse.urlparse(item["audio_url"]).path).suffix.lstrip(".").lower()
+                if not item.get("speaker") and meta.get("artist"):
+                    item["speaker"] = meta["artist"]
     return candidates
 
 
@@ -763,8 +812,8 @@ def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
             if last_error or data is None:
                 raise RuntimeError(f"Download failed for {word}: {last_error}")
 
-            if extension == ".wav":
-                raw_path = temp_dir / (slug(word) + ".wav")
+            if extension in (".wav", ".ogg", ".oga", ".flac", ".opus", ".spx"):
+                raw_path = temp_dir / (slug(word) + extension)
                 raw_path.write_bytes(data)
                 command = [
                     "ffmpeg", "-hide_banner", "-loglevel", "error", "-y",
@@ -836,6 +885,8 @@ def main():
     shtooka = fetch_shtooka_candidates(words, groups, Path("build"))
     for word, item in shtooka.items():
         candidates.setdefault(norm(word), []).append(item)
+
+    candidates = add_manual_commons_candidates(candidates, groups)
 
     # Verify Commons file licences for candidate files. Wodencafe CC0 files
     # already have a direct source manifest and do not need another API lookup.
