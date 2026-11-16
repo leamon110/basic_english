@@ -146,12 +146,25 @@ def fetch_candidates(records):
             if not record:
                 continue
             artist = strip_html(ext.get("Artist", {}).get("value", ""))
+            description = strip_html(ext.get("ImageDescription", {}).get("value", ""))
+            uploader = page.get("imageinfo", [{}])[0].get("user", "")
+            speaker = record.get("speaker") or ""
+            if not speaker:
+                recorded_by = re.search(r"\\brecorded\\s+by\\s+([^,.;]+)", description, re.I)
+                if recorded_by:
+                    speaker = recorded_by.group(1).strip()
+                elif artist and artist.lower() not in ("unknown", "not identified") and not artist.lower().startswith("no machine-readable author provided"):
+                    speaker = re.sub(r"^recorded\\s+by\\s+", "", artist, flags=re.I).strip()
+                else:
+                    speaker = "Not identified"
             metadata[title] = dict(
                 record,
                 url=info["url"].split("?")[0],
                 license=lic,
-                artist=artist or record.get("speaker") or page.get("imageinfo", [{}])[0].get("user", "Unknown"),
-                uploader=page.get("imageinfo", [{}])[0].get("user", ""),
+                artist=artist,
+                speaker=speaker,
+                description=description,
+                uploader=uploader,
                 size=info.get("size", 0),
                 source_url="https://commons.wikimedia.org/wiki/" + urllib.parse.quote(title.replace(" ", "_"), safe=":()_-."),
             )
@@ -381,10 +394,12 @@ def main():
         "chosen_sources": {
             word: {
                 "title": item["title"],
-                "speaker": item.get("speaker") or item.get("artist"),
+                "speaker": item.get("speaker") or "Not identified",
+                "uploader": item.get("uploader", ""),
                 "accent": item["accent"],
                 "license": item["license"],
                 "artist": item.get("artist"),
+                "source_description": item.get("description", ""),
                 "source_url": item["source_url"],
                 "original_size_bytes": item.get("size", 0),
             }
@@ -479,14 +494,15 @@ def main():
         "",
         "The licence applies per recording. CC BY and CC BY-SA recordings retain their respective attribution and share-alike requirements; CC0 and public-domain recordings remain under those terms.",
         "",
-        "| Word | Speaker / author | Accent | Licence | Source |",
-        "|---|---|---|---|---|",
+        "| Word | Speaker | Uploader | Accent | Licence | Source |",
+        "|---|---|---|---|---|---|",
     ]
     for word in words:
         item = chosen[word]
-        speaker = (item.get("speaker") or item.get("artist") or "Unknown").replace("|", "/")
-        lines.append("| %s | %s | %s | %s | [Commons file](%s) |" % (
-            word, speaker, item["accent"].replace("|", "/"),
+        speaker = (item.get("speaker") or "Not identified").replace("|", "/")
+        uploader = (item.get("uploader") or "Not provided").replace("|", "/")
+        lines.append("| %s | %s | %s | %s | %s | [Commons file](%s) |" % (
+            word, speaker, uploader, item["accent"].replace("|", "/"),
             item["license"].replace("|", "/"), item["source_url"]
         ))
     CREDITS_MD.write_text("\n".join(lines) + "\n", encoding="utf-8")
