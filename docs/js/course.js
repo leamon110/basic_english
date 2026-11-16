@@ -54,7 +54,7 @@
     { n: 45, title: "关于英国的一些笔记", en: "Some Notes about England", kind: "Reading" }
   ];
 
-  const lessons = [1, 2, 3, 5, 6];
+  const lessons = [1, 2, 3, 5, 6, 9, 10];
 
   function vocab(items) {
     return '<div class="lesson-words">' + items.map(function (w) {
@@ -95,8 +95,8 @@
       '<header class="course-hero"><p class="course-kicker">C. K. OGDEN · 1930 ORIGINAL COURSE</p>' +
       '<h1>从 850 个词，学会说完整的英语</h1>' +
       '<p>按原版 45 Steps 的顺序学习。每课把词汇放进句子、阅读和练习中，而不是孤立地背单词。</p>' +
-      '<div class="course-note">目前已完成 5 / 45 课的中文教学改编：Step 1、2、3、5、6。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
-      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：5 课 · 下一步：Step 4</span></div>' +
+      '<div class="course-note">目前已完成 7 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
+      '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：7 课 · 待补：Step 4、7、8</span></div>' +
       '<div class="course-grid">' + cards + '</div></section>';
   }
 
@@ -304,6 +304,73 @@
       writingBox('step6-writing','Write three sentences: one with or, one with but, and one with while.') +
       '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. What does the daughter take with her when she goes to work?</p><p>2. Where do the sons work?</p><p>3. What does the other daughter make?</p><p>4. Where do the sons sometimes go with their friends?</p><p>5. What does the father do after his meal?</p></div>' +
       answer('step6-reading','查看参考答案','<p>1. She takes some food with her.</p><p>2. A son works in the office; the other works in the store with his father.</p><p>3. She makes cushions and curtains.</p><p>4. They go out with their friends.</p><p>5. He takes a book and goes to the place by the fire.</p>'));
+
+  lessonHTML[9] =
+    panel('1. 本课词汇', '<p>本课学习人物、自然环境和位置关系词。</p>' +
+      vocab([['boy','男孩'],['girl','女孩'],['bridge','桥'],['river','河流'],['tree','树'],['middle','中间'],['part','部分'],['thing','东西'],['young','年轻的'],['old','年老的；旧的'],['new','新的'],['see','看见'],['very','非常'],['because','因为'],['till','直到'],['yes','是；对']])) +
+    panel('2. what：表示“……的东西”', '<p>本课把 <b>what</b> 用作连接词，表达“……的东西 / ……的事物”，意思接近 that which。</p>' +
+      '<div class="lesson-examples"><p>The boy takes what the man gives him to his mother.</p><p>What I have I will keep.</p></div>' +
+      '<p>第一句中 what the man gives him = 男人给他的东西；第二句中 what I have = 我所拥有的东西。</p>') +
+    panel('3. old、young、new', '<p><b>old</b> 有两种常见对比：它既可以与 young（年龄）相对，也可以与 new（新旧）相对。</p>' +
+      '<div class="lesson-examples"><p>a young man ↔ an old man</p><p>a new bag ↔ an old bag</p></div>') +
+    panel('4. see 的形式', '<div class="lesson-table"><div><b>原形</b><b>过去</b><b>现在</b><b>将来</b></div><div><span>see</span><span>saw</span><span>see / sees</span><span>will see</span></div></div>' +
+      '<p>第三人称单数现在时使用 sees。</p><div class="lesson-examples"><p>The building which you see is not a store.</p><p>You will see the things when they are ready.</p></div>') +
+    panel('5. 命令句', '<p>直接使用 operator 原形，不写主语：</p><div class="lesson-examples"><p>Come with me.</p><p>Put that thing in the river.</p><p>Go to the store and take the girl with you.</p><p>Be quick!</p></div>' +
+      '<p>否定命令使用 <b>Do not + operator 原形</b>。即使 operator 是 be 或 have，否定命令也使用 do not。</p>' +
+      '<div class="lesson-examples"><p>Do not put the food on the floor.</p><p>Do not be slow.</p><p>Do not have a house in the country.</p></div>') +
+    panel('6. be + -ing：动作正在进行', '<p>operator 加 -ing 形式，放在 be 后面，可以表示动作正在进行、尚未完成。</p>' +
+      '<div class="lesson-examples"><p>The train is going across the bridge.</p><p>These men are making things for the new building.</p><p>The boy is not coming here.</p><p>I am putting the apples where you will see them.</p></div>' +
+      '<p>拼写变化：giving、having、making、taking 去掉词尾 e；getting、letting、putting 双写 t。</p>' +
+      '<p>表示持续状态的 have（拥有）、be、seem、see 通常不使用进行式；但 have 表示吃饭这一动作时，可以使用进行式：The boy is having a meal.</p>' +
+      '<p>when / while 从句与主句主语相同时，可以省略从句中的主语和 be：When going across the bridge, you will see the boys in the river.</p>') +
+    panel('7. till、very、-ly 和 because', '<div class="lesson-rule"><b>till</b><p>本课把 till 作为时间介词学习，表示“直到”。not ... till 表示“直到某时才……”。</p><p>He will be here till the morning.</p></div>' +
+      '<div class="lesson-rule"><b>very</b><p>very 修饰形容词或副词，放在它们前面；不用于 out 或介词的副词用法。</p><p>This wall is part of a very old building.</p></div>' +
+      '<div class="lesson-rule"><b>-ly</b><p>一些形容词加 -ly 形成副词，说明动作怎样进行。</p><p>The men are making the bridge slowly.</p><p>She does this work very quickly.</p></div>' +
+      '<div class="lesson-rule"><b>because</b><p>because 引出原因从句，说明主句为什么成立。</p><p>Go to the river with the boy because he is young.</p></div>') +
+    panel('8. 一般疑问句与简短回答', '<p>由 be、have、will、may 构成的一般疑问句，把 operator 或助动词放到主语前面。</p>' +
+      '<div class="lesson-examples"><p>The girl is in the river. → Is the girl in the river?</p><p>You are ready. → Are you ready?</p><p>He will be ready. → Will he be ready?</p><p>Your friend has a book. → Has your friend a book?</p></div>' +
+      '<p>回答时可以只重复主语和 operator / 助动词；否定回答再加 not。</p><div class="lesson-examples"><p>Will he be ready? — Yes, he will.</p><p>Is this the middle of the room? — No, it is not.</p></div>') +
+    panel('9. 练习', '<p><b>A. 把句子改成进行时（动作确实正在发生时）。</b></p>' +
+      '<div class="lesson-examples"><p>The train goes across the bridge.</p><p>The men make things for the new building.</p><p>The boy does not come here.</p></div>' +
+      answer('step9-continuous','查看参考答案','<p>The train is going across the bridge.</p><p>The men are making things for the new building.</p><p>The boy is not coming here.</p>') +
+      '<p><b>B. 把陈述句改成一般疑问句。</b></p><div class="lesson-examples"><p>All the bridges are new.</p><p>They will be ready before you see them.</p><p>The girls are going across the river.</p><p>I have a part of the branch in my hand.</p><p>The train may not go.</p></div>' +
+      answer('step9-questions','查看参考答案','<p>Are all the bridges new?</p><p>Will they be ready before you see them?</p><p>Are the girls going across the river?</p><p>Have I a part of the branch in my hand?</p><p>May the train not go?</p>') +
+      writingBox('step9-writing','Write three orders: one negative order with let, one with be, and one with come.') +
+      answer('step9-orders','查看参考答案','<p>Do not let the girl go.</p><p>Be quick.</p><p>Come with me.</p>');
+
+  lessonHTML[10] =
+    panel('1. 本课词汇', '<p>本课通过城镇里的建筑和街道学习新名词，以及 high / low。</p>' +
+      vocab([['arch','拱门'],['glass','玻璃'],['roof','屋顶'],['time','时间'],['church','教堂'],['hospital','医院'],['library','图书馆'],['market','市场'],['prison','监狱'],['school','学校'],['advertisement','广告'],['light','光；灯光'],['pleasure','愉快'],['steel','钢'],['view','景色；视野'],['high','高的'],['low','低的']])) +
+    panel('2. 阅读：A Town', '<p class="lesson-instruction">以下是依据原版 Step 10 的城镇导览内容改写的 Basic English 阅读，不是原文逐字抄录。</p>' +
+      '<div class="lesson-passage"><p>Come into the town with me. I will take you to see some of our buildings. My train does not go till the end of the morning. The time will go quickly if I am with you. The station is in the middle of the town. We come out of the station into a street of stores and offices.</p>' +
+      '<p class="lesson-translation">和我一起进城吧。我带你去看一些建筑。我的火车要到上午快结束时才开。如果我和你在一起，时间会过得很快。车站在城镇的中心。我们从车站出来，进入一条有商店和办公室的街道。</p>' +
+      '<p>Some high buildings are made of glass and steel. They have steel frames. A building between the stores is a hospital. A young woman is on her back. The wide street has great stores with bright advertisements. The old town is near the river. The buildings across the river are in another town.</p>' +
+      '<p class="lesson-translation">一些高楼由玻璃和钢建成，并有钢制框架。商店之间的一栋建筑是医院。一位年轻女子仰面躺着。宽阔的街道上有大型商店和明亮的广告。老城在河边。河对岸的建筑属于另一座城镇。</p>' +
+      '<p>The library is a low building with trees in front of it. The church is in the old part of the town. Men and women come to the market from the country with bags of fruit and food. The market has almost everything for the house. The streets are narrow and the houses are low. The windows are small, so the rooms get almost no light. A high building with almost no windows is a prison.</p>' +
+      '<p class="lesson-translation">图书馆是一栋低矮的建筑，前面有树。教堂在城镇的老城区。男人和女人从乡村来到市场，带着装有水果和食物的袋子。市场里几乎有所有家用物品。街道狭窄，房屋低矮。窗户很小，所以房间里几乎没有光。一栋几乎没有窗户的高楼是监狱。</p>' +
+      '<p>Workmen are making a new arch on the bridge. We will not go over the bridge. I will go back to the station before my train goes.</p>' +
+      '<p class="lesson-translation">工人们正在桥上建造一座新拱门。我们不从桥上走过去。火车开走之前，我会返回车站。</p></div>') +
+    panel('3. 阅读中的表达', '<div class="lesson-rule"><b>in the middle of the town</b><p>middle 可以表示数学意义上的中心，也可以表示一个较宽泛的中心区域；表示城镇中心区域时使用 in the middle。</p></div>' +
+      '<div class="lesson-rule"><b>made of glass and steel</b><p>of 可以指出某物由什么材料构成；名词也可以放在另一个名词前表示材料，例如 steel frames。</p></div>' +
+      '<div class="lesson-rule"><b>on her back</b><p>back 在这里指人的背部；on her back 表示身体背部接触支撑面，即仰面躺着。</p></div>' +
+      '<div class="lesson-rule"><b>high / low</b><p>既可以描述建筑物从底部到顶部的高度，也可以描述人或物所处的位置高低。</p></div>' +
+      '<div class="lesson-rule"><b>get a view of</b><p>get 在这里表示获得、看到某种景色或视野。</p></div>' +
+      '<div class="lesson-rule"><b>in front of / outside / inside</b><p>in front of 表示在某物前面；outside 是外部，inside 是内部。</p></div>' +
+      '<div class="lesson-rule"><b>go over / go back</b><p>over 在这里表示越过；back 作副词时表示朝来时的方向或回到原处。</p></div>' +
+      '<div class="lesson-rule"><b>early / late</b><p>可以表示一天中的早晚，也可以表示是否早于或晚于正确时间。</p></div>') +
+    panel('4. 复数与复合词', '<p>本课要求注意以下复数拼写：</p><div class="lesson-examples"><p>library → libraries</p><p>boy → boys</p><p>arch → arches</p><p>glass → glasses</p><p>roof → roofs</p><p>church → churches</p></div>' +
+      '<p>roof 的复数是 roofs，不按部分 f / fe 结尾名词的规则变成 -ves。</p>' +
+      '<p>本课还介绍 inside、everything、workman 等复合形式。它们由已学词组合而成，但整体意义需要结合使用场景理解。</p>') +
+    panel('5. 练习', '<p><b>A. 写出复数。</b> library、boy、arch、glass、roof、church。</p>' +
+      answer('step10-plurals','查看参考答案','<p>libraries；boys；arches；glasses；roofs；churches。</p>') +
+      '<p><b>B. 写出五个可以放入句子的词。</b></p><div class="lesson-examples"><p>Some of the _____ is here.</p></div>' +
+      answer('step10-substance','查看参考答案','<p>food；meat；glass；steel；sugar。</p>') +
+      '<p><b>C. 用 inside、everything、workman 各造一个句子。</b></p>' +
+      writingBox('step10-writing','Write three sentences, one with inside, one with everything, and one with workman.') +
+      answer('step10-model','查看参考句','<p>The inside of the house is dark.</p><p>Almost everything is in the market.</p><p>The workman is making an arch.</p>') +
+      '<p><b>D. 阅读理解。</b></p><div class="lesson-examples"><p>1. Are all the new buildings made of glass and steel?</p><p>2. Is the church in the old part of the town?</p><p>3. What does Mr. B see on the other side of the river?</p><p>4. Who is on her back by the hospital?</p><p>5. What are the workmen making on the bridge?</p><p>6. Why are the rooms in the old town dark?</p></div>' +
+      answer('step10-reading','查看参考答案','<p>1. No. Some are made of glass and steel.</p><p>2. Yes, it is.</p><p>3. He sees buildings in another town.</p><p>4. A young woman.</p><p>5. A new arch.</p><p>6. The streets are narrow and the windows are small, so the rooms get almost no light.</p>'));
+
 
   function render() {
     const main = document.getElementById('main-content');
