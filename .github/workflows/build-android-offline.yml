@@ -1,4 +1,4 @@
-name: Build Basic English Offline APK
+name: Build Basic English Human Voice APK
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
     paths:
       - 'docs/**'
       - 'android-offline/**'
+      - 'scripts/**'
       - '.github/workflows/build-android-offline.yml'
   workflow_dispatch:
 
@@ -16,6 +17,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
     steps:
       - name: Check out source
         uses: actions/checkout@v4
@@ -25,6 +27,16 @@ jobs:
         with:
           distribution: temurin
           java-version: '17'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
 
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -47,22 +59,34 @@ jobs:
           yes | sdkmanager --licenses
           sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
-      - name: Package the current learning site as local app assets
+      - name: Package the learning site as local app assets
         run: |
           mkdir -p android-offline/app/src/main/assets/www
           cp -R docs/. android-offline/app/src/main/assets/www/
+
+      - name: Fetch and package all 850 human word recordings
+        run: python scripts/build_human_word_audio.py
 
       - name: Build debug APK
         working-directory: android-offline
         run: gradle --no-daemon --stacktrace :app:assembleDebug
 
       - name: Give the APK a clear file name
-        run: cp android-offline/app/build/outputs/apk/debug/app-debug.apk Basic-English-Voice-Fix-v2.apk
+        run: cp android-offline/app/build/outputs/apk/debug/app-debug.apk Basic-English-Human-Voice.apk
 
       - name: Upload installable APK
         uses: actions/upload-artifact@v4
         with:
-          name: basic-english-voice-fix-v2-apk
-          path: Basic-English-Voice-Fix.apk
+          name: basic-english-human-voice-apk
+          path: Basic-English-Human-Voice.apk
           if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload audio coverage and licence report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: basic-english-human-audio-coverage
+          path: audio-coverage-report.json
+          if-no-files-found: ignore
           retention-days: 30
