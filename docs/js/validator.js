@@ -146,7 +146,7 @@ function isAllowedWord(word) {
   // 11. Articles and compounds explicitly taught in the Basic course
   // "an" is the grammatical form of "a" before a vowel sound.
   // "another", "into", and these compounds are taught as Basic constructions.
-  if (["a", "an", "i", "another", "into", "bedroom", "bookshelf", "ticket-office", "work-room", "inside", "outside", "everything", "something", "nothing", "workman", "workmen"].includes(lower)) {
+  if (["a", "an", "i", "what", "another", "into", "bedroom", "bookshelf", "ticket-office", "work-room", "inside", "outside", "everything", "something", "nothing", "workman", "workmen"].includes(lower)) {
     return { ok: true, isBasicConstruction: true }
   }
 
