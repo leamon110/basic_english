@@ -1051,3 +1051,41 @@ body.speech-unavailable .msg-sound,
 body.speech-unavailable .word-sound {
   display: none !important;
 }
+
+
+/* Chinese-guided Basic English course */
+.course-page{max-width:980px;margin:0 auto;padding:24px 16px 56px;color:var(--text,#202938)}
+.course-hero{background:linear-gradient(135deg,#eef4ff,#f8fbff);border:1px solid #dbe6fb;border-radius:18px;padding:28px;margin-bottom:20px}
+.course-kicker{font-size:12px;letter-spacing:.08em;color:#456bb0;font-weight:700}
+.course-hero h1{font-size:clamp(24px,4vw,34px);margin:8px 0 12px}
+.course-hero p{line-height:1.75}
+.course-note{background:#fff;border-left:4px solid #4f8cff;padding:12px 14px;border-radius:8px;margin-top:16px;font-size:14px;line-height:1.7}
+.course-progress{display:flex;justify-content:space-between;gap:12px;margin:18px 2px;color:var(--text,#202938);font-size:14px}
+.course-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:10px}
+.course-step{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:5px;padding:15px;border:1px solid #dfe5ef;border-radius:12px;background:#fff;color:#202938;cursor:pointer;min-height:116px}
+.course-step-ready{border:2px solid #4f8cff;background:#f5f8ff}
+.course-step-no{font-size:11px;color:#5574aa;font-weight:700}
+.course-step-cn{font-size:17px;font-weight:700}
+.course-step-en{font-size:12px;color:#667085}
+.course-step-state{font-size:12px;color:#3569c8;margin-top:auto;padding-top:6px}
+.course-back{border:0;background:transparent;color:#3569c8;padding:10px 0;cursor:pointer;font-size:14px}
+.lesson-panel{background:#fff;border:1px solid #e1e6ef;border-radius:14px;padding:20px;margin:16px 0}
+.lesson-panel h2{font-size:19px;margin:0 0 12px}
+.lesson-panel p{line-height:1.75}
+.lesson-words{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:8px}
+.lesson-word{display:flex;flex-direction:column;align-items:flex-start;gap:3px;padding:10px;border:1px solid #e1e6ef;background:#fbfcfe;border-radius:9px;cursor:pointer;color:#202938}
+.lesson-word b{font-size:16px}.lesson-word span{font-size:13px}.lesson-word small{font-size:11px;color:#5574aa}
+.lesson-passage{background:#f8fafc;border-radius:10px;padding:16px}
+.lesson-passage p{margin:8px 0}
+.lesson-passage p:nth-child(even){color:#53647b;font-size:14px;border-left:3px solid #d5dfef;padding-left:12px}
+.lesson-rule{border-left:3px solid #4f8cff;padding:8px 14px;margin:12px 0;background:#f8faff;border-radius:0 8px 8px 0}
+.lesson-rule p{margin:5px 0;font-size:14px}
+.lesson-pattern{display:flex;gap:8px;flex-wrap:wrap;align-items:center;padding:12px;background:#f4f7fc;border-radius:8px}
+.lesson-chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.lesson-chips span{padding:7px 10px;border-radius:20px;background:#edf3ff;color:#315b9d;font-size:13px}
+.lesson-instruction{font-size:13px;color:#65748b}
+#course-answer{width:100%;box-sizing:border-box;border:1px solid #ccd5e2;border-radius:9px;padding:12px;font:inherit;resize:vertical}
+.course-primary{margin-top:10px;padding:11px 16px;border:0;border-radius:8px;background:#356fd1;color:white;cursor:pointer}
+.course-feedback{margin-top:12px;padding:10px;border-radius:8px;background:#fff3e8;color:#94521b;font-size:14px}
+.course-feedback.is-ok{background:#eaf7ee;color:#22663a}
+@media(max-width:600px){.course-hero{padding:20px}.course-progress{flex-direction:column;gap:4px}.lesson-panel{padding:15px}}
