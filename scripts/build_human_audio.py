@@ -358,7 +358,9 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
     selected = {}
     downloads_dir = work_dir / "shtooka-downloads"
     temp_dir = work_dir / "shtooka-temp"
-    selected_dir = work_dir / "shtooka-selected"
+    # Keep selected source clips outside the generic build/ directory. Setup
+    # and cache actions may clean build/ between workflow steps.
+    selected_dir = Path("android-offline/app/src/main/assets/.shtooka-selected")
     downloads_dir.mkdir(parents=True, exist_ok=True)
     temp_dir.mkdir(parents=True, exist_ok=True)
     selected_dir.mkdir(parents=True, exist_ok=True)
@@ -512,7 +514,7 @@ def fetch_shtooka_candidates(words: list[str], groups: dict, work_dir: Path):
                         "title": title,
                         "source_page": source_page,
                         "audio_url": "",
-                        "local_path": str(destination),
+                        "local_path": str(destination.resolve()),
                         "audio_format": ext.lstrip("."),
                         "audio_tags": [accent],
                         "accent_rank": country_rank(country),
@@ -756,6 +758,19 @@ def write_report(words, selected, manifest_path: Path, report_path: Path):
 def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
     if manifest.get("missing_words"):
         raise SystemExit(f"Refusing partial build: {len(manifest['missing_words'])} words lack human recordings.")
+
+    # Check every staged SWAC file before downloading or converting anything.
+    missing_sources = [
+        (word, item["local_path"])
+        for word, item in manifest["recordings"].items()
+        if item.get("local_path") and not Path(item["local_path"]).is_file()
+    ]
+    if missing_sources:
+        preview = ", ".join(f"{word}: {path}" for word, path in missing_sources[:8])
+        raise RuntimeError(
+            f"{len(missing_sources)} staged Shtooka source files are missing before packaging: {preview}"
+        )
+
     output_dir.mkdir(parents=True, exist_ok=True)
     temp_dir = output_dir.parent / "_audio-originals"
     temp_dir.mkdir(parents=True, exist_ok=True)
@@ -844,6 +859,10 @@ def download_audio(manifest: dict, output_dir: Path, credits_path: Path):
         if number % 50 == 0:
             print(f"[audio] packaged {number}/850 · {total_bytes / 1024 / 1024:.1f} MB", flush=True)
         time.sleep(0.05)
+
+    # Remove the temporary FLAC/WAV staging area after every source has been
+    # converted. These originals are not shipped in the APK.
+    shutil.rmtree("android-offline/app/src/main/assets/.shtooka-selected", ignore_errors=True)
 
     credits_path.parent.mkdir(parents=True, exist_ok=True)
     credits_path.write_text("\n".join(credits) + "\n", encoding="utf-8")
