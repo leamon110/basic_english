@@ -135,7 +135,7 @@ fork's updated course.
 
 ---
 
-- **Sentence practice** — 100 complete example sentences in ten groups, each with Chinese translation and a short pattern explanation, plus 20 interactive word-order assembly exercises.
+- **Sentence practice** — 100 complete example sentences in ten groups, 20 interactive word-order assembly exercises, and 10 original everyday/work dialogues (80 lines), with Chinese translations and browser speech playback.
 
 ## Tech notes
 
