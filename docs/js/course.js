@@ -624,7 +624,7 @@
 
   lessonHTML[25] =
     panel('1. 本课词汇', '<p>本课以办公室为场景，学习信件、文件、工作关系和表达方式。</p>' +
-      vocab([['pen','钢笔'],['pencil','铅笔'],['secretary','秘书'],['stamp','邮票；印章'],['attention','注意'],['copy','副本；复制'],['damage','损坏；损害'],['fact','事实'],['guide','指南；指导'],['insurance','保险'],['list','清单；列表'],['profit','利润'],['receipt','收据'],['record','记录'],['representative','代表'],['request','请求'],['statement','陈述；声明'],['dependent','依赖的'],['important','重要的'],['necessary','必要的'],['private','私人的'],['public','公共的'],['responsible','负责的'],['separate','分开的']]) +
+      vocab([['pen','钢笔'],['pencil','铅笔'],['secretary','秘书'],['stamp','邮票；印章'],['attention','注意'],['copy','副本；复制'],['damage','损坏；损害'],['fact','事实'],['guide','指南；指导'],['insurance','保险'],['list','清单；列表'],['profit','利润'],['receipt','收据'],['record','记录'],['representative','代表'],['request','请求'],['statement','陈述；声明'],['link','联系；连接（课文扩展词）'],['dependent','依赖的'],['important','重要的'],['necessary','必要的'],['private','私人的'],['public','公共的'],['responsible','负责的'],['separate','分开的']]) +
       '<div class="course-note">原版 Step 25 还列出 link。它不在本项目当前 850 个基础词条中，因此单独标记为课文扩展词，不计入 850 词卡片。</div>' +
       '<div class="lesson-examples"><p>make a request（提出请求）</p><p>give attention to a letter（注意一封信）</p><p>make a statement（作出陈述）</p><p>make a profit（获得利润）</p><p>be responsible for the damage（对损坏负责）</p><p>be dependent on a person（依赖某人）</p></div>') +
     panel('2. -ing 形式作名词和形容词', '<p>原版 Step 25 继续扩展前面学过的 -ing 形式。它们不只表示正在发生的动作，也可以直接表示一项活动，或者描述某物正在进行的状态。</p>' +
@@ -660,7 +660,7 @@
       '<p class="lesson-translation">一个男人在办公室里。他的秘书正在拆信。男人说：“今天上午我要和委员会的一些人开会。我们会先开一个内部会议，再开公开会议。我上午大部分时间都不在。走之前我会看看这些信。有什么信？”</p>' +
       '<p>The secretary says, “This letter is about some goods that got wet on the way here. Your letter with the facts has gone to the train company. The men say the insurance was for loss only, not for damage.”</p>' +
       '<p class="lesson-translation">秘书说：“这封信是关于一些货物在运送途中被淋湿的事。你那封写明事实的信已经寄给火车公司。对方说保险只包括遗失，不包括损坏。”</p>' +
-      '<p>The man says, “It was unwise not to get more insurance. If the goods have damage before they get here, the men are responsible. We will get money from them even if they are not able to get it from the train company.”</p>' +
+      '<p>The man says, “It was unwise not to get more insurance. If there is damage to the goods before they get here, the men are responsible. We will get money from them even if they are not able to get it from the train company.”</p>' +
       '<p class="lesson-translation">男人说：“没有买更全面的保险是不明智的。如果货物在到达这里之前就有损坏，那些人就要负责。即使他们不能从火车公司拿到钱，我们也会向他们要钱。”</p>' +
       '<p>She says, “The receipt is here.” He says, “Put it with the other receipts on the small table by the window. We will go through them before the end of the month. What is that letter in your hand?”</p>' +
       '<p class="lesson-translation">秘书说：“收据在这里。”男人说：“把它和其他收据放在窗边的小桌子上。月底前我们会一起检查。你手里那封信是什么？”</p>' +
@@ -676,7 +676,7 @@
       '<p class="lesson-translation">秘书说：“快写好了，但有一个词不清楚。”男人说：“让我看看。”秘书把信拿来。男人说：“他写的陈述不真实。我没有同意这件事。你说得对。我用一支坏铅笔写了这封信。我会把第二份副本寄给朋友，请他提出意见。一个不了解事实的人也能看出我的陈述是否清楚。把我的印章放在这一页的顶部。”</p>' +
       '<p>She says, “It will be ready when you put your name on it.” He says, “Where are the records of the last meeting? I put them in the middle drawer, but they are not there now. Did you put them in another place?” She says, “You said you would keep them in a separate place. I saw you put them in a box on the shelf by the door.”</p>' +
       '<p class="lesson-translation">秘书说：“你签上名字后，它就准备好了。”男人说：“上次会议的记录在哪里？我把它们放在中间的抽屉里，但现在不在那里。是你把它们放到别处了吗？”秘书说：“你说过要把它们放在一个单独的地方。我看见你把它们放进门边架子上的一个盒子里了。”</p>' +
-      '<p>He says, “You are right. I am dependent on your good memory. My memory is bad. The man in the school said I was the worst in the school. I might have done better if I had a secretary.” He says, “I have to go now. If some man comes this morning, say I will be back later. Are there any plays on tonight? Is there something beautiful that will make a tired man happy?” She says, “This play is said to be good.” He says, “Then get some seats for it tonight.”</p>' +
+      '<p>He says, “You are right. I am dependent on your good memory. My memory is bad. At school, I was the worst boy. I might have done better if I had a secretary.” He says, “I have to go now. If some man comes this morning, say I will be back later. Are there any plays on tonight? Is there something beautiful that will make a tired man happy?” She says, “This play is said to be good.” He says, “Then get some seats for it tonight.”</p>' +
       '<p class="lesson-translation">男人说：“你说得对。我很依赖你的好记性。我的记性不好。学校里的人曾说我是学校里最差的学生。如果我当时有一位秘书，我的表现也许会好一些。”他又说：“我现在得走了。如果今天上午有人来，就说我晚些时候回来。今晚有什么戏剧上演吗？有没有好看的节目能让疲惫的人高兴起来？”秘书说：“这出戏据说不错。”男人说：“那就订一些今晚的座位。”</p></div>') +
     panel('8. 阅读中的表达', '<div class="lesson-rule"><b>representative</b><p>在本课中指代表别人办事的人，不是“一个典型样本”。</p></div>' +
       '<div class="lesson-rule"><b>the way to do something</b><p>way 可以表示达到某个结果的方法：the way to get decisions made。</p></div>' +
