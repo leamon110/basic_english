@@ -593,7 +593,7 @@
       '<div class="lesson-rule"><b>so 作连接词</b><p>表示“因此、所以”：The weather is cold, so the flowers will be late this year.</p></div>' +
       '<p>在否定句后面，不用 so 来代替前面的否定动作；要重复否定结构：The girls did not get wet, and the boys did not.</p>') +
     panel('6. 天气表达与反意疑问句', '<p>描述天气时，可以用 good、bad、wet、warm、cold 等形容词描述 day 或 season。</p>' +
-      '<div class="lesson-examples"><p>It is not a bad day, is it?</p><p>The sky is clear now, isn't it?</p><p>It was cold last night, wasn't it?</p></div>' +
+      '<div class="lesson-examples"><p>It is not a bad day, is it?</p><p>The sky is clear now, is it not?</p><p>It was cold last night, was it not?</p></div>' +
       '<p>反意疑问句常用来邀请对方表示同意：前面是否定陈述，后面接肯定疑问；前面是肯定陈述，后面接否定疑问。</p>' +
       '<p>school、church、hospital、market、prison 等词在表示相应活动或机构时，可以不加 a / the：go to school、be at church、take him to hospital。</p>') +
     panel('7. 其他重要表达', '<div class="lesson-rule"><b>one day</b><p>表示“某一天”时使用 one day，不用 a day；前面通常不加 on。</p></div>' +
