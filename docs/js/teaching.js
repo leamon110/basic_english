@@ -26,6 +26,8 @@ function renderTeaching(container) {
   `
 
   window.BE.teaching.switchTab('cards')
+  // Entering Teaching should start at the top, not reuse the previous page's scroll offset.
+  window.scrollTo(0, 0)
 }
 
 function switchTab(tab) {
