@@ -94,7 +94,7 @@
     return '<section class="course-page">' +
       '<header class="course-hero"><p class="course-kicker">C. K. OGDEN · 1930 ORIGINAL COURSE</p>' +
       '<h1>从 850 个词，学会说完整的英语</h1>' +
-      '<p>按原版 45 Steps 的顺序学习。每课把词汇放进句子、阅读和练习中，而不是孤立地背单词。</p>' +
+      '<p>本页是 Ogden 原版 45 Steps 的课程目录，不是 850 词汇总表。完整 850 词单词卡请从首页进入“850 词汇学习 · Teaching”。每课再把词汇放进句子、阅读和练习中。</p>' +
       '<div class="course-note">目前已完成 14 / 45 课的中文教学改编：Step 1、2、3、5、6、9、10、12、13、15、17、18、20、25。其余步骤保留原版入口，尚未改编的内容不会冒充已完成课程。</div></header>' +
       '<div class="course-progress"><strong>45 个原版步骤</strong><span>已改编：14 课 · 待补：Step 4、7、8、11、14、16、19、21–24、26–45</span></div>' +
       '<div class="course-grid">' + cards + '</div></section>';
