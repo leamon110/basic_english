@@ -1,5 +1,5 @@
 // Basic English PWA — Service Worker
-const CACHE = 'basic-english-v22'
+const CACHE = 'basic-english-v23'
 // Relative paths so the app works under a sub-path (e.g. /basic_english/)
 const ASSETS = [
   './',
@@ -10,6 +10,7 @@ const ASSETS = [
   './js/chat.js',
   './js/teaching.js',
   './js/course.js',
+  './js/sentence-practice.js',
   './js/app.js',
   './manifest.json',
   './icons/icon-192.svg',
