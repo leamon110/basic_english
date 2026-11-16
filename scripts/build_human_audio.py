@@ -129,7 +129,7 @@ def get_speaker(filename: str):
             prefix = token + "-"
             if body.startswith(prefix):
                 word_part = body[len(prefix):]
-                word_part = re.sub(r"\\.(wav|ogg|oga|mp3|flac|m4a|opus)(\\.mp3)?$", "", word_part, flags=re.I)
+                word_part = re.sub(r"\.(wav|ogg|oga|mp3|flac|m4a|opus)(\.mp3)?$", "", word_part, flags=re.I)
                 return speaker, norm(word_part)
     return None, None
 
