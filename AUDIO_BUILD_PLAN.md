@@ -668,3 +668,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - The new word-by-word Basic vocabulary classification UI and Service Worker v34 are now user-accepted. Existing grammar/meaning checks and original app functions were included in the user's overall confirmation; no more device retest is currently pending for Run 41.
 - Latest live branch head at this handoff: `634b778afb6affac38fb7c86bc97d66fe3b80781` (plan-only update). Latest Actions run remains Run 41, completed / success; no active or queued runs. Run 41 logs, all job steps, both artifacts, coverage report and APK contents were rechecked.
 - Next project action, following Section 12 of `BASIC_ENGLISH_EXPRESSION_SYSTEM.md`: research and document the source-grounded treatment of Things and Qualities — stretch of sense, limiting/special use, and extensions through `-er`, `-ing`, and `-ed`. This is a research/documentation milestone; do not change App code or trigger an Android build until the source map and teaching sequence are checked.
+
+
+### Expression System research milestone — Things and Qualities (2026-11-18)
+
+- Run 41 device acceptance is recorded above; the user's overall confirmation “可以了” marks the vocabulary-feedback revision accepted.
+- Added root-level research index `BASIC_ENGLISH_EXPANSIONS_THINGS_QUALITIES.md` and Lesson 02 content prototype `BASIC_ENGLISH_EXPRESSION_LESSON_02.md`.
+- Research covers Ogden, `The ABC of Basic English`, “Expansions: Names of Things and Qualities”, pp.146–161: body-part analogies; sense-quality similarity; purpose/behavior similarity; “as if” comparisons; quality-name extensions; narrower special uses; -er/-ing/-ed derived forms; and selected quality names used as names of things.
+- Directly inspected the English source pages pp.146, 148, 150, 152, 156, 158 and 160. The scan image for p.154 timed out repeatedly; no claim is made that this page was directly inspected. Secondary research was kept separate and used only as cross-reference.
+- Lesson 02 is a source-grounded content prototype, not yet integrated into the App. No files under `docs/**`, `android-offline/**`, `scripts/**`, or the workflow were changed; no Android build was triggered.
+- The 850-word audio APK and Run 41 acceptance remain unchanged.
+- Next concrete action: create a source-verified index of Ogden's 250 Fixed Word-Groups, keeping it distinct from the already indexed Names of Acts / Common Needs material. Then build a multi-answer Meaning → Basic exercise bank before changing the App UI.
