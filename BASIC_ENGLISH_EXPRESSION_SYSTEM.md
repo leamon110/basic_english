@@ -312,3 +312,11 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 ### 词表与课程构式的边界
 
 850个基础词条与 App 当前允许的课程构式不是同一张清单。validator.js 明确允许原书课程中教授的若干构式，例如 something、someone、nothing、into、away。教学时应标明它们是课程构式，而不是把它们冒充为850个基础词条之一。
+
+
+## Verified App distinction and handoff (2026-11-17)
+
+- The original 45 Steps does include expressive practice. Step 1 asks learners to write four Basic sentences describing a picture using between, by, in and on. Step 42, “Basic for everyday needs”, contains five practical dialogues and asks learners to give an account in Basic of a person's railway-journey experience.
+- Current App implementation is narrower: `docs/js/course.js` locally adapts only 14/45 steps (1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18, 20, 25). The remaining 31, including Step 42, open the original BasicEnglish.org pages. The adapted steps have sentence-writing prompts, but not a complete meaning-analysis-to-Basic-re-expression training loop.
+- The separate Expression System track is our supplementary curriculum design based primarily on *The ABC of Basic English*. It is not an original Ogden course title and does not replace the original 45 Steps.
+- Lesson 01 is integrated into the App, but Run 36 device acceptance remains pending. Its current writing checker validates vocabulary/allowed forms only, not grammar or semantic correctness.

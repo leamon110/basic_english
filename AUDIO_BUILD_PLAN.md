@@ -355,3 +355,30 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Names of Acts is one component of the broader system. The ABC's structure also covers Things, Qualities, Operations/Operators, Directions, Word-order, other word-forms, Expansions and Special Senses, 250 Fixed Word-Groups, and “Some Common Needs” (Simple Acts, Complex Acts, Other Suggestions), among other sections.
 - Source checks: [Basic English 45-step course, Step 42](https://basicenglish.org/step-42/index.html); [45-step course index](https://basicenglish.org/index_htm.html); Ogden, *The ABC of Basic English* (1932), table of contents and “Some Common Needs”.
 - Next content-design action: preserve the original 45-step material and build the supplementary track by mapping the relevant original system components to explicit meaning-analysis, Basic construction, and reverse-understanding exercises. Do not present the project track as Ogden's original named module.
+
+
+## Cross-session handoff — 45 Steps vs Expression System (verified 2026-11-17)
+
+### Source distinction
+- Ogden's 45 Steps is a staged course. It does contain sentence production and applied use; do not say it contains no expression practice.
+- Ogden's *The ABC of Basic English* is a separate systematic exposition of the mechanisms and special uses behind Basic: Other Word-Forms, Expansions (Things/Qualities/Acts/Directions), 250 Fixed Word-Groups, and Some Common Needs.
+- The project term `Expression System` is our supplementary curriculum name, not an original Ogden course title. Its content is based primarily on *The ABC*, with original examples distinguished from project-created explanations and exercises.
+
+### Exact current App state
+- `docs/js/course.js` defines the 45-step directory. Only Steps 1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18, 20 and 25 have local Chinese adaptations (14/45).
+- The other 31 steps, including Step 42, call `openOriginal(n)` and open the BasicEnglish.org original page; they are not locally reproduced in the App.
+- The adapted local steps include vocabulary/structure exercises, reading comprehension, and constrained sentence-writing prompts. Example: local Step 1 asks learners to write four Basic sentences using between/by/in/on. These are real practice, but they do not form a systematic ordinary-meaning → semantic analysis → Basic re-expression training loop.
+- Original Step 42 is titled “Basic for everyday needs”. It contains five practical dialogues (railway station, hotel, bank, post office, library) and exercise 3 explicitly asks: “Give an account in Basic of the experiences of a person starting on a railway journey.” This is in the external original page, not currently inside the App's Chinese-adapted course.
+- Therefore, when the user says they cannot see the original expressive practice in the App, that observation is correct: Step 42 is not locally adapted, and the 14 adapted lessons do not yet provide the dedicated meaning-to-Basic training track.
+
+### Expression System implementation and limitations
+- A separate App navigation item and home card exist; Lesson 01 (speak in three contexts) is integrated in code commit `86e81894a544ad6ec7e6a768d4f0d1f791e08619`.
+- Lesson 01 has context questions, a free-writing area, a vocabulary-only check, and reverse interpretation. The writing check validates vocabulary/allowed forms only; it does not validate grammar, semantic preservation, or naturalness.
+- GitHub Actions Run 36 (`44080767833`) built successfully; APK artifact `basic-english-human-voice-apk`, ID `14326577845`, 9,223,913 bytes. All 22 steps passed; audio 850/850 restored from cache, 0 errors; APK build successful. No active Actions run at this handoff.
+- User-device acceptance of the Run 36 Expression System page is still pending. Do not mark it accepted until the user confirms the install and tests.
+- Next content action after device retest: continue designing the supplementary Meaning → Basic curriculum from *The ABC*, preserving source/provenance distinctions and not misrepresenting it as original 45 Steps content.
+
+### Primary source pages checked
+- [Original 45-step Step 1](https://basicenglish.org/step-1/index.html)
+- [Original 45-step Step 42](https://basicenglish.org/step-42/index.html), especially the five dialogues and exercise 3.
+- Research details and original-source mapping: `BASIC_ENGLISH_EXPRESSION_SYSTEM.md`, `BASIC_ENGLISH_NAMES_OF_ACTS.md`, `BASIC_ENGLISH_OPERATORS.md`, `BASIC_ENGLISH_DIRECTIVES.md`, `BASIC_ENGLISH_OPERATOR_DIRECTION_MAP.md`, `BASIC_ENGLISH_EXPRESSION_LESSON_01.md`.
