@@ -679,3 +679,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Lesson 02 is a source-grounded content prototype, not yet integrated into the App. No files under `docs/**`, `android-offline/**`, `scripts/**`, or the workflow were changed; no Android build was triggered.
 - The 850-word audio APK and Run 41 acceptance remain unchanged.
 - Next concrete action: create a source-verified index of Ogden's 250 Fixed Word-Groups, keeping it distinct from the already indexed Names of Acts / Common Needs material. Then build a multi-answer Meaning → Basic exercise bank before changing the App UI.
+
+
+### Expression System research milestone — 250 Fixed Word-Groups (2026-11-18)
+
+- Added `BASIC_ENGLISH_250_FIXED_WORD_GROUPS.md`, a source-verified structure and teaching index for Ogden's *The ABC of Basic English*, pp.212–242.
+- Directly inspected all English text pages in the section: pp.212, 214, 216, 218, 220, 222, 224, 226, 228, 230, 232, 234, 236, 238, 240 and 242.
+- Verified the source count: 50 Operator examples + 80 relation-word examples + 20 additional Operations / Directions special uses + 100 uses with the remaining Basic vocabulary = 250.
+- Verified the 100-use category split: Operations 13; General Names 51; Picturable Things 18; Names of Qualities 15; Opposites 3.
+- Preserved the source distinction: Fixed Word-Groups are idiomatic/special uses, not expansions of root sense. The source gives three causes: attraction, omission/loss of words, and an old picture no longer clear.
+- Clarified that for and of are included in the Fixed Word-Groups relation-word groups even though they are not among the 20 proper Directives. Fixed-group inclusion and lexical classification are separate.
+- Clarified that the 250 Fixed Word-Groups section is distinct from Some Common Needs; the latter is already indexed in `BASIC_ENGLISH_NAMES_OF_ACTS.md`.
+- No App source code or watched workflow paths changed; no Android build was triggered.
+- Next concrete action: create an original Meaning → Basic exercise-bank prototype that accepts multiple semantically correct Basic renderings and evaluates vocabulary, grammar, meaning preservation and fixed-group use as separate dimensions.
