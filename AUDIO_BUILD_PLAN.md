@@ -658,3 +658,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - APK archive, 850 audio files, attribution files, and packaged classification logic are verified. The APK has not yet been confirmed installed or tested on the user's phone.
 - Next: provide the extracted Run 41 APK as a direct attachment. Ask the user to check the vocabulary feedback categories and individual explanations, especially the six pronoun entries `we`, `she`, `it`, `they`, `these`, and `those`; also confirm that the existing grammar/meaning checks and original app functions remain intact.
 - No further `docs/**` changes or new Android build are needed before this device retest. Do not mark the new vocabulary-feedback UI accepted until the user confirms the phone test.
+
+
+### Run 41 device acceptance — vocabulary classification feedback (2026-11-18)
+
+- User tested the Run 41 APK on the Android device and confirmed: “可以了。”
+- Record the Run 41 vocabulary-feedback revision as accepted at the overall feature level. The user did not provide separate item-by-item observations; do not claim individual test results beyond the overall confirmation.
+- Accepted build: Run 41 / ID `44171284617`, code commit `8a73f00ec3e865a28c514eaf80bbc11fe6364470`; APK artifact ID `14368266540`; extracted APK SHA-256 `2ce451a18b2504a608719af67f3b25135004d38b4c8ad470728727b79c4e04e9`.
+- The new word-by-word Basic vocabulary classification UI and Service Worker v34 are now user-accepted. Existing grammar/meaning checks and original app functions were included in the user's overall confirmation; no more device retest is currently pending for Run 41.
+- Latest live branch head at this handoff: `634b778afb6affac38fb7c86bc97d66fe3b80781` (plan-only update). Latest Actions run remains Run 41, completed / success; no active or queued runs. Run 41 logs, all job steps, both artifacts, coverage report and APK contents were rechecked.
+- Next project action, following Section 12 of `BASIC_ENGLISH_EXPRESSION_SYSTEM.md`: research and document the source-grounded treatment of Things and Qualities — stretch of sense, limiting/special use, and extensions through `-er`, `-ing`, and `-ed`. This is a research/documentation milestone; do not change App code or trigger an Android build until the source map and teaching sequence are checked.
