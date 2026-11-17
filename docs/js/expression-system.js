@@ -154,15 +154,20 @@
         <section class="expression-practice">
           <span class="expression-step-label">MAKE YOUR OWN SENTENCE</span>
           <h2>练习二：自己构造 Basic 表达</h2>
-          <p>请用 Basic 表达“我向他表达一些内容”。先自己写，再检查词汇是否符合当前850词规则。</p>
+          <p>请用 Basic 表达“我向他表达一些内容”。先写完整句子，再依次完成词汇、语法结构和意思检查。</p>
           <textarea id="expression-writing" rows="3" placeholder="Write your Basic English sentence here..."></textarea>
+          <p class="expression-check-intro">请按顺序完成三项检查。只有前一步通过后，下一步才会开放。</p>
           <div class="expression-writing-actions">
-            <button type="button" class="expression-primary" id="expression-check-words">检查850词汇</button>
+            <button type="button" class="expression-primary" id="expression-check-words">① 检查850词汇</button>
+            <button type="button" class="expression-primary" id="expression-check-grammar" disabled>② 检查语法结构</button>
+            <button type="button" class="expression-primary" id="expression-check-meaning" disabled>③ 检查意思</button>
             <button type="button" class="expression-secondary" id="expression-show-hint">显示提示</button>
           </div>
           <p class="expression-hint" id="expression-hint" hidden>提示：本课的原作者例子是 “say something to him”。请自己组织完整句子。</p>
-          <div class="expression-writing-feedback" id="expression-writing-feedback" aria-live="polite"></div>
-          <p class="expression-limitation">词汇检查只核对850词及项目允许的词形，不判断语法、语义是否正确，也不判断表达是否自然。</p>
+          <div class="expression-writing-feedback" id="expression-vocabulary-feedback" aria-live="polite"></div>
+          <div class="expression-writing-feedback" id="expression-grammar-feedback" aria-live="polite"></div>
+          <div class="expression-writing-feedback" id="expression-meaning-feedback" aria-live="polite"></div>
+          <p class="expression-limitation">自动检查范围：本题的目标句型是“主语 + say/says + something/nothing + to + 宾格代词”。其他句型暂不支持自动判断；未识别不等于语法错误。本功能不是通用英语语法或自然度检查。</p>
         </section>
 
         <section class="expression-reverse">
@@ -202,6 +207,9 @@
     const checkButton = container.querySelector('#expression-check');
     const resetButton = container.querySelector('#expression-reset');
     const wordButton = container.querySelector('#expression-check-words');
+    const grammarButton = container.querySelector('#expression-check-grammar');
+    const meaningButton = container.querySelector('#expression-check-meaning');
+    const writingInput = container.querySelector('#expression-writing');
     const hintButton = container.querySelector('#expression-show-hint');
 
     container.querySelectorAll('.expression-option input').forEach(function (input) {
@@ -216,6 +224,9 @@
     if (checkButton) checkButton.addEventListener('click', function () { checkQuiz(container); });
     if (resetButton) resetButton.addEventListener('click', function () { resetQuiz(container); });
     if (wordButton) wordButton.addEventListener('click', function () { checkVocabulary(container); });
+    if (grammarButton) grammarButton.addEventListener('click', function () { checkGrammar(container); });
+    if (meaningButton) meaningButton.addEventListener('click', function () { checkMeaning(container); });
+    if (writingInput) writingInput.addEventListener('input', function () { resetWritingChecks(container); });
     if (hintButton) hintButton.addEventListener('click', function () {
       const hint = container.querySelector('#expression-hint');
       if (hint) hint.hidden = !hint.hidden;
@@ -260,10 +271,26 @@
     if (scoreBox) scoreBox.textContent = '';
   }
 
+  function resetWritingChecks(container) {
+    ['expression-vocabulary-feedback', 'expression-grammar-feedback', 'expression-meaning-feedback'].forEach(function (id) {
+      const feedback = container.querySelector('#' + id);
+      if (feedback) {
+        feedback.textContent = '';
+        feedback.className = 'expression-writing-feedback';
+      }
+    });
+    const grammarButton = container.querySelector('#expression-check-grammar');
+    const meaningButton = container.querySelector('#expression-check-meaning');
+    if (grammarButton) grammarButton.disabled = true;
+    if (meaningButton) meaningButton.disabled = true;
+  }
+
   function checkVocabulary(container) {
     const input = container.querySelector('#expression-writing');
-    const feedback = container.querySelector('#expression-writing-feedback');
+    const feedback = container.querySelector('#expression-vocabulary-feedback');
+    const grammarButton = container.querySelector('#expression-check-grammar');
     if (!input || !feedback) return;
+    resetWritingChecks(container);
     const text = input.value.trim();
     if (!text) {
       feedback.textContent = '请先写一句 Basic English。';
@@ -271,17 +298,149 @@
       return;
     }
     if (!window.BE || typeof window.BE.validate !== 'function') {
-      feedback.textContent = '当前无法调用词汇检查器。';
+      feedback.textContent = '当前无法调用词汇检查器，暂时不能继续。';
       feedback.className = 'expression-writing-feedback is-wrong';
       return;
     }
     const result = window.BE.validate(text);
     if (result && result.valid) {
-      feedback.textContent = '词汇检查通过：未发现超出当前词汇规则的单词。请继续检查语法和意思是否准确。';
+      feedback.textContent = '词汇检查通过：未发现超出当前词汇规则的单词。下一步请点击“② 检查语法结构”。';
       feedback.className = 'expression-writing-feedback is-correct';
+      if (grammarButton) grammarButton.disabled = false;
     } else {
       const bad = result && result.errors ? result.errors.map(function (item) { return item.word; }).join('、') : '无法识别的词';
-      feedback.textContent = '发现不符合当前词汇规则的词：' + bad + '。请检查是否能换成850词或允许的词形。';
+      feedback.textContent = '词汇检查未通过：发现不符合当前词汇规则的词：' + bad + '。请修改后重新检查。';
+      feedback.className = 'expression-writing-feedback is-wrong';
+    }
+  }
+
+  function analyzeLessonSentence(text) {
+    const subjectPronouns = ['i', 'you', 'he', 'she', 'it', 'we', 'they'];
+    const objectPronouns = ['me', 'you', 'him', 'her', 'it', 'us', 'them'];
+    const contentWords = ['something', 'nothing'];
+    const normalized = String(text || '').trim().toLowerCase()
+      .replace(/[.!?;:,。！？；，]+$/g, '')
+      .replace(/\s+/g, ' ');
+    const tokens = normalized ? normalized.split(' ') : [];
+    if (!tokens.length) return { status: 'error', message: '请先输入句子。' };
+
+    const subject = tokens[0];
+    const verb = tokens[1];
+
+    if (tokens.length === 4 && subjectPronouns.includes(subject) &&
+        ['say', 'says'].includes(verb) && contentWords.includes(tokens[2]) &&
+        (objectPronouns.includes(tokens[3]) || subjectPronouns.includes(tokens[3]))) {
+      return { status: 'error', message: 'say 后面的内容与接受者之间缺少 to。应使用：say + 内容 + to + 接受者。' };
+    }
+    if (tokens.length === 4 && subjectPronouns.includes(subject) &&
+        ['say', 'says'].includes(verb) && objectPronouns.includes(tokens[2]) &&
+        contentWords.includes(tokens[3])) {
+      return { status: 'error', message: '本课结构的顺序是 say + 内容 + to + 接受者，不能把接受者直接放在内容前面。' };
+    }
+    if (tokens.length === 5 && subjectPronouns.includes(subject) &&
+        ['say', 'says'].includes(verb) && tokens[2] === 'to' &&
+        objectPronouns.includes(tokens[3]) && contentWords.includes(tokens[4])) {
+      return { status: 'error', message: '词序不符合本课结构。应把表达内容放在 to 前面：say + something + to + him。' };
+    }
+    if (tokens.length !== 5) {
+      return { status: 'unsupported', message: '本课自动检查目前只识别五部分句型：主语 + say/says + something/nothing + to + 宾格代词。其他长度的句子暂不在检查范围内。' };
+    }
+
+    const sentence = tokens;
+    const s = sentence[0];
+    const v = sentence[1];
+    const content = sentence[2];
+    const preposition = sentence[3];
+    const recipient = sentence[4];
+
+    if (!subjectPronouns.includes(s)) {
+      return { status: 'unsupported', message: '本课自动检查目前要求句首使用人称代词（I、you、he、she、it、we、they）；其他主语暂不在检查范围内。' };
+    }
+    if (!['say', 'says'].includes(v)) {
+      return { status: 'unsupported', message: '本课自动检查目前只检查 say/says 这一表达结构；其他动词结构暂不在检查范围内。' };
+    }
+
+    const requiredVerb = ['he', 'she', 'it'].includes(s) ? 'says' : 'say';
+    if (v !== requiredVerb) {
+      return {
+        status: 'error',
+        message: ['he', 'she', 'it'].includes(s)
+          ? '主谓一致错误：主语是 he/she/it 时，本句型使用 says。'
+          : '主谓一致错误：主语是 I/you/we/they 时，本句型使用 say。'
+      };
+    }
+    if (!contentWords.includes(content)) {
+      return { status: 'unsupported', message: '本课自动检查目前只识别 something 或 nothing 作为 say 后面的内容词；其他内容表达暂不在检查范围内。' };
+    }
+    if (preposition !== 'to') {
+      return { status: 'error', message: '这里要指出说话内容的接受者，应使用介词 to。结构是 say + 内容 + to + 接受者。' };
+    }
+    if (!objectPronouns.includes(recipient)) {
+      if (subjectPronouns.includes(recipient)) {
+        return { status: 'error', message: 'to 后面需要宾格代词：例如 him，而不是 he；her，而不是 she。' };
+      }
+      return { status: 'unsupported', message: '本课自动检查目前只识别 me、you、him、her、it、us、them 作为 to 后面的接受者。' };
+    }
+    return { status: 'pass', subject: s, verb: v, content: content, recipient: recipient };
+  }
+
+  function checkGrammar(container) {
+    const input = container.querySelector('#expression-writing');
+    const feedback = container.querySelector('#expression-grammar-feedback');
+    const meaningFeedback = container.querySelector('#expression-meaning-feedback');
+    const meaningButton = container.querySelector('#expression-check-meaning');
+    if (!input || !feedback) return;
+    if (meaningFeedback) {
+      meaningFeedback.textContent = '';
+      meaningFeedback.className = 'expression-writing-feedback';
+    }
+    if (meaningButton) meaningButton.disabled = true;
+
+    const result = analyzeLessonSentence(input.value);
+    if (result.status === 'pass') {
+      feedback.textContent = '语法结构检查通过：句子符合“主语 + say/says + 内容 + to + 接受者”的本课句型。下一步请点击“③ 检查意思”。注意：这只检查本课句型，不代表完整英语语法已全部检查。';
+      feedback.className = 'expression-writing-feedback is-correct';
+      if (meaningButton) meaningButton.disabled = false;
+    } else if (result.status === 'error') {
+      feedback.textContent = '语法结构检查未通过：' + result.message;
+      feedback.className = 'expression-writing-feedback is-wrong';
+    } else {
+      feedback.textContent = '暂时无法判断：' + result.message + '这不等于你的句子一定有语法错误。';
+      feedback.className = 'expression-writing-feedback is-pending';
+    }
+  }
+
+  function checkMeaning(container) {
+    const input = container.querySelector('#expression-writing');
+    const feedback = container.querySelector('#expression-meaning-feedback');
+    if (!input || !feedback) return;
+    const parsed = analyzeLessonSentence(input.value);
+    if (parsed.status !== 'pass') {
+      feedback.textContent = '请先通过“② 检查语法结构”，再检查意思。';
+      feedback.className = 'expression-writing-feedback is-pending';
+      return;
+    }
+
+    const subjectNames = { i: '我', you: '你', he: '他', she: '她', it: '它', we: '我们', they: '他们' };
+    const objectNames = { me: '我', you: '你', him: '他', her: '她', it: '它', us: '我们', them: '他们' };
+    const mismatches = [];
+    if (parsed.subject !== 'i') {
+      mismatches.push('主语 ' + parsed.subject + ' 表示“' + subjectNames[parsed.subject] + '”，题目要求的是“我”。');
+    }
+    if (parsed.content !== 'something') {
+      mismatches.push(parsed.content === 'nothing'
+        ? 'nothing 表示“没有内容”，题目要求的是“一些内容”。'
+        : '表达内容与题目不一致。');
+    }
+    if (parsed.recipient !== 'him') {
+      mismatches.push('to ' + parsed.recipient + ' 表示“向' + objectNames[parsed.recipient] + '”，题目要求的是“向他”。');
+    }
+
+    if (mismatches.length === 0) {
+      feedback.textContent = '意思检查通过：I = 我；say = 说出/表达；something = 一些内容；to him = 向他。句子保留了题目中的说话者、表达内容和接受者。';
+      feedback.className = 'expression-writing-feedback is-correct';
+    } else {
+      feedback.textContent = '意思检查未通过：' + mismatches.join(' ');
       feedback.className = 'expression-writing-feedback is-wrong';
     }
   }

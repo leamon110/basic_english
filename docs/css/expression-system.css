@@ -81,3 +81,11 @@
  .expression-quiz-actions{align-items:stretch}
  .expression-quiz-actions button{flex:1}
 }
+
+/* Ordered vocabulary, grammar and meaning checks for Lesson 01. */
+
+.expression-check-intro{margin:8px 0;color:#5d697b;font-size:13px;line-height:1.65}
+.expression-writing-actions button{flex:1 1 145px}
+.expression-primary:disabled,.expression-secondary:disabled{opacity:.45;cursor:not-allowed;filter:grayscale(.25)}
+.expression-writing-feedback.is-pending{background:#fff8e8;color:#85621b}
+@media(max-width:600px){.expression-writing-actions button{flex:1 1 calc(50% - 9px)}}
