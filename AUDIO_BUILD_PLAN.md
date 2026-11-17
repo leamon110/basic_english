@@ -826,3 +826,11 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Latest branch head before this plan-only update: 304d38841ef23315ed1947116212a6d47083164f; latest Actions run remains Run 48 / 44197915524, completed / success. No active or queued run remained.
 - Next: provide this one combined Run 48 APK for device acceptance, with one consolidated checklist covering Teaching, all five Expression System lessons, Meaning → Basic, original 45 Steps, Word Cards human audio, and offline behavior. Do not trigger another build unless testing reveals a concrete defect.
 
+
+
+### Run 48 direct APK attachment prepared (2026-11-18)
+
+- Created user-visible copy: /mnt/data/Basic-English-Expression-System-Run48.apk.
+- Verified copy size: 9,869,645 bytes; SHA-256 c5fb46dfb687073e48a1f502a5045d5d38ab4255055b1e0897d1fdf0d5772cf1.
+- In the same file-generation operation, confirmed the source and copied files exist, sizes and SHA-256 hashes match, APK ZIP integrity passes, and exactly 850 unique word-audio entries are present.
+- This records file preparation only. User download, installation and combined device acceptance have not yet been confirmed.
