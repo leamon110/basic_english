@@ -320,3 +320,15 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 - Current App implementation is narrower: `docs/js/course.js` locally adapts only 14/45 steps (1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18, 20, 25). The remaining 31, including Step 42, open the original BasicEnglish.org pages. The adapted steps have sentence-writing prompts, but not a complete meaning-analysis-to-Basic-re-expression training loop.
 - The separate Expression System track is our supplementary curriculum design based primarily on *The ABC of Basic English*. It is not an original Ogden course title and does not replace the original 45 Steps.
 - Lesson 01 is integrated into the App, but Run 36 device acceptance remains pending. Its current writing checker validates vocabulary/allowed forms only, not grammar or semantic correctness.
+
+
+## 14. Things and Qualities 扩展研究首轮完成（2026-11-18）
+
+- 新增研究索引：`BASIC_ENGLISH_EXPANSIONS_THINGS_QUALITIES.md`。
+- 新增课程原型：`BASIC_ENGLISH_EXPRESSION_LESSON_02.md`，主题为身体部位名称如何扩展到其他事物部位。
+- 主要依据：Ogden, `The ABC of Basic English`, “Expansions: Names of Things and Qualities”, pp.146–161；直接核对了 pp.146、148、150、152、156、158、160 的英文原文图像。
+- 已整理：身体部位类比、感官性质相似、用途／行为相似、“as if”抽象比较、性质词基于人的反应和经验倾向的扩展、较窄的 special use、-er/-ing/-ed 派生形式、性质词作为事物名称。
+- 术语边界：Expansion 是意义延伸；p.156 的 special use 是意义收窄；派生词可能继续形成扩展或特定用法。后期 Ogden 资料中的习语式 special uses 与本章的 narrower special use 不混为一谈。
+- 原始扫描 p.154 的页面图像请求连续超时；本文没有把未读到的 p.154 内容写成已核实事实。二手资料仅作交叉提示，不代替原书。
+- Lesson 02 是内容原型，不是 Ogden 原书课程编号；尚未集成 App，也没有为它编写自动检查器。
+- 下一步：整理原书 250 Fixed Word-Groups 的来源和分类，并与已有 Names of Acts / Common Needs 索引区分；之后再建立跨单元 Meaning → Basic 题库。
