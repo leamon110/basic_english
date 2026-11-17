@@ -332,3 +332,16 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 - 原始扫描 p.154 的页面图像请求连续超时；本文没有把未读到的 p.154 内容写成已核实事实。二手资料仅作交叉提示，不代替原书。
 - Lesson 02 是内容原型，不是 Ogden 原书课程编号；尚未集成 App，也没有为它编写自动检查器。
 - 下一步：整理原书 250 Fixed Word-Groups 的来源和分类，并与已有 Names of Acts / Common Needs 索引区分；之后再建立跨单元 Meaning → Basic 题库。
+
+
+## 15. 250 Fixed Word-Groups 首轮结构索引完成（2026-11-18）
+
+- 新增索引：`BASIC_ENGLISH_250_FIXED_WORD_GROUPS.md`。
+- 已直接核对《The ABC of Basic English》英文原文 pp.212、214、216、218、220、222、224、226、228、230、232、234、236、238、240、242，覆盖该节全部英文正文页。
+- 原书在 p.214 给出的计数结构已核对：10 个 Operators × 5 例 = 50；8 个关系词 × 10 例 = 80；另外 10 个 Operations / Directions 词项各有 2 种特殊用法 = 20；Basic 词表其他类别的特殊用法 = 100；总计 250。
+- p.212 把固定词组与意义扩展区分开，并提出三种形成原因：用法吸引、省略、历史意象。
+- 100 项的原书类别分布：Operations 13、General Names 51、Picturable Things 18、Names of Qualities 15、Opposites 3。
+- 已明确 for / of 虽不属于20个 proper Directives，仍被原作者纳入 Fixed Word-Groups 的8组关系词之一；词项分类与固定搭配收录是两个问题。
+- 已明确 250 Fixed Word-Groups 与后续 Some Common Needs 不同；后者已有 `BASIC_ENGLISH_NAMES_OF_ACTS.md` 首轮索引。
+- 新文档保留数量、分组、页码和教学边界，不逐字复制原书250条例句；尚未修改 App 代码或触发 Android 构建。
+- 下一步：建立跨主题 Meaning → Basic 训练题库，支持多种语义正确的 Basic 表达，并将词汇、语法、语义保留和固定词组识别分开评价。
