@@ -425,3 +425,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - `sandbox:/mnt/data/...` is the direct ChatGPT file link. It works only when that exact file has already been created in the active runtime and surfaced through the user-visible file-generation flow. A path string, connector file reference, or pending tool operation is not proof that a direct attachment exists.
 - Historical direct sandbox deliveries recorded as successful include Run 34, Run 35 after the user selected the correct file, and `Basic-English-Voice-Fix-v2-direct.apk`. This supports the direct-file method when the file is actually prepared before the link is sent.
 - Next action: send the verified Run 36 direct attachment link, then wait for the user to confirm download and Android installation. Do not trigger a new build for this delivery-only issue.
+
+
+## Run 36 Android device retest — writing-checker UX gap (2026-11-17)
+
+- User installed and tested Run 36. User reports that the other requested checks meet expectations.
+- In Lesson 01's writing area, the user entered a sentence and tapped `检查850词汇`; the vocabulary check passed.
+- User correctly identified a confusing message: `词汇检查通过……请继续检查语法和意思是否准确`, but the writing area has no corresponding grammar/meaning-check button or next action.
+- Inspected `docs/js/expression-system.js`: `checkVocabulary()` calls only `window.BE.validate(text)`. It checks the current vocabulary rules (850 words plus explicitly permitted taught forms); it does not check grammar, meaning preservation, or naturalness.
+- The writing area has only two controls: `检查850词汇` and `显示提示`. The separate `检查答案` / `重新练习` buttons belong to the multiple-choice quiz, not the writing task.
+- Therefore the displayed sentence is only a manual self-check reminder, not an implemented feature or a hidden button. The wording implies a next app step that does not exist; this is a UX defect and the user's confusion is justified.
+- Run 36 device status: vocabulary validation is user-tested and passed; the other requested checks are user-reported as meeting expectations. The writing task's grammar/meaning stage is not implemented, so the Expression System lesson is only partially accepted pending a clear UI and a real next-stage design.
+- No source code was changed and no new Android build was triggered in this retest.
+- Next action: design and implement a distinct second-stage grammar-and-meaning review for Lesson 01. Define exactly what can be checked locally against the taught sentence patterns and the intended Chinese meaning; do not imply unrestricted natural-language understanding. Until that exists, the vocabulary-check success message must clearly state that only vocabulary was checked and that grammar/meaning review is not available in this version.
