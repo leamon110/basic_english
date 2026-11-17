@@ -481,3 +481,39 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Non-fatal warnings: Node.js 20 deprecation notices and dependency notices for `punycode` / `url.parse()`. No step failed.
 - Before delivering this build, the service-worker cache review found the app still used `basic-english-v32`. Updated `docs/sw.js` to `basic-english-v33` in commit `cbb42aa85ea00942a7166260315977863856f8a3`, so existing PWA clients will not keep the old expression JS/CSS under the previous cache key.
 - The v33 change touches `docs/**` and triggers a follow-up build. Run 37 is not the final APK for user testing; use the successful artifact from the v33 build.
+
+
+## Run 38 — final APK for staged writing-check device test (2026-11-18)
+
+### Build result
+- Run: [Run 38](https://github.com/leamon110/basic_english/actions/runs/44130128141), ID `44130128141`.
+- Built code commit: `cbb42aa85ea00942a7166260315977863856f8a3` (includes Expression Lesson 01 staged checker and Service Worker cache v33).
+- Conclusion: completed / success; all 22 job steps succeeded.
+- Android Gradle: `BUILD SUCCESSFUL` in 40 seconds.
+- Audio: 850/850 restored from cache, 0 newly downloaded, 0 errors; packaged MP3 total 9.45 MB.
+- APK artifact: `basic-english-human-voice-apk`, ID `14348239555`, 9,226,681 bytes, not expired.
+- Coverage artifact: `basic-english-human-audio-coverage`, ID `14349582365`, 21,467 bytes, not expired.
+- Non-fatal warnings: Node.js 20 deprecation notices and `punycode` / `url.parse()` dependency notices; no failed build steps.
+- Latest Actions state checked after completion: Run 38 success; no active or queued run.
+
+### APK extraction and independent verification
+- Downloaded the exact Run 38 APK artifact ZIP, artifact ID `14348239555`, to `/mnt/data/Basic-English-Expression-System-Run38-artifact.zip`.
+- Wrapper ZIP size: 9,226,681 bytes; ZIP integrity passed; it contains exactly one member: `Basic-English-Human-Voice.apk`.
+- Extracted APK: `Basic-English-Expression-System-Run38.apk`, 9,822,914 bytes.
+- APK SHA-256: `3d147432c5ec15f38863fc70d87fb295df4c1cfd24ab51c93adb4aeeb420d1e3`.
+- APK ZIP integrity passed.
+- Exactly 850 MP3 files exist under `assets/www/audio/words/`.
+- Confirmed APK includes the new `assets/www/js/expression-system.js`, `assets/www/css/expression-system.css`, Service Worker `assets/www/sw.js` with `basic-english-v33`, and both audio attribution files.
+- Inspected packaged JS for all three check buttons, semantic role mapping, and the “unsupported is not automatically a grammar error” feedback; inspected CSS for disabled-button styling.
+- Created user-visible direct attachment copy: `/mnt/data/Basic-English-Expression-System-Run38-verified.apk`.
+- Direct attachment size: 9,822,914 bytes; SHA-256 matches the extracted official APK exactly; source/destination byte comparison and destination APK ZIP integrity passed.
+- This is the official Run 38 APK, not a rebuild or the outer Artifact ZIP. User download, installation, and device acceptance of the new writing checker remain pending.
+
+### Next action
+- Provide the direct APK attachment to the user.
+- Ask the user to retest only the new writing-check flow:
+  1. `I say something to him.` → vocabulary, grammar structure, and meaning should all pass.
+  2. `I says something to him.` → vocabulary passes; grammar structure fails for subject–verb agreement.
+  3. `I say something to her.` → vocabulary and grammar pass; meaning fails because the recipient differs.
+  4. Edit the sentence after a check → later-stage results clear and the next-stage buttons lock until checks are repeated.
+- Do not mark Run 38 device acceptance complete until the user reports the result.
