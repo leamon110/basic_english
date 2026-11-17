@@ -565,3 +565,32 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Run 39 is a successful build of the first transparency implementation, but it is not the final user-test APK because the full allowed-word scan identified six pronoun entries needing explicit classification.
 - At this checkpoint, the branch head is `1c22385d90e1cd4b33c623a033de4386c06df31d`; this is the root-level plan update and does not alter the Run 39 build commit. No active or queued Actions run remained.
 - Next action: fix classification for `we`, `she`, `it`, `they`, `these`, and `those`; then rerun the complete 1,909-entry direct-allowlist classification scan and representative generated-form tests before triggering the final APK build.
+
+
+### Vocabulary classification correction and complete local verification (2026-11-18)
+
+- Corrected the pronoun classifier in code commit `644a49a107468e2fc7280ff73ee29dc938fe2a90`. The six entries `we`, `she`, `it`, `they`, `these`, and `those` are now explicitly classified as permitted pronoun forms, with Chinese glosses; they are not misreported as 850 base words.
+- Full direct-allowlist scan of the actual current `data.js`, `validator.js`, and `expression-system.js`:
+  - `ALL_850`: exactly 850 unique entries.
+  - `ALLOWED_WORDS`: exactly 1,909 direct entries.
+  - All 1,909 were accepted by the existing validator and received an explicit category: 850 base words, 985 permitted forms, 74 international words.
+  - 0 invalid direct entries; 0 generic “other” fallback classifications.
+- Course special-form scan: all 67 entries in the validator's explicit course list were accepted and classified (2 overlap with base words, 59 as course forms, 6 as other specifically classified forms such as pronouns/contractions); no unclassified course entry.
+- Generated-form scan: generated 7,579 candidate suffix/prefix forms from the 850 base words; 6,128 were accepted by the existing validator, and all 6,128 received a specific category (0 generic fallback).
+- Mock-DOM integration test invoked the actual Lesson 01 render and vocabulary button handler:
+  - `I say something to him.`: shows 3 base words, 1 permitted pronoun form, 1 course construction, and unlocks the grammar button.
+  - `I say communicate to him.`: reports `communicate` as unsupported and keeps the grammar button locked.
+- The vocabulary classifier does not change the existing validator's acceptance rules. The grammar and meaning check implementations remain unchanged.
+- Updated `BASIC_ENGLISH_EXPRESSION_LESSON_01.md` with the new feedback categories, exact list distinctions, and examples; this is a root-level documentation update and does not trigger Android builds.
+
+### Run 40 — corrected vocabulary classification build result (2026-11-18)
+
+- Run 40 / ID `44170807849`, built code commit `644a49a107468e2fc7280ff73ee29dc938fe2a90`, completed successfully.
+- All 22 job steps completed successfully. Android Gradle reported `BUILD SUCCESSFUL` in 31 seconds.
+- Audio: 850/850 restored from cache, 0 newly downloaded, 0 errors; log reports 9.45 MB packaged.
+- Cache restore succeeded and the run-specific cache-save step completed.
+- APK artifact: `basic-english-human-voice-apk`, ID `14368605592`, 9,231,182 bytes, not expired.
+- Coverage artifact: `basic-english-human-audio-coverage`, ID `14366893608`, 21,467 bytes, not expired.
+- No active or queued Actions run remained after Run 40.
+- The code change updates `docs/js/expression-system.js`, while the current Service Worker still names cache `basic-english-v33`. Before treating the build as final for PWA users, bump the cache name to v34 and let that follow-up build complete. Do not deliver Run 40 as the final APK.
+- Next action: update only `docs/sw.js` to `basic-english-v34`, then inspect and verify the resulting Run 41 build and APK. Device acceptance of the new word-by-word feedback remains pending.
