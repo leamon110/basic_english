@@ -63,6 +63,12 @@ jobs:
           yes | sdkmanager --licenses
           sdkmanager "platforms;android-35" "build-tools;35.0.0"
 
+      - name: Validate JavaScript and Meaning-to-Basic rules
+        run: |
+          find docs/js -type f -name '*.js' -print0 | xargs -0 -n1 node --check
+          node --check scripts/test_meaning_basic.js
+          node scripts/test_meaning_basic.js
+
       - name: Package the learning site as local app assets
         run: |
           mkdir -p android-offline/app/src/main/assets/www

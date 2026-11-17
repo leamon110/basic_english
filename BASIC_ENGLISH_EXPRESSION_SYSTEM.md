@@ -345,3 +345,15 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 - 已明确 250 Fixed Word-Groups 与后续 Some Common Needs 不同；后者已有 `BASIC_ENGLISH_NAMES_OF_ACTS.md` 首轮索引。
 - 新文档保留数量、分组、页码和教学边界，不逐字复制原书250条例句；尚未修改 App 代码或触发 Android 构建。
 - 下一步：建立跨主题 Meaning → Basic 训练题库，支持多种语义正确的 Basic 表达，并将词汇、语法、语义保留和固定词组识别分开评价。
+
+
+## 16. Meaning → Basic 多答案练习第一组接入 App（2026-11-18）
+
+- 新增本地模块：docs/js/meaning-basic.js；新增样式：docs/css/meaning-basic.css。
+- 在表达系统页面追加第一组 Meaning → Basic 练习，包含 MB-01 至 MB-06 六道题。
+- 已登记多答案模式：放入（in / into）、取出（from / out of）、给予（to 结构／双宾语结构）、材料与结果（from / into）；come / go 题额外依据观察视角选择答案。
+- 检查顺序：现有词汇验证器 → 本题有限句型识别 → 语义角色／方向／材料／观察视角检查。编辑答案或切换题目会清除后续结果并锁定后续按钮。
+- 对未登记的句型显示“暂时无法判断”，不把它直接判为语法错误；该功能不是通用英语语法解析器或通用语义理解器。
+- 模块使用本地 JavaScript 和现有词汇验证器，不调用远程 API；Android APK 打包后可离线运行。
+- 本次同时更新 Service Worker 缓存至 v35，并把新 JS/CSS 加入离线资源列表。
+- 当前仅完成代码接入；仍需规则测试、Android 构建、APK 内容检查和手机设备测试。不能提前标记为已验收。

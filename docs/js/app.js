@@ -25,7 +25,10 @@ function renderPage(page) {
   else if (page === 'conversation') window.BE.chat.renderChat(main)
   else if (page === 'teaching') window.BE.teaching.renderTeaching(main)
   else if (page === 'course') window.BE.course.render()
-  else if (page === 'expression') window.BE.expression.render(main)
+  else if (page === 'expression') {
+    window.BE.expression.render(main)
+    if (window.BE.meaningBasic) window.BE.meaningBasic.render(main)
+  }
   else if (page === 'sentences') window.BE.sentences.render(main)
 }
 
@@ -53,7 +56,7 @@ function renderHome(container) {
         <div class="home-card" onclick="navigateTo('expression')">
           <div class="home-card-icon">🧠</div>
           <h2>表达系统 · Expression System</h2>
-          <p>学习如何从真实意思出发，用850个基础词重新组织表达。它是原版45 Steps之外的补充课程，目前第一课 speak 已上线。</p>
+          <p>学习如何从真实意思出发，用850个基础词重新组织表达。包含 speak 课程和第一组支持多种答案的 Meaning → Basic 练习。</p>
           <span class="home-card-link">开始表达训练 →</span>
         </div>
         <div class="home-card" onclick="navigateTo('sentences')">

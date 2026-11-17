@@ -692,3 +692,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Clarified that the 250 Fixed Word-Groups section is distinct from Some Common Needs; the latter is already indexed in `BASIC_ENGLISH_NAMES_OF_ACTS.md`.
 - No App source code or watched workflow paths changed; no Android build was triggered.
 - Next concrete action: create an original Meaning → Basic exercise-bank prototype that accepts multiple semantically correct Basic renderings and evaluates vocabulary, grammar, meaning preservation and fixed-group use as separate dimensions.
+
+
+### Meaning → Basic multi-answer checker — first App implementation (2026-11-18)
+
+- Implemented a local first practice set with six exercises (MB-01 to MB-06) in docs/js/meaning-basic.js, with styles in docs/css/meaning-basic.css.
+- Integrated the section into the existing Expression System route; the home-card description now reflects the first multi-answer practice set.
+- Added multi-answer patterns and conditions for put in/into, take from/out of, give recipient order, make material/result order, come/go viewpoint, and a causative light-result pattern.
+- The checker has three ordered stages: existing vocabulary validation; limited registered sentence-pattern recognition; semantic role/direction/material/viewpoint/result checks. Editing the answer or changing the question resets later stages.
+- Known grammatical-but-meaning-wrong patterns pass the structure stage so the meaning stage can identify the changed role or direction. Unrecognized patterns return “暂时无法判断” rather than a false grammar error.
+- Added the module and stylesheet to the HTML entry point and Service Worker cache; cache name is now basic-english-v35.
+- This implementation is local JavaScript and does not call a remote API. Offline behavior still requires verification in the built APK and on the user's phone.
+- Next: run syntax and rule tests, inspect the triggered Android Actions run and all artifacts/logs, extract and inspect the exact APK, then ask the user to test the six exercises. Device acceptance remains pending.
