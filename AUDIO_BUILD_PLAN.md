@@ -382,3 +382,17 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - [Original 45-step Step 1](https://basicenglish.org/step-1/index.html)
 - [Original 45-step Step 42](https://basicenglish.org/step-42/index.html), especially the five dialogues and exercise 3.
 - Research details and original-source mapping: `BASIC_ENGLISH_EXPRESSION_SYSTEM.md`, `BASIC_ENGLISH_NAMES_OF_ACTS.md`, `BASIC_ENGLISH_OPERATORS.md`, `BASIC_ENGLISH_DIRECTIVES.md`, `BASIC_ENGLISH_OPERATOR_DIRECTION_MAP.md`, `BASIC_ENGLISH_EXPRESSION_LESSON_01.md`.
+
+
+## Run 36 APK direct-delivery preparation (2026-11-17)
+
+- Retrieved the official GitHub Actions artifact `basic-english-human-voice-apk` from Run 36, artifact ID `14326577845`.
+- Verified the downloaded outer artifact ZIP (8.8 MiB) has no ZIP integrity errors and contains exactly `Basic-English-Human-Voice.apk`.
+- Extracted the APK as `Basic-English-Expression-System-Run36.apk` for direct user download.
+- APK size: 9,820,317 bytes.
+- APK SHA-256: `e8a8dfd8f58f3f9f659002822c1a3cc7f92d198a20688c55b5d397426bae30e7`.
+- APK ZIP integrity: passed.
+- Independently counted exactly 850 files under `assets/www/audio/words/`.
+- Confirmed the APK contains `assets/www/js/expression-system.js`, `assets/www/css/expression-system.css`, `assets/www/audio/credits.json`, and `assets/www/audio/THIRD_PARTY_AUDIO_CREDITS.md`.
+- Direct APK file was prepared in the current conversation for download. This is the same official Run 36 artifact, not a rebuild.
+- User-device installation and Lesson 01 acceptance remain pending.
