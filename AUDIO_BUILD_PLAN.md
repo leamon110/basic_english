@@ -263,4 +263,6 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Key correction: do not teach all non-operator verbs as `operator + direction + noun`. Ogden's own examples include Operator + Direction, Operator + Noun, Operator + Quality and context-specific multiword paraphrases.
 - Current App audit: 14/45 steps adapted; Teaching has 8 rule-exercise categories; Sentence Practice has 100 example sentences, 20 word-order exercises and 10 dialogues. These are not yet a complete meaning-to-Basic expression-training system.
 - No App source files were modified and no Android build was triggered by this research/documentation milestone. The workflow watches `docs/**`, `android-offline/**`, `scripts/**` and its workflow file; this update touches root-level Markdown only.
-- Next action: build a verified index of the 16 Operators and the Directives, recording each core sense, original-source examples, semantic extensions and valid combinations before changing the App's teaching UI.
+- Next action: build a verified Directives index, recording spatial root meanings, abstract extensions, valid combinations and context limits before changing the App's teaching UI.
+- First operator-index milestone completed: `BASIC_ENGLISH_OPERATORS.md` records all 16 core Operators, their source-grounded starting senses, representative examples, and a correction map for the current App's mixed Operator + Direction exercise.
+

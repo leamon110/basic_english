@@ -250,7 +250,14 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 
 这正是本项目需要反复训练的核心能力。
 
-## 8. 下一阶段执行顺序
+## 8. Operators 首轮索引已建立
+
+- 详细索引：\`BASIC_ENGLISH_OPERATORS.md\`。
+- 已逐项整理16个核心 Operators 的起始意义图景、Ogden 原书代表例子和教学边界。
+- 已将当前 App 的14个 Operator + Direction 练习映射重新分类，确认其中混有 Operator + Quality、Operator + Noun + Directive、名词性动作表达等不同结构。
+- 本索引是第一轮教学索引，不是完整词典；特殊用法和搭配仍需继续从原书核对。
+
+## 9. 下一阶段执行顺序
 
 1. 建立16个 Operators 的意义和组合模式索引，记录基本物理意义、常见扩展和原文例句。
 2. 建立 Directives 的空间根义及抽象扩展索引。
@@ -262,7 +269,7 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 
 在规则索引和例句核验之前，不先批量补写31课，也不触发 Android 构建。
 
-## 9. 当前状态
+## 10. 当前状态
 
 - 已核对：原版45 Steps目录、Step 1、3、5、7、9，以及《The ABC of Basic English》中 Other Word-Forms、Expansions、Names of Acts、Names of Directions、250 Fixed Word-Groups、Some Common Needs 的相关文本。
 - 当前 App：14/45课已中文适配；Teaching 有8类规则练习；Sentence Practice 有100例句、20排序题和10组对话。
