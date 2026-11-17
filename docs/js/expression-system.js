@@ -184,7 +184,7 @@
         </section>
 
         <section class="expression-next">
-          <span class="expression-step-label">NEXT CONTENT · NOT YET IMPLEMENTED</span>
+          <span class="expression-step-label">NEXT CONTENT · RESEARCHED, NOT YET IN APP</span>
           <h2>接下来要学习的原作者例子</h2>
           <div class="expression-next-list">
             <span>tell a story → give it</span>

@@ -70,6 +70,8 @@ jobs:
           node scripts/test_meaning_basic.js
           node --check scripts/test_teaching.js
           node scripts/test_teaching.js
+          node --check scripts/test_expression_curriculum.js
+          node scripts/test_expression_curriculum.js
 
       - name: Package the learning site as local app assets
         run: |

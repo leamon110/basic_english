@@ -80,6 +80,152 @@
         { text: 'the light goes out', reason: '只说明灯自己熄灭，没有表达是 he 使它熄灭。' },
         { text: 'he makes the light go on', reason: 'go on 表示灯亮起，结果与题目相反。' }
       ]
+    },
+    mb07: {
+      title: 'MB-07 · eat → take / have',
+      prompt: '他们正在进餐。',
+      roles: '行为者 they；动作是摄取食物或进行一顿饭；重点不是准备食物。',
+      hint: '原作者列出 take food 和 have a meal。前者从摄取食物说明，后者把进餐作为一项活动说明。',
+      accepted: [
+        { text: 'they take food', note: 'take food 表达摄取食物。' },
+        { text: 'they have a meal', note: 'have a meal 把进餐作为一项活动表达。' }
+      ],
+      wrong: [
+        { text: 'they make a meal', reason: 'make a meal 表示制作或准备一顿饭，不是正在吃饭。' }
+      ]
+    },
+    mb08: {
+      title: 'MB-08 · listen → give attention',
+      prompt: '他们专心听这段音乐。',
+      roles: '行为者 they；对象 it（指这段音乐）；动作重点是把注意力给予声音。',
+      hint: '原作者给出的表达是 give it their attention。',
+      accepted: [
+        { text: 'they give it their attention', note: '句子保留了听者、声音对象和给予注意力的关系。' }
+      ],
+      wrong: [
+        { text: 'they give it their food', reason: 'food 不是题目中的注意力；对象意义发生变化。' }
+      ]
+    },
+    mb09: {
+      title: 'MB-09 · hear music → come to the ears',
+      prompt: '音乐传入耳中。',
+      roles: '对象 music；接收位置 ears；表达声音到达耳朵的关系。',
+      hint: '原作者用 the music comes to the ears 表达 hear music。',
+      accepted: [
+        { text: 'the music comes to the ears', note: 'come to 表示声音到达耳朵。' }
+      ],
+      wrong: [
+        { text: 'the ears come to the music', reason: '把声音与接收位置的角色颠倒了。' }
+      ]
+    },
+    mb10: {
+      title: 'MB-10 · write → put into writing / put down on paper',
+      prompt: '他把自己的看法写下来。',
+      roles: '行为者 he；内容 his views；结果是把这些看法转为书面表达。',
+      hint: '原作者列出 put his views into writing 和 put them down on paper。',
+      accepted: [
+        { text: 'he puts his views into writing', note: 'into writing 表示把看法转成书面形式。' },
+        { text: 'he puts them down on paper', note: 'down on paper 表示把内容写到纸上。' }
+      ],
+      wrong: []
+    },
+    mb11: {
+      title: 'MB-11 · throw → send across',
+      prompt: '他把球扔过河。',
+      roles: '行为者 he；对象 ball；路径从河的一侧横越到另一侧。',
+      hint: '原作者用 send the ball across the river 表达把球投过河。',
+      accepted: [
+        { text: 'he sends the ball across the river', note: 'across 保留了从一侧横越到另一侧的路径。' }
+      ],
+      wrong: [
+        { text: 'he sends the ball from the river', reason: 'from 表示来源，不能表达球横越河流到另一侧。' }
+      ]
+    },
+    mb12: {
+      title: 'MB-12 · catch → get in the hand',
+      prompt: '他接住了球。',
+      roles: '行为者 he；对象 it（指球）；结果是球进入他的手中。',
+      hint: '原作者用 get it in the hand 表达 catch a ball。',
+      accepted: [
+        { text: 'he gets it in the hand', note: 'in the hand 表示球被接到手中。' }
+      ],
+      wrong: [
+        { text: 'he gets it out of the hand', reason: 'out of 表示从手中离开，方向与接住相反。' }
+      ]
+    },
+    mb13: {
+      title: 'MB-13 · hold → get a grip / keep / have',
+      prompt: '他握住并拿着球。',
+      roles: '行为者 he；对象 it（指球）；表达握持、保持或手中持有的关系。',
+      hint: '原作者列出 get a grip of it、keep it、have it in the hand。三种说法强调的侧面不同。',
+      accepted: [
+        { text: 'he gets a grip of it', note: 'get a grip of it 强调握住、抓牢。' },
+        { text: 'he keeps it', note: 'keep it 强调持续拿着、不放开。' },
+        { text: 'he has it in the hand', note: 'have it in the hand 强调物体在手中。' }
+      ],
+      wrong: [
+        { text: 'he puts it in the hand', reason: 'put it in the hand 表示把它放进手里，重点是放置动作，不是持续握持。' }
+      ]
+    },
+    mb14: {
+      title: 'MB-14 · think → give thought to',
+      prompt: '她认真考虑这个问题。',
+      roles: '行为者 she；对象 the question；动作是把思想用于考虑该问题。',
+      hint: '原作者列出 give thought to 作为 think 的 Basic 表达。',
+      accepted: [
+        { text: 'she gives thought to the question', note: 'give thought to 把思考作为一个动作名称表达。' }
+      ],
+      wrong: []
+    },
+    mb15: {
+      title: 'MB-15 · remember → keep in mind / have a memory',
+      prompt: '他记住了这件事。',
+      roles: '行为者 he；对象 it；信息仍保留在记忆中。',
+      hint: '原作者列出 keep it in mind 和 have a memory of it。',
+      accepted: [
+        { text: 'he keeps it in mind', note: 'keep it in mind 强调把信息保留在心中。' },
+        { text: 'he has a memory of it', note: 'have a memory of it 用 memory 这个名称表达记忆。' }
+      ],
+      wrong: [
+        { text: 'he puts it out of the mind', reason: 'put it out of the mind 表达把它从头脑中排除，对应 forget，而不是 remember。' }
+      ]
+    },
+    mb16: {
+      title: 'MB-16 · forget → put out of mind / have no memory',
+      prompt: '他忘记了这件事。',
+      roles: '行为者 he；对象 it；表达记忆缺失或把内容从头脑中排除。',
+      hint: '原作者列出 put it out of the mind 和 have no memory of it。',
+      accepted: [
+        { text: 'he puts it out of the mind', note: 'put it out of the mind 表达把内容从头脑中排除。' },
+        { text: 'he has no memory of it', note: 'have no memory of it 表达没有关于它的记忆。' }
+      ],
+      wrong: [
+        { text: 'he keeps it in mind', reason: 'keep it in mind 表达记住、保留在心中，与 forget 相反。' }
+      ]
+    },
+    mb17: {
+      title: 'MB-17 · want → have a desire',
+      prompt: '她想要它。',
+      roles: '行为者 she；对象 it；表达对对象有某种愿望。',
+      hint: '原作者列出 have a desire for it。',
+      accepted: [
+        { text: 'she has a desire for it', note: 'have a desire for 把 want 表达为具有某种愿望。' }
+      ],
+      wrong: [
+        { text: 'she has no desire for it', reason: 'no desire 表示没有愿望，意思与题目相反。' }
+      ]
+    },
+    mb18: {
+      title: 'MB-18 · need → be in need of',
+      prompt: '他需要它。',
+      roles: '行为者 he；对象 it；表达处于需要某物的状态。',
+      hint: '原作者列出 be in need of it。',
+      accepted: [
+        { text: 'he is in need of it', note: 'be in need of 表达处于需要某物的状态。' }
+      ],
+      wrong: [
+        { text: 'he has a desire for it', reason: 'have a desire for 表达愿望，不等于题目中的 need。' }
+      ]
     }
   };
 
@@ -146,8 +292,8 @@
     host.className = 'meaning-basic-section';
     host.innerHTML = [
       '<div class="mb-heading">',
-      '<span class="expression-step-label">MEANING → BASIC · FIRST PRACTICE SET</span>',
-      '<h2>练习四：普通英语意思 → Basic 表达</h2>',
+      '<span class="expression-step-label">MEANING → BASIC · PRACTICE BANK · 18 TASKS</span>',
+      '<h2>练习四：普通英语意思 → Basic 表达（18题）</h2>',
       '<p>先理解要表达的意思，再组织 Basic 句子。每道题都可能有多个正确表达；检查器会按本题已经登记的结构和语义角色判断。</p>',
       '</div>',
       '<div class="mb-controls">',
@@ -159,6 +305,19 @@
       '<option value="mb04">MB-04 · construct → make</option>',
       '<option value="mb05">MB-05 · approach → come / go</option>',
       '<option value="mb06">MB-06 · extinguish → make + go</option>',
+      '<option value="mb07">MB07 · eat → take / have</option>',
+      '<option value="mb08">MB08 · listen → give attention</option>',
+      '<option value="mb09">MB09 · hear music → come to the ears</option>',
+      '<option value="mb10">MB10 · write → put into writing</option>',
+      '<option value="mb11">MB11 · throw → send across</option>',
+      '<option value="mb12">MB12 · catch → get in the hand</option>',
+      '<option value="mb13">MB13 · hold → grip / keep / have</option>',
+      '<option value="mb14">MB14 · think → give thought to</option>',
+      '<option value="mb15">MB15 · remember → keep in mind</option>',
+      '<option value="mb16">MB16 · forget → put out of mind</option>',
+      '<option value="mb17">MB17 · want → have a desire</option>',
+      '<option value="mb18">MB18 · need → be in need of</option>',
+
       '</select>',
       '</div>',
       '<div class="mb-prompt-card">',
@@ -184,10 +343,12 @@
       '<div class="mb-feedback" id="mb-vocabulary-feedback" aria-live="polite"></div>',
       '<div class="mb-feedback" id="mb-grammar-feedback" aria-live="polite"></div>',
       '<div class="mb-feedback" id="mb-meaning-feedback" aria-live="polite"></div>',
-      '<p class="mb-limitation">检查范围：目前只识别这六道题列出的有限句型和已知语义反例。其他表达会显示“暂时无法判断”，不会自动判为错误。词汇通过不代表语法或意思通过；本功能不是通用英语语法解析器或通用语义理解器。</p>'
+      '<p class="mb-limitation">检查范围：目前只识别这 18 道题列出的有限句型和已知语义反例。其他表达会显示“暂时无法判断”，不会自动判为错误。词汇通过不代表语法或意思通过；本功能不是通用英语语法解析器或通用语义理解器。</p>'
     ].join('');
 
-    page.appendChild(host);
+    const sourceFooter = page.querySelector('.expression-source');
+    if (sourceFooter) page.insertBefore(host, sourceFooter);
+    else page.appendChild(host);
 
     const questionSelect = host.querySelector('#mb-question');
     const perspectiveSelect = host.querySelector('#mb-perspective');

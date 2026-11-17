@@ -27,6 +27,7 @@ function renderPage(page) {
   else if (page === 'course') window.BE.course.render()
   else if (page === 'expression') {
     window.BE.expression.render(main)
+    if (window.BE.expressionCurriculum) window.BE.expressionCurriculum.render(main)
     if (window.BE.meaningBasic) window.BE.meaningBasic.render(main)
   }
   else if (page === 'sentences') window.BE.sentences.render(main)
