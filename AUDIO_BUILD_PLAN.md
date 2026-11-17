@@ -280,7 +280,7 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Core result: Ogden explicitly teaches testing each Operator against each Directive, accepting combinations that refer to physically possible relations in common experience; object choice, word order, metaphorical extension, and fixed idioms then affect interpretation.
 - Verified demonstration: the 1937 story uses go, get, and come with 19 of the 20 proper Directives appearing in its directional/temporal expressions; after / before are temporal modifiers, not direct Operator + Directive complements. It also uses the compound into. Ogden says 21 ordinary verbs are replaced in the story by the three Operators.
 - Corrected classification: 20 proper Directives; out is included in the direction diagram as a directional adverb boundary item; for / of / till are non-directional prepositions. The 21 Names of Directions chapter headings in the ABC are a different list.
-- Current App audit: the existing 14 “Operator + Direction” questions mix several structures, including Operator + Quality, Operator + Name + of, Name of Act + Directive, and an answer using away which is not in the current 850-word list.
+- Current App audit: the existing 14 “Operator + Direction” questions mix several structures, including Operator + Quality, Operator + Name + of, Name of Act + Directive, and an answer using away, which is not one of the 850 base entries but is explicitly allowed by the current validator as a taught construction.
 - Files added/updated: `BASIC_ENGLISH_OPERATOR_DIRECTION_MAP.md`, `BASIC_ENGLISH_DIRECTIVES.md`, `BASIC_ENGLISH_OPERATORS.md`, `BASIC_ENGLISH_EXPRESSION_SYSTEM.md`.
 - No App source code was changed. No Android build was triggered. The updated files are repository-root Markdown and do not match the workflow's watched paths.
 - Next concrete action: create the first end-to-end Meaning → Basic teaching unit, using the three context-specific Basic renderings of speak; include analysis, reasoning, independent generation and reverse interpretation before changing the App.
@@ -304,4 +304,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - The lesson separates original examples from project-designed explanations and exercises.
 - It teaches context recognition, Operator / Name / Directive decomposition, independent construction and reverse interpretation.
 - No App source code was changed and no Android build was triggered. This is a repository-root Markdown lesson prototype.
-- Next action: inspect the current App navigation and module structure, then add this as a clearly separate Expression System learning track without altering the existing 45 Steps or the accepted audio features.
+- Next action: add the first Expression System lesson as a separate App learning track, preserving the original 45 Steps, existing Teaching tools, and accepted audio features.
+
+
+## Validation-rule clarification — taught constructions (2026-11-17)
+
+- Inspected `docs/js/validator.js` rather than relying only on the base 850 array.
+- Confirmed that the validator explicitly accepts course-taught constructions including `something`, `someone`, `nothing`, `into`, and `away`, even though some are not individual entries in the 850 base-word arrays.
+- Corrected the Operator × Directive map: `go away` is accepted by the current App validator as a taught construction, but `away` is not one of the 20 proper Directives; it must be classified separately from the core Operator × Directive system.
+- Lesson 01 now notes why `say something to him` is accepted without treating `something` as an extra base-list entry.

@@ -209,7 +209,7 @@ Ogden 并没有要求学习者背诵一张“所有 Operator + Directive 固定�
 | descend | go down | Operator + Directive；物理向下。 |
 | continue | go on | Operator + Directive 的特殊扩展；原书有 go on 的例子。 |
 | arrive | come in | 不能作为 arrive 的普遍替换；仅在“进入某个空间”的语境成立。 |
-| depart | go away | away 不是20个 proper Directives 之一，而且不在当前850词表中；严格 Basic 练习不能直接接受它。 |
+| depart | go away | away 不属于20个 proper Directives，也不在850个基础词条中；但当前 validator.js 明确把 away 列为课程允许的特殊构式。因此 go away 可被当前 App 接受，但应标为 Operator + 特殊方向副词构式，而不是核心 Operator + Directive。 |
 | prepare | get ready | Operator + Quality，不是 Operator + Directive。 |
 | discover | get knowledge of | Operator + Name + 非方向性介词 of，不是 Operator + Directive。 |
 | examine | go through | Operator + Directive；可用于检查/逐项查看某物的特定语境，不能无条件替换所有 examine。 |

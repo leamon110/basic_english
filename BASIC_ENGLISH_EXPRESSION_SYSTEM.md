@@ -307,3 +307,8 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 - 原作者例子：say something to him；give a talk / make a statement；have a knowledge of it。
 - 新增教学步骤：语境识别 → 结构拆解 → 组合理由 → 独立生成 → 反向理解。
 - 本文档是内容原型，尚未集成进 App，也没有改变原有45 Steps。
+
+
+### 词表与课程构式的边界
+
+850个基础词条与 App 当前允许的课程构式不是同一张清单。validator.js 明确允许原书课程中教授的若干构式，例如 something、someone、nothing、into、away。教学时应标明它们是课程构式，而不是把它们冒充为850个基础词条之一。

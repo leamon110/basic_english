@@ -235,7 +235,10 @@ Basic 不是只有“从普通英语转成 Basic”这一条路。学习者还�
 - read → see it in the paper / go through it with care
 - write → put views into writing / down on paper
 
+词表说明：something 不属于项目的850个基础词条本身，但当前 validator.js 将它列为原书课程中明确教授的 Basic 构式，故本课的 say something to him 不应被误判为任意增加词汇。
+
 来源：Ogden, *The ABC of Basic English*, “Some Common Needs: A. Simple Acts”, pp.244–245.
+
 
 **本项目新增：**
 - 三种 speak 语境的逐层拆解；

@@ -17,7 +17,7 @@ Ogden 在《The ABC of Basic English》目录中，把 “Names of Acts” 放�
 - 850词表本身不是一张普通英语动词的一对一替换表；
 - 需要学习常见动作的 Basic 表达方式；
 - 普通英语同一个动词，语境不同，Basic 表达可能完全不同；
-- 这些表达会调用 Operators、Directives、Things、Qualities、Names of Acts 和固定词组等不同单位。
+- 这些表达会调用 Operators、Directives、Things、Qualities、Names of Acts 和固定词组等不同单位。原书中的 something 等构式也不一定作为850个基础词条逐项列出；项目 validator.js 对原书明确教授的若干构式作了单独允许。
 
 ## 2. Simple Acts：简单的身体动作和日常行为
 
