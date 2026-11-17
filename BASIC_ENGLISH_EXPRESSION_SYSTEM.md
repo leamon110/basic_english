@@ -366,3 +366,19 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 - 六题的多答案规则通过自动化测试：11种正确模式、10种已知语义错误、2种 come/go 视角不匹配、1种未支持边界和1种大小写／标点情况。
 - APK 已从官方 Artifact ZIP 提取并独立验证：9,833,411 bytes；SHA-256 9ac0df5f57264e34ed14ea3c70bf2c3ce3e4d1051113928245b247a0fb386b96；850个录音与 ALL_850 精确匹配，FFmpeg 全量解码通过。
 - 当前状态：构建与文件检查通过；用户手机安装和六题交互验收尚未完成。不得提前标记为设备验收通过。
+
+
+## 18. Delivery rhythm reset and current implementation audit (2026-11-18)
+
+The user asked to stop the pattern of implementing a small beginning of one feature, switching to another, and repeatedly handing off partial APKs. The agreed delivery approach is now one integrated Teaching + Expression System milestone, with internal testing throughout and one combined Android/device acceptance round at the end.
+
+Live code audit:
+- Teaching Rule Exercises currently has eight fixed exercise types. Several only append one suffix, the plural generator currently produces only simple `+s` items, and the Operator + Direction group mixes different structures such as Operator + Directive, Operator + Quality, Operator + Name + Directive and act-name phrases. Most grading uses exact single-string matching.
+- Spaced Repetition currently reviews words only: localStorage progress, 50-word sessions and 1/2/4/7/15/30-day levels. It does not schedule rule exercises. The UI does not explain the schedule, and mastered level-6 words are no longer selected as due.
+- Quick Reference is a static 11-topic list. Its “all other actions use operator + direction + noun” rule is too broad and conflicts with the source-grounded structural distinctions established in this project.
+- Lesson 01 and the word-by-word vocabulary classification are already device-accepted. Lesson 02 is still a document prototype. Meaning → Basic has six registered exercises built in Run 42, but device acceptance is pending and will be deferred to the integrated release.
+- Existing baseline remains: 14/45 original course steps are locally adapted; the other 31 still link to the original pages. Sentence Practice remains 100 sentences, 20 word-order exercises and 10 dialogues. No claim is made that these are newly completed or that all 45 steps have been adapted.
+
+Run 42 is the latest built APK (run 44188628473, code commit 53be103a9ee39f5f42f1186f50f50d7789e27f37). The live branch head is documentation-only ahead of that build; no app code has changed after Run 42. All 22 workflow steps succeeded, 850/850 audio files were restored from cache, and the APK and coverage artifacts were uploaded. The Run 42 phone test remains pending.
+
+**New handoff rule:** do not ask the user to test each partial Teaching or Expression System increment. Finish the integrated work, run internal rule and regression tests, create one final APK, verify its contents, then request one combined phone test and explain the whole learning workflow together.
