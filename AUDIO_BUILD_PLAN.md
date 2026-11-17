@@ -152,18 +152,16 @@ Implementation:
 - The user-facing sandbox download failure remains unresolved as a delivery/UI issue. Do not claim the user has successfully downloaded the file. A fallback is to open the Run 35 GitHub Actions page and download artifact `basic-english-human-voice-apk` from the Artifacts section.
 - No code changes or new build were made for this re-verification.
 
-### Remaining acceptance — install and retest Run 35
+### Run 35 device acceptance — user confirmed
 
-The Run 34 APK's audio playback and offline behavior were already confirmed by the user. The revised Run 35 UI has not yet been tested on the phone.
+- After downloading and installing the Run 35 APK, the user reported: “测过了，下一步。”
+- Record this as the user's overall confirmation that the Run 35 phone retest was completed and accepted. The user did not provide separate item-by-item observations in that message; do not invent details beyond the overall acceptance.
+- Run 35 remains the latest built APK: run ID `43979897738`, code commit `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
+- Run status: completed / success; all 22 job steps completed; 850 recordings restored from cache, 0 downloaded, 0 errors.
+- APK artifact ID `14282513900` and coverage artifact ID `14281622981` remain available.
+- The user confirmed that the correct GitHub Actions artifact had been downloaded; the earlier file-selection issue was resolved.
+- Audio + Run 35 interaction delivery is accepted based on the user's overall phone-test confirmation. No new audio build is required for this acceptance.
 
-Ask the user to install Run 35 and verify:
-1. Teaching: tapping the word text plays the human recording.
-2. Teaching: tapping the same card outside the word text opens the detail modal.
-3. Detail modal: its content and its own pronunciation button remain unchanged and work.
-4. Course: tapping any area of a vocabulary tile plays the word; no separate "▶ 发音" label is shown.
-5. The above playback still works offline and the rest of the interface remains normal.
-
-Only mark the interaction follow-up accepted after the user reports these Run 35 phone tests.
 
 Latest code commit built by Run 35: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
 Latest plan/documentation commit before this update: `aa9df74c6ee77d74d9634be1125d4dd02d486244`.
@@ -254,3 +252,15 @@ At the end of every meaningful work session, update this file with:
 - remaining blockers and the next concrete action.
 
 A new conversation should read this file and the latest GitHub Actions run before changing code or starting another build.
+
+
+## Separate project track — Basic English expressive-system curriculum
+
+This is a separate learning-product workstream; it does not alter the accepted audio APK or its build pipeline.
+
+- Research and design baseline: `BASIC_ENGLISH_EXPRESSION_SYSTEM.md` at the repository root.
+- Verified sources: Ogden's 45-step course as reproduced by BasicEnglish.org; Ogden's 1932 `The ABC of Basic English`, whose actual structure includes Other Word-Forms, Expansions, Special Uses and Common Needs; project rule notes are secondary and must be checked against original texts.
+- Key correction: do not teach all non-operator verbs as `operator + direction + noun`. Ogden's own examples include Operator + Direction, Operator + Noun, Operator + Quality and context-specific multiword paraphrases.
+- Current App audit: 14/45 steps adapted; Teaching has 8 rule-exercise categories; Sentence Practice has 100 example sentences, 20 word-order exercises and 10 dialogues. These are not yet a complete meaning-to-Basic expression-training system.
+- No App source files were modified and no Android build was triggered by this research/documentation milestone. The workflow watches `docs/**`, `android-offline/**`, `scripts/**` and its workflow file; this update touches root-level Markdown only.
+- Next action: build a verified index of the 16 Operators and the Directives, recording each core sense, original-source examples, semantic extensions and valid combinations before changing the App's teaching UI.
