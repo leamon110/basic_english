@@ -278,9 +278,20 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Rechecked Ogden's 1932 `The ABC of Basic English` Names of Acts and Names of Directions, including the source's cross-reference lines.
 - Read Ogden's 1937 `Basic English and Grammatical Reform`, especially “Directional Thinking” and “An Example of Verb-Elimination”.
 - Core result: Ogden explicitly teaches testing each Operator against each Directive, accepting combinations that refer to physically possible relations in common experience; object choice, word order, metaphorical extension, and fixed idioms then affect interpretation.
-- Verified demonstration: the 1937 story uses go, get, and come with 19 of the 20 proper Directives; it also uses the compound into and temporal modifiers after / before. Ogden says 21 ordinary verbs are replaced in the story by the three Operators.
+- Verified demonstration: the 1937 story uses go, get, and come with 19 of the 20 proper Directives appearing in its directional/temporal expressions; after / before are temporal modifiers, not direct Operator + Directive complements. It also uses the compound into. Ogden says 21 ordinary verbs are replaced in the story by the three Operators.
 - Corrected classification: 20 proper Directives; out is included in the direction diagram as a directional adverb boundary item; for / of / till are non-directional prepositions. The 21 Names of Directions chapter headings in the ABC are a different list.
 - Current App audit: the existing 14 “Operator + Direction” questions mix several structures, including Operator + Quality, Operator + Name + of, Name of Act + Directive, and an answer using away which is not in the current 850-word list.
 - Files added/updated: `BASIC_ENGLISH_OPERATOR_DIRECTION_MAP.md`, `BASIC_ENGLISH_DIRECTIVES.md`, `BASIC_ENGLISH_OPERATORS.md`, `BASIC_ENGLISH_EXPRESSION_SYSTEM.md`.
 - No App source code was changed. No Android build was triggered. The updated files are repository-root Markdown and do not match the workflow's watched paths.
-- Next concrete action: build the source-verified Names of Acts map; only after that decide how to rebuild the expression exercises.
+- Next concrete action: create the first end-to-end Meaning → Basic teaching unit, using the three context-specific Basic renderings of speak; include analysis, reasoning, independent generation and reverse interpretation before changing the App.
+
+
+## Research milestone — Names of Acts / Common Needs first-pass index (2026-11-17)
+
+- Reopened the original `The ABC of Basic English` source at its table of contents and pp.244–262.
+- Verified the original section structure: Some Common Needs → Simple Acts, Complex Acts, Other Suggestions.
+- Extracted and classified the source examples for speaking/telling/singing/hearing/reading/writing, eating/biting/touching/cutting/breaking, movement and body positions, mental processes, feeling/liking/wanting/learning/teaching, buying/selling/finding/losing/destroying, growth/sleep/death, and other common expressions.
+- Added `BASIC_ENGLISH_NAMES_OF_ACTS.md` with source examples and a separate project-level structural classification.
+- Core correction reinforced: the source uses several different structures, not a single Operator + Directive formula. Examples include give a talk, have a knowledge of it, put views into writing, keep it in mind, make an attempt, and get taller.
+- No App source code was changed. No Android build was triggered. This is a repository-root Markdown research milestone and does not match the workflow's watched paths.
+- Next action: create the first end-to-end Meaning → Basic lesson, using the source's three different speak contexts, before changing the App's teaching UI.

@@ -272,10 +272,19 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 - 已将当前 App 的14道练习重新分类，指出其中并非全部属于 Operator + Directive。
 - 该索引是首轮源文核验，不是穷尽16 × 20的所有组合；不把未核验词对自动认定为有效表达。
 
-## 11. 下一阶段执行顺序
+## 11. Names of Acts / Common Needs 首轮索引已建立
 
-1. 已完成16个 Operators 的首轮意义索引、20个 proper Directives 的根义索引，以及 Operator × Directive 的第一轮原文交叉核验。
-2. 下一步整理 Names of Acts：按 make / give / take / have / do / say 等表达模式分类，并把普通英语动词逐个拆成 Basic 的操作、对象和关系。
+- 详细索引：\`BASIC_ENGLISH_NAMES_OF_ACTS.md\`。
+- 已依据《The ABC of Basic English》pp.244–262 整理 Simple Acts、Complex Acts、Other Suggestions。
+- 已覆盖原书的口语/阅读/写作、饮食、触碰与身体动作、移动、心理活动、学习、社会经济行为、成长与生命过程等示例。
+- 已把例句按 Operator + Directive、Operator + Name、Operator + Name + Directive、Operator + Quality、Operator + Clause、Name of Act + Directive 和固定词组等结构归类。
+- 这些结构分类是本项目的教学归纳；原作者原文例句仍是判定依据。
+
+## 12. 下一阶段执行顺序
+
+1. 已完成16个 Operators、20个 proper Directives、Operator × Directive 以及 Names of Acts / Common Needs 的首轮原文索引。
+2. 下一步制作第一套可实际教学的 Meaning → Basic 表达单元，以 speak 的三种语境为例，训练语境判定、结构拆解、组合理由、独立生成和反向理解。
+3. 在教学单元通过内容核验后，再决定如何改造 App 的表达练习；不先批量补写31课。
 4. 整理 Things and Qualities 的意义扩展、特定化和词形扩展。
 5. 整理250个固定词组与 Common Needs。
 6. 建立普通英语 → Basic 的训练题库，并支持多种正确答案。
@@ -283,7 +292,7 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 
 在规则索引和例句核验之前，不先批量补写31课，也不触发 Android 构建。
 
-## 12. 当前状态
+## 13. 当前状态
 
 - 已核对：原版45 Steps目录、Step 1、3、5、7、9，以及《The ABC of Basic English》中 Other Word-Forms、Expansions、Names of Acts、Names of Directions、250 Fixed Word-Groups、Some Common Needs 的相关文本。
 - 当前 App：14/45课已中文适配；Teaching 有8类规则练习；Sentence Practice 有100例句、20排序题和10组对话。
