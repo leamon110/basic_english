@@ -594,3 +594,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No active or queued Actions run remained after Run 40.
 - The code change updates `docs/js/expression-system.js`, while the current Service Worker still names cache `basic-english-v33`. Before treating the build as final for PWA users, bump the cache name to v34 and let that follow-up build complete. Do not deliver Run 40 as the final APK.
 - Next action: update only `docs/sw.js` to `basic-english-v34`, then inspect and verify the resulting Run 41 build and APK. Device acceptance of the new word-by-word feedback remains pending.
+
+
+### Run 41 — Service Worker v34 follow-up started (2026-11-18)
+
+- After Run 40 completed, updated only `docs/sw.js` from cache name `basic-english-v33` to `basic-english-v34` in commit `8a73f00ec3e865a28c514eaf80bbc11fe6364470`.
+- This invalidates the previous PWA cache so clients can receive the updated word-by-word vocabulary feedback code.
+- Run 41 / ID `44171284617` was automatically triggered for that commit and is currently in progress. At the latest inspection, the job had completed setup through FFmpeg and was provisioning Gradle; no artifacts had been uploaded yet.
+- The workflow still uses `cancel-in-progress: true`; do not modify `docs/**` until Run 41 finishes.
+- After completion, inspect every job step and log, verify audio/cache results and artifacts, then extract and inspect the exact APK before providing a direct download.
