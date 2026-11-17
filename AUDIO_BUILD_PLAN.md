@@ -468,3 +468,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Review found `docs/sw.js` still uses cache name `basic-english-v32`. The expression JS/CSS changed in the current code commit, so bump the service-worker cache name to v33 after Run 37 completes. Do not modify `docs/**` while Run 37 is active because the workflow uses `cancel-in-progress: true`.
 - Run 37 (ID `44129407922`) is currently in progress; the job is still on “Fetch and package all 850 human word recordings”. Its log endpoint returned 404 while the job was running, and no artifact has been uploaded yet. This is not evidence of build failure.
 - After Run 37 finishes, update `docs/sw.js` to v33, allow the resulting follow-up Android build to complete, and deliver only the APK from the final cache-versioned successful run.
+
+
+### Run 37 build result and Service Worker cache update (2026-11-18)
+
+- Run 37 / ID `44129407922`, built code commit `26527a38ff154590617b6ea7d61f7bf4b974dd2d`, completed successfully.
+- All 22 job steps completed successfully. Android Gradle reported `BUILD SUCCESSFUL` in 44 seconds.
+- Audio: exactly 850/850 restored from cache, 0 newly downloaded, 0 errors; package log reports 9.45 MB.
+- Cache-save step completed; the action reported the cache as read-only because the matching cache key already exists. No audio files needed to be downloaded again.
+- APK artifact: `basic-english-human-voice-apk`, ID `14349132511`, 9,226,694 bytes, not expired.
+- Coverage artifact: `basic-english-human-audio-coverage`, ID `14347754685`, 21,467 bytes, not expired.
+- Non-fatal warnings: Node.js 20 deprecation notices and dependency notices for `punycode` / `url.parse()`. No step failed.
+- Before delivering this build, the service-worker cache review found the app still used `basic-english-v32`. Updated `docs/sw.js` to `basic-english-v33` in commit `cbb42aa85ea00942a7166260315977863856f8a3`, so existing PWA clients will not keep the old expression JS/CSS under the previous cache key.
+- The v33 change touches `docs/**` and triggers a follow-up build. Run 37 is not the final APK for user testing; use the successful artifact from the v33 build.
