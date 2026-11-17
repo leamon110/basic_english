@@ -458,3 +458,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
   - `I give a talk.` and `I am saying something to him.` → outside this checker's scope, reported as unsupported rather than grammatical errors.
 - This code push changes `docs/**`, so it triggers the Android workflow. The build result and artifact status must be recorded after the new run completes. Do not treat local syntax/rule tests as a substitute for the APK build or Android device retest.
 - Next action: inspect the new Actions run, verify all build steps and the APK artifact, then provide the new APK for the user's phone test. Device acceptance of these new writing checks remains pending.
+
+
+### Additional verification and cache follow-up (2026-11-18)
+
+- Executed the actual committed `docs/js/expression-system.js` in a V8 mock-DOM harness, clicked the real registered UI handlers, and verified all three stages and feedback states.
+- Ten integration cases matched expectations: canonical sentence passes both checks; changed speaker/content/recipient pass the sentence-pattern check but fail meaning; subject–verb agreement, missing `to`, object-pronoun case and word-order errors fail the grammar stage; unsupported alternative structures are reported as temporarily uncheckable rather than grammar errors.
+- Verified that the meaning button stays locked until grammar passes, and the source code resets later-stage results when the learner edits the input.
+- Review found `docs/sw.js` still uses cache name `basic-english-v32`. The expression JS/CSS changed in the current code commit, so bump the service-worker cache name to v33 after Run 37 completes. Do not modify `docs/**` while Run 37 is active because the workflow uses `cancel-in-progress: true`.
+- Run 37 (ID `44129407922`) is currently in progress; the job is still on “Fetch and package all 850 human word recordings”. Its log endpoint returned 404 while the job was running, and no artifact has been uploaded yet. This is not evidence of build failure.
+- After Run 37 finishes, update `docs/sw.js` to v33, allow the resulting follow-up Android build to complete, and deliver only the APK from the final cache-versioned successful run.
