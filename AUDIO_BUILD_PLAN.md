@@ -854,3 +854,26 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Run 48 APK/archive verification remains recorded in the preceding section. The combined Run 48 APK has been extracted and independently verified, but user download, installation, and device acceptance remain unconfirmed.
 - Next action: use the 23-lesson catalog as the fixed scope; begin source verification and detailed lesson design for OWF-01–04, then proceed through the remaining modules. Do not add ad hoc lessons outside this catalog without documenting a genuine source/content gap and revising the roadmap first.
 
+
+
+### Curriculum structure correction — previous 23-lesson plan withdrawn (2026-11-18)
+
+- The user correctly identified that the first five numbered App lessons and the later five-module / 23-lesson proposal had incompatible granularity. The earlier five App lessons were accumulated in research/development order, not designed from a pre-existing syllabus.
+- Re-inspected the live source indexes and App lesson content. Confirmed the source hierarchy in The ABC of Basic English:
+  - Part I: Other Word-Forms — Operator-forms; Comparison; Endings in -er, -ing, -ed.
+  - Part II: Expansions — Names of Things and Qualities; Names of Acts; Names of Directions.
+  - Part III: Special Uses — The 250 Fixed Word-Groups; A Basic Selection; Some Common Needs (Simple Acts, Complex Acts, Other Suggestions).
+- Confirmed the five App prototypes have different coverage scales:
+  - Lesson 01: one speak example-set from Some Common Needs: Simple Acts, p.244, with a project-added context → Basic construction → reverse-understanding teaching loop.
+  - Lesson 02: a narrow body-part extension topic from Names of Things and Qualities, pp.146–148; 11 terms / 10 questions / one unscored free response.
+  - Lesson 03: Names of Acts overview; current 10 questions mix simple and complex acts.
+  - Lesson 04: Fixed Word-Groups overview; 5 example rows / 5 questions, not all 250 items.
+  - Lesson 05: Common Needs overview; 8 selected examples / 8 questions, not complete coverage of all three subsections.
+- The 23-lesson proposal mixed original source chapters, source subtopics, numerical groupings, and a project-added cross-cutting training method at the same hierarchy level. It also retrospectively forced existing prototypes into the new catalog. This is not a valid finalized syllabus.
+- The previous 5-module / 23-lesson count, OWF / EXP / SU / CN / MTB IDs, and mappings from current App lessons to those IDs are withdrawn. Do not use them for implementation planning.
+- Updated BASIC_ENGLISH_EXPRESSION_SYSTEM.md Section 5 and Section 12 to record the confirmed source hierarchy, actual App prototype boundaries, why the previous proposal failed, and a consistent method for rebuilding the syllabus.
+- No App code or Android workflow inputs were changed. Only root-level Markdown documents were updated; the workflow push filter watches docs/**, android-offline/**, scripts/** and the workflow file, so this correction does not trigger an Android build.
+- Startup verification: AGENTS.md and the complete 857-line AUDIO_BUILD_PLAN.md were read; current branch head before this correction was 842e7e5f63dcb954f85e0769df00b776c796ba16. Latest Actions run was Run 48 / ID 44197915524, completed / success, built commit 9a1793905b4abc7d24bd1c598a5a3004450f6748. All 23 job steps completed; all 850 recordings were restored from cache with zero errors; APK artifact ID 14379604453 and audio-coverage artifact ID 14380462964 were present and not expired. No active or queued run existed. Workflow concurrency is cancel-in-progress: true.
+- Current APK status is unchanged: Run 48 APK/archive verification is complete, but the user's combined device acceptance remains unconfirmed.
+- Next action: rebuild the curriculum from the source hierarchy and learning objectives. Do not assign new lesson counts or IDs until the unit boundaries, prerequisites, scope and assessment criteria are justified.
+
