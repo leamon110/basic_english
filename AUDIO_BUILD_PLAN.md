@@ -163,10 +163,11 @@ Implementation:
 - Audio + Run 35 interaction delivery is accepted based on the user's overall phone-test confirmation. No new audio build is required for this acceptance.
 
 
-Latest code commit built by Run 35: `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
-Latest plan/documentation commit before this update: `aa9df74c6ee77d74d9634be1125d4dd02d486244`.
+Previous accepted device-tested build: Run 35, code commit `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
 
-Refresh GitHub before making any later current-state claim.
+Latest built code commit: Run 36, code commit `86e81894a544ad6ec7e6a768d4f0d1f791e08619` (build succeeded; user-device acceptance is pending).
+
+The branch may contain newer root-level research/documentation commits that do not trigger Android builds. Always refresh GitHub for the live branch head and latest Actions run before making a current-state claim.
 
 
 ## Mandatory startup check for every new conversation
