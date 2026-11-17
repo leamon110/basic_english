@@ -26,6 +26,23 @@ Do not skip this procedure even if the user says only "continue", "继续", or a
 - After each verified milestone, update `AUDIO_BUILD_PLAN.md` with exact counts, run ID, commit SHA, cache outcome, artifact status, blockers, and next action.
 - Before ending a work session, update the handoff section in `AUDIO_BUILD_PLAN.md`. Never write an unverified status as fact.
 
+
+## Mandatory APK download-link delivery protocol
+
+When the user asks for an APK download, deliver the actual APK as a direct ChatGPT file attachment. A GitHub Actions run page is not a direct APK link.
+
+1. Use the latest verified successful Actions run and its exact APK artifact ID. Select `basic-english-human-voice-apk`, never the similarly named audio-coverage report.
+2. Download the artifact and inspect the returned file type and contents. GitHub Actions artifacts are ZIP archives; the APK inside is not automatically the same file as the wrapper ZIP.
+3. Verify the wrapper ZIP integrity and confirm it contains the expected APK. Extract the APK to a real file.
+4. Verify the APK itself: ZIP integrity, expected app assets, exactly 850 files under `assets/www/audio/words/`, and the new/changed feature assets relevant to this build. Record file size and SHA-256.
+5. Copy the verified APK to a clear, unique path under `/mnt/data` using the user-visible file-generation tool (`python_user_visible`). In that same tool call, confirm the source exists, the copied file exists, its size and SHA-256 match, and its APK ZIP integrity passes.
+6. Wait for the file-generation tool to return successfully. Only then write the user-facing Markdown link using the exact returned path, e.g. `[下载 APK](sandbox:/mnt/data/Exact-Verified-Name.apk)`. Never send a planned or guessed sandbox path before the file exists.
+7. Do not use a temporary connector `download_url`, a connector file ID, or a GitHub Actions page as the primary direct-download link. Use the GitHub page only as a fallback or when the user explicitly requests it.
+8. If the user reports failure, inspect the exact path and file in the current runtime; do not blindly repeat the same link. If needed, create a new uniquely named user-visible copy, verify it, wait for success, and then send that new exact link.
+9. A successful build, artifact upload, or file copy does not prove the user successfully downloaded or installed it. Record these as separate states and wait for the user's confirmation before marking device acceptance.
+
+Never claim that a download succeeded merely because a file exists on the assistant's side.
+
 ## Source of truth
 
 - Delivery plan and current handoff: `AUDIO_BUILD_PLAN.md`.

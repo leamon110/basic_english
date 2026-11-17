@@ -396,3 +396,32 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Confirmed the APK contains `assets/www/js/expression-system.js`, `assets/www/css/expression-system.css`, `assets/www/audio/credits.json`, and `assets/www/audio/THIRD_PARTY_AUDIO_CREDITS.md`.
 - Direct APK file was prepared in the current conversation for download. This is the same official Run 36 artifact, not a rebuild.
 - User-device installation and Lesson 01 acceptance remain pending.
+
+
+## Run 36 download-link failure investigation and corrected delivery (2026-11-17)
+
+### Verified build and artifact
+- Latest branch at investigation: `18b706476a201e6ca4465eb2c75980afe6c08b74`; no active Actions run.
+- Latest run: Run 36 / ID `44080767833`, completed successfully for code commit `86e81894a544ad6ec7e6a768d4f0d1f791e08619`.
+- All 22 job steps succeeded. Official APK artifact: `basic-english-human-voice-apk`, ID `14326577845`, 9,223,913 bytes, not expired. The coverage artifact is a separate 21,467-byte report and is not the APK.
+- The official artifact ZIP contains exactly one member: `Basic-English-Human-Voice.apk`, 9,820,317 bytes.
+- The extracted APK SHA-256 is `e8a8dfd8f58f3f9f659002822c1a3cc7f92d198a20688c55b5d397426bae30e7`; the same hash was obtained by streaming the APK directly from the official artifact ZIP.
+- APK ZIP integrity passed. It contains exactly 850 `assets/www/audio/words/*.mp3` files, `assets/www/js/expression-system.js`, `assets/www/css/expression-system.css`, and both audio attribution files.
+
+### Root cause of the failed Run 36 link
+- The assistant sent `sandbox:/mnt/data/Basic-English-Expression-System-Run36.apk` before the artifact extraction / file-upload tool had returned a successful result for that APK path. At the time the link was emitted, the verified item available from the GitHub download step was the outer artifact ZIP; the extracted APK file had not yet been confirmed as materialized.
+- The user then reported “无法完成操作”. The APK path was populated by a later tool upload. This is a file-creation/link-order error, not a failed GitHub build, a wrong Run 36 APK, or a corrupt APK.
+- Do not repeat this sequence: create/extract/copy first, wait for success, verify the exact path, then send the link.
+
+### Corrected direct-delivery copy
+- Created a fresh user-visible copy: `/mnt/data/Basic-English-Expression-System-Run36-verified.apk`.
+- Size: 9,820,317 bytes.
+- SHA-256: `e8a8dfd8f58f3f9f659002822c1a3cc7f92d198a20688c55b5d397426bae30e7`.
+- APK ZIP integrity passed.
+- This is the same official Run 36 APK, not a rebuild. User download success and device acceptance are still pending.
+
+### Delivery-method distinction
+- GitHub Actions run URL opens a workflow page; the user must locate and download the correct ZIP artifact. It is slower and easier to select the wrong artifact.
+- `sandbox:/mnt/data/...` is the direct ChatGPT file link. It works only when that exact file has already been created in the active runtime and surfaced through the user-visible file-generation flow. A path string, connector file reference, or pending tool operation is not proof that a direct attachment exists.
+- Historical direct sandbox deliveries recorded as successful include Run 34, Run 35 after the user selected the correct file, and `Basic-English-Voice-Fix-v2-direct.apk`. This supports the direct-file method when the file is actually prepared before the link is sent.
+- Next action: send the verified Run 36 direct attachment link, then wait for the user to confirm download and Android installation. Do not trigger a new build for this delivery-only issue.
