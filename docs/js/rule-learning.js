@@ -69,9 +69,9 @@
       [['完整清单',OPERATORS.join('、')+'。may、will 是辅助词，不计入这 16 个核心 Operators。'],
        ['make / take','make 常用于造成或形成某种新事物或结果，如 make an attempt；take 常用于取得、接受或参与某种活动，如 take a look、take care。'],
        ['come / go / get / keep','come 朝向说话者或参照点；go 从参照点向外或朝另一个目的地；get 涉及取得、到达或进入状态；keep 表示持续保持。']],
-      ['make an attempt','take a look','come into the mind','go through the account','get the food ready','keep the food ready'],
+      ['make an attempt','take a look','come into the mind','go through it','get the food ready','keep the food ready'],
       '16 个词不是可互换的万能动词。','BASIC_ENGLISH_OPERATORS.md；Ogden, The ABC of Basic English, Names of Acts。',
-      ['make an attempt','take a look','come into the mind','go through the account','get the food ready','keep the food ready'],[
+      ['make an attempt','take a look','come into the mind','go through it','get the food ready','keep the food ready'],[
         Q('op1','下面哪一组是辅助词，而不是 16 个核心 Operators？',[['may / will','may / will'],['make / take','make / take'],['come / go','come / go']],['may / will'],'16 个核心 Operators 不包含 may、will。'),
         Q('op2','按项目索引，哪一组搭配正确？（选两项）',[['make an attempt','make an attempt'],['take a look','take a look'],['take an attempt','take an attempt'],['make a look','make a look']],['make an attempt','take a look'],'Ogden 用 make an attempt 与 take a look 展示 make / take 的差别。',true),
         Q('op3','come 与 go 的关键区别是什么？',[['只看动词时态','只看动词时态'],['移动方向相对于说话者或参照点','移动方向相对于说话者或参照点'],['二者完全可以互换','二者完全可以互换']],['移动方向相对于说话者或参照点'],'come 朝向当前参照点；go 从参照点向外或朝另一个目的地。'),
@@ -82,9 +82,9 @@
        ['边界项目','out 有方向意义，但语法上属于副词，不是 20 个 proper Directives 之一。for、of、till 是非方向性介词；《The ABC》的章节标题列表与 20 个 proper Directives 名单并不相同。'],
        ['容易混淆的关系','between 用于两个对象之间；among 用于群体之中。to 指目标或接受者；for 指目的或用途；from 表示来源；by 可表示方式、工具、施事者或原因。'],
        ['空间对比','in 表示内部；out 表示从内部向外；on 表示接触或依托；off 表示分离。up / down 表示高度方向；over 表示上方或越过；through 表示穿过。']],
-      ['between two objects','among friends','give it to him','goods from a store','out of danger','take the skin off an apple'],
+      ['between them','among us','give it to him','goods from a store','out of the room','take the skin off an apple'],
       '不能把所有方向词都翻译成笼统的“方向”。','BASIC_ENGLISH_DIRECTIVES.md；Ogden, The ABC of Basic English, Names of Directions。',
-      ['between two objects','among friends','give it to him','goods from a store','out of danger','take the skin off an apple'],[
+      ['between them','among us','give it to him','goods from a store','out of the room','take the skin off an apple'],[
         Q('dir1','只涉及两个对象之间的关系，应选哪个词？',[['between','between'],['among','among'],['through','through']],['between'],'between 对应两个对象之间；among 强调群体之中。'),
         Q('dir2','把“来源”与“方式／工具”分别对应到哪个词？',[['from / by','from / by'],['to / for','to / for'],['in / on','in / on']],['from / by'],'from 表示来源或起点；by 可表示方式、工具、施事者或原因。'),
         Q('dir3','out 在 20 个 proper Directives 中吗？',[['yes','是'],['no','不是；它是有方向意义的副词边界项']],['no'],'out 在方向图中出现，但语法上属于副词。'),
