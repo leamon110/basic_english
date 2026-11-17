@@ -603,3 +603,58 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Run 41 / ID `44171284617` was automatically triggered for that commit and is currently in progress. At the latest inspection, the job had completed setup through FFmpeg and was provisioning Gradle; no artifacts had been uploaded yet.
 - The workflow still uses `cancel-in-progress: true`; do not modify `docs/**` until Run 41 finishes.
 - After completion, inspect every job step and log, verify audio/cache results and artifacts, then extract and inspect the exact APK before providing a direct download.
+
+
+### Run 41 completion and APK verification — Basic vocabulary feedback (2026-11-18)
+
+- Run 41 / ID `44171284617`, built code commit `8a73f00ec3e865a28c514eaf80bbc11fe6364470`, completed successfully. All 22 workflow steps succeeded; no step failed.
+- The live branch head before this documentation update was `030386486dc58be42a04d356365b517e8c3b709a`. That commit changes only this plan file; the Android build used the preceding code commit `8a73f00...`.
+- Audio/cache log verification:
+  - Cache restore succeeded.
+  - Final human audio coverage: 850 / 850.
+  - Downloaded: 0; restored from cache: 850; errors: 0.
+  - Packaged MP3 total: 9,446,648 bytes (9.45 MB).
+  - Cache-save step succeeded and saved the run-specific cache key.
+- Android Gradle: `BUILD SUCCESSFUL` in 30 seconds.
+- APK artifact: `basic-english-human-voice-apk`, ID `14368266540`, artifact ZIP size 9,231,198 bytes, not expired.
+- Coverage artifact: `basic-english-human-audio-coverage`, ID `14367173320`, artifact ZIP size 21,467 bytes, not expired.
+- Workflow warnings were non-fatal dependency/runtime deprecations (`setup-java@v4`, Node.js 20, `punycode`, and `url.parse()`); no build step failed.
+
+#### Run 41 coverage report
+
+- Downloaded the exact coverage artifact and verified its ZIP integrity. It contains `audio-coverage-report.json` (413,180 bytes).
+- Report values: target 850; primary coverage 845; matched 850; missing 0; downloaded 0; cached 850; completed 850; attempted 850; pending 0; failed 0; download errors 0.
+- Encoded MP3 total: 9,446,648 bytes; average: 11,114 bytes.
+- All 850 selected source records have non-empty title, speaker, uploader, accent, licence, and source URL fields.
+
+#### Run 41 APK archive verification
+
+- Downloaded artifact ZIP size: 9,231,198 bytes; ZIP integrity passed; it contains exactly one member, `Basic-English-Human-Voice.apk` (9,827,195 bytes).
+- Extracted APK: `Basic-English-Expression-System-Run41.apk`, 9,827,195 bytes.
+- APK SHA-256: `2ce451a18b2504a608719af67f3b25135004d38b4c8ad470728727b79c4e04e9`.
+- APK ZIP integrity passed.
+- Exactly 850 MP3 files exist under `assets/www/audio/words/`; their basenames exactly match the 850 unique entries in the APK's `ALL_850` list. Missing: 0; extra: 0.
+- No zero-byte MP3s; file sizes range from 6,380 to 21,068 bytes; total MP3 bytes: 9,446,648.
+- All 850 MP3 payload SHA-256 hashes are distinct. A single FFmpeg concat-demuxer decode pass over all 850 recordings completed with exit code 0.
+- APK includes `assets/www/audio/credits.json`, `assets/www/audio/THIRD_PARTY_AUDIO_CREDITS.md`, `assets/www/js/expression-system.js`, and `assets/www/css/expression-system.css`.
+- Packaged Service Worker cache name is `basic-english-v34`.
+
+#### Vocabulary-feedback code verification inside the Run 41 APK
+
+- Executed the packaged `data.js`, `validator.js`, and `expression-system.js` with Node.js against the actual APK-extracted files.
+- `ALL_850`: exactly 850 unique base words. `ALLOWED_WORDS`: 1,909 direct entries.
+- All 1,909 direct entries pass the existing validator and receive explicit categories: 850 base words, 985 permitted forms, 74 extra international words. Generic fallback classifications: 0; invalid direct entries: 0.
+- Representative classifications:
+  - Base: `apple`.
+  - Permitted forms: `says`, `said`, `books`, `him`, `we`, `she`, `it`, `they`, `these`, `those`.
+  - Course forms: `something`, `into`, `away`.
+  - Extra international word: `telephone`.
+  - Rejected by current rules: `communicate`, `speak`, `computer`, `hello`.
+- This classifier explains why a word passes the existing vocabulary validator; it does not change the validator's acceptance rules or the already-tested grammar/meaning stages.
+
+#### Device acceptance and next action
+
+- Run 41 is the first build containing the corrected full word-by-word category feedback and Service Worker v34.
+- APK archive, 850 audio files, attribution files, and packaged classification logic are verified. The APK has not yet been confirmed installed or tested on the user's phone.
+- Next: provide the extracted Run 41 APK as a direct attachment. Ask the user to check the vocabulary feedback categories and individual explanations, especially the six pronoun entries `we`, `she`, `it`, `they`, `these`, and `those`; also confirm that the existing grammar/meaning checks and original app functions remain intact.
+- No further `docs/**` changes or new Android build are needed before this device retest. Do not mark the new vocabulary-feedback UI accepted until the user confirms the phone test.
