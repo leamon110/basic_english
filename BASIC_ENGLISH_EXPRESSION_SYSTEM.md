@@ -357,3 +357,12 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 - 模块使用本地 JavaScript 和现有词汇验证器，不调用远程 API；Android APK 打包后可离线运行。
 - 本次同时更新 Service Worker 缓存至 v35，并把新 JS/CSS 加入离线资源列表。
 - 当前仅完成代码接入；仍需规则测试、Android 构建、APK 内容检查和手机设备测试。不能提前标记为已验收。
+
+
+## 17. Meaning → Basic 多答案练习第一组构建完成（2026-11-18）
+
+- Run 42 / ID 44188628473，代码提交 53be103a9ee39f5f42f1186f50f50d7789e27f37，全部22个步骤成功。
+- 新增模块 meaning-basic.js 与样式 meaning-basic.css 已打包进 APK；Service Worker 为 v35。
+- 六题的多答案规则通过自动化测试：11种正确模式、10种已知语义错误、2种 come/go 视角不匹配、1种未支持边界和1种大小写／标点情况。
+- APK 已从官方 Artifact ZIP 提取并独立验证：9,833,411 bytes；SHA-256 9ac0df5f57264e34ed14ea3c70bf2c3ce3e4d1051113928245b247a0fb386b96；850个录音与 ALL_850 精确匹配，FFmpeg 全量解码通过。
+- 当前状态：构建与文件检查通过；用户手机安装和六题交互验收尚未完成。不得提前标记为设备验收通过。
