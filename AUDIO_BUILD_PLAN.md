@@ -438,3 +438,23 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Run 36 device status: vocabulary validation is user-tested and passed; the other requested checks are user-reported as meeting expectations. The writing task's grammar/meaning stage is not implemented, so the Expression System lesson is only partially accepted pending a clear UI and a real next-stage design.
 - No source code was changed and no new Android build was triggered in this retest.
 - Next action: design and implement a distinct second-stage grammar-and-meaning review for Lesson 01. Define exactly what can be checked locally against the taught sentence patterns and the intended Chinese meaning; do not imply unrestricted natural-language understanding. Until that exists, the vocabulary-check success message must clearly state that only vocabulary was checked and that grammar/meaning review is not available in this version.
+
+
+## Expression Lesson 01 — staged writing checks implemented (2026-11-18)
+
+- User-device feedback on Run 36 exposed a real UX gap: after vocabulary validation, the UI asked the learner to check grammar and meaning but provided no corresponding controls or automated checks.
+- Implemented in code commit `26527a38ff154590617b6ea7d61f7bf4b974dd2d`.
+- Changed:
+  - `docs/js/expression-system.js`: replaced the misleading single-stage writing feedback with three ordered stages: (1) vocabulary, (2) grammar-structure check, (3) meaning check. The grammar and meaning buttons unlock only after the preceding stage passes. Editing the sentence resets downstream results and disables the later stages.
+  - `docs/css/expression-system.css`: added stage guidance, disabled-button styling, and responsive button layout.
+  - `BASIC_ENGLISH_EXPRESSION_LESSON_01.md`: documented the exact checker scope and examples.
+- Grammar checker is deliberately a constrained local rule checker for this lesson's taught pattern: subject pronoun + say/says + something/nothing + to + object pronoun. It checks subject–verb agreement, the content/to/recipient order, and object-pronoun form.
+- Meaning checker compares the parsed roles against the exercise prompt “我向他表达一些内容”: speaker I, content something, recipient him. It reports which semantic role differs.
+- Important limitation: this is not a general English grammar parser or naturalness evaluator. Sentence forms outside the supported pattern are reported as “暂时无法判断”, not incorrectly labelled ungrammatical.
+- Local V8 syntax compilation passed. Rule tests passed for:
+  - `I say something to him.` → grammar pass, meaning pass.
+  - `He says something to him.`, `I say nothing to him.`, `I say something to her.` → grammar pass, meaning mismatch correctly identified.
+  - `I says something to him.`, `He say something to him.`, missing `to`, wrong word order, and subject pronoun after `to` → grammar errors correctly identified.
+  - `I give a talk.` and `I am saying something to him.` → outside this checker's scope, reported as unsupported rather than grammatical errors.
+- This code push changes `docs/**`, so it triggers the Android workflow. The build result and artifact status must be recorded after the new run completes. Do not treat local syntax/rule tests as a substitute for the APK build or Android device retest.
+- Next action: inspect the new Actions run, verify all build steps and the APK artifact, then provide the new APK for the user's phone test. Device acceptance of these new writing checks remains pending.
