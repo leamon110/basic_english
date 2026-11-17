@@ -7,7 +7,7 @@ require('../docs/js/meaning-basic.js');
 
 const checker = window.BE.meaningBasic;
 assert.ok(checker, 'Meaning-to-Basic module should register');
-assert.equal(Object.keys(checker.questions).length, 18, 'eighteen exercises should be registered');
+assert.equal(Object.keys(checker.questions).length, 27, 'twenty-seven exercises should be registered');
 
 const accepted = [
   ['mb01','He puts the paper into the box.','at_house'],['mb01','He puts the paper in the box.','at_house'],
@@ -24,7 +24,18 @@ const accepted = [
   ['mb14','She gives thought to the question.','at_house'],
   ['mb15','He keeps it in mind.','at_house'],['mb15','He has a memory of it.','at_house'],
   ['mb16','He puts it out of the mind.','at_house'],['mb16','He has no memory of it.','at_house'],
-  ['mb17','She has a desire for it.','at_house'],['mb18','He is in need of it.','at_house']
+  ['mb17','She has a desire for it.','at_house'],['mb18','He is in need of it.','at_house'],
+
+  ['mb19','She gives a song.','at_house'],
+  ['mb20','He puts a hand on the box.','at_house'],['mb20','He gives it a touch.','at_house'],
+  ['mb21','He gives it a blow.','at_house'],
+  ['mb22','He goes quickly.','at_house'],
+  ['mb23','He takes a run.','at_house'],
+  ['mb24','They make a start.','at_house'],
+  ['mb25','He sees the point of the argument.','at_house'],
+  ['mb26','He has knowledge of it.','at_house'],['mb26','He is certain of it.','at_house'],
+  ['mb27','He gets knowledge of it.','at_house']
+
 ];
 
 for (const [id, sentence, perspective] of accepted) {
@@ -43,7 +54,17 @@ const knownMeaningErrors = [
   ['mb07','They make a meal.'],['mb08','They give it their food.'],['mb09','The ears come to the music.'],
   ['mb11','He sends the ball from the river.'],['mb12','He gets it out of the hand.'],['mb13','He puts it in the hand.'],
   ['mb15','He puts it out of the mind.'],['mb16','He keeps it in mind.'],
-  ['mb17','She has no desire for it.'],['mb18','He has a desire for it.']
+  ['mb17','She has no desire for it.'],['mb18','He has a desire for it.'],
+
+  ['mb19','She makes a song.'],
+  ['mb20','He gives it a blow.'],
+  ['mb21','He gives it a touch.'],
+  ['mb22','He takes a run.'],
+  ['mb23','He goes quickly.'],
+  ['mb25','He gives thought to the argument.'],
+  ['mb26','He gives thought to it.'],
+  ['mb27','He gives knowledge of it.']
+
 ];
 
 for (const [id, sentence] of knownMeaningErrors) {

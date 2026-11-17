@@ -226,7 +226,16 @@
       wrong: [
         { text: 'he has a desire for it', reason: 'have a desire for 表达愿望，不等于题目中的 need。' }
       ]
-    }
+    },
+    mb19: { title:'MB-19 · sing → give a song', prompt:'她唱了一首歌。', roles:'行为者 she；对象 a song；表达给出一首歌这一动作。', hint:'原作者列出 sing → give a song。', accepted:[{text:'she gives a song',note:'give a song 是原作者列出的 sing 表达。'}], wrong:[{text:'she makes a song',reason:'make a song 更接近创作一首歌，不是题目中的唱歌行为。'}] },
+    mb20: { title:'MB-20 · touch → put a hand / give a touch', prompt:'他用手触碰这个盒子。', roles:'行为者 he；对象 the box；动作是手与盒子发生接触。', hint:'原作者列出 put a hand / finger on it 和 give it a touch。', accepted:[{text:'he puts a hand on the box',note:'put a hand on the box 直接说明手与盒子接触。'},{text:'he gives it a touch',note:'give it a touch 把接触作为一次动作表达。'}], wrong:[{text:'he gives it a blow',reason:'a blow 表示击打，不是轻触。'}] },
+    mb21: { title:'MB-21 · hit hard → give a blow', prompt:'他用力打了一下盒子。', roles:'行为者 he；对象 it；动作是一次有力的击打。', hint:'原作者列出 give it a blow。', accepted:[{text:'he gives it a blow',note:'give it a blow 用 blow 这个动作名称表达击打。'}], wrong:[{text:'he gives it a touch',reason:'a touch 表示轻触，不能表达题目中的用力击打。'}] },
+    mb22: { title:'MB-22 · run quickly → go quickly', prompt:'他快速跑过去。', roles:'行为者 he；移动方式强调快速；当前题目不强调锻炼或跑步活动。', hint:'原作者把 run quickly 表达为 go quickly。', accepted:[{text:'he goes quickly',note:'go quickly 强调快速移动。'}], wrong:[{text:'he takes a run',reason:'take a run 表示进行跑步活动，不能单独保留本题的快速移动重点。'}] },
+    mb23: { title:'MB-23 · run for health → take a run', prompt:'他为了健康而跑步。', roles:'行为者 he；跑步被看作一项活动，目的为 health。', hint:'原作者把 run for health 表达为 take a run。', accepted:[{text:'he takes a run',note:'take a run 把跑步作为一项活动表达；健康目的由语境提供。'}], wrong:[{text:'he goes quickly',reason:'go quickly 只强调快速移动，不表达为了健康而跑步这项活动。'}] },
+    mb24: { title:'MB-24 · begin → make a start', prompt:'他们开始了。', roles:'行为者 they；动作是开始某件事。', hint:'原作者列出 begin → make a start。', accepted:[{text:'they make a start',note:'make a start 把开始作为一个动作名称表达。'}], wrong:[] },
+    mb25: { title:'MB-25 · understand → see the point', prompt:'他理解了这个论点。', roles:'行为者 he；对象 the argument；重点是看出论点中的要点。', hint:'原作者列出 see the point of the argument。', accepted:[{text:'he sees the point of the argument',note:'see the point of the argument 表达理解论点的要点。'}], wrong:[{text:'he gives thought to the argument',reason:'give thought to 表达思考这个论点，不等同于已经理解其中要点。'}] },
+    mb26: { title:'MB-26 · know → have knowledge / be certain', prompt:'他知道这件事。', roles:'行为者 he；对象 it；表达具有相关知识或确定性。', hint:'原作者列出 have knowledge of it 和 be certain of it。', accepted:[{text:'he has knowledge of it',note:'have knowledge of it 表达具有关于它的知识。'},{text:'he is certain of it',note:'be certain of it 表达对它有确定认识。'}], wrong:[{text:'he gives thought to it',reason:'give thought to 表达思考它，不等同于知道或确定它。'}] },
+    mb27: { title:'MB-27 · learn → get knowledge', prompt:'他学到了这件事。', roles:'行为者 he；对象 it；动作强调获得知识。', hint:'原作者列出 get knowledge of it。', accepted:[{text:'he gets knowledge of it',note:'get knowledge of it 强调获得关于它的知识。'}], wrong:[{text:'he gives knowledge of it',reason:'give knowledge of it 表示把知识给予别人，动作方向与 learn 不同。'}] }
   };
 
   function normalize(text) {
@@ -292,8 +301,8 @@
     host.className = 'meaning-basic-section';
     host.innerHTML = [
       '<div class="mb-heading">',
-      '<span class="expression-step-label">MEANING → BASIC · PRACTICE BANK · 18 TASKS</span>',
-      '<h2>练习四：普通英语意思 → Basic 表达（18题）</h2>',
+      '<span class="expression-step-label">MEANING → BASIC · PRACTICE BANK · 27 TASKS</span>',
+      '<h2>练习四：普通英语意思 → Basic 表达（27题）</h2>',
       '<p>先理解要表达的意思，再组织 Basic 句子。每道题都可能有多个正确表达；检查器会按本题已经登记的结构和语义角色判断。</p>',
       '</div>',
       '<div class="mb-controls">',
@@ -317,6 +326,15 @@
       '<option value="mb16">MB16 · forget → put out of mind</option>',
       '<option value="mb17">MB17 · want → have a desire</option>',
       '<option value="mb18">MB18 · need → be in need of</option>',
+      '<option value="mb19">MB19 · sing → give a song</option>',
+      '<option value="mb20">MB20 · touch → put a hand / give a touch</option>',
+      '<option value="mb21">MB21 · hit → give a blow</option>',
+      '<option value="mb22">MB22 · run quickly → go quickly</option>',
+      '<option value="mb23">MB23 · run for health → take a run</option>',
+      '<option value="mb24">MB24 · begin → make a start</option>',
+      '<option value="mb25">MB25 · understand → see the point</option>',
+      '<option value="mb26">MB26 · know → have knowledge</option>',
+      '<option value="mb27">MB27 · learn → get knowledge</option>',
 
       '</select>',
       '</div>',
@@ -343,7 +361,7 @@
       '<div class="mb-feedback" id="mb-vocabulary-feedback" aria-live="polite"></div>',
       '<div class="mb-feedback" id="mb-grammar-feedback" aria-live="polite"></div>',
       '<div class="mb-feedback" id="mb-meaning-feedback" aria-live="polite"></div>',
-      '<p class="mb-limitation">检查范围：目前只识别这 18 道题列出的有限句型和已知语义反例。其他表达会显示“暂时无法判断”，不会自动判为错误。词汇通过不代表语法或意思通过；本功能不是通用英语语法解析器或通用语义理解器。</p>'
+      '<p class="mb-limitation">检查范围：目前只识别这 27 道题列出的有限句型和已知语义反例。其他表达会显示“暂时无法判断”，不会自动判为错误。词汇通过不代表语法或意思通过；本功能不是通用英语语法解析器或通用语义理解器。</p>'
     ].join('');
 
     const sourceFooter = page.querySelector('.expression-source');

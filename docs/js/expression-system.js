@@ -193,7 +193,7 @@
             <span>read carefully → go through it with care</span>
             <span>eat → take food / have a meal</span>
           </div>
-          <p>这些内容已经完成原文研究，尚未制作成 App 课程。不会把研究文档冒充成已经上线的课程。</p>
+          <p>这些原作者例子已在下方 Names of Acts 课程和 Meaning → Basic 题库中部分练习；并非每个例子都有独立自动评分。未覆盖的用法仍以研究索引为依据。</p>
         </section>
 
         <footer class="expression-source">
