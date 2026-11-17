@@ -834,3 +834,23 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Verified copy size: 9,869,645 bytes; SHA-256 c5fb46dfb687073e48a1f502a5045d5d38ab4255055b1e0897d1fdf0d5772cf1.
 - In the same file-generation operation, confirmed the source and copied files exist, sizes and SHA-256 hashes match, APK ZIP integrity passes, and exactly 850 unique word-audio entries are present.
 - This records file preparation only. User download, installation and combined device acceptance have not yet been confirmed.
+
+
+### Expression System full curriculum roadmap — 23 Lessons (2026-11-18)
+
+- Updated BASIC_ENGLISH_EXPRESSION_SYSTEM.md Section 5 with a finite curriculum catalog: 5 modules / 23 Lessons.
+- Module counts: Other Word-Forms 4; Expansions 8; Special Uses 4; Common Needs 3; Meaning-to-Basic Practice 4. Total: 23.
+- Added individual lesson IDs and scope:
+  - OWF-01–04: Operators forms; pronoun forms; comparison; -er/-ing/-ed.
+  - EXP-01–08: Names of Things (body-part extensions; sensory/function/behavior similarity); Names of Qualities; expansion vs narrowing; Names of Acts (simple / complex); Names of Directions (spatial roots / abstract extensions and combinations).
+  - SU-01–04: 50 Operator fixed uses; 80 relation-word fixed uses; 20 other Operations/Directions special uses; 100 special uses across remaining Basic word classes.
+  - CN-01–03: Simple Acts; Complex Acts; Other Suggestions.
+  - MB-01–04: context and intended meaning; semantic-role decomposition; Basic construction with multiple valid answers; reverse interpretation and independent transfer.
+- Clarified the distinction between source-derived chapter structure and the project's own 23-lesson pedagogical breakdown. The 23 count is a project curriculum decision, not a count prescribed by Ogden.
+- Mapped the current App labels without pretending they equal completed final lessons: current Lesson 01 → MB-01; Lesson 02 → EXP-01; Lesson 03 → EXP-05/06 introductory material; Lesson 04 → SU-01–04 overview only; Lesson 05 → CN-01–03 overview only. The 27 Meaning → Basic tasks are a shared practice bank, not an additional Lesson.
+- Updated Section 12 with a concrete completion order and preserved the user's integrated-delivery preference: finish and internally validate the whole course before one consolidated App integration/build/device acceptance.
+- This update changes only root-level Markdown documents (BASIC_ENGLISH_EXPRESSION_SYSTEM.md and AUDIO_BUILD_PLAN.md). The Android workflow watches docs/**, android-offline/**, scripts/**, and the workflow file, so this documentation-only update does not trigger an Android build.
+- Startup verification before this update: AGENTS.md and the complete 837-line AUDIO_BUILD_PLAN.md were read; live branch head was b9a27f14d96b25b9fe139c41a2a6259218525fe2; latest Actions run was Run 48 / ID 44197915524, completed / success, built commit 9a1793905b4abc7d24bd1c598a5a3004450f6748. All 23 job steps completed successfully; APK and coverage artifacts were present and not expired. There were no active or queued runs. Workflow concurrency is cancel-in-progress: true.
+- Run 48 APK/archive verification remains recorded in the preceding section. The combined Run 48 APK has been extracted and independently verified, but user download, installation, and device acceptance remain unconfirmed.
+- Next action: use the 23-lesson catalog as the fixed scope; begin source verification and detailed lesson design for OWF-01–04, then proceed through the remaining modules. Do not add ad hoc lessons outside this catalog without documenting a genuine source/content gap and revising the roadmap first.
+

@@ -204,9 +204,9 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 
 ## 5. 新课程设计：保留原版骨架，补上表达能力训练
 
-以下是本项目新增的教学设计，不是 Ogden 原书目录。
+以下是本项目新增的教学设计，不是 Ogden 原书的 Lesson 编号。课程以《The ABC of Basic English》的原作者章节结构为骨架，拆成可以独立学习、练习和复习的单元。
 
-建议保留两条互相配合的学习线：
+原版45 Steps 与 Expression System 是两条互相配合、但不互相替代的学习线：
 
 **A. 原版45 Steps：基础课程**
 
@@ -214,14 +214,97 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 
 **B. Expression System：表达系统专项课程**
 
-以《The ABC of Basic English》的章节结构为主线：
-1. Other Word-Forms：Operators、代词、比较和词形变化；
-2. Expansions：Things and Qualities、Acts、Directions；
-3. Special Uses：固定词组；
-4. Common Needs：Simple Acts、Complex Acts 和其他常见表达；
-5. Meaning-to-Basic Practice：把真实意思重新组织为 Basic 表达。
+负责解释850词如何通过词形、意义扩展、固定用法和组合结构表达更多意思，并训练学习者从真实意思构造 Basic 表达。
 
-两条学习线互相引用。例如，45 Steps 引入 put / take / in / on 后，Expression System 用这些已学单位解释 insert、remove 等表达；引入 have、make、give 后，再学习相应的动作名词组合。
+### 5.1 最终课程规模
+
+| 模块 | 模块名称 | Lesson 数量 | Lesson 编号 |
+|---|---|---:|---|
+| 1 | Other Word-Forms（其他词形） | 4 | OWF-01～OWF-04 |
+| 2 | Expansions（意义扩展） | 8 | EXP-01～EXP-08 |
+| 3 | Special Uses（特殊用法／固定词组） | 4 | SU-01～SU-04 |
+| 4 | Common Needs（常见表达需要） | 3 | CN-01～CN-03 |
+| 5 | Meaning-to-Basic Practice（从意思构造 Basic） | 4 | MB-01～MB-04 |
+| **合计** | **5 个模块** | **23** | **OWF / EXP / SU / CN / MB** |
+
+**最终规划：5 个模块，共 23 个 Lesson。** 这是本项目根据原作者章节内容作出的教学拆分，不是声称 Ogden 原书本身规定了23课。
+
+### 5.2 每个模块的 Lesson 目录
+
+#### 模块 1 — Other Word-Forms（4 Lessons）
+
+原作者结构：Operator-forms、Comparison、Endings in -er、-ing、-ed。项目研究基线还把代词词形列入这一教学范围。
+
+1. **OWF-01｜Operators 的词形变化**：16个核心 Operators 的常见词形，以及它们在句子中的作用；区分核心 Operators 与 may、will 等辅助词。
+2. **OWF-02｜代词的词形与句中关系**：学习原作者列出的代词形式及其在句子中的关系，避免只背孤立词形。
+3. **OWF-03｜性质比较与比较形式**：比较性质的程度，理解比较形式及其句中使用。
+4. **OWF-04｜-er、-ing、-ed 词尾**：学习这些词尾在不同词类中的作用、词根限制和具体意义；不把词尾当成可以机械套用的万能公式。
+
+#### 模块 2 — Expansions（8 Lessons）
+
+原作者结构：Names of Things and Qualities、Names of Acts、Names of Directions。
+
+1. **EXP-01｜Names of Things：身体部位名称向事物部位扩展**：head、foot、leg、mouth、neck 等名称如何依据形状、位置、结构或作用用于其他事物。
+2. **EXP-02｜Names of Things：感官、用途与行为相似**：从感官性质、用途／行为相似，以及 “as if” 比较理解事物名称的扩展。
+3. **EXP-03｜Names of Qualities：性质名称的意义扩展**：理解由人的反应、感受和常伴随性质形成的扩展；并学习原书列出的部分 Qualities 如何作为 Names of Things 使用。
+4. **EXP-04｜意义扩展与意义收窄**：区分 stretch of sense 与 limiting of sense；判断一个词是延伸到相关对象，还是在特定语境中收窄到某类对象。此处的 narrower special use 不与模块3的固定词组混为一谈。
+5. **EXP-05｜Names of Acts：简单动作的结构**：把普通英语动作拆解为 Operator、Name、Quality 和关系成分，理解不同表达模式。
+6. **EXP-06｜Names of Acts：复杂动作与抽象活动**：处理思考、判断、知道、记忆、感觉、学习及社会活动等；按具体语境选择 Basic 表达，不建立一对一替换表。
+7. **EXP-07｜Names of Directions：空间根义**：学习20个 proper Directives 的空间关系，并说明 out 的方向性副词边界；区分 for、of、till 等非方向性介词。
+8. **EXP-08｜Names of Directions：抽象扩展与组合**：从空间关系理解时间、目的、原因、思想、控制等扩展；用有原文依据的 Operator × Directive 实例训练，不能把16×20的所有词对当作有效搭配。
+
+#### 模块 3 — Special Uses（4 Lessons）
+
+原作者的 The 250 Fixed Word-Groups，共250项。课程按原书数量结构拆分，学习重点是识别固定组合及其语境，不是把250项当作孤立词卡死记。
+
+1. **SU-01｜50个 Operator 固定用法**：10个 Operators，每组5个例子；理解固定组合与普通字面组合的区别。
+2. **SU-02｜80个关系词固定用法**：8组关系词，每组10个例子；保留 for、of 在本节固定词组清单中的位置，不因此把它们误列为20个 proper Directives。
+3. **SU-03｜20个其他 Operations / Directions 特殊用法**：10个词项，每项2种特殊用法；重点训练语境识别。
+4. **SU-04｜其他 Basic 词类的100个特殊用法**：覆盖 General Names、Picturable Things、Qualities、Opposites 等类别，并保留原书分类数量。
+
+#### 模块 4 — Common Needs（3 Lessons）
+
+按原作者 Some Common Needs 的三个部分组织。它与模块2的区别是：模块2解释表达结构如何形成；本模块整理原作者为常见意思提供的具体 Basic 表达和使用场景。
+
+1. **CN-01｜Simple Acts**：常见身体动作和日常行为的 Basic 表达。
+2. **CN-02｜Complex Acts**：常见心理、认知、感觉、意愿等复杂活动的 Basic 表达。
+3. **CN-03｜Other Suggestions**：原作者列出的其他常见表达需要；按原文场景学习，不把它们硬塞进单一语法公式。
+
+#### 模块 5 — Meaning-to-Basic Practice（4 Lessons）
+
+这是项目新增的综合训练模块，不是《The ABC of Basic English》的独立原书章节。它把前四个模块学到的内容用于实际表达。
+
+1. **MB-01｜先判断语境和真实意思**：同一个普通英语词在不同句子中可能表达不同意思；以 speak 的三种语境作为示范。
+2. **MB-02｜拆解意思中的角色与关系**：识别行为者、动作、对象、接收者、来源、目标位置、材料、结果和观察视角等。
+3. **MB-03｜选择 Basic 单位并构造表达**：选择合适的 Operator、Name、Quality、Directive 或固定词组；允许多个语义正确的 Basic 表达，并说明选择理由。
+4. **MB-04｜反向理解、比较与独立迁移**：从 Basic 句子恢复原意，比较不同表达的语义差异，诊断方向／角色错误，并独立处理新语境。
+
+### 5.3 目前 App 内容与最终目录的对应关系
+
+当前 App 中显示的 Lesson 01～05 是开发过程中形成的编号，不等于最终23课目录的顺序。为避免把已有原型误认为完整课程，按内容映射如下：
+
+| 当前 App 内容 | 最终目录归属 | 当前实际完成范围 |
+|---|---|---|
+| Lesson 01：speak 的三种语境 | MB-01 | 已集成；已包含语境判断、构造表达、反向理解及分阶段检查。原作者例子来自 Some Common Needs。 |
+| Lesson 02：身体部位名称扩展 | EXP-01 | 已集成；11个词条、10道选择题和一个不自动评分的自由说明练习。 |
+| Lesson 03：Names of Acts | EXP-05、EXP-06 | 已集成一个跨简单／复杂动作的入门单元；最终仍需拆成两个完整教学单元。 |
+| Lesson 04：250 Fixed Word-Groups | SU-01～SU-04 | 已集成总览和5道练习；不代表250项都已逐项教学或掌握。 |
+| Lesson 05：Some Common Needs | CN-01～CN-03 | 已集成总览和8道练习；不代表原作者三个部分已经全部展开。 |
+| Meaning → Basic 题库（27个登记任务） | MB-01～MB-04 的共享练习资源 | 已有跨主题题目；它是题库，不另算一个 Lesson，也不代表四个训练阶段全部完成。 |
+
+**当前完成度说明：**
+
+- 已有可用内容：MB-01 的 speak 案例、EXP-01、EXP-05/06 的入门内容、SU 总览、CN 总览，以及跨主题 Meaning → Basic 题库。
+- 尚未形成独立完整课程的重点：模块1的4课；模块2其余 Things / Qualities、Directions 课程及 Names of Acts 的完整拆分；模块3的250项分组教学；模块4三个部分的完整展开；模块5的 MB-02～MB-04。
+- Teaching 中已有的13个规则单元、47道练习和 Quick Reference 是另一套规则学习工具，不因此自动计入上述23个 Expression System Lessons。
+
+### 5.4 课程之间的衔接原则
+
+- 原版45 Steps 负责先教基础词汇和结构；Expression System 在学习者具备相应基础后引用这些内容，不另造一套冲突的词汇规则。
+- 模块1解决词形；模块2解释意义如何扩展、动作和关系如何拆解；模块3处理不能单靠字面推导的固定用法；模块4提供原作者整理的常见表达实例；模块5训练把前面学到的知识用于新意思。
+- 模块2教“表达结构为什么成立”；模块4教“原作者为常见需要提供了哪些具体表达”。两者可以引用同一例句，但练习目标不同，不重复做同一道题。
+- 23课是课程目录规模，不等于每课只允许一个例句或固定题数。每课均需有解释、对照、练习、反馈和复习材料。
+
 
 ## 6. 每个表达教学单元必须采用的结构
 
@@ -282,16 +365,16 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 
 ## 12. 下一阶段执行顺序
 
-1. 已完成16个 Operators、20个 proper Directives、Operator × Directive 以及 Names of Acts / Common Needs 的首轮原文索引。
-2. 下一步制作第一套可实际教学的 Meaning → Basic 表达单元，以 speak 的三种语境为例，训练语境判定、结构拆解、组合理由、独立生成和反向理解。
-3. 在教学单元通过内容核验后，再决定如何改造 App 的表达练习；不先批量补写31课。
-4. 整理 Things and Qualities 的意义扩展、特定化和词形扩展。
-5. 整理250个固定词组与 Common Needs。
-6. 建立普通英语 → Basic 的训练题库，并支持多种正确答案。
-7. 再决定如何把这些内容放进 App，与45 Steps 逐步衔接。
+完整课程目录现已确定为5个模块、23个 Lesson。后续按目录补齐内容，不再临时新增没有归属的 Lesson：
 
-在规则索引和例句核验之前，不先批量补写31课，也不触发 Android 构建。
+1. 先完成模块1 Other Word-Forms 的原文核验和4课内容设计；这是目前缺少独立 Expression System 课程的模块。
+2. 完成模块2剩余的 Things / Qualities、Names of Acts 拆分和 Names of Directions 两课；已有 Lesson 02、Lesson 03 作为原型，按最终目录整理，不重复另起编号。
+3. 将250 Fixed Word-Groups 按原书50 + 80 + 20 + 100的结构整理为模块3四课；选取有教学价值的代表例句和练习，明确覆盖范围，不把总览课冒充250项全部教学。
+4. 将 Some Common Needs 的 Simple Acts、Complex Acts、Other Suggestions 完整整理为模块4三课；与模块2的结构讲解区分。
+5. 将现有 speak 案例和27个 Meaning → Basic 登记任务纳入模块5，补齐 MB-02～MB-04 的角色拆解、表达构造、反向理解和独立迁移。
+6. 完成内容核验、题目答案及多答案规则的内部测试后，再一次性整合 App、执行回归测试、构建和检查最终 APK；遵守 AUDIO_BUILD_PLAN.md 的单次综合设备验收规则，不为每个小单元单独要求用户安装测试。
 
+在每课的原文依据、例句来源、教学新增内容和评分边界尚未核验前，不将研究笔记直接冒充成已经完成的课程。
 ## 13. 当前状态
 
 - 已核对：原版45 Steps目录、Step 1、3、5、7、9，以及《The ABC of Basic English》中 Other Word-Forms、Expansions、Names of Acts、Names of Directions、250 Fixed Word-Groups、Some Common Needs 的相关文本。
