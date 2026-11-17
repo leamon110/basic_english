@@ -8,7 +8,7 @@ require('../docs/js/teaching.js');
 require('../docs/js/rule-learning.js');
 const app=window.BE.ruleLearning;
 assert.ok(app,'rule-learning module should register');
-assert.equal(app.units.length,12);
+assert.equal(app.units.length,13);
 assert.equal(app.operators.length,16);
 assert.equal(app.directives.length,20);
 const ids=new Set();let count=0;

@@ -178,8 +178,8 @@
   const training=()=>load(PROGRESS_KEY,{});
   const review=()=>load(REVIEW_KEY,{sessions:0,lastSession:null,units:{}});
   function reviewSummary(now) {
-    const p=review(); let started=0,mastered=0,due=0;
-    UNITS.forEach(unit=>{const s=p.units[unit.id];if(!s)return;started++;if(s.level>=MAX_LEVEL)mastered++;else if(!s.nextReviewAt||s.nextReviewAt<=now)due++;});
+    const p=review(),states=p.units||{}; let started=0,mastered=0,due=0;
+    UNITS.forEach(unit=>{const s=states[unit.id];if(!s)return;started++;if(s.level>=MAX_LEVEL)mastered++;else if(!s.nextReviewAt||s.nextReviewAt<=now)due++;});
     return {started,mastered,due,fresh:UNITS.length-started,sessions:p.sessions||0};
   }
   let activeUnit='plural',activeQuestion=0,activeDeck='words';
@@ -194,7 +194,7 @@
     const host=container.querySelector('#rl-lesson');if(!host)return;
     const p=training()[unit.id]||{};
     host.innerHTML='<div class="rl-lesson-heading"><div><span class="rl-kicker">'+esc(unit.group)+'</span><h2>'+esc(unit.title)+'</h2><p>'+esc(unit.summary)+'</p></div><button class="rl-lookup-link" type="button" data-lookup="'+unit.id+'">在规则速查中查看</button></div><div class="rl-rule-sections">'+unit.sections.map(s=>'<article><h4>'+esc(s[0])+'</h4><p>'+esc(s[1])+'</p></article>').join('')+'</div><div class="rl-example-block"><h4>例子</h4><ul>'+unit.examples.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div><p class="rl-caution"><strong>适用边界：</strong>'+esc(unit.caution)+'</p><p class="rl-source"><strong>依据：</strong>'+esc(unit.source)+'</p><div class="rl-practice-heading"><div><span class="rl-kicker">PRACTICE</span><h3>检查理解</h3><p>本单元共 '+unit.questions.length+' 题；答错会显示正确答案和原因。</p></div><span class="rl-progress-count">累计正确 '+(p.correct||0)+' / 已答 '+(p.attempts||0)+'</span></div><div id="rl-question"></div>';
-    host.querySelector('[data-lookup]').addEventListener('click',()=>renderReference(document.getElementById('teaching-content'),unit.id));
+    host.querySelector('[data-lookup]').addEventListener('click',()=>{activeUnit=unit.id;window.BE.teaching.switchTab('reference');});
     renderQuestion(host,unit,activeQuestion);
   }
   function renderQuestion(host,unit,index) {
@@ -214,7 +214,7 @@
   function renderSpaced(container) {
     if(!container)return;
     const wd=load('BE_SR',{w:{},s:{sc:0,tl:0,ms:0}}),ws=load('BE_SR_SESSION',null),now=Date.now();
-    let due=0;Object.keys(wd.w||{}).forEach(word=>{const x=wd.w[word];if(x&&x.level<MAX_LEVEL&&Number(x.nr)<=now)due++;});
+    let due=0;Object.keys(wd.w||{}).forEach(word=>{const x=wd.w[word];if(x&&Number(x.l)<MAX_LEVEL&&Number(x.nr)<=now)due++;});
     const started=Object.keys(wd.w||{}).length,rs=reviewSummary(now),session=load(SESSION_KEY,null);
     container.innerHTML='<div class="rl-spaced"><header class="rl-header"><span class="rl-kicker">SPACED REPETITION</span><h3>间隔复习</h3><p>复习是在合适的时间重新回忆学过的词或规则。这里分成两个独立复习组。</p></header><div class="rl-deck-tabs"><button type="button" data-deck="words" class="'+(activeDeck==='words'?'is-active':'')+'">850 词汇复习</button><button type="button" data-deck="rules" class="'+(activeDeck==='rules'?'is-active':'')+'">规则复习</button></div><section id="rl-deck-panel"></section></div>';
     container.querySelectorAll('[data-deck]').forEach(b=>b.addEventListener('click',()=>{activeDeck=b.dataset.deck;renderSpaced(container);}));
@@ -225,7 +225,7 @@
       const resume=panel.querySelector('#rl-word-resume');if(resume)resume.addEventListener('click',()=>window.BE.teaching.srResume());
       panel.querySelector('#rl-word-reset').addEventListener('click',()=>{if(!window.confirm('确定重置全部 850 词汇复习进度？此操作不能撤销。'))return;save('BE_SR',{w:{},s:{sc:0,tl:0,ms:0}});save('BE_SR_SESSION',null);renderSpaced(container);});
     }else{
-      panel.innerHTML='<div class="rl-review-intro"><h4>规则复习</h4><p>复习对象是上面 12 个规则单元。每次用一道理解题检查你是否还记得规则。</p><p>答对后的间隔依次为 1、2、4、7、15、30 天；答错后回到第 0 级，1 天后重新复习。第 6 级表示本轮已掌握。</p></div><div class="rl-stat-grid">'+statCard(rs.mastered,'已掌握规则')+statCard(rs.started,'已开始')+statCard(rs.due,'待复习规则')+statCard(rs.fresh,'尚未开始')+'</div><p class="rl-session-count">已完成规则复习 '+rs.sessions+' 轮</p><div class="rl-review-actions">'+(session&&!session.completed&&session.index<session.queue.length?'<button class="rl-primary" id="rl-rule-resume">继续上次（剩余 '+(session.queue.length-session.index)+' 项）</button>':'')+'<button class="rl-primary" id="rl-rule-start">开始规则复习</button><button class="rl-secondary" id="rl-rule-reset">重置规则进度</button></div><p class="rl-note">规则复习与单词复习分开记录；答对一道题不代表永久掌握整个英语系统。</p><div id="rl-rule-area"></div>';
+      panel.innerHTML='<div class="rl-review-intro"><h4>规则复习</h4><p>复习对象是上面 13 个规则单元。每次用一道理解题检查你是否还记得规则。</p><p>答对后的间隔依次为 1、2、4、7、15、30 天；答错后回到第 0 级，1 天后重新复习。第 6 级表示本轮已掌握。</p></div><div class="rl-stat-grid">'+statCard(rs.mastered,'已掌握规则')+statCard(rs.started,'已开始')+statCard(rs.due,'待复习规则')+statCard(rs.fresh,'尚未开始')+'</div><p class="rl-session-count">已完成规则复习 '+rs.sessions+' 轮</p><div class="rl-review-actions">'+(session&&!session.completed&&session.index<session.queue.length?'<button class="rl-primary" id="rl-rule-resume">继续上次（剩余 '+(session.queue.length-session.index)+' 项）</button>':'')+'<button class="rl-primary" id="rl-rule-start">开始规则复习</button><button class="rl-secondary" id="rl-rule-reset">重置规则进度</button></div><p class="rl-note">规则复习与单词复习分开记录；答对一道题不代表永久掌握整个英语系统。</p><div id="rl-rule-area"></div>';
       const start=panel.querySelector('#rl-rule-start');start.addEventListener('click',startRuleReview);
       const resume=panel.querySelector('#rl-rule-resume');if(resume)resume.addEventListener('click',showRuleReviewCard);
       panel.querySelector('#rl-rule-reset').addEventListener('click',()=>{if(!window.confirm('确定重置全部规则复习进度？此操作不能撤销。'))return;save(REVIEW_KEY,{sessions:0,lastSession:null,units:{}});save(SESSION_KEY,null);renderSpaced(container);});
