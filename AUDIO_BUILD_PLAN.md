@@ -809,3 +809,20 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Live branch head at this checkpoint: 9a1793905b4abc7d24bd1c598a5a3004450f6748; latest Actions run: Run 48, completed / success. No active or queued Actions run remains.
 - Next concrete action: inspect/extract the exact Run 48 APK artifact, verify APK integrity, exact 850 audio files, attribution files and the integrated Teaching / Expression assets; then prepare one combined device acceptance. Do not ask for separate incremental APK tests. Before any new code push, refresh branch and Actions state and account for cancel-in-progress: true.
 
+
+
+### Run 48 APK extraction and archive verification (2026-11-18)
+
+- Downloaded official Run 48 APK artifact ID 14379604453. Outer artifact ZIP size 9,272,570 bytes; SHA-256 matches GitHub artifact digest c6ca5160739813e556232e027fe389747087f9a44043cbd63d19ed25bbbab863; ZIP integrity passed.
+- Outer ZIP contains exactly one member: Basic-English-Human-Voice.apk. Extracted APK size: 9,869,645 bytes; APK SHA-256: c5fb46dfb687073e48a1f502a5045d5d38ab4255055b1e0897d1fdf0d5772cf1; APK ZIP integrity passed.
+- APK archive has exactly 850 MP3 files under assets/www/audio/words/. Their 850 basenames exactly match the 850 unique entries in the packaged ALL_850 set: missing 0, extra 0, duplicate paths 0, zero-byte files 0.
+- All 850 audio payloads have distinct SHA-256 hashes. MP3 total size: 9,446,648 bytes; individual size range 6,380–21,068 bytes. A single serial FFmpeg concat-demuxer decode pass over all 850 MP3 files completed with exit code 0.
+- Packaged credits.json contains 850 recording records. All records have non-empty title, speaker, uploader, accent, license and source_url fields. Licence counts: CC0 725; CC BY-SA 3.0 113; Public domain 7; CC BY-SA 4.0 5. Speaker attribution retains one explicitly unidentified speaker.
+- Both attribution assets are present: assets/www/audio/credits.json and assets/www/audio/THIRD_PARTY_AUDIO_CREDITS.md.
+- Confirmed packaged App assets include Lesson 01, Lesson 02, Lessons 03–05, Meaning → Basic (27 tasks), Teaching, their stylesheets, app route wiring, and Service Worker cache basic-english-v38. Run 48 CI tests had already passed: Teaching 13 units / 47 questions; Lesson 02 11 terms / 10 questions; follow-on lessons 3 / 23 questions; Meaning → Basic 40 accepted patterns and 28 known semantic mismatches.
+- Downloaded and inspected coverage artifact ID 14380462964; its ZIP integrity passed. Report: target 850; primary coverage 845; matched 850; missing 0; downloaded 0; cached 850; completed 850; attempted 850; pending 0; failed 0; download errors 0; encoded MP3 total 9,446,648 bytes.
+- Archive verification is complete for Run 48. Physical-device acceptance of this combined Teaching + Expression System build is still pending. Do not claim the new combined learning modules are device-accepted until the user tests them.
+- The verified extracted APK is named Basic-English-Human-Voice.apk and has the SHA-256 above. No direct download link has been sent in this response.
+- Latest branch head before this plan-only update: 304d38841ef23315ed1947116212a6d47083164f; latest Actions run remains Run 48 / 44197915524, completed / success. No active or queued run remained.
+- Next: provide this one combined Run 48 APK for device acceptance, with one consolidated checklist covering Teaching, all five Expression System lessons, Meaning → Basic, original 45 Steps, Word Cards human audio, and offline behavior. Do not trigger another build unless testing reveals a concrete defect.
+
