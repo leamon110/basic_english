@@ -304,7 +304,10 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - The lesson separates original examples from project-designed explanations and exercises.
 - It teaches context recognition, Operator / Name / Directive decomposition, independent construction and reverse interpretation.
 - No App source code was changed and no Android build was triggered. This is a repository-root Markdown lesson prototype.
-- Next action: add the first Expression System lesson as a separate App learning track, preserving the original 45 Steps, existing Teaching tools, and accepted audio features.
+- App integration completed in commit `86e81894`: added a separate Expression System navigation entry and home card, the speak lesson page, a local quiz, a vocabulary-only writing check, responsive CSS, and service-worker offline caching. Original 45 Steps, Teaching, Sentence Practice, and audio code were not changed.
+- Run 36 (`44080767833`) is currently building commit `86e81894`; it was triggered by the docs/** changes. Do not trigger another build while it is active.
+- Local verification: expression-system.js and app.js parse successfully; render() produced the page; the actual validator accepted `I say something to him.` and rejected `I communicate with him.` as out-of-vocabulary. This does not replace device testing.
+- Next action: wait for Run 36, inspect every job step and both artifacts, then install the new APK and test the separate Expression System page on the user's Android device.
 
 
 ## Validation-rule clarification — taught constructions (2026-11-17)
@@ -313,3 +316,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Confirmed that the validator explicitly accepts course-taught constructions including `something`, `someone`, `nothing`, `into`, and `away`, even though some are not individual entries in the 850 base-word arrays.
 - Corrected the Operator × Directive map: `go away` is accepted by the current App validator as a taught construction, but `away` is not one of the 20 proper Directives; it must be classified separately from the core Operator × Directive system.
 - Lesson 01 now notes why `say something to him` is accepted without treating `something` as an extra base-list entry.
+
+
+## App implementation milestone — Expression System Lesson 01 (2026-11-17)
+
+- Code commit: `86e81894a544ad6ec7e6a768d4f0d1f791e08619`.
+- Added `docs/js/expression-system.js` and `docs/css/expression-system.css`.
+- Added the new Expression System navigation route and home card in `docs/index.html` / `docs/js/app.js`.
+- Updated `docs/sw.js` to cache the new module and stylesheet offline (cache version v32).
+- Lesson 01 teaches the three source-backed meanings of speak; includes a three-question context quiz, a free-writing area with vocabulary-only validation, reverse interpretation, and explicit source attribution.
+- Existing original 45 Steps, Teaching, Sentence Practice, word audio, and audio assets were not edited.
+- Static/runtime verification in the tools environment: both JavaScript files parse; the new module renders into a mock container; validator accepts `I say something to him.` and rejects the out-of-vocabulary word `communicate`.
+- GitHub Actions Run 36 (`44080767833`) is in progress for the code commit. No new build has been triggered after it.
+- User-device installation and interaction retest remain pending; the feature is not yet accepted on device.

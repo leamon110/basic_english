@@ -306,7 +306,7 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 - 主题：同一个普通英语动词 speak 在三个语境中的不同含义。
 - 原作者例子：say something to him；give a talk / make a statement；have a knowledge of it。
 - 新增教学步骤：语境识别 → 结构拆解 → 组合理由 → 独立生成 → 反向理解。
-- 本文档是内容原型，尚未集成进 App，也没有改变原有45 Steps。
+- 内容原型已集成到独立的 Expression System 页面；尚未完成用户 Android 设备上的安装与交互验收。原有45 Steps保持不变。
 
 
 ### 词表与课程构式的边界
