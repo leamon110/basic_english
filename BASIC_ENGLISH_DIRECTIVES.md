@@ -14,19 +14,32 @@
 
 《The ABC of Basic English》把 Directions 单独作为一章，逐项解释词义扩展，并为一些词列出 special uses。另有250个 fixed word-groups，说明部分组合需要作为固定用法学习。
 
-## 2. 原书 Names of Directions 章节中的词
+## 2. 20 个 proper Directives、图示边界项与章节词条的区别
 
-原书这一章逐项讨论以下词：
+Ogden 在《Basic English: A General Introduction with Rules and Grammar》中说明，proper Directives 有20个。方向图中的20个 proper Directives 是：
+
+**at, with, from, against, to, across, after, among, before, about, through, down, between, up, under, on, over, off, by, in**
+
+方向图还列出 **out**，但 Ogden 特别说明：out 在语法上属于副词，只是具有方向意义；它与 in 相对，因此图示如果省略 out 就不完整。也就是说，图示共有21个方向项目，其中20个是 proper Directives，另一个 out 是方向性副词边界项。
+
+《The ABC of Basic English》的 “Names of Directions” 章节逐项讲解：
 
 **about, after, among, at, before, between, by, down, for, from, in, of, off, on, out, over, through, to, under, up, with**
 
-850词 Operations 中还有 across、against、till、as、than、near、far、forward、here、there 等关系或方向相关词。它们也要学习，但不能因为它们出现在 Operations 里，就把它们都说成原书这一章的独立章节标题。
+这份章节标题列表有21项，但它不是20个 proper Directives 的名单：
+- 它包含 **for、of**；Ogden 在《General Introduction》中明确把 for、of、till 归为非方向性介词；
+- 它没有把 **across、against** 单独列为章节标题，但二者属于20个 proper Directives；
+- 它包含 **out**，而 out 是方向性副词边界项。
+
+另外，**into、upon、down from** 等是多个方向单位按意义组合形成的表达，不是新的独立 Directive。850词表中还有 near、far、forward、here、there 等方向或位置相关词，但不能因此把它们都列入20个 proper Directives。
 
 ## 3. 语义索引
 
 | 方向词 | 起始关系 | 原书展示的扩展 | 教学重点 |
 |---|---|---|---|
 | **about** | 在周围、在附近 | a book about religion；clear about the facts；no doubts about it | 从周围、涉及某物扩展到“关于某主题、对某事”。 |
+| **across** | 从一侧到另一侧、横越 | go across the street；get a bridge across a river；send a ball across the field | 表示跨越某个空间或使某物到达另一侧；属于20个 proper Directives。 |
+| **against** | 与某物相对、接触或形成反向作用 | go against the rules；go against a friend | 从物理上的相对/反向作用扩展到反对、对抗；属于20个 proper Directives。 |
 | **after** | 在后面 | after an event；after my coming；after I came | 从空间上的后方扩展到时间上的先后。 |
 | **among** | 在一个群体之中 | among friends；work among the poor；distribution among boys | 强调处于一个群体或多个成员之间。 |
 | **at** | 空间或时间上的一个点/位置 | at the door；at noon；at a certain hour；at a request | 把“点”作为核心图景，空间位置和时间时点都可用。 |

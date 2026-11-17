@@ -8,7 +8,12 @@
 
 **be, come, do, get, have, give, go, keep, let, make, put, say, see, seem, send, take**
 
-may、will 等属于辅助词，不应与16个核心 Operators 混为一谈。
+Ogden 在《Basic English: A General Introduction with Rules and Grammar》中进一步说明：
+- 10个基础操作：**put, take, give, get, come, go, make, keep, let, do**；
+- 另外说明 **be**（存在）、**seem**（与 be 相对的表象/不确定性）、**have**（拥有）；
+- 再列出 **say, see, send** 作为帮助沟通、连接基础操作与普通动词系统的类比性补充。
+
+这16个词在本项目中统一作为核心 Operators 教学。**may、will 是助动词，不计入这16个核心 Operators。**
 
 原作者在《The ABC of Basic English》中逐一讨论这些词的意义扩展、词形和固定用法。不能把它们理解为16个可互换的“万能动词”。
 
@@ -82,6 +87,8 @@ Ogden 的解释方向是：这些行为会造成或形成某种新的东西或�
 这些不是四个可互换的“动词 + 介词”模板。每个词表达的事件关系不同。
 
 ## 5. 对当前 App 练习的修正结论
+
+Ogden 的原作者方法不是背诵固定搭配表，而是把 Operators 依次与 Directives 组合，检查组合是否能表达现实中成立的关系。具体组合、对象和词序会共同决定意义。参见仓库中的 `BASIC_ENGLISH_OPERATOR_DIRECTION_MAP.md`。
 
 当前 Teaching 的 Operator + Direction 题目包含：
 - enter → go into
