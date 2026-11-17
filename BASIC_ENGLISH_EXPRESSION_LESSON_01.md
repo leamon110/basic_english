@@ -240,6 +240,8 @@ Basic 不是只有“从普通英语转成 Basic”这一条路。学习者还�
 来源：Ogden, *The ABC of Basic English*, “Some Common Needs: A. Simple Acts”, pp.244–245.
 
 
+**App 集成状态：** 已集成到独立的“表达系统”导航页，并由 Run 36 成功构建 APK；尚未完成用户 Android 设备验收。
+
 **本项目新增：**
 - 三种 speak 语境的逐层拆解；
 - Operator / Name / Directive 的结构标注；

@@ -305,9 +305,9 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - It teaches context recognition, Operator / Name / Directive decomposition, independent construction and reverse interpretation.
 - No App source code was changed and no Android build was triggered. This is a repository-root Markdown lesson prototype.
 - App integration completed in commit `86e81894`: added a separate Expression System navigation entry and home card, the speak lesson page, a local quiz, a vocabulary-only writing check, responsive CSS, and service-worker offline caching. Original 45 Steps, Teaching, Sentence Practice, and audio code were not changed.
-- Run 36 (`44080767833`) is currently building commit `86e81894`; it was triggered by the docs/** changes. Do not trigger another build while it is active.
+- Run 36 (`44080767833`) completed successfully for commit `86e81894`. All 22 job steps completed successfully. The APK artifact `basic-english-human-voice-apk` (ID `14326577845`, 9,223,913 bytes) and coverage artifact `basic-english-human-audio-coverage` (ID `14327920679`, 21,467 bytes) are uploaded and not expired. No build is currently running.
 - Local verification: expression-system.js and app.js parse successfully; render() produced the page; the actual validator accepted `I say something to him.` and rejected `I communicate with him.` as out-of-vocabulary. This does not replace device testing.
-- Next action: wait for Run 36, inspect every job step and both artifacts, then install the new APK and test the separate Expression System page on the user's Android device.
+- Next action: user installs the Run 36 APK and tests the new Expression System page on Android. Device acceptance remains pending; do not mark the new lesson as user-accepted until the user reports the test result.
 
 
 ## Validation-rule clarification — taught constructions (2026-11-17)
@@ -329,3 +329,18 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Static/runtime verification in the tools environment: both JavaScript files parse; the new module renders into a mock container; validator accepts `I say something to him.` and rejects the out-of-vocabulary word `communicate`.
 - GitHub Actions Run 36 (`44080767833`) is in progress for the code commit. No new build has been triggered after it.
 - User-device installation and interaction retest remain pending; the feature is not yet accepted on device.
+
+
+## Run 36 build result — Expression System Lesson 01 (2026-11-17)
+
+- Workflow run: [Run 36](https://github.com/leamon110/basic_english/actions/runs/44080767833).
+- Built code commit: `86e81894a544ad6ec7e6a768d4f0d1f791e08619`.
+- Final status: completed / success; all 22 job steps completed.
+- Audio coverage: 850 / 850 recordings restored from cache, 0 newly downloaded, 0 errors; MP3 total 9.45 MB.
+- APK: artifact `basic-english-human-voice-apk`, ID `14326577845`, 9,223,913 bytes, not expired.
+- Coverage report: artifact `basic-english-human-audio-coverage`, ID `14327920679`, 21,467 bytes, not expired.
+- Android Gradle build: `BUILD SUCCESSFUL` in 39 seconds.
+- Non-fatal workflow warnings: Node.js 20 deprecation notices and dependency deprecation warnings for `punycode` / `url.parse()`; no build step failed.
+- The artifact ZIP was requested from GitHub Actions; the exact artifact name to download is `basic-english-human-voice-apk` (not the coverage report).
+- No active workflow remains.
+- User-device test is still pending. Next: install the Run 36 APK, open the separate “表达系统” page, test Lesson 01 quiz and vocabulary checker, and confirm that original 45 Steps and audio still work.
