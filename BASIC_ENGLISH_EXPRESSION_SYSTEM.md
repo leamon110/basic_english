@@ -396,3 +396,12 @@ The Teaching screen now has a structured rule-learning implementation in code:
 Run 46 (44195097971) built commit \`19c624d7a37811fc514d9fbb875ca45909ec6d2e\` successfully. All 18 workflow steps succeeded; the new rule tests passed (13 units, 47 questions, 16 Operators, 20 Directives, Basic phrase validation and interval scheduling). All 850 audio files were restored from cache with zero downloads and zero errors. The APK and audio-coverage artifacts were uploaded.
 
 The CI APK is not yet extracted and verified for user handoff, and the user has not accepted this intermediate Teaching build on a device. The agreed process remains one final combined device test after Expression Lesson 02 and the expanded Meaning → Basic bank are integrated.
+
+
+## 20. Expression Lesson 02 and Meaning → Basic expansion (Run 47)
+
+- Lesson 02 is now integrated into the Expression System page with 11 source-indexed body-part terms, 10 interactive questions and a free-response explanation exercise. The free response is not automatically scored.
+- Meaning → Basic has 18 finite tasks and 29 accepted answer patterns, based on the project's Names of Acts / Common Needs index.
+- Run 47 (44196442702) built successfully. All 18 workflow steps passed. Meaning → Basic, Teaching and Lesson 02 automated tests passed. All 850 recordings were restored from cache with zero errors.
+- The APK artifact ZIP and audio-coverage artifact were uploaded. No user-device acceptance has been requested or recorded; the intermediate artifact is not the final handoff.
+- Remaining Expression System work: integrate the researched Names of Acts, Fixed Word-Groups and Common Needs into a coherent learning sequence before the consolidated final device test.

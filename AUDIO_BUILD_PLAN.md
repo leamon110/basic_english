@@ -772,3 +772,18 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is a successful CI build, not a user-device acceptance result. The artifact has not been extracted and verified as a standalone APK for handoff. Per the delivery reset, do not ask the user to install this intermediate build.
 - Next: integrate the source-based Expression System Lesson 02 into the App, expand the finite Meaning → Basic exercise bank beyond its initial six items, test both offline modules, then perform one consolidated Android build and one combined device acceptance.
 
+
+
+### Expression Lesson 02 and expanded Meaning → Basic bank — Run 47 (2026-11-18)
+
+- Integrated BASIC_ENGLISH_EXPRESSION_LESSON_02.md into the Expression System page as an interactive lesson.
+- Lesson 02 includes 11 source-indexed body-part terms (head, foot, arm, leg, chest, mouth, lip, neck, tail, tooth, face), a root/expanded-meaning table, 10 interactive understanding questions and a free-response explanation exercise with a reference reveal. The free response is explicitly not auto-scored.
+- Expanded Meaning → Basic from 6 to 18 registered tasks, based on the Names of Acts / Common Needs source index. The finite checker now has 29 accepted sentence patterns and 20 registered semantic-mismatch examples, plus the existing viewpoint, unsupported-boundary and punctuation tests.
+- Added offline assets and advanced the Service Worker cache to v37.
+- Run 47 / ID 44196442702 built commit b0e23ad02b5ce6c9f17d03652c150974a502cf80 successfully. All 18 workflow steps succeeded.
+- Validation results: Meaning → Basic passed 29 accepted patterns, 20 known semantic mismatches, 2 viewpoint mismatches, 1 unsupported boundary and 1 punctuation case; Teaching passed 13 units / 47 questions / 16 Operators / 20 Directives / vocabulary and spaced-schedule checks; Expression Lesson 02 passed 11 terms / 10 questions.
+- All 850 recordings were restored from cache: 0 downloaded, 850 restored, 0 errors. Android build reported BUILD SUCCESSFUL.
+- Uploaded APK artifact ZIP ID 14380140359 (9,264,880 bytes; digest sha256:6d77b9a08a597ee5ab99b8346a4f72589f9065a3e13994127ecd973a38cda62b); coverage artifact ID 14379860711 (21,467 bytes; digest sha256:aa19836e516c84c981d43c621f282c9d7839b9b1ea33bcfc54f3b68e6817e50b).
+- This is still an intermediate CI build, not device acceptance or final APK handoff. It has not been extracted and independently verified as a standalone APK for the user.
+- Next: finish the Expression System sequence around Names of Acts, Fixed Word-Groups and Common Needs; then run the final consolidated regression/build and one combined device acceptance.
+
