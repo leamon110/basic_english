@@ -517,3 +517,23 @@ This is a separate learning-product workstream; it does not alter the accepted a
   3. `I say something to her.` → vocabulary and grammar pass; meaning fails because the recipient differs.
   4. Edit the sentence after a check → later-stage results clear and the next-stage buttons lock until checks are repeated.
 - Do not mark Run 38 device acceptance complete until the user reports the result.
+
+
+## Run 38 device acceptance and offline checker implementation (2026-11-18)
+
+- User confirmed: “测试通过。” This follows the four requested Run 38 phone tests (correct sentence; subject–verb error; recipient/meaning mismatch; edit-and-reset flow). Record the Run 38 staged writing-check feature as accepted on the user's Android device.
+- Run 38 remains the latest Android build: run ID `44130128141`, built code commit `cbb42aa85ea00942a7166260315977863856f8a3`, conclusion `success`, all 22 steps succeeded; APK artifact ID `14348239555`. No active Actions run at this handoff.
+- Verified implementation architecture:
+  - Android `MainActivity` loads `file:///android_asset/www/index.html`.
+  - Workflow step “Package the learning site as local app assets” copies `docs/.` into `android-offline/app/src/main/assets/www/`.
+  - `docs/index.html` loads local `js/data.js`, `js/validator.js`, and `js/expression-system.js`. The vocabulary, grammar-pattern and meaning checks described below execute in local JavaScript; these code paths do not call a remote API or require network access.
+  - The Service Worker cache is `basic-english-v33`; the APK also bundles these web assets, so the Android offline app does not depend on the Service Worker fetching them from the internet.
+- Verified grammar checker: `analyzeLessonSentence()` lowercases and tokenizes the input, then applies a fixed local rule for `subject + say/says + something/nothing + to + object pronoun`. It checks the supported subject and object pronoun sets, say/says agreement, the required `to`, and ordering. It is not a general grammar parser; unsupported sentence shapes are reported as temporarily uncheckable.
+- Verified meaning checker: after the supported sentence shape is parsed, it compares three slots against the prompt “我向他表达一些内容”: subject `I`, content `something`, recipient `him`. It is a fixed target-slot comparison, not general semantic understanding or translation.
+- Verified word-list structure by executing the current `docs/js/data.js` in V8:
+  - Operations: 100; Things (general): 400; Things (picturable): 200; Qualities (general): 100; Qualities (opposites): 50.
+  - The `ALL_850` Set contains exactly 850 unique base entries.
+  - The direct `ALLOWED_WORDS` Set currently contains 1,909 accepted word forms/entries. This is broader than the 850 base list: it includes operator conjugations, pronoun forms, irregular plurals, comparative exceptions, possessives, contractions, 74 international words, and other additions. The validator also accepts selected suffix-derived forms, numerals and explicitly taught Basic constructions outside the base list.
+  - Confirmed examples: `something`, `says`, `said`, `telephone`, and `away` pass the current validator but are not all base-850 entries; `communicate`, `speak`, `computer`, and `hello` are not accepted by the current validator.
+- Important explanation for future work: the 850 list is a fixed curated Basic English vocabulary, not a claim that it contains every elementary/high-frequency everyday English word. The checker can identify membership because the exact list and extension rules are embedded in the local app. The “检查850词汇” UI label is shorthand; technically it checks the current Basic vocabulary rules, which include more than the 850 base entries. This stage checks lexical acceptability only, not syntax, intended meaning, word sense, or naturalness.
+- No source-code change or Android rebuild was made for this Q&A. This plan update changes only the root-level `AUDIO_BUILD_PLAN.md`, which is not included in the workflow's watched paths (`docs/**`, `android-offline/**`, `scripts/**`, workflow file); it will not trigger or cancel an Android build.
