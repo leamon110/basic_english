@@ -787,3 +787,25 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is still an intermediate CI build, not device acceptance or final APK handoff. It has not been extracted and independently verified as a standalone APK for the user.
 - Next: finish the Expression System sequence around Names of Acts, Fixed Word-Groups and Common Needs; then run the final consolidated regression/build and one combined device acceptance.
 
+
+
+### Integrated Expression System milestone — Run 48 (2026-11-18)
+
+- Current App curriculum contains five numbered Expression System lessons:
+  1. Lesson 01 — speak in three contexts (already integrated in the earlier Run 36 line, with staged vocabulary / constrained grammar / target-meaning checks added and accepted in Run 38).
+  2. Lesson 02 — Things and Qualities meaning extensions, including 11 source-indexed body-part terms, a root/expanded-meaning table, 10 questions and an unscored free-response explanation exercise.
+  3. Lesson 03 — Names of Acts: context-dependent Basic renderings of actions.
+  4. Lesson 04 — 250 Fixed Word-Groups: fixed combinations and their source-described formation.
+  5. Lesson 05 — Some Common Needs: common meanings and context-dependent Basic paraphrases.
+- Lessons 03–05 add 23 interactive questions (10 + 5 + 8). Their examples and question feedback distinguish the source's examples from project-level explanation. The three follow-on lessons are implemented in docs/js/expression-more-lessons.js; Lesson 02 remains in docs/js/expression-curriculum.js.
+- Meaning → Basic has now been expanded to 27 registered tasks. The finite checker test suite passes 40 accepted answer patterns, 28 known semantic mismatches, 2 viewpoint mismatches, 1 unsupported-boundary case and 1 punctuation/capitalization case. It remains a bounded rule checker, not a general grammar or semantic parser.
+- Run 48 / ID 44197915524 built commit 9a1793905b4abc7d24bd1c598a5a3004450f6748 successfully. All 18 main workflow steps and all post-job steps completed successfully.
+- Validation log results: Meaning → Basic passed (40 accepted patterns / 28 known mismatches); Teaching passed (13 units / 47 questions / 16 Operators / 20 Directives, Basic examples and spaced schedule); Lesson 02 passed (11 terms / 10 questions); follow-on lessons passed (3 lessons / 23 questions).
+- Audio: all 850 recordings restored from cache; 0 downloaded, 850 restored, 0 errors; package log reports 9.45 MB. Cache-save post-step reported read-only because the matching cache key already exists; this was not a build failure.
+- Android Gradle reported BUILD SUCCESSFUL in 33 seconds.
+- Uploaded APK artifact: basic-english-human-voice-apk, ID 14379604453, ZIP size 9,272,570 bytes, SHA-256 digest c6ca5160739813e556232e027fe389747087f9a44043cbd63d19ed25bbbab863.
+- Uploaded coverage artifact: basic-english-human-audio-coverage, ID 14380462964, size 21,467 bytes, SHA-256 digest b5795138694e56cdc4fb3f29033d069b669c370b3930114309e7761a55635d98.
+- Run 48 is a successful CI build and artifact upload, but the APK ZIP has not yet been extracted and independently inspected in this session. The combined Run 48 APK has not been accepted on the user's Android device. Do not claim final delivery or device acceptance yet.
+- Live branch head at this checkpoint: 9a1793905b4abc7d24bd1c598a5a3004450f6748; latest Actions run: Run 48, completed / success. No active or queued Actions run remains.
+- Next concrete action: inspect/extract the exact Run 48 APK artifact, verify APK integrity, exact 850 audio files, attribution files and the integrated Teaching / Expression assets; then prepare one combined device acceptance. Do not ask for separate incremental APK tests. Before any new code push, refresh branch and Actions state and account for cancel-in-progress: true.
+
