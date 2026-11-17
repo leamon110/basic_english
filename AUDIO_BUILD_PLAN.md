@@ -140,6 +140,18 @@ Implementation:
   - Word Cards text has the no-wrap CSS rule.
 - One harmless obsolete CSS selector, `body.speech-unavailable .word-card-sound`, remains although the corresponding element was removed. It has no rendered target and does not affect the new behavior. Defer this cosmetic cleanup to avoid creating an unnecessary extra build.
 
+### Re-verification of the delivered Run 35 file (2026-11-17)
+
+- User reported that the provided download did not work and asked whether the wrong APK had been sent.
+- Downloaded the official GitHub Actions artifact again directly from Run 35 artifact ID `14282513900` (`basic-english-human-voice-apk`).
+- Official artifact ZIP size: 9,216,571 bytes. It contains exactly `Basic-English-Human-Voice.apk` (9,812,357 bytes).
+- Extracted official APK SHA-256: `292722b8352a5c1f208edb76dda7af9009762d8e45eb848efa257a677d79d9ef`.
+- The previously prepared `Basic-English-Run35-Download.apk` has the same SHA-256 and was compared byte-for-byte with the APK extracted from the freshly downloaded official artifact: exact match.
+- Inspected that APK: exactly 850 word MP3 files are present; the Teaching word-text pronunciation button and course full-tile pronunciation behavior are present; the old standalone Teaching sound button and visible course `▶ 发音` label are absent; the 120px grid and no-wrap CSS rules are present.
+- Conclusion: the APK file itself was not Run 34 or another wrong build; it is byte-identical to the official Run 35 artifact built from commit `d5d1b26a05070f66b6c02d5116f226c2ff708a70`.
+- The user-facing sandbox download failure remains unresolved as a delivery/UI issue. Do not claim the user has successfully downloaded the file. A fallback is to open the Run 35 GitHub Actions page and download artifact `basic-english-human-voice-apk` from the Artifacts section.
+- No code changes or new build were made for this re-verification.
+
 ### Remaining acceptance — install and retest Run 35
 
 The Run 34 APK's audio playback and offline behavior were already confirmed by the user. The revised Run 35 UI has not yet been tested on the phone.
