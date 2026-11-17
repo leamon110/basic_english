@@ -480,7 +480,7 @@
     }
 
     const pronounBase = words.PRONOUN_MAP && words.PRONOUN_MAP[lower];
-    if (pronounBase && pronounBase !== lower) {
+    if (pronounBase) {
       const pronounKinds = {
         me: '宾格形式', him: '宾格形式', her: '宾格/所有格形式',
         us: '宾格形式', them: '宾格形式', whom: '宾格形式',
@@ -488,15 +488,19 @@
         his: '所有格形式', its: '所有格限定形式', their: '所有格限定形式',
         mine: '名词性所有格', ours: '名词性所有格', hers: '名词性所有格',
         yours: '名词性所有格', theirs: '名词性所有格', whose: '所有格形式',
+        we: '人称代词形式', she: '人称代词形式', it: '人称代词形式', they: '人称代词形式',
         these: '复数指示代词形式', those: '复数指示代词形式'
       };
-      const translation = words.CHINESE_TRANSLATIONS[pronounBase];
-      return {
-        ok: true,
-        category: 'forms',
-        detail: (pronounKinds[lower] || '代词相关形式') + '，对应基础代词 ' + pronounBase +
-          (translation ? '（' + translation + '）' : '') + '。'
+      const pronounGlosses = {
+        we: '我们', she: '她', it: '它', they: '他们', these: '这些', those: '那些'
       };
+      const translation = words.CHINESE_TRANSLATIONS[pronounBase] || pronounGlosses[lower];
+      const detail = lower === pronounBase
+        ? (pronounKinds[lower] || '代词形式') + '；当前程序将它作为允许的代词词项登记，但它不属于850基础词表' +
+          (translation ? '（释义：' + translation + '）' : '') + '。'
+        : (pronounKinds[lower] || '代词相关形式') + '，对应代词词条 ' + pronounBase +
+          (translation ? '（释义：' + translation + '）' : '') + '。';
+      return { ok: true, category: 'forms', detail: detail };
     }
 
     const irregularBase = words.IRREGULAR_PLURALS && words.IRREGULAR_PLURALS[lower];
