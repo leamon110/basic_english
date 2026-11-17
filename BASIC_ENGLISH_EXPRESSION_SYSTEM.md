@@ -382,3 +382,17 @@ Live code audit:
 Run 42 is the latest built APK (run 44188628473, code commit 53be103a9ee39f5f42f1186f50f50d7789e27f37). The live branch head is documentation-only ahead of that build; no app code has changed after Run 42. All 22 workflow steps succeeded, 850/850 audio files were restored from cache, and the APK and coverage artifacts were uploaded. The Run 42 phone test remains pending.
 
 **New handoff rule:** do not ask the user to test each partial Teaching or Expression System increment. Finish the integrated work, run internal rule and regression tests, create one final APK, verify its contents, then request one combined phone test and explain the whole learning workflow together.
+
+
+## 19. Teaching rule-learning implementation (2026-11-18)
+
+The Teaching screen now has a structured rule-learning implementation in code:
+- 13 rule units, grouped into word forms, expression structures, meaning interpretation and sentence organization.
+- 47 practice questions, including multi-select questions and answer explanations.
+- A searchable Quick Reference generated from the same rule-unit content, so lesson explanations and lookup entries no longer contradict one another.
+- A separate Rule Review deck, with local progress and the 1/2/4/7/15/30-day schedule. Existing Word Review records and 50-word sessions are preserved; the interface now explains how to use them.
+- Fixed the validator's -ly spelling reconstruction for simple → simply and true → truly.
+
+Run 46 (44195097971) built commit \`19c624d7a37811fc514d9fbb875ca45909ec6d2e\` successfully. All 18 workflow steps succeeded; the new rule tests passed (13 units, 47 questions, 16 Operators, 20 Directives, Basic phrase validation and interval scheduling). All 850 audio files were restored from cache with zero downloads and zero errors. The APK and audio-coverage artifacts were uploaded.
+
+The CI APK is not yet extracted and verified for user handoff, and the user has not accepted this intermediate Teaching build on a device. The agreed process remains one final combined device test after Expression Lesson 02 and the expanded Meaning → Basic bank are integrated.
