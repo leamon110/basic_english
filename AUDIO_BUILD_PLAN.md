@@ -295,3 +295,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Core correction reinforced: the source uses several different structures, not a single Operator + Directive formula. Examples include give a talk, have a knowledge of it, put views into writing, keep it in mind, make an attempt, and get taller.
 - No App source code was changed. No Android build was triggered. This is a repository-root Markdown research milestone and does not match the workflow's watched paths.
 - Next action: create the first end-to-end Meaning → Basic lesson, using the source's three different speak contexts, before changing the App's teaching UI.
+
+
+## Research milestone — Expression Lesson 01 prototype (2026-11-17)
+
+- Added `BASIC_ENGLISH_EXPRESSION_LESSON_01.md`.
+- The lesson uses Ogden's original three speak contexts from `The ABC of Basic English`, p.244: speak to a person → say something to him; speak at a meeting → give a talk / make a statement; speak a language → have a knowledge of it.
+- The lesson separates original examples from project-designed explanations and exercises.
+- It teaches context recognition, Operator / Name / Directive decomposition, independent construction and reverse interpretation.
+- No App source code was changed and no Android build was triggered. This is a repository-root Markdown lesson prototype.
+- Next action: inspect the current App navigation and module structure, then add this as a clearly separate Expression System learning track without altering the existing 45 Steps or the accepted audio features.

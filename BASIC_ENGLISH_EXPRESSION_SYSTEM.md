@@ -298,3 +298,12 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 - 当前 App：14/45课已中文适配；Teaching 有8类规则练习；Sentence Practice 有100例句、20排序题和10组对话。
 - 已确认问题：当前“operator + direction + noun”概括过度，表达练习尚未形成意思分析和独立生成闭环。
 - 本文是研究与设计基线；尚未修改 App 代码，也尚未生成新的课程 APK。
+
+
+## 12. 首个表达系统教学单元已完成
+
+- 教学原型：`BASIC_ENGLISH_EXPRESSION_LESSON_01.md`。
+- 主题：同一个普通英语动词 speak 在三个语境中的不同含义。
+- 原作者例子：say something to him；give a talk / make a statement；have a knowledge of it。
+- 新增教学步骤：语境识别 → 结构拆解 → 组合理由 → 独立生成 → 反向理解。
+- 本文档是内容原型，尚未集成进 App，也没有改变原有45 Steps。
