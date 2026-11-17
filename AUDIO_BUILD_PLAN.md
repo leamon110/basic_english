@@ -704,3 +704,35 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Added the module and stylesheet to the HTML entry point and Service Worker cache; cache name is now basic-english-v35.
 - This implementation is local JavaScript and does not call a remote API. Offline behavior still requires verification in the built APK and on the user's phone.
 - Next: run syntax and rule tests, inspect the triggered Android Actions run and all artifacts/logs, extract and inspect the exact APK, then ask the user to test the six exercises. Device acceptance remains pending.
+
+
+### Run 42 — Meaning → Basic multi-answer practice build and APK verification (2026-11-18)
+
+- Run 42 / ID `44188628473`, built from code commit `53be103a9ee39f5f42f1186f50f50d7789e27f37`, completed successfully. All 22 workflow steps succeeded.
+- The added workflow step “Validate JavaScript and Meaning-to-Basic rules” passed:
+  - All JavaScript files under `docs/js/` passed `node --check`.
+  - Rule tests passed: 11 accepted answer patterns; 10 known semantic mismatches; 2 come/go viewpoint mismatches; 1 unsupported boundary; 1 capitalization/punctuation case.
+  - The actual existing `data.js` and `validator.js` were loaded in Node; all accepted and known-wrong answer examples passed the vocabulary layer as expected.
+- Audio/cache:
+  - Cache restore succeeded; final coverage 850 / 850.
+  - Downloaded 0; restored from cache 850; errors 0.
+  - All 850 chosen source records have title, speaker, uploader, accent, licence and source URL.
+  - Primary coverage 845; matched 850; missing 0; completed 850; attempted 850; pending 0; failed 0; download errors 0.
+  - MP3 total 9,446,648 bytes; average 11,114 bytes.
+  - Cache-save step succeeded and saved the run-specific key.
+- Android Gradle: `BUILD SUCCESSFUL` in 36 seconds.
+- APK artifact: `basic-english-human-voice-apk`, ID `14374873602`, artifact ZIP size 9,237,150 bytes, not expired.
+- Coverage artifact: `basic-english-human-audio-coverage`, ID `14375966732`, artifact ZIP size 21,467 bytes, not expired.
+- Non-fatal warnings: setup-java@v4 and Node.js 20 deprecation notices; no failed steps.
+- Extracted the exact APK from the official artifact ZIP:
+  - File: `Basic-English-Expression-System-Run42.apk`.
+  - Size: 9,833,411 bytes.
+  - SHA-256: `9ac0df5f57264e34ed14ea3c70bf2c3ce3e4d1051113928245b247a0fb386b96`.
+  - Outer artifact ZIP SHA-256 matches GitHub artifact metadata: `69ed755f6c5adcf2e1eddc26f1f08bea94a0f3a7f9129a63438466ee6d9030a3`.
+  - APK ZIP integrity passed; exactly 850 MP3s exist, all unique, and their basenames exactly match the 850 entries in packaged `ALL_850`.
+  - All 850 MP3 payload SHA-256 hashes are distinct; MP3 total 9,446,648 bytes; a single FFmpeg concat-demuxer decode pass over all 850 files passed.
+  - APK includes `meaning-basic.js`, `meaning-basic.css`, updated app route and HTML references, Service Worker cache v35, and both audio attribution files.
+- Created direct attachment copy `/mnt/data/Basic-English-Expression-System-Run42-verified.apk`; size 9,833,411 bytes; SHA-256 matches extracted APK exactly; destination ZIP integrity and 850-audio count passed.
+- The new multi-answer checker is built and archive-verified, but the user's Android installation/device acceptance is pending. Do not mark the feature accepted until the user tests it.
+- Latest run after completion: Run 42 success; no active or queued Actions run.
+- Next action: provide the verified direct APK and ask the user to test MB-01 to MB-06, especially multiple accepted answers, direction reversal, giver/receiver reversal, come/go viewpoint, and causative meaning.
