@@ -328,7 +328,7 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Lesson 01 teaches the three source-backed meanings of speak; includes a three-question context quiz, a free-writing area with vocabulary-only validation, reverse interpretation, and explicit source attribution.
 - Existing original 45 Steps, Teaching, Sentence Practice, word audio, and audio assets were not edited.
 - Static/runtime verification in the tools environment: both JavaScript files parse; the new module renders into a mock container; validator accepts `I say something to him.` and rejects the out-of-vocabulary word `communicate`.
-- GitHub Actions Run 36 (`44080767833`) is in progress for the code commit. No new build has been triggered after it.
+- GitHub Actions Run 36 (`44080767833`) subsequently completed successfully; see the verified Run 36 build-result section below. No new build was triggered after it.
 - User-device installation and interaction retest remain pending; the feature is not yet accepted on device.
 
 
@@ -345,3 +345,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - The artifact ZIP was requested from GitHub Actions; the exact artifact name to download is `basic-english-human-voice-apk` (not the coverage report).
 - No active workflow remains.
 - User-device test is still pending. Next: install the Run 36 APK, open the separate “表达系统” page, test Lesson 01 quiz and vocabulary checker, and confirm that original 45 Steps and audio still work.
+
+
+## Curriculum clarification — 45 Steps and the project Expression System (2026-11-17)
+
+- The 45-step course is not devoid of expressive practice. The reproduced course on BasicEnglish.org labels Step 42 “Basic for everyday needs”; it contains five practical dialogues and asks the learner to “Give an account in Basic” of a railway journey. Step 1 already has sentence-production exercises using the learned words and structures.
+- Therefore, do not describe the new Expression System track as filling a complete absence in the original 45 Steps. The distinction is that the project is making the meaning-to-Basic conversion process an explicit, separately navigable, systematically practiced learning track.
+- “Expression System” is a project-level umbrella name, not a formal Ogden chapter title or a claim that Ogden published one standalone course with this exact name.
+- Names of Acts is one component of the broader system. The ABC's structure also covers Things, Qualities, Operations/Operators, Directions, Word-order, other word-forms, Expansions and Special Senses, 250 Fixed Word-Groups, and “Some Common Needs” (Simple Acts, Complex Acts, Other Suggestions), among other sections.
+- Source checks: [Basic English 45-step course, Step 42](https://basicenglish.org/step-42/index.html); [45-step course index](https://basicenglish.org/index_htm.html); Ogden, *The ABC of Basic English* (1932), table of contents and “Some Common Needs”.
+- Next content-design action: preserve the original 45-step material and build the supplementary track by mapping the relevant original system components to explicit meaning-analysis, Basic construction, and reverse-understanding exercises. Do not present the project track as Ogden's original named module.
