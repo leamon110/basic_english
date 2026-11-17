@@ -551,3 +551,17 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Run 39 (ID `44170203544`), built from commit `91e314d78e584816ca0cd0ea098a384a4128a15f`, is currently in progress at workflow step 12, “Fetch and package all 850 human word recordings”. The job steps before it completed successfully; no artifacts have been uploaded yet. The workflow uses `cancel-in-progress: true`.
 - Do not modify `docs/**` while Run 39 is active. After it completes, correct the six pronoun classifications, run a full classification-coverage test over all 1,909 direct allowed entries plus representative generated forms, then allow the follow-up APK build to complete.
 - Device acceptance of the revised word-by-word feedback remains pending; do not mark it accepted before the user tests it.
+
+
+### Run 39 — initial vocabulary-feedback APK build result (2026-11-18)
+
+- Run 39 / ID `44170203544`, built code commit `91e314d78e584816ca0cd0ea098a384a4128a15f`, completed successfully.
+- All 22 job steps completed successfully. Android Gradle reported `BUILD SUCCESSFUL` in 35 seconds.
+- Audio coverage: 850/850; 0 downloaded, 850 restored from cache, 0 errors. Log confirms `Packaged all 850 human recordings; MP3 total 9.45 MB (0 new, 850 cached)`.
+- Cache restore succeeded. Cache-save step completed and saved the run-specific cache key.
+- APK artifact: `basic-english-human-voice-apk`, ID `14365979863`, 9,231,026 bytes, not expired.
+- Coverage artifact: `basic-english-human-audio-coverage`, ID `14367117630`, 21,467 bytes, not expired.
+- Workflow warnings were dependency/runtime deprecation notices only; no job step failed.
+- Run 39 is a successful build of the first transparency implementation, but it is not the final user-test APK because the full allowed-word scan identified six pronoun entries needing explicit classification.
+- At this checkpoint, the branch head is `1c22385d90e1cd4b33c623a033de4386c06df31d`; this is the root-level plan update and does not alter the Run 39 build commit. No active or queued Actions run remained.
+- Next action: fix classification for `we`, `she`, `it`, `they`, `these`, and `those`; then rerun the complete 1,909-entry direct-allowlist classification scan and representative generated-form tests before triggering the final APK build.
