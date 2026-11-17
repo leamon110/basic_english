@@ -157,8 +157,9 @@
           <p>请用 Basic 表达“我向他表达一些内容”。先写完整句子，再依次完成词汇、语法结构和意思检查。</p>
           <textarea id="expression-writing" rows="3" placeholder="Write your Basic English sentence here..."></textarea>
           <p class="expression-check-intro">请按顺序完成三项检查。只有前一步通过后，下一步才会开放。</p>
+          <p class="expression-check-intro">词汇检查会逐词说明：它属于850基础词、允许的词形、课程特殊形式、国际通用词，还是不符合当前规则。词汇通过不代表语法和意思也正确。</p>
           <div class="expression-writing-actions">
-            <button type="button" class="expression-primary" id="expression-check-words">① 检查850词汇</button>
+            <button type="button" class="expression-primary" id="expression-check-words">① 检查 Basic 词汇规则</button>
             <button type="button" class="expression-primary" id="expression-check-grammar" disabled>② 检查语法结构</button>
             <button type="button" class="expression-primary" id="expression-check-meaning" disabled>③ 检查意思</button>
             <button type="button" class="expression-secondary" id="expression-show-hint">显示提示</button>
@@ -285,33 +286,397 @@
     if (meaningButton) meaningButton.disabled = true;
   }
 
+  const VOCABULARY_CATEGORIES = [
+    { key: 'base', label: '850基础词' },
+    { key: 'forms', label: '允许的词形变化/语法形式' },
+    { key: 'course', label: '课程明确允许的特殊词项/构式' },
+    { key: 'international', label: '额外允许的国际通用词' },
+    { key: 'numeral', label: '数字形式' },
+    { key: 'other', label: '其他已登记允许形式' },
+    { key: 'invalid', label: '不符合当前词汇规则' }
+  ];
+
+  const KNOWN_CONTRACTIONS = new Set([
+    "i'll", "i'd", "i've", "don't", "doesn't", "didn't", "won't", "can't",
+    "isn't", "aren't", "wasn't", "weren't", "haven't", "hasn't", "hadn't",
+    "we'll", "we'd", "you'll", "you'd", "he'll", "he'd", "she'll", "she'd",
+    "they'll", "they'd", "it's", "that's", "there's", "here's", "let's"
+  ]);
+
+  function findDerivedVocabularyForm(word, words) {
+    const all = words.ALL_850;
+    const nouns = words.NOUNS_WITH_DERIVATIVES;
+    const adjErIng = words.ADJ_ER_ING;
+    const qualities = new Set([].concat(words.QUALITIES_100 || [], words.QUALITIES_50 || []));
+    const knownBase = function (base) {
+      return all.has(base) || nouns.has(base);
+    };
+
+    if (word.endsWith("ies")) {
+      const base = word.slice(0, -3) + "y";
+      if (all.has(base)) return { base: base, rule: "复数 -ies" };
+    }
+    if (word.endsWith("es")) {
+      const base1 = word.slice(0, -2);
+      const base2 = word.slice(0, -1);
+      if (all.has(base1)) return { base: base1, rule: "复数 -es" };
+      if (all.has(base2)) return { base: base2, rule: "复数 -es" };
+    }
+    if (word.endsWith("s") && !word.endsWith("ss")) {
+      const base = word.slice(0, -1);
+      if (all.has(base)) return { base: base, rule: "复数 -s" };
+    }
+
+    if (word.endsWith("ed")) {
+      const base = word.slice(0, -2);
+      if (knownBase(base)) return { base: base, rule: "-ed 形式" };
+      if (word.length >= 4) {
+        const base2 = word.slice(0, -3);
+        if (knownBase(base2)) return { base: base2, rule: "双写末辅音后加 -ed" };
+      }
+      if (word.endsWith("ied")) {
+        const baseY = word.slice(0, -3) + "y";
+        if (all.has(baseY)) return { base: baseY, rule: "y 变 i 后加 -ed" };
+      }
+    }
+
+    if (word.endsWith("ing")) {
+      const base = word.slice(0, -3);
+      if (knownBase(base)) return { base: base, rule: "-ing 形式" };
+      const base2 = word.slice(0, -4);
+      if (base2.length >= 2 && all.has(base2)) return { base: base2, rule: "双写末辅音后加 -ing" };
+      if (word.endsWith("ying")) {
+        const baseY = word.slice(0, -3) + "y";
+        if (all.has(baseY) || all.has(baseY.slice(0, -1))) {
+          return { base: all.has(baseY) ? baseY : baseY.slice(0, -1), rule: "-ying 形式" };
+        }
+      }
+    }
+
+    if (word.endsWith("er")) {
+      const base = word.slice(0, -2);
+      if (all.has(base) || nouns.has(base) || adjErIng.has(base)) {
+        return { base: base, rule: "-er 派生形式" };
+      }
+      if (word.endsWith("ier")) {
+        const baseY = word.slice(0, -3) + "y";
+        if (all.has(baseY)) return { base: baseY, rule: "y 变 i 后加 -er" };
+      }
+      if (word.endsWith("yer")) {
+        const baseY = word.slice(0, -3);
+        if (all.has(baseY)) return { base: baseY, rule: "-yer 形式" };
+      }
+    }
+
+    if (word.endsWith("ly")) {
+      const base = word.slice(0, -2);
+      if (all.has(base)) return { base: base, rule: "-ly 派生形式" };
+      if (word.endsWith("ily")) {
+        const baseY = word.slice(0, -3) + "y";
+        if (all.has(baseY)) return { base: baseY, rule: "y 变 i 后加 -ly" };
+      }
+      const baseBle = word.slice(0, -3) + "le";
+      if (all.has(baseBle)) return { base: baseBle, rule: "去 e 后加 -ly" };
+      if (word.endsWith("ally")) {
+        const baseTic = word.slice(0, -5) + "ic";
+        if (all.has(baseTic)) return { base: baseTic, rule: "-ic 变 -ically" };
+      }
+    }
+
+    if (word.startsWith("un") && word.length > 3) {
+      const base = word.slice(2);
+      if (words.UN_PREFIX_ADJECTIVES.has(base) || all.has(base)) {
+        return { base: base, rule: "un- 前缀" };
+      }
+      if (base.endsWith("ed") || base.endsWith("ing") || base.endsWith("ly")) {
+        const baseBase = base.endsWith("ed") ? base.slice(0, -2) :
+          base.endsWith("ing") ? base.slice(0, -3) : base.slice(0, -2);
+        if (words.UN_PREFIX_ADJECTIVES.has(baseBase)) {
+          return { base: baseBase, rule: "un- 前缀加词形变化" };
+        }
+      }
+    }
+
+    if (word.endsWith("est")) {
+      const base = word.slice(0, -3);
+      if (all.has(base) && qualities.has(base)) return { base: base, rule: "最高级 -est" };
+      if (all.has(base + "e") && qualities.has(base + "e")) {
+        return { base: base + "e", rule: "去 e 后加 -est" };
+      }
+      if (word.endsWith("iest")) {
+        const baseY = word.slice(0, -4) + "y";
+        if (all.has(baseY) && qualities.has(baseY)) return { base: baseY, rule: "y 变 i 后加 -est" };
+      }
+    }
+
+    if (word.endsWith("er")) {
+      const base = word.slice(0, -2);
+      if (all.has(base) && qualities.has(base)) return { base: base, rule: "比较级 -er" };
+      if (all.has(base + "e") && qualities.has(base + "e")) {
+        return { base: base + "e", rule: "去 e 后加 -er" };
+      }
+    }
+    if (word.endsWith("ier")) {
+      const baseY = word.slice(0, -3) + "y";
+      if (all.has(baseY) && qualities.has(baseY)) return { base: baseY, rule: "y 变 i 后加 -er" };
+    }
+    return null;
+  }
+
+  function explainVocabularyWord(word) {
+    const words = window.BE && window.BE.WORDS;
+    if (!words || typeof window.BE.isAllowed !== 'function') {
+      return { ok: false, category: 'invalid', detail: '当前无法读取词汇规则。' };
+    }
+
+    const lower = String(word || '').toLowerCase();
+    const allowed = window.BE.isAllowed(lower);
+    if (!allowed || !allowed.ok) {
+      return {
+        ok: false,
+        category: 'invalid',
+        detail: '当前规则没有找到对应的850基础词、允许词形、课程特殊形式或国际词依据。'
+      };
+    }
+
+    if (words.ALL_850.has(lower)) {
+      const groups = [
+        { key: 'OPERATIONS', label: '操作词' },
+        { key: 'THINGS_400', label: '一般事物词' },
+        { key: 'THINGS_200', label: '可图示事物词' },
+        { key: 'QUALITIES_100', label: '一般性质词' },
+        { key: 'QUALITIES_50', label: '相反性质词' }
+      ];
+      const group = groups.find(function (item) {
+        return Array.isArray(words[item.key]) && words[item.key].includes(lower);
+      });
+      const translation = words.CHINESE_TRANSLATIONS[lower];
+      return {
+        ok: true,
+        category: 'base',
+        detail: '属于850基础词表' + (group ? '中的' + group.label : '') +
+          (translation ? '；词表释义：' + translation : '') + '。'
+      };
+    }
+
+    if (words.INTERNATIONAL_WORDS.has(lower)) {
+      return {
+        ok: true,
+        category: 'international',
+        detail: '列在额外允许的国际通用词清单中；它不计入850个基础词条。'
+      };
+    }
+
+    const operatorBase = words.CONJUGATED_MAP && words.CONJUGATED_MAP[lower];
+    if (operatorBase && operatorBase !== lower) {
+      const translation = words.CHINESE_TRANSLATIONS[operatorBase];
+      return {
+        ok: true,
+        category: 'forms',
+        detail: '动词变形，原形为 ' + operatorBase +
+          (translation ? '（' + translation + '）' : '') +
+          '；词汇层面允许，是否符合本句语法由下一阶段检查。'
+      };
+    }
+
+    const pronounBase = words.PRONOUN_MAP && words.PRONOUN_MAP[lower];
+    if (pronounBase && pronounBase !== lower) {
+      const pronounKinds = {
+        me: '宾格形式', him: '宾格形式', her: '宾格/所有格形式',
+        us: '宾格形式', them: '宾格形式', whom: '宾格形式',
+        my: '所有格限定形式', our: '所有格限定形式', your: '所有格限定形式',
+        his: '所有格形式', its: '所有格限定形式', their: '所有格限定形式',
+        mine: '名词性所有格', ours: '名词性所有格', hers: '名词性所有格',
+        yours: '名词性所有格', theirs: '名词性所有格', whose: '所有格形式',
+        these: '复数指示代词形式', those: '复数指示代词形式'
+      };
+      const translation = words.CHINESE_TRANSLATIONS[pronounBase];
+      return {
+        ok: true,
+        category: 'forms',
+        detail: (pronounKinds[lower] || '代词相关形式') + '，对应基础代词 ' + pronounBase +
+          (translation ? '（' + translation + '）' : '') + '。'
+      };
+    }
+
+    const irregularBase = words.IRREGULAR_PLURALS && words.IRREGULAR_PLURALS[lower];
+    if (irregularBase && irregularBase !== lower) {
+      return {
+        ok: true,
+        category: 'forms',
+        detail: '不规则复数形式，对应单数基础词 ' + irregularBase + '。'
+      };
+    }
+
+    const comparativeBase = words.COMPARATIVE_EXCEPTIONS && words.COMPARATIVE_EXCEPTIONS[lower];
+    if (comparativeBase && comparativeBase !== lower) {
+      return {
+        ok: true,
+        category: 'forms',
+        detail: '比较级、最高级或词表列出的相关例外形式，对应词条 ' + comparativeBase + '。'
+      };
+    }
+
+    if (KNOWN_CONTRACTIONS.has(lower)) {
+      return {
+        ok: true,
+        category: 'forms',
+        detail: '当前词汇规则明确登记的缩写形式；具体在句中的用法仍需结合语法判断。'
+      };
+    }
+
+    if (lower.endsWith("'s")) {
+      const base = lower.slice(0, -2);
+      if (window.BE.isAllowed(base).ok) {
+        return {
+          ok: true,
+          category: 'forms',
+          detail: '由允许词项 ' + base + " 加 's 构成；可能表示所有格或缩写，具体功能需结合句子判断。"
+        };
+      }
+    }
+
+    if (allowed.isBasicConstruction) {
+      return {
+        ok: true,
+        category: 'course',
+        detail: '这是 validator.js 中课程明确允许的特殊词项/构式；不属于850基础词条本身。'
+      };
+    }
+
+    if (allowed.isNumeral || /^\d+(?:st|nd|rd|th)?$/.test(lower)) {
+      return {
+        ok: true,
+        category: 'numeral',
+        detail: '符合当前词汇检查器允许的数字/序数词写法。'
+      };
+    }
+
+    const derived = findDerivedVocabularyForm(lower, words);
+    if (derived) {
+      const translation = words.CHINESE_TRANSLATIONS[derived.base];
+      return {
+        ok: true,
+        category: 'forms',
+        detail: '由基础词 ' + derived.base + (translation ? '（' + translation + '）' : '') +
+          ' 按' + derived.rule + '规则构成；当前词汇规则允许。'
+      };
+    }
+
+    if (words.ALLOWED_WORDS.has(lower)) {
+      return {
+        ok: true,
+        category: 'other',
+        detail: '在当前程序的 ALLOWED_WORDS 允许集合中直接登记；不属于850基础词。'
+      };
+    }
+
+    return {
+      ok: true,
+      category: 'other',
+      detail: '被当前词汇规则接受，但没有匹配到更具体的来源分类。'
+    };
+  }
+
+  function inspectVocabulary(text) {
+    const byWord = new Map();
+    let totalWordCount = 0;
+
+    String(text || '').split(/\s+/).forEach(function (raw, index) {
+      const normalized = raw.replace(/[’‘]/g, "'");
+      const clean = normalized
+        .replace(/^[^a-zA-Z0-9']+|[,.;:!?\\"'()\[\]{}<>“”‘’—–…]+$/g, '')
+        .replace(/^[,.!?;:'"()“”‘’—–…]+/, "");
+      if (!clean) return;
+
+      totalWordCount++;
+      const key = clean.toLowerCase();
+      if (!byWord.has(key)) {
+        const explanation = explainVocabularyWord(clean);
+        byWord.set(key, {
+          word: clean,
+          count: 0,
+          index: index,
+          ok: explanation.ok,
+          category: explanation.category,
+          detail: explanation.detail
+        });
+      }
+      byWord.get(key).count++;
+    });
+
+    const items = Array.from(byWord.values());
+    return {
+      valid: items.length > 0 && items.every(function (item) { return item.ok; }),
+      totalWordCount: totalWordCount,
+      uniqueWordCount: items.length,
+      words: items
+    };
+  }
+
+  function formatVocabularyFeedback(result) {
+    const lines = [];
+    lines.push(result.valid
+      ? '词汇检查通过：句子中的词均符合当前 Basic 词汇规则。'
+      : '词汇检查未通过：发现不符合当前 Basic 词汇规则的词。');
+    lines.push('共检查 ' + result.totalWordCount + ' 次词语出现，' +
+      result.uniqueWordCount + ' 个不同词项。');
+
+    const counts = {};
+    VOCABULARY_CATEGORIES.forEach(function (category) {
+      counts[category.key] = result.words.filter(function (item) {
+        return item.category === category.key;
+      }).length;
+    });
+    lines.push('分类统计：' + VOCABULARY_CATEGORIES.map(function (category) {
+      return category.label + ' ' + counts[category.key];
+    }).join('；') + '。');
+
+    VOCABULARY_CATEGORIES.forEach(function (category) {
+      const items = result.words.filter(function (item) {
+        return item.category === category.key;
+      });
+      if (!items.length) return;
+      lines.push('');
+      lines.push('【' + category.label + ' · ' + items.length + '】');
+      items.forEach(function (item) {
+        lines.push('• ' + item.word + (item.count > 1 ? ' ×' + item.count : '') + '：' + item.detail);
+      });
+    });
+    return lines.join('\n');
+  }
+
   function checkVocabulary(container) {
     const input = container.querySelector('#expression-writing');
     const feedback = container.querySelector('#expression-vocabulary-feedback');
     const grammarButton = container.querySelector('#expression-check-grammar');
     if (!input || !feedback) return;
     resetWritingChecks(container);
+    feedback.style.whiteSpace = 'pre-line';
+    feedback.style.overflowWrap = 'anywhere';
+
     const text = input.value.trim();
     if (!text) {
       feedback.textContent = '请先写一句 Basic English。';
       feedback.className = 'expression-writing-feedback is-wrong';
       return;
     }
-    if (!window.BE || typeof window.BE.validate !== 'function') {
+    if (!window.BE || typeof window.BE.isAllowed !== 'function' || !window.BE.WORDS) {
       feedback.textContent = '当前无法调用词汇检查器，暂时不能继续。';
       feedback.className = 'expression-writing-feedback is-wrong';
       return;
     }
-    const result = window.BE.validate(text);
-    if (result && result.valid) {
-      feedback.textContent = '词汇检查通过：未发现超出当前词汇规则的单词。下一步请点击“② 检查语法结构”。';
-      feedback.className = 'expression-writing-feedback is-correct';
-      if (grammarButton) grammarButton.disabled = false;
-    } else {
-      const bad = result && result.errors ? result.errors.map(function (item) { return item.word; }).join('、') : '无法识别的词';
-      feedback.textContent = '词汇检查未通过：发现不符合当前词汇规则的词：' + bad + '。请修改后重新检查。';
+
+    const result = inspectVocabulary(text);
+    if (!result.totalWordCount) {
+      feedback.textContent = '没有识别到可检查的英文词项，请输入句子后重试。';
       feedback.className = 'expression-writing-feedback is-wrong';
+      return;
     }
+
+    feedback.textContent = formatVocabularyFeedback(result);
+    feedback.className = 'expression-writing-feedback ' + (result.valid ? 'is-correct' : 'is-wrong');
+    if (result.valid && grammarButton) grammarButton.disabled = false;
   }
 
   function analyzeLessonSentence(text) {
@@ -446,5 +811,5 @@
   }
 
   window.BE = window.BE || {};
-  window.BE.expression = { render: render };
+  window.BE.expression = { render: render, inspectVocabulary: inspectVocabulary };
 })();
