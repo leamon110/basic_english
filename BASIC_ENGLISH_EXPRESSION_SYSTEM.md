@@ -257,6 +257,14 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 - 已将当前 App 的14个 Operator + Direction 练习映射重新分类，确认其中混有 Operator + Quality、Operator + Noun + Directive、名词性动作表达等不同结构。
 - 本索引是第一轮教学索引，不是完整词典；特殊用法和搭配仍需继续从原书核对。
 
+## 9. Directives 首轮索引已建立
+
+- 详细索引：\`BASIC_ENGLISH_DIRECTIVES.md\`。
+- 已按 Ogden 原书 Names of Directions 章节整理21个词的空间根义、抽象扩展和语境边界。
+- 已区分原书章节中的方向词，与850 Operations 中其他关系/方向相关词（如 across、against、till、near、forward 等）。
+- 已特别整理 among / between、before / after、to / for / from / by、in / on / out / off、up / down / over / through 等对比。
+- 本索引不是完整搭配字典；下一步需与16个 Operators 交叉，逐条核验真实组合。
+
 ## 9. 下一阶段执行顺序
 
 1. 建立16个 Operators 的意义和组合模式索引，记录基本物理意义、常见扩展和原文例句。
@@ -269,7 +277,7 @@ make 与 take 不是可互换的万能动词。Ogden 对它们的选择有语义
 
 在规则索引和例句核验之前，不先批量补写31课，也不触发 Android 构建。
 
-## 10. 当前状态
+## 11. 当前状态
 
 - 已核对：原版45 Steps目录、Step 1、3、5、7、9，以及《The ABC of Basic English》中 Other Word-Forms、Expansions、Names of Acts、Names of Directions、250 Fixed Word-Groups、Some Common Needs 的相关文本。
 - 当前 App：14/45课已中文适配；Teaching 有8类规则练习；Sentence Practice 有100例句、20排序题和10组对话。
