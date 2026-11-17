@@ -38,7 +38,7 @@
        ['不规则形式','good 的常见副词形式是 well，不是 goodly。']],
       ['quick → quickly','happy → happily','simple → simply','good → well'],
       '不要把 -ly 当成无条件适用的拼接规则。','项目规则整理与 docs/js/validator.js；Ogden 的 Other Word-Forms。自动接受范围以当前 validator.js 为准。',
-      ['quickly','happily','simply','well'],[
+      ['quickly','happily','simply','truly','well'],[
         Q('adv1','quick 的副词形式是什么？',[['quickly','quickly'],['quickily','quickily'],['quickful','quickful']],['quickly'],'quick → quickly，直接加 -ly。'),
         Q('adv2','happy 的副词形式是什么？',[['happyly','happyly'],['happily','happily'],['happyle','happyle']],['happily'],'happy 以辅音字母 + y 结尾，改为 -ily。'),
         Q('adv3','good 的常见副词形式是什么？',[['goodly','goodly'],['well','well'],['gooder','gooder']],['well'],'good → well 是不规则对应。')

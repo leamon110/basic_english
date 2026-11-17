@@ -23,6 +23,8 @@ for(const unit of app.units){
  for(const phrase of unit.basicExamples||[]){const result=window.BE.validate(phrase);assert.equal(result.valid,true,unit.id+' Basic example: '+phrase+' / '+(result.errors||[]).map(x=>x.word).join(','));}
 }
 assert.ok(count>=40,'at least forty rule questions');
+assert.equal(window.BE.validate('simply').valid,true,'simple should form simply');
+assert.equal(window.BE.validate('truly').valid,true,'true should form truly');
 const first=app.nextSchedule(null,true,1000);assert.equal(first.level,1);assert.equal(first.nextReviewAt,1000+86400000);
 let state=null;for(let i=0;i<6;i++)state=app.nextSchedule(state,true,5000+i*86400000);
 assert.equal(state.level,6);assert.equal(state.nextReviewAt,5000+5*86400000+30*86400000);

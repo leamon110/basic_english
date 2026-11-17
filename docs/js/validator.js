@@ -97,8 +97,12 @@ function isAllowedWord(word) {
     }
     // simple -> simply; true -> truly
     if (lower.endsWith("ly")) {
-      const baseBle = lower.slice(0, -3) + "le"
+      // simple -> simply: replace the final -le with -ly.
+      const baseBle = lower.slice(0, -2) + "le"
       if (BE.ALL_850.has(baseBle)) return { ok: true }
+      // true -> truly: retain the final -e before adding -ly.
+      const baseE = lower.slice(0, -2) + "e"
+      if (BE.ALL_850.has(baseE)) return { ok: true }
     }
     // -tic -> -tically: automatic -> automatically
     if (lower.endsWith("ally")) {
