@@ -68,6 +68,8 @@ jobs:
           find docs/js -type f -name '*.js' -print0 | xargs -0 -n1 node --check
           node --check scripts/test_meaning_basic.js
           node scripts/test_meaning_basic.js
+          node --check scripts/test_teaching.js
+          node scripts/test_teaching.js
 
       - name: Package the learning site as local app assets
         run: |

@@ -17,7 +17,7 @@ function renderTeaching(container) {
     <div class="teaching-layout">
       <div class="teaching-tabs">
         <button class="tab-btn active" data-tab="cards" onclick="BE.teaching.switchTab('cards')">📖 单词卡 Word Cards</button>
-        <button class="tab-btn" data-tab="exercises" onclick="BE.teaching.switchTab('exercises')">✏ 规则练习</button>
+        <button class="tab-btn" data-tab="exercises" onclick="BE.teaching.switchTab('exercises')">✏ 规则学习与练习</button>
         <button class="tab-btn" data-tab="spaced" onclick="BE.teaching.switchTab('spaced')">🧠 间隔复习</button>
         <button class="tab-btn" data-tab="reference" onclick="BE.teaching.switchTab('reference')">📚 规则速查</button>
       </div>
@@ -334,6 +334,7 @@ let currentExercise = 0
 let exerciseResults = { correct: 0, total: 0 }
 
 function renderExercises(container) {
+  if (window.BE.ruleLearning) return window.BE.ruleLearning.renderExercises(container)
   container.innerHTML = `
     <div class="exercises-section">
       <div class="exercises-header">
@@ -417,6 +418,7 @@ function checkAnswer(index) {
 // QUICK REFERENCE
 // ============================================================
 function renderReference(container) {
+  if (window.BE.ruleLearning) return window.BE.ruleLearning.renderReference(container)
   container.innerHTML = `
     <div class="reference-section">
       <h3>Ogden's Basic English Rules — Quick Look-up</h3>
@@ -539,6 +541,7 @@ function srSave(key, data) {
 }
 
 function renderSR(container) {
+  if (window.BE.ruleLearning) return window.BE.ruleLearning.renderSpaced(container)
   var p = srLoad(SR_KEY) || { w: {}, s: { sc: 0, tl: 0, ms: 0 } }
   var session = srLoad(SR_SESSION_KEY)
   var now = Date.now()
