@@ -1005,67 +1005,71 @@ Then give Basic expressions and ask the learner to reconstruct the quantity/degr
 
 ### Teaching objective
 
-The learner identifies the exact time relation: how long ago, whether something has happened by now, whether it has not happened yet, what point a period starts from, what comes next, whether something repeats, or whether it continues always.
+The learner identifies the exact time or sequence relation in context: a past period, what has happened by now, what has not happened yet, a period related to a past point, what comes after this, a repeated next occasion, or continuation through time.
 
 ### Proposed teaching flow
 
-#### 1. Past time and time up to now
+#### 1. Past reference and time up to now
+
+Compare the source's different contexts:
+- **once** = at one time / in the past. This is the past-time sense; C10 keeps **once = one time only**.
+- **a long time ago** = a long time back / in the old days. Keep the source's example scope; do not invent a universal formula for every numbered duration + ago.
+- An event that has taken place **already** has taken place in the past / before.
+- A person who is **already there** is there now. This is a present-location statement, not the same paraphrase as a completed event.
+- An account of events **so far / up to now** is an account of what has taken place through the present point.
+- If someone is not there **yet**, he is still not there / so far he has not come.
+- **And yet** as a joining statement has the sense **at the same time**. Keep it separate from negative yet.
+
+The learner must identify the reference point: an earlier time, the present point, or the period extending up to now.
+
+#### 2. since: a past-time relation or a reason
+
+Use the three source contexts separately:
+- **since last year** in the source sentence about friends not seen since last year: the source paraphrases the full sentence as not having seen them **for a long time**. Do not turn this into a universal word-for-word rule that since = for a long time.
+- Events that have taken place **since then** have taken place **after then**.
+- In **since it is late, let us go to bed**, since gives the reason and means **because**.
+
+The time uses cross-link to temporal relations; since = because cross-links to the sentence-relation foundation and is not taught as a time meaning.
+
+#### 3. next: sequence, repetition or spatial position
 
 Compare:
-- ago / a long time back;
-- already / before;
-- so far / up to now;
-- yet in a negative sentence.
+- What we will do **next** is what we will do **after this**.
+- When we **next** do it, we do it **again** — the next occasion of the same action.
+- The house **next to** this is the house **nearest to it**. This is spatial adjacency and cross-links to C04 Movement & Position.
 
-The learner must identify the reference point: a past time, the present moment, or the period continuing to the present.
+Do not teach next as one fixed translation. The sentence tells the learner whether it marks sequence, repetition or position.
 
-#### 2. since: time or reason
+#### 4. always: general frequency or future continuation
 
-Teach two different relations:
-- since as a time starting point;
-- since as a reason, equivalent to because.
-
-The reason use cross-links to the sentence relation foundation; do not force it into the time rule.
-
-#### 3. next: sequence, repetition or position
-
-Compare:
-- next = after this;
-- next = do the same thing again on the next occasion;
-- next to = nearest/beside something.
-
-The last is spatial and cross-links to C04.
-
-#### 4. always: frequency or continuation
-
-Compare:
-- at all times;
-- frequently in the source's relevant context;
-- for ever when future continuation is emphasized.
-
-Do not teach always as one fixed frequency word.
+Compare the source's uses:
+- **at all times** is the general meaning.
+- In some connections, **frequently** may be the intended sense.
+- When the future is specially in view, as in **I will always be your friend**, **for ever** is a better way of putting it.
+- The source adds that **without change** and **without end** are right words in other connections. They are not universal direct replacements for always.
 
 #### 5. Guided practice and reverse check
 
 For each sentence, ask:
-1. What is the reference time?
-2. Is the relation past, up to now, not yet, starting point, reason, sequence, repetition, adjacency or continuation?
-3. Which part of the sentence proves that reading?
+1. What is the reference point — an earlier time, now, or a period extending to now?
+2. Is the relation past, already completed, not yet, up to now, after a starting point, a reason, sequence, repetition or continuation?
+3. If next or always appears, is it about time, repetition, frequency or a different relation?
+4. Which words in the sentence prove that reading?
 
-Then give the Basic expression and ask the learner to recover the time relation.
+Then give the Basic expression and ask the learner to reconstruct the original time/sequence relation.
 
 ### Scope controls
 
-- Calendar, clock and basic tense foundations are not repeated.
-- Quantity once = one time only remains in C10; past-time once is handled here.
-- Since = because is cross-linked to sentence relations.
-- next to is spatial and belongs by cross-link to C04.
+- Calendar, clock, number and basic tense foundations are not repeated.
+- Quantity **once = one time only** remains in C10; C11 teaches **once = at one time / in the past**.
+- **since = because** is a sentence-relation use, not a time rule.
+- **next to** is spatial and belongs by cross-link to C04.
+- Do not treat negative **yet** and joining **and yet** as the same use.
+- Do not teach **for ever**, **frequently**, **without change** or **without end** as universal replacements for always; the source attaches them to different contexts.
 
 ### Lesson-size test
 
-**Current judgment:** one Lesson is viable. The items are diverse words, but the learner's task is consistently to identify the time/sequence relation rather than memorize a single translation.
-
----
+**Current judgment:** one Lesson is viable. The words are diverse, but the learner's common task is to identify the exact temporal or sequence relation in context. The contrasts are necessary because the same word can express different relations; they do not require separate Lessons.
 
 ## C12 — Context-Dependent Words & Paraphrase
 
