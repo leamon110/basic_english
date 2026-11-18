@@ -948,7 +948,7 @@ The learner distinguishes number/amount, distribution, totality and degree. The 
 
 Compare:
 
-- **each:** members are considered separately → every one separately;
+- **each:** when each member gets something, the distribution is made to every one (separately); the parenthetical word explains that members are treated one by one;
 - **altogether:** the total count, as in “six of them altogether”; the source illustrates the result with “there would make six”. In “altogether wrong”, it means quite or completely so;
 - **whole:** the group as one complete unit (“the whole group” → all the group); for a story, “the whole story” → the complete story.
 
