@@ -189,6 +189,13 @@ pp.154–156 补充说明：并非所有 Names of Things 的扩展都建立在�
 
 **教学结论：** 特定用法必须放在具体语境中讲，不能把它误当成这个词在所有语境中的唯一含义。
 
+
+### 5.4 p.160 的 Special Use 练习例子
+
+原书在 p.160 另问 current、engine、rail、ring 的 special uses，并给出 electric current、railway engine、engine rail、finger ring 作为对应答案。这些例子可用于 C15 的语境辨义练习。
+
+同页随后出现的 army、reaction、society、worm、wing 例子属于 meaning expansion 的练习，不应误归入 Special Use。
+
 ## 6. -er、-ing、-ed：词形派生与意义扩展的交叉
 
 ### 6.1 词尾不是可以机械套用的万能公式
