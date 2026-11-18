@@ -2616,3 +2616,14 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - The review sheet explicitly distinguishes document-level completion from learner-tested content and App integration. It does not claim final duration, general semantic checking, App implementation or device acceptance.
 - No App source, Android workflow input or audio assets changed; no Android build was triggered.
 - Next phase requires a separate App migration plan before any prototype renumbering or screen migration. The review sheet is the handoff for that phase; no App code has been changed.
+## 96. App migration baseline and draft plan (2026-11-19)
+
+- Inspected the current App entry (`docs/index.html`, `docs/js/app.js`), all four Expression renderers, the five early content prototypes, the 250 Fixed Word-Groups index and the existing test scripts. No App code was changed.
+- Verified the current page appends old speak, body-part, e3/e4/e5 and Meaning→Basic components into one long Expression page. The existing code does not yet implement the accepted 2-Module / 15-Lesson navigation.
+- Verified the body-part prototype has 11 terms / 10 questions; 8 questions map to C13, q7 maps to C14 and q8 maps to C15. This cross-topic question contamination must be split during migration.
+- Verified `meaning-basic.js` contains 27 registered MB prompts and `scripts/test_meaning_basic.js` covers 40 accepted variants, 28 known meaning mismatches, 2 viewpoint mismatches, 1 unsupported boundary and punctuation normalization. It is a finite checker, not general semantic analysis.
+- Mapped the 27 MB prompts to C01–C08. The old five prototypes were mapped to their accepted Lesson destinations; the 250 Fixed Word-Groups remain distributed support/reference material, not a standalone Lesson.
+- Updated the 250 Fixed Word-Groups instance-index status from provisional v0.3 Candidate IDs to the accepted C01–C15 mapping. Added the old Lesson 02 → Module 1 Lesson 1 partial-content mapping note. Clarified the checker inventory in the 15-Lesson review sheet.
+- Created `BASIC_ENGLISH_EXPRESSION_APP_MIGRATION_PLAN.md` as a draft. It covers the five prototype mappings, MB01–MB27 destinations, navigation proposal, fixed groups, legacy progress-key preservation, tests and acceptance gates.
+- No App source, test, CSS, HTML, Android workflow or user progress was modified; no Android build was triggered. The migration plan is not approved for implementation yet.
+- Next: review/approve the migration mapping and progress-preservation policy before any App code or screen numbering changes.
