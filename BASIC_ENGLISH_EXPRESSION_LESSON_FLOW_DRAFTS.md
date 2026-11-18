@@ -504,8 +504,8 @@ These are source examples, not a general rule that every quick action is called 
 
 Keep two further examples brief:
 
-- a sudden noise may throw or put someone off balance;
-- a sufficiently hard blow may send someone against a table.
+- a sudden noise may throw or put us off our balance;
+- a blow, given hard enough, will send us violently against the table.
 
 The first describes a change in balance; the second describes movement to a position. The physical blow itself remains cross-linked to C02.
 
