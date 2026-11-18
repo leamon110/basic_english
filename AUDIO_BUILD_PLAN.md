@@ -1906,3 +1906,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author Module 2 Lesson 6 — Feeling, Preference, Desire & Need.
 
+### Module 2 Lesson 6 — Feeling, Preference, Desire & Need source audit (2026-11-18)
+
+- Reopened original English p.252 and compared it with the accepted C06 flow, source index, candidate structure and curriculum.
+- Source distinctions: feel pain/pleasure → have a feeling of pain/pleasure; feel that something is so → have a feeling / idea that it is so; feel angry → be feeling angry; feel a wall to test whether dry → put one's hands on it (physical touch, C02); like things → be pleased with / have approval of / give approval to; like persons → be friends with / get on well with; like good food or pictures → have a taste for; approve → give approval / be in agreement with; disapprove → give disapproval / be in disagreement with; want → have a desire for; need → be in need of; need more when insufficient → be in need of more.
+- Boundaries: feel-that-something-is-so is a C06 feeling/idea expression, not automatically the C05 think/opinion expression; be conscious of something moving cross-links to C05; physical feel-a-wall is C02.
+- The C06 learning task distinguishes internal experience, liking/social relation, approval/disapproval, taste/preference, desire and need. Desire and need must not be collapsed.
+- Found that the source index / first flow recorded approval but omitted the source's explicit disapproval / disagreement pair. Updated BASIC_ENGLISH_NAMES_OF_ACTS.md and the C06 flow to include both sides.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author C06 with the source distinctions and explicit C02/C05/C01 boundaries.
+
