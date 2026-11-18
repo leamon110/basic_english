@@ -1760,3 +1760,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - C02 is internally reviewed, not learner-tested or App-accepted; actual lesson time remains unmeasured. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author Module 2 Lesson 3 — Physical Effects: Damage, Change & Result.
 
+### Module 2 Lesson 3 — Physical Effects: Damage, Change & Result source audit (2026-11-18)
+
+- Reopened original English pp.246–247 for cut/break/smash and p.254 for destroy/hurt; compared them with the accepted C03 flow, candidate structure, curriculum and current Step 17 implementation.
+- pp.246–247 source distinctions: cut through thread/cake → get it cut; the thread is broken / get it broken; a plate may be smashed; if a plate breaks by itself, it comes to bits.
+- p.254 source distinctions: destroy something → burn it / smash it / break it / put an end to it; a destroyed thing has been burned, smashed or broken. Hurt someone → give them pain / give wounds / do serious damage. An attempt to destroy may do no more than hurt, giving pain or causing wounds.
+- C03's learner decision differs from C02: identify the action causing physical change, the damage/effect, the resulting state, or a change that happens by itself. Do not collapse hit (contact/impact in C02) into hurt (injury/effect in C03).
+- Verified directly in docs/js/course.js that Step 17 is locally adapted and sections 4–6 teach past participle, be + past participle passive/result, and get + past participle. C03 will link to this foundation and use only a short reminder with its own examples. Do not reteach the full passive/get-passive system or confuse participle sentence structure with -ed word formation.
+- Source and prerequisite checks support one C03 Lesson. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author C03 around caused action/result, passive or resulting state, destroy vs hurt, and self-occurring change.
+
