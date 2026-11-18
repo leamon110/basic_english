@@ -2099,3 +2099,14 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Internal source/flow review is complete. Actual learner time and learner feedback remain unmeasured; this is a reviewed draft, not user-tested or App-accepted content.
 - Next: begin Module 2 Lesson 1 — Communication & Information, reusing the existing communication prototype rather than duplicating it.
 
+## 54. Module 2 Lesson 1 — Communication & Information first integrated draft (2026-11-18)
+
+- Reopened the original English scan pages printed pp.244–245 and p.252. p.244–245 confirms the speak / tell / sing / hear / listen / news / write / read / send examples; p.252 confirms the different source meanings of show (make clear; let someone see / put on view; take visitors round; give signs of interest; make an attempt to give signs of interest).
+- Confirmed the accepted curriculum mapping: C01 is Module 2 Lesson 1. Communication production/transmission and reception/processing are two parts of one lesson, not two lessons.
+- Inspected the existing BASIC_ENGLISH_EXPRESSION_LESSON_01.md and the live docs/js/expression-system.js prototype. The old Lesson 01 is a pre-curriculum speak prototype. Its three speak contexts are retained as the opening demonstration; speak to a person and speak at a meeting are C01 communication examples, while speak a language → have a knowledge of it remains a knowledge boundary example cross-linked to C05.
+- Created BASIC_ENGLISH_EXPRESSION_M2_L1_DRAFT.md. It does not duplicate the complete speak prototype. It reuses the existing speak analysis/quiz/checker as the opening material and develops the remaining source examples into expressing/delivering, receiving/processing, written information, and a compact show polysemy comparison.
+- Added practice with answer explanations and a reverse-understanding section. The open construction task is explicitly not automatically scored by the current App; the existing Lesson 01 grammar/meaning checker supports only its registered say something to him target pattern.
+- Updated BASIC_ENGLISH_EXPRESSION_COMMUNICATION_DRAFT.md to map the research draft to C01 and close the former open question about splitting production and reception. Updated BASIC_ENGLISH_EXPRESSION_LESSON_01.md to clarify that its old “Lesson 01” label belongs to the pre-curriculum speak prototype now reused inside C01, not an extra course Lesson. Updated BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md.
+- This is a first integrated content draft, not final acceptance. Clarity, exercise volume, example duplication against other Module 2 lessons and actual learner time still require review. No App source changed and no Android build was triggered.
+- Next concrete action: review the C01 draft against the source pages and accepted C01 flow, then author Module 2 Lesson 2 — Bodily Action & Contact.
+
