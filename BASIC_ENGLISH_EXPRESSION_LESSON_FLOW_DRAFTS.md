@@ -227,3 +227,218 @@ Give the narrow referent and ask what broader Name it belongs to. Then give a di
 2. Draft Module 2 in its candidate order, starting with C01 Communication & Information.
 3. Pay particular attention to C07 when drafting: its fixed-group examples now provide a useful body of contextual material, but the final lesson size must be checked in the actual exercises.
 4. After all 15 flows exist, run one final cross-lesson duplication and workload audit before assigning final display numbers or migrating App prototypes.
+
+
+---
+
+## Module 2 — Expressing Common Meanings in Basic English
+
+Shared method: ordinary-English word → identify its meaning in this context → build or select a Basic expression → reverse-check that the intended meaning remains.
+
+## C01 — Communication & Information
+
+### Teaching objective
+
+The learner stops treating an ordinary communication verb as a one-to-one vocabulary replacement. The learner identifies the communication event: who is expressing or receiving what, through which action, and to whom.
+
+### Proposed teaching flow
+
+#### 1. Reuse and extend the existing speak prototype
+
+Keep the existing three-way contrast:
+
+- speaking to a person;
+- speaking at a meeting;
+- speaking a language.
+
+The first two are communication acts; the third is knowledge of a language. Make the distinction visible rather than adding a fourth rule.
+
+The existing App prototype is reused and expanded; its current three-question quiz is not copied unchanged.
+
+#### 2. Organize the remaining examples by communication role
+
+- **Expressing / delivering information:** tell a story; give directions; sing; make a statement.
+- **Receiving information:** hear music; listen with attention; hear news later.
+- **Written information:** put views into writing / down on paper; read or see something in a newspaper; send a letter to the paper.
+
+The learner should notice that Basic may describe the same event through an Operator plus a Name (give a talk, give directions, give a song), or through a relation that makes the recipient, medium or destination clear.
+
+Keep the source's boundary example: sending a letter to a newspaper can remain “send a letter to the paper”. The lesson must not teach that every ordinary verb requires replacement.
+
+#### 3. A short cross-topic contrast: show
+
+Keep the source's show examples together in one compact comparison panel because the same ordinary word changes meaning:
+
+- make an effect clear;
+- let someone see pictures / put them on view;
+- take someone round to see old buildings;
+- give signs of interest.
+
+“Try to show interest” demonstrates the named-attempt pattern. It is a supporting example, not a separate topic.
+
+This panel is a **polysemy comparison**, not a claim that all show meanings are communication. Link “show interest” to C06 and the knowledge/clarity uses to C05 where appropriate.
+
+#### 4. Guided practice
+
+For each prompt, ask the learner to identify the actual event before choosing the Basic expression:
+
+1. Is someone expressing, receiving, recording or sending information?
+2. Who is the receiver, and what is the medium or destination?
+3. Does the context mean communication, knowledge, display, guidance or signs of an attitude?
+
+Include one prompt where the ordinary word itself remains usable in Basic, so the learner does not over-rewrite.
+
+#### 5. Reverse check
+
+Give a Basic expression and ask what communication event it describes. The learner must distinguish, for example, hearing sound from giving attention to it, and reading information from sending it.
+
+### Scope controls
+
+- “Speak a language” cross-links to C05/C09; do not teach it as ordinary speaking to another person.
+- All show senses appear together only as a short comparison panel; their meanings are not forced into the communication category.
+- “Try” remains the attempt pattern inside the show-interest example.
+- Do not reteach the 16 Operators or Names of Acts foundation.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson remains viable if the communication examples are taught in three compact role groups and show is kept to one comparison panel. If show expands into a full separate topic, it will overload C01 and must remain a cross-reference instead.
+
+---
+
+## C02 — Bodily Action & Contact
+
+### Teaching objective
+
+The learner identifies the physical action being described and makes the relevant body/object relation explicit. Keep the two source groups visible rather than pretending eating and touching are the same action.
+
+### Proposed teaching flow
+
+#### 1. Taking in, biting and putting out
+
+Use eat, bite and spit:
+
+- taking food / having a meal;
+- having a bite of something;
+- putting food out of the mouth.
+
+Ask what the body is doing to or with the object. Show that Basic may name the action (a bite/meal) or make the direction/body location explicit (out of the mouth).
+
+#### 2. Contact, impact and rubbing
+
+Use touch, accidental contact, hit and scratch:
+
+- putting a hand/finger/body part on something;
+- coming up against something by chance;
+- giving a blow;
+- making a mark, giving a rub or getting nails into something.
+
+The learner must distinguish simple contact, accidental contact, force, and the effect of scratching. Do not treat all of these as synonyms.
+
+#### 3. Guided practice
+
+Use two labelled groups of prompts:
+
+- **Bodily intake/expulsion:** What enters, is bitten, or is put out?
+- **Contact/impact:** What touches what? Is the contact accidental, forceful, or does it leave a mark?
+
+Ask the learner to identify the action and relevant body/object relation before constructing the Basic expression.
+
+#### 4. Reverse check
+
+Give the Basic expression and ask whether it describes intake, biting, expulsion, contact, impact or rubbing.
+
+### Scope controls
+
+- C02 teaches the action itself, not the resulting damage or state; those belong in C03.
+- Keep hurt/damage and cut/break/smash results in C03.
+- Do not repeat the general Operator + Name construction lesson.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson with two explicit parts is viable. Both parts train the learner to express a bodily action by making the acted-on object and body relation clear. The sections should remain separate inside the Lesson.
+
+---
+
+## C03 — Physical Effects: Damage, Change & Result
+
+### Teaching objective
+
+The learner distinguishes:
+- an action that causes a physical change;
+- the effect/damage produced;
+- the resulting state;
+- a change that occurs without an external agent being stated.
+
+### Prerequisite
+
+Use the current App's Step 17, sections 4–6, as the foundation reference for past participles, be + past participle, and get + past participle. C03 gives only a short reminder with its own examples; it does not reteach the full passive/get-passive system.
+
+### Proposed teaching flow
+
+#### 1. Start with a physical action and its result
+
+Use cut and break to compare:
+
+- the action or act of cutting;
+- something being cut;
+- an object being broken;
+- an object being got broken / made to enter the broken state.
+
+Ask: is the sentence describing what someone does, what happens to the object, or the state the object is in afterward?
+
+#### 2. Compare damage and destruction
+
+Use smash, destroy and hurt:
+
+- breaking or smashing an object;
+- causing a physical result;
+- giving someone pain, wounds or damage.
+
+Do not turn hurt into a generic synonym for hit: C02 can describe the contact/impact; C03 describes the injury or effect.
+
+#### 3. Include self-occurring change
+
+Use the source's plate example: when the plate breaks by itself, the expression describes its coming to pieces. No agent needs to be introduced.
+
+This contrast is important:
+- caused action;
+- passive/result state;
+- self-occurring change.
+
+#### 4. Guided practice
+
+For each prompt, ask the learner to classify the intended meaning before writing:
+
+1. What action causes the change?
+2. What physical effect occurs?
+3. What is the resulting state?
+4. Does the sentence state an agent, or does the change happen by itself?
+
+Link back to Step 17 if the learner cannot form the required participle/passive pattern.
+
+#### 5. Reverse check
+
+Give a result expression and ask what physical event or state it describes. Check that the learner does not invent an agent when the source sentence does not state one.
+
+### Scope controls
+
+- C02 covers contact/impact as an action; C03 covers the physical effect/result.
+- C03 does not teach the full passive or get-passive rule; Step 17 is the prerequisite.
+- Do not confuse -ed word formation with passive/result sentence structure.
+- Keep non-physical emotional effects in C06 unless the source example is specifically physical damage.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson is justified. Cut, break, smash, destroy and hurt are connected by the physical-change/effect decision. The caused-action/result/self-occurring contrasts provide a natural teaching progression and prevent the lesson from becoming a list of replacement phrases.
+
+---
+
+## Module 2 flow checkpoint — C01–C03
+
+| Candidate | Main learner decision | Current flow result |
+|---|---|---|
+| C01 | Identify the communication event and the roles/medium involved | One Lesson viable with show kept as a short cross-topic contrast |
+| C02 | Identify bodily intake/expulsion or contact/impact | One Lesson viable with two explicit sections |
+| C03 | Distinguish physical action, damage/effect and resulting state | One Lesson viable; Step 17 is the prerequisite |
+
+No final App IDs or implementation changes are made.
