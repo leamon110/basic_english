@@ -3,6 +3,8 @@
 
 > **来源基础：** C. K. Ogden, *The ABC of Basic English* (1932), “Expansions: Names of Things and Qualities”, pp.146–148。  
 > **课程性质：** 本课使用的词义联系来自原书；本课的分组、问题、例句和学习步骤是本项目新增设计。凡标为“项目例句”的表达，不应误称为 Ogden 原书的逐字例句。
+>
+> **当前课程映射：** 本文件是早期 App 的身体部位名称扩展原型，现作为 Module 1 · Lesson 1（C13 — Names of Things: Meaning Expansion）的一个部分复用；它不是额外的 Lesson，也不覆盖 C13 的全部内容。当前 App 原型题库中还有一道 C14（Qualities expansion）题和一道 C15（Special Use / narrowing）题，迁移时必须拆到各自正式 Lesson，不能继续留在本课。
 
 ## 1. 本课目标
 
