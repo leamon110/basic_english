@@ -1928,3 +1928,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is a first complete draft, not final acceptance. Clarity, answer coverage, overlap with C05 and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: review C06 against the original source and accepted flow, then author Module 2 Lesson 7 — Exchange, Sale & Commitment.
 
+### C06 review — friendship vs liking source-direction correction (2026-11-18)
+
+- During C06 draft review, found that the first wording could be read as “like a person = be friends with them”. Original p.252 is more precise: being pleased with things is expressed as liking them; being friends with persons is expressed as getting on well with them.
+- Corrected BASIC_ENGLISH_EXPRESSION_M2_L6_DRAFT.md, BASIC_ENGLISH_NAMES_OF_ACTS.md and the C06 teaching flow to preserve the source direction: get on well with a person → be friends with them. The lesson no longer treats every form of liking a person as equivalent to friendship.
+- Changed the pain/pleasure table descriptions to “an experience of pain/pleasure” rather than adding an unsupported physical/internal classification.
+- The approval/disapproval, taste/preference, desire/need and feel cross-links remain unchanged.
+- C06 still needs final answer/volume review and actual learner-time testing. No App source or Android workflow input changed; no build was triggered.
+- Next: finish C06 review, then author Module 2 Lesson 7 — Exchange, Sale & Commitment.
+
