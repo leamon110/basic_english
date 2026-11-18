@@ -1659,5 +1659,22 @@ The audit also corrected one source-index duplication: “a plate breaks itself 
 
 **No replacement Lesson count is assigned.** The next step is to test the uncertain boundaries by drafting short, real teaching-unit outlines and sample exercises. The current v0.1 candidate file records the full matrix and the next test sequence.
 
-Source limitations remain: the 1932 *The ABC of Basic English* p.154 scan image has not been read; the 1930 *Basic English: A General Introduction with Rules and Grammar* complete English text has not been acquired; the 250-item fixed-group index verifies the structure and the 50 priority items but does not transcribe all 250 examples. These gaps are kept explicit and are not filled by guesswork.
+Source limitations remain: the 1932 *The ABC of Basic English* p.154 scan image, which was unread at the time of the first audit, has now been retrieved and read; its additional expansion relations have been added to `BASIC_ENGLISH_EXPANSIONS_THINGS_QUALITIES.md`. The complete English text of the 1930 *Basic English: A General Introduction with Rules and Grammar* has not been acquired. The 250-item fixed-group index verifies the structure and the 50 priority items but does not transcribe all 250 examples. These remaining gaps are kept explicit and are not filled by guesswork.
+
+
+
+## 33. Module 2 teaching-size test — Expansion vs Special Use (2026-11-18)
+
+The previously unread English scan page p.154 of the 1932 *The ABC of Basic English* has now been retrieved and read. This resolves the only unread page within the directly studied Names of Things and Qualities chapter pages. It adds cause, process, use, part/whole, substance/object and other true-connection expansions; the expansion index has been updated.
+
+The Module 2 boundary test now supports two candidate teaching tasks:
+
+1. **Meaning Expansion: Names of Things & Qualities.** The learner identifies the root meaning and explains the source-supported relation to the expanded referent/property. The Things material has several relation types; the Qualities examples are fewer but use the same core reasoning. They should first be taught together, with separate subsections. Quality words used as Names of Things are a bounded word-class/function subsection, not a standalone Lesson and not Special Use.
+2. **Special Use / Meaning Narrowing.** The learner identifies how context restricts a broad word to a narrower object/subclass/default sense. The source explicitly contrasts this with expansion. It is therefore a separate candidate Lesson.
+
+This replaces the earlier tentative three-way split (Things / Qualities / Special Use). The 250 Fixed Word-Groups chapter's special/idiomatic uses remain distinct from the Names of Things and Qualities chapter's Special Use / narrowing.
+
+The p.154 access gap is resolved, but the 1930 *Basic English: A General Introduction with Rules and Grammar* complete English text remains unavailable. The 250-item index still records structure and the 50 priority entries, not all 250 original examples.
+
+No final overall Module/Lesson count is assigned. The next step is to consolidate the tested Module 1 and Module 2 candidate boundaries, then inspect all candidate Lesson scopes for overlap, prerequisite dependencies and source coverage before producing a revised numbered structure.
 
