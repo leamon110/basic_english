@@ -1084,3 +1084,49 @@ Dependency analysis suggests that C13 can help learners understand expressions i
 - Module order remains open pending comparison of practical learner progression with the source sequence and the C13 → C05/C06 semantic dependency.
 
 No final Module order, Lesson count or App IDs are assigned by this audit.
+
+
+## Whole-sequence audit 04 — Module order decision
+
+Three orders were compared:
+
+| Option | Order | Strength | Cost |
+|---|---|---|---|
+| A. Source-aligned | Meaning Expansion → Special Use/Narrowing → Meaning-to-Basic application | Matches the 1932 *The ABC* order: Names of Things and Qualities (pp.146–161) precedes Names of Acts (pp.162–186) and Some Common Needs (pp.242–262). It also places expansion before the more abstract mental/feeling expression Lessons that use extended meanings. | Starts with semantic interpretation before the learner has completed the practical expression track. |
+| B. Application-first | Communication/physical actions → remaining expression topics → Expansion/Special Use | Starts with immediately familiar, practical expression and follows the current speak prototype. | C05/C06 use expanded meanings such as mind, grip, point of view and taste before the learner has studied the expansion system; this creates backtracking or repeated explanations. |
+| C. Interleaved | Concrete expression → Expansion/Special Use → abstract expression | Gives an early practical demonstration and places expansion before C05/C06. | Splits the same Meaning-to-Basic track into separate modules around another topic and makes the course structure more complicated. |
+
+### Decision
+
+**Use Option A as the current recommended module order.**
+
+Reasons:
+
+1. The source's order is not being copied blindly; it agrees with the dependency found in the actual expression examples.
+2. The expansion material can begin with concrete body-part examples, so it need not be taught as abstract theory.
+3. It gives learners the semantic tools before the mental/feeling expression lessons that use extended meanings.
+4. The practical expression track then progresses from familiar communication and physical action toward mental, social, process and functional meanings.
+5. It keeps the course at two coherent Modules instead of creating a third module solely to preserve the current prototype order.
+
+### Revised module sequence (provisional)
+
+**Module 1 — Understanding Basic Word Meanings**
+- C13 Meaning Expansion: Names of Things & Qualities.
+- C14 Special Use / Meaning Narrowing.
+
+**Module 2 — Expressing Common Meanings in Basic English**
+- C01 Communication & Information.
+- C02 Bodily Action & Contact.
+- C03 Physical Effects: Damage, Change & Result.
+- C04 Movement & Position: Transfer, Posture & Viewpoint.
+- C05 Thinking, Knowledge, Memory & Learning.
+- C06 Feeling, Preference, Desire & Need.
+- C07 Exchange, Sale & Commitment.
+- C08 State and Process: Change, Entry & Ending.
+- C09 Ability, Obligation & Intention.
+- C10 Quantity, Amount & Degree.
+- C11 Time & Sequence.
+- C12 Context-Dependent Words & Paraphrase.
+
+The C01–C14 labels remain research IDs, not final App Lesson numbers. If this order is retained in the final syllabus, the display numbering will be assigned as Module 1 Lesson 1–2 and Module 2 Lesson 1–12. The current App speak and body-part prototypes will be reconciled during a separate migration step; no App code is changed now.
+
