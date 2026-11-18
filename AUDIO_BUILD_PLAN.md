@@ -1719,3 +1719,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author Module 2 Lesson 2 — Bodily Action & Contact, using the same concise meaning → Basic expression → learner use / reverse-check method.
 
+### C01 post-review verification (2026-11-18)
+
+- C01 draft post-review file: BASIC_ENGLISH_EXPRESSION_M2_L1_DRAFT.md, 238 lines. Structural checks passed for all source groups, the p.252 show comparison, reverse understanding and the explicit limit of the current App checker.
+- Removed the repeated speak table/quiz from the new C01 material. The existing pre-curriculum speak prototype supplies that opening explanation, quiz, target writing task and reverse check. The new C01 content starts with the remaining communication examples; the old App teaser's eat item is mapped to Module 2 Lesson 2.
+- Clarified the letter exercise so the prompt matches the source: send a letter to the paper to give a different opinion. Writing views, reading carefully and sending the letter remain distinct actions.
+- The post-review draft and checkpoint 55 in BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md were read back; all content checks passed.
+- This is internal source/flow review only. No learner timing data, user test or App integration exists for C01 yet. No App source or workflow-watched file changed; no Android build was triggered.
+- Next: author Module 2 Lesson 2 — Bodily Action & Contact.
+
