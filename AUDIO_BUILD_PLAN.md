@@ -1266,3 +1266,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 07.
 - Next concrete step: compare the complete candidate learning-task set and map the cross-cutting supplements (250 Fixed Word-Groups, 50 priority groups, Words Formed by Endings, Names of Things and Qualities) onto those tasks.
 - No App code changed and no Android build triggered.
+
+
+### Cross-cutting Audit 01 — Fixed Word-Groups and Words Formed by Endings (2026-11-18)
+
+- Reviewed the complete 50-item “Most Necessary Fixed Word-Groups” list as a curriculum supplement rather than a lesson list.
+- Mapped the 50 items to natural roles such as state/condition, relation/attitude, modality, continuation/cessation, movement/location, process/state change, causation, time, memory/participation/social relation, existence/addition/condition, and special fixed uses.
+- Confirmed that the 50 priority groups are a **cross-topic reinforcement layer**. A group should enter a lesson because its meaning is useful there, not because of its source-list number.
+- Reviewed the Key Selection “Words Formed by Endings” material. Distinguished productive regular forms from forms with important new senses and from forms mainly needed as normal root forms.
+- Confirmed that endings are also cross-topic and must not determine Module/Lesson count. Basic word-form rules remain a foundation; important derived meanings should be introduced where they become useful.
+- Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Cross-cutting Audit 01.
+- Next concrete step: audit Names of Things and Qualities / Expansions against the application themes, especially whether meaning-expansion examples belong inside expression themes or form a distinct semantic-learning track.
+- No App code changed and no Android build triggered.
