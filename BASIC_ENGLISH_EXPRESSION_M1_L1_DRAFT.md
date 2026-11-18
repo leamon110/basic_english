@@ -1,6 +1,6 @@
 # Module 1 · Lesson 1 — Names of Things: Meaning Expansion
 
-> **Draft status:** source-reviewed teaching draft. It is based on C. K. Ogden's *The ABC of Basic English* (1932), especially pp.146–156. The lesson uses selected teaching examples and a compact reference list; it is not a verbatim transcription of every source passage. Clarity, exercise quality and actual lesson length still require a final teaching review.
+> **Draft status:** source-reviewed teaching draft. It is based on C. K. Ogden's *The ABC of Basic English* (1932), especially pp.146–158 and the p.160–162 expansion exercises. The lesson uses selected teaching examples and a compact reference list; it is not a verbatim transcription of every source passage. Clarity, exercise quality and actual lesson length still require a final teaching review.
 
 ## What you will learn
 
@@ -119,6 +119,42 @@ When you meet a Basic Name in a new context, ask:
 If you cannot explain the connection, do not invent one.
 
 ---
+
+## 7. The source does not require every word to have an expansion
+
+On p.158, Ogden makes an important limit clear:
+
+- Quite a number of words have neither an expansion nor a Special Use.
+- Some words have only an expansion; others have only a Special Use.
+- A word may have more than one expansion.
+- The source limits a word to one Special Use in this account, to avoid confusing the learner.
+
+So this Lesson is **not** a checklist that gives every one of the 850 words an extra meaning. It teaches how to recognize the source-supported cases. A word with no listed expansion should simply be learned in its root use.
+
+The source uses **law** and **line** to show that one word can have several connected expansions:
+
+| Word | Connections described by the source |
+|---|---|
+| law | a man-made rule; a general statement of fact; the system of laws in society; the people responsible for putting laws into effect; the organization through which they do so |
+| line | the distance between two points; a long mark; things arranged side by side; a railway; a piece of cord; the ships belonging to a company |
+
+The intended sense still depends on what is being talked about. Do not assume that all these uses fit every occurrence of the word.
+
+## 8. Further source examples from pp.160–162
+
+The source gives five more expansion exercises on p.160 and explains the connections on p.162:
+
+| Word | Source example | Connection shown |
+|---|---|---|
+| army | birds in flight described as an army in flight | a group or formation |
+| reaction | a government of reaction; a reaction against bright ideas | a response or attitude in a social/political context |
+| society | two or three people forming a small society | a group of people |
+| worm | a person looked down on as a poor sort of animal | an animal name used in a judgment about a person |
+| wing | the side part of a building | compared with the outstretched wing of a bird |
+
+These are source-listed examples, not general permission to create similar expressions freely.
+
+On p.162, the source also gives an open classification exercise with **invention, jump, stage, stiff, deep, horn, net, star**, and asks where **humor** and **wash** belong. This can be used as an optional discussion task: classify only when you can explain the source-supported connection. It is not a fixed-answer automatic test.
 
 ## Practice
 
