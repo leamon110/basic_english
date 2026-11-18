@@ -1231,3 +1231,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 04.
 - Next concrete step: audit Complex Acts / learning, teaching, showing and trying.
 - No App code changed and no Android build triggered.
+
+
+### Theme Audit 05 — Complex Acts learning / teaching / showing / trying (2026-11-18)
+
+- Audited learn, teach, show and try.
+- Learning/teaching forms a strong candidate theme around acquisition and transfer of knowledge/training.
+- Show is explicitly polysemous in the source: make it clear; let someone see; put on view; take someone round; give signs of interest. It should be treated as a semantic-contrast example rather than a single replacement rule.
+- Try currently appears as a supporting “make an attempt” pattern; the present source material is insufficient to establish it as an independent Lesson.
+- No formal Lesson number assigned.
+- Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 05.
+- Next concrete step: audit the remaining Complex Acts social/economic/life-process examples.
+- No App code changed and no Android build triggered.
