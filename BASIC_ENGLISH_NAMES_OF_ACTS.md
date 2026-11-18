@@ -95,7 +95,6 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | run for health | take a run | take + 名称 |
 | run away from danger | go (off) at a run | go + 方向/方式表达 |
 | slip | have a slip；have a fall | have + 动作名称 |
-| a plate breaks itself | it comes to bits | come + to + 结果名称 |
 
 原书还举出：
 - 把手臂从衣服中伸出：take your arm out of your coat；
