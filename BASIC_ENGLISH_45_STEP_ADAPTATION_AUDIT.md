@@ -152,3 +152,42 @@ Source: https://basicenglish.org/step-10/index.html
 - Detailed source audit completed: 7 of the 14 locally adapted Steps (1, 2, 3, 5, 6, 9 and 10).
 - Steps 6, 9 and 10 preserve the broad lesson themes but have documented reading, note and exercise omissions; Step 6 also contains a contradiction in the adapted picture-going passage, and Step 10 removes the hospital action from a comprehension question.
 - Audit-only work: no App code was changed. Remaining adapted Steps: 12, 13, 15, 17, 18, 20 and 25.
+
+## Detailed source-fidelity audit — third batch (Steps 12, 13 and 15)
+
+### Step 12 — Partial
+
+Source: https://basicenglish.org/step-12/index.html
+
+- The App covers the main teaching groups: one/ones, do as a substitute for a previously used operator, only, still, why, again, high/low/early/late as adverbs, at/in/on time phrases, and several operator + action-noun combinations.
+- **Confirmed reading-sequence error:** the source opens with Bob waiting outside the bathroom. Jim answers "No" to "Are you in the bath?" because he is still taking off his clothes and the bath is not ready. The App instead says the other man is already in the bath and answers "Yes". This changes the initial physical situation and the answer to the first question.
+- The App also compresses several important turns: Bob's wish not to go back to bed, Jim's explanation that Bob is late because he gets up late, Bob's claim that it is his time for a bath, the warning before Bob leaves to get soap, Jim's warning not to kick the door, and Bob's question about coming out / threat to come in. The main conflict remains, but the adapted reading is not a faithful sequence of the source dialogue.
+- **Missing source notes:** outside as a preposition (with inside as a parallel use); bath meaning the bath-water as well as the bathing process; by used adverbially for the passage of time (goes by); the source's explanation of why do/give/have combine with different action nouns and its warning that this is only a rough guide because many combinations are fixed; the two readings of `in a minute` versus `have a bath in an hour`; and several context-specific explanations of quick, get up, quiet and give a laugh. The App includes some related collocations but not the full note set.
+- Exercise coverage is substantially incomplete. The source has eight groups: label six items in a picture; eight picture-based Basic questions; eight preposition blanks; describe five actions in pictures; six blanks with again/only/still; four reason statements using why; three substitutions with does; and nine Basic-answer questions about the story. The App instead has five different groups (one/ones, two do-substitutions, five time-preposition blanks, free sentence writing, and five reading questions). These are useful supplementary tasks but do not preserve most of the source exercises.
+- The App's one/ones summary also omits the source note that singular `every one` is more emphatic than plural `all`, and does not state the source's precise determiner/adjective restriction as carefully as the original.
+
+### Step 13 — Partial
+
+Source: https://basicenglish.org/step-13/index.html
+
+- The App covers news as a substance-like noun, impersonal it, say forms, do/does questions, who/whom/whose/what/which, and how/when/where/why question formation.
+- **Missing relative-adverb use:** the source explicitly teaches `how` as a relative adverb meaning "the way in which" (for example, "That is how she keeps them white"). The App teaches how only as an interrogative adverb asking about manner.
+- **Missing question-rule qualifications:** the source teaches the position of `not` in negative do/does questions; distinguishes habitual/general do-questions from questions about an action happening now; gives the exceptions for say, see and seem; and notes that present-tense say can refer to an utterance just completed. The App gives the broad general rule but omits these qualifications.
+- The App covers the major who/whom/whose/what/which distinctions, including subject vs object questions and selecting from a group. It does not preserve every source example or the source note that repeated bracketed material in answers is normally omitted.
+- Exercise coverage is incomplete. The source has picture comprehension (11 questions), a list of all person-nouns learned so far, questions about numbered picture items using eight specified prompts (when/where/who/which/how/does/why/what), and 13 answer-to-question prompts. The App has six answer-to-question prompts, four yes/no transformations and a free-writing prompt for six questions; it omits the picture task, person-noun list and numbered-picture question task, and substantially reduces the answer-to-question set.
+
+### Step 15 — Partial
+
+Source: https://basicenglish.org/step-15/index.html
+
+- The App covers foot/feet, opposite, send with its two-object patterns, the main Past forms of the operators, -ing forms as activity nouns, possessive adjectives identifying the doer, let us, among, through and together.
+- **Missing adjective note:** the source explicitly teaches that `awake` is not used before a noun, with "Some of the girls are still awake." The App does not teach this point or include `awake`.
+- The source's `opposite` explanation includes the spatial relation of two things at opposite sides of a field; the App gives opposite wall / opposite the house / opposite to us but omits that specific distinction.
+- The App summarizes Past-form groups and gives a list, but omits some source explanations/examples about how the final letter or middle vowel changes (including dropping final `e` after the vowel change). The principal forms themselves are represented.
+- Exercise coverage is substantially incomplete. The source has five groups: a picture-story cloze using Past forms; ten questions about that picture story; sentences about six pictures illustrating the prepositions; eight Past-tense transformations; and four rewrites introducing an -ing noun without changing the sense. The App replaces these with a list of Past forms, four Past-tense transformations and open writing about -ing nouns / let us. It does not include the source picture story, its ten questions, the six-picture preposition task, most Past transformations, or the four meaning-preserving -ing rewrites.
+
+### Batch 3 result
+
+- Detailed source audit completed: 10 of the 14 locally adapted Steps (1, 2, 3, 5, 6, 9, 10, 12, 13 and 15).
+- Steps 12, 13 and 15 preserve the main teaching themes but contain confirmed reading/rule omissions and substantial exercise replacement. Step 12's opening dialogue changes Jim's answer and whether he is already in the bath.
+- Audit-only work: no App code was changed. Remaining adapted Steps: 17, 18, 20 and 25.
