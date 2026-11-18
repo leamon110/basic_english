@@ -811,15 +811,15 @@ The original pages put number/amount examples first, then move to time words. Th
 
 The source covers:
 
-- each → every one separately;
-- altogether → total amount, or quite/completely in a different use;
-- whole → all the group;
+- each → the distribution is made to every one (separately);
+- altogether → total count, or quite/completely in a different use;
+- whole → all the group; whole story → the complete story;
 - few → a small number;
 - many → a great number / quite a number;
 - too many → more than enough / overmuch;
 - too tired to go → so tired that one cannot go;
 - ill too → ill in addition;
-- once → one time only, in one use.
+- once → one time only (C10), or at one time / in the past (cross-link to C11).
 
 **B. Time and sequence**
 
