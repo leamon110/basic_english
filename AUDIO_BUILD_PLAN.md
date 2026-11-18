@@ -949,3 +949,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App code or Android workflow input changed; no Android build was triggered.
 - Next action: determine which of the source examples can naturally be taught together by comparing their actual expression patterns and context conditions; only after that should the App prototypes be reorganized.
 
+
+
+### Cross-topic structure reuse checked (2026-11-18)
+
+- Compared the source examples across Simple Acts, Complex Acts and Other Suggestions with the structural index.
+- Confirmed the same broad structures recur across different meaning groups: Operator + Name; Operator + Name + Directive; Operator + Directive; Operator + Quality; Operator + Object + Directive; Operator + Clause; Name of Act + Directive.
+- Confirmed the reverse issue as well: the same ordinary word can require different Basic expressions when its contextual meaning changes (speak, run, touch are clear examples).
+- Curriculum implication: organize learning around actual meaning problems; introduce a reusable structure where it naturally appears and reuse it later. Do not create a detached module for every structure, and do not teach the structures as freely combinable formulas.
+- Fixed Word-Groups remain a separate phrase-level constraint; a structurally plausible combination is not automatically an accepted fixed use.
+- Updated the lesson-boundary guidance and Common Needs index with these conclusions.
+- No App code or Android workflow input changed; no Android build was triggered.
+- Next action: draft one complete candidate teaching unit from the communication examples and test whether the scope feels coherent before using the same boundary standard elsewhere.
+

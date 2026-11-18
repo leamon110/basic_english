@@ -210,6 +210,12 @@ Ogden 的第三部分还处理：
 | Name of Act + Directive | a taste for；a desire for；a grip of；a memory of | 用动作/状态名称加关系词表达 |
 | 固定词组 | get on well；put up with；take into account | 不能只靠单词字面义推导的特殊用法 |
 
+
+这些结构在不同主题中会反复出现，因此它们是可复用的表达工具，不是必须各自成为一课的分类。反过来，同一个普通英语词也可能因语境而换结构：speak、run、touch 都有不同用法。课程应把这种意义差异放在真实语境中对比。
+
+这些归纳只帮助看清结构，不表示任意 Operator、Name 和 Directive 都能自由组合。固定词组仍须按原书清单核实，不能把“结构看起来相似”当成搭配正确的证明。
+
+
 ## 7. 这对课程意味着什么
 
 Common Needs 的教学不能做成“普通动词 = 一个 Basic 短语”的背诵表。每个主题只需把四件事讲清楚：
