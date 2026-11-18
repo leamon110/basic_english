@@ -1429,3 +1429,18 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Current branch head: `57773d85b95735c6cf71f3c72b52dc8d8503ea4f` (`Record revised candidate structure v0.2`).
 - Latest Actions remains Run 48 / `44197915524`, completed / success, built commit `9a1793905b4abc7d24bd1c598a5a3004450f6748`. All 23 job/post-job steps succeeded. Logs confirm 850/850 final human audio coverage, 0 downloads, 0 errors, `BUILD SUCCESSFUL`, and successful upload of APK artifact `14379604453` and coverage artifact `14380462964`; both remain unexpired. No active or queued run exists.
 - Compare against the Run 48 build commit: 71 commits ahead / 0 behind; changed files are ten root-level Markdown research/plan documents only. No `docs/**`, `android-offline/**`, `scripts/**` or workflow file changed. The workflow uses `cancel-in-progress: true`, but no build was active and no new build was triggered.
+
+
+### Whole-sequence audit 01 — Source coverage and all 50 priority Fixed Word-Groups (2026-11-18)
+
+- Mapped all currently indexed Some Common Needs examples to the revised v0.2 candidate:
+  - Simple Acts: 43 rows after the duplicate plate-break row was removed.
+  - Complex Acts: 48 rows.
+  - Total: 91 indexed application rows, each with a primary Lesson or explicit cross-link.
+  - Other Suggestions: all 24 target words/categories mapped to modality, quantity, time, conditional foundations, or context-dependent paraphrase.
+- Mapped all 50 Most Necessary Fixed Word-Groups individually. The numbered table in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md` records each placement, including foundation-level and cross-topic phrases rather than forcing them into an unrelated Lesson. Rechecked the count: exactly 50 entries.
+- The 250-item Fixed Word-Groups structure and the 50 priority entries are verified; the remaining 200 items are not yet transcribed/mapped individually. The 91 application rows are the current project-index coverage, not a claim of a verbatim transcription of every original sentence.
+- Updated `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md` and `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with the coverage matrix and limits.
+- This completes source-index coverage for the currently indexed material, but does not yet prove correct prerequisites, no overlap or whole-sequence lesson size.
+- Next concrete step: inspect the actual Teaching / 45 Steps course map and adaptation audit; compare each candidate Lesson's required tools with what is already taught; identify missing prerequisites, duplication and appropriate order.
+- No App source changed and no Android build triggered.
