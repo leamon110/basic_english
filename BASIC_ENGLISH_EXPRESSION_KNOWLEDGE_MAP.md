@@ -1726,3 +1726,24 @@ The six teaching-size tests provide local evidence, but do not yet prove the com
 
 The 200 other Fixed Word-Groups remain a coverage limitation because the current index does not transcribe all 250 original examples. No final Lesson count or App Lesson IDs are assigned.
 
+
+
+## 35. Whole-sequence audit 01 — Source coverage and 50 priority groups
+
+The current v0.2 candidate has now been checked against the complete set of currently indexed application examples and the full 50-item priority fixed-group list.
+
+- Simple Acts: 43 indexed rows (13 communication; 5 eating; 11 contact/cut/break; 14 movement/posture after duplicate removal).
+- Complex Acts: 48 indexed rows (11 thinking/knowledge/memory; 11 feeling/liking/need; 8 learning/teaching/showing/trying; 18 project-grouped social/economic/life examples).
+- Total: **91 indexed Simple Acts / Complex Acts rows** assigned to a primary Lesson or an explicit cross-link.
+- Other Suggestions: all 24 target words/categories have a destination: modality → L09; quantity/amount → L10; time → L11; unless → conditional foundation; busy/deaf and world/life/hill/home/address → L12.
+- The 50 Most Necessary Fixed Word-Groups have all been reviewed and assigned to a natural Lesson, a Teaching/45 Steps foundation topic or an explicit cross-topic reference. The candidate document records the numbered 1–50 placement table; the count was checked as exactly 50.
+- No forced “social relations” Lesson is needed merely to house phrases such as one another, take part in, respect for or dependent on. They are distributed according to their meanings or retained as cross-topic reinforcement.
+
+Coverage boundary:
+
+- The 91 rows are all examples currently indexed in the project research file; they are not claimed to be a verbatim transcription of every original source sentence.
+- The 250-item Fixed Word-Groups structure and the 50 priority entries are verified, but the remaining 200 examples have not all been transcribed/mapped individually.
+- A source-coverage table does not by itself prove that the complete course sequence has good prerequisites, no overlap or appropriate lesson size.
+
+Next: inspect the actual Teaching / 45 Steps foundation map and compare each candidate Lesson's required tools against what is already taught. Identify missing prerequisites, unnecessary duplication and the correct order before accepting v0.2.
+
