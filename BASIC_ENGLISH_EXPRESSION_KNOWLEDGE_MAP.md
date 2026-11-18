@@ -2361,3 +2361,11 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - This is a first complete draft, not final acceptance. Clarity, answer coverage, overlap with C05 and actual learner time still require review. No App source changed and no Android build triggered.
 - Next: review C06 against the original source and accepted flow, then author Module 2 Lesson 7 — Exchange, Sale & Commitment.
 
+## 75. C06 source-direction correction — friendship vs liking (2026-11-18)
+
+- During the C06 draft review, found that the first wording could be read as “like a person = be friends with them”. The original p.252 is more precise: being pleased with things is expressed as liking them; being friends with persons is expressed as getting on well with them.
+- Corrected the C06 lesson, source index and teaching flow to preserve the source direction: **get on well with a person → be friends with them**. The lesson no longer treats every form of liking a person as equivalent to friendship.
+- Also changed the pain/pleasure table descriptions to “an experience of pain/pleasure” rather than adding an unsupported physical/internal classification.
+- The remaining distinctions (approval/disapproval, taste/preference, desire/need and feel cross-links) remain unchanged.
+- C06 still needs final answer/volume review and actual learner-time testing.
+
