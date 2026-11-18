@@ -785,7 +785,7 @@ The source distinctions are:
 
 - can: ability (“be able to”) or possibility (“it is possible for me to do it”);
 - ought: right/wise action or one's business/duty to do something;
-- ought in a statement about what is expected to happen: probability based on the facts;
+- ought in a statement about what is expected to happen: probability from the fact that it will be so;
 - shall in non-question statements: will;
 - “Shall I do it?”: asking whether one is going to do it or whether it is wise to do it.
 
