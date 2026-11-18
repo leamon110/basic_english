@@ -134,7 +134,7 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | be conscious of movement | be conscious of something moving | be + Quality + of |
 | feel a wall to test whether it is dry | put one's hands on it | put + 身体部位 + on |
 | like things | be pleased with them；have approval of them；give approval to them | be / have / give + 名称或性质 |
-| like persons | be friends with them；get on well with them | be + 名称 + with / get + on + well |
+| get on well with a person | be friends with them | be + 名称 + with |
 | like good food or pictures | have a taste for them | have + 名称 + for |
 | approve of something | give approval；be in agreement with it | give + 名称 / be + in + 名称 + with |
 | disapprove of something | give disapproval；be in disagreement with it | give + 名称 / be + in + 名称 + with |
