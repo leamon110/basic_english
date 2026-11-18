@@ -1383,3 +1383,122 @@ Next:
 3. identify which candidate tasks are large/coherent enough to become Lessons;
 4. only then construct Module boundaries and count Lessons.
 
+
+
+## 28. Cross-cutting supplement audit 01 — Fixed Word-Groups and Endings
+
+### 28.1 50 Most Necessary Fixed Word-Groups
+
+The complete 50-item priority list has now been reviewed as a curriculum supplement.
+
+The important finding is not the number 50; it is the **spread of learning tasks**. The items naturally attach to many different themes:
+
+| Natural role | Representative priority groups |
+|---|---|
+| state / condition / activity | at war, at work, in use, in motion, full of |
+| relation / attitude | respect for, different from, angry with, pleased with, tired of |
+| modality / ability | be able to |
+| tolerance / continuation / cessation | put up with, farther on, go on, give up, put a stop to |
+| movement / location | out of the room, go over, get out, in/out of the way |
+| process / state change | come to a stop, worked out, go out, go to sleep, go off |
+| causation / influence | have an effect on, give way to |
+| time | a year back, in the end, at present, good morning/day/night |
+| memory / participation / social relation | in memory of, take part in, one another, dear Mr. A |
+| existence / addition / condition | there is, in addition to, but for, as if |
+| quantity / degree / relation | bad/good/quick/working at, control/grip of, 10 years old, dependent on |
+| special fixed use | off his head, make up a story, put off a meeting, get out of doing |
+
+This confirms:
+
+> **The 50 priority fixed groups are not a curriculum block. They are a cross-topic reinforcement layer.**
+
+A fixed group should normally enter a lesson because that lesson already needs its meaning, not because the group has a number in the original list.
+
+### 28.2 Words Formed by Endings
+
+The source material checked for the Key Selection shows three different instructional roles.
+
+#### Role A — productive regular forms
+
+The general rule allows many Things to take:
+
+- -er
+- -ing
+- -ed
+
+with the expected Basic meanings.
+
+The source gives a large 300-word source list and explicitly explains that not every word behaves identically.
+
+#### Role B — forms with an important new sense
+
+Examples include:
+
+- clothing
+- crying
+- marked
+- noted
+- pained
+- painting
+- parting / parted
+- training / trained
+
+These are not merely mechanical morphology exercises; the derived form has a useful established meaning.
+
+#### Role C — forms needed mainly as normal forms of the root
+
+Examples include:
+
+- base
+- burn
+- cook
+- drop
+- heat
+- play
+- rain
+- shock
+- snow
+- trouble
+- waste
+
+The source also notes special or limited behavior for some words, so the course must not imply that every 850 noun automatically accepts every ending.
+
+### 28.3 Curriculum implication
+
+Words Formed by Endings should remain a **cross-cutting word-form resource**.
+
+The same ending may appear in many semantic themes:
+
+- physical action: cutting, breaking, rubbing, etc.;
+- communication: talking, writing, reading;
+- learning: training;
+- states/qualities: pained, marked, noted;
+- everyday objects and activities: cooking, heating, cleaning.
+
+Therefore the curriculum should teach the productive rule in the basic word-form system, then teach important exceptional/expanded forms **at the point where they become useful**.
+
+The source itself demonstrates that some derived forms have new meanings and some merely provide regular forms. These two cases should not be taught as though they were identical.
+
+### 28.4 Cross-topic conclusion
+
+Two major supplements are now confirmed as cross-cutting rather than independent curriculum blocks:
+
+- **50 Most Necessary Fixed Word-Groups** → reinforcement layer;
+- **Words Formed by Endings** → word-form resource plus selected semantic forms.
+
+Neither should determine Module / Lesson count.
+
+## 29. Current research checkpoint after Cross-cutting Audit 01
+
+The main application material and the first two cross-cutting supplements have now been analyzed at the same design level.
+
+The emerging curriculum model is therefore:
+
+> **semantic learning themes**
+> + **basic tools already taught elsewhere**
+> + **fixed-word-group reinforcement**
+> + **selected word-form reinforcement**
+> + **Meaning → Basic production/reception practice**
+
+The remaining major cross-cutting material is **Names of Things and Qualities / Expansions**, which must now be compared with the application themes before final Lesson boundaries can be proposed.
+
