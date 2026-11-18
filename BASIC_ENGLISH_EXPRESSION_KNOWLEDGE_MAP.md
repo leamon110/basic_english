@@ -2184,3 +2184,12 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - This is a first complete draft, not final acceptance. Clarity, answer coverage, exercise volume and actual learner time still require review. No App source changed and no Android build triggered.
 - Next: review C03 against the original pages and accepted flow, then author Module 2 Lesson 4 — Movement & Position.
 
+## 61. C03 source-fidelity correction — destroy and hurt (2026-11-18)
+
+- During the C03 draft review, a source paraphrase was found to be too broad: the first draft generalized “put an end to it” to destroying anything. The original p.254 specifically says that objects may have been burned, smashed or broken, while animals are destroyed by “putting an end to them”.
+- The original also distinguishes hurting animals (giving pain and possibly wounds) from the possible serious damage caused by those wounds. It does not make “do serious damage” a universal direct replacement for hurt.
+- Corrected BASIC_ENGLISH_EXPRESSION_M2_L3_DRAFT.md and BASIC_ENGLISH_NAMES_OF_ACTS.md to preserve those limits. The exercise now specifies an animal for the “put an end to it” use, and the reverse check says wounds may do serious damage.
+- Rechecked the p.246–247 cut/break/smash examples and Step 17 prerequisite. The action/result/state/self-occurring distinctions remain intact.
+- This correction improves source fidelity; C03 still needs final answer/teaching-volume review and actual learner-time testing. No App source changed and no Android build triggered.
+- Next: complete the C03 review and then author Module 2 Lesson 4 — Movement & Position.
+
