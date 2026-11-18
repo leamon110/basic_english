@@ -1363,3 +1363,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Decision: place the show contrast set under Communication & Information, with a cross-link to Feeling/Attitude for “show interest”. “Try” / “make an attempt” remains a supporting pattern, not a standalone Lesson.
 - No App code changed and no Android build triggered.
 - Next concrete step: test whether the narrowed Exchange/Sale/Commitment material is large and coherent enough for a Lesson, then test State/Process and the Other Suggestions groups.
+
+
+### Teaching-size test 04 — Exchange/commitment and state/process (2026-11-18)
+
+- Built short teaching outlines and sample exercises for the narrowed transaction group and the state/process group; recorded them in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md`.
+- The former 18-row social/economic/life grouping separates into distinct meanings. The five buy/sell/keep-for-sale/promise rows form a coherent transaction/commitment theme; the priority fixed group “let a house” is a relevant rental/transaction reinforcement. The old “Social Exchange, Relations & Participation” title is withdrawn.
+- Decision: retain candidate 08 provisionally as **Exchange, Sale & Commitment**. “One another”, “respect for”, “take part in” and “dependent on” are not forced into this transaction unit.
+- The six grow/be growing/sleep/die/begin/finish examples can be taught as **State and Process: Change, Entry & Ending**: change into a state, ongoing process/state, entering a state, occurrence and process boundaries. Relevant priority groups (in motion, in use, come to a stop, go to sleep, in the end, take place, put a stop to) provide reinforcement.
+- Decision: retain candidate 09 provisionally with the revised title. “Finish” remains a useful contrast because the source itself uses the Basic word directly.
+- No final Module/Lesson count assigned; no App code changed and no Android build triggered.
+- Next concrete step: test Other Suggestions (modality, condition, quantity/degree, time, quality paraphrase and context-dependent names), then test the expansion/special-use boundary.
