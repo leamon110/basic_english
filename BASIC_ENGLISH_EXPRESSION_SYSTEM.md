@@ -283,15 +283,16 @@ Meaning → Basic 也不是一个与原书章节并列的独立模块。它是�
 
 ### 5.6 当前五个 App 原型应怎样处理
 
-| 当前原型 | 实际价值 | 后续处理方向 |
+| 当前原型 | 实际内容与来源 | 后续处理方向 |
 |---|---|---|
-| Lesson 01：speak | 很好的“先看语境、再选表达”入门示范 | 保留为课程开端或总示范，不因为它已有 Lesson 01 编号就认定它必须独占一课。 |
+| Lesson 01：speak | Some Common Needs，p.244 的三个语境 | 保留为课程开端或总示范，不因为它已有 Lesson 01 编号就认定它必须独占一课。 |
 | Lesson 02：身体部位扩展 | Names of Things and Qualities 的一个具体子题 | 保留为词义扩展专题的一部分；不能代表整个 Expansions。 |
-| Lesson 03：当前标为 Names of Acts | 现有例子主要来自 Some Common Needs，不是原书 Names of Acts 章节本身 | 后续需更正标题和来源说明，并与 Lesson 05 的常见表达材料重新整理。 |
-| Lesson 04：250 Fixed Word-Groups | 解释固定组合的性质和数量结构 | 保留为入门说明或查询入口；当前5道题既不代表完整250项，也不代表 A Basic Selection 的50项优先清单。 |
-| Lesson 05：Some Common Needs | 选取了8个常见意思 | 与 Lesson 03 存在内容范围重叠；应合并整理，再按真实学习目标划分。 |
+| Lesson 03：当前标为 Names of Acts | tell、sing、touch、hit、catch、run 等来自 Simple Acts；think、understand、remember、forget 来自 Complex Acts | 不是原书 Names of Acts 章节的教学；应更正标题和来源，并按实际主题重新归类。 |
+| Lesson 04：250 Fixed Word-Groups | come to a stop、put up with、keep a government in 等例子 | 前两项也在原书50项最必要固定词组清单中；keep a government in 是250项章节中的说明例子。当前5道题不代表完整250项，也不代表50项优先清单。 |
+| Lesson 05：Some Common Needs | can、ought、unless、busy、deaf、home、world，以及 finish | 前七项来自 Other Suggestions；finish 属于 Complex Acts。应把 finish 放回相应主题，不把不同来源类别混在一课里。 |
 
 Meaning → Basic 当前登记的27道练习是练习题库，不是27课，也不需要再另设一个“练习模块”。
+
 
 ### 5.7 当前结论
 

@@ -937,3 +937,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App code or Android workflow input changed; no Android build was triggered.
 - Next action: compare the real Basic structures and meaning conditions across the source examples, then decide which groups form complete teaching units.
 
+
+
+### Existing App prototype source mapping corrected (2026-11-18)
+
+- Rechecked the actual example arrays in docs/js/expression-more-lessons.js against the original source pages.
+- Lesson 03 currently mixes Simple Acts examples (tell, sing, touch, hit, catch, run) with Complex Acts examples (think, understand, remember, forget). Its current “Names of Acts” label is not the original source chapter title in the sense of its content; it must be retitled and reorganized.
+- Lesson 05 contains seven Other Suggestions examples (can, ought, unless, busy, deaf, home, world) plus finish, which belongs to Complex Acts. The finish item must be moved back to the Complex Acts topic.
+- Lesson 04 uses come to a stop and put up with, which appear in the 50 most necessary fixed-group list, plus keep a government in, used as an example in the 250 fixed-group discussion. Its five questions do not represent full coverage of either list.
+- Updated the five-prototype audit in BASIC_ENGLISH_EXPRESSION_SYSTEM.md with these exact source distinctions.
+- No App code or Android workflow input changed; no Android build was triggered.
+- Next action: determine which of the source examples can naturally be taught together by comparing their actual expression patterns and context conditions; only after that should the App prototypes be reorganized.
+
