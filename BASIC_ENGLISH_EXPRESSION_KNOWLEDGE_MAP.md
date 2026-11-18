@@ -1255,3 +1255,131 @@ Next:
 2. then compare all major application themes;
 3. after that, map the cross-cutting supplements into those themes.
 
+
+
+## 26. Theme-boundary audit 07 — Other Suggestions
+
+### 26.1 Source material checked
+
+The first-round project index records:
+
+- can, ought, shall
+- each, altogether, whole, few, many, too, once
+- ago, already, yet, since, next, always
+- unless
+- busy, deaf
+- world, life, hill, home, address
+
+These are all within the source-level **Other Suggestions** grouping, but they do not form one semantic task.
+
+### 26.2 Candidate task groups
+
+#### A. Ability / obligation / willingness
+
+- can → be able to / it is possible for someone to
+- ought → it is right (wise) for someone to / it is someone's business to
+- shall → will; in questions, alternative expressions such as “Am I going to do it or not?” / “Am I wise to do it?”
+
+The common problem is:
+
+> **How does Basic express modality, possibility, duty or intended action without relying on an ordinary modal verb as a one-word substitute?**
+
+This is a coherent candidate theme.
+
+#### B. Quantity / amount / extent
+
+- each
+- altogether
+- whole
+- few
+- many
+- too
+- once
+
+These require judgments about quantity, distribution, totality, frequency or degree.
+
+This is a different task from modality.
+
+#### C. Time
+
+- ago
+- already
+- yet
+- since
+- next
+- always
+
+These require temporal relationships rather than quantity.
+
+They should not be forced into the same teaching unit merely because the source puts them next to the quantity examples.
+
+#### D. Condition
+
+- unless → if ... not
+
+This is a compact but distinct conditional-expression task.
+
+It may later connect naturally to the broader condition/concession material, rather than forming a full Lesson from this one example.
+
+#### E. Qualities requiring paraphrase
+
+- busy → is working hard / has much to do
+- deaf → whose hearing is bad
+
+The task is:
+
+> **describe a Quality or state using Basic words when the ordinary English adjective itself is not the available Basic expression.**
+
+This is related to the general Meaning → Basic method and to Names of Qualities.
+
+#### F. Common names with context-dependent meaning
+
+- world
+- life
+- hill
+- home
+- address
+
+These are not one semantic task either.
+
+They include cases where a familiar Basic word is used differently depending on context, so they may belong with:
+
+- meaning expansion;
+- contextual specialization;
+- fixed uses;
+- or ordinary vocabulary application.
+
+### 26.3 Current boundary conclusion
+
+Other Suggestions is **not a usable Lesson or Module boundary**.
+
+It is best understood as a source-level collection of expressions that need to be redistributed according to their actual learning tasks:
+
+- modality;
+- quantity/degree;
+- time;
+- condition;
+- quality paraphrase;
+- context-dependent noun meaning.
+
+This is even stronger evidence than the Complex Acts audit that source headings cannot directly determine the project curriculum.
+
+No formal Lesson number is assigned.
+
+## 27. Current research checkpoint after Theme Audit 07
+
+The main Some Common Needs application material has now been tested at the level of source groups:
+
+- Simple Acts: internally mixed; several physical and movement tasks emerged.
+- Complex Acts: some coherent semantic themes, but substantial cross-topic material.
+- Other Suggestions: highly heterogeneous and clearly requires redistribution.
+
+The first-round source grouping is therefore confirmed as a **source index**, not a curriculum structure.
+
+Next:
+
+1. compare the complete set of candidate learning tasks;
+2. map the cross-cutting supplements — 250 Fixed Word-Groups, 50 priority fixed groups, Words Formed by Endings, Names of Things and Qualities — onto those tasks;
+3. identify which candidate tasks are large/coherent enough to become Lessons;
+4. only then construct Module boundaries and count Lessons.
+
