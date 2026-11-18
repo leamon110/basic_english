@@ -1352,3 +1352,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Decision: retain candidate 04 as one provisional Lesson with two explicit sections; do not split object transfer and posture unless a full lesson prototype later proves too long or incoherent.
 - No App code changed and no Android build triggered.
 - Next concrete step: test the boundary between thinking/knowledge/memory and learning/teaching, then distribute the different meanings of show.
+
+
+### Teaching-size test 03 — Knowledge/learning and “show” meanings (2026-11-18)
+
+- Built a short teaching outline and source-based test prompts for the thinking/knowledge/memory group and the separate learn/teach/show/try group; recorded the test in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md`.
+- learn / be taught / teach contribute three examples that fit the same broad knowledge theme as think / know / understand / mean / remember / forget. The combined 14 indexed examples can form one lesson with subsections for mental operations/states, memory and knowledge acquisition/transfer.
+- Decision: candidate 05 absorbs learn/teach and remains one provisional Lesson; candidate 07 is removed as a separate Lesson.
+- The five show/try examples are a compact multi-sense contrast set. Because “show” changes meaning by context, its senses must be compared together: make clear; display/let someone see; guide visitors round; give signs of interest; make an attempt to give signs of interest.
+- Decision: place the show contrast set under Communication & Information, with a cross-link to Feeling/Attitude for “show interest”. “Try” / “make an attempt” remains a supporting pattern, not a standalone Lesson.
+- No App code changed and no Android build triggered.
+- Next concrete step: test whether the narrowed Exchange/Sale/Commitment material is large and coherent enough for a Lesson, then test State/Process and the Other Suggestions groups.
