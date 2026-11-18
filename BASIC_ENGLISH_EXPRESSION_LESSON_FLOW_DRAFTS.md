@@ -947,19 +947,21 @@ The learner distinguishes number/amount, distribution, totality and degree. The 
 #### 1. Distribution and totality
 
 Compare:
-- each: members considered separately;
-- altogether: the total amount, or in some contexts completely;
-- whole: the group taken as one complete unit.
 
-Use examples that make the difference visible: one-by-one vs total count vs the complete group.
+- **each:** members are considered separately → every one separately;
+- **altogether:** the total count, as in “six of them altogether”; the source illustrates the result with “there would make six”. In “altogether wrong”, it means quite or completely so;
+- **whole:** the group as one complete unit (“the whole group” → all the group); for a story, “the whole story” → the complete story.
+
+Use examples that make the difference visible: separate distribution vs total count vs the complete group or story.
 
 #### 2. Small and large amounts
 
 Compare:
-- few: a small number;
-- many: a large number.
 
-Keep the source's warning: when the exact amount matters, use a more explicit expression rather than relying on an unclear vague quantity.
+- **few:** a small number; the source notes that “few men” are frequently two or three, but advises saying “a small number” when the exact count is uncertain;
+- **many:** a great number or quite a number.
+
+Keep the source's warning: few does not give an exact count. When precision matters, use a more explicit expression rather than guessing a number.
 
 #### 3. too: amount, degree or addition
 
