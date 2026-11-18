@@ -368,4 +368,4 @@ You should now be able to:
 - distinguish a promise from payment and keeping one's word from giving one's word;
 - recognize the selected business fixed phrases without confusing them with unrelated meanings such as “to one's credit” or “at a loss”.
 
-**Next lesson:** Module 2 Lesson 8 — Social Exchange, Relations & Participation.
+**Next lesson:** Module 2 Lesson 8 — State and Process: Change, Entry & Ending.
