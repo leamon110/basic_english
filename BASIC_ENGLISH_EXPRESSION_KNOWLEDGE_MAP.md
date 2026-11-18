@@ -2193,3 +2193,11 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - This correction improves source fidelity; C03 still needs final answer/teaching-volume review and actual learner-time testing. No App source changed and no Android build triggered.
 - Next: complete the C03 review and then author Module 2 Lesson 4 — Movement & Position.
 
+## 62. C03 source wording correction — hurt / wounds (2026-11-18)
+
+- A second close reading of p.254 showed that the source does not state the separate Basic phrase “give wounds”. It says that attempts may hurt animals, “giving them pain; and possibly wounds which may do serious damage”.
+- Removed “give wounds” as a claimed direct source expression from the C03 lesson and source index. The lesson now preserves the actual relation: hurt → give them pain; wounds may occur; those wounds may do serious damage.
+- Reworded the corresponding exercise and reverse check. Also changed the first cut exercise prompt to the clearer “Someone gets a thread cut.”
+- The destroy / put an end to boundary remains restricted to animals, as in the source. Other C03 action/result distinctions remain unchanged.
+- This completes the source-wording correction pass. Final answer coverage, exercise volume and actual learner time still require review.
+
