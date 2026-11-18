@@ -51,8 +51,8 @@ The source next describes the position of a person or thing.
 |---|---|---|
 | lie on something | be on it / be resting on it | A position or state |
 | get upright after lying down | stand / get up | A change into an upright position |
-| remain standing | be on one's feet / still be standing | A continuing position |
-| something stands in a place | be placed in a certain position | The position of an object |
+| remain standing | be on one's feet | A continuing position |
+| a thing stands in a certain position | stand / be placed in a certain position | The position of an object |
 | sit | take a seat / be seated | Moving into or being in a sitting position |
 | make a move | make a move in some direction | A change of position or direction |
 
@@ -189,8 +189,8 @@ Choose the expression that matches the event.
    - B. send it across the river
    - C. make a mark on it
 
-5. A thing is standing in a certain place.
-   - A. be placed in a certain position
+5. A thing stands in a certain position.
+   - A. stand / be placed in a certain position
    - B. go quickly
    - C. give it a rub
 
@@ -200,7 +200,7 @@ Choose the expression that matches the event.
 2. A — Get up describes the change into an upright position.
 3. A — Being on one's feet describes the continuing position.
 4. A — Take a seat describes the action of sitting down.
-5. A — The source also uses stand for an object's placed position.
+5. A — The source says that things which stand are placed in a certain position.
 
 ### C. Distinguish the meanings of run and slip
 
