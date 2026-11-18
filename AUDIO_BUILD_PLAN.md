@@ -1673,3 +1673,25 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete step: begin Module 2 Lesson 1 — Communication & Information, reusing the existing communication prototype rather than duplicating it.
 
+### Module 2 Lesson 1 — Communication & Information integrated draft (2026-11-18)
+
+- Re-ran the mandatory startup procedure before continuing: read AGENTS.md (53 lines) and the complete live AUDIO_BUILD_PLAN.md (1,676 lines); fetched the live branch head and all branch Actions runs.
+- Startup state: branch HEAD before this work was 187c719a7fb36597daff814e1a3ba7dca5fed9b8 (Record Module 1 Lesson 3 source and flow review). The branch Actions endpoint returned all 48 runs (total_count=48, returned=48); all 48 are completed. Newest is Run 48 / 44197915524, completed / success, built commit 9a1793905b4abc7d24bd1c598a5a3004450f6748. No queued, waiting, requested, pending or in-progress run exists.
+- Inspected Run 48's one build job and all 23 main/post-job steps; all completed successfully. Logs confirm:
+  - Meaning-to-Basic: 40 accepted patterns, 28 known semantic mismatches, 2 viewpoint mismatches, 1 unsupported-boundary case, 1 punctuation case;
+  - Teaching: 13 units / 47 questions / 16 Operators / 20 Directives;
+  - Expression Lesson 02: 11 terms / 10 questions;
+  - follow-on lessons: 3 lessons / 23 questions;
+  - human audio: 850/850, 0 downloaded, 850 restored from cache, 0 errors, 9.45 MB;
+  - Android Gradle BUILD SUCCESSFUL;
+  - APK artifact 14379604453 (9,272,570 bytes) and coverage artifact 14380462964 (21,467 bytes) uploaded and not expired.
+- The workflow's push filter watches docs/**, android-offline/**, scripts/** and the workflow file; it also supports manual dispatch and uses cancel-in-progress: true. This work changed root-level Markdown only; no App/build-watched file changed and no new build was triggered.
+- Rechecked the original English scan pages printed pp.244–245 and p.252. The communication source examples cover speak, tell, sing, hear, listen, later news, writing, reading and sending a letter. The p.252 show examples are a separate compact polysemy comparison: make clear; let someone see / put on view; take visitors round; give signs of interest; make an attempt to give signs of interest.
+- Confirmed C01's accepted scope in BASIC_ENGLISH_EXPRESSION_CURRICULUM.md: production/transmission and reception/processing remain two internal parts of one Communication & Information Lesson.
+- Inspected the existing speak prototype in BASIC_ENGLISH_EXPRESSION_LESSON_01.md and docs/js/expression-system.js. Reuse its three-context opening; do not duplicate it. Keep speak a language → have a knowledge of it as a cross-topic knowledge example, not a communication event.
+- Created BASIC_ENGLISH_EXPRESSION_M2_L1_DRAFT.md as the first integrated C01 content draft. It reuses the existing speak prototype, develops the remaining source examples, keeps the show comparison short, and adds recognition, answer-explanation, reverse-understanding and independent-construction practice.
+- Updated BASIC_ENGLISH_EXPRESSION_COMMUNICATION_DRAFT.md to reflect the accepted C01 mapping and the one-Lesson decision. Updated BASIC_ENGLISH_EXPRESSION_LESSON_01.md to clarify that its old “Lesson 01” label belongs to the pre-curriculum speak prototype now reused inside C01, not an extra course Lesson. Updated BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md.
+- Checker boundary recorded: the existing Lesson 01 auto-checker only supports its registered say something to him target. The new C01 open construction practice is not automatically scored; do not imply the existing checker evaluates arbitrary communication sentences.
+- Verification boundary: this is a first integrated draft, not final acceptance. Clarity, exercise volume, duplicate examples against later Module 2 lessons and actual learner time remain to be reviewed. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: review C01 against the original source pages and accepted C01 flow, then author Module 2 Lesson 2 — Bodily Action & Contact. Preserve the 2 Modules / 15 Lessons architecture; do not revive the withdrawn 14- or 23-Lesson proposals.
+
