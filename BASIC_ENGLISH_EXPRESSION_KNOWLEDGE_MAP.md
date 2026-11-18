@@ -2436,7 +2436,7 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Kept find/lose/discover examples in C04/C05 by meaning; damage/hurt in C03; life/process in C08. Excluded the horse-race money-risk example as a betting context rather than a sale lesson.
 - Added buyer/seller role recognition, sale-condition recognition, commitment, business-context explanation, boundary checks, reverse understanding and independent construction. The open task is explicitly not auto-scored by the current App.
 - This is a first complete draft, not final acceptance. Source/answer coverage, lesson volume and actual learner time still require review. No App source changed and no Android build triggered.
-- Next: review C07 against the original source and accepted flow, then author Module 2 Lesson 8 — Social Exchange, Relations & Participation.
+- Next: review C07 against the original source and accepted flow, then author Module 2 Lesson 8 — State and Process: Change, Entry & Ending.
 
 ## 81. C07 internal source and answer review complete (2026-11-18)
 
@@ -2448,5 +2448,11 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Verified all closed practice items and answers: A 4/4, B 5/5, C 4/4, D 3/3, E 4/4, F 15/15 — 35 prompts and 35 corresponding answers. The independent-construction task is explicitly not auto-scored by the current App.
 - C07 is source-reviewed and internally reviewed, but not user-tested or App-integrated. Actual learner time remains unmeasured.
 - No App source or Android workflow input changed; no build was triggered.
-- Next: author Module 2 Lesson 8 — Social Exchange, Relations & Participation.
+- Next: author Module 2 Lesson 8 — State and Process: Change, Entry & Ending.
+
+## 82. Correct C07 → C08 handoff (2026-11-18)
+
+- The accepted curriculum and candidate structure were rechecked after C07 review. They explicitly withdraw the earlier “Social Exchange, Relations & Participation” label for Lesson 8.
+- The accepted order is C08 — State and Process: Change, Entry & Ending; C09 — Ability, Obligation & Intention.
+- Corrected the C07 draft, its review checkpoint and AUDIO_BUILD_PLAN.md so the next lesson is C08 State and Process. No curriculum scope change was made.
 
