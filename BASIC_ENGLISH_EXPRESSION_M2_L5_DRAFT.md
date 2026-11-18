@@ -1,6 +1,6 @@
 # Module 2 · Lesson 5 — Thinking, Knowledge, Memory & Learning
 
-> **Draft status:** first complete teaching-content draft. It is based on Ogden's *The ABC of Basic English*, pp.250 and 252. The source examples are kept distinct from project-created explanations and exercises. This lesson covers mental relations and the acquisition/transfer of knowledge; feeling, physical touch and the different meanings of show remain cross-linked to their own lessons. Clarity, answer coverage and actual learner time still require review.
+> **Draft status:** source-reviewed first complete teaching-content draft. It is based on Ogden's *The ABC of Basic English*, pp.250 and 252. The source examples are kept distinct from project-created explanations and exercises. This lesson covers mental relations and the acquisition/transfer of knowledge; feeling, physical touch and the different meanings of show remain cross-linked to their own lessons. Clarity, answer coverage and actual learner time still require review.
 
 ## What this lesson teaches
 
@@ -84,8 +84,7 @@ The source then describes how knowledge is acquired and given.
 
 | Ordinary English meaning | Basic expression from the source | What is happening |
 |---|---|---|
-| learn facts | get facts into one's head | Facts are acquired by the learner |
-| get knowledge of something | get knowledge of it | The learner acquires knowledge |
+| learn facts / acquire knowledge of them | get facts into one's head / get knowledge of them | Facts or knowledge are acquired by the learner |
 | be taught | be taught | The learner receives teaching |
 | teach a subject | give training or teaching | The teacher gives instruction |
 
