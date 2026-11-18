@@ -177,7 +177,7 @@ Choose the description that preserves the intended meaning.
    - B. A private address.
    - C. The collective-people reading.
 
-7. A sentence says that the world is changing, and the context concerns the state of society. Which description fits?
+7. A sentence reports change in the world, and the context concerns the state of society. Which description fits?
    - A. The changing state of society.
    - B. A person's home.
    - C. A single raised landform.
