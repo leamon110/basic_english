@@ -1790,3 +1790,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is a source-fidelity correction, not final acceptance. Answer coverage, teaching volume and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: finish C03 review, then author Module 2 Lesson 4 — Movement & Position.
 
+### C03 review — exact source wording for hurt and wounds (2026-11-18)
+
+- A second close reading of original p.254 showed that the source does not state a separate Basic expression “give wounds”. It says attempts may hurt animals, giving them pain and possibly wounds which may do serious damage.
+- Removed “give wounds” as a claimed direct source expression from BASIC_ENGLISH_EXPRESSION_M2_L3_DRAFT.md and BASIC_ENGLISH_NAMES_OF_ACTS.md. The lesson now preserves the exact relation: hurt → give them pain; wounds may occur; wounds may do serious damage.
+- Reworded the corresponding exercise and reverse check. Changed the first cut exercise prompt to the clearer “Someone gets a thread cut.”
+- The “put an end to them” use remains restricted to animals, as in the source. Other C03 action/result distinctions remain unchanged.
+- This completes the source-wording correction pass, not final lesson acceptance. Answer coverage, exercise volume and actual learner time still require review. No App source changed and no Android build triggered.
+- Next: finish C03 teaching review and then author Module 2 Lesson 4 — Movement & Position.
+
