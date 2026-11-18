@@ -1,10 +1,10 @@
 # Module 2 · Lesson 9 — Ability, Obligation & Intention
 
-> **Draft status:** first complete teaching-content draft. It is based on *The ABC of Basic English*, printed p.256, and the accepted C09 teaching flow. The source-specific meanings of can, ought and shall are kept distinct. The fixed group be able to reinforces only the ability meaning. Source/answer coverage is included; actual learner time and user feedback remain unmeasured.
+> **Draft status:** source-reviewed and internally reviewed teaching-content draft. It is based on *The ABC of Basic English*, printed p.256, with the conditional-boundary cross-reference to p.260 and the accepted C09 teaching flow. The source-specific meanings of can, ought and shall are kept distinct. The fixed group be able to reinforces only the ability meaning. All 25 closed practice prompts have matching answers. Actual learner time and user feedback remain unmeasured; the lesson is not user-tested or App-integrated.
 
 ## What this lesson teaches
 
-The source treats **can**, **ought** and **shall** as ordinary-English words that need special handling when we express an action in Basic English. They are not three Basic words with one fixed Chinese meaning each.
+The source treats **can**, **ought** and **shall** as ordinary-English words that need special handling when we express an action in Basic English. They are not entries in the 850-word list; the lesson teaches the Basic constructions the source gives for their different meanings. They are not three words with one fixed Chinese meaning each.
 
 The learner must identify the relation expressed:
 
@@ -12,7 +12,7 @@ The learner must identify the relation expressed:
 2. possibility — it is possible for the person to do it;
 3. advisability — it is right or wise to do it;
 4. duty or responsibility — it is the person's business to do it;
-5. probability — the facts support an expectation;
+5. probability — the fact supports an expectation;
 6. intention or decision — the speaker asks whether they are going to do something.
 
 The question is not simply “Which modal verb is this?” It is “What does the speaker mean about the action?”
@@ -111,7 +111,7 @@ The fixed group supports the lesson; it is not a separate modal rule.
 
 ## 5. Keep condition separate
 
-The source also explains **unless** as **if ... not**. This is a conditional-clause relation, not one of the can / ought / shall meanings.
+The source explains **unless** as **if ... not** on p.260. This is a conditional-clause relation, not one of the can / ought / shall meanings.
 
 - unless I do it → if I do not do it.
 
@@ -262,7 +262,7 @@ Explain the force described by each Basic expression.
 3. Doing it is the right thing.
 4. Doing it is wise.
 5. It is the person's duty or responsibility.
-6. The facts support the expectation that it will be so.
+6. The fact supports the expectation that it will be so.
 7. The statement use of shall.
 8. A question about intention or decision.
 9. A question about whether the action is wise.
