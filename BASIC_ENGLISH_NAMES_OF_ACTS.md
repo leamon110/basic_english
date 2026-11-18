@@ -180,7 +180,9 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | sleep | go to sleep；be in sleep | go + to + 名称 / be + in + 名称 |
 | die | go to one's death；come to one's end；take one's last breath | go / come / take + 名称 |
 | begin | make a start | make + 名称 |
-| finish | finish | 原书在此处直接使用 finish；并非每个普通英语动词都必须替换 |
+| finish（p.256 解释句中的普通英语词） | 本段未给出 finish 的 Basic 对应表达 | 原书用 finish 解释“开始之后会结束”；它不是 Basic 词汇或 finish → finish 的转换例子 |
+
+**Source-fidelity note (p.256):** the sentence that says everything that begins will later finish is explanatory English. The source gives **make a start** for begin, but does not give a Basic rendering for the general verb finish. The current 850-word list does not contain finish. Do not teach finish → finish as a Basic expression.
 
 ## 5. Other Suggestions：不只是动作动词
 
