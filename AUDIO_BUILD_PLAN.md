@@ -1243,3 +1243,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 05.
 - Next concrete step: audit the remaining Complex Acts social/economic/life-process examples.
 - No App code changed and no Android build triggered.
+
+
+### Theme Audit 06 — Complex Acts social / economic / life-process material (2026-11-18)
+
+- Audited buy, sell, promise, find, lose, destroy, hurt, grow, sleep, die, begin and finish.
+- Confirmed this project convenience grouping is highly heterogeneous and must not become a Lesson simply because it sits under Complex Acts.
+- Identified natural cross-links: destroy/hurt → physical effect; find/lose → location/knowledge; grow → change of state/degree; begin/finish → process boundaries; sleep/die → life states/processes; buy/sell/promise → exchange/commitment.
+- This is strong evidence for a task-based curriculum that crosses the source's Simple Acts / Complex Acts boundaries when the learner's decision problem is the same.
+- No formal Lesson number assigned.
+- Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 06.
+- Next concrete step: audit Other Suggestions, then compare all major application themes before mapping fixed groups, endings and expansion material into them.
+- No App code changed and no Android build triggered.
