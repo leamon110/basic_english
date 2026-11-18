@@ -925,3 +925,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App code or Android workflow input changed; no Android build was triggered.
 - Next action: test the proposed topic groupings against the actual Basic structures used by each example, identify repeated structures and important contrasts, then determine natural lesson boundaries.
 
+
+
+### Teaching flow and lesson-boundary rules simplified (2026-11-18)
+
+- Rechecked the current expression-system outline and the detailed Common Needs research index.
+- Simplified the former nine-step mandatory lesson template into a natural three-part teaching flow: identify meaning in context → compare Basic expression(s) and conditions → learner constructs and reverse-checks.
+- Changed lesson splitting criteria: keep examples together when they teach the same decision; contrast different senses of the same ordinary word; split only when a genuinely new decision or expression method is required. Do not split by page, item count or old lesson number.
+- Corrected the Common Needs research index so it no longer calls its own content a “Names of Acts course unit”; Names of Acts is the Operators chapter, while the index combines that reference with Some Common Needs examples.
+- Preserved separate feedback dimensions for vocabulary, implemented grammar, meaning preservation and verified fixed phrases. Unsupported cases must remain “cannot yet judge.”
+- No App code or Android workflow input changed; no Android build was triggered.
+- Next action: compare the real Basic structures and meaning conditions across the source examples, then decide which groups form complete teaching units.
+

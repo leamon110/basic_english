@@ -212,25 +212,23 @@ Ogden 的第三部分还处理：
 
 ## 7. 这对课程意味着什么
 
-一个合格的 Names of Acts 课程单元，不应只显示“普通动词 = Basic 短语”。必须让学习者看到：
+Common Needs 的教学不能做成“普通动词 = 一个 Basic 短语”的背诵表。每个主题只需把四件事讲清楚：
 
-1. 普通英语词在当前句子中的具体含义；
-2. 这个意思是身体动作、心理过程、社会行为，还是状态变化；
-3. 需要哪个 Operator；
-4. 需要哪个 Name of Act / Thing / Quality；
-5. 是否需要 Directive，以及它表达的是路径、目标、来源、位置、原因还是其他关系；
-6. 为什么这一结构保留了原句的意思；
-7. 哪些其他 Basic 表达也成立，哪些只适用于另一种语境；
-8. 让学习者自己把新的普通英语句子重新表达为 Basic。
+1. 这个词在当前语境里具体是什么意思？
+2. Basic 用什么结构表达这个意思？
+3. 其他看似相近的表达，为什么不能在这里随意替换？
+4. 学习者能不能把一个新例子说成 Basic，并从 Basic 句子反向理解？
 
-**评分不能只检查字符串是否与参考答案完全相同。** 至少要检查词汇是否符合850词和允许词形、语法是否成立、语义是否保留、上下文是否匹配。
+同一个普通英语词在不同语境中可以对应不同结构；同一种 Basic 结构也会出现在不同意思的表达里。教学要让学习者看见这些联系，但不能把归纳出来的结构当成任意套用的万能公式。
+
 
 ## 8. 与当前 App 的关系
 
-当前 App 已有一些规则题和句子练习，但还没有系统呈现原作者这套 Names of Acts → Common Needs 的教学过程。
+当前 App 已有一些基础规则题和句子练习，但还没有把 Operators 的基础知识与 Some Common Needs 的实际表达训练连成完整、自然的应用过程。
 
 尤其需要避免：
 - 把所有普通动词都塞进 Operator + Directive；
+- 把原书的 Names of Acts 章节与 Some Common Needs 混成同一组内容；
 - 把 get ready 误分类为 Operator + Directive（它是 Operator + Quality）；
 - 把 get knowledge of 误分类为 Operator + Directive（它是 Operator + Name + of）；
 - 把 talk about 误分类为 Operator + Directive（talk 是 Name of Act，talk about 是 Name of Act + Directive）；
