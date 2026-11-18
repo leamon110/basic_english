@@ -1584,3 +1584,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Acceptance boundary: this accepts the curriculum architecture for the authoring phase only. Full lesson scripts, exercise volume/duration, final duplicate-example audit, App prototype migration, implementation, build and device acceptance remain open.
 - Next concrete step: author Module 1 Lesson 1 (Names of Things — Meaning Expansion) as the first complete lesson draft, validate its source coverage and teaching length, then continue in curriculum order.
 - No App source changed and no Android build triggered.
+
+
+### First complete Expression lesson-content draft (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names of Things: Meaning Expansion.
+- The draft teaches representative source-supported relation families: body/structure; sensory similarity; use/behavior/function; cause/process; use; part/whole; material/object; and abstract “as if” use.
+- It includes guided practice, answer explanations and a boundary check against unsupported personal associations. It is a selected teaching draft, not a verbatim transcription of all source examples.
+- The draft is committed to basic-english-learning-upgrade. No App code changed and no Android build triggered.
+- Tool correction: an earlier create action omitted the branch argument and briefly created the same draft on the repository default branch. That root-level Markdown file was immediately deleted using its exact blob SHA; the corrected file now exists on the intended upgrade branch. Neither path is watched by the Android workflow, so this did not trigger or cancel a build.
+- Next concrete step: review C13 draft against the source examples, then author Module 1 Lesson 2 (Names of Qualities — Meaning Expansion & Use as Things).
