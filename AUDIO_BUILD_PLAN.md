@@ -989,3 +989,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App code or Android workflow input changed; no Android build was triggered.
 - Next action: test the communication topic with actual explanation and practice, then apply the same content-first boundary check to physical actions and Complex Acts.
 
+
+
+### Curriculum record consistency check (2026-11-18)
+
+- Restored an explicit statement in the main curriculum document that the former five-module / 23-lesson proposal, its OWF / EXP / SU / CN / MTB IDs, and the old prototype mappings are withdrawn.
+- Corrected subsection numbering under the Fixed Word-Groups App implications section after inserting the separate 50-item priority list.
+- Recounted the priority list from the committed file: exactly 50 entries, numbered consecutively 1–50.
+- No App code or Android workflow input changed; no Android build was triggered.
+
