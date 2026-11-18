@@ -1,6 +1,6 @@
-# Expression System — Module 1 Lesson Flow Drafts
+# Expression System — All 15 Lesson Flow Drafts
 
-> Status: first teaching-flow prototypes for the three Module 1 candidates in v0.3. These are curriculum drafts, not App screens, final lesson scripts or final acceptance. The aim is to test whether each candidate can be taught naturally without turning every source example into a separate rule.
+> **Status:** first teaching-flow drafts exist for all 15 accepted Lessons: Module 1 Lessons 1–3 (C13–C15) and Module 2 Lessons 1–12 (C01–C12). These are flow drafts, not final App screens or learner-tested scripts. First complete teaching-content drafts also exist for all 15 Lessons. The whole-course cross-Lesson boundary audit was completed on 2026-11-19. Use `BASIC_ENGLISH_EXPRESSION_CURRICULUM.md` as the architecture authority and `AUDIO_BUILD_PLAN.md` for current progress.
 
 ## Module 1 — Understanding Basic Word Meanings
 
@@ -1175,4 +1175,4 @@ Then reverse the direction: give a Basic description and ask which source word a
 | C11 | Identify temporal position, starting point, sequence, repetition or continuation | One Lesson viable with cross-links for non-time senses |
 | C12 | Identify contextual meaning of a non-Basic word and paraphrase it | One coherent synthesis Lesson |
 
-**All 12 Module 2 candidate flows now have a first draft.** The next step is a whole-course audit of lesson size, overlap, prerequisite order and repeated examples across all 15 flows. No final syllabus acceptance or App integration is made by this draft.
+**All 15 accepted Lesson flows have first drafts, and first complete teaching-content drafts exist for all 15 Lessons.** The whole-course cross-Lesson boundary audit was completed on 2026-11-19. It confirmed the main learning decisions and prerequisite boundaries, required no structural changes, and recorded the C03/C08 and C12/C07/C08 clarifications. These documents remain teaching drafts: actual learner duration, user acceptance and App integration are still unverified.
