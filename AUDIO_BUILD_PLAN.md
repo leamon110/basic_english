@@ -1661,3 +1661,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete step: review the C15 draft against the source and teaching flow, then begin Module 2 Lesson 1 — Communication & Information.
 
+### Module 1 Lesson 3 source and teaching-flow review (2026-11-18)
+
+- Compared BASIC_ENGLISH_EXPRESSION_M1_L3_DRAFT.md with original English pp.156–157, the p.160 questions, the C15 flow and the accepted curriculum.
+- Confirmed the three source patterns: material Name → particular piece (card, chalk, cloth, paper); important subclass → separate Name (shoes/boots, watches/clocks); and context-selected sense (ball, business man, judge, man, pictures).
+- Confirmed the curtain warning: the stage-specific use is not necessarily the most common or most important meaning.
+- Added current → electric current; engine → railway engine; rail → engine rail; ring → finger ring from the p.160 Special Use questions. The same page's army / reaction / society / worm / wing items are separate expansion exercises, not Special Use.
+- Reviewed the C15 draft's exercises and answer explanations: pattern recognition, context interpretation, curtain warning, a no-narrowing case, and reverse checks. Clarified that C15 does not cover C14 Quality-as-Thing, word-form endings or the 250 Fixed Word-Groups.
+- Updated BASIC_ENGLISH_EXPRESSION_M1_L3_DRAFT.md, BASIC_ENGLISH_EXPANSIONS_THINGS_QUALITIES.md and BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md.
+- Internal source/flow review is complete. Actual learner time and learner feedback remain unmeasured; this is a reviewed draft, not user-tested or App-accepted content.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete step: begin Module 2 Lesson 1 — Communication & Information, reusing the existing communication prototype rather than duplicating it.
+
