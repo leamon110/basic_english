@@ -2259,3 +2259,14 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Updated BASIC_ENGLISH_EXPRESSION_M2_L4_DRAFT.md and BASIC_ENGLISH_NAMES_OF_ACTS.md. The matching exercise and answer now test the static-object use.
 - The run/slip contrasts, exact balance/movement phrases and path/destination examples remain source-aligned. C04 still needs a final full review of answer coverage and teaching volume.
 
+## 68. C04 internal source and teaching review complete (2026-11-18)
+
+- Rechecked the saved C04 draft against original p.248 and p.250 and the corrected C04 teaching flow.
+- Confirmed object movement examples: send to/over/across; catch → get it in the hand; hold → get/ have a grip, keep it or have it in the hand; take it when given something to hold; take them / come with them for delicate objects.
+- Confirmed posture examples: be/rest on; stand/get up; be on one's feet; an object standing/being placed in a position; take a seat / be seated; make a move in some direction.
+- Confirmed run's three source uses and slip's two source uses, including the quick/simple actions continued on p.250. Preserved the exact p.248 supporting phrases “throw or put us off our balance” and “send us violently against the table”.
+- Corrected the static-object use of stand so it is not misrepresented as only “be placed”; the source says things stand / are placed in a certain position. The matching exercise now checks this distinction.
+- Confirmed that the closed exercises have answer keys, the independent construction task is not claimed to be auto-scored, and Directives are applied rather than retaught. C02 contact and C03 damage/result remain explicit boundaries.
+- C04 is source-reviewed and internally reviewed, but not user-tested or App-accepted. Actual learner time remains unmeasured.
+- Next: author Module 2 Lesson 5 — Thinking, Knowledge, Memory & Learning.
+
