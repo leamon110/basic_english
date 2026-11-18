@@ -2472,3 +2472,15 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - No App source or Android workflow input changed. Actual C08 teaching draft has not yet been authored; learner-time and exercise-volume checks remain open.
 - Next: author Module 2 Lesson 8 — State and Process: Change, Entry & Ending using only the verified expressions and fixed-group boundaries above.
 
+## 84. Module 2 Lesson 8 — State and Process: Change, Entry & Ending (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L8_DRAFT.md from the corrected C08 flow and original *The ABC of Basic English* printed pp.255–256.
+- Verified the source expressions: get taller / higher / fatter / greater; be in the process of growth or development; go to sleep / be in sleep; go to one's death / come to one's end / take one's last breath; begin → make a start.
+- Preserved the critical source boundary: finish appears in explanatory English, but this passage gives no Basic equivalent for the general verb finish; finish is absent from the current 850-word arrays. The draft does not teach finish → finish.
+- Added fixed-group reinforcement: in motion; in use (operation); go to sleep; lights go out; come to a stop; put a stop to; take place. Kept in the end primarily in C11 Time & Sequence, with a C08 cross-link only for a process outcome.
+- Added explicit C03 (physical result), C04 (spatial movement) and C09 (modal intention/advisability) boundaries.
+- Internal answer audit: A 7/7, B 7/7, C 3/3, D 17/17 — **34 closed prompts and 34 matching answers**. The independent-construction task remains explicitly unscored by the current App.
+- C08 is source-reviewed and internally reviewed, but not user-tested or App-integrated. Actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no build was triggered.
+- Next: begin Module 2 Lesson 9 — Ability, Obligation & Intention, checking the source-specific can / ought / shall distinctions against the original pages.
+
