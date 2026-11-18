@@ -2027,3 +2027,8 @@ After the complete first-flow pass for all 15 candidates, the whole-course audit
 - Module 2: 12 Lessons — Communication; Bodily Action; Physical Effects; Movement/Position; Thinking/Knowledge; Feeling/Need; Exchange/Commitment; State/Process; Ability/Obligation; Quantity/Degree; Time/Sequence; Context-Dependent Paraphrase.
 
 The architecture is accepted for authoring. Actual lesson scripts, exercise volume, App migration and implementation remain unfinished.
+
+
+## 47. First complete lesson-content draft
+
+Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names of Things: Meaning Expansion. The draft uses representative source-supported relations (body/structure, sensory, use/function, cause/process, part/whole, material/object and “as if”), plus practice and an answer key. It is intentionally not a verbatim source transcription and not an App screen.
