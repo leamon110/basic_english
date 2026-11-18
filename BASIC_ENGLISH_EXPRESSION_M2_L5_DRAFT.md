@@ -103,6 +103,7 @@ Some examples from the same original source belong to other learning tasks. Keep
 
 - **feel a wall to see if it is dry** → put one's hands on it: physical touch, C02;
 - **feel pain or pleasure / be feeling angry**: internal feeling, C06;
+- **feel that something is so** → have a feeling / idea that it is so: the source places this with feeling examples, so keep it in C06 rather than automatically replacing it with think;
 - **show the effect of the past on the present** → make it clear: already shown in C01's short show comparison, with a knowledge/clarity link here;
 - **show interest** → give signs of it: attitude/feeling, C06; do not repeat it as a C05 lesson;
 - **show pictures / show old buildings**: display or guidance, retained in C01's comparison panel;
@@ -246,6 +247,10 @@ The learner and teacher have different roles. Do not reverse who gives and who r
 3. A teacher shows the effect of the past on the present and makes it clear. Where has this source example already been compared?
 
    **Answer:** C01's short show comparison. It cross-links to knowledge/understanding here; do not duplicate the whole show section.
+
+4. Someone feels that something is so. Should this automatically be treated as “thinks that it is so”?
+
+   **Answer:** No. The source gives “have a feeling / idea that it is so” with the feeling examples. Keep it in C06 and preserve the feeling/idea distinction.
 
 ### F. Reverse understanding
 
