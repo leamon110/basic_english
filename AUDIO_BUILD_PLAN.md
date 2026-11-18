@@ -2142,3 +2142,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - The draft is complete at the document/internal-review level only. Learner time, user feedback and App/device acceptance remain unmeasured; no App integration has been made.
 - No App source, Android workflow input or audio assets changed; no Android build was triggered.
 - Next: whole-course cross-Lesson audit of all 15 accepted drafts for duplicated teaching examples, unclear boundaries, prerequisite gaps and inconsistent terminology.
+
+### Consolidated 15-Lesson review sheet and current-state documentation alignment (2026-11-19)
+
+- Created `BASIC_ENGLISH_EXPRESSION_15_LESSON_REVIEW.md` (83 lines), covering all 15 Lessons: official Module/Lesson labels, Candidate IDs, printed source scope, learner decision, prerequisites, cross-links, practice coverage and implementation/testing status.
+- Updated `BASIC_ENGLISH_EXPRESSION_CURRICULUM.md`: the outdated statement that full authored teaching content is pending is replaced. First complete teaching-content drafts now exist for all 15; learner testing, duration measurement, final revisions and App/device acceptance remain open.
+- Updated the current-status headers in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md` and `BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md` so historical provisional wording cannot override the accepted curriculum.
+- Reconfirmed accepted architecture: 2 Modules / 15 Lessons (Module 1 = 3; Module 2 = 12); C01–C12 map to Module 2 Lessons 1–12; C13–C15 map to Module 1 Lessons 1–3. No Lesson was added, removed, merged or renumbered.
+- The consolidated sheet makes clear that document-level drafts are not learner-tested scripts or App/device acceptance. No App source, Android workflow input or audio assets changed; no Android build was triggered.
+- Next phase: prepare a separate App migration plan from the five early prototypes to the accepted 15-Lesson architecture. Do not move/renumber App screens or change build-affecting files until that migration plan is reviewed and approved.
