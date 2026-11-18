@@ -2350,3 +2350,14 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Source audit complete. No App source changed and no Android build triggered.
 - Next: author C06 with the source distinctions and explicit C02/C05/C01 boundaries.
 
+## 74. Module 2 Lesson 6 — Feeling, Preference, Desire & Need first complete draft (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L6_DRAFT.md from the source audit of p.252 and the accepted C06 flow.
+- The draft keeps four internal parts: feeling/internal experience; liking/friendship/preference; approval/disapproval; desire/need.
+- It includes the source's expressions: have a feeling of pain/pleasure; have a feeling/idea that it is so; be feeling angry; be pleased with; have/give approval; be in agreement; be friends with / get on well; have a taste for; give disapproval / be in disagreement; have a desire for; be in need of / be in need of more.
+- It distinguishes liking from approval, friendship from liking a thing, taste-for as preference, and desire from need. It does not collapse the source's separate relations.
+- Cross-topic boundaries: physical feel-a-wall → C02; be conscious of something moving → C05; show interest and show-effect remain in C01's comparison panel with cross-links. The feeling/idea use of feel is kept in C06 and contrasted with C05 think/opinion.
+- Added recognition, relation distinction, approval/disapproval, desire/need, cross-topic boundary, reverse-understanding and independent-construction practice. The open response is explicitly not auto-scored by the current App.
+- This is a first complete draft, not final acceptance. Clarity, answer coverage, overlap with C05 and actual learner time still require review. No App source changed and no Android build triggered.
+- Next: review C06 against the original source and accepted flow, then author Module 2 Lesson 7 — Exchange, Sale & Commitment.
+
