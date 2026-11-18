@@ -1193,3 +1193,19 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 01 and the resulting unresolved questions.
 - Next concrete step: audit Simple Acts / movement and posture, then compare its learning task with the three physical-action tasks before deciding any Lesson boundary.
 - No App code changed and no Android build triggered.
+
+
+### Theme Audit 02 — Simple Acts movement / posture boundary (2026-11-18)
+
+- Audited the next Simple Acts group: throw, catch, hold, bring, lie, stand, sit, run, slip, plus representative out/into combinations.
+- Identified three candidate learning tasks:
+  1. object movement / transfer / viewpoint;
+  2. body position and posture change;
+  3. movement-purpose / direction / accidental event.
+- Confirmed that the first task largely reuses the existing Operator + Directive and source/destination framework; it should not automatically become a new abstract “movement grammar” lesson.
+- Confirmed that state vs change-of-state in lie/stand/sit is a different semantic decision problem from object transfer.
+- Confirmed that run is a strong meaning-contrast example and slip is an event/result example, but the current material is insufficient to declare either a standalone Lesson.
+- The two Simple Acts buckets audited so far are source-material groupings, not final Lesson boundaries. No formal Lesson number was assigned.
+- Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 02.
+- Next concrete step: audit Complex Acts / thinking, knowledge and memory, then compare its learning-task scale with the Simple Acts findings.
+- No App code changed and no Android build triggered.
