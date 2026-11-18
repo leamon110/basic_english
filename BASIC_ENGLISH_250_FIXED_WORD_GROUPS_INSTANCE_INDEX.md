@@ -1,6 +1,6 @@
 # The 250 Fixed Word-Groups — Instance-Level Teaching Index
 
-> Status: staged source-based index. This document indexes all 250 source items in the 250 Fixed Word-Groups. The separate A Basic Selection list of 50 Most Necessary groups is a priority subset of those 250 and is cross-mapped separately in the project research index. The summaries below paraphrase the original examples; they are not presented as verbatim quotations. Candidate IDs refer to Expression System v0.3 and are provisional.
+> Status: complete source-based instance index. All 250 source items in the 250 Fixed Word-Groups are indexed. The separate A Basic Selection list of 50 Most Necessary groups is a priority subset of those 250 and is cross-mapped separately in the project research index. The summaries below paraphrase the original examples; they are not presented as verbatim quotations. Candidate IDs refer to Expression System v0.3 and are provisional.
 >
 > Source: C. K. Ogden, *The ABC of Basic English* (1932), Part III, “The 250 Fixed Word-Groups”, printed pp.212–242. The original English scan pages were visually checked in the linked 162-page PDF. The printed-page sequence was verified from the page headers.
 
