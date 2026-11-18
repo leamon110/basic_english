@@ -115,6 +115,7 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | think that something is so | be of the opinion；take the view that | be + of + 名称 / take + 名称 + 从句 |
 | know that something is so | be certain of it；be conscious of it | be + Quality + of |
 | know other facts | have knowledge or experience of them | have + 名称 + of |
+| know a person | be a friend of theirs；have come across them | 熟悉/认识；come across 也用于书、图片等见过的事物 |
 | understand what one knows | be clear about it；have a grip of it | be + Quality + about / have + 名称 + of |
 | understand horses | have a good knowledge of them | have + 名称 + of |
 | understand a friend | see his point of view | see + 名称 + of |
