@@ -1081,7 +1081,7 @@ The learner starts with an ordinary-English word outside the Basic list, identif
 
 #### 1. Describe a Quality with Basic words
 
-- **busy:** the source first gives a form built around business, then prefers a more natural description. The learner decides whether the context emphasizes active effort or a large amount of work to do.
+- **busy:** the source first gives a form built around business, then prefers a more natural description. The learner decides whether the context emphasizes active effort or a large amount of work to do. Here business refers to work/tasks, not the commercial exchange and sale theme in C07.
 - **deaf:** describe the person's hearing condition. Do not infer inability to speak or any other condition that the sentence does not state.
 
 These are ordinary-English Quality words being paraphrased. They are not examples of Names of Qualities expansion and are not new 850 entries.
@@ -1099,7 +1099,7 @@ The sentence must tell the learner which referent is intended. The word world it
 
 - When life means the fact that something exists, use the source's existence sense.
 - When it refers to objects that have life, use living things / all living things.
-- The source also shows the -ing form used by itself as a Name for the activity of living. Cross-link this to the existing word-form foundation; do not teach it as a universal replacement for every use of life.
+- The source also shows the -ing form used by itself as a Name for the activity of living. Cross-link this to the existing word-form foundation; do not teach it as a universal replacement for every use of life. C08 covers the event of dying; C12 covers the noun life's contextual meanings, not the death event.
 
 #### 4. hill — one landform or a region
 
