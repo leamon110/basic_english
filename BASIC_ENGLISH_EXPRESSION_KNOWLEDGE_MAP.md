@@ -1631,3 +1631,33 @@ Next:
 3. estimate natural Lesson sizes only after that comparison;
 4. then draft the first candidate Module/Lesson map and test it against the source coverage.
 
+
+
+## 32. Candidate Structure v0.1 — first stress-test result
+
+The first 2-Module / 14-Lesson proposal has now been compared with the currently indexed source examples and the actual learner decision each group requires.
+
+**Conclusion: the v0.1 list is not accepted as a syllabus.** The two broad tracks remain plausible, but the Lesson list needs reorganization:
+
+- Communication remains a coherent candidate theme with information-production/transmission and information-reception/processing strands.
+- Bodily action/contact contains intake/expulsion and contact/force subgroups; one Lesson is not yet proven.
+- Cut/break/smash plus destroy/hurt form a stronger **physical effects / damage / change / result** theme.
+- Movement material contains object transfer and body position/posture tasks; run and slip are supporting meaning/event contrasts.
+- Thinking/knowledge/memory is coherent; learn/teach may join it.
+- Feeling/attitude/desire/need is coherent; “show interest” belongs here only in that specific meaning.
+- The old learning/teaching/showing/trying group is dissolved: learn/teach move toward knowledge; show is distributed by sense; try remains a supporting “make an attempt” pattern.
+- The broad social/economic/life grouping is not one task. Buy/sell/promise can be tested as a narrower exchange/commitment theme; find/lose, damage, and life/process examples move to their actual semantic themes.
+- State/process remains a possible theme around change, entry into a state, being in a state, and process beginning/ending.
+- Modality and condition are separated; “unless” belongs with conditional sentence structure unless more source material supports a separate topic.
+- Quantity/degree and time/sequence are separate decisions and must be tested separately.
+- Names of Things and Names of Qualities currently share a stronger common teaching operation (trace the relation from root to extended meaning) than the evidence for two independent Lessons; test them together first.
+- Special Use / meaning narrowing remains distinct from expansion, but Other Suggestions words such as world/life/hill/home/address must not be automatically classified as Basic-word special uses. Busy/deaf are expression-paraphrase examples, not Quality-expansion examples. Qualities used as Names of Things is a word-class boundary, not meaning narrowing.
+
+The source-indexed counts used in this audit are: Communication 13 rows; eating/biting/expulsion 5; contact/cut/break 11; movement/posture 14 unique rows after duplicate removal; thinking/knowledge/memory 11; feeling/liking/need 11; learning/teaching/showing/trying 8; social/economic/life processes 18. These are project-index row counts, not claims of a verbatim complete transcription of every original page.
+
+The audit also corrected one source-index duplication: “a plate breaks itself → it comes to bits” had been repeated in the movement/posture table despite already appearing in the physical-change table. The misplaced duplicate was removed from `BASIC_ENGLISH_NAMES_OF_ACTS.md`; the example remains under physical change.
+
+**No replacement Lesson count is assigned.** The next step is to test the uncertain boundaries by drafting short, real teaching-unit outlines and sample exercises. The current v0.1 candidate file records the full matrix and the next test sequence.
+
+Source limitations remain: the 1932 *The ABC of Basic English* p.154 scan image has not been read; the 1930 *Basic English: A General Introduction with Rules and Grammar* complete English text has not been acquired; the 250-item fixed-group index verifies the structure and the 50 priority items but does not transcribe all 250 examples. These gaps are kept explicit and are not filled by guesswork.
+
