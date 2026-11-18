@@ -1341,3 +1341,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Boundary outcome: retain 02 and 03 as separate provisional Lessons; candidate 02's internal unity remains conditional on keeping its two sections explicit. No final Module/Lesson count assigned.
 - No App code changed and no Android build triggered.
 - Next concrete step: perform the same teaching-size test for candidate 04 (object transfer vs body position/posture), then test the knowledge/learning/show material.
+
+
+### Teaching-size test 02 — Movement, transfer and body position (2026-11-18)
+
+- Built a short teaching outline and eight source-based test prompts for candidate 04; recorded the result in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md`.
+- The material has two local decisions: (A) object movement/transfer, path, destination, holding and viewpoint; (B) a person's position vs the action of changing posture.
+- The two parts can be taught under one clear spatial objective: describe where a person/thing is, where it moves, and how the movement/position relates to a reference point. The source has enough examples to support the unit.
+- Run's three meanings and slip/fall remain supporting meaning/event contrasts, not separate Lessons.
+- Decision: retain candidate 04 as one provisional Lesson with two explicit sections; do not split object transfer and posture unless a full lesson prototype later proves too long or incoherent.
+- No App code changed and no Android build triggered.
+- Next concrete step: test the boundary between thinking/knowledge/memory and learning/teaching, then distribute the different meanings of show.
