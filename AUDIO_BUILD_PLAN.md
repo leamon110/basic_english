@@ -1799,3 +1799,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This completes the source-wording correction pass, not final lesson acceptance. Answer coverage, exercise volume and actual learner time still require review. No App source changed and no Android build triggered.
 - Next: finish C03 teaching review and then author Module 2 Lesson 4 — Movement & Position.
 
+### C03 internal source and teaching review complete (2026-11-18)
+
+- Rechecked the saved BASIC_ENGLISH_EXPRESSION_M2_L3_DRAFT.md against original English pp.246–247 and p.254 after the source-fidelity corrections.
+- Confirmed the complete distinction set: get it cut; the thread is broken / get it broken; the plate may be smashed; a plate breaking by itself → come to bits; an object destroyed by burning/smashing/breaking; animals destroyed by putting an end to them; hurt → give them pain; possible wounds; wounds may do serious damage.
+- Confirmed “put an end to them” is restricted to the animal example in the source and “give wounds” is not a source expression. BASIC_ENGLISH_NAMES_OF_ACTS.md and the lesson draft preserve the corrected wording.
+- Confirmed Step 17 sections 4–6 as the existing prerequisite. C03 applies the structures to its own examples and does not reteach the full passive/get-passive foundation.
+- Checked that all closed exercises have answer keys and that C02 contact / C04 movement boundaries are explicit. The open construction task is not claimed to be automatically scored.
+- C03 is source-reviewed and internally reviewed, but not user-tested or App-accepted. Actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author Module 2 Lesson 4 — Movement & Position.
+
