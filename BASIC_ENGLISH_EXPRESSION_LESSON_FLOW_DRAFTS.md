@@ -553,6 +553,7 @@ The learner first decides whether the sentence describes a mental activity or a 
 Compare:
 - being certain or conscious of something;
 - having knowledge or experience of it;
+- familiarity with a person: being a friend of theirs / having come across them; the source also uses come across for books, pictures and other things seen;
 - being clear about it / having a grip of it;
 - seeing another person's point of view or the point of an argument.
 
