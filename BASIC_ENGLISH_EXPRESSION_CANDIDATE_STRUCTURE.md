@@ -1,8 +1,77 @@
-# Basic English Expression System — Candidate Module / Lesson Structure v0.1
+# Basic English Expression System — Candidate Module / Lesson Structure v0.2
 
-> **Status: v0.1 has failed its first structural stress test; it is retained as a record of the initial candidate, not an accepted syllabus. See “Stress Test 01” below.**
+> **Status: v0.2 is a revised working candidate after six teaching-size tests. It is not the final syllabus. The original v0.1 draft is retained below as a historical record and is explicitly withdrawn.**
 >
 > This structure is the first result after auditing the major source groups by learner decision problem. It deliberately does not inherit the source's Simple Acts / Complex Acts / Other Suggestions headings as Lesson boundaries.
+
+## Current revised candidate v0.2 — 2 Modules / 14 provisional Lessons
+
+**The count is an outcome of the revisions, not a target.** Compared with v0.1, one mixed Lesson was dissolved, one mixed topic was narrowed, Quantity and Time were separated, Things and Qualities expansion were combined, and the contextual-paraphrase material was moved out of Module 2 into Module 1. The number happens to remain 14; it is not being preserved as a quota.
+
+### Module 1 — From ordinary meaning to a Basic expression
+
+Core operation: identify the actual meaning in context → choose/construct a Basic expression → reverse-check the meaning.
+
+| Candidate Lesson | Revised scope | Indexed source material and boundary |
+|---|---|---|
+| 01 | **Communication & Information** | speak, tell, sing, hear, listen, write, read, send; include all senses of show and the “try to show interest” example as one contrast set. Keep “speak a language” as a cross-link to knowledge/ability. |
+| 02 | **Bodily Action & Contact** | eat, bite, spit; touch, hit, scratch. Keep two explicit subsections: intake/biting/expulsion and contact/impact/rubbing. |
+| 03 | **Physical Effects: Damage, Change & Result** | cut, break, smash, destroy, hurt. Distinguish caused action, physical damage/change, resulting state and self-occurring change. |
+| 04 | **Movement & Position: Transfer, Posture & Viewpoint** | throw, catch, hold, bring, lie, stand, sit, run, slip; include source/destination/path examples. Keep object transfer and body position/posture as two sections. |
+| 05 | **Thinking, Knowledge, Memory & Learning** | think, know, understand, mean, remember, forget, learn, be taught, teach. Learning/teaching is absorbed here; show is not. |
+| 06 | **Feeling, Preference, Desire & Need** | feel, like, want, need. “Feel a wall” cross-links to bodily contact; “show interest” stays in Lesson 01's show contrast set and links here by meaning. |
+| 07 | **Exchange, Sale & Commitment** | buy, sell, keep goods for sale, promise to pay later; priority fixed group “let a house” is a directly relevant reinforcement. Do not include all social-relation fixed groups. |
+| 08 | **State and Process: Change, Entry & Ending** | grow, be growing, sleep, die, begin, finish; reinforce with relevant groups such as in motion, in use, come to a stop, go to sleep, in the end, take place, put a stop to. |
+| 09 | **Ability, Obligation & Intention** | can, ought, shall. Distinguish ability/possibility, duty/advisability, probability and intention. |
+| 10 | **Quantity, Amount & Degree** | each, altogether, whole, few, many, too, once. Keep the “once” past-time sense cross-linked to Lesson 11. |
+| 11 | **Time & Sequence** | ago, already, yet, since, next, always; include the relevant time/sequence senses of once. Preserve the multiple meanings of since, next and always. |
+| 12 | **Context-Dependent Words & Paraphrase** | busy, deaf, world, life, hill, home, address. This is ordinary-English-to-Basic paraphrase, not Basic-word expansion or narrowing. |
+
+### Module 2 — Understanding the meanings Basic words can carry
+
+Core operation: identify the root sense → identify the source-supported relation or narrowing → interpret the word in its context.
+
+| Candidate Lesson | Revised scope | Indexed source material and boundary |
+|---|---|---|
+| 13 | **Meaning Expansion: Names of Things & Qualities** | all source-supported Things relations (including p.154) plus Quality expansions; Quality-as-Thing is a bounded word-class subsection/cross-link, not a separate Lesson. |
+| 14 | **Special Use / Meaning Narrowing** | material-name uses, important subclasses and contextually expected narrower senses. Keep distinct from the 250 Fixed Word-Groups chapter's special/idiomatic uses. |
+
+### Cross-cutting material and foundation
+
+- **850 words, Operators, Directives, basic word forms and sentence structure:** foundations in Teaching / original 45 Steps; the Expression System calls them where needed rather than repeating the whole foundation.
+- **-er / -ing / -ed:** word-form foundation and selected semantic examples; not a separate Expression Module.
+- **250 Fixed Word-Groups:** phrase-level reference/reinforcement. The 50 Most Necessary groups are the priority set and are inserted where their meaning naturally belongs. The 250-item index currently verifies its structure but does not transcribe all 250 examples.
+- **unless → if ... not:** conditional sentence-structure foundation; not a standalone Lesson and not part of the modality Lesson.
+- **find / lose / discover:** cross-link by actual meaning: accidental encounter/location → Lesson 04; seeing that something is happening → Lesson 01; knowledge/discovery → Lesson 05; inability to locate → Lessons 04/05; an object being taken away → Lesson 04.
+- **show:** all senses remain together in Lesson 01 so the learner can compare the meanings of the same ordinary word. “Show interest” links to Lesson 06 but is not duplicated as a separate show unit.
+- **try:** remains inside the “try to show interest” example as the supporting “make an attempt” pattern, not a standalone Lesson.
+- **finish:** remains in Lesson 08 as a contrast showing that the ordinary word itself may already be usable in Basic.
+
+### What has passed and what remains open
+
+**Teaching-size tests completed:**
+1. Bodily action/contact vs physical effects/result.
+2. Object transfer vs body position/posture.
+3. Thinking/knowledge vs learning/teaching; show's multiple meanings.
+4. Exchange/commitment vs state/process.
+5. Other Suggestions: modality, quantity, time, condition, quality paraphrase and contextual names.
+6. Module 2: Things/Qualities expansion vs Special Use / narrowing.
+
+**Still required before accepting v0.2:**
+- Check overlap and prerequisites across all 14 candidates as a whole.
+- Verify every currently indexed Some Common Needs example has a primary home or an explicit cross-link.
+- Check the 50 priority fixed groups for natural insertion without forcing them into unrelated Lessons.
+- Check the Lesson sizes and teaching flow as a complete sequence, not only as isolated mini-outlines.
+- Keep the 200 other Fixed Word-Groups as an acknowledged coverage limitation until their individual examples are indexed.
+- Confirm the module order and whether any adjacent candidate Lessons should merge after the whole-sequence review.
+
+**No final syllabus or App Lesson IDs are assigned yet.** v0.2 is the current working candidate for the next coverage/prerequisite audit.
+
+---
+
+## Historical candidate v0.1 — withdrawn
+
+The following original 2-Module / 14-Lesson draft is retained only so the reasoning and corrections remain auditable. It is not the current working structure.
 
 ## Module 1 — From ordinary meaning to a Basic expression
 
