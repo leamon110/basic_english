@@ -2,19 +2,19 @@
 
 ## Scope
 
-This is a first-pass source-fidelity audit of the 14 Steps that `docs/js/course.js` currently adapts locally. Each adapted lesson was compared at the level of its stated teaching topics and the relevant reading passages against the corresponding BasicEnglish.org Step page.
+This document records an initial review followed by a detailed source-fidelity audit of all 14 Steps currently adapted in `docs/js/course.js`. The detailed sections compare source teaching rules, examples, reading content and exercise coverage against the corresponding BasicEnglish.org Step pages.
 
 This audit distinguishes:
 - **Topic coverage:** whether the adaptation teaches the main source topic.
 - **Reading fidelity:** whether a reading is reproduced, summarized, or rewritten.
 - **Confirmed discrepancy:** a specific meaning, fact, or source point that differs.
-- **Not yet checked:** exhaustive exercise-by-exercise equivalence and every illustration.
+- **Remaining validation limits:** every individual answer key, every source illustration asset, and a complete word-by-word mapping of all 850 words are not certified by this audit.
 
-It is not a final acceptance sign-off for all lesson content.
+The initial results table is historical; the detailed audit sections below supersede its provisional verdicts. This is not a final acceptance sign-off for App integration or device testing.
 
 ## Results
 
-| Step | Source teaching points | Current adaptation | First-pass result |
+| Step | Source teaching points | Current adaptation | Initial review (historical; see detailed audit below) |
 |---|---|---|---|
 | 1 | Nouns and regular plural; adjective position; a/an/the; personal pronouns; this/that; BE/PUT/TAKE; spatial prepositions; and; basic word order | Covers the main topics and source exercises. | **Small omission:** the source explicitly introduces I, my and it, and says pointing with this/that need not be physical. The App explains I and it and uses my in examples, but does not clearly teach my as the possessive adjective or explain non-physical pointing. |
 | 2 | Ten room nouns, two adjectives, the “My Room” reading, adjective order, adjective coordination with and, on used for a wall surface, and five exercise groups | Reading text is reproduced; Chinese translation, a custom SVG room diagram and exercises are added. | **Good source alignment.** The diagram is project-made, not the source illustration. Exercise formats are adapted, but the original task intentions are represented. |
@@ -28,7 +28,7 @@ It is not a final acceptance sign-off for all lesson content.
 | 15 | foot/feet; awake not used before a noun; opposite; send and indirect-object patterns; past forms of all Operators; Operator -ing forms as nouns; let us; among/through/together | Covers the past forms, send patterns, -ing nouns, let us, among/through/together. | **Small omission:** the source explicitly teaches that awake is not used before a noun. The App's vocabulary and teaching panels omit this point. Add a short note and an example such as “Some of the girls are still awake.” |
 | 17 | money as a substance-like collective noun; like; past-participle forms; passive; get + past participle; perfect tenses; comparison; well/badly; that clauses | Covers the main topics, including passive, get-passive and perfect forms. | **Small qualification omitted:** the source says gotten is an alternative form; learners should recognize it but do not need to use it. The App table currently presents “got / gotten” without that qualification. Add the source's usage note. |
 | 18 | noun possessives; possessive pronouns; omission of object relative pronouns and some related omissions; supplementary/appositional nouns; contractions | Covers the main topics. The reading is explicitly simplified. | **Main topic coverage matches** in this pass. The source's caution that noun possessives are safest with people/animals and that the of-construction is preferred elsewhere is represented in the App. |
-| 20 | such; compass directions; it as a preparatory subject; so in its several uses; weather conversation | Covers the main topics and derives a tag-question note from the dialogue. The reading is explicitly rewritten. | **Main topic coverage matches** in this pass. Tag questions are visible in the source dialogue; the App elevates them into a separate teaching point, so label that as a project teaching choice rather than an original numbered rule. |
+| 20 | such; compass directions; it as a preparatory subject; so in its several uses; weather conversation | Covers the main topics and derives a tag-question note from the dialogue. The reading is explicitly rewritten. | **Correction:** the original Step 20 Notes explicitly explain the tag-question pattern (negative statement + positive question, or positive statement + negative question). The App's separate teaching panel is source-grounded, not an App-only addition. |
 | 25 | -ing nouns; -er/-ing forms of adjectives; please + -ing/-ed; un- prefix; “At the Office” reading; Step 25's statement that the structure stage is complete | Covers the main topics; reading is explicitly rewritten. | **Two confirmed discrepancies:** (1) the source footnote says dry changes y to i before -er and -ed and gives hair-drier; the App table currently says “dryer” in the suffix-pattern row. Use the source spelling “drier” for this formation, or explicitly distinguish a modern variant if retained. (2) the source says “I was writing on my knee with a broken pencil”; the App changes this to “I made the letter with a broken pencil,” which changes the meaning. Restore the writing-on-knee detail. The source also specifies that the public Committee meeting is tomorrow; the App shortens that timing detail. |
 
 ## Confirmed correction queue
@@ -45,10 +45,10 @@ These should be corrected in the next integrated App update:
 
 ## Validation limits and next work
 
-- This pass checks the main topic coverage and identified reading discrepancies; it does **not** yet prove every exercise prompt, answer key, vocabulary item or example is one-to-one with the source.
-- Reading passages in Steps 6, 10, 12, 18, 20 and 25 are project rewrites/summaries, not verbatim copies. Keep that disclosure in the App.
+- The detailed audit compares teaching-rule coverage, notable examples, reading fidelity and exercise prompt coverage. It does **not** verify every answer key or every source illustration one-to-one.
+- Reading passages in Steps 6, 10, 12, 18, 20 and 25 are project rewrites/summaries, not verbatim copies. Keep that disclosure in the App; the detailed sections identify where the rewrite also changes or omits source meaning.
 - Step 2 uses a custom illustration; the original illustration assets have not yet been archived.
-- No App code has been changed in this audit. The project has been keeping the 45-Step curriculum work together for an integrated update/build/device acceptance rather than triggering a separate APK build for each research correction.
+- No App code has been changed in this audit. Keep the corrections together for an integrated update/build/device acceptance rather than triggering a separate APK build for each research correction.
 
 ## Source pages
 
@@ -191,3 +191,79 @@ Source: https://basicenglish.org/step-15/index.html
 - Detailed source audit completed: 10 of the 14 locally adapted Steps (1, 2, 3, 5, 6, 9, 10, 12, 13 and 15).
 - Steps 12, 13 and 15 preserve the main teaching themes but contain confirmed reading/rule omissions and substantial exercise replacement. Step 12's opening dialogue changes Jim's answer and whether he is already in the bath.
 - Audit-only work: no App code was changed. Remaining adapted Steps: 17, 18, 20 and 25.
+
+## Detailed source-fidelity audit — final batch (Steps 17, 18, 20 and 25)
+
+### Step 17 — Partial
+
+Source: https://basicenglish.org/step-17/index.html
+
+- The App covers the principal teaching groups: money as a substance-like collective noun; like; past participles; passive; get + past participle; perfect tenses; degrees; as...as / than; well/badly; and that-clauses.
+- **Missing source qualifications:** the source says past participles are practically never used before a noun; says `gotten` is an alternative learners should recognize but do not need to use; and explains that `most/least` are generally preceded by `the`. The App lists got/gotten without the usage note and omits the other two qualifications.
+- The source distinguishes fixed usage between `-er/-est` and `more/most`, notes that some adjectives cannot take degrees (e.g. married and first), teaches degree forms of `-ly` adverbs, and says well/badly cannot be moved to the beginning as an alternative position. The App gives a simplified short-adjective rule and examples but omits these qualifications.
+- The App summarizes comparison clauses, but does not fully preserve the source's rules for repeating a preposition in both parts, repeating subject/operator when comparing different adjectives, using do in simple tenses, and using only the auxiliary (if anything) for a complex tense.
+- There is no source reading passage in this Step, so the absence of a narrative panel is not a fidelity defect.
+- Exercise coverage is incomplete. The source has six groups: paired comparisons for six pictures; seven Past-to-perfect transformations; six passive transformations; four sentence tasks with that in specified positions; six direct-speech rewrites using that; and six normal-form rewrites removing repeated words. The App has four passive conversions, three perfect conversions and open writing. It omits the picture comparisons and all three groups of that/normal-form exercises, and reduces the source conversion sets.
+
+### Step 18 — Partial
+
+Source: https://basicenglish.org/step-18/index.html
+
+- The App covers noun possessives, possessive pronouns, object relative-pronoun omission, omission of be + relative pronoun, supplementary/appositional nouns, we men / you women, and contractions. Its safe rule for noun possessives and its note about modern `its` are source-aligned.
+- **Missing relative-clause detail:** the source also allows omission of a relative pronoun and its preposition after certain time-words (with a specific exception for `time` meaning occasion); the App does not teach this. The source explains that adjectives following `some/every/no` compounds follow the compound word (e.g. `nothing strange`); the App omits this rule.
+- **Reading meaning change:** the source's opening exchange says there is "nothing of interest tonight"; the App rewrites this as "no news of the ship tonight", which is a different statement. The App also removes much of the source account: the two distinct restaurants, the reason for choosing the second one, the old Mrs Price episode, the two committee meetings and the discussion of the proposals, why the curtains were blue, the Whites' arrival, and the book's story about the ship, island and snake. The reading is correctly labelled as a simplified rewrite, but these omissions remove many of the source's specific vocabulary expansions.
+- Many source notes are absent from the App, including light as an apparatus (on/off/out), went down = sank, of interest, dear as price/affection/address, sent for, White as a familiar surname, before = previously, do the seats = mend, works = factory, did accounts, round = revolve, drink as alcoholic drink, have a meeting, at one time = previously, the reporting use of present-tense say, specialized business/meeting senses, get through = finish, see = understand, away, make a decision, in a bad humour, a drink as one serving, on the way back, the Whites as a plural family name, about = approximately, yes please, send to sleep, page as a sheet, and dress as clothing.
+- Exercise coverage is not source-equivalent. The source has six groups: six picture descriptions using the present perfect; two-sense sentences for six words; two indirect-reporting tasks; a passage rewritten with contractions; six one-word substitutions; and ten Basic-answer questions. The App instead drills noun possessives, possessive pronouns, relative-clause omission and contraction expansion, then asks for five original sentences. None of the six source exercise groups is retained as a task.
+
+### Step 20 — Partial
+
+Source: https://basicenglish.org/step-20/index.html
+
+- The App covers the main categories: such, compass directions as adjective/adverb/noun, it as a preparatory subject, so as degree word / substitute / echo / conjunction, tag questions, school/church/hospital/market/prison without an article in the activity sense, one day, one another, keep...from + -ing, come out/up/off and anywhere/everywhere/nowhere.
+- **Correction to the initial review:** the original Step 20 Notes explicitly explain tag questions at the start of the weather dialogue. The App's separate teaching panel is source-based, not an invented project-only topic.
+- **Missing rule detail:** the source teaches `such` adverbially before a descriptive adjective (including the `such a healthy boy as...` pattern), and `so` before an adjective/adverb without an expressed that-clause. The App focuses on the pointing-adjective and such...as / such...that patterns, and on so...that. In the echo construction, the source also gives `have` and auxiliary-only examples; the App gives only a subset.
+- The App reading is a shortened rewrite. It preserves the broad weather conversation and the umbrella / rain / cough / snowball sequence, but omits much of the source's seasonal and garden discussion: bulbs coming up, shade, the two gardens' different heights and slopes, the river making land wet, early summer/fall, the warm sun and the bedroom's north window. It also shortens several transitions in the weather argument.
+- Many source notes are omitted: at last; sign as indication; wet as rainy; on the way; coming spring; flowers come out / come off; bulbs come up; not one; early summer; fall = autumn; so suddenly without a following that-clause; raincoat; it is said; country as rural area vs nation; tired of; bad cough; able to; send at as target; healthy winter; ice-box; and more as additional.
+- Exercise coverage is incomplete. The source includes compass statements from a picture, eight picture-description blanks, five so/such completions, thirteen quantity/degree blanks, two-sense sentences for spring/country/fall/sign, five meaning-preserving rewrites, and ten Basic-answer questions. The App has four direction sentences, four so/such blanks, free writing and six comprehension questions. It omits the picture-description tasks, quantity/degree exercise, two-sense word exercise and meaning-preserving rewrites, and reduces the comprehension set.
+
+### Step 25 — Partial
+
+Source: https://basicenglish.org/step-25/index.html
+
+- The App covers -ing nouns, -er/-ing adjective forms, please + -ing/-ed, the un- prefix and the lesson's office vocabulary. Its note that `link` is not in the App's 850-word list is correct: the current `docs/js/data.js` arrays total exactly 850 entries (100 + 400 + 200 + 100 + 50), and `link` is absent from those arrays even though it appears in the Step 25 page's vocabulary.
+- **Spelling / formation details:** the source footnote says dry changes y to i before -er and -ed and gives `hair-drier`; the App's table says `dryer`. The source also identifies `feeler` as the exception to the normal person-doer sense of the -er nouns; the App does not mention this exception.
+- **Reading contains several meaning changes:** the source distinguishes the meeting with representatives today from the private meeting before the public Committee meeting tomorrow; the App moves the meeting into "this morning" and drops the tomorrow distinction. The source says the paper was a dearer sort despite no price increase; the App says the supplier asked for more money, which the source does not say. The source letter says "The money was sent without my approval"; the App replaces this with "I did not say yes to this". The source says "I was writing on my knee with a broken pencil"; the App says "I made the letter with a broken pencil". The source says the teacher called him the worst learner; the App says he was the worst boy. The source says "If anyone comes"; the App says "If some man comes". The source asks for two seats; the App asks for some seats. The App also omits the unclear word `approval`, the pen running out of ink and being refilled, and the fact that the signature is required both at the indicated place and at the end.
+- Several source notes are not taught: railway company; Bell and Sons as a business-name form; wider insurance; goods as merchandise; current receipts; answering a question/person without `to`; cutter as a machine-part; paper as document; signed; school-days; overcoat; plays being "on"; and good-looking. Some related forms appear in the reading, but their source explanations are absent.
+- Exercise coverage is incomplete. The source has six groups: six picture questions; five meaning-preserving rewrites; five -ing/-er fill-in sentences; three synonyms for untrue/unwise/unclean; an office-scene description; and ten Basic-answer questions. The App instead gives a general -ing/-er drill, un- formation, a short reading question set, and a writing prompt. It omits the picture task, source rewrites, source fill-ins and synonym task, and reduces the ten comprehension questions.
+- The App's reading is correctly disclosed as a rewrite, but the above changes must be corrected if it is intended to preserve the original source meaning.
+
+### Final consolidated result — all 14 adapted Steps
+
+| Step | Detailed result |
+|---|---|
+| 1 | Partial — Step 1 promotes forms the source defers to Step 3; `my` and other source notes are not explicit; source picture is absent. |
+| 2 | Substantially aligned — reading and exercise intentions are preserved; the source illustration is replaced by a custom diagram. |
+| 3 | Partial — missing uses of take, details of of/at/here/there/other, and three source exercise groups. |
+| 5 | Partial — several source restrictions and operator-use details are missing; multiple exercise groups are omitted; one negative source sentence is changed to positive. |
+| 6 | Partial — reading details and source notes are omitted; the pictures passage changes the participants and contradicts itself; exercises are reduced. |
+| 9 | Partial — missing the full -ing list, till as conjunction, adverb placement/order and two source exercise groups. |
+| 10 | Partial — reading omits source scenes and changes the hospital action; source notes and three comprehension questions are missing. |
+| 12 | Partial — opening dialogue changes Jim's answer and state; multiple source notes and most original exercises are missing. |
+| 13 | Partial — how as a relative adverb and question-rule qualifications are missing; picture/person/numbered-item exercise groups are omitted. |
+| 15 | Partial — awake note and some past-form details are missing; all five source exercise groups are replaced or reduced. |
+| 17 | Partial — gotten qualification, participle position, comparison/adverb details and most source exercises are missing. |
+| 18 | Partial — one reading statement changes meaning; many source notes and all six original exercise groups are omitted. |
+| 20 | Partial — tag-question teaching is source-based, but several such/so rules, source notes and most exercise groups are missing. |
+| 25 | Partial — several reading facts are changed, source notes/exercises are omitted, and the drier formation is not followed. |
+
+**Overall conclusion:** the 14 existing adaptations preserve many broad lesson themes, but they do not yet demonstrate source-complete teaching or exercise coverage. Step 2 is the only adaptation that is substantially aligned across its reading and exercise intentions. The other 13 need targeted correction, explicit scope decisions or restored practice before they can be accepted as source-faithful.
+
+### Consolidated correction and follow-up queue
+
+1. Correct the Step 1 → Step 3 sequencing of `am` and third-person singular `puts/takes`; make `my` and the source pointing-word notes explicit.
+2. Restore missing source rules and examples identified for Steps 3, 5, 6, 9, 12, 13, 15, 17, 18, 20 and 25.
+3. Correct confirmed reading meaning changes in Steps 6, 10, 12, 18 and 25; keep all rewritten passages clearly labelled as adaptations.
+4. Restore or deliberately map the missing original exercise groups in Steps 1, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18, 20 and 25. The audit records exercise coverage gaps; individual answer-key correctness remains a separate verification task.
+5. Keep Step 2's custom illustration clearly identified as a replacement; original illustration archival remains open.
+6. Do not treat `link` as one of the 850 words: the repository's 850-word arrays were checked and total 850, with `link` absent.
+7. Do not modify App code until the separate App migration plan has been reviewed and approved.
