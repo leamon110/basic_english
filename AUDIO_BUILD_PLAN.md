@@ -973,3 +973,19 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App code or Android workflow input changed; no Android build was triggered.
 - Next action: evaluate whether this candidate is concise and teachable, then apply the same standard to the physical-action and Complex Acts examples.
 
+
+
+### First-pass course map consolidated (2026-11-18)
+
+- Consolidated the source-based content into a concise working map without inventing module or Lesson counts:
+  - Entry demonstration: speak/context.
+  - Core: Simple Acts, Complex Acts, Other Suggestions.
+  - Support: Words Formed by Endings and the 50 most necessary fixed word-groups.
+  - Meaning-extension topic: Names of Things and Qualities.
+  - Extended reference: remaining fixed word-groups.
+  - Existing foundations: Operators, Directives, basic word forms and sentence structure in Teaching / original 45 Steps.
+- The communication topic draft is the first candidate for testing the actual teaching-unit size. Its send/produce and receive/process subparts remain a possible internal division, not a fixed lesson count.
+- The current five prototypes remain source material; their titles, boundaries and positions will be adjusted only after the candidate topic standard is tested across the remaining content.
+- No App code or Android workflow input changed; no Android build was triggered.
+- Next action: test the communication topic with actual explanation and practice, then apply the same content-first boundary check to physical actions and Complex Acts.
+
