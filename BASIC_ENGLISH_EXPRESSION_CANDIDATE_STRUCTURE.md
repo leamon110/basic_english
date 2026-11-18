@@ -41,7 +41,7 @@ Core operation: identify the actual ordinary-English meaning in context → choo
 
 - 850 words, Operators, Directives, basic word forms and sentence structure remain foundations in Structured Teaching / the original 45 Steps. The Expression Lessons apply them rather than repeat the full explanations.
 - -er / -ing / -ed remains a word-form foundation with selected semantic examples; it is not a separate Expression Module.
-- The 250 Fixed Word-Groups remain phrase-level reinforcement. The 50 Most Necessary groups have all been mapped; of the other 200, 130 now have an instance-level teaching index and 70 remain.
+- The 250 Fixed Word-Groups remain phrase-level reinforcement. The 50 Most Necessary groups have all been mapped; all 200 other groups now have an instance-level teaching index.
 - unless → if ... not belongs to conditional sentence-structure foundations, not C09.
 - find / lose / discover are cross-linked by actual meaning: encounter/location → C04; seeing that something is happening → C01; knowledge/discovery → C05; inability to locate → C04/C05; an object being taken away → C04.
 - All show senses remain together in C01; “show interest” links to C06 but is not duplicated.
@@ -62,7 +62,7 @@ Still required before final acceptance:
 1. test the full 15-Lesson sequence as a learner progression;
 2. decide the exact foundation prerequisites/reminders for C03 and C09;
 3. check every adjacent Lesson for remaining overlap or excessive size;
-4. complete the remaining 70 of the 200 other Fixed Word-Groups in the instance-level index;
+4. verify cross-topic placements and re-test C07 after the complete 200-item Fixed Word-Group index;
 5. reconcile current App prototype labels with the final display numbering in a separate migration plan.
 
 **No final syllabus or App Lesson IDs are assigned yet.** The 15 is a provisional candidate count, not a project commitment.
@@ -143,7 +143,7 @@ C09 is therefore self-contained for its target meaning distinctions, while relyi
 
 ### E. Remaining scope warning — C07
 
-C07 remains the smallest candidate Lesson.
+C07 was initially the smallest candidate Lesson.
 
 The directly indexed Some Common Needs material is buy, sell, keep goods for sale and promise to pay later. The priority fixed-group list supplies the directly related “let a house” use, but most of the other 50 priority groups do not belong to exchange/sale and must not be forced into C07.
 
@@ -183,6 +183,16 @@ Still open:
 - App prototype migration and final display IDs, which remain a separate implementation task.
 
 No final syllabus acceptance or App ID migration is made by this audit.
+
+
+
+### C07 size retest after complete Fixed Word-Groups index
+
+The complete 200-item instance index now adds source-supported commercial/transaction material that naturally reinforces C07, including agreement, renting a house, exchange, carrying an undertaking through, financial risk, credit, approval, profit/loss, demand, participation in a company, business accounts, and keeping one's word.
+
+This is enough to make C07 a **coherent compact Lesson candidate** rather than a lesson padded with unrelated social phrases. Its core Some Common Needs material remains buy/sell/keep goods for sale/promise to pay later; the fixed groups provide contextual reinforcement, not 20 unrelated subtopics.
+
+C07 remains provisional because the final lesson's exercise volume and duration have not yet been tested in an authored lesson. However, the former blocker — lack of enough indexed relevant source material to judge its size — is now resolved. No merge into C06 or C08 is supported: emotional attitude and commercial commitment remain different learner decisions.
 
 
 ---
