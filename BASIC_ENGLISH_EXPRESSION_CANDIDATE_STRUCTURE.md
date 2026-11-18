@@ -62,7 +62,7 @@ Still required before final acceptance:
 1. test the full 15-Lesson sequence as a learner progression;
 2. decide the exact foundation prerequisites/reminders for C03 and C09;
 3. check every adjacent Lesson for remaining overlap or excessive size;
-4. verify cross-topic placements and re-test C07 after the complete 200-item Fixed Word-Group index;
+4. verify cross-topic placements and re-test C07 after the complete 250-item Fixed Word-Group index;
 5. reconcile current App prototype labels with the final display numbering in a separate migration plan.
 
 **No final syllabus or App Lesson IDs are assigned yet.** The 15 is a provisional candidate count, not a project commitment.
