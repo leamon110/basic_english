@@ -168,7 +168,7 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | lose something because it was taken | it has gone for ever | go + 时间/结果表达 |
 | a thing is destroyed | it has been burned；smashed；broken | 具体毁坏结果 |
 | destroy animals | put an end to them | 结束动物的生命 |
-| hurt someone | give them pain；possibly give wounds；wounds may do serious damage | 区分伤害、疼痛与伤口造成的进一步损害 |
+| hurt someone | give them pain；possibly wounds which may do serious damage | 区分疼痛与伤口可能造成的进一步损害 |
 | grow taller / higher / fatter / greater | get taller / higher / fatter / greater | get + Quality，表示变化过程 |
 | be growing | be in the process of growth / development | be + in + 名称 + of |
 | sleep | go to sleep；be in sleep | go + to + 名称 / be + in + 名称 |
