@@ -177,22 +177,104 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 
 ## 5. Other Suggestions：不只是动作动词
 
-Ogden 的第三部分还处理：
-- can、ought、shall 的表达；
-- each、altogether、whole、few、many、too、once 等数量和程度；
-- ago、already、yet、since、next、always 等时间表达；
-- busy、deaf 等不容易直接进入 Basic 的性质词；
-- world、life、hill、home、address 等普通名词的不同语境意义。
+原书 pp.256–262 的英文页面显示，这一组并不是一个单一语法主题，而是把若干日常表达问题放在一起。以下按原文实际讨论的问题展开；这是项目的教学归类，不是原书另设的六个小节。
 
-例如：
-- can → be able to / it is possible for someone to；
-- ought → it is right (wise) for someone to / it is someone's business to；
-- shall（陈述句）→ will；“Shall I do it?” → “Am I going to do it or not?” / “Am I wise to do it?”；
-- unless → if ... not；
-- busy → is working hard / has much to do；
-- deaf → whose hearing is bad；
-- world（空间）→ earth；“the whole world is shocked” → every one；其他语境也可用 things / conditions；
-- home → a place where one is living；在某些语境中还涉及 with one's family。
+### 5.1 can、ought、shall：能力、义务、可能性和意愿（p.256）
+
+原书把这三个词作为与 Names of Acts 连用时需要特别处理的词：
+
+| 普通英语用法 | 原书给出的 Basic 表达 | 需要区分的意思 |
+|---|---|---|
+| can do something | be able to do it；it is possible for me to do it | 能力与可能性 |
+| ought to do something | it is right (wise) for me to do it；it is my business to do it | 应当、明智、职责 |
+| the train ought to be here | it is probable from the facts that it will be so | 根据现有事实作出的预期 |
+| shall in a statement | will | 陈述句中的将来表达 |
+| Shall I do it? | Am I going to do it or not?；Am I wise to do it? | 询问意愿或这样做是否明智 |
+
+**教学重点：** 不能把 can、ought、shall 简单地各自对应一个中文词。尤其 ought 和 shall，需要先判断句子表达的是能力、职责、预期，还是询问意愿/是否明智。
+
+### 5.2 数量与程度（pp.256–258）
+
+| 词 | 原书说明的意思 | Basic 表达或判断 |
+|---|---|---|
+| each | 群体中的每一个分别得到某物 | every one separately |
+| altogether | 总数、合计 | six altogether；表示完全/彻底时可用 quite 或 completely |
+| whole | 整个群体 | all the group |
+| few | 数量小 | a small number；原书建议不确定时使用较明确的说法 |
+| many | 数量大 | a great number；quite a number |
+| too many | 超过足够数量 | more than enough；overmuch |
+| too tired to go | 疲劳程度已经使人不能行动 | so tired that he is unable to go |
+| ill too | 另外还生病 | ill in addition |
+| once（事情只发生一次） | 仅一次 | one time only |
+| once（过去曾经如此） | 过去某个时期曾经如此 | at one time；in the past |
+
+**教学重点：** too 不能一律翻成“太”。它可能表示超过足够程度、某种状态已经妨碍行动，也可能表示“另外还”。once 也要区分“一次”和“曾经”。
+
+### 5.3 时间与先后关系（pp.258–260）
+
+| 词 | 原书展示的意思 | Basic 表达或判断 |
+|---|---|---|
+| ago | 很久以前 | a long time back；in the old days |
+| already | 已经发生 | in the past；before |
+| so far / up to now | 截至目前已经发生的事情 | what has taken place so far / up to now |
+| yet（否定语境） | 到现在仍然没有发生 | still not；so far ... not |
+| and yet | 前后两个判断同时成立 | at the same time |
+| since（时间起点） | 从某个过去时间延续到现在或之后 | for a long time；after then，依句子关系判断 |
+| since（原因） | 因为 | because |
+| next（时间顺序） | 在这件事之后 | after this |
+| next（再次发生） | 下一次做同一件事 | do it again |
+| next to | 紧邻某物 | nearest to it |
+| always | 在所有时间都如此 | at all times；某些语境可表示 frequently |
+| always（强调未来持续） | 永远 | for ever |
+
+**教学重点：** since、next、always 都有不同关系，不能只记一个固定中文释义。必须看它们连接的是时间起点、原因、先后、重复、相邻位置，还是持续状态。
+
+### 5.4 unless：条件关系（p.260）
+
+- unless → if ... not。
+
+原书通过改写句子说明 unless 可以用 if 和 not 表达。它属于条件句关系，不应与 can、ought、shall 的情态意义混为一谈。
+
+### 5.5 busy、deaf：用 Basic 描述性质（p.260）
+
+| 普通英语 | 原书给出的 Basic 表达 |
+|---|---|
+| a busy person | one with much business；更自然的表达是 he is working hard / has much to do |
+| a deaf person | one whose hearing is bad |
+
+**教学重点：** 这是把普通英语性质词改写成 Basic 描述，不是 Names of Qualities 的意义扩展，也不是词尾派生。
+
+### 5.6 world、life、hill、home、address：根据语境选择表达（pp.260–262）
+
+| 普通英语词 | 原书区分的语境 | Basic 表达或解释 |
+|---|---|---|
+| world | 空间意义 | earth |
+| world | “全世界震惊”一类表达 | every one |
+| world | “世界正在变化”一类表达 | things；conditions |
+| life | 存在意义 | existence |
+| life | 指有生命的对象 | living things；all living things |
+| living | 把生活/活着作为活动来谈 | living（如 Living is interesting） |
+| hill | 一块高于周围地面的土地 | a slope；small mountain（大小合适时）；highlands（指多山地区） |
+| home | 人实际居住的地方，不一定是 house | a place where one is living |
+| at home | 与家人在一起的家庭状态 | with his family |
+| address | 个人住址 | the place where one is living |
+| address | 商务信件所用地址 | one's place of business |
+| address at the top of a letter | 信件顶部的地址栏 | letter-heading |
+
+**教学重点：** 同一个普通英语词在不同语境中可能需要完全不同的 Basic 表达。不能把 world = earth、life = existence、home = house 这类一对一替换当成规则。
+
+### 5.7 对课程设计的直接影响
+
+Other Suggestions 至少包含以下不同学习任务：
+
+1. 情态意义：能力、义务、预期、意愿；
+2. 数量与程度：分配、总量、数量大小、超过足够程度；
+3. 时间关系：过去、截至目前、仍未发生、原因、先后、重复、相邻和持续；
+4. 条件关系：unless → if ... not；
+5. 性质描述：用 Basic 描述 busy、deaf；
+6. 语境表达：world、life、hill、home、address 根据具体意义选择 Basic 表达。
+
+这些是项目的意义归类，不是原书额外设立的课程目录。课程仍须根据实际教学任务决定合并或拆分。
 
 ## 6. 从原书例子归纳出的表达模式
 
