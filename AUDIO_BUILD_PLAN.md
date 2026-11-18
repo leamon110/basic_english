@@ -2069,3 +2069,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author Module 2 Lesson 10 — Quantity, Amount & Degree with explicit practice for distribution/totality, small/large amounts, all three uses of too and both uses of once.
 
+### Module 2 Lesson 10 — Quantity, Amount & Degree first complete draft and internal review (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L10_DRAFT.md (338 lines) from the corrected C10 flow and original *The ABC of Basic English* printed pp.257–258.
+- Verified the source distinctions: each → the distribution is made to every one (separately); altogether → total count (“six of them altogether”; source illustrates “there would make six”) OR quite/completely in “altogether wrong”; whole group → all the group; whole story → complete story; few → small number (the source's two-or-three example is not an exact definition); many → great number / quite a number; too many → more than enough; too tired to go → so tired that the person is unable to go; ill too → ill in addition; once → one time only OR at one time/in the past (C11 cross-link).
+- The draft explicitly keeps the three meanings of too separate and the two meanings of once separate. Number names remain in the existing 45-Step foundation; C10 does not reteach them.
+- Internal answer audit: A 5/5, B 3/3, C 4/4, D 3/3, E 3/3, F 12/12 = 30 closed prompts and 30 corresponding answers. The open construction task is explicitly not auto-scored by the current App.
+- Updated BASIC_ENGLISH_M2_L10_DRAFT.md status and BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md (checkpoint 88). C10 is source-reviewed and internally reviewed, not user-tested or App-integrated; actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no Android build was triggered.
+- Next concrete action: begin Module 2 Lesson 11 — Time & Sequence, preserving the different meanings of ago, already, yet, since, next and always, plus the past-time sense of once.
+
