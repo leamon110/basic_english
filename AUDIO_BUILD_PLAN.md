@@ -1526,3 +1526,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated the candidate structure and knowledge map. Current working structure remains 2 Modules / 15 provisional Lessons; the former missing-200-index blocker is closed.
 - Next concrete step: conduct a final acceptance-oriented curriculum audit of the 15 candidate scopes and source placements, then begin drafting Lesson teaching flows (not App integration yet). C07's actual lesson size must be checked when authored.
 - No App source changed and no Android build triggered.
+
+
+### Fixed Word-Groups count reconciliation (2026-11-18)
+
+- Corrected the accounting distinction: the original 250 Fixed Word-Groups are partitioned as 50 + 80 + 20 + 100. The separate A Basic Selection list of 50 Most Necessary groups is a **priority subset selected from those 250**, not 50 additional items and not a set that should be subtracted to create a “remaining 200” category.
+- The instance-level index now contains all 250 source items. Programmatic verification: Part A 50 rows; Part B 80; Part C 20; Part D 100. Part D source numbers 1–100 are each present exactly once (100 unique, no missing or duplicate numbers).
+- The 50 Most Necessary priority list was separately checked: exactly 50 entries, numbered 1–50, and its mapping remains in BASIC_ENGLISH_250_FIXED_WORD_GROUPS.md.
+- Corrected the index's status line and the current candidate's fixed-group progress reference. Earlier plan entries that referred to a “remaining 200” are retained as historical checkpoints; the current state is 250/250 indexed.
+- This completes fixed-group source-instance coverage. It does not mean all 250 are separate lessons or all should be taught at once; they remain phrase-level reinforcement distributed by meaning.
