@@ -1290,3 +1290,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Expansions Audit 02.
 - Next concrete step: compare all identified application themes with the Expansions track and determine which groups share the same learner decision problem; only then draft a candidate Module/Lesson map for source-coverage testing.
 - No App code changed and no Android build triggered.
+
+
+### Candidate Structure v0.1 drafted (2026-11-18)
+
+- After completing the major source-group audits, drafted `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md`.
+- Current candidate: **2 Modules / 14 Lessons**, explicitly provisional.
+- Module 1: From ordinary meaning to a Basic expression — 11 candidate Lessons covering communication; bodily action/contact; physical change/result; movement/transfer/position; thinking/knowledge/memory; feeling/preference/desire/need; learning/teaching/showing/attempting; social exchange/relations/participation; state/growth/life/process; modality/condition; quantity/degree/time.
+- Module 2: Understanding the meanings Basic words can carry — 3 candidate Lessons covering expansion of Things; expansion of Qualities; special use/contextual meaning.
+- Fixed Word-Groups and Words Formed by Endings remain cross-cutting reinforcement/resources. Operators/Directives/word forms remain foundation material rather than duplicated Expression Lessons.
+- The 14-count is not accepted as final. Six explicit stress points are recorded: Lesson 02 body-action/contact compression; Lesson 04 movement/transfer vs posture compression; Lesson 07 learning/teaching/show/try mixture; Lesson 08 small direct source base; Lesson 10/11 functional-expression compression; Module 2 expansion/specialization boundary.
+- This is the first candidate structure produced from the audited source material rather than from a preselected Lesson count. It now needs a source-coverage and lesson-size stress test before final numbering.
+- Updated candidate structure document and kept no formal final Lesson numbers in the App.
+- No App code changed and no Android build triggered.
