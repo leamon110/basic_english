@@ -1157,3 +1157,24 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - **Current immediate next step:** resume from the source-organization stage, not from App implementation. Specifically, consolidate the already-researched Expression System material into a current knowledge map: what source material is confirmed, what has been classified, what relationships/overlaps remain unresolved, and what source gap (if any) still prevents determining natural lesson boundaries. Only after that checkpoint is complete should a candidate lesson be drafted.
 - **No build:** no Android build is running; the latest Actions run is Run 48 / `44197915524`, completed successfully. No code change is planned for the immediate curriculum-research step.
 - **Resumption rule for the next conversation:** read this checkpoint, the complete `AUDIO_BUILD_PLAN.md`, `AGENTS.md`, and the latest Actions state; then continue from the recorded “Current immediate next step” rather than inferring a new plan from older notes.
+
+
+### Expression System knowledge-map checkpoint completed (2026-11-18)
+
+- Completed the immediate research step recorded in the previous checkpoint: consolidated the currently confirmed Expression System source material into `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` (540 lines).
+- The map explicitly separates:
+  1. 850-word vocabulary substrate;
+  2. Operators / Directives / word-forms / sentence structure as basic tools;
+  3. Names of Acts and Names of Directions as explanations of those tools;
+  4. Names of Things and Qualities as a distinct meaning-expansion problem;
+  5. 250 Fixed Word-Groups as fixed-use material;
+  6. Some Common Needs as the main practical expression-application material;
+  7. Words Formed by Endings and the 50 Most Necessary Fixed Word-Groups as application supplements;
+  8. Meaning → Basic as a cross-topic training method rather than a separate knowledge module.
+- Confirmed source-derived counts/structure recorded in the map: 850 = 100 Operations + 600 Things + 150 Qualities; 16 core Operators; 20 proper Directives plus the out boundary item; 250 Fixed Word-Groups with the verified 50 + 80 + 20 + 100 structure; separate 50-item “Most Necessary Fixed Word-Groups” list.
+- Confirmed the first-round Some Common Needs internal themes without promoting them to final Lessons: Simple Acts (communication/information; eating/body action; movement/posture), Complex Acts (thought/knowledge/memory; feeling/liking/need; learning/teaching/trying; social/economic/life processes), Other Suggestions (ability/obligation/willingness; quantity/time; conditions/qualities/common names).
+- The map records unresolved curriculum boundaries rather than guessing them: final module count, final Lesson count, whether Communication is one Lesson or more, boundaries among remaining Simple/Complex/Other topics, how fixed groups and endings should be embedded, and whether the incomplete 250-item instance-level index needs further source work.
+- Source limitation remains explicit: relevant 1932 `The ABC of Basic English` sections have been checked in the project research, but a verified complete English scan of the 1930 `Basic English: A General Introduction with Rules and Grammar` has not been acquired. No claim of having studied its complete text is made.
+- This checkpoint confirms that the next work is **not** to draft another Lesson yet. The next step is to test the remaining Some Common Needs themes against the same teaching-task scale used for Communication, beginning with Simple Acts: eating/body action, then movement/posture. After each meaningful theme-level research step, update this file and the knowledge map before proceeding.
+- Startup/CI verification for this step: `AGENTS.md` was read in full (53 lines); `AUDIO_BUILD_PLAN.md` was read in full (current prior snapshot 1,199 lines); branch head before this knowledge-map commit was `465484f45a51128e174d360f231d6a51f12e32c5`; latest Actions remains Run 48 / `44197915524`, completed / success, built commit `9a1793905b4abc7d24bd1c598a5a3004450f6748`. The Run 48 build job completed all main/post-job steps successfully; logs confirm the Meaning-to-Basic and Expression Lesson 02 tests passed, final human audio coverage 850/850 with 0 downloads and 0 errors, `BUILD SUCCESSFUL`, and successful upload of APK artifact `14379604453` plus coverage artifact `14380462964`. Both artifacts are unexpired. No active or queued run exists.
+- The knowledge-map commit is root-level Markdown only; it does not touch `docs/**`, `android-offline/**`, `scripts/**` or the workflow, so it does not trigger the Android workflow. No build was started or cancelled.
