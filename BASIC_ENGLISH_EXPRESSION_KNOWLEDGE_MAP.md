@@ -1029,3 +1029,112 @@ Next:
 2. compare it with the first two Complex Acts themes;
 3. then audit social/economic/life-process examples.
 
+
+
+## 22. Theme-boundary audit 05 — Complex Acts: learning, teaching, showing and trying
+
+### 22.1 Source material checked
+
+The group contains:
+
+- learn
+- teach
+- show
+- try
+
+Examples include:
+
+- get facts into one's head
+- get knowledge of them
+- be taught
+- give training or teaching
+- make it clear
+- let someone see them
+- put them on view
+- take someone round
+- give signs of interest
+- make an attempt to give signs of interest
+
+### 22.2 Candidate learning task A — acquiring and giving knowledge
+
+The first cluster is:
+
+- learn → get facts into one's head / get knowledge of them
+- teach → give training or teaching
+- be taught → be taught
+
+The common task is:
+
+> **Represent the transfer or acquisition of knowledge/training using Basic structures.**
+
+This is related to the previous thinking/knowledge theme, but it changes the participant structure:
+
+- someone acquires knowledge;
+- someone gives training;
+- someone is taught.
+
+That makes “who gives what to whom” and the direction of knowledge transfer more important.
+
+### 22.3 Candidate learning task B — showing something
+
+“Show” does not have one Basic replacement.
+
+The source uses different structures according to what “show” means:
+
+- show an effect → make it clear;
+- show pictures → let someone see them / put them on view;
+- show buildings → take someone round;
+- show interest → give signs of it.
+
+The central lesson-design point is:
+
+> **show is another semantic-compression word: the Basic expression depends on whether the intended meaning is making something clear, making something visible, guiding someone to see it, or indicating a state/attitude.**
+
+This is structurally similar to the speak prototype: one ordinary verb, several meanings, several Basic constructions.
+
+### 22.4 Candidate learning task C — trying / making an attempt
+
+“Try to show an interest” is expressed through:
+
+> make an attempt to give signs of interest
+
+The important operation is not “try = make” as a fixed replacement. It is:
+
+> **represent an attempt as a named action, then express what the attempt is directed toward.**
+
+This can potentially be taught together with other future examples involving attempts, but the current source material alone is not enough to establish a full independent topic.
+
+### 22.5 Current boundary conclusion
+
+This group is less internally uniform than the previous two Complex Acts groups.
+
+There is strong evidence for a distinct **learning/teaching** task.
+
+“Show” is best treated as a semantic-contrast example, not a single replacement rule. It may fit naturally with communication/knowledge-transfer material, but its several meanings need to be tested against the wider source before deciding where it belongs.
+
+“Try” currently looks more like a supporting semantic pattern than a complete Lesson by itself.
+
+Therefore:
+
+- learning/teaching = strong candidate theme;
+- show = cross-topic semantic example;
+- try = supporting pattern for “make an attempt”.
+
+No formal Lesson number is assigned.
+
+## 23. Current research checkpoint after Theme Audit 05
+
+The Complex Acts audit now contains three groups with different internal coherence:
+
+- thinking / knowledge / memory — coherent;
+- feeling / liking / wanting / needing — coherent;
+- learning / teaching / showing / trying — mixed; learning/teaching is coherent, show is highly polysemous, try is currently too small to stand alone.
+
+This reinforces the rule that the original three-section grouping is a **research index**, not a Lesson map.
+
+Next:
+
+1. audit the remaining Complex Acts social/economic/life-process examples;
+2. then audit Other Suggestions;
+3. after all major application material is tested, return to the cross-cutting supplements: fixed groups, endings and meaning-expansion material.
+
