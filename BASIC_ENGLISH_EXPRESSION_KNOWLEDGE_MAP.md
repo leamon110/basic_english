@@ -2017,3 +2017,13 @@ First teaching-flow drafts now exist for C01–C06 in BASIC_ENGLISH_EXPRESSION_L
 ## 45. First teaching-flow drafts complete for all 15 candidates
 
 BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md now contains first flow drafts for C13–C15 and C01–C12. Next gate: compare all 15 flows for overlap, prerequisites and workload before accepting the architecture. Actual duration/exercise volume remains to be tested during lesson authoring.
+
+
+## 46. Curriculum architecture accepted
+
+After the complete first-flow pass for all 15 candidates, the whole-course audit retained the two-module structure and all 15 lesson boundaries. The current structure authority is BASIC_ENGLISH_EXPRESSION_CURRICULUM.md:
+
+- Module 1: 3 Lessons — Names of Things expansion; Names of Qualities expansion/Quality-as-Thing; Special Use/meaning narrowing.
+- Module 2: 12 Lessons — Communication; Bodily Action; Physical Effects; Movement/Position; Thinking/Knowledge; Feeling/Need; Exchange/Commitment; State/Process; Ability/Obligation; Quantity/Degree; Time/Sequence; Context-Dependent Paraphrase.
+
+The architecture is accepted for authoring. Actual lesson scripts, exercise volume, App migration and implementation remain unfinished.
