@@ -1,6 +1,6 @@
 # Module 2 · Lesson 3 — Physical Effects: Damage, Change & Result
 
-> **Draft status:** first complete teaching-content draft. It is based on Ogden's *The ABC of Basic English*, pp.246–247 and p.254. The lesson uses the existing Step 17 foundation for past participles, be + past participle and get + past participle; it does not reteach that full system. Project-created contexts and exercises are labelled as teaching material. Clarity, answer coverage and actual learner time still require review.
+> **Draft status:** source-reviewed first complete teaching-content draft. It is based on Ogden's *The ABC of Basic English*, pp.246–247 and p.254. The lesson uses the existing Step 17 foundation for past participles, be + past participle and get + past participle; it does not reteach that full system. Project-created contexts and exercises are labelled as teaching material. Clarity, answer coverage and actual learner time still require review.
 
 ## What this lesson teaches
 
