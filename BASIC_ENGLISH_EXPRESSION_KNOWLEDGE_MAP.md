@@ -1841,3 +1841,37 @@ The final order remains open until the learner progression is compared explicitl
 
 No module order has been accepted. The next step is to test the whole progression and decide whether the two candidate modules should be reversed, interleaved or kept as currently listed.
 
+
+
+## 38. Whole-sequence audit 04 — Recommended module order
+
+The source-aligned order is now the recommended working sequence:
+
+### Module 1 — Understanding Basic Word Meanings
+
+1. Meaning Expansion: Names of Things & Qualities.
+2. Special Use / Meaning Narrowing.
+
+### Module 2 — Expressing Common Meanings in Basic English
+
+1. Communication & Information.
+2. Bodily Action & Contact.
+3. Physical Effects: Damage, Change & Result.
+4. Movement & Position: Transfer, Posture & Viewpoint.
+5. Thinking, Knowledge, Memory & Learning.
+6. Feeling, Preference, Desire & Need.
+7. Exchange, Sale & Commitment.
+8. State and Process: Change, Entry & Ending.
+9. Ability, Obligation & Intention.
+10. Quantity, Amount & Degree.
+11. Time & Sequence.
+12. Context-Dependent Words & Paraphrase.
+
+This order is recommended because it matches the 1932 *The ABC* sequence (Names of Things and Qualities before Names of Acts and Some Common Needs) and places meaning expansion before the mental/feeling expression themes that use extended meanings such as mind, grip, point of view and taste. The expansion unit can begin with concrete body-part examples, so it need not start as abstract theory.
+
+The application-first order would be more immediately practical, but it would introduce some extended meanings in C05/C06 before explaining them, or require repeated mini-explanations. The interleaved order would add module complexity without a clear enough benefit.
+
+The C01–C14 labels remain research IDs, not final App Lesson numbers. If this order survives the remaining audit, display numbering will be assigned as Module 1 Lesson 1–2 and Module 2 Lesson 1–12. The existing App speak and body-part prototypes will be reconciled during a later migration step; no App code is changed now.
+
+This is a recommended order, not yet the final accepted syllabus. The remaining check is the complete sequence's scope and whether any adjacent candidates still need merging or splitting.
+
