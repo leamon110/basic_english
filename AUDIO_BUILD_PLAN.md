@@ -1886,3 +1886,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is a first complete draft, not final acceptance. Clarity, answer coverage, overlap with C06, and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: review C05 against the original source and accepted flow, then author Module 2 Lesson 6 — Feeling, Preference, Desire & Need.
 
+### C05 review — feeling/idea boundary (2026-11-18)
+
+- Reviewed the C05 draft against original p.250 and p.252 and the accepted C05/C06 boundary.
+- Added the source's “feel that something is so” → “have a feeling / idea that it is so” as an explicit C06 boundary. Although the example contains an idea, the source places it with the feeling group; it must not be automatically collapsed into “think that it is so”.
+- Kept the other boundaries explicit: feel-a-wall is physical touch in C02; pain/pleasure/anger and feeling-that-it-is-so belong to C06; show-effect/make-it-clear remains cross-linked from C01; show-interest remains C06.
+- Added a practice question and answer to test the boundary.
+- C05's main four-part structure remains unchanged. The draft still requires answer/volume review and actual learner-time testing. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: complete the C05 source/answer review, then author Module 2 Lesson 6 — Feeling, Preference, Desire & Need.
+
