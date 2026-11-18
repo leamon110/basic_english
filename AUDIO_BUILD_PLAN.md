@@ -1209,3 +1209,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 02.
 - Next concrete step: audit Complex Acts / thinking, knowledge and memory, then compare its learning-task scale with the Simple Acts findings.
 - No App code changed and no Android build triggered.
+
+
+### Theme Audit 03 — Complex Acts thinking / knowledge / memory (2026-11-18)
+
+- Audited the first Complex Acts group: think, know, understand, mean, remember, forget.
+- Identified a common semantic task: normal English mental verbs compress a mental state/relation/operation; Basic often makes the relation explicit with a Name, Quality, Operator and/or Directive.
+- Internal contrast exists between thinking/judging/knowing/understanding/meaning and remembering/forgetting, but current evidence does not show a strong enough change in learning task to require an immediate split.
+- This group is therefore currently a stronger candidate for one coherent teaching theme than the two coarse Simple Acts buckets audited earlier. This is a curriculum-design finding, not a final Lesson assignment.
+- Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 03.
+- Next concrete step: audit Complex Acts / feeling, liking, wanting and needing.
+- No App code changed and no Android build triggered.
