@@ -2532,3 +2532,19 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - No App source or Android workflow input changed; no build was triggered.
 - Next: author Module 2 Lesson 10 — Quantity, Amount & Degree, with explicit exercises for each/altogether/whole, few/many, all three meanings of too, and both meanings of once.
 
+## 88. Module 2 Lesson 10 — Quantity, Amount & Degree first draft and internal review (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L10_DRAFT.md from the corrected C10 flow and original *The ABC of Basic English* printed pp.257–258.
+- Verified the source meanings:
+  - each → the distribution is made to every one (separately);
+  - altogether → total count (“six of them altogether”; source illustrates the result with “there would make six”) OR quite/completely in “altogether wrong”;
+  - whole group → all the group; whole story → complete story;
+  - few → a small number (the source's two-or-three example is not an exact definition); many → a great number / quite a number;
+  - too many → more than enough; too tired to go → so tired that the person is unable to go; ill too → ill in addition;
+  - once → one time only OR at one time/in the past, with the past-time sense cross-linked to C11.
+- Confirmed that the number names in examples belong to the existing number foundation; C10 does not reteach counting. The words each, altogether, whole, few, many, too and once are not entries in the current 850-word arrays.
+- Internal answer audit: A 5/5, B 3/3, C 4/4, D 3/3, E 3/3, F 12/12 — **30 closed prompts and 30 matching answers**. The independent-construction task is explicitly unscored by the current App.
+- C10 is source-reviewed and internally reviewed, but not user-tested or App-integrated. Actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no build was triggered.
+- Next: begin Module 2 Lesson 11 — Time & Sequence, preserving the different meanings of ago, already, yet, since, next and always, plus the past-time sense of once.
+
