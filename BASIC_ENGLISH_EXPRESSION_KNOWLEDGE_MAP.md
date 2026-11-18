@@ -2157,3 +2157,20 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - C02 is an internally reviewed draft, not learner-tested or App-accepted. Actual lesson time remains unmeasured.
 - Next: author Module 2 Lesson 3 — Physical Effects: Damage, Change & Result.
 
+## 59. Module 2 Lesson 3 — Physical Effects: Damage, Change & Result source audit (2026-11-18)
+
+- Reopened original English pp.246–247 for cut/break/smash and p.254 for destroy/hurt. Compared them with the accepted C03 flow, candidate structure, curriculum and the existing Step 17 adaptation.
+- pp.246–247 source distinctions:
+  - cut through thread/cake → get it cut;
+  - the thread is broken / get it broken;
+  - a plate may be smashed;
+  - if the plate breaks by itself, it comes to bits.
+- p.254 source distinctions:
+  - destroy something → burn it / smash it / break it / put an end to it; a destroyed thing has been burned, smashed or broken;
+  - hurt someone → give them pain / give wounds / do serious damage;
+  - an attempt to destroy may do no more than hurt, giving pain or causing wounds.
+- C03's dominant learner decision is distinct from C02: identify the action causing a physical change, the damage/effect, the resulting state, or a change that happens by itself. Do not collapse “hit” (contact/impact in C02) into “hurt” (injury/effect in C03).
+- Verified the prerequisite directly in docs/js/course.js: Step 17 is locally adapted; sections 4–6 teach past participle, be + past participle passive/result, and get + past participle. C03 should link to Step 17 and give only a short reminder with its own examples, not reteach the full structure. Keep participle sentence structure distinct from -ed word formation.
+- Source and prerequisite checks support one C03 Lesson. No source gap or new Lesson split is identified. No App source changed and no Android build triggered.
+- Next: author C03 with caused action/result, passive or resulting state, destroy vs hurt, and self-occurring change as the central contrasts.
+
