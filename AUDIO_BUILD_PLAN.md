@@ -1770,3 +1770,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Source and prerequisite checks support one C03 Lesson. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author C03 around caused action/result, passive or resulting state, destroy vs hurt, and self-occurring change.
 
+### Module 2 Lesson 3 — Physical Effects: Damage, Change & Result first complete draft (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L3_DRAFT.md from the source audit of pp.246–247 and p.254.
+- The draft distinguishes caused action, physical effect, resulting state and self-occurring change. It uses cut/get it cut; the thread is broken/get it broken; a plate may be smashed; and a plate breaking by itself → come to bits.
+- It includes destroy → burn/smash/break/put an end to it and hurt → give pain/give wounds/do serious damage. It explicitly distinguishes hit/contact in C02 from hurt/injury in C03.
+- Step 17 sections 4–6 are linked as the existing prerequisite for past participles, be + past participle and get + past participle. C03 provides only a short reminder and its own examples; it does not reteach the full foundation.
+- Added action/result/state recognition, destroy-vs-hurt, C02/C04 boundary, reverse-understanding and Step 17 prerequisite exercises. The open construction task is explicitly not auto-scored by the current App.
+- Updated BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md with checkpoint 60.
+- This is a first complete draft, not final acceptance. Clarity, answer coverage, exercise volume and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: review C03 against the original pages and accepted flow, then author Module 2 Lesson 4 — Movement & Position.
+
