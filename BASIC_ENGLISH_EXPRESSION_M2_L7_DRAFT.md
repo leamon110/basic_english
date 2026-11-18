@@ -79,6 +79,11 @@ Keep the difference:
 
 The source does not turn these into a general lesson on contract law. They are short examples of how a sale may be arranged.
 
+Do not treat **on credit** and **give one's word to do so** as the same expression:
+
+- **on credit** names the purchase/payment condition;
+- **give one's word to do so** names a person's commitment to give the money later.
+
 ## 3. Promises, agreements and business commitment
 
 The source gives a clear difference between receiving money now and promising to give it later.
@@ -106,7 +111,7 @@ The fixed-group examples also mention a chance of profit when someone takes part
 A few fixed-group examples give useful business context:
 
 - **the profit / loss / interest on a business** describes a financial result or return connected with that business;
-- goods that are **much in request** are goods that people are asking for or want;
+- the small slips in the source were **much in request**; this means people were asking for them or wanted them;
 - **take part in the organization of a company** describes participation in a business.
 
 These are supporting examples. They do not create separate lessons on accounting, company law or finance.
@@ -270,13 +275,13 @@ Explain what each fixed expression describes.
 
 1. take part in the organization of a company;
 2. the profit / loss / interest on a business;
-3. goods that are much in request.
+3. the small slips made for weighing are much in request.
 
 **Suggested answers**
 
 1. Participate in the organization of the company.
 2. A financial result or return connected with the business.
-3. Goods that people are asking for or want.
+3. The slips are wanted or asked for by people.
 
 ### E. Keep the boundaries clear
 
@@ -314,7 +319,7 @@ Explain what each Basic expression says about the transaction or commitment.
 12. put the business through;
 13. take one object in exchange for another;
 14. take part in the organization of a company;
-15. goods much in request.
+15. small slips much in request.
 
 **Suggested answers**
 
@@ -332,7 +337,7 @@ Explain what each Basic expression says about the transaction or commitment.
 12. The business undertaking is carried through to completion.
 13. One object is given and another is received.
 14. The person participates in organizing the company.
-15. The goods are wanted or requested by people.
+15. The small slips are wanted or requested by people.
 
 ### G. Independent construction
 
