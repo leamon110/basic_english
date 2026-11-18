@@ -2078,3 +2078,13 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Internal source/flow review is complete. Actual learner time and learner feedback remain unmeasured; this is a reviewed draft, not user-tested or App-accepted content.
 - Next: prepare Module 1 Lesson 3 — Special Use / Meaning Narrowing.
 
+## 52. Module 1 Lesson 3 — source review and first complete draft (2026-11-18)
+
+- Rechecked the original English scan pp.156–157 for the definition and three Special Use patterns, and p.160 for the additional current / engine / rail / ring examples.
+- Confirmed the source's three patterns: a material Name used for a particular piece (card, chalk, cloth, paper); an important subclass given a separate Name (shoes/boots, watches/clocks); and context selecting an expected narrower sense (ball, business man, judge, man, pictures).
+- Preserved the curtain warning: a stage curtain has a Special Use, but the source says this is not necessarily the most common or most important use.
+- Added the p.160 special-use exercise examples: electric current, railway engine, engine rail, finger ring. Kept the same page's army / reaction / society / worm / wing items classified as expansion exercises, not Special Use.
+- Created BASIC_ENGLISH_EXPRESSION_M1_L3_DRAFT.md. It explicitly contrasts C13 expansion with C15 narrowing, includes source-listed examples, project-created context sentences, practice, answer explanations and reverse checks.
+- This is a first complete content draft, not final acceptance. Clarity, answer quality, exercise volume and actual learner time still require review. It must remain separate from C13 expansion, C14 Quality-as-Thing, and the 250 Fixed Word-Groups.
+- Next: review the C15 draft against the source and flow, then begin Module 2 Lesson 1 — Communication & Information.
+
