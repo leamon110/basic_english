@@ -1707,3 +1707,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - C01 status: first integrated content draft exists and its structural/source-presence checks passed. It is not yet final accepted teaching content; a focused review of explanation clarity, answer coverage, duplication with later Module 2 Lessons and actual learner time remains.
 - Next concrete action: perform that C01 source/flow/teaching review; then continue in accepted curriculum order with Module 2 Lesson 2 — Bodily Action & Contact.
 
+### C01 source/flow/duplication review (2026-11-18)
+
+- Reviewed BASIC_ENGLISH_EXPRESSION_M2_L1_DRAFT.md against the accepted C01 flow and original English pp.244–245 and p.252.
+- Confirmed the source material coverage: speak (reused existing prototype); tell a story / give an account / give the news / give directions / as I was saying; sing; hear music / listen with attention / have news later; write views / read in the paper / go through with care; send a letter to the paper giving a different opinion; and the short p.252 show comparison.
+- Corrected a real duplication in the first integrated draft: it had copied the speak three-way table and repeated the same three speak quiz questions already present in BASIC_ENGLISH_EXPRESSION_LESSON_01.md and docs/js/expression-system.js. The revised C01 draft now reuses the existing speak explanation, quiz, target writing task and reverse check, and keeps only the mapping boundary (speak to / speak at → C01; speak a language → knowledge topic).
+- Clarified that the old App “next content” preview is not a separate lesson. C01 expands tell/sing/listen/read etc; eat belongs to the next Bodily Action & Contact topic, Module 2 Lesson 2.
+- Expanded the send-letter practice to include the source's purpose “giving a different opinion” and added sending to reverse-understanding practice.
+- Kept show as a compact polysemy comparison panel, not a communication subtopic. The existing speak writing checker remains limited to its registered say-something-to-him target and does not score arbitrary C01 construction.
+- Internal source/flow/duplication review is complete for this pass. Actual learner time and learner feedback remain unmeasured; C01 is not yet user-tested or App-accepted.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author Module 2 Lesson 2 — Bodily Action & Contact, using the same concise meaning → Basic expression → learner use / reverse-check method.
+
