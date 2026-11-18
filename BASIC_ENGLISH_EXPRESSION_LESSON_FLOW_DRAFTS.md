@@ -624,16 +624,17 @@ Ask whether the sentence describes:
 
 Keep the physical use of feel — touching a wall to test it — as a cross-link to C02, not as part of the internal-feeling rule.
 
-#### 2. Liking and approval
+#### 2. Liking, friendship, preference and approval
 
 Compare:
-- being pleased with something;
-- having or giving approval, or being in agreement with something;
-- giving disapproval, or being in disagreement with something;
-- getting on well with a person / being friends with them;
-- having a taste for food or pictures.
+- being pleased with a thing;
+- being friends with persons / getting on well with them;
+- having a taste for good food or pictures;
+- a thing having our approval / giving our approval to it.
 
-The learner must identify whether the sentence is about being pleased with a thing, being friends with a person, approval or taste.
+The source gives approval, but does not provide a separate Basic expression for the negative counterpart. Do not invent one for this Lesson.
+
+The learner must identify whether the sentence is about a positive response to a thing, a friendly relationship, a preference, or approval.
 
 #### 3. Desire and need
 
