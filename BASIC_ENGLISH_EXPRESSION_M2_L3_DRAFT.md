@@ -53,6 +53,8 @@ A few distinctions matter:
 - **hit / give a blow** belongs to C02 when the focus is forceful contact. **Hurt / give them pain** belongs here when the focus is injury; **wounds may do serious damage** describes a further possible effect.
 - The source says that some attempts at destroying animals do no more than hurt them. That contrast helps show that causing pain or wounds is not the same as destroying.
 
+**Boundary with C08:** destroying an animal describes the action that causes death; C08 covers the animal/person dying. The two Lessons share a subject area but describe different events and different participant roles.
+
 ## 3. A short reminder from Step 17
 
 The current App's Step 17, sections 4–6, already teaches:
