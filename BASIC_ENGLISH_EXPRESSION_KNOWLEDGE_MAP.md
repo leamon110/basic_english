@@ -1502,3 +1502,132 @@ The emerging curriculum model is therefore:
 
 The remaining major cross-cutting material is **Names of Things and Qualities / Expansions**, which must now be compared with the application themes before final Lesson boundaries can be proposed.
 
+
+
+## 30. Cross-cutting audit 02 — Names of Things and Qualities / Expansions
+
+### 30.1 Source material checked
+
+The project research index and the relevant `The ABC of Basic English` material have been checked for:
+
+- Names of Things;
+- Names of Qualities;
+- meaning expansion;
+- special/narrow use;
+- -er / -ing / -ed intersections;
+- qualities used as Names of Things.
+
+### 30.2 The central learning problem
+
+This material is different from Some Common Needs.
+
+Some Common Needs asks:
+
+> **Given a meaning that ordinary English expresses with a word outside the Basic set, how can the learner construct a Basic expression?**
+
+Expansions asks:
+
+> **Given a Basic word that is already known, why can that same word legitimately refer to a different object, property or situation?**
+
+That is a different cognitive task.
+
+The learner must infer a semantic relationship rather than construct a replacement phrase.
+
+### 30.3 Names of Things — expansion
+
+The project index identifies several kinds of relation:
+
+1. body part → similar part of another object;
+2. similarity based on sensory properties;
+3. similarity based on use or behavior;
+4. “as if” comparison and non-physical objects.
+
+The important teaching operation is:
+
+> root meaning → related feature → expanded referent
+
+This is not a vocabulary list of unrelated extra meanings.
+
+### 30.4 Names of Qualities — expansion
+
+The project index identifies:
+
+- extensions based on human reaction;
+- extensions from one quality to another commonly associated quality.
+
+The learner therefore has to ask:
+
+> **What property is being named literally, and what related property is being described in this context?**
+
+This is again a semantic interpretation task, not a replacement-phrase construction task.
+
+### 30.5 Special use — narrowing rather than widening
+
+The project research distinguishes:
+
+- material name → object made from that material;
+- broad category → important specific member/subclass;
+- contextual default meaning.
+
+This should be taught in contrast with expansion:
+
+> **Expansion = meaning becomes applicable to a related wider/different referent.**
+>
+> **Special use = the context narrows the word to a more specific referent.**
+
+That contrast is potentially one of the strongest organizing ideas for this material.
+
+### 30.6 Qualities used as Names of Things
+
+The source material also records cases where a Quality can function as a Name of Things.
+
+This is another semantic boundary problem:
+
+> the learner must identify whether a familiar quality word is describing a property or naming the relevant thing/person/class in context.
+
+It is related to meaning expansion, but should not be confused with the ordinary adjective/noun word-form rules.
+
+### 30.7 Relationship to the application themes
+
+Expansions should **not** be forced into every Some Common Needs theme.
+
+Instead:
+
+- when an application example depends on an expanded meaning, the lesson can link back to the relevant expansion;
+- the expansion system can also have its own focused teaching sequence because its central task is different;
+- the same word can therefore appear in both places without creating duplicate lessons.
+
+This is analogous to Operators and Directives:
+
+> teach the reusable semantic tool once at the appropriate depth; then call it from application themes.
+
+### 30.8 Current boundary conclusion
+
+There is now strong evidence that **Expansions is a distinct learning track**, because its central task is semantic interpretation rather than ordinary-English-to-Basic reconstruction.
+
+Within that track, the most natural high-level contrast currently visible is:
+
+1. **meaning expansion** — related meaning becomes applicable;
+2. **special use** — context narrows the meaning;
+3. **quality ↔ thing / word-form intersections** — boundary cases requiring contextual interpretation.
+
+Whether this becomes one Lesson, two Lessons, or more is still unresolved. The material must be tested at the same task scale as the application themes before final counting.
+
+No formal Lesson number is assigned.
+
+## 31. Current research checkpoint after Expansions Audit 02
+
+The cross-cutting material now shows two fundamentally different reusable resources:
+
+- **Fixed Word-Groups / Endings** → reinforcement and word-form resources used inside application themes.
+- **Expansions** → a distinct semantic interpretation task that may justify its own teaching track.
+
+This is the first strong evidence for a future **module-level boundary**, but it is not yet a final module decision.
+
+Next:
+
+1. compare all identified application themes and the Expansions track;
+2. identify which themes share the same learner decision problem;
+3. estimate natural Lesson sizes only after that comparison;
+4. then draft the first candidate Module/Lesson map and test it against the source coverage.
+
