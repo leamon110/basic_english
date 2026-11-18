@@ -408,3 +408,88 @@ These five prompts expose why “show” has no single Basic replacement. They f
 - Candidate 07 is removed as an independent Lesson.
 - All show meanings stay together in one comparison set under Communication & Information; “show interest” links to Feeling/Attitude but is not duplicated as a separate show lesson.
 - “Make an attempt” remains a supporting expression pattern, not a separate course unit.
+
+
+## Teaching-size test 04 — Exchange/commitment and state/process
+
+### Candidate 08 — Exchange, Sale & Commitment
+
+The broad source grouping contained 18 rows, but only five of them belong to a transaction/commitment theme:
+
+- buy things → get them in exchange for money / at a price; give money for them;
+- promise to pay later → give one's word to do so;
+- sell things → get money for what one gives;
+- keep goods for sale → keep them in a store;
+- sell what one makes → put it on the market.
+
+A directly relevant priority fixed group is:
+
+- let a house — the fixed use for renting a house/property out.
+
+The remaining source rows do not belong here:
+
+- find / lose / discover → location or knowledge;
+- destroy / hurt → physical damage/effect;
+- grow / sleep / die / begin / finish → state and process.
+
+**Teaching objective:** express a transaction by identifying what each party gives or gets, what the exchange is for, and whether the sentence describes a sale, goods held for sale, or a commitment to pay.
+
+**Project-created test prompts based on the source examples:**
+
+1. A person buys a book. Identify what the buyer gets and what money is given in exchange.
+2. A person sells a book. Reverse the roles: what does the seller get for what is given?
+3. A shop keeps goods for sale. Express the goods' status and location.
+4. A maker sells what they make. Express putting the goods on the market.
+5. A person promises to pay later. Preserve the commitment: “give one's word to do so”.
+6. A person lets a house. Recognize the fixed use; do not interpret “let” here as the general permission pattern.
+
+**Test result:** the narrowed five-example group has one clear transaction/commitment decision and can support a short lesson. The “let a house” fixed group reinforces the rental/transaction context. The wider social-relation fixed groups (“one another”, “respect for”, “take part in”, “dependent on”) do not belong in this lesson and must be inserted where their own meanings are taught.
+
+**Decision:** retain candidate 08 provisionally, but rename it **Exchange, Sale & Commitment**. It is not a general social-relations lesson.
+
+### Candidate 09 — State and Process: Change, Entry & Ending
+
+The six indexed source examples are:
+
+- grow taller / higher / fatter / greater → get + Quality;
+- be growing → be in the process of growth / development;
+- sleep → go to sleep / be in sleep;
+- die → go to one's death / come to one's end / take one's last breath;
+- begin → make a start;
+- finish → finish.
+
+These can be organized around a single process question:
+
+> **Is the sentence describing a change into a state, an ongoing state/process, or the beginning/ending of an event?**
+
+The priority fixed groups provide natural reinforcement:
+
+- in motion;
+- in use / operation;
+- come to a stop;
+- go to sleep;
+- lights go out;
+- in the end;
+- take place;
+- put a stop to.
+
+**Project-created test prompts based on the source examples and priority groups:**
+
+1. Someone becomes taller. Use “get taller” to express the change.
+2. Someone is in the middle of growing. Distinguish “be growing” from “get taller”.
+3. A child goes to sleep. Express entry into the state with “go to sleep”.
+4. A machine is already operating. Describe its state with “in use”.
+5. A moving object stops. Express reaching the stopping point with “come to a stop”.
+6. An event happens. Use “take place” as the fixed expression.
+7. A person begins a task. Use “make a start”.
+8. A person finishes a task. Keep the source's “finish”; do not invent a paraphrase where the Basic word itself works.
+
+**Test result:** this is a coherent, practical unit if organized around state/process transitions rather than around the vague label “life processes”. The learner compares change, ongoing process, entry into a state, occurrence and process boundaries. The fixed groups reinforce the same theme without being treated as a separate module.
+
+**Decision:** retain candidate 09 provisionally and rename it **State and Process: Change, Entry & Ending**.
+
+### Boundary decision after Teaching-size test 04
+
+- Candidate 08 survives only in the narrowed transaction/commitment scope; the old “Social Exchange, Relations & Participation” label is withdrawn.
+- Candidate 09 survives with the process/state-transition objective; its source examples and selected fixed groups can support one concise lesson.
+- No new total Lesson count is assigned.
