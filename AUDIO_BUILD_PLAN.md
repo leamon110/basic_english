@@ -2182,3 +2182,18 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Final Actions state before this plan entry: branch HEAD `1bf15962d3ea2a74b7248f38810ab534297c3bf8`; Run 48 / 44197915524 completed / success; 48 runs total; 0 active and 0 queued.
 - Compared the branch with Run 48 build SHA `9a1793905b4abc7d24bd1c598a5a3004450f6748`: 334 commits ahead / 0 behind; all changed files are Markdown. No App source, test, CSS, HTML, Android workflow, Android asset or user progress was modified. No Android build was triggered.
 - Migration status: mapping and risk analysis complete as a draft only. User review/approval is required before App implementation, screen renumbering or progress-key migration.
+
+### Curriculum coverage audit — source layers and current App boundaries (2026-11-19)
+
+- Repeated the mandatory startup check: read all 53 lines of AGENTS.md and the complete AUDIO_BUILD_PLAN.md (2,184 lines before this entry); queried the live branch head and Actions runs.
+- Startup snapshot: branch basic-english-learning-upgrade; latest pre-audit head 557a20de84581d1770bb51b3c8eea1934c11f048; 48 Actions runs; latest Run 48 / 44197915524, completed / success on build SHA 9a1793905b4abc7d24bd1c598a5a3004450f6748; 0 active and 0 queued.
+- Inspected Run 48 job 134444107771: 23 steps (18 main + 5 post-job), all successful. Logs confirm cache restoration, 850/850 human recordings, Gradle BUILD SUCCESSFUL, and successful uploads. Artifacts remain unexpired: APK 14379604453 (9,272,570 bytes) and coverage report 14380462964 (21,467 bytes).
+- Re-read source/course materials and current implementation. The 850 word arrays contain 850 unique entries (100 Operations + 600 Things + 150 Qualities); the Chinese gloss map has 850 matching keys. This is data-entry completeness, not proof of exhaustive sense definitions or word-by-word translation accuracy.
+- Verified the original The ABC of Basic English pp.146–162. p.158 explicitly says many words have neither Expansion nor Special Use, some have only one, and a word may have several expansions. Do not force an extra sense onto every Basic word.
+- Updated BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md with p.158 scope guidance, law/line multiple-expansion examples and the p.160–162 army/reaction/society/worm/wing source exercises. Updated the 15-Lesson review sheet's M1L1 source scope.
+- Updated BASIC_ENGLISH_EXPRESSION_CURRICULUM.md to clarify Module 1 is not a complete 850-word dictionary and Module 2 is not a per-word supplement of additional senses.
+- Created BASIC_ENGLISH_CURRICULUM_COVERAGE_AUDIT.md (261 lines). It records 850-word data counts, 45-Step source/App coverage, Module 1/2 boundaries, 13 rule units / 47 questions, 250/250 Fixed Word-Groups mapping, finite checker limits, current App integration state and the next audit action.
+- Confirmed the original 45-Step online course's Step 25 statement: structure teaching is complete there, with ten further lessons to complete the 850-word vocabulary. The current App has 14/45 locally adapted Steps; the other 31 remain source-page links.
+- Confirmed all 15 accepted Lesson drafts exist but remain document-level drafts; they are not learner-tested or integrated into the accepted 2-Module / 15-Lesson App navigation. The migration plan remains draft / not approved.
+- No App source, CSS, HTML, tests, Android workflow inputs, audio assets or user progress changed. No Android build was triggered.
+- Current next action: source-fidelity audit the 14 locally adapted 45 Steps before selecting the next unadapted Step. App migration remains behind the existing approval gate.
