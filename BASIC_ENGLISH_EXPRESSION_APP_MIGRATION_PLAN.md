@@ -179,3 +179,11 @@ Before any code migration:
 - [ ] Android build and device acceptance pass.
 
 **Current result:** repository inspection and the migration mapping are complete. No App code, test, CSS, HTML, Android workflow or user progress was modified. This draft awaits review before implementation.
+
+## 11. Relationship to the separate 45-Step course
+
+- The original 45-Step course remains a separate learning area. This migration is only for the Expression System's accepted 2 Modules / 15 Lessons.
+- The source-fidelity audit of all 14 locally adapted 45 Steps is complete; the detailed findings are in `BASIC_ENGLISH_45_STEP_ADAPTATION_AUDIT.md`.
+- The remaining 31 source Steps have a source-ordered adaptation plan in `BASIC_ENGLISH_45_STEP_COURSE_MAP.md`: gaps within Steps 1–25 first, then Steps 26–35 vocabulary, Steps 36–41 reference topics, and Steps 42–45 integrated use. The next unadapted source page is Step 4 — At the Station.
+- Do not rewrite, renumber, merge or convert the 45 Steps into the 15 Expression Lessons during this migration. The 14-step correction queue and 31-step adaptation work remain a separate 45-Step content workstream.
+- The current draft remains **not approved for implementation**. Phase 0 approval is still required before any App code, UI numbering or progress-store changes.
