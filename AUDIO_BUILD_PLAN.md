@@ -1750,3 +1750,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is a first complete draft, not final acceptance. Clarity, answer coverage, duplication with C03/C04 and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: review C02 against the original pages and accepted flow, then author Module 2 Lesson 3 — Physical Effects: Damage, Change & Result.
 
+### C02 source/flow review and cross-link correction (2026-11-18)
+
+- Reviewed BASIC_ENGLISH_EXPRESSION_M2_L2_DRAFT.md against original English pp.245–247, the accepted C02 flow and the source index.
+- Confirmed the key source distinctions: eating/taking food/having a meal; bite/have a bite; spit/put it out of the mouth; direct touch/put a body part on it or give it a touch; accidental contact/come up against; force/hit or give a blow; scratch/make a mark; insect bite/give a rub; deep scratch/get one's nails into it.
+- Confirmed cut is only a C03 boundary and throw/catch/hold/bring/body position are C04 boundaries. The p.245 get-through-it phrase remains a brief completion-focused extension, not a generic replacement for eat.
+- Added the source-indexed physical use “feel a wall to test whether it is dry” → “put one's hands on it” as a cross-link in C02. It is physical contact; emotional/internal feel remains in C06. Added a matching exercise and answer.
+- Rechecked answer explanations and boundary exercises. No source example has been promoted to a universal grammar formula. The free construction task is not auto-scored by the current App.
+- C02 is internally reviewed, not learner-tested or App-accepted; actual lesson time remains unmeasured. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author Module 2 Lesson 3 — Physical Effects: Damage, Change & Result.
+
