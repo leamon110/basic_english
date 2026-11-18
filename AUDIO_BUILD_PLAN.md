@@ -962,3 +962,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App code or Android workflow input changed; no Android build was triggered.
 - Next action: draft one complete candidate teaching unit from the communication examples and test whether the scope feels coherent before using the same boundary standard elsewhere.
 
+
+
+### First candidate topic drafted: Communication and Information (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_COMMUNICATION_DRAFT.md using the original Some Common Needs examples on pp.244–245.
+- The draft groups the source examples by information production/transmission and information reception/processing, while keeping “speak a language → have a knowledge of it” as a cross-topic contrast rather than forcing it into one group.
+- It does not assign a Lesson number or decide whether the two parts are one or two lessons. That boundary will be tested against the amount of explanation and practice needed.
+- Updated the main outline's next steps to use this candidate as the first test of lesson granularity.
+- No App code or Android workflow input changed; no Android build was triggered.
+- Next action: evaluate whether this candidate is concise and teachable, then apply the same standard to the physical-action and Complex Acts examples.
+
