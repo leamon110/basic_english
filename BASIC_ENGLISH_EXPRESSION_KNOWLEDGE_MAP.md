@@ -2517,7 +2517,7 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 
 - Rechecked the original *The ABC of Basic English*, printed pp.257–258, against the C10 flow, source index and accepted curriculum.
 - Verified the source distinctions:
-  - each → every one separately (distribution to members one by one);
+  - each → the distribution is made to every one (separately); the parenthetical word explains the one-by-one distribution;
   - altogether → total count (“six of them altogether”; the source explains the result with “there would make six”); in “altogether wrong” it means quite or completely so;
   - whole group → all the group; whole story → the complete story;
   - few → a small number (the source says “few men” are frequently two or three, but advises “a small number” when the exact amount is uncertain);
