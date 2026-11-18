@@ -1443,3 +1443,8 @@ The complete first-flow pass now exists for all 15 candidates. The whole-course 
 
 This is acceptance of the curriculum architecture, not acceptance of completed lesson scripts, durations, App implementation or device behavior. The older candidate/audit history remains here for traceability; use BASIC_ENGLISH_EXPRESSION_CURRICULUM.md as the current structure authority.
 
+
+
+### First full lesson-content draft completed
+
+Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names of Things: Meaning Expansion. It teaches representative source-supported relation families, includes practice and an answer key, and deliberately keeps the full catalogue out of the main explanation. This is a content draft, not an App implementation.
