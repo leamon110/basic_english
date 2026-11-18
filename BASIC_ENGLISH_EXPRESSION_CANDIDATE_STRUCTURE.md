@@ -31,7 +31,7 @@ Core operation: identify the actual ordinary-English meaning in context → choo
 | C05 | **Thinking, Knowledge, Memory & Learning** | think, know, understand, mean, remember, forget, learn, be taught, teach. |
 | C06 | **Feeling, Preference, Desire & Need** | feel, like, want, need. “Feel a wall” cross-links to C02; “show interest” stays in C01's show contrast set and links here by meaning. |
 | C07 | **Exchange, Sale & Commitment** | buy, sell, keep goods for sale, promise to pay later; “let a house” is a directly relevant fixed-group reinforcement. |
-| C08 | **State and Process: Change, Entry & Ending** | grow, be growing, sleep, die, begin, finish; reinforce with relevant fixed groups such as in motion, in use, come to a stop, go to sleep, in the end, take place and put a stop to. |
+| C08 | **State and Process: Change, Entry & Ending** | grow / be growing → get + Quality / be in the process of growth or development; sleep → go to sleep / be in sleep; die → go to one's death / come to one's end / take one's last breath; begin → make a start. The source's “finish” is explanatory English, not a Basic rendering. Reinforce with in motion, in use, come to a stop, go to sleep, lights go out, take place and put a stop to; cross-link in the end to C11 for time/sequence. |
 | C09 | **Ability, Obligation & Intention** | can, ought, shall. Teach ability/possibility, duty/advisability, probability and intention inside this Lesson. |
 | C10 | **Quantity, Amount & Degree** | each, altogether, whole, few, many, too, once. Cross-link the past-time sense of once to C11. |
 | C11 | **Time & Sequence** | ago, already, yet, since, next, always; preserve the multiple meanings of since, next and always, and the past-time sense of once. |
@@ -46,7 +46,7 @@ Core operation: identify the actual ordinary-English meaning in context → choo
 - find / lose / discover are cross-linked by actual meaning: encounter/location → C04; seeing that something is happening → C01; knowledge/discovery → C05; inability to locate → C04/C05; an object being taken away → C04.
 - All show senses remain together in C01; “show interest” links to C06 but is not duplicated.
 - try remains a supporting “make an attempt” pattern inside the show example, not a separate Lesson.
-- finish remains in C08 as a contrast where the source itself uses the word directly.
+- The source uses finish only in an explanatory English sentence on p.256 (“everything that begins will later finish”); it does not give a Basic equivalent for the general verb finish. The word is not one of the 850 base entries, so do not treat finish → finish as a Basic expression.
 
 ### Current evidence and remaining work
 
@@ -723,42 +723,46 @@ The remaining source rows do not belong here:
 
 ### Candidate 09 — State and Process: Change, Entry & Ending
 
-The six indexed source examples are:
+The source's ordinary-English examples concern grow / be growing, sleep, die, begin and finish. The Basic expressions actually supplied in the passage are:
 
-- grow taller / higher / fatter / greater → get + Quality;
+- grow taller / higher / fatter / greater → get taller / higher / fatter / greater;
 - be growing → be in the process of growth / development;
 - sleep → go to sleep / be in sleep;
 - die → go to one's death / come to one's end / take one's last breath;
-- begin → make a start;
-- finish → finish.
+- begin → make a start.
 
-These can be organized around a single process question:
+**Important source boundary:** p.256 says that everything which begins will later finish, but this is explanatory English. It does not give a Basic rendering for the general verb finish. The current 850-word list also does not contain finish. Do not teach finish → finish as a valid Basic mapping.
 
-> **Is the sentence describing a change into a state, an ongoing state/process, or the beginning/ending of an event?**
+These examples can be organized around one process question:
+
+> **Is the sentence describing a change in Quality, a process under way, entry into a state, a state itself, an event occurring, or an ending?**
 
 The priority fixed groups provide natural reinforcement:
 
 - in motion;
 - in use / operation;
-- come to a stop;
 - go to sleep;
 - lights go out;
-- in the end;
+- come to a stop;
 - take place;
 - put a stop to.
+
+**in the end** is primarily a C11 Time & Sequence item. Cross-link it to C08 only when the context emphasizes the eventual outcome of a process.
 
 **Project-created test prompts based on the source examples and priority groups:**
 
 1. Someone becomes taller. Use “get taller” to express the change.
-2. Someone is in the middle of growing. Distinguish “be growing” from “get taller”.
+2. Someone is in the middle of growing. Distinguish “be in the process of growth” from “get taller”.
 3. A child goes to sleep. Express entry into the state with “go to sleep”.
-4. A machine is already operating. Describe its state with “in use”.
-5. A moving object stops. Express reaching the stopping point with “come to a stop”.
-6. An event happens. Use “take place” as the fixed expression.
-7. A person begins a task. Use “make a start”.
-8. A person finishes a task. Keep the source's “finish”; do not invent a paraphrase where the Basic word itself works.
+4. A person is already asleep. Identify the source's state expression “be in sleep”.
+5. A machine is operating. Describe its state with “in use”.
+6. A moving object reaches a stopped state. Use “come to a stop”.
+7. Someone causes an activity to end. Use “put a stop to it”.
+8. An event occurs. Use “take place”.
+9. A person begins a task. Use “make a start”.
+10. A person finishes a task. Does p.256 give a Basic rendering for this general meaning? **No.** Treat this as a source-boundary check, not as a construction prompt.
 
-**Test result:** this is a coherent, practical unit if organized around state/process transitions rather than around the vague label “life processes”. The learner compares change, ongoing process, entry into a state, occurrence and process boundaries. The fixed groups reinforce the same theme without being treated as a separate module.
+**Test result:** this is a coherent, practical unit if organized around state/process transitions rather than around the vague label “life processes”. The learner compares change, ongoing process, entry into a state, occurrence and process boundaries. The fixed groups reinforce the same theme without being treated as a separate module. Generic “finish” is not a taught Basic mapping; p.256 uses it only in explanatory English.
 
 **Decision:** retain candidate 09 provisionally and rename it **State and Process: Change, Entry & Ending**.
 
