@@ -939,3 +939,93 @@ Next:
 3. continue through learning/teaching/trying and social/life processes;
 4. only after all major groups have been tested should Lesson boundaries be formalized.
 
+
+
+## 20. Theme-boundary audit 04 — Complex Acts: feeling, liking, wanting and needing
+
+### 20.1 Source material checked
+
+The group contains:
+
+- feel
+- like
+- want
+- need
+
+with examples such as:
+
+- have a feeling of pain / pleasure
+- have a feeling or idea that ...
+- be feeling angry
+- be conscious of something
+- put one's hands on it
+- be pleased with
+- have / give approval
+- be friends with
+- get on well with
+- have a taste for
+- have a desire for
+- be in need of
+
+### 20.2 Common learning problem
+
+The main task is:
+
+> **Express a person's internal experience, attitude, preference, desire or need as a relation to something, rather than treating the ordinary English verb as a single Basic verb.**
+
+The Basic expressions make the relationship explicit:
+
+- feeling → have a feeling of
+- liking → be pleased with / have approval of / have a taste for
+- wanting → have a desire for
+- needing → be in need of
+
+For people, “like” can move into a social relation:
+
+- be friends with
+- get on well with
+
+So the learner has to identify what kind of “like” is meant rather than selecting one fixed replacement.
+
+### 20.3 Important cross-boundary example: feel
+
+“Feel” is internally broad:
+
+- feel pain / pleasure → a feeling;
+- feel that something is so → a feeling or idea;
+- feel angry → a state/Quality;
+- feel whether a wall is dry → physical contact through the hands.
+
+The last case overlaps with the previously audited physical-contact material.
+
+This is useful evidence rather than a problem: **the same ordinary English word can cross semantic topics**, so the course should not force every occurrence of a word into one Lesson.
+
+The topic should teach the relevant meaning in context and link the physical-contact use back to the earlier physical-action material.
+
+### 20.4 Current boundary conclusion
+
+Current evidence supports keeping this group as **one coherent candidate teaching theme**:
+
+> feeling → attitude/preference → desire → need
+
+with “feel” examples ordered from internal experience to relation/awareness, and with the physical-contact example treated as a cross-link rather than as a reason to split the whole topic.
+
+This is another case where a semantic theme is more useful than a word-based grouping.
+
+No formal Lesson number is assigned.
+
+## 21. Current research checkpoint after Theme Audit 04
+
+Two Complex Acts groups have now been audited:
+
+- thinking / knowledge / memory;
+- feeling / liking / wanting / needing.
+
+Both currently show coherent semantic centers, although individual words cross into neighboring topics.
+
+Next:
+
+1. audit Complex Acts / learning, teaching, showing and trying;
+2. compare it with the first two Complex Acts themes;
+3. then audit social/economic/life-process examples.
+
