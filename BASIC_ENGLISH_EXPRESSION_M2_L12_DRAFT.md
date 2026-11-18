@@ -25,7 +25,7 @@ Choose according to the intended meaning:
 - If the sentence emphasizes that the person has many tasks waiting, the Basic description is **has much to do**.
 - If it emphasizes the person's active effort, use **working hard**. This describes what the person is doing, not a job or profession.
 
-The source's first description is not the preferred everyday form. Do not teach busy as meaning that someone is a business person.
+The source's first description is not the preferred everyday form. Do not teach busy as meaning that someone is a business person. Here business refers to work or tasks, not the commercial exchange/sale topic in Module 2 · Lesson 7.
 
 ### deaf
 
@@ -59,7 +59,7 @@ The source distinguishes three uses:
 
 Keep these apart. A sentence about the abstract sense of life is not necessarily talking about the living objects themselves. A sentence about the activity is different again.
 
-The third use cross-links to the existing -ing word-form foundation. It does not make the -ing form a universal replacement for every use of life.
+The third use cross-links to the existing -ing word-form foundation. It does not make the -ing form a universal replacement for every use of life. Module 2 · Lesson 8 covers the event of dying and the source's expressions for it; C12 covers the noun life's contextual meanings, not the death event.
 
 ## 4. hill — one raised landform or a region
 
