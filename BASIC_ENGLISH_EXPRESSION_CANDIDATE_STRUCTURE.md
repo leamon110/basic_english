@@ -622,3 +622,95 @@ The original pages group two kinds of examples:
 - Move unless to conditional sentence-structure foundations; no standalone Lesson.
 - Move busy/deaf and world/life/hill/home/address into one Module 1 candidate topic: Context-Dependent Words & Paraphrase.
 - The former candidate 14 label “Special Use & Contextual Meaning” is withdrawn. The Special Use / narrowing material from Names of Things and Qualities remains a separate Module 2 question to test.
+
+
+## Teaching-size test 06 — Module 2: Expansion vs Special Use / meaning narrowing
+
+### Source correction before the test
+
+The previously unread English scan page p.154 has now been successfully retrieved and read. It adds several Names of Things expansion relations that were missing from the first-pass index:
+
+- a feeling/thing name used for its cause (amusement, comfort, pleasure, agreement);
+- a thing name used for the process that produces it (addition, building, discovery);
+- a thing name extended to its use (brush, sail, whistle);
+- a part name used for the whole (letter, country, body);
+- a substance name used for a common object formed from it (a glass, an iron, a tin);
+- other true connections such as color, family relation, force, library contents and seasons.
+
+The source index `BASIC_ENGLISH_EXPANSIONS_THINGS_QUALITIES.md` has been updated with these examples. The p.154 access gap is resolved; it must no longer be reported as unread.
+
+### Candidate A — Meaning Expansion: Names of Things & Qualities
+
+**Teaching objective:** start from a word's root meaning, identify the specific relation recognized by the source, and explain why the word can be used for the new referent/property.
+
+The Things examples now cover several kinds of relation:
+
+- body-part/structure relation: head, foot, arm, leg, mouth, neck, etc.;
+- sensory similarity: size, shape, surface, sound;
+- use/behavior/function: carriage, bed, machine, kick, etc.;
+- “as if” comparison and abstract use: field of interest, attraction, support;
+- cause: amusement, comfort, pleasure, agreement;
+- producing process: addition, building, discovery;
+- use: brush, sail, whistle;
+- part and whole: letter, country, body;
+- substance and object: a glass, an iron, a tin;
+- other true connections: color, family relation, force, library contents, seasons, and certain historically formed relations.
+
+Names of Qualities add a smaller but related group:
+
+- bitter taste → bitter experience;
+- cold day → cold look;
+- smooth floor → smooth words;
+- bright color → bright face;
+- cheap → a quality associated with poor taste;
+- simple → an act that requires little effort or trouble.
+
+**Project-created test prompts based on the source examples:**
+
+1. “The head of a table.” Identify the relation to the human head; do not treat it as an unrelated dictionary meaning.
+2. “A river-bed.” Identify the relation to the place where a river flows, rather than relying only on shape.
+3. “A building.” Distinguish the process of producing the structure from the completed structure.
+4. “A brush.” Identify the relation between the object name and its use.
+5. “A glass of water.” Identify the substance-to-object use described on p.154.
+6. “A bitter experience.” Explain the human reaction that links it to bitter taste.
+7. “A cold look.” Explain the extension from physical temperature to a person's expression/attitude.
+8. “A simple act.” Explain the associated low-effort / low-trouble sense, not just the root meaning of simple.
+
+**Quality used as a Name of Things:** p.160 lists many Quality words that can function as Names of Things, with restrictions for some words (e.g. some occur only with “the”). This is a word-class/function boundary. It can be a short section or cross-link within this expansion lesson, but it is not Special Use / meaning narrowing and not a universal rule that every adjective can become a noun.
+
+**Test result:** Things and Qualities differ in the kinds of semantic relation, but the learner performs the same core operation: identify the root sense and explain the source-supported relation to the new use. The current Quality expansion list is small; separating it into a standalone Lesson would divide the same learning operation mainly by word class.
+
+**Decision:** test them together as one provisional **Meaning Expansion: Things & Qualities** Lesson, with separate sub-sections for Things, Qualities and Quality-as-Thing. The full source material is now much larger than the earlier four-category summary, so the lesson must be designed concisely; do not turn every relation type into its own Lesson.
+
+### Candidate B — Special Use / Meaning Narrowing
+
+The source explicitly distinguishes this from expansion: Special Use gives a word a **narrower**, not wider, sense.
+
+The source examples form three useful groups:
+
+1. A material name used for a particular piece/object formed from that material: card, chalk, cloth, paper.
+2. An important subclass with its own name: shoes/boots; watches/clocks.
+3. A contextually expected or default narrower sense: ball (sports), business man, judge, man (male), pictures (motion-pictures). The curtain example warns that a special use is not necessarily the most common use.
+
+**Project-created test prompts based on the source examples:**
+
+1. Does “a paper” mean the material in general, or a particular piece/object made from it?
+2. Does “boots” name every kind of shoe, or a particular subclass?
+3. In a sports context, what does “ball” refer to when no other detail is given?
+4. Does “man” in this special use mean all human beings or a male person?
+5. Does “pictures” in this context mean still images or motion-pictures?
+6. Is the stage curtain automatically the most common meaning of curtain in everyday life? The source says no.
+
+**Test result:** this is a different decision from expansion. The learner is not finding a relation that widens the word's meaning; the learner is using context to identify a narrower referent within a broader category.
+
+**Decision:** retain **Special Use / Meaning Narrowing** as a separate provisional Lesson from Meaning Expansion. Do not call it simply “contextual meaning”, because that would blur it with Other Suggestions' ordinary-English-to-Basic paraphrase task and with the fixed-word-group chapter's “special uses”.
+
+### Boundary decision after Teaching-size test 06
+
+- Module 2 currently has two coherent candidate Lessons:
+  1. Meaning Expansion: Names of Things & Qualities;
+  2. Special Use / Meaning Narrowing.
+- Qualities used as Names of Things belongs as a bounded subsection/cross-link to word-class teaching, not a third Lesson by itself.
+- -er / -ing / -ed remains a foundational word-form mechanism with selected semantic examples introduced where useful.
+- The 250 Fixed Word-Groups chapter's special/idiomatic uses remain separate from this chapter's Special Use / meaning narrowing.
+- The former Module 2 three-Lesson division (Things / Qualities / Special Use) is not retained.
