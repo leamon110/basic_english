@@ -2208,3 +2208,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Rechecked the latest run's single build job: all 23 steps completed successfully. APK artifact 14379604453 and coverage artifact 14380462964 remain unexpired.
 - No new Android build was triggered. The curriculum audit changed documentation only.
 - Handoff: curriculum coverage audit is recorded in BASIC_ENGLISH_CURRICULUM_COVERAGE_AUDIT.md, knowledge-map checkpoint 97 and this plan. Next work is the source-fidelity audit of the 14 locally adapted 45 Steps.
+
+### Source-fidelity audit of locally adapted 45 Steps — batch 1 (2026-11-19)
+
+- Completed the mandatory startup verification before course inspection: read all 53 lines of `AGENTS.md` and all 2,211 lines of this plan; checked live branch HEAD `16d098efa6908e7583113c454acfa95d8ad67e7b`; queried all 48 Actions runs on `basic-english-learning-upgrade`.
+- Live Actions state: latest Run 48 / 44197915524 is `completed / success` on build SHA `9a1793905b4abc7d24bd1c598a5a3004450f6748`; 0 active and 0 queued. Across the 48 runs: 38 success, 8 failure, 2 cancelled.
+- Inspected latest job 134444107771: 23 steps (18 main + 5 post-job), all successful. Logs confirm 850/850 human recordings restored from cache, 0 audio downloads, 0 errors, Gradle `BUILD SUCCESSFUL`, and successful artifact uploads.
+- Latest artifacts are still unexpired: `basic-english-human-voice-apk` ID 14379604453, 9,272,570 bytes, expires 2026-12-17T23:27:26Z; `basic-english-human-audio-coverage` ID 14380462964, 21,467 bytes, expires 2026-12-17T23:27:28Z.
+- Compared live HEAD with Run 48's build SHA: 342 commits ahead / 0 behind; 33 changed files, all root-level Markdown. The prior handoff snapshot was 8365c368 / 341 commits ahead, so the only live-state delta is one additional documentation commit. No `docs/**`, `android-offline/**`, `scripts/**` or workflow file changed. The workflow has `cancel-in-progress: true`; no watched path was modified and no build was triggered.
+- Began the agreed source-fidelity audit of the 14 locally adapted 45 Steps, comparing the original BasicEnglish.org pages with `docs/js/course.js`.
+- Detailed audit completed for 4/14 adapted Steps: 1, 2, 3 and 5. Step 2 is substantially aligned. Steps 1, 3 and 5 have documented omissions/sequence or exercise-fidelity gaps in `BASIC_ENGLISH_45_STEP_ADAPTATION_AUDIT.md`. Confirmed examples include premature Step 1 teaching of `am` and `puts/takes`, omitted Step 3 uses of `take` and details for `of/at/here/there`, and a Step 5 future-tense exercise that changes the source negative sentence about the porter into a positive sentence.
+- No App source, CSS, HTML, tests, Android workflow inputs, audio assets or learner progress were changed. No Android build was triggered.
+- Current audit progress: 4/14 adapted Steps checked; 10 remain (6, 9, 10, 12, 13, 15, 17, 18, 20, 25). Next: continue the same source-to-App comparison for Steps 6, 9 and 10, recording teaching, reading and exercise gaps before proceeding through the remaining adapted Steps. App migration remains behind the existing approval gate.
