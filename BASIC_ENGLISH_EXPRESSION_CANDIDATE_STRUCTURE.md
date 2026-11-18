@@ -1,10 +1,12 @@
 # Basic English Expression System — Candidate Module / Lesson Structure v0.3
 
-> **Status: v0.3 is the current working candidate after source-coverage, dependency and teaching-size audits. It is not the final syllabus. v0.1 and v0.2 are retained below as historical drafts and are explicitly withdrawn.**
+> **Status: historical research/candidate document.** The accepted curriculum authority is now `BASIC_ENGLISH_EXPRESSION_CURRICULUM.md`: **2 Modules / 15 Lessons** (Module 1 = 3; Module 2 = 12). C01–C12 map to Module 2 Lessons 1–12; C13–C15 map to Module 1 Lessons 1–3. The v0.3 work below records how the structure was developed; its old “provisional” and “not final” status statements are historical and must not override the accepted curriculum.
 >
-> This structure is the first result after auditing the major source groups by learner decision problem. It deliberately does not inherit the source's Simple Acts / Complex Acts / Other Suggestions headings as Lesson boundaries.
+> First teaching-flow drafts and first complete teaching-content drafts now exist for all 15 Lessons. The whole-course boundary audit was completed on 2026-11-19. Current project progress is recorded in `AUDIO_BUILD_PLAN.md`; the consolidated handoff is `BASIC_ENGLISH_EXPRESSION_15_LESSON_REVIEW.md`.
+>
+> This document deliberately does not inherit the source's Simple Acts / Complex Acts / Other Suggestions headings as Lesson boundaries.
 
-## Current revised candidate v0.3 — 2 Modules / 15 provisional Lessons
+## Accepted structure reference — 2 Modules / 15 Lessons (developed through v0.3)
 
 **The count is an outcome of the source and teaching-size tests, not a target.** The additional Lesson in Module 1 is based on the complete p.154/p.160 source review: Names of Things has a broad set of expansion relations, while Names of Qualities includes both quality extensions and a substantial Quality-as-Thing group. These are now treated as separate teaching tasks, not split merely to match word classes.
 
@@ -57,13 +59,14 @@ Core operation: identify the actual ordinary-English meaning in context → choo
 - The current candidate has been compared with the 13 Structured Teaching units, the 45-Step source map, and the two existing Expression prototypes.
 - Module order recommendation: Module 1 (C13–C15) before Module 2 (C01–C12), aligned with the 1932 source sequence and the dependency of some mental/feeling expressions on expanded meanings.
 
-Still required before final acceptance:
+Remaining before final teaching and App acceptance:
 
-1. draft teaching flows for all 15 candidate Lessons and test actual lesson size;
-2. run a final cross-lesson duplication/workload audit after the flows exist;
-3. reconcile current App prototype labels with final display numbering in a separate migration plan.
+1. test actual lesson size and learner comprehension using real study sessions;
+2. revise examples, practice volume and answer wording from learner results;
+3. prepare the separate App prototype migration and final display-numbering plan;
+4. implement, validate, build and complete device acceptance.
 
-**No final syllabus or App Lesson IDs are assigned yet.** The 15 is a provisional candidate count, not a project commitment.
+**The 2-Module / 15-Lesson curriculum architecture is accepted.** App Lesson IDs and final display numbering are not assigned; they must be handled by a separate migration plan.
 
 
 ## Whole-sequence progression test 01 — order, boundaries and prerequisites (2026-11-18)
@@ -1419,7 +1422,7 @@ The earlier v0.2 decision to merge Things and Qualities is superseded. The overa
 
 ## Current-state clarification after all audits
 
-The authoritative working structure is **v0.3 at the beginning of this file: 2 Modules / 15 provisional Lessons**.
+The accepted structure is **2 Modules / 15 Lessons**, as recorded in `BASIC_ENGLISH_EXPRESSION_CURRICULUM.md`. The v0.3 sections in this file are retained as research history.
 
 Earlier audit sections are retained to show how the decisions changed. In particular:
 
@@ -1428,7 +1431,7 @@ Earlier audit sections are retained to show how the decisions changed. In partic
 - Teaching-size test 07 therefore supersedes that earlier merge and restores separate Things and Qualities Lessons, with Special Use as the third Lesson in Module 1;
 - the source-aligned order remains recommended: the three meaning-interpretation Lessons first, followed by the 12 Common Needs application Lessons.
 
-Do not use the historical v0.1 or v0.2 tables as the current syllabus. No final acceptance or App renumbering has occurred.
+Do not use the historical v0.1 or v0.2 tables as the current syllabus. The curriculum architecture is accepted; App renumbering and App integration have not occurred.
 
 
 ### Module 2 flow prototypes C01–C06 completed
