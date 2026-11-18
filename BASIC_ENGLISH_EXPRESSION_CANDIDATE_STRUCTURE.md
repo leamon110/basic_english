@@ -783,3 +783,137 @@ The source examples form three useful groups:
 - -er / -ing / -ed remains a foundational word-form mechanism with selected semantic examples introduced where useful.
 - The 250 Fixed Word-Groups chapter's special/idiomatic uses remain separate from this chapter's Special Use / meaning narrowing.
 - The former Module 2 three-Lesson division (Things / Qualities / Special Use) is not retained.
+
+
+## Whole-sequence audit 01 — Source coverage and all 50 priority Fixed Word-Groups
+
+### 1. Some Common Needs source-example coverage
+
+The current project index contains 91 Simple Acts / Complex Acts example rows after removing the duplicated plate-break row. They are now assigned as follows:
+
+| Source group | Indexed rows | Current home |
+|---|---:|---|
+| Simple Acts — communication/information | 13 | L01 |
+| Simple Acts — eating/biting/expulsion | 5 | L02 |
+| Simple Acts — contact/impact/rubbing | 6 | L02 |
+| Simple Acts — cutting/breaking/smashing | 5 | L03 |
+| Simple Acts — movement/position/posture | 14 | L04 |
+| Complex Acts — thinking/knowledge/memory | 11 | L05 |
+| Complex Acts — feeling/liking/wanting/need | 11 | L06 |
+| Complex Acts — learning/being taught/teaching | 3 | L05 |
+| Complex Acts — show/try | 5 | L01 |
+| Complex Acts — buying/selling/keeping goods for sale/promise | 5 | L07 |
+| Complex Acts — finding/losing/discovering | 5 | L01 / L04 / L05 according to meaning |
+| Complex Acts — destroy/hurt | 2 | L03 |
+| Complex Acts — grow/be growing/sleep/die/begin/finish | 6 | L08 |
+| **Total** | **91** | All currently indexed rows assigned |
+
+The five find/lose/discover rows are not one lesson merely because the source index places them together:
+
+- find money in the street → come across money: L04 (encounter/location);
+- find free meals being given → see that they are being given: L01 (perception/information);
+- discover new land → make a discovery: L05 (knowledge);
+- lose something because it cannot be located → be unable to put one's hands on it / have no idea where it is: L04 and L05, according to whether the sentence focuses on location or knowledge;
+- lose something because it was taken → it has gone for ever: L04 (movement/result).
+
+Other cross-links already recorded:
+
+- “speak a language” → L05 knowledge, with an ability link to L09;
+- “feel a wall” → L02 physical contact, while the feeling/attitude examples remain in L06;
+- all “show” senses stay together in L01; “show interest” links to L06;
+- “try to show an interest” remains a supporting attempt pattern in the same contrast set;
+- “finish” remains in L08 as a contrast where the source itself uses the word directly.
+
+The Other Suggestions index lists 24 target words/categories across modality, quantity, time, condition, qualities and common names. All have a current destination:
+
+- can / ought / shall → L09;
+- each / altogether / whole / few / many / too / once → L10, with the past-time sense of once cross-linked to L11;
+- ago / already / yet / since / next / always → L11;
+- unless → conditional sentence-structure foundation;
+- busy / deaf / world / life / hill / home / address → L12.
+
+These are source-index counts, not a claim that every source sentence has been transcribed verbatim.
+
+### 2. All 50 Most Necessary Fixed Word-Groups — placement audit
+
+Every one of the 50 entries in the priority list has been reviewed. The placement below is a teaching/reinforcement decision, not a claim that the phrase is limited to that one context.
+
+| # | Fixed word-group | Natural home / treatment |
+|---:|---|---|
+| 1 | at war (work, play, rest) | L08 — states and activities |
+| 2 | bad (good, quick, working) at | L09 — ability/skill |
+| 3 | by force | L03 — force and physical effect |
+| 4 | by himself | Cross-topic manner/independence phrase; introduce where a concrete context requires it, not a separate Lesson |
+| 5 | respect (love, feeling) for | L06 — attitude and relationship |
+| 6 | but for | Conditional/contrast sentence foundation |
+| 7 | different from | Comparison foundation |
+| 8 | in motion | L04 — movement and position |
+| 9 | in use (operation) | L08 — state/operation |
+| 10 | out of the room | L04 — movement/path |
+| 11 | control, grip of | L05 for understanding/control; L04 when it means physical grip |
+| 12 | full of | L10 — amount/extent |
+| 13 | off his head | L05 — mental state |
+| 14 | farther on (go, keep, get on) | L04 for spatial/progress use; L08 for continuation |
+| 15 | worked out | L05 — reasoning/solving |
+| 16 | go (turned) over | L04 for physical turning; L05 for reviewing/thinking over |
+| 17 | be able to | L09 — ability |
+| 18 | put up with | L06 — tolerance/attitude |
+| 19 | angry (pleased) with | L06 — feeling/attitude |
+| 20 | come to a stop | L08 — process boundary |
+| 21 | get (a book) out | L04 — movement/location |
+| 22 | get out of doing | L09 — avoiding an action/obligation |
+| 23 | give up | L08 — ending/abandoning an activity |
+| 24 | go to sleep | L08 — entering a state |
+| 25 | (guns) go off | L03 — physical event/effect |
+| 26 | (lights) go out | L08 — state change |
+| 27 | have an effect on | L03 — effect/result |
+| 28 | let a house | L07 — rental/transaction |
+| 29 | make up a story | L01 — communication/content creation |
+| 30 | put off (meeting) | L11 — time/postponement |
+| 31 | as if (etc.) | L13 — comparison/meaning expansion cross-link |
+| 32 | one another | L06 — interpersonal relation |
+| 33 | there is | Sentence-structure/existence foundation |
+| 34 | in addition to | L10 for addition/amount; also a sentence-connection foundation |
+| 35 | a year back | L11 — time |
+| 36 | in bits | L03 — physical change/result |
+| 37 | in the end | L08 for process outcome; L11 for temporal sequence |
+| 38 | in memory of | L05 — memory |
+| 39 | take part in | Cross-topic participation phrase; introduce in a real activity/event context, not as evidence for a broad social-relations Lesson |
+| 40 | take place | L08 — event occurrence |
+| 41 | put a stop to | L08 — process ending |
+| 42 | give way to | L03 for physical yielding/effect; L08 for a process transition |
+| 43 | in (out of) the way | L04 — position/location |
+| 44 | at right angles | Spatial/Directive foundation; cross-link to L04 |
+| 45 | dependent on | L06 — need/relationship |
+| 46 | good morning (day, night) | L01 — communication/greetings |
+| 47 | at present | L11 — time |
+| 48 | tired of | L06 — feeling/attitude |
+| 49 | dear Mr. A | L01 — written communication/letter |
+| 50 | 10 years old | L10 — age/amount |
+
+**Count check: 50 numbered entries reviewed, 50 placements recorded.** Several phrases are deliberately marked cross-topic or foundation-level rather than forced into an unrelated Lesson.
+
+### 3. What this audit establishes — and what it does not
+
+Established for the currently indexed source material:
+
+- All 91 indexed Simple Acts / Complex Acts example rows have a primary Lesson or an explicit cross-link.
+- All 24 Other Suggestions target words/categories have a current destination.
+- All 50 Most Necessary Fixed Word-Groups have been reviewed and assigned to a natural Lesson, a foundation topic or cross-topic reference.
+- The former broad “social relations and participation” grouping is not needed as a separate Lesson; fixed phrases are distributed according to their actual meanings.
+
+Not yet established:
+
+- The 200 other entries within the 250 Fixed Word-Groups have not all been transcribed and mapped individually.
+- The 91 rows are the current project index coverage, not a verified word-for-word transcription of every sentence on original pp.242–262.
+- A placement table does not prove that the whole course sequence is concise or that the exercises are sufficient. Full sequence and prerequisite checks remain.
+
+### 4. Next audit
+
+Now check the candidate sequence as a whole:
+
+1. confirm each Lesson uses only foundation tools that have been introduced or are explicitly taught in Teaching / 45 Steps;
+2. check for repeated teaching of the same structure and for missing prerequisite links;
+3. compare adjacent Lesson boundaries for overlap;
+4. verify that the proposed order moves from concrete, familiar decisions toward more abstract ones without unnecessary backtracking;
+5. only then decide whether v0.2 should be retained, merged or split and assign the final count.
