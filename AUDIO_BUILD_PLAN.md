@@ -1822,3 +1822,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated the C04 flow and knowledge map. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author C04 with the source distinctions above and practice that makes viewpoint, path/destination and position/state explicit.
 
+### Module 2 Lesson 4 — Movement & Position first complete draft (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L4_DRAFT.md from the source audit of p.248 and p.250 and the corrected C04 teaching flow.
+- The draft keeps two core parts: object movement/transfer/viewpoint; body position/posture. It uses send with receiver/path (to/over/across), catch → get it in the hand, hold → get a grip/keep/have it in the hand, take / come with for delicate objects, be/rest on, get up/stand, and take a seat/be seated.
+- It includes run's three source uses (go quickly / take a run / go off at a run) and slip's two source uses (have a slip/fall; quick simple actions such as taking an arm out of a coat or putting money into a pocket).
+- It includes short supporting examples for throw/put off balance and send someone against a table, keeping the physical blow cross-linked to C02.
+- Directives remain foundation tools; C04 applies path/destination and position without reteaching the foundation. Added recognition, position-vs-change, run/slip contrast, balance/movement, reverse-understanding and independent-construction practice.
+- Updated BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md with checkpoint 65.
+- This is a first complete draft, not final acceptance. Clarity, answer coverage, duplication with other lessons and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: review C04 against the original source and accepted flow, then author Module 2 Lesson 5 — Thinking, Knowledge, Memory & Learning.
+
