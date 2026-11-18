@@ -1913,3 +1913,50 @@ Current prototype mapping:
 
 The original App Lesson labels remain prototypes, not final display IDs. No App changes have been made.
 
+
+
+## 40. Whole-sequence progression test 01 — order, boundaries and prerequisites
+
+The current v0.3 candidate has now been tested as a complete learner progression, not only as isolated source groups.
+
+### Current result
+
+- Module 1 sequence C13 → C14 → C15 is coherent: Names of Things expansion; Names of Qualities expansion/Quality-as-Thing; then Special Use / meaning narrowing.
+- Module 2 sequence C01 → C12 progresses from communication and concrete physical expression, through cognitive/affective and social/process meanings, then modality, quantity, time and contextual paraphrase.
+- No adjacent pair currently shows the same dominant learner decision. Shared Operators/Directives are foundation reuse, not a reason to merge lessons.
+- C12 and C15 remain distinct: C12 starts with a non-Basic ordinary-English word and constructs a Basic paraphrase; C15 starts with a Basic word and interprets a contextually narrowed use.
+
+### C03 prerequisite corrected
+
+The current App's adapted Step 17 already teaches:
+
+- past-participle forms;
+- be + past participle passive/result;
+- get + past participle;
+- passive examples and transformation practice.
+
+This is confirmed in docs/js/course.js under lessonHTML[17] and in BASIC_ENGLISH_45_STEP_ADAPTATION_AUDIT.md.
+
+C03 should therefore link to Step 17 sections 4–6 and give only a short reminder using its own cut/break/smash examples. It must not reteach the complete passive/get-passive rule. The previous concern that Step 17 was not locally adapted was incorrect; Step 22 is not adapted, but Step 17 already provides the relevant foundation.
+
+### C09 prerequisite clarified
+
+C09 relies on the existing basic sentence/Operator/infinitive foundation, but teaches its own source-specific meanings:
+
+- can: ability / possibility;
+- ought: right/wise, duty/business, and probability from facts;
+- shall in statements: will;
+- “Shall I ...?”: intention / whether wise.
+
+unless → if ... not remains in conditional sentence structure, not C09. C09 does not assume a dedicated modal unit exists.
+
+### Remaining material scope risk
+
+C07 (Exchange, Sale & Commitment) remains the smallest candidate. Its direct Some Common Needs base is buy, sell, keep goods for sale and promise to pay later; “let a house” is one directly related priority fixed group. The other priority groups must not be forced into it.
+
+The other 200 Fixed Word-Groups are not yet individually indexed. C07 remains provisional until that indexing is complete and its naturally related transaction/commitment material can be checked. If no additional material belongs there, test whether C07 should become a subsection of a broader topic rather than a standalone Lesson.
+
+### Next action
+
+Complete an instance-level index of the remaining 200 Fixed Word-Groups, then re-evaluate C07 and the cross-topic placements. Do not accept the final 15-Lesson count before this coverage gap is resolved.
+
