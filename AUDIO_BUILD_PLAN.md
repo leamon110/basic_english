@@ -1781,3 +1781,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is a first complete draft, not final acceptance. Clarity, answer coverage, exercise volume and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: review C03 against the original pages and accepted flow, then author Module 2 Lesson 4 — Movement & Position.
 
+### C03 review — source-fidelity correction for destroy and hurt (2026-11-18)
+
+- While reviewing the first complete C03 draft against p.254, found that the initial wording generalized “put an end to it” to destroying any thing or process. The source specifically says an object that is destroyed has been burned, smashed or broken, while animals are destroyed by putting an end to them.
+- The source also says attempts at destroying animals may do no more than hurt them, giving pain and possibly wounds; those wounds may do serious damage. “Do serious damage” is therefore not a universal direct Basic replacement for hurt.
+- Corrected BASIC_ENGLISH_EXPRESSION_M2_L3_DRAFT.md and BASIC_ENGLISH_NAMES_OF_ACTS.md. The exercise now specifies an animal for “put an end to it”; the reverse check now says wounds may do serious damage.
+- Rechecked p.246–247 action/result examples and the Step 17 sections 4–6 prerequisite. The action/result/state/self-occurring distinctions remain intact.
+- This is a source-fidelity correction, not final acceptance. Answer coverage, teaching volume and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: finish C03 review, then author Module 2 Lesson 4 — Movement & Position.
+
