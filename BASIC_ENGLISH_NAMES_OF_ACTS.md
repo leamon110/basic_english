@@ -196,7 +196,7 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 |---|---|---|
 | can do something | be able to do it；it is possible for me to do it | 能力与可能性 |
 | ought to do something | it is right (wise) for me to do it；it is my business to do it | 应当、明智、职责 |
-| the train ought to be here | it is probable from the facts that it will be so | 根据现有事实作出的预期 |
+| the train ought to be here | it is probable from the fact that it will be so | 根据已知事实作出的预期 |
 | shall in a statement | will | 陈述句中的将来表达 |
 | Shall I do it? | Am I going to do it or not?；Am I wise to do it? | 询问意愿或这样做是否明智 |
 
