@@ -2037,3 +2037,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no Android build was triggered.
 - Next concrete action: begin Module 2 Lesson 9 — Ability, Obligation & Intention, checking the source-specific can / ought / shall distinctions against original pp.256–258.
 
+### Module 2 Lesson 9 — Ability, Obligation & Intention source audit (2026-11-18)
+
+- Reopened the original *The ABC of Basic English*, printed p.256, and compared the exact can / ought / shall paragraph with the accepted C09 flow, source index and curriculum.
+- Verified source mappings: can → be able to do it (ability) / it is possible for me to do it (possibility); ought → it is right (wise) for me to do it / it is my business to do it (duty/responsibility); train ought to be here in half an hour → probable from the fact that it will be so (probability from evidence); shall in non-question statements → will; “Shall I do it?” → “Am I going to do it or not?” or “Am I wise to do it?” according to context.
+- Verified current 850-word arrays: can, ought and shall are not 850 entries; able, possible, right, wise, business, probable, fact and will are present. The priority fixed group “be able to” reinforces only the ability reading, not all meanings of can.
+- Corrected the source-index wording from “the facts” to the exact singular “the fact”; removed the unnecessary have-to contrast from the C09 flow so it stays centered on the source's own expressions.
+- unless → if ... not remains in conditional sentence structure, not C09.
+- Updated BASIC_ENGLISH_NAMES_OF_ACTS.md, BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md, BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md and BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md (checkpoint 85).
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author Module 2 Lesson 9 — Ability, Obligation & Intention from the verified source distinctions.
+
