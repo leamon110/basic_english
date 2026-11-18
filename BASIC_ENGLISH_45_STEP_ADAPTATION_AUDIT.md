@@ -66,3 +66,55 @@ These should be corrected in the next integrated App update:
 - [Step 18](https://basicenglish.org/step-18/index.html)
 - [Step 20](https://basicenglish.org/step-20/index.html)
 - [Step 25](https://basicenglish.org/step-25/index.html)
+
+## Detailed source-fidelity audit — first batch (Steps 1, 2, 3 and 5)
+
+Audit basis: the original Step pages linked below were compared with the current local adaptations in `docs/js/course.js`. This pass checks taught rules, source examples, reading material and exercise coverage. "Partial" means the App preserves the main topic but omits or changes identifiable source content; it does not mean the App is unusable.
+
+### Step 1 — Partial
+
+Source: https://basicenglish.org/step-1/index.html
+
+- The App covers the main beginner topics: singular/plural, adjective position, a/an/the, this/that, basic spatial prepositions, and/or, and the simple sentence pattern.
+- **Confirmed sequence error:** the original says only present forms are used in Steps 1–2; learners meet no third-person singular form of put/take in these two Steps; and only the third-person singular and plural forms of be are to be learned in Step 1. The original introduces first-person singular `am` in Step 3 and the third-person singular forms of put/take in Step 3. The App currently tells learners to master `am/is/are` and `he/she/it puts/takes` in Step 1. These forms are displayed in the source reference table, but the source explicitly defers learning/usage; the App's instruction incorrectly promotes them to Step 1 targets.
+- **Missing explicit teaching:** `my` appears in App examples but is not explained as the possessive adjective that the source introduces alongside `I` and `it`; the source also says the pointing use of this/that need not be a physical pointing act, and that `my`, `this`, and `that` precede descriptive adjectives. The App does not state these points.
+- The App does not explain the source's distinction that `is/are` link the subject to a description rather than naming an operation, or the source use of a prepositional phrase after a noun to identify it more exactly.
+- Exercise coverage: the six opposites, article/operator blanks and plural transformation are represented. The first source task asks the learner to describe a supplied picture with four specified prepositions; the App keeps the prompt but does not provide that source picture. Mark this task as only partially reproduced.
+
+### Step 2 — Substantially aligned
+
+Source: https://basicenglish.org/step-2/index.html
+
+- The English reading is reproduced in full and in the original order; the App adds Chinese translations and a sentence-structure explanation.
+- The vocabulary and the source's main sentence patterns are represented.
+- The five source exercise intentions are retained: identify numbered objects, describe the room in five sentences, name house parts, practise put/take with the specified position words, and answer reading questions. The two source subparts for the put/take and is/are patterns are combined into one App exercise.
+- The original illustration is not reproduced: the App explicitly uses a newly drawn room diagram. This is a replacement illustration, not the source image. The change is identified to the learner in the App.
+- No material teaching-rule or reading-content contradiction was found in this pass.
+
+### Step 3 — Partial
+
+Source: https://basicenglish.org/step-3/index.html
+
+- The App includes the major topic groups: plural spelling, nouns qualifying nouns, other, object pronouns, give/get/come/go, of/to/from/with/across/at, be-negation, compounds, another/into and some word-order variation.
+- **Missing operator uses:** the source explicitly teaches `take + to/destination` for transport/conveying, and `take` without a preposition for taking hold of / taking possession of something. The App only explains `take from` and `take off`.
+- **Missing preposition/adverb detail:** the source links the ownership sense of `of` to its historical relation with `off`; gives restrictions and spatial distinctions for `at` (including when it cannot replace `in`, and the purposeful relation in `at the table`); and teaches the normal placement of here/there after the operator as well as their possible placement after a noun. The App gives simplified meanings/examples but omits these distinctions.
+- **Other rule detail:** the source gives ordering and determiner restrictions for `other`; the App only gives a short summary and examples.
+- **Cross-Step sequencing:** the source introduces `am` and third-person singular `puts/takes` here. The App has already told learners to master them in Step 1 and does not clearly reintroduce their Step 3 role.
+- Exercise coverage is incomplete. The source has picture description from two speaker viewpoints, negative transformations, definitions plus sentence use for three noun pairs, and four preposition blanks. The App instead has a plural drill, one four-item preposition task and open sentence writing; it omits the picture, negative-transformation and definition tasks.
+
+### Step 5 — Partial
+
+Source: https://basicenglish.org/step-5/index.html
+
+- The App represents the main teaching groups: substance nouns, family plural, country, some, do/have/make, will/may, negatives, before/after/for/out, conjunctions and where/when/while.
+- **Missing restrictions and distinctions:** the source says `some` is never preceded by `the`, a pointing adjective or a possessive adjective; its `some of` construction requires a specific referent/group. The App gives examples but does not state these restrictions. The source warns that the objects used with `do` are largely fixed by usage and cannot be freely inferred from any activity noun; this warning is absent. The source explains `have` across parts of the body, ownership, looser possession, accompaniment, wearing/carrying and attached objects; the App only gives a small subset.
+- The App says before/after can refer to space and time, but omits the source's qualification that spatial `after` requires an idea of succession. It also omits the source's same-subject ellipsis rule for `and/or`, and the note that where/when may function as relative adverbs.
+- The operator table displays Past forms but the App explicitly says they are not a mastery target in this Step. This matches the source's instruction to learn all table forms except the Past; do not treat the table display alone as a discrepancy.
+- **Exercise coverage is materially incomplete:** the source has six groups: picture sentences using do/make/have; five future transformations; conjunction blanks; sentence-making with for/may/when/where; seven negative transformations; and four operator-form blanks in dependent clauses. The App has a family-plural drill, only three future transformations, only three negative transformations, and a general writing prompt. It omits the picture task, conjunction blanks, the specific for/may/when/where task and the operator-form blanks.
+- **Confirmed meaning change in an exercise:** the source future-tense exercise includes `The porter has not a flag in his hand`; the App changes this to the positive `The porter has a flag in his hand`. This removes the original negative meaning being practised. The source's sentence about the train and the other train is also omitted from the future exercise.
+
+### Batch 1 result
+
+- Detailed source audit completed: 4 of the 14 locally adapted Steps (1, 2, 3 and 5).
+- Step 2 is substantially aligned; Steps 1, 3 and 5 need source-fidelity corrections or explicit coverage notes before they can be called fully aligned.
+- This is an audit/documentation pass only. No App source was changed. The remaining locally adapted Steps are 6, 9, 10, 12, 13, 15, 17, 18, 20 and 25.
