@@ -2173,3 +2173,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Progress safety: the old body-part and e3/e4/e5 progress keys store aggregate scores that cannot be accurately split across new Lessons. The draft recommends preserving old keys unchanged and starting new lesson-level progress separately. No old data is deleted or rewritten.
 - No App source, test, CSS, HTML, Android workflow or user progress was modified; no Android build was triggered.
 - Next: review and approve the migration plan and progress-preservation policy before any App implementation or screen renumbering.
+
+### Final verification of the App migration plan draft (2026-11-19)
+
+- Verified `BASIC_ENGLISH_EXPRESSION_APP_MIGRATION_PLAN.md` exists (182 lines), contains the five prototype mapping, all 27 MB destinations, current test baselines, progress-key preservation policy, proposed navigation, implementation phases and acceptance checklist. It is explicitly marked draft / not approved.
+- Verified `BASIC_ENGLISH_250_FIXED_WORD_GROUPS_INSTANCE_INDEX.md` now uses accepted C01–C15 mappings rather than provisional v0.3 labels. Verified the old body-part prototype document now maps to Module 1 · Lesson 1 (C13) and flags its C14/C15 question split.
+- Verified the 15-Lesson review sheet includes the current App baseline and distinguishes the C01-specific speak checker from the separate 27-prompt finite Meaning→Basic checker.
+- Final Actions state before this plan entry: branch HEAD `1bf15962d3ea2a74b7248f38810ab534297c3bf8`; Run 48 / 44197915524 completed / success; 48 runs total; 0 active and 0 queued.
+- Compared the branch with Run 48 build SHA `9a1793905b4abc7d24bd1c598a5a3004450f6748`: 334 commits ahead / 0 behind; all changed files are Markdown. No App source, test, CSS, HTML, Android workflow, Android asset or user progress was modified. No Android build was triggered.
+- Migration status: mapping and risk analysis complete as a draft only. User review/approval is required before App implementation, screen renumbering or progress-key migration.
