@@ -1430,3 +1430,8 @@ Do not use the historical v0.1 or v0.2 tables as the current syllabus. No final 
 ### Module 2 flow prototypes C01–C06 completed
 
 BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md now includes first flows for C01–C06. Each remains one candidate Lesson with explicit internal sections. The full Module 2 workload test is deferred until C07–C12 flows are also drafted.
+
+
+### All 15 first teaching-flow drafts completed
+
+BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md now contains first flows for all 15 candidate Lessons. The next gate is a whole-course overlap, prerequisite and workload audit. The 2-Module / 15-Lesson architecture remains a candidate until that audit is complete; exact duration and exercise volume will be tested during lesson authoring.
