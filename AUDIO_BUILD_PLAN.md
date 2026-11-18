@@ -2260,3 +2260,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated `BASIC_ENGLISH_CURRICULUM_COVERAGE_AUDIT.md` to mark the 14-step audit complete and record the 31-step order. Updated the draft Expression migration plan to state clearly that the 45-Step course remains separate and is not rewritten or renumbered during the 15-Lesson migration.
 - No App source, CSS, HTML, tests, Android workflow inputs, audio assets or learner progress were changed. No Android build was triggered.
 - Next phase: review the draft `BASIC_ENGLISH_EXPRESSION_APP_MIGRATION_PLAN.md` with the user and obtain explicit Phase 0 approval. The plan remains not approved for implementation. Until approval, do not modify App code, screen numbering or progress storage. The 45-Step course's 14 correction items and remaining 31 adaptations remain a separate content workstream.
+
+## 99. Post-write verification of the 45-Step audit and adaptation-order records (2026-11-19)
+
+- After the 14-Step audit and 31-Step order were documented, verified these committed records:
+  - `BASIC_ENGLISH_45_STEP_ADAPTATION_AUDIT.md`: completed 14/14 source-fidelity audit and consolidated correction queue (commit `587adeb5190718221b6c6bdee3a8058c18f460ec`).
+  - `BASIC_ENGLISH_45_STEP_COURSE_MAP.md`: remaining 31 Steps ordered in original sequence, grouped into 11 + 10 + 6 + 4 work batches (commit `f0b6f82c10df9f94683ee354b6143e8f40cec736`).
+  - `BASIC_ENGLISH_EXPRESSION_APP_MIGRATION_PLAN.md`: added explicit separation from the 45-Step course; status remains not approved (commit `44bad8a3d6c5e13b52cbb0e01a557f12aca01348`).
+  - `BASIC_ENGLISH_CURRICULUM_COVERAGE_AUDIT.md`: marked 14-Step audit complete and recorded the 31-Step order / approval gate (commit `464455bdb4363a514bd4cf6c8a702dfa33df3cb5`).
+- Immediately before this post-write verification entry, live branch HEAD was `464455bdb4363a514bd4cf6c8a702dfa33df3cb5`; it was 354 commits ahead / 0 behind Run 48's build SHA, with 33 changed files, all root-level Markdown. No build-watched path changed.
+- Actions verification: 48 runs total; latest Run 48 / 44197915524 remains completed / success on SHA `9a1793905b4abc7d24bd1c598a5a3004450f6748`; 38 success, 8 failure, 2 cancelled; 0 active and 0 queued.
+- Latest job 134444107771 remains 23/23 successful steps. Cache outcome remains 850/850 human recordings restored, 0 downloads, 0 errors; Gradle `BUILD SUCCESSFUL`; artifacts 14379604453 (9,272,570 bytes) and 14380462964 (21,467 bytes) remain unexpired.
+- The current files were read back and verified: course map 214 lines, coverage audit 278 lines, migration plan 190 lines, and this plan 2,263 lines. The migration plan remains unapproved; no App code, screen numbering, user progress, audio or Android workflow was changed; no build was triggered.
+- Next: present the 31-Step order and the draft 15-Lesson migration plan for explicit Phase 0 review/approval. Do not begin implementation until approval is received.
