@@ -1484,3 +1484,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Branch head before this plan update: `b204d728eed9f09351d2f47861756726410a5578`.
 - Latest Actions remains Run 48 / `44197915524`, completed / success, built commit `9a1793905b4abc7d24bd1c598a5a3004450f6748`; no active or queued run exists.
 - Compare against Run 48: 82 commits ahead / 0 behind; changed-file set remains ten root-level Markdown research/plan files only. No App, Android, script or workflow files changed. No new build was triggered.
+
+
+### Whole-sequence audit 05 — Full learner progression and prerequisite corrections (2026-11-18)
+
+- Re-opened the exact current candidate v0.3, the full Names of Acts / Some Common Needs index, Operators and Directives research indexes, the 45-Step course map, the 45-Step adaptation audit, and the current docs/js/course.js Step 17 implementation.
+- Tested all 15 provisional Lessons in sequence. Module 1 C13→C14→C15 moves from Things expansion to Quality expansion/Quality-as-Thing and then to Special Use/meaning narrowing. Module 2 C01→C12 progresses from communication and concrete physical expression through cognitive/affective, exchange/process, modal, quantity/time and contextual paraphrase tasks.
+- No adjacent pair currently has the same dominant learner decision. Shared Operators/Directives are prerequisite reuse, not sufficient reason to merge lessons.
+- **C03 prerequisite corrected:** Step 17 is already adapted in the current App. docs/js/course.js lessonHTML[17] sections 4–6 teach past-participle forms, be + past participle passive/result, get + past participle, examples and transformation practice. C03 should link to Step 17 sections 4–6 and provide only a short reminder with its own break/cut/smash examples. Do not create a new passive foundation lesson. The earlier claim that Step 17 was not locally adapted was incorrect; Step 22 is not adapted, but it is not the only relevant source.
+- **C09 prerequisite clarified:** basic sentence patterns, Operators and infinitive forms are assumed from the foundation; C09 teaches its own source-specific meanings of can (ability/possibility), ought (right/wise, duty/business, probability), shall in statements (will), and “Shall I ...?” (intention / whether wise). unless → if ... not remains in conditional sentence structure, not C09.
+- C07 remains the smallest candidate. Direct application examples are buy/sell/keep goods for sale/promise to pay later, plus the directly related priority fixed group “let a house”. Do not pad it with unrelated social phrases. The remaining 200 Fixed Word-Groups are not individually indexed; C07 cannot pass final size acceptance until those are indexed and checked for naturally related transaction/commitment content.
+- Updated BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md and BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md with the progression matrix, exact Step 17 prerequisite, C09 self-contained scope, C07 size warning and next action.
+- Current structure remains 2 Modules / 15 provisional Lessons. No final syllabus acceptance or App ID migration.
+- Next concrete step: complete an instance-level index of the remaining 200 Fixed Word-Groups, then re-evaluate C07 and all cross-topic placements. No App code changed and no Android build triggered.
