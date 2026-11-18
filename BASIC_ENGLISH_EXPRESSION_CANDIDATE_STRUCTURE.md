@@ -342,3 +342,69 @@ The examples are sufficient for one coherent lesson if the objective stays at **
 
 **Decision:** retain candidate 04 as one provisional Lesson, with two sections. Do not split object transfer and posture into separate Lessons at this stage. Reconsider only if the full lesson prototype becomes too long or the learner tasks cannot be taught in one progression.
 
+
+
+## Teaching-size test 03 — Thinking/knowledge vs learning/teaching; the different meanings of “show”
+
+### Candidate 05 — Thinking, Knowledge, Meaning, Memory and Learning
+
+The current thinking/knowledge/memory set has 11 indexed examples. The separate learning/teaching set contributes three more:
+
+- learn facts → get facts into one's head / get knowledge of them;
+- be taught → be taught;
+- teach a subject → give training or teaching.
+
+These three fit the same broad knowledge theme:
+
+- thinking/judging: what view or opinion a person has;
+- knowing/understanding/meaning: what knowledge or sense a person has;
+- remembering/forgetting: what is kept in or put out of the mind;
+- learning/teaching: how knowledge is acquired or given.
+
+**Project-created test prompts based on the source examples:**
+
+1. “I think this is so.” Choose a thought/opinion construction, not a knowledge construction.
+2. “I know this fact.” Choose “be certain of it” or “have knowledge of it” according to the intended sense.
+3. “I understand the argument.” Use “see the point of the argument”.
+4. “I remember the fact.” Compare “have a memory of it” and “keep it in mind”.
+5. “I learned the facts.” Express the acquisition of knowledge: “get the facts into one's head”.
+6. “He taught the subject.” Express the giving of teaching/training.
+7. “He was taught.” Preserve the passive relation; do not invent a different Basic rendering merely to avoid repeating the ordinary word.
+
+**Test result:** the learner is still identifying a mental/knowledge relation, but the relation can be a state (know), an operation (think), retention (remember), acquisition (learn) or transfer (teach). These form a coherent knowledge theme with enough indexed material (14 examples) for one lesson with short subsections.
+
+**Decision:** merge learn/teach into candidate 05. Retitle the candidate **Thought, Knowledge & Learning** or **Thinking, Knowledge, Memory & Learning**. Do not keep candidate 07 as a separate learning/teaching Lesson.
+
+### The different meanings of “show” should remain together
+
+The source gives four distinct meanings:
+
+- show the effect of the past on the present → make it clear;
+- show pictures → let someone see them / put them on view;
+- show old buildings → take someone round;
+- show interest → give signs of it.
+
+And one related attempt:
+
+- try to show an interest → make an attempt to give signs of interest.
+
+The important point is that these are **different meanings of the same ordinary English word**. The project rule says to compare those meanings together, not scatter isolated “show = ...” answers into separate lessons.
+
+**Project-created test prompts based on the source examples:**
+
+1. A speaker wants to show how the past affects the present. The intended action is making the relation clear.
+2. A person shows pictures. The intended action is making the pictures visible to someone.
+3. A guide shows visitors old buildings. The intended action is taking the visitors round.
+4. A person shows interest. The intended action is giving signs of an attitude.
+5. A person tries to show interest. The expression must retain both the attempt and the signs of interest.
+
+These five prompts expose why “show” has no single Basic replacement. They form a compact contrast set, but not yet a full independent Lesson.
+
+**Decision:** keep all show senses together as a multi-meaning subsection in the Communication & Information theme, with a cross-link from “show interest” to the Feeling/Attitude theme. Keep “try” as part of the final example / the supporting “make an attempt” pattern, not as a standalone Lesson.
+
+### Boundary decision after Teaching-size test 03
+
+- Candidate 05 absorbs learn/teach and remains one provisional Lesson.
+- Candidate 07 is removed as an independent Lesson.
+- All show meanings stay together in one comparison set under Communication & Information; “show interest” links to Feeling/Attitude but is not duplicated as a separate show lesson.
+- “Make an attempt” remains a supporting expression pattern, not a separate course unit.
