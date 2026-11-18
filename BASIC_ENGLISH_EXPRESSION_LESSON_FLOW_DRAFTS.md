@@ -630,10 +630,10 @@ Compare:
 - being pleased with something;
 - having or giving approval, or being in agreement with something;
 - giving disapproval, or being in disagreement with something;
-- being friends with a person / getting on well;
+- getting on well with a person / being friends with them;
 - having a taste for food or pictures.
 
-The learner must identify whether like means approval, friendship or taste.
+The learner must identify whether the sentence is about being pleased with a thing, being friends with a person, approval or taste.
 
 #### 3. Desire and need
 
