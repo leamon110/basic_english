@@ -1616,3 +1616,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Verification boundary: the source mismatches above are corrected in the reviewed documents. C13 is not yet fully accepted: clarity, answer explanations, exercise volume and actual learner time still require a teaching review. No App source was changed and no Android build was triggered.
 - Next concrete action: author Module 1 Lesson 2 — Names of Qualities: Meaning Expansion & Use as Things. Keep the two distinct learning tasks visible: Quality meaning extension, and source-listed Quality words functioning as Names of Things. Verify the source-listed forms and the restriction that dark, first, last, quiet and same occur only with “the”; do not merge this with Special Use / meaning narrowing.
 
+### C13 internal teaching-content review (2026-11-18)
+
+- Checked the revised Module 1 Lesson 1 draft against the accepted C13 teaching flow: body-part anchors; sensory comparisons; purpose/behavior comparisons; “as if” examples; other source-recognized relations; guided recognition/explanation/transfer; and reverse understanding.
+- Added two missing practice checks: a cause-relation question using amusement, and an explanation task for library → the books that go in a library. This ensures that the cause relation and one of the less obvious “other true connections” are practised, not merely listed.
+- Verified the answer explanations against the original source examples. The draft now includes recognition questions, learner explanation, transfer to a further source example, a project-created unsupported-association contrast, and reverse interpretation.
+- Internal editorial review is complete for this pass. Actual learner time and learner feedback remain unmeasured; do not describe the draft as user-tested or device-accepted.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete step: author Module 1 Lesson 2 — Names of Qualities: Meaning Expansion & Use as Things. Keep Quality meaning extensions distinct from Quality words functioning as Names of Things, and preserve the source restriction that dark, first, last, quiet and same occur only with “the”.
+
