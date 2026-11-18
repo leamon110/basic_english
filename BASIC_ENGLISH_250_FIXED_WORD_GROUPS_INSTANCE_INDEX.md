@@ -1,6 +1,6 @@
 # The 250 Fixed Word-Groups — Instance-Level Teaching Index
 
-> Status: complete source-based instance index. All 250 source items in the 250 Fixed Word-Groups are indexed. The separate A Basic Selection list of 50 Most Necessary groups is a priority subset of those 250 and is cross-mapped separately in the project research index. The summaries below paraphrase the original examples; they are not presented as verbatim quotations. Candidate IDs refer to Expression System v0.3 and are provisional.
+> Status: complete source-based instance index. All 250 source items in the 250 Fixed Word-Groups are indexed. The separate A Basic Selection list of 50 Most Necessary groups is a priority subset of those 250 and is cross-mapped separately in the project research index. The summaries below paraphrase the original examples; they are not presented as verbatim quotations. C01–C15 are internal Candidate IDs mapped to the accepted curriculum: C01–C12 = Module 2 Lessons 1–12; C13–C15 = Module 1 Lessons 1–3. Use official Module/Lesson labels in learner-facing content.
 >
 > Source: C. K. Ogden, *The ABC of Basic English* (1932), Part III, “The 250 Fixed Word-Groups”, printed pp.212–242. The original English scan pages were visually checked in the linked 162-page PDF. The printed-page sequence was verified from the page headers.
 
@@ -15,7 +15,7 @@ Each numbered source example receives:
 A fixed phrase is not forced into a Lesson simply because one of its words appears in that Lesson. The primary destination follows the meaning of the complete fixed use.
 
 Destination labels:
-- C01–C15: current provisional Expression candidate IDs;
+- C01–C15: accepted internal Candidate IDs; see `BASIC_ENGLISH_EXPRESSION_CURRICULUM.md` for official Module/Lesson numbering;
 - Foundation: basic sentence structure, word forms, Operators/Directives or discourse tools already taught elsewhere;
 - Reference: retain for phrase lookup/reinforcement, with no dedicated Lesson destination yet.
 
@@ -427,4 +427,4 @@ Original section: “100 More Uses”, printed pp.232–242. The source numbers 
 
 The separate A Basic Selection list of 50 Most Necessary groups is selected from the 250 Fixed Word-Groups; it is a priority subset, not 50 additional groups. It is cross-mapped in the project research document.
 
-**Instance-index status: 250 / 250 source items are now individually summarized and provisionally mapped.** The summaries are not verbatim transcriptions. Every numbered source item has an entry; grouped original examples retain their original number references.
+**Instance-index status: 250 / 250 source items are individually summarized and mapped to accepted Lesson/foundation/reference destinations.** The summaries are not verbatim transcriptions. Every numbered source item has an entry; grouped original examples retain their original number references.
