@@ -2088,3 +2088,14 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - This is a first complete content draft, not final acceptance. Clarity, answer quality, exercise volume and actual learner time still require review. It must remain separate from C13 expansion, C14 Quality-as-Thing, and the 250 Fixed Word-Groups.
 - Next: review the C15 draft against the source and flow, then begin Module 2 Lesson 1 — Communication & Information.
 
+## 53. Module 1 Lesson 3 — source and teaching-flow review (2026-11-18)
+
+- Compared BASIC_ENGLISH_EXPRESSION_M1_L3_DRAFT.md with the original English pages pp.156–157, the p.160 questions, the C15 flow and the accepted curriculum.
+- Confirmed the three source patterns: material Name → particular piece (card, chalk, cloth, paper); important subclass → separate Name (shoes/boots, watches/clocks); and context-selected sense (ball, business man, judge, man, pictures).
+- Confirmed the warning example: curtain has a stage-specific use, but the source explicitly says this is not necessarily the most common or most important use.
+- Added the p.160 pairs current/electric current, engine/railway engine, rail/engine rail and ring/finger ring to the source index and draft. Kept the same page's army/reaction/society/worm/wing examples classified as expansion exercises, not Special Use.
+- Reviewed the C15 draft's exercises and answer explanations. It includes pattern recognition, context interpretation, the curtain warning, a case where context does not justify narrowing, and reverse checks.
+- Clarified that C15 does not cover C14 Quality-as-Thing, word-form endings or the 250 Fixed Word-Groups.
+- Internal source/flow review is complete. Actual learner time and learner feedback remain unmeasured; this is a reviewed draft, not user-tested or App-accepted content.
+- Next: begin Module 2 Lesson 1 — Communication & Information, reusing the existing communication prototype rather than duplicating it.
+
