@@ -1026,3 +1026,18 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App code, Android workflow input, or audio assets changed. This is a root-level Markdown-only update; no Android build was triggered.
 - Next action: when the project needs these sources as local research inputs, capture the 1930 book through a permitted full-view/Google Play route or use a user-provided copy; for the 45-step course, extract the 45 page contents and associated images with a completeness manifest before calling it a complete local archive.
 
+
+### 1930 book download troubleshooting — Google Books CAPTCHA / HTTP 403 (2026-11-18)
+
+- Reopened the exact Google Books 1930 Full View edition linked from the 1932 catalogue record. The edition page exposes EPUB, PDF and plain-text download entries.
+- Tested the three links using the current web retrieval channel:
+  - EPUB redirects to a Google Books page that explicitly asks the visitor to type the characters shown in a CAPTCHA before continuing.
+  - PDF endpoint returns HTTP 403 Forbidden to this retrieval channel.
+  - Plain-text endpoint returns HTTP 403 Forbidden to this retrieval channel.
+- The separate Max Planck Institute record marks a 1930 PDF as public, but its linked pure.mpg.de file endpoint also returns HTTP 403 to this retrieval channel.
+- HTTP 403 establishes only that the server understood and refused this particular request. The exact server-side reason is not exposed. The EPUB CAPTCHA is direct evidence that at least this download route requires a human-verification step; do not state that the user's normal browser will necessarily receive the same 403.
+- Google Play Books product page currently lists the same title as a free 100-page ebook. Google's official export instructions: open play.google.com → Profile → Library & devices → Books → More beside the title → Export → Download EPUB or Download PDF. Google notes that some publishers disallow file exports; rented books and large files also cannot be exported.
+- Recommended user-side retrieval order: (1) add the free book to Google Play Books and try the official desktop EPUB/PDF export; (2) if export is unavailable, open the Google Books 1930 Full View edition in a normal browser and complete the CAPTCHA shown on the EPUB download route; (3) try the public PDF link on the Max Planck publication page in the user's browser.
+- If the user obtains EPUB/PDF, upload it to this conversation. Before using it as a source, verify the file opens, page count is consistent with the 1930 100-page edition, and all pages are present; do not assume a successful download alone proves completeness.
+- This is a source-access research note only. No App code, Android workflow input, or audio assets changed; no Android build was triggered. Latest live Android run remains Run 48 / 44197915524, completed successfully for code commit 9a1793905b4abc7d24bd1c598a5a3004450f6748; APK artifact 14379604453 and coverage artifact 14380462964 are present and not expired. Current branch head before this plan update: cc2d99a437c5acb624686ed51c2a30d021f7db12; no active or queued Actions run.
+- Next action: wait for a user-provided export or test the Google Play Books export route from the user's browser; then inspect the actual file before treating the 1930 book as locally acquired.
