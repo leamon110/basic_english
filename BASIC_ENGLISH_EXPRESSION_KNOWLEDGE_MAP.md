@@ -1678,3 +1678,51 @@ The p.154 access gap is resolved, but the 1930 *Basic English: A General Introdu
 
 No final overall Module/Lesson count is assigned. The next step is to consolidate the tested Module 1 and Module 2 candidate boundaries, then inspect all candidate Lesson scopes for overlap, prerequisite dependencies and source coverage before producing a revised numbered structure.
 
+
+
+## 34. Revised candidate structure v0.2 — consolidated after six teaching-size tests
+
+The current working candidate is now **2 Modules / 14 provisional Lessons**. This is not a target count: the number happens to remain 14 after the original mixed groups were dissolved, narrowed, merged and redistributed.
+
+### Module 1 — Ordinary meaning → Basic expression
+
+1. Communication & Information — includes the complete multi-sense “show” contrast set.
+2. Bodily Action & Contact — intake/expulsion and contact/force as two explicit sections.
+3. Physical Effects: Damage, Change & Result.
+4. Movement & Position: Transfer, Posture & Viewpoint.
+5. Thinking, Knowledge, Memory & Learning — learn/teach absorbed here.
+6. Feeling, Preference, Desire & Need.
+7. Exchange, Sale & Commitment — narrowed from the former broad social/economic grouping.
+8. State and Process: Change, Entry & Ending.
+9. Ability, Obligation & Intention.
+10. Quantity, Amount & Degree.
+11. Time & Sequence.
+12. Context-Dependent Words & Paraphrase — busy/deaf/world/life/hill/home/address.
+
+### Module 2 — Understanding Basic word meanings
+
+13. Meaning Expansion: Names of Things & Qualities — p.154 relations are now included; Quality-as-Thing is a bounded word-class subsection/cross-link.
+14. Special Use / Meaning Narrowing — material-name uses, subclasses and contextually expected narrower senses.
+
+### Cross-cutting / foundation
+
+- Operators, Directives, 850 vocabulary, sentence structure and productive word forms remain foundational resources.
+- Fixed Word-Groups remain phrase-level reinforcement, not a separate module.
+- unless → if ... not belongs with conditional sentence-structure foundations.
+- show senses remain together in Lesson 01; show-interest links to Lesson 06.
+- try remains a supporting “make an attempt” pattern.
+- find/lose/discover are cross-linked according to their actual meaning rather than left in the old source-level social/economic grouping.
+- finish remains a source contrast in the State and Process topic because the original example uses the word itself.
+
+### Whole-sequence audit still required
+
+The six teaching-size tests provide local evidence, but do not yet prove the complete sequence. The next audit must check:
+
+1. every indexed Some Common Needs example has a primary home or an explicit cross-link;
+2. the 50 priority Fixed Word-Groups are inserted naturally, without forcing unrelated groups together;
+3. prerequisites are clear and do not duplicate Teaching / 45 Steps foundations;
+4. adjacent Lessons have a meaningful boundary and a manageable scope;
+5. Module 2's expansion and narrowing distinction is taught without mixing in the ordinary-word paraphrases from Other Suggestions.
+
+The 200 other Fixed Word-Groups remain a coverage limitation because the current index does not transcribe all 250 original examples. No final Lesson count or App Lesson IDs are assigned.
+
