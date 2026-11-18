@@ -1435,3 +1435,11 @@ BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md now includes first flows for C01â
 ### All 15 first teaching-flow drafts completed
 
 BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md now contains first flows for all 15 candidate Lessons. The next gate is a whole-course overlap, prerequisite and workload audit. The 2-Module / 15-Lesson architecture remains a candidate until that audit is complete; exact duration and exercise volume will be tested during lesson authoring.
+
+
+### Architecture decision â€” accepted for the next authoring phase
+
+The complete first-flow pass now exists for all 15 candidates. The whole-course review found distinct dominant learner decisions and no adjacent merge that would improve the structure. The accepted architecture is recorded in BASIC_ENGLISH_EXPRESSION_CURRICULUM.md: **2 Modules / 15 Lessons** (Module 1 = 3; Module 2 = 12).
+
+This is acceptance of the curriculum architecture, not acceptance of completed lesson scripts, durations, App implementation or device behavior. The older candidate/audit history remains here for traceability; use BASIC_ENGLISH_EXPRESSION_CURRICULUM.md as the current structure authority.
+
