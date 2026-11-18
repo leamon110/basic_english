@@ -1996,3 +1996,14 @@ The full index reveals additional naturally related commercial/transaction mater
 
 This gives C07 enough related material to remain a coherent compact Lesson candidate without forcing unrelated social/relationship phrases into it. C07 is no longer blocked by missing source indexing. Its final duration and exercise volume still need validation during actual lesson authoring.
 
+
+
+## 43. Module 1 teaching-flow prototypes
+
+Created BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md with first teaching-flow prototypes for C13–C15.
+
+- C13: root Name → source-supported relation → related referent; teach representative relation families rather than every example as a separate rule.
+- C14: keep Quality meaning extension and Quality-as-Thing function as two clearly separated parts of one Lesson.
+- C15: teach contextual narrowing as a distinct decision from expansion and fixed-word-group idioms.
+- First flow-size result supports three Module 1 Lessons. This is not final acceptance of the complete 15-Lesson course; Module 2 flows and the whole-course workload/duplication audit remain.
+
