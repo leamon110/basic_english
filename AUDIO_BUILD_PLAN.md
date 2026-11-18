@@ -998,3 +998,19 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Recounted the priority list from the committed file: exactly 50 entries, numbered consecutively 1–50.
 - No App code or Android workflow input changed; no Android build was triggered.
 
+
+
+### Reference-book full-text availability audit (2026-11-18)
+
+- Reviewed the five titles in the user's screenshot and the separate 45-step course. This is an availability audit, not a claim that all six sources have been downloaded or read in full.
+- **Basic English: A General Introduction with Rules and Grammar (1930):** Google Books lists a 1930 full-view edition with PDF / EPUB / plain-text download controls; Google Play lists a free 100-page ebook. The current retrieval channel returned HTTP 403 when following the PDF and plain-text download links. A full public edition is listed, but no complete local text has yet been extracted or verified.
+- **The Basic Words: A Detailed Account of Their Uses (1932/1933/1936 editions):** Google Books lists 96-page and 101-page digitized editions, but the accessible listing is snippet-view and the 1936 page says no ebook is available. Open Library provides catalogue/locate information, not a verified full-text copy. Full contents are not currently confirmed accessible.
+- **Basic Step by Step:** Bibliographic records identify a 1935 edition (264 pages) and a 1950 edition (278 pages). The book is the graded 30-lesson / 850-word course. No complete online scan or text was verified in this search.
+- **The Basic Dictionary (1932, 2nd ed.):** This is the 106-page dictionary described as giving the 7,500 most useful ordinary-English words with Basic equivalents. Catalogue records were found, but no complete accessible scan or text was verified.
+- **Basic by Examples (1933):** Google Books lists a 128-page digitized edition with limited inside-book snippets; Open Library provides catalogue/locate information. No complete accessible scan or text was verified.
+- **Separate 45-step course:** BasicEnglish.org lists Steps 1–45 and provides detailed HTML lesson pages. Direct pages for Steps 1, 2, 15, 30, 42 and 45 were opened successfully; they contain vocabulary, structures/notes, reading material and exercises. The index confirms the 45-step sequence, but all 45 pages have not yet been individually audited for completeness, and image-only content may need separate inspection.
+- **Important title distinction:** The screenshot's “The Basic Dictionary” (7,500-word equivalents) is not the later *General Basic English Dictionary* (over 20,000 words / 40,000 senses). Also, the 30-lesson *Basic Step by Step* book is not the same source as the online 45-step course.
+- The screenshot's bzenqishi.net source domain could not be retrieved by the current web connector. No user-provided book PDFs were present in the repository.
+- No App code, Android workflow input, or audio assets were changed. This is a root-level documentation-only update; it does not match the workflow's watched paths and no Android build was triggered.
+- Next action if full-source curriculum work is required: obtain the missing full scans from the user or another verifiable source, then check page count, completeness and OCR against the original pages before using them as authoritative course material. Do not fill gaps from catalogue summaries or snippets.
+
