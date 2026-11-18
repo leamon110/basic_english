@@ -219,19 +219,31 @@ Operators 不是普通英语动词的一对一同义词，也不是可互换的�
 
 ### 5.2 课程主线：从具体意思到实际表达
 
-主线不按原书页码机械切课，而按学习者要解决的表达问题组织。
+Some Common Needs 是最直接的应用材料。原作者说明，这些例子来自长期使用经验，目的是解决 Basic 写作者经常遇到的表达问题。课程应当让学习者看懂这些表达为什么成立，而不是背一张普通英语词语替换表。
 
-1. **先判断语境。** 保留 speak 作为入门示范：对人说话、在会议上讲话、会说一种语言，意思不同，Basic 表达也不同。先学会判断意思，再选结构。
-2. **表达日常的具体动作。** 以 Some Common Needs 的 Simple Acts 为主要材料，覆盖沟通、听说读写、饮食、身体动作和移动等。先从能看见、能描述的动作入手。
-3. **表达想法、感受和较复杂的活动。** 使用 Complex Acts 中关于思考、知道、理解、记忆、感觉、喜欢、想要、需要、学习和教学等例子。重点是保留句子中的人物、对象、关系和结果。
-4. **表达其他常见意思。** 使用 Other Suggestions 中的 can、ought、shall、unless、busy、deaf、world、home 等例子。这里不再把所有内容称为“动作”，而是按实际意思选择表达方法。
+先用 speak 做入门示范：对人说话、在会议上讲话、会说一种语言，意思不同，Basic 表达也不同。先学会判断意思，再选结构。
 
-Simple Acts、Complex Acts、Other Suggestions 是原书的分组。项目可以在每组内部按沟通、移动、思考等自然主题安排材料，但必须保留原书来源标记；项目自己的主题分组不能冒充原作者分类。
+随后按原书的三个分组组织材料。下面的小组是项目为了教学而作的意义归类，不是原书额外设立的章节，也不预先等同于 Lesson：
+
+| 原书分组 | 项目内部的自然主题 | 原书例子范围 |
+|---|---|---|
+| **Simple Acts** | 沟通与信息 | speak、tell、sing、hear、listen、write、read |
+| | 饮食与身体动作 | eat、bite、spit、touch、hit、scratch、cut、break |
+| | 移动与身体姿势 | throw、catch、hold、bring、lie、stand、sit、run、slip |
+| **Complex Acts** | 思考、知识与记忆 | think、know、understand、mean、remember、forget |
+| | 感受、喜好、需要与学习 | feel、like、want、need、learn、teach、show、try |
+| | 社会活动与生活过程 | buy、sell、promise、find、lose、destroy、hurt、grow、sleep、die、begin、finish |
+| **Other Suggestions** | 能力、义务与意愿 | can、ought、shall |
+| | 数量与时间 | each、altogether、whole、few、many、too、once、ago、already、yet、since、next、always |
+| | 条件、性质与常见名称 | unless、busy、deaf、world、life、hill、home、address |
+
+这张表只负责把原书例子放到容易理解的意义组里。是否把某一组做成一课，要看它内部是否存在一个完整、清楚的学习目标；不能按表格行数直接生成 Lesson 数量。
 
 A Basic Selection 中另外两组材料这样处理：
 
 - **Words Formed by Endings：** 把实际常用的派生形式放到相应表达中学习；只有遇到新的词形问题时才补充解释，不另造一套重复课程。
 - **The Most Necessary Fixed Word-Groups：** 以原书列出的50项作为优先清单，放入相关主题练习和复习；不按50项逐个机械开课。
+
 
 ### 5.3 两类补充内容怎样放进主线
 

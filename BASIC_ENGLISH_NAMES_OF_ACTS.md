@@ -151,7 +151,9 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | show interest | give signs of it | give + 名称 + of |
 | try to show an interest | make an attempt to give signs of interest | make + 名称 + to-infinitive / give + 名称 |
 
-## 4. 社会与经济活动
+## 4. Complex Acts 的延续：社会与经济活动（项目归类）
+
+> 本节是项目为便于理解而从 Complex Acts 中整理出的社会、经济与生活过程例子；原书的目录分组仍是 Simple Acts、Complex Acts、Other Suggestions，并未把本节另列为一个同级小节。
 
 | 普通英语动作 | Ogden 给出的 Basic 表达 | 结构观察 |
 |---|---|---|

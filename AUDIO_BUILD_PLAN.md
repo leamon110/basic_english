@@ -910,3 +910,18 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - APK status remains unchanged: Run 48 archive verification is complete, while the user's combined device acceptance remains unconfirmed.
 - Next action: finish mapping all Some Common Needs examples and the 50 priority groups to their actual meaning/structure; only then test the lesson boundaries against a complete set of material.
 
+
+
+### Some Common Needs source-to-topic map completed (first-pass) (2026-11-18)
+
+- Re-opened the original source pages for Some Common Needs (pp.244–262), including the Simple Acts pages, Complex Acts pages, the social/economic and life-process examples, and Other Suggestions.
+- Added a source-preserving project topic map to BASIC_ENGLISH_EXPRESSION_SYSTEM.md:
+  - Simple Acts: communication/information; eating/body actions; movement/body positions.
+  - Complex Acts: thought/knowledge/memory; feelings/likes/needs/learning; social activities/life processes.
+  - Other Suggestions: ability/obligation; quantity/time; conditions/qualities/common names.
+- These are semantic groupings for the project, not additional original chapter headings and not lesson counts.
+- Clarified BASIC_ENGLISH_NAMES_OF_ACTS.md: social/economic activities are a project grouping within Complex Acts, not an original source subsection at the same level as Simple Acts / Complex Acts / Other Suggestions.
+- The source map now covers the examples in the project index; lesson boundaries remain open pending a full review of which examples share one teachable idea and which require separate treatment.
+- No App code or Android workflow input changed; no Android build was triggered.
+- Next action: test the proposed topic groupings against the actual Basic structures used by each example, identify repeated structures and important contrasts, then determine natural lesson boundaries.
+
