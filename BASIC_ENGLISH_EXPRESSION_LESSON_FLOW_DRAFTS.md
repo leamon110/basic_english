@@ -870,20 +870,22 @@ Teach the source's contrasts explicitly:
 
 - what is right or wise for someone to do;
 - what is someone's business/duty;
-- what is probable from the facts.
+- what is probable from the fact that it will be so.
 
-These are not interchangeable. The learner must identify whether the sentence is advice, obligation or an expectation based on evidence.
+For example, the source says that when the train ought to be here in half an hour, the meaning is that it is probable from the fact that it will be so. This is an expectation based on evidence, not a duty imposed on the train.
+
+These are not interchangeable. The learner must identify whether the sentence is advice, obligation or an expectation based on a fact.
 
 #### 3. shall: statement vs question
 
 - In a statement, shall is expressed with will.
-- In “Shall I ...?”, the question can ask whether the speaker is going to do it, or whether doing it is wise.
+- In “Shall I ...?”, the question can ask whether the speaker is going to do it or whether doing it is wise.
 
-Do not teach shall as a single future-tense translation in every sentence.
+The context determines which question is intended. Do not teach shall as a single future-tense translation in every sentence.
 
 #### 4. Fixed-group reinforcement
 
-Use “be able to” as a priority fixed group. “Have to” can be used as a related contrast when the sentence expresses necessity, but do not claim it is a direct replacement for every ought meaning.
+Use **be able to** as a priority fixed group to reinforce the ability reading of can. It does not replace the possibility reading, and it is not a replacement for the different meanings of ought.
 
 #### 5. Guided practice
 
