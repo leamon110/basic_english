@@ -75,9 +75,9 @@ The source gives three contexts.
 
 ### A. since with a past-year reference
 
-The source's example concerns friends who have not been seen from a past-year starting point. It explains the whole idea as not having seen them for a long time.
+The source's example concerns friends who have not been seen from a past-year starting point. It explains the whole idea as not having seen them over an extended period.
 
-That is a paraphrase of the complete sentence. It does not make since a universal substitute for for a long time.
+That is a paraphrase of the complete sentence. It does not make since a universal substitute for that duration.
 
 ### B. since then
 
@@ -169,7 +169,7 @@ Choose the meaning that matches the context.
 **Answers and reasons**
 
 1. A — This is the past-time sense of once; it does not count occurrences.
-2. A — C10 handles one occurrence; C11 handles a situation that was true in the past.
+2. A — C10 handles one occurrence; C11 handles a situation that was true during an earlier period.
 3. A — This is the source's Basic expression for its long-period example.
 4. A — Already describes the event as having taken place before the present point.
 5. A — This is the source's separate present-location context.
@@ -210,9 +210,9 @@ Choose the meaning that matches the context.
 
 ### C. since — time or reason
 
-1. The source's example concerns friends not seen from a past-year starting point and paraphrases the whole idea as not having seen them for a long time. What must the learner remember?
-   - A. This explains the whole example; it does not make since a universal substitute for for a long time.
-   - B. Since always means for a long time.
+1. The source's example concerns friends not seen from a past-year starting point and paraphrases the whole idea as not having seen them over an extended period. What must the learner remember?
+   - A. This explains the whole example; it does not make since a universal substitute for that duration.
+   - B. Since always means an extended period.
    - C. Since always gives a reason.
 
 2. Events that have taken place since a particular earlier point are described as taking place:
@@ -254,7 +254,7 @@ Choose the meaning that matches the context.
    - B. A different action that must happen first.
    - C. A place beside the person.
 
-3. One house is described as next to another. Which relation is intended?
+3. One house is described as immediately beside another. Which relation is intended?
    - A. Time sequence.
    - B. Spatial closeness.
    - C. Repetition.
@@ -281,12 +281,12 @@ Choose the meaning that matches the context.
 2. In some connections, what other sense may be intended?
    - A. Often.
    - B. Never.
-   - C. Only in the past.
+   - C. Only before now.
 
 3. When a future relationship is specially in view, what kind of expression does the source recommend for the example about remaining someone's friend?
    - A. One that describes continuation without an end.
    - B. One that refers to a past starting point.
-   - C. One that refers to a long period in the past.
+   - C. One that refers to a long period before now.
 
 4. Does the source say that the future-focused expression and the descriptions of being unchanged or endless are universal replacements for always?
    - A. Yes.
