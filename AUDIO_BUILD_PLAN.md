@@ -1728,3 +1728,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is internal source/flow review only. No learner timing data, user test or App integration exists for C01 yet. No App source or workflow-watched file changed; no Android build was triggered.
 - Next: author Module 2 Lesson 2 — Bodily Action & Contact.
 
+### Module 2 Lesson 2 — Bodily Action & Contact source audit (2026-11-18)
+
+- Reopened the original English scan pp.245–248 and compared them with the accepted C02 flow, BASIC_ENGLISH_NAMES_OF_ACTS.md and BASIC_ENGLISH_EXPRESSION_CURRICULUM.md.
+- p.245 introduces eating as taking food / having a meal and notes that when a person is given more food than there is room for, they may be unable to get through it.
+- pp.246–247 source examples: biting hard / getting one's teeth into something; bite off a bit → have a bite of it or at it; spit it out → put it out of one's mouth; touch → put a hand/finger/body part on it or give it a touch; accidental touch → come up against it; forceful touch → hit it / give it a blow; scratch with a pointed object → make a mark; scratch an insect bite → give it a rub; scratch deeply → get one's nails into it.
+- Cut a person → give the person a cut appears at the transition to the next source topic. Keep it as a boundary example only; cut/break/smash, damage and resulting state belong to C03 Physical Effects.
+- p.248 begins throw/send/catch/hold/bring and body position/posture. These belong to C04 Movement & Position, not C02.
+- Confirmed the accepted C02 scope: one Lesson with two explicit sections (intake/biting/expulsion; contact/impact/rubbing). They share the need to identify the body/object relation but do not share one grammatical formula.
+- Updated BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md with checkpoint 56. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author C02 with the p.245 get-through-it phrase as a brief completion-focused extension, cut as a C03 boundary, and movement as a C04 boundary.
+
