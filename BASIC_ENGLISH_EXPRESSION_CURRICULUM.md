@@ -41,6 +41,8 @@ The count comes from the learner's distinct decision tasks and the tested teachi
 - Meaning expansion and meaning narrowing are not the same operation.
 - Quality-as-Thing is not the same as Special Use / narrowing.
 - The 250 Fixed Word-Groups' idiomatic uses are not part of Lesson 3.
+- **Module 1 is not a dictionary of all 850 words.** It teaches the source-listed mechanisms and examples of meaning expansion and Special Use. Ogden states on p.158 that many words have neither, some have only one of the two, and a word may have several expansions. Do not invent an expansion or Special Use for every Basic word.
+- Module 1 Lesson 1 also records the p.158 scope rule and the p.160–162 expansion examples; see `BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md`.
 
 **Order:** Things expansion → Qualities expansion/function → Special Use/narrowing. This moves from related referents to Quality uses, then contrasts widening with contextual narrowing.
 
@@ -73,6 +75,7 @@ The count comes from the learner's distinct decision tasks and the tested teachi
 - Lesson 8 is state/process; Lesson 9 is the speaker's stance toward an action or event.
 - Lesson 10 is amount/degree; Lesson 11 is time/sequence. Keep the time sense of once cross-linked from Lesson 10.
 - Lesson 12 starts from an ordinary-English word outside the Basic set and paraphrases it. Lesson 3 of Module 1 starts from a Basic word and narrows its referent. These are opposite task directions.
+- **Module 2 is not a catalogue of additional senses for all 850 Basic words.** It starts from the ordinary-English meanings selected in the source's Names of Acts / Some Common Needs material and teaches how to express those meanings with Basic words. It does not claim to cover every ordinary-English word or every possible meaning of every Basic word.
 
 ## 4. Foundation and prerequisite rules
 
