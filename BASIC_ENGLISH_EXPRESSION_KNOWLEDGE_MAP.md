@@ -2032,3 +2032,21 @@ The architecture is accepted for authoring. Actual lesson scripts, exercise volu
 ## 47. First complete lesson-content draft
 
 Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names of Things: Meaning Expansion. The draft uses representative source-supported relations (body/structure, sensory, use/function, cause/process, part/whole, material/object and “as if”), plus practice and an answer key. It is intentionally not a verbatim source transcription and not an App screen.
+
+## 48. C13 first lesson source audit — corrections to the first complete draft (2026-11-18)
+
+- Rechecked the original English scan pages printed pp.148, 150, 154 and 156 against the source index, C13 teaching flow and Module 1 Lesson 1 draft.
+- Found and corrected a source-index error: the original p.150 compares a shoe on a horse's foot with a shoe worn by a person. It does not give a railway-carriage / horse-carriage example.
+- Corrected the “as if” examples. The source includes a field of interest; the attraction of cakes for a small boy; fixed ideas; and money support. The church roof and its wooden/stone supports are literal physical objects used as a contrast, not an example of “no real roof”.
+- Clarified the p.154–156 relations: cause, process, use, part/whole or collective relations, material/object, and other true connections. The harder receipt / directions, plane, frame and certain examples are kept as recognition/reference material rather than forced into new rules.
+- Revised BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md:
+  - retains four concrete body-part anchors and adds the other seven source-listed body-part examples in a compact reference table (11 total);
+  - replaces the unsupported carriage example with the source's horse-shoe / human-shoe comparison;
+  - gives the actual machine / repetitive-worker, bed, crime and kick comparisons;
+  - distinguishes the abstract “as if” uses from the literal roof-support contrast;
+  - adds transfer, reverse-understanding and a project-created unsupported-association contrast exercise;
+  - explicitly separates expansion from Special Use / meaning narrowing.
+- Updated BASIC_ENGLISH_EXPANSIONS_THINGS_QUALITIES.md and this knowledge map. The revised lesson remains a selected teaching draft, not a verbatim transcription of the entire source chapter.
+- Remaining authoring gate: review the lesson's clarity, answer explanations, practice volume and actual learner time. Do not call C13 fully accepted solely because source mismatches have been corrected.
+- Next: use the same source-first method to prepare Module 1 Lesson 2 — Names of Qualities: Meaning Expansion & Use as Things, keeping Quality extensions distinct from Quality words functioning as Names of Things.
+
