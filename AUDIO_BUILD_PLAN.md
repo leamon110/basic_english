@@ -1546,3 +1546,18 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - First flow-size test supports keeping the three Module 1 Lessons separate. This is a prototype judgment; final acceptance waits for all 15 flows and a cross-course workload/duplication audit.
 - Updated the candidate structure and knowledge map. No App source changed and no Android build triggered.
 - Next concrete step: draft Module 2 C01 Communication & Information flow, then continue through C02–C12 in candidate order.
+
+
+### Module 2 teaching-flow milestone 02 — C01 through C06 (2026-11-18)
+
+- Extended BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md with C01–C06 teaching flows.
+- C01 organizes communication by expressing/delivering, receiving, and written/transmitted information. All show senses remain in one short polysemy comparison panel, not as a claim that every show sense is communication.
+- C02 keeps bodily intake/expulsion distinct from contact/impact in two sections.
+- C03 distinguishes caused physical action, damage/effect, resulting state and self-occurring change; it links to Step 17 sections 4–6 for the existing be/get + past-participle foundation.
+- C04 organizes object movement/viewpoint and body posture/position in two sections.
+- C05 groups thinking, judgment, knowledge, understanding, memory and knowledge acquisition/teaching as one cognitive task.
+- C06 groups feeling, attitude, preference, desire and need; physical touch is cross-linked to C02.
+- First flow test supports keeping each of C01–C06 as one Lesson with the stated section boundaries. This does not yet validate final duration; the full Module 2 workload audit waits until all 12 flows exist.
+- Updated the flow document. Candidate and knowledge map remain at 2 Modules / 15 provisional Lessons; no App IDs assigned.
+- Next concrete step: draft C07 Exchange/Sale/Commitment, C08 State/Process, and C09 Ability/Obligation/Intention.
+- No App code changed and no Android build triggered.
