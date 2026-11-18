@@ -1875,3 +1875,41 @@ The C01–C14 labels remain research IDs, not final App Lesson numbers. If this 
 
 This is a recommended order, not yet the final accepted syllabus. The remaining check is the complete sequence's scope and whether any adjacent candidates still need merging or splitting.
 
+
+
+## 39. Candidate v0.3 revision — Names of Things / Qualities split after p.160 review
+
+The earlier two-Lesson Module 1 recommendation (Things + Qualities together; Special Use separately) is superseded by the complete p.160 scope review.
+
+The source contains:
+
+- a broad Names of Things expansion section with multiple relation families, including the additional p.154 material;
+- a Names of Qualities expansion section;
+- a substantial p.160 list of **35 Quality forms that can also function as Names of Things**, plus color names, with restrictions for some forms (e.g. certain words require “the”);
+- a separate Special Use section that narrows rather than widens meaning.
+
+This changes the teaching-size assessment:
+
+### Current Module 1 — Understanding Basic Word Meanings
+
+1. **Names of Things — Meaning Expansion**: a large set of object/referent relations, taught by representative relation families with a full reference index.
+2. **Names of Qualities — Meaning Expansion & Use as Things**: quality extensions through human reaction/associated properties, plus the source-listed Quality-as-Thing function.
+3. **Special Use — Meaning Narrowing**: material-name uses, important subclasses and contextually expected narrower senses.
+
+The split is not being made merely because the source has two word classes. The Names of Things material is large and contains multiple object-relation families; the Names of Qualities material has its own semantic extension mechanisms and a substantial word-class/function group. Each now has a distinct teaching objective and enough material for a bounded unit.
+
+### Current Module 2 — Expressing Common Meanings in Basic English
+
+The 12 application candidates C01–C12 remain unchanged.
+
+**Current working candidate: 2 Modules / 15 provisional Lessons.** This supersedes the earlier v0.2 count of 14 and its two-Lesson Module 1. The count is not final; the complete sequence still needs a final size/overlap check.
+
+Current prototype mapping:
+
+- existing Expression speak prototype → C01;
+- existing body-part expansion prototype → C13;
+- C14 is a new Quality expansion/Quality-as-Thing unit;
+- C15 is the detailed Special Use / narrowing unit.
+
+The original App Lesson labels remain prototypes, not final display IDs. No App changes have been made.
+
