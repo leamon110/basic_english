@@ -133,14 +133,15 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | feel angry | be feeling angry | be + Quality |
 | be conscious of movement | be conscious of something moving | be + Quality + of |
 | feel a wall to test whether it is dry | put one's hands on it | put + 身体部位 + on |
-| like things | be pleased with them；have approval of them；give approval to them | be / have / give + 名称或性质 |
-| get on well with a person | be friends with them | be + 名称 + with |
+| like things | be pleased with them | be + Quality + with |
+| like persons | be friends with them；get on well with them | be + 名称 + with / get + on + well |
 | like good food or pictures | have a taste for them | have + 名称 + for |
-| approve of something | give approval；be in agreement with it | give + 名称 / be + in + 名称 + with |
-| disapprove of something | give disapproval；be in disagreement with it | give + 名称 / be + in + 名称 + with |
+| anything we like, more generally | it has our approval；we give our approval to it | have + 名称 / give + 名称 + to |
 | want something | have a desire for it | have + 名称 + for |
 | need something for well-being | be in need of it | be + in + 名称 + of |
 | want more because there is not enough | be in need of more | be + in + 名称 + of |
+
+**Source boundary (p.252):** the passage gives approval expressions (“has our approval” / “give our approval to it”), but does not provide a separate Basic expression for the negative counterpart. This project does not invent one.
 
 ### 3.3 学习、教学、展示和尝试
 
