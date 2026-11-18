@@ -2297,3 +2297,14 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Source audit complete. No App source changed and no Android build triggered.
 - Next: author C05 with the source distinctions and the explicit C02/C06/C01 boundaries.
 
+## 70. Module 2 Lesson 5 — Thinking, Knowledge, Memory & Learning first complete draft (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L5_DRAFT.md from the source audit of p.250 and p.252 and the accepted C05 flow.
+- The draft preserves four internal parts: thinking/opinion; knowing/understanding; meaning/memory; learning/teaching.
+- It includes the source's know-a-person / have-come-across familiarity example and distinguishes it from factual certainty and understanding. It preserves the source's separate uses of be certain of / be conscious of; have knowledge/experience of; be clear about / have a grip of; see a point of view / see the point of an argument.
+- It includes remember / keep in mind / put out of the mind / have no memory of it, and learn / get facts into one's head / give training or teaching / be taught.
+- The draft cross-links feel-a-wall physical touch to C02, internal feeling to C06, and show's meaning-dependent examples to the existing C01 panel. It does not duplicate show or teach feeling/need material in C05.
+- Added recognition, meaning/knowledge distinctions, memory, learning/teaching, cross-topic boundary, reverse-understanding and independent-construction practice. The open response is explicitly not auto-scored by the current App.
+- This is a first complete draft, not final acceptance. Clarity, answer coverage, overlap with C06, and actual learner time still require review. No App source changed and no Android build triggered.
+- Next: review C05 against the original source and accepted flow, then author Module 2 Lesson 6 — Feeling, Preference, Desire & Need.
+
