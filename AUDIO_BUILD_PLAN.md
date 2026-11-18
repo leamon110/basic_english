@@ -2048,3 +2048,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author Module 2 Lesson 9 — Ability, Obligation & Intention from the verified source distinctions.
 
+### Module 2 Lesson 9 — Ability, Obligation & Intention first complete draft and internal review (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L9_DRAFT.md (302 lines) from the accepted C09 flow and original *The ABC of Basic English* printed p.256. The unless → if ... not boundary is explicitly cross-referenced to p.260, not treated as a C09 modal rule.
+- Verified can → be able to do it (ability) / it is possible for me to do it (possibility); ought → it is right/wise for me to do it (advisability) / it is my business to do it (duty) / it is probable from the fact that it will be so (probability from a fact); shall in non-question statements → will; “Shall I do it?” → “Am I going to do it or not?” or “Am I wise to do it?” according to context.
+- Confirmed current 850-word arrays: can, ought and shall are not entries; able, possible, right, wise, business, probable, fact and will are present. The priority fixed group be able to reinforces only ability.
+- Corrected source-index wording to singular “the fact” and removed the unnecessary have-to contrast from the C09 flow.
+- Internal answer audit: A 4/4, B 5/5, C 4/4, D 2/2, E 10/10 = 25 closed prompts and 25 matching answers. The open construction task is explicitly not auto-scored by the current App.
+- Updated BASIC_ENGLISH_EXPRESSION_M2_L9_DRAFT.md status and BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md (checkpoint 86). C09 is source-reviewed and internally reviewed, not user-tested or App-integrated; actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no Android build was triggered.
+- Next concrete action: begin Module 2 Lesson 10 — Quantity, Amount & Degree, preserving the distinctions among each, altogether, whole, few, many, too and once.
+
