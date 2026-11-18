@@ -1799,3 +1799,45 @@ The Structured Teaching units can serve as the foundation for the candidate trac
 
 The next audit is to decide which foundation items are true prerequisites, which need only a brief reminder inside a Lesson, and which require a new small foundation unit. It must also prevent repeated explanations and quizzes between Structured Teaching and the Expression track.
 
+
+
+## 37. Whole-sequence audit 03 — Foundation prerequisites, duplication and order
+
+The current candidate has been compared with:
+
+- the 13 units defined in `docs/js/rule-learning.js`;
+- the current Expression prototype in `docs/js/expression-system.js` and `docs/js/expression-curriculum.js`;
+- the 45-Step source map and its current 14/45 local App coverage.
+
+### Existing foundation
+
+Structured Teaching already covers plural forms, derivatives, adverbs, comparison, un-, Operators, Directives, Operator + Directive combinations, Names of Acts, Expansions, Fixed Word-Groups, sentence structure and the Meaning → Basic method. These are reusable foundations, not new Expression Lessons.
+
+### Existing App prototype reconciliation
+
+- Expression prototype Lesson 01 (speak) belongs inside candidate C01.
+- Expression prototype Lesson 02 (body-part expansion) belongs inside candidate C13, not candidate C02.
+- The Teaching Names of Acts unit already uses speak and eat examples; the Expression lessons must deepen context comparison and production practice rather than repeat the same explanation/quiz.
+- The Teaching Expansions unit is a short overview; the Expression expansion prototype is a detailed body-part subsection. C13 should extend it with p.154 relations and the full source coverage.
+- Current prototype labels are not final syllabus IDs. No App renumbering or movement is authorized until the structure is accepted.
+
+### Prerequisite risks
+
+- C03 needs a short result/passive pattern explanation or a verified link; the -ed word-form rule alone does not teach passive/result sentence structure.
+- C09 must teach can/ought/shall distinctions; the current Structured Teaching list has no dedicated modal unit.
+- C10/C11 should focus on additional contextual meanings, not repeat the basic quantity/time/calendar teaching in the original 45 Steps.
+- C13/C14 must expand the existing overview without duplicating the body-part examples or confusing Special Use / narrowing with fixed-group idioms.
+- The original 45 Steps include applied expression in Step 42 and extended readings in Steps 33–35 and 43–45. The Expression System is a more systematic supplementary practice track, not the first appearance of applied Basic expression.
+
+### Module order
+
+The original 1932 *The ABC* places Names of Things and Qualities before Names of Acts and Some Common Needs. This supports teaching meaning expansion before application. However, C13 is not a hard prerequisite for every concrete expression topic; it is more useful before some abstract mental/feeling examples (C05/C06). The current v0.2 order (application first, expansion second) is therefore not yet proven wrong or right.
+
+The final order remains open until the learner progression is compared explicitly:
+
+- source order: meaning expansion/narrowing → applied expression;
+- practical order: concrete expression → abstract expression → deeper meaning interpretation;
+- dependency-based order: concrete expression first, introduce expansion before C05/C06, then continue with abstract expressions.
+
+No module order has been accepted. The next step is to test the whole progression and decide whether the two candidate modules should be reversed, interleaved or kept as currently listed.
+
