@@ -9,9 +9,8 @@ The source uses several expressions for a person's inner experience and attitude
 This lesson has four parts:
 
 1. feeling and internal experience;
-2. liking, friendship and preference;
-3. approval and disapproval;
-4. desire and need.
+2. liking, friendship, preference and approval;
+3. desire and need.
 
 The main task is to identify the kind of relation: an experience, a personal liking, a social relationship, an approval judgment, a desire or a need.
 
@@ -39,45 +38,30 @@ A useful comparison with C05:
 
 The source places the second expression with its feeling examples. Do not automatically replace it with the C05 opinion expression.
 
-## 2. Liking, friendship and preference
+## 2. Liking, friendship, preference and approval
 
-The source uses different expressions depending on whether the object is a thing, a person, or something one has a taste for.
+The source uses different expressions depending on whether the object is a thing, a person, or something one has a taste for. It then adds a more general expression of approval.
 
 | Ordinary English meaning | Basic expression from the source | What is being described |
 |---|---|---|
 | like a thing | be pleased with it | A positive personal response |
-| have approval of a thing | have approval of it | A positive judgment |
-| give approval to a thing | give approval to it / be in agreement with it | Expressing approval or agreement |
-| get on well with a person | be friends with them | A social relationship |
-| like good food or pictures | have a taste for them | A preference or liking |
+| like a person | be friends with them / get on well with them | A friendly relationship |
+| like good food or pictures | have a taste for them | A preference |
+| like something in a more general sense | it has our approval | The thing is approved of |
+| express approval of something | give our approval to it | Approval is actively given |
 
-Do not collapse these into one meaning:
+Keep the different relations clear:
 
-- being **pleased with** a thing describes a positive response;
-- having or giving **approval** describes a judgment or agreement;
-- being **friends with** a person / **getting on well** describes a relationship;
-- having a **taste for** food or pictures describes a preference.
+- **be pleased with a thing** describes a positive response to it;
+- **be friends with a person** and **get on well with a person** are the source's expressions for liking persons;
+- **have a taste for** food or pictures describes preference;
+- **it has our approval** and **give our approval to it** express the more general approval relation.
+
+The source gives positive approval expressions here. It does not provide a corresponding negative Basic expression in this passage, so this lesson does not invent one.
 
 Here **have a taste for** means preference. It is not the literal taste of food discussed in the meaning-expansion lesson.
 
-## 3. Approval and disapproval
-
-The source gives both sides of the relation:
-
-| Ordinary English meaning | Basic expression from the source |
-|---|---|
-| approve of something | give approval / be in agreement with it |
-| disapprove of something | give disapproval / be in disagreement with it |
-
-Approval and disapproval are not simply the same as liking and disliking:
-
-- **like / be pleased with** expresses a personal positive response;
-- **approve / give approval / be in agreement** expresses acceptance or agreement;
-- **disapprove / give disapproval / be in disagreement** expresses rejection or disagreement.
-
-The context tells you whether the sentence is about a personal feeling or a judgment about something.
-
-## 4. Desire and need
+## 3. Desire and need
 
 The source distinguishes wanting something from needing it.
 
@@ -91,7 +75,7 @@ A **desire** is something a person wants. A **need** is something required for w
 
 Do not automatically replace every use of **want** with **need**. The source gives both expressions because the relation is different.
 
-## 5. Keep neighbouring meanings in their own lessons
+## 4. Keep neighbouring meanings in their own lessons
 
 Some uses of the same words belong elsewhere:
 
@@ -102,14 +86,14 @@ Some uses of the same words belong elsewhere:
 
 These examples are not missing from the course. They are kept in their primary lessons so C06 does not repeat C01, C02 or C05.
 
-## 6. How to choose the expression
+## 5. How to choose the expression
 
 When you meet an inner-state or attitude word, ask:
 
 1. **Is it an experience?** Pain, pleasure, an impression or anger?
-2. **Is it liking or a relationship?** Pleased with a thing, friends with a person, or getting on well?
-3. **Is it approval?** Agreement or acceptance, or disapproval/disagreement?
-4. **Is it preference?** Having a taste for something?
+2. **Is it liking a thing or a person?** Pleased with a thing, or friends with / getting on well with a person?
+3. **Is it preference?** Having a taste for food or pictures?
+4. **Is it approval?** Does the thing have our approval, or are we giving our approval to it?
 5. **Is it desire or need?** Wanting something, or requiring it for well-being / because there is not enough?
 
 The ordinary verb alone is not enough. Identify the relation before choosing the Basic expression.
@@ -128,7 +112,7 @@ Choose the Basic expression that matches the meaning.
    - C. get facts into one's head
 
 2. A person feels pleasure.
-   - A. be in disagreement
+   - A. have a taste for it
    - B. have a feeling of pleasure
    - C. put one's hands on a wall
 
@@ -140,7 +124,7 @@ Choose the Basic expression that matches the meaning.
 4. A person feels that something is so, but the sentence expresses an impression or idea.
    - A. have a feeling / idea that it is so
    - B. be certain of it
-   - C. give disapproval
+   - C. get facts into one's head
 
 **Answers and reasons**
 
@@ -154,41 +138,41 @@ Choose the Basic expression that matches the meaning.
 Match the situation with the Basic expression.
 
 1. A person likes a thing.
-2. A person has a positive judgment of a thing.
-3. A person gets on well with another person.
-4. A person likes good food or pictures.
+2. A person likes another person.
+3. A person likes good food or pictures.
+4. A thing has the person's approval.
 
 **Suggested answers**
 
 1. be pleased with it;
-2. have approval of it / give approval to it / be in agreement with it;
-3. be friends with them;
-4. have a taste for them.
+2. be friends with them / get on well with them;
+3. have a taste for them;
+4. it has our approval.
 
-### C. Approval and disapproval
+### C. Personal liking and approval
 
-Choose the expression that matches the judgment.
+Choose the expression that matches the relation.
 
-1. A person approves of a decision.
-   - A. give approval / be in agreement with it
-   - B. put it out of the mind
-   - C. have a fall
-
-2. A person disapproves of a decision.
-   - A. have a taste for it
-   - B. give disapproval / be in disagreement with it
-   - C. be on one's feet
-
-3. A person likes a picture but does not have to make a judgment about whether it is right or acceptable.
+1. A person likes a thing and has a positive personal response.
    - A. be pleased with it
-   - B. give disapproval
+   - B. have a taste for it
    - C. be in need of it
+
+2. A thing has a person's approval.
+   - A. it has our approval
+   - B. get it in the hand
+   - C. put it out of the mind
+
+3. A person gives approval to a thing.
+   - A. give our approval to it
+   - B. be friends with them
+   - C. have a desire for it
 
 **Answers and reasons**
 
-1. A — Approval is expressed by giving approval or being in agreement.
-2. B — Disapproval is expressed by giving disapproval or being in disagreement.
-3. A — Being pleased with something expresses a positive response; it is not necessarily a formal judgment.
+1. A — Be pleased with it describes a positive personal response.
+2. A — The source says that something liked has our approval.
+3. A — The source says that we give our approval to the thing.
 
 ### D. Desire and need
 
@@ -196,7 +180,7 @@ Choose the expression that preserves the relation.
 
 1. A person wants a thing.
    - A. have a desire for it
-   - B. be in disagreement with it
+   - B. have a taste for it
    - C. have no memory of it
 
 2. A person requires something for well-being.
@@ -242,16 +226,14 @@ Explain the relation described by each Basic expression:
 3. have a feeling / idea that it is so;
 4. be feeling angry;
 5. be pleased with it;
-6. have approval of it;
-7. give approval to it;
-8. be friends with them;
-9. get on well with them;
-10. have a taste for them;
-11. give disapproval;
-12. be in disagreement with it;
-13. have a desire for it;
-14. be in need of it;
-15. be in need of more.
+6. be friends with them;
+7. get on well with them;
+8. have a taste for them;
+9. it has our approval;
+10. give our approval to it;
+11. have a desire for it;
+12. be in need of it;
+13. be in need of more.
 
 **Suggested answers**
 
@@ -260,16 +242,14 @@ Explain the relation described by each Basic expression:
 3. Feel or have an impression that it is so.
 4. Feel angry.
 5. Like it / have a positive response to it.
-6. Have a positive judgment of it.
-7. Express approval of it.
-8. Have a friendly relationship with them.
-9. Have a good relationship with them.
-10. Like or prefer them.
-11. Express disapproval.
-12. Disagree with it.
-13. Want it.
-14. Need it.
-15. Need a larger amount because the available amount is insufficient.
+6. Have a friendly relationship with them.
+7. Get on well with them.
+8. Like or prefer the food or pictures.
+9. The thing has our approval.
+10. Express approval of it.
+11. Want it.
+12. Need it.
+13. Need a larger amount because the available amount is insufficient.
 
 ### G. Independent construction
 
@@ -277,7 +257,7 @@ Choose one situation:
 
 - feeling pain, pleasure, anger or an impression;
 - liking a thing or having a friendly relationship with a person;
-- approving or disapproving of a decision;
+- a thing having our approval or giving approval to it;
 - having a taste for food or pictures;
 - wanting something or needing more of it.
 
@@ -293,7 +273,7 @@ You should now be able to:
 
 - express pain, pleasure, anger and a feeling/idea;
 - distinguish liking a thing, friendship with a person and having a taste for something;
-- distinguish approval from disapproval;
+- express approval of something;
 - distinguish desire from need;
 - keep physical touch, knowledge/awareness and show meanings in their own lesson boundaries.
 
