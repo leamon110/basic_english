@@ -156,6 +156,11 @@ Choose the best answer.
    - B. A movement relation
    - C. A feeling
 
+7. A thing that causes amusement is referred to by the Name **amusement**.
+   - A. A cause relation
+   - B. A time relation
+   - C. A material relation
+
 **Answers and reasons**
 
 1. A — The mouth of another thing is an opening.
@@ -164,6 +169,7 @@ Choose the best answer.
 4. A — The comparison is based on repeated behavior.
 5. A — The Name is used for the process that produces something.
 6. A — Glass is the material Name used for a familiar drinking vessel.
+7. A — The source allows the Name of a feeling or thing to be used for what causes it.
 
 ### B. Explain the connection
 
@@ -172,7 +178,8 @@ Explain each pair in your own words:
 1. foot → the base of another thing;
 2. river-bed / flower-bed → the bed in which we rest;
 3. a number of people → one body in the eyes of the law;
-4. money support → the literal supports of a church roof.
+4. money support → the literal supports of a church roof;
+5. library → the books that go in a library.
 
 **Suggested explanations**
 
@@ -180,6 +187,7 @@ Explain each pair in your own words:
 2. The source gives this as a longer chain of connection. The uses are related, but they are not the same object or activity.
 3. People acting together can be treated as one body in law.
 4. Money support is abstract help; the roof's wooden or stone supports physically bear weight.
+5. The source lists library as a Name used for the books that go in it. This is a recorded connection, not a rule that every place Name can name its contents.
 
 ### C. Transfer to another source example
 
