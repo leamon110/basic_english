@@ -1572,3 +1572,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md now contains first flows for all 15 candidate Lessons (C13–C15 and C01–C12).
 - This completes the first full teaching-flow draft pass. It does not yet establish final duration/exercise volume; the next step is a whole-course overlap, prerequisite and workload audit across all 15 flows.
 - No App source changed and no Android build triggered.
+
+
+### Expression curriculum architecture accepted (2026-11-18)
+
+- Completed first teaching-flow drafts for all 15 candidate Lessons and ran the whole-course progression/boundary audit.
+- No adjacent Lessons share the same dominant learner decision in a way that justifies merging. Internal sections preserve the distinctions within C01 (show contrast), C02 (intake vs contact), C04 (transfer vs posture), C10 (quantity vs degree) and C11 (time vs non-time senses).
+- Accepted the architecture recorded in BASIC_ENGLISH_EXPRESSION_CURRICULUM.md: **2 Modules / 15 Lessons** — Module 1 has 3 Lessons; Module 2 has 12.
+- The 250 Fixed Word-Groups instance index is complete (50 + 80 + 20 + 100); the separate 50 Most Necessary list is a priority subset, not extra items.
+- C03 links to existing adapted Step 17 sections 4–6; C09 teaches its own source-specific modal meanings; C07 has enough naturally related fixed-group reinforcement for a compact standalone lesson.
+- Acceptance boundary: this accepts the curriculum architecture for the authoring phase only. Full lesson scripts, exercise volume/duration, final duplicate-example audit, App prototype migration, implementation, build and device acceptance remain open.
+- Next concrete step: author Module 1 Lesson 1 (Names of Things — Meaning Expansion) as the first complete lesson draft, validate its source coverage and teaching length, then continue in curriculum order.
+- No App source changed and no Android build triggered.
