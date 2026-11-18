@@ -59,11 +59,9 @@ Core operation: identify the actual ordinary-English meaning in context → choo
 
 Still required before final acceptance:
 
-1. test the full 15-Lesson sequence as a learner progression;
-2. decide the exact foundation prerequisites/reminders for C03 and C09;
-3. check every adjacent Lesson for remaining overlap or excessive size;
-4. verify cross-topic placements and re-test C07 after the complete 250-item Fixed Word-Group index;
-5. reconcile current App prototype labels with the final display numbering in a separate migration plan.
+1. draft teaching flows for all 15 candidate Lessons and test actual lesson size;
+2. run a final cross-lesson duplication/workload audit after the flows exist;
+3. reconcile current App prototype labels with final display numbering in a separate migration plan.
 
 **No final syllabus or App Lesson IDs are assigned yet.** The 15 is a provisional candidate count, not a project commitment.
 
@@ -193,6 +191,18 @@ The complete 200-item instance index now adds source-supported commercial/transa
 This is enough to make C07 a **coherent compact Lesson candidate** rather than a lesson padded with unrelated social phrases. Its core Some Common Needs material remains buy/sell/keep goods for sale/promise to pay later; the fixed groups provide contextual reinforcement, not 20 unrelated subtopics.
 
 C07 remains provisional because the final lesson's exercise volume and duration have not yet been tested in an authored lesson. However, the former blocker — lack of enough indexed relevant source material to judge its size — is now resolved. No merge into C06 or C08 is supported: emotional attitude and commercial commitment remain different learner decisions.
+
+
+
+### Module 1 teaching-flow prototype completed
+
+The first teaching-flow drafts for C13, C14 and C15 are now in BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md.
+
+- C13 is taught as root Name → source-supported relation → related referent, using representative relation families rather than a catalogue of every source example.
+- C14 keeps Quality meaning extension separate from Quality-as-Thing function within one Lesson.
+- C15 teaches context-driven narrowing as a different decision from expansion and from fixed-word-group idioms.
+- The three drafts retain three distinct learner decisions; the first flow-size test supports keeping three Module 1 Lessons.
+- This does not yet accept the entire 15-Lesson structure. Module 2 flows and the final whole-course workload/duplication audit remain.
 
 
 ---
