@@ -2110,3 +2110,14 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - This is a first integrated content draft, not final acceptance. Clarity, exercise volume, example duplication against other Module 2 lessons and actual learner time still require review. No App source changed and no Android build was triggered.
 - Next concrete action: review the C01 draft against the source pages and accepted C01 flow, then author Module 2 Lesson 2 — Bodily Action & Contact.
 
+## 55. C01 teaching-content review and anti-duplication correction (2026-11-18)
+
+- Reviewed BASIC_ENGLISH_EXPRESSION_M2_L1_DRAFT.md against the accepted C01 teaching flow and original English pp.244–245 and p.252.
+- Source coverage check: speak (reused prototype); tell a story / give an account / give news / give directions / as I was saying; sing; hear music / listen with attention / have news later; write views / read in the paper / go through with care; send a letter to the paper giving a different opinion; and the compact p.252 show comparison.
+- Found and corrected an authoring duplication: the first integrated draft repeated the three speak cases as a new table and repeated their three-question quiz even though both already exist in the pre-curriculum speak prototype. The revised draft now explicitly reuses the existing speak explanation, quiz, target writing task and reverse check; it retains only the mapping boundary (speak to / speak at = C01; speak a language = knowledge topic).
+- Clarified that the prototype's old “next content” teaser is not a separate lesson. C01 expands tell/sing/listen/read etc; eat is moved to the following Bodily Action & Contact topic (Module 2 Lesson 2).
+- Expanded the send-letter exercise to test the source's purpose “giving a different opinion” and added sending to the reverse check.
+- Confirmed the show examples remain one compact comparison panel, not a claim that all show meanings are communication. The open construction exercise remains explicitly unscored by the existing narrow speak checker.
+- This review is an internal source/flow/duplication review. Actual learner time and learner feedback remain unmeasured; C01 is still a reviewed draft, not user-tested or App-accepted content.
+- Next: author Module 2 Lesson 2 — Bodily Action & Contact, preserving the same concise meaning → Basic expression → learner use / reverse-check approach.
+
