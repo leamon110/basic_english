@@ -1,6 +1,6 @@
 # Module 1 · Lesson 2 — Names of Qualities: Meaning Expansion & Use as Things
 
-> **Draft status:** first complete teaching-content draft. It is based on C. K. Ogden's *The ABC of Basic English* (1932), especially pp.152 and 160. The lesson uses selected teaching examples and preserves the complete source-listed Quality-as-Thing group as a reference. Clarity, exercise quality and actual learner time still require review.
+> **Draft status:** source-reviewed first complete teaching-content draft. It is based on C. K. Ogden's *The ABC of Basic English* (1932), especially pp.152 and 160. The source list is preserved; short example phrases built from listed forms are project-created illustrations, not quotations from Ogden. Clarity, exercise quality and actual learner time still require review.
 
 ## What you will learn
 
@@ -66,7 +66,7 @@ A Quality word usually describes another Name:
 
 In the source-listed Quality-as-Thing use, the Quality word itself functions as a Name. It can refer to a substance, person, thing, time, relation or another named item, depending on the word and context.
 
-A few examples help show the change:
+A few examples help show the change. The short phrases in the table are project-created illustrations from source-listed forms, not quotations from Ogden:
 
 | Quality word | Use as a Name of Things |
 |---|---|
@@ -79,7 +79,7 @@ A few examples help show the change:
 | opposite | the thing or position opposed to another |
 | colour words | the colours themselves |
 
-These groupings are a teaching aid. They are not formal categories supplied by Ogden, and they do not mean that every Quality can be used in the same way.
+These groupings are a teaching aid. They are not formal categories supplied by Ogden, and they do not mean that every Quality can be used in the same way. The phrases in this table are project-created illustrations from the source list, not quotations from Ogden.
 
 ### The complete source list
 
@@ -171,7 +171,7 @@ For each item, identify what the Quality word is naming.
 3. **the past**
 4. **the first**
 5. **the opposite**
-6. a colour word used as the name of that colour
+6. **red**, used as the name of the colour red
 
 **Suggested answers**
 
