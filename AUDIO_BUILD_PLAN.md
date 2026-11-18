@@ -1949,3 +1949,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author Module 2 Lesson 7 — Exchange, Sale & Commitment.
 
+### C06 source-fidelity correction — approval and friendship (2026-11-18)
+
+- Rechecked the exact original English p.252. It says that people are pleased with things or friends with persons when they like them; they may also get on well with those persons. It then says that anything liked has our approval and that we give our approval to it.
+- Corrected the reversed mapping in the first C06 review: the source does **not** say “get on well with a person → be friends with them”. It gives “be friends with persons” and “get on well with them” as expressions for liking persons. Restored this direction in BASIC_ENGLISH_EXPRESSION_M2_L6_DRAFT.md, BASIC_ENGLISH_NAMES_OF_ACTS.md and the C06 flow.
+- Corrected the unsupported disapproval claim: p.252 gives approval, but no separate disapproval/disagreement pair. The first draft's extra negative forms were not source expressions and are not Basic 850 words. Removed them from the C06 draft, flow and source index.
+- Kept the source-supported forms: a thing has our approval; we give our approval to it. Removed “be in agreement with it” from the source table because it is not the phrase used on p.252. Merged approval into liking/friendship/preference, returning C06 to the accepted three-part structure: feeling/experience; liking/friendship/preference/approval; desire/need.
+- Verified the source word list includes “approval” but not “disapproval” or “disagreement”. No unsupported negative paraphrase is claimed as a Basic expression.
+- Updated the C06 draft, source index, flow and knowledge map (checkpoint 77). C06 remains a draft pending a final answer-key/teaching-volume check; it is not user-tested or App-integrated.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: re-review the corrected C06 draft and closed exercises against p.252, then proceed to Module 2 Lesson 7 — Exchange, Sale & Commitment.
+
