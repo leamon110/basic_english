@@ -1271,3 +1271,19 @@ The revised Module 1 should contain **three** candidate Lessons, not two:
 This is not a return to the original arbitrary split. The new evidence is that Things expansion has a broad set of relation families, while Qualities has both extension examples and a substantial source-listed Quality-as-Thing group. Each Lesson now has a distinct teaching objective and enough material to justify a separate unit.
 
 The earlier v0.2 decision to merge Things and Qualities is superseded. The overall candidate count increases by one, from 14 to **15 provisional Lessons**. This is still a working count, not final acceptance.
+
+
+---
+
+## Current-state clarification after all audits
+
+The authoritative working structure is **v0.3 at the beginning of this file: 2 Modules / 15 provisional Lessons**.
+
+Earlier audit sections are retained to show how the decisions changed. In particular:
+
+- the first Module 2 test merged Things and Qualities expansion because the Quality example count then visible was small;
+- the later complete p.160 review revealed 35 Quality-as-Thing forms plus color names, in addition to the Quality expansion examples;
+- Teaching-size test 07 therefore supersedes that earlier merge and restores separate Things and Qualities Lessons, with Special Use as the third Lesson in Module 1;
+- the source-aligned order remains recommended: the three meaning-interpretation Lessons first, followed by the 12 Common Needs application Lessons.
+
+Do not use the historical v0.1 or v0.2 tables as the current syllabus. No final acceptance or App renumbering has occurred.
