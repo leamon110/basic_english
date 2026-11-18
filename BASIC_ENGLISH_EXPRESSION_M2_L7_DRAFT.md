@@ -88,7 +88,7 @@ Do not treat **on credit** and **give one's word to do so** as the same expressi
 
 The source gives a clear difference between receiving money now and promising to give it later.
 
-If we have no money, we may promise to give it later by **giving our word to do so**.
+If we have no money, we may promise to give it later by **giving our word to do so**. Here **promise** names the ordinary-English meaning; the Basic expression is **give one's word to do so**.
 
 | Ordinary English meaning | Basic expression from the source or fixed-group example | What is described |
 |---|---|---|
