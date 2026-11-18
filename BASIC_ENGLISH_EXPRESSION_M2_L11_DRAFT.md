@@ -151,10 +151,10 @@ Choose the meaning that matches the context.
    - A. Module 2 · Lesson 10 — Quantity, Amount & Degree.
    - B. Module 2 · Lesson 11 — Time & Sequence.
 
-3. The source's long-period ago example uses which Basic expression?
-   - A. a long time back.
-   - B. after then.
-   - C. at all times.
+3. The source's long-period ago example uses which Basic paraphrase?
+   - A. The expression recorded in Section 1.
+   - B. The expression for a later event.
+   - C. The general always meaning.
 
 4. An event has already taken place. What is the intended relation?
    - A. The event happened before the present point.
@@ -177,7 +177,7 @@ Choose the meaning that matches the context.
 ### B. Events through now, negative yet and the joining use
 
 1. An account includes events from an earlier period through the present point. Which description matches the source?
-   - A. An account of what has taken place so far / up to now.
+   - A. The source's expression for an account covering events through now.
    - B. An account only of what will happen later.
    - C. An account of one event only.
 
@@ -191,8 +191,8 @@ Choose the meaning that matches the context.
    - B. An event not completed by the present point.
    - C. A repeated action.
 
-4. The joining use of and yet has which meaning?
-   - A. Two statements hold at the same time.
+4. The joining use of yet has which meaning?
+   - A. Two statements hold together.
    - B. An event has not happened by now.
    - C. An action follows another.
 
@@ -217,11 +217,11 @@ Choose the meaning that matches the context.
 
 2. Events that have taken place since a particular earlier point are described as taking place:
    - A. before that point.
-   - B. after that point.
+   - B. later than that point.
    - C. at the same moment as that point.
 
 3. In the source's example about it being late and going to bed, since gives:
-   - A. a reason.
+   - A. the reason for the action.
    - B. a repeated action.
    - C. a nearby position.
 
@@ -274,23 +274,23 @@ Choose the meaning that matches the context.
 ### E. always — general meaning or a particular context
 
 1. What is the general meaning of always given by the source?
-   - A. At all times.
+   - A. Something remains true throughout the relevant times.
    - B. Only once.
-   - C. After a particular event.
+   - C. Only after a particular event.
 
 2. In some connections, what other sense may be intended?
    - A. Often.
    - B. Never.
    - C. Only in the past.
 
-3. When a future relationship is specially in view, what expression does the source recommend for the example about remaining someone's friend?
-   - A. for ever.
-   - B. after then.
-   - C. a long time back.
+3. When a future relationship is specially in view, what kind of expression does the source recommend for the example about remaining someone's friend?
+   - A. One that describes continuation without an end.
+   - B. One that refers to a past starting point.
+   - C. One that refers to a long period in the past.
 
-4. Does the source say that for ever, unchanged, and endless are universal replacements for always?
+4. Does the source say that the future-focused expression and the descriptions of being unchanged or endless are universal replacements for always?
    - A. Yes.
-   - B. No. The source attaches them to particular contexts; the latter descriptions suit other connections.
+   - B. No. The source attaches them to particular contexts.
 
 **Answers and reasons**
 
@@ -326,12 +326,12 @@ Choose the meaning that matches the context.
 Explain the relation described by each expression.
 
 1. A situation was true during an earlier period.
-2. A long time back.
+2. The source's Basic paraphrase for its long-period ago example.
 3. An event happened before the present point.
 4. An account includes events through the present point.
 5. An expected person has not arrived by now.
-6. Two statements hold at the same time.
-7. Events happened after a particular earlier point.
+6. Two statements hold together.
+7. Events happened later than a particular earlier point.
 8. The sentence gives a reason.
 9. The action that follows in a sequence.
 10. The next occurrence of the same action.
