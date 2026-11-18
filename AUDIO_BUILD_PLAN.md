@@ -1374,3 +1374,17 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Decision: retain candidate 09 provisionally with the revised title. “Finish” remains a useful contrast because the source itself uses the Basic word directly.
 - No final Module/Lesson count assigned; no App code changed and no Android build triggered.
 - Next concrete step: test Other Suggestions (modality, condition, quantity/degree, time, quality paraphrase and context-dependent names), then test the expansion/special-use boundary.
+
+
+### Teaching-size test 05 — Other Suggestions against original English pages (2026-11-18)
+
+- Re-opened the exact original *The ABC of Basic English* English pages pp.256, 258, 260 and 262 (the corresponding scan pages in the linked 162-page PDF). This verifies the detailed examples beyond the shorter project index.
+- Expanded the Other Suggestions section of `BASIC_ENGLISH_NAMES_OF_ACTS.md` with source-based distinctions and page references.
+- Modality: can/ought/shall form one compact but coherent topic around ability, possibility, duty/advisability, probability and intention. Keep one provisional Lesson titled **Ability, Obligation & Intention**; do not collapse the different meanings.
+- Quantity/amount/degree and time/sequence require different decisions. Split the former combined candidate into two provisional topics. Preserve the multiple meanings of once, since, next, too and always; do not teach them as one-to-one translations.
+- Unless → if ... not is a conditional-clause relation. Link it to the existing conditional/sentence-structure foundation; the single source example does not justify an independent Lesson.
+- busy/deaf and world/life/hill/home/address form a useful Module 1 candidate, **Context-Dependent Words & Paraphrase**: identify the intended ordinary-English sense, then construct the Basic description. This is not Basic-word meaning expansion or Special Use / narrowing.
+- The former candidate 14 “Special Use & Contextual Meaning” title is withdrawn. The actual Names of Things and Qualities Special Use / narrowing topic remains to be tested separately in Module 2.
+- Recorded the detailed source-based test prompts and boundary results in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md`.
+- No App source changed and no Android build triggered.
+- Next concrete step: test the Module 2 boundary — whether Things/Qualities expansion and Special Use/meaning narrowing should be one teaching unit with two parts or separate Lessons. Also check the unread p.154 source scan if accessible before finalizing that track.
