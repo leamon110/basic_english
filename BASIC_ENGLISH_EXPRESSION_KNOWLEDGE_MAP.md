@@ -815,3 +815,127 @@ The important result is that the project’s first-round labels (“eating/body 
 
 The next step is to audit the first Complex Acts group: **thinking, knowledge and memory**, then compare whether its learning task is of the same scale as the Simple Acts tasks already identified.
 
+
+
+## 18. Theme-boundary audit 03 — Complex Acts: thinking, knowledge and memory
+
+### 18.1 Source material checked
+
+The first Complex Acts group contains:
+
+- think
+- know
+- understand
+- mean
+- remember
+- forget
+
+The source examples use several Basic construction types:
+
+- give thought to
+- be in thought
+- be of the opinion
+- take the view that
+- be certain of
+- be conscious of
+- have knowledge / experience of
+- be clear about
+- have a grip of
+- see the point of view
+- have the sense of
+- have a memory of
+- keep in mind
+- put out of the mind
+- have no memory of
+
+### 18.2 The common learning problem
+
+Unlike the physical-action groups, these examples are not mainly about a visible physical relation.
+
+The common problem is:
+
+> **A normal English mental verb compresses a mental state, relation or operation into one word; Basic often makes that hidden relation explicit with a Name, Quality, Operator and/or Directive.**
+
+Examples:
+
+- think → give thought to
+- know → have knowledge of / be certain of
+- understand → be clear about / have a grip of / see the point of
+- mean → have the sense of
+- remember → have a memory of / keep in mind
+- forget → put it out of the mind / have no memory of it
+
+This is a substantially more coherent semantic task than the first two Simple Acts buckets.
+
+### 18.3 Internal differences
+
+There is still an internal contrast:
+
+#### A. Thinking / judging / knowing / understanding / meaning
+
+The learner has to distinguish:
+
+- an active mental process: think;
+- an opinion: be of the opinion;
+- certainty/knowledge: be certain of / have knowledge of;
+- clarity or grasp: be clear about / have a grip of;
+- interpretation/meaning: have the sense of.
+
+These are not interchangeable, even though they are all “mental”.
+
+#### B. Remembering / forgetting
+
+The learner must express:
+
+- possession of a memory;
+- keeping something in mind;
+- removing something from the mind;
+- absence of memory.
+
+The Basic expressions therefore make memory direction/state visible:
+
+- have a memory of;
+- keep it in mind;
+- put it out of the mind;
+- have no memory of it.
+
+### 18.4 Current boundary conclusion
+
+The two internal parts are related closely enough that **there is currently stronger evidence for treating them as one coherent teaching theme than for splitting them immediately**.
+
+The key common task is:
+
+> **Identify the mental relation first, then choose the Basic structure that makes that relation explicit.**
+
+Remember/forget can be used as the later part of the same progression because they introduce a particularly clear contrast between keeping something in mind and putting it out of the mind.
+
+This is an important calibration result:
+
+- the source's Complex Acts / thinking-knowledge-memory grouping has a coherent semantic center;
+- unlike the earlier “eating/body action” bucket, it does not currently show a strong enough task boundary to justify an automatic split.
+
+This still does **not** assign a final Lesson number.
+
+### 18.5 Relationship to previous audits
+
+The comparison now shows three different situations:
+
+1. **Communication:** strong common method, but the complete scope still needs testing.
+2. **Physical action:** source-adjacent examples contain several different decision problems.
+3. **Thinking / knowledge / memory:** the whole first Complex Acts group currently has a relatively coherent decision problem.
+
+Therefore the curriculum cannot be designed simply by giving every source subsection one Lesson. The actual semantic task must decide.
+
+## 19. Current research checkpoint after Theme Audit 03
+
+The first Complex Acts group has now been tested.
+
+Current evidence suggests that **thinking / knowledge / memory is a better candidate for one coherent teaching unit than the two coarse Simple Acts buckets audited so far**.
+
+Next:
+
+1. audit Complex Acts / feeling, liking, wanting and needing;
+2. compare its semantic task with thinking/knowledge/memory;
+3. continue through learning/teaching/trying and social/life processes;
+4. only after all major groups have been tested should Lesson boundaries be formalized.
+
