@@ -147,9 +147,11 @@ Do not count these five early prototypes as five extra Lessons. The current acce
 - All 250 Fixed Word-Groups source items have an instance-level index; the 50 priority subset is separately mapped.
 - The candidate has been compared with the 13 Structured Teaching units and the 45-Step source map.
 - C03 and C09 prerequisite handling is explicit.
-- First teaching-flow drafts exist for all 15 Lessons in BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md.
-- The first whole-sequence progression test found no adjacent pair with the same dominant learner decision that would justify a merge.
-- Module 1 and Module 2 each have a visible learning progression; the source-aligned order is retained.
+- First teaching-flow drafts exist for all 15 accepted Lessons in `BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md`.
+- First complete teaching-content drafts exist for all 15 accepted Lessons (Module 1 Lessons 1–3; Module 2 Lessons 1–12).
+- A whole-course cross-Lesson audit was completed on 2026-11-19. It confirmed the main adjacent-Lesson boundaries and required no Lesson merge, addition, deletion or renumbering.
+- Two cross-boundary clarifications were recorded: C03 destroy-an-animal vs C08 dying; C12 business-as-work vs C07 commercial exchange, and C12 noun life vs C08 dying.
+- Module 1 and Module 2 each retain a visible progression; the source-aligned order is retained.
 
 ## 8. What is accepted, and what remains to do
 
@@ -160,11 +162,13 @@ Do not count these five early prototypes as five extra Lessons. The current acce
 - the boundaries between adjacent candidate Lessons;
 - the use of foundations and cross-cutting Fixed Word-Groups.
 
+**Current authored-content status:** a first complete teaching-content draft exists for each of the 15 Lessons. These are document-level drafts, not final learner-tested scripts or App screens.
+
 **Not yet completed:**
-1. Full authored teaching content for each Lesson.
-2. Actual exercise volume and duration checks during authoring, especially the compact C07 lesson and the broad C13 relation families.
-3. Final cross-Lesson duplicate-example review after authored examples exist.
-4. App prototype migration and final display numbering.
+1. Learner review and final teaching revisions after actual study sessions.
+2. Actual lesson-duration and exercise-volume checks with learners; duration has not been measured, including for the compact C07 and broad C13 topics.
+3. Final wording/answer revisions based on learner results.
+4. App prototype migration and final display numbering in a separate migration plan.
 5. App implementation, automated validation, build and device acceptance.
 
-The architecture is therefore fixed for the next authoring phase, but no claim is made that the 15 Lessons are already implemented or complete.
+The 2-Module / 15-Lesson architecture is accepted. The first content drafts and cross-Lesson boundary audit are complete at the document level; learner testing, App integration and device acceptance are not.
