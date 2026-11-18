@@ -2548,3 +2548,11 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - No App source or Android workflow input changed; no build was triggered.
 - Next: begin Module 2 Lesson 11 — Time & Sequence, preserving the different meanings of ago, already, yet, since, next and always, plus the past-time sense of once.
 
+## 89. Curriculum numbering and legacy prototype clarification (2026-11-19)
+
+- Clarified the accepted 2-Module / 15-Lesson architecture in the authoritative curriculum: Module is the top-level grouping; Lesson numbering restarts within each Module.
+- Defined C01–C15 as internal Candidate IDs from the research structure, not global Lesson numbers or App screen IDs. Mapping: C01–C12 → Module 2 Lessons 1–12; C13–C15 → Module 1 Lessons 1–3. Final learner order remains Module 1 first, then Module 2.
+- Distinguished the five early App prototypes from the five newly authored Module 2 drafts. Early prototypes 01 and 02 map to Module 2 Lesson 1 and Module 1 Lesson 1; prototypes 03–05 are not standalone Lessons and their material is redistributed/cross-linked.
+- Verified that the five current Module 2 Lesson drafts (M2_L1 through M2_L5) all exist in the branch and remain the first five Lessons of Module 2.
+- No App source or Android workflow input changed; no build was triggered.
+
