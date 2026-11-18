@@ -2007,3 +2007,8 @@ Created BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md with first teaching-flow 
 - C15: teach contextual narrowing as a distinct decision from expansion and fixed-word-group idioms.
 - First flow-size result supports three Module 1 Lessons. This is not final acceptance of the complete 15-Lesson course; Module 2 flows and the whole-course workload/duplication audit remain.
 
+
+
+## 44. Module 2 flow prototypes C01–C06
+
+First teaching-flow drafts now exist for C01–C06 in BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md. The six candidates remain one Lesson each with explicit internal sections; the full duration/workload test awaits C07–C12.
