@@ -1425,3 +1425,8 @@ Earlier audit sections are retained to show how the decisions changed. In partic
 - the source-aligned order remains recommended: the three meaning-interpretation Lessons first, followed by the 12 Common Needs application Lessons.
 
 Do not use the historical v0.1 or v0.2 tables as the current syllabus. No final acceptance or App renumbering has occurred.
+
+
+### Module 2 flow prototypes C01–C06 completed
+
+BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md now includes first flows for C01–C06. Each remains one candidate Lesson with explicit internal sections. The full Module 2 workload test is deferred until C07–C12 flows are also drafted.
