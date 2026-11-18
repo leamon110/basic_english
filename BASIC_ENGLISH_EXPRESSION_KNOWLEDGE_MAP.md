@@ -2567,3 +2567,11 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Updated the Other Suggestions source index, C11 teaching flow and current candidate C11 scope to preserve these distinctions. No new Module/Lesson boundary is needed; the accepted 2 Modules / 15 Lessons architecture remains unchanged.
 - Source audit only: no App code, Android workflow input or audio assets changed; no build was triggered.
 - Next: author BASIC_ENGLISH_EXPRESSION_M2_L11_DRAFT.md, keeping the source contexts separate and using concise recognition, contrast, reverse-understanding and independent-construction practice.
+## 91. Module 2 Lesson 11 — Time & Sequence first complete draft and internal review (2026-11-19)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L11_DRAFT.md from the source-checked C11 flow and the original *The ABC of Basic English*, printed pp.258–260.
+- Preserved the source distinctions: once (past-time sense) vs one occurrence (C10); ago's long-period example; already for an earlier event vs a person's present location; the present-reaching account; negative yet vs the joining use; since as a past-time relation / later-than-point relation / reason; next as sequence / repetition / spatial position; always as general continuation / context-dependent frequency / future continuation.
+- Internal content audit: 23 multiple-choice prompts with 23 matching answer keys; 5 foundation/boundary checks; 14 reverse-understanding prompts with 14 suggested answers; one independent-construction task explicitly marked as not automatically scored by the current App.
+- All five multiple-choice section counts and answer-key counts match; all 14 reverse prompts have suggested answers. The draft is complete at the document level but has not been user-tested, timed with learners or integrated into the App.
+- No App source, Android workflow input or audio assets changed; no Android build was triggered.
+- Next: source-audit and author Module 2 Lesson 12 — Context-Dependent Words & Paraphrase, then perform the final cross-Lesson duplication and consistency review.
