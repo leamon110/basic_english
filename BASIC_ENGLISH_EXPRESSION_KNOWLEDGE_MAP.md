@@ -2456,3 +2456,19 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - The accepted order is C08 — State and Process: Change, Entry & Ending; C09 — Ability, Obligation & Intention.
 - Corrected the C07 draft, its review checkpoint and AUDIO_BUILD_PLAN.md so the next lesson is C08 State and Process. No curriculum scope change was made.
 
+## 83. C08 source-fidelity correction — begin / finish and process examples (2026-11-18)
+
+- Rechecked the original The ABC of Basic English, printed p.256, against the C08 flow, candidate structure and source index.
+- The passage gives these Basic renderings:
+  - grow taller / higher / fatter / greater → get taller / higher / fatter / greater;
+  - be growing → be in the process of growth or development;
+  - sleep → go to sleep / be in sleep;
+  - die → go to one's death / come to one's end / take one's last breath;
+  - begin → make a start.
+- Important correction: the sentence “everything that begins will later finish” is explanatory English. The passage does not give a Basic equivalent for the general verb finish. The current docs/js/data.js 850-word arrays also do not contain finish. Remove the former claim that finish → finish is an accepted Basic expression. Keep finish only as a source-boundary example explaining that the sentence is ordinary English, not a Basic construction.
+- Refined the fixed-group set: in motion / in use (state or continuing activity); go to sleep (entry); lights go out (state change); come to a stop (reaching a stopped state); put a stop to (causing cessation); take place (event occurrence). “In the end” is primarily C11 Time & Sequence and is only cross-linked to C08 when the context emphasizes a process outcome.
+- Updated BASIC_ENGLISH_NAMES_OF_ACTS.md, BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md and the current v0.3 / C08 teaching-size sections of BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md.
+- C08's central task remains coherent: distinguish a change in Quality, a process under way, entry into a state, a state, event occurrence and ending/cessation. This correction removes an unsupported lexical mapping; it does not change the accepted 2-Module / 15-Lesson architecture.
+- No App source or Android workflow input changed. Actual C08 teaching draft has not yet been authored; learner-time and exercise-volume checks remain open.
+- Next: author Module 2 Lesson 8 — State and Process: Change, Entry & Ending using only the verified expressions and fixed-group boundaries above.
+
