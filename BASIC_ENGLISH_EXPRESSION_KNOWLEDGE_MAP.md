@@ -2148,3 +2148,12 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - This is a first complete draft, not final acceptance. Clarity, answer coverage, duplication with C03/C04 and actual learner time still require review. No App source changed and no Android build triggered.
 - Next: review C02 against the original pages and accepted flow, then author Module 2 Lesson 3 — Physical Effects: Damage, Change & Result.
 
+## 58. C02 review — physical feel cross-link and answer coverage (2026-11-18)
+
+- Reviewed the C02 draft against pp.245–247 and the accepted flow. The source distinctions and C03/C04 boundaries are preserved.
+- Added the cross-link “feel a wall to test whether it is dry” → “put one's hands on it” from the Names of Acts / Complex Acts index. This is physical contact and belongs with C02; emotional/internal feeling remains in C06.
+- Added a practice item and answer explanation so the cross-link is tested, not merely mentioned.
+- Rechecked the answer key: intake/biting/expulsion, accidental/forceful contact, scratch variants, and the physical feel boundary all have explicit answers. The open construction task remains unscored.
+- C02 is an internally reviewed draft, not learner-tested or App-accepted. Actual lesson time remains unmeasured.
+- Next: author Module 2 Lesson 3 — Physical Effects: Damage, Change & Result.
+
