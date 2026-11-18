@@ -1972,3 +1972,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author Module 2 Lesson 7 — Exchange, Sale & Commitment.
 
+### Module 2 Lesson 7 — Exchange, Sale & Commitment source audit (2026-11-18)
+
+- Reopened original English p.254 and compared the accepted C07 flow with the source index and complete 250 Fixed Word-Groups instance index.
+- Direct Some Common Needs examples: buy → get the things in exchange for money / at a price, or give money for them; promise to give money later → give one's word to do so; sell → get money for what one gives; sell things regularly → keep them in a store; sell what one makes → put it on the market.
+- Selected fixed-group reinforcement: come to agreement about taxes (p.216); let a house to a friend (p.220; also in the 50 Most Necessary groups); put the business through (p.220); take an object in exchange for another (p.225); send a coat on approval and obtain a coat on credit (p.236); take part in the organization of a company with a chance of profit (p.237); profit/loss/interest on a business (p.227); goods much in request and keeping one's word (p.239).
+- Fixed groups remain contextual reinforcement, not a second vocabulary course. Excluded “put money on a horse” as a betting/risk context rather than a sale transaction.
+- Added ambiguity boundaries: “on approval” is a sale arrangement, not C06's attitude “it has our approval”; “on credit” is a purchase condition, while “to one's credit” means merit/reputation; “at a loss for something to do” means uncertainty, not financial loss.
+- Confirmed find/lose/discover examples are routed to C04/C05 by location, encounter, information or knowledge; damage/hurt remains C03; life/process examples remain C08.
+- One compact C07 Lesson remains supported, with three internal strands: exchange roles; sale arrangements/conditions; commitment and business context. Exercise volume remains to be tested in the authored draft.
+- Updated the C07 flow and knowledge map (checkpoint 79). No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author C07 using only these source-supported transaction and commitment examples, with explicit buyer/seller roles and payment-status distinctions.
+
