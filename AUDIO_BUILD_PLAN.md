@@ -894,3 +894,19 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - APK status unchanged: Run 48 archive verification is recorded in this plan, but the user's combined device acceptance remains unconfirmed.
 - Next action: map every Some Common Needs source example to its actual meaning and Basic structure, then test the course grouping against a complete set of examples before fixing lesson boundaries or counts.
 
+
+
+### A Basic Selection hierarchy and the separate 50-item priority list verified (2026-11-18)
+
+- Further inspected the original *The ABC of Basic English* table of contents and pp.250, 252–262, 264–269. Confirmed A Basic Selection is not just Some Common Needs; it contains:
+  1. Some Common Needs (pp.242–262): Simple Acts, Complex Acts, Other Suggestions.
+  2. Words Formed by Endings (pp.262–264).
+  3. The Most Necessary Fixed Word-Groups (pp.264–269).
+- Verified the original statement introducing a separate list of 50 fixed word-groups described as the 50 (of the 250) hardest to do without. Transcribed all 50 entries in source order into BASIC_ENGLISH_250_FIXED_WORD_GROUPS.md.
+- Explicitly distinguished this 50-item priority list from the first 50 items inside the 250-item structure (10 Operators × 5 examples). They are two different lists.
+- Updated BASIC_ENGLISH_EXPRESSION_SYSTEM.md to include all three A Basic Selection parts in the practical course map. The 50 necessary groups are now a priority learning set; the remaining fixed groups remain extended reference. Words Formed by Endings are treated as applied forms, not a duplicate general suffix-rules course.
+- Updated BASIC_ENGLISH_250_FIXED_WORD_GROUPS.md with the complete 50-item source list and its relation to the 250-item index. Clarified BASIC_ENGLISH_NAMES_OF_ACTS.md that its scope is the Names of Acts / Some Common Needs cross-index, not the whole A Basic Selection.
+- No App code or Android workflow input changed. Only root-level Markdown files changed; no Android build was triggered.
+- APK status remains unchanged: Run 48 archive verification is complete, while the user's combined device acceptance remains unconfirmed.
+- Next action: finish mapping all Some Common Needs examples and the 50 priority groups to their actual meaning/structure; only then test the lesson boundaries against a complete set of material.
+

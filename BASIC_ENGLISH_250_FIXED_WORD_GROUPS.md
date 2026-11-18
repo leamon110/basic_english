@@ -112,23 +112,84 @@ p.230–232 将另外 10 个词项各列出两种特殊用法，共 20 项。
 
 本文保留原书的编号范围和类别数量，但不逐条重录 100 个原句。后续课程应从这些类别中挑选具有教学价值的模式，重新编写项目自己的练习句，并标明它们是项目例句。
 
-## 7. 与 Names of Acts / Common Needs 的区别
+## 7. 与 A Basic Selection 的关系
 
-这两部分在原书中相邻，但不是同一内容：
+《The ABC》在250个固定词组之后，另设 **A Basic Selection**。目录明确列出三个部分：
 
-| 原书部分 | 核心问题 | 本项目对应研究 |
-|---|---|---|
-| Special Uses → The 250 Fixed Word-Groups | 哪些词组需要作为固定用法单独学习？ | 本文 |
-| A Basic Selection → Some Common Needs | 普通英语中的常见动作和事物，怎样用 Basic 重新表达？ | BASIC_ENGLISH_NAMES_OF_ACTS.md |
+1. **Some Common Needs（pp.242–262）**：Simple Acts、Complex Acts、Other Suggestions。
+2. **Words Formed by Endings（pp.262–264）**：实际需要的词尾派生形式。
+3. **The Most Necessary Fixed Word-Groups（pp.264–269）**：从250项中另选出的50个最难缺少的固定词组。
 
-因此：
+因此，Some Common Needs 只是 A Basic Selection 的第一部分，不代表整个 A Basic Selection。
 
-- 一个固定组合属于 Fixed Word-Groups 的研究范围；
-- speak 在不同语境中改写为不同 Basic 表达，属于 Names of Acts / Common Needs 的表达研究；
-- 一个词组可能同时包含 Operator、Name 和 Directive，但不能因此把它当作任意自由组合；
-- 不应把 250 Fixed Word-Groups 简化成 Names of Acts 的同义词表。
+### 两份不同的“50项”清单
 
-## 8. 对 App 教学和检查器的启示
+不要混淆：
+
+- **250项内部的第一组50项：** 10个 Operators，每组5个例子，是250项总数的组成部分。
+- **A Basic Selection 的50项最必要固定词组：** 原书 pp.264–269 另外列出的优先清单，原文称它们是“hardest to do without”。
+
+两份清单的用途和内容不同。
+
+## 8. A Basic Selection 中的50项最必要固定词组
+
+以下按原书 pp.264–269 的顺序记录。括号中的替换项也保留；本表是原书清单，不是项目新增的50项课程编号。
+
+1. *at war (work, play, rest)*
+2. *bad (good, quick, working) at*
+3. *by force*
+4. *by himself*
+5. *respect (love, feeling) for*
+6. *but for*
+7. *different from*
+8. *in motion*
+9. *in use (operation)*
+10. *out of the room*
+11. *control, grip of*
+12. *full of*
+13. *off his head*
+14. *farther on (go, keep, get on)*
+15. *worked out*
+16. *go (turned) over*
+17. *be able to*
+18. *put up with*
+19. *angry (pleased) with*
+20. *come to a stop*
+21. *get (a book) out*
+22. *get out of doing*
+23. *give up*
+24. *go to sleep*
+25. *(guns) go off*
+26. *(lights) go out*
+27. *have an effect on*
+28. *let a house*
+29. *make up a story*
+30. *put off (meeting)*
+31. *as if (etc.)*
+32. *one another*
+33. *there is*
+34. *in addition to*
+35. *a year back*
+36. *in bits*
+37. *in the end*
+38. *in memory of*
+39. *take part in*
+40. *take place*
+41. *put a stop to*
+42. *give way to*
+43. *in (out of) the way*
+44. *at right angles*
+45. *dependent on*
+46. *good morning (day, night)*
+47. *at present*
+48. *tired of*
+49. *dear Mr. A*
+50. *10 years old*
+
+**教学处理建议（项目设计）：** 这50项优先进入课程例句和复习；其余固定词组保留为扩展查询资料。是否需要拆成几个练习单元，要看它们的实际意义和使用关系，不按编号平均分组。
+
+
+## 9. 对 App 教学和检查器的启示
 
 ### 8.1 不能只检查单词是否在 850 词表
 
@@ -155,7 +216,7 @@ p.230–232 将另外 10 个词项各列出两种特殊用法，共 20 项。
 - Lesson 01 的语法和意思检查器只覆盖本课的 say/says 句型，不是通用词组检查器。
 - 本文是来源结构和教学边界索引，尚未增加 App 词组规则，也没有触发 Android 构建。
 
-## 9. 来源核验记录
+## 10. 来源核验记录
 
 本轮直接检查了《The ABC of Basic English》英文原文 pp.212、214、216、218、220、222、224、226、228、230、232、234、236、238、240、242 的页面图像，覆盖该节全部英文正文页。
 
@@ -166,7 +227,7 @@ p.230–232 将另外 10 个词项各列出两种特殊用法，共 20 项。
 - pp.232–242：其余 100 项及其词表类别分布。
 - p.242 随后开始 “A Basic Selection / Some Common Needs”；该部分与 250 Fixed Word-Groups 分开。
 
-## 10. 下一步
+## 11. 下一步
 
 1. 保留本文作为 250 Fixed Word-Groups 的完整结构和数量索引。
 2. 从各组中挑选适合初学者的代表模式，设计项目自己的例句和练习；不要把原书 250 条句子直接搬进 App。

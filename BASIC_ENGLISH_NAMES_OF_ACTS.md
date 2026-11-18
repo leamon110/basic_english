@@ -6,6 +6,8 @@
 >
 > 本文后续的动作分类表主要整理第二部分 Some Common Needs，并与 Names of Acts 的 Operator 用法交叉对照。项目新增的结构归类与练习说明，不应误称为原书的章节结构。
 
+> **范围补充：** Some Common Needs 只是 A Basic Selection 的第一部分；原书随后还有 Words Formed by Endings（pp.262–264）和 The Most Necessary Fixed Word-Groups（pp.264–269）。本文主要整理动作与常见意思的表达，不代表这三部分均已完整收录。
+
 ## 1. 为什么必须区分这两个相邻部分
 
 Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Names of Acts”，逐个讨论 Operators；随后在 A Basic Selection 中安排 “Some Common Needs”，分为：

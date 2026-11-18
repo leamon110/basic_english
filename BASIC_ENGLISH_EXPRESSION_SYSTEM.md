@@ -208,10 +208,14 @@ Operators 不是普通英语动词的一对一同义词，也不是可互换的�
 | Expansions：Names of Things and Qualities | 一个词的意义怎样延伸到相关事物，或在特定语境中收窄 | 作为词义理解专题，帮助学习者判断同一个 Basic 词在不同语境中指什么。 |
 | Expansions：Names of Acts | 原书逐个讨论16个核心 Operators 的用法和意义 | 属于表达工具的基础说明；项目已有 Operators 索引和 Teaching 入门单元。 |
 | Expansions：Names of Directions | 从空间关系理解方向词及其扩展用法 | 属于表达工具的基础说明；项目已有 Directives 索引和 Teaching 入门单元。具体用法在实际表达练习中继续应用。 |
-| Special Uses：250 Fixed Word-Groups | 不能只凭单词字面意义推导的固定组合 | 作为词组层级的补充知识；在相关语境中学习，并提供查询，不把250项直接变成250课。 |
-| A Basic Selection：Some Common Needs | Simple Acts、Complex Acts、Other Suggestions：日常动作及其他常见意思的 Basic 表达 | **表达课程的主要应用材料**，围绕“这个意思在当前语境下怎样说成 Basic”组织练习。 |
+| Special Uses：250 Fixed Word-Groups（pp.212–242） | 不能只凭单词字面意义推导的固定组合，共250项 | 扩展参考资料；其中有一份另行挑出的50项优先清单，见下一行。 |
+| A Basic Selection：Some Common Needs（pp.242–262） | Simple Acts、Complex Acts、Other Suggestions：日常动作及其他常见意思的 Basic 表达 | 表达课程的主要应用材料，围绕“这个意思在当前语境下怎样说成 Basic”组织练习。 |
+| A Basic Selection：Words Formed by Endings（pp.262–264） | 原书挑出的实际需要的派生形式 | 作为词形学习的应用补充；结合具体表达使用，不重复讲一遍通用词尾规则。 |
+| A Basic Selection：The Most Necessary Fixed Word-Groups（pp.264–269） | 从250项中挑出的50个最难缺少的固定词组 | 优先学习和反复使用的核心固定组合；不是另外50课。 |
 
-这里最重要的来源区别是：原书的 **Names of Acts** 主要讲 Operators；真正集中展示常见普通英语动作如何改用 Basic 表达的，是后面的 **Some Common Needs**。前者提供工具，后者提供实际应用材料。
+这里有一个必须保持的来源区别：原书的 **Names of Acts** 主要讲 Operators；集中展示常见普通英语动作如何改用 Basic 表达的，是后面的 **Some Common Needs**。前者提供工具，后者提供实际应用材料。
+
+另外，原书的 **A Basic Selection** 不等于 Some Common Needs。它有三个部分：Some Common Needs、Words Formed by Endings、The Most Necessary Fixed Word-Groups。课程设计不能漏掉后两部分，也不能把它们误算进250项固定词组的章节结构。
 
 ### 5.2 课程主线：从具体意思到实际表达
 
@@ -220,9 +224,14 @@ Operators 不是普通英语动词的一对一同义词，也不是可互换的�
 1. **先判断语境。** 保留 speak 作为入门示范：对人说话、在会议上讲话、会说一种语言，意思不同，Basic 表达也不同。先学会判断意思，再选结构。
 2. **表达日常的具体动作。** 以 Some Common Needs 的 Simple Acts 为主要材料，覆盖沟通、听说读写、饮食、身体动作和移动等。先从能看见、能描述的动作入手。
 3. **表达想法、感受和较复杂的活动。** 使用 Complex Acts 中关于思考、知道、理解、记忆、感觉、喜欢、想要、需要、学习和教学等例子。重点是保留句子中的人物、对象、关系和结果。
-4. **表达其他常见意思。** 使用 Other Suggestions 中的 can、ought、unless、busy、deaf、world、home 等例子。这里不再把所有内容称为“动作”，而是按实际意思选择表达方法。
+4. **表达其他常见意思。** 使用 Other Suggestions 中的 can、ought、shall、unless、busy、deaf、world、home 等例子。这里不再把所有内容称为“动作”，而是按实际意思选择表达方法。
 
 Simple Acts、Complex Acts、Other Suggestions 是原书的分组。项目可以在每组内部按沟通、移动、思考等自然主题安排材料，但必须保留原书来源标记；项目自己的主题分组不能冒充原作者分类。
+
+A Basic Selection 中另外两组材料这样处理：
+
+- **Words Formed by Endings：** 把实际常用的派生形式放到相应表达中学习；只有遇到新的词形问题时才补充解释，不另造一套重复课程。
+- **The Most Necessary Fixed Word-Groups：** 以原书列出的50项作为优先清单，放入相关主题练习和复习；不按50项逐个机械开课。
 
 ### 5.3 两类补充内容怎样放进主线
 
@@ -237,13 +246,12 @@ Simple Acts、Complex Acts、Other Suggestions 是原书的分组。项目可以
 
 **固定词组（250 Fixed Word-Groups）**
 
-它解决的是词组层级的问题：每个词单独看都认识，不代表组合意义可以直接推出来。
+- 先掌握 A Basic Selection 中的50项最必要固定词组。
+- 其余固定词组作为扩展查询资料，遇到时再学习。
+- 当前研究文档记录了250项的来源结构和分类；这不等于已经逐条收录全部250项原句。
+- 注意：250项内部按10个 Operators × 每组5个例子形成的第一组50项，与 pp.264–269 另列的50项最必要固定词组，是两份不同的清单。
 
-- 与某个表达主题直接相关的固定词组，放在该主题中讲。
-- 其他已核实的词组放入查询资料，方便遇到时查找。
-- 当前研究文档记录了250项的来源结构和分类，但没有逐条收录全部原句；在完整词组清单核实前，不宣称 App 已覆盖全部250项。
-
-这两类内容不需要为了形式而各自扩成一个庞大的模块；它们在学习者真正需要时出现即可。
+这类内容不需要为了形式而扩成一个庞大的独立模块；应在学习者真正需要时出现。
 
 ### 5.4 哪些内容作为基础工具，不再重复造课
 
@@ -271,18 +279,18 @@ Meaning → Basic 也不是一个与原书章节并列的独立模块。它是�
 | Lesson 01：speak | 很好的“先看语境、再选表达”入门示范 | 保留为课程开端或总示范，不因为它已有 Lesson 01 编号就认定它必须独占一课。 |
 | Lesson 02：身体部位扩展 | Names of Things and Qualities 的一个具体子题 | 保留为词义扩展专题的一部分；不能代表整个 Expansions。 |
 | Lesson 03：当前标为 Names of Acts | 现有例子主要来自 Some Common Needs，不是原书 Names of Acts 章节本身 | 后续需更正标题和来源说明，并与 Lesson 05 的常见表达材料重新整理。 |
-| Lesson 04：250 Fixed Word-Groups | 解释固定组合的性质和数量结构 | 保留为入门说明或查询入口；不能把5道题当成已教完250项。 |
+| Lesson 04：250 Fixed Word-Groups | 解释固定组合的性质和数量结构 | 保留为入门说明或查询入口；当前5道题既不代表完整250项，也不代表 A Basic Selection 的50项优先清单。 |
 | Lesson 05：Some Common Needs | 选取了8个常见意思 | 与 Lesson 03 存在内容范围重叠；应合并整理，再按真实学习目标划分。 |
 
 Meaning → Basic 当前登记的27道练习是练习题库，不是27课，也不需要再另设一个“练习模块”。
 
 ### 5.7 当前结论
 
-- 主线已经明确：以 Some Common Needs 的实际表达材料为核心，先具体动作，再复杂活动，最后处理其他常见意思。
-- Operators、Directives 和词形规则作为基础工具，按需调用，不重复造课。
-- Things / Qualities 扩展是独立的词义理解专题；Fixed Word-Groups 是贯穿课程的固定用法补充和查询资料。
+- 主线已经明确：以 A Basic Selection 为实用材料来源，其中 Some Common Needs 负责常见意思的表达，Words Formed by Endings 提供必要的派生形式，50项最必要固定词组提供优先掌握的组合。
+- Operators、Directives 和通用词形规则作为基础工具，按需调用，不重复造课。
+- Things / Qualities 扩展是独立的词义理解专题；250项固定词组中其余部分作为扩展查询资料。
 - 现有五个原型保留为素材，但 Lesson 03 与 Lesson 05 要重新整理，Lesson 04 不能冒充完整覆盖。
-- **模块数、Lesson 数和最终编号仍未确定。** 要先把原书 Common Needs 的例子完整映射到学习主题，再用实际内容检验每个主题是否需要拆分。
+- **模块数、Lesson 数和最终编号仍未确定。** 要先把原书 A Basic Selection 的三个部分完整映射到学习主题，再用实际内容检验每个主题是否需要拆分。
 
 
 ## 6. 每个表达教学单元必须采用的结构
