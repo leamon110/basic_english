@@ -1895,3 +1895,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - C05's main four-part structure remains unchanged. The draft still requires answer/volume review and actual learner-time testing. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: complete the C05 source/answer review, then author Module 2 Lesson 6 — Feeling, Preference, Desire & Need.
 
+### C05 internal source and teaching review complete (2026-11-18)
+
+- Rechecked BASIC_ENGLISH_EXPRESSION_M2_L5_DRAFT.md against original p.250 and p.252, the C05 flow and the source index.
+- Confirmed p.250 expressions: give thought to / be in thought; be of the opinion / take the view that; be certain of / be conscious of; have knowledge or experience of; be a friend of / have come across; be clear about / have a grip of; have a good knowledge of; see a point of view / see the point of an argument; have the sense of; have a memory of / keep in mind; put out of the mind / have no memory of.
+- Confirmed p.252 learning/teaching: get facts into one's head / get knowledge of them; being taught; give training or teaching. Corrected the table to preserve the source's plural “them” construction instead of inventing a singular “get knowledge of it” as a direct source line.
+- Confirmed boundaries: feel-a-wall is C02; feeling pain/pleasure/anger and feel-that-something-is-so are C06; show's meanings remain in C01's comparison panel with cross-links; try remains supporting material.
+- Confirmed all closed exercises have answer keys, the four C05 sections remain one coherent knowledge theme, and the open construction task is not claimed to be auto-scored.
+- C05 is source-reviewed and internally reviewed, but not user-tested or App-accepted. Actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author Module 2 Lesson 6 — Feeling, Preference, Desire & Need.
+
