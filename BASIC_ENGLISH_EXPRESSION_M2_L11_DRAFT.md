@@ -35,7 +35,7 @@ For its long-period example, the source gives the Basic expression **a long time
 
 Keep the scope of the example. The source passage does not establish a universal formula for every numbered duration followed by ago.
 
-## 2. already, so far, yet and and yet
+## 2. already, the present-reaching account and the two uses of yet
 
 These uses relate an event or state to the present point, but they are not interchangeable.
 
@@ -48,7 +48,7 @@ The source gives two contexts:
 
 The first is about when an event happened; the second is about a person's present location. Do not use the event meaning to explain the location example.
 
-### so far / up to now
+### The present-reaching account
 
 An account of events may cover what has happened from an earlier period through the present point. The source expresses this with **so far** and **up to now**.
 
@@ -60,9 +60,9 @@ If an expected person or event is not present by the current point, the meaning 
 
 The relation is **not completed by now**.
 
-### and yet as a joining statement
+### The joining use of yet
 
-The source separately explains **and yet** as a joining expression meaning **at the same time**.
+The source calls this joining form **and yet** and explains it as meaning **at the same time**.
 
 Keep the two uses apart:
 
@@ -238,7 +238,7 @@ Choose the meaning that matches the context.
 
 1. A — The source paraphrases the complete friend example. It does not establish one fixed replacement for every since sentence.
 2. B — The earlier point is the reference; the events happened later.
-3. A — In this context since means because.
+3. A — In this context since gives the reason for the action.
 4. C — The statement about lateness gives the reason for the action.
 5. B — The learner must distinguish time from reason.
 
@@ -296,7 +296,7 @@ Choose the meaning that matches the context.
 
 1. A — This is the general meaning.
 2. A — The source says that an often/frequent sense may fit some connections.
-3. A — For a future relationship, the source recommends this as a better way of putting it.
+3. A — For a future relationship, the source recommends the expression given in Section 5.
 4. B — These expressions are context-dependent, not interchangeable in every sentence.
 
 ### F. Keep neighbouring lessons and foundations separate
@@ -355,7 +355,7 @@ Explain the relation described by each expression.
 11. Next in its spatial use; cross-link to C04.
 12. Always in its general sense.
 13. Always in a context where often is intended.
-14. Always in a future-focused context; the source recommends for ever as a better way of putting it.
+14. Always in a future-focused context; use the source's future-continuation expression.
 
 ### H. Independent construction
 
