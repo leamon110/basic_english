@@ -2161,3 +2161,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Run 48 artifacts remain the latest known build outputs: APK artifact 14379604453 and coverage artifact 14380462964; both were confirmed unexpired during startup verification. No new artifacts were generated in this documentation-only phase.
 - Current completion: 2 Modules / 15 Lessons; all 15 first content drafts exist; cross-Lesson boundary audit and consolidated review sheet complete. Learner testing, duration measurement, App migration, App implementation and device acceptance remain open.
 - Next: prepare a separate App migration plan from the five early App prototypes to the accepted 15-Lesson architecture. Do not renumber screens or change App code until that migration plan is reviewed and approved.
+
+### App migration baseline inspected; migration plan drafted (2026-11-19)
+
+- Inspected `docs/index.html`, `docs/js/app.js`, `expression-system.js`, `expression-curriculum.js`, `expression-more-lessons.js`, `meaning-basic.js`, the old Lesson 01/02 documents, all current test scripts and the 250 Fixed Word-Groups instance index.
+- Current App baseline: the Expression route appends the old speak prototype, body-part prototype, e3/e4/e5 prototypes and the separate Meaning→Basic checker into one long page. It does not yet implement the accepted 2-Module / 15-Lesson navigation.
+- Body-part prototype: 11 terms and 10 questions; 8 map to C13, one question maps to C14 and one maps to C15. The migration must split the two cross-topic questions.
+- Meaning→Basic: 27 registered prompt IDs MB01–MB27; the existing test covers 40 accepted variants, 28 known meaning mismatches, 2 viewpoint mismatches, 1 unsupported boundary and punctuation normalization. It is a finite checker, not a general semantic parser. All 27 prompts are mapped to primary Lessons C01–C08 in the migration plan.
+- The five early prototypes are mapped to the accepted 15 Lessons; the 250 Fixed Word-Groups are distributed support/reference content, not an additional Lesson. The index status is updated from provisional v0.3 to the accepted Candidate-ID mapping.
+- Created `BASIC_ENGLISH_EXPRESSION_APP_MIGRATION_PLAN.md` (draft, not approved). It records current App architecture, all prototype destinations, MB prompt destinations, proposed navigation, legacy progress preservation, test changes and acceptance gates.
+- Progress safety: the old body-part and e3/e4/e5 progress keys store aggregate scores that cannot be accurately split across new Lessons. The draft recommends preserving old keys unchanged and starting new lesson-level progress separately. No old data is deleted or rewritten.
+- No App source, test, CSS, HTML, Android workflow or user progress was modified; no Android build was triggered.
+- Next: review and approve the migration plan and progress-preservation policy before any App implementation or screen renumbering.
