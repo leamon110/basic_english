@@ -688,3 +688,130 @@ Next:
 2. compare its decision problem with the three physical-action tasks above;
 3. only then decide whether these topics merge or separate.
 
+
+
+## 16. Theme-boundary audit 02 — Simple Acts: movement, transfer and body posture
+
+### 16.1 Source material checked
+
+The next Simple Acts group contains:
+
+- throw
+- catch
+- hold
+- bring
+- lie
+- stand
+- sit
+- run
+- slip
+
+and also gives concrete combinations such as:
+
+- take your arm out of your coat
+- put money into your pocket
+- go quickly out of the house
+
+### 16.2 Candidate learning task A — Moving / transferring an object
+
+Examples include:
+
+- throw a ball → send the ball to a baby
+- throw over/across → send the ball over the wall / across the river
+- catch → get it in the hand
+- hold → get a grip of it / keep it / have it in the hand
+- bring delicate things → take them / come with them
+
+The main decision problem is:
+
+> **What happens to the object, where is it going, and whose point of view determines the Basic expression?**
+
+This involves:
+
+- object movement;
+- destination or path;
+- source/recipient;
+- holding vs transferring;
+- bring/take and come/go viewpoint.
+
+This is closely related to the already established Operator + Directive / source-destination framework, so the Expression System should **use that existing tool rather than create a new abstract “movement grammar” lesson**.
+
+### 16.3 Candidate learning task B — Body position and change of posture
+
+Examples include:
+
+- lie → be on it / rest on it
+- stand up → get up
+- sit → take a seat / be seated
+
+The central problem changes:
+
+> **Is the person describing a position/state, or the action that changes the body into that position?**
+
+This introduces a compact but distinct contrast:
+
+- state: be on it / be seated;
+- change into position: get up / take a seat.
+
+This is not the same decision problem as moving an object from one place to another.
+
+### 16.4 Candidate learning task C — Running and slipping
+
+Examples include:
+
+- run quickly → go quickly
+- run for health → take a run
+- run away from danger → go (off) at a run
+- slip → have a slip / have a fall
+
+These examples reinforce an important principle already seen in `speak`:
+
+> the ordinary English word does not determine one fixed Basic expression; the surrounding meaning does.
+
+For run, the relevant meaning may be:
+
+- movement speed;
+- an activity undertaken for a purpose;
+- escape/direction.
+
+For slip, the Basic expression focuses on the event/result as a noun.
+
+This makes run a useful cross-topic example rather than automatically a complete Lesson.
+
+### 16.5 Current boundary conclusion
+
+The previous bucket “移动与身体姿势” is also too broad to be treated as one established Lesson.
+
+The material currently separates into:
+
+1. **object movement / transfer / viewpoint**;
+2. **body position and posture change**;
+3. **movement-purpose / direction / accidental event**, with run and slip acting partly as cross-topic examples.
+
+The first task heavily reuses existing Operator + Directive and source/destination knowledge. It therefore should not automatically become a new “movement grammar” lesson.
+
+The second task is a genuinely different semantic decision problem: **state vs change of state**.
+
+The third task is better treated as a set of meaning contrasts until more material shows that it forms a sufficiently coherent learning unit.
+
+### 16.6 Relationship to Theme Audit 01
+
+There is now a clearer boundary between the first two Simple Acts buckets:
+
+- **physical contact / force / change of form** asks what physical effect an action produces;
+- **movement / transfer / posture** asks where an object/person is, moves, or changes position.
+
+They share Operators and Directives, but the learner's semantic decision is different.
+
+Therefore the shared grammar/tool does **not** imply that they should be one Lesson.
+
+No formal Lesson number is assigned.
+
+## 17. Current research checkpoint after Theme Audit 02
+
+Two Simple Acts areas have now been tested against the same lesson-boundary rule.
+
+The important result is that the project’s first-round labels (“eating/body action” and “movement/posture”) are useful for source organization but are **too coarse to serve as final Lesson definitions**.
+
+The next step is to audit the first Complex Acts group: **thinking, knowledge and memory**, then compare whether its learning task is of the same scale as the Simple Acts tasks already identified.
+
