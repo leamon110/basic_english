@@ -1649,3 +1649,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete step: prepare Module 1 Lesson 3 — Special Use / Meaning Narrowing.
 
+### Module 1 Lesson 3 first complete content draft (2026-11-18)
+
+- Rechecked the original English pages pp.156–157 for Special Use and p.160 for its exercise examples.
+- The source states that Special Use narrows a word's meaning, unlike expansion. It gives three patterns: material Name → particular piece (card, chalk, cloth, paper); broad class → important subclass with its own Name (shoes/boots, watches/clocks); context-selected narrower sense (ball, business man, judge, man, pictures).
+- Preserved the curtain warning: the stage-curtain use is not automatically the most common or most important meaning.
+- Added the p.160 pairs: current → electric current; engine → railway engine; rail → engine rail; ring → finger ring. The separate army / reaction / society / worm / wing exercises on the same page are expansion examples, not Special Use.
+- Created BASIC_ENGLISH_EXPRESSION_M1_L3_DRAFT.md with a direct C13 expansion / C15 narrowing contrast, source-listed patterns, project-created context examples, guided practice, answer explanations and reverse checks.
+- Updated BASIC_ENGLISH_EXPANSIONS_THINGS_QUALITIES.md and BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md.
+- This is a first complete draft, not final acceptance. Clarity, answer quality, exercise volume and actual learner time still require review. It must remain distinct from C13 expansion, C14 Quality-as-Thing and the 250 Fixed Word-Groups.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete step: review the C15 draft against the source and teaching flow, then begin Module 2 Lesson 1 — Communication & Information.
+
