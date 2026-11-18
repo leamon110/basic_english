@@ -886,3 +886,217 @@ Give a Basic sentence and ask whether it expresses capacity, possibility, duty, 
 | C09 | Identify ability, possibility, duty, advice, probability or intention | One coherent functional Lesson |
 
 The final duration and exercise volume remain open until the complete 12-Lesson Module 2 draft is available.
+
+
+---
+
+## C10 — Quantity, Amount & Degree
+
+### Teaching objective
+
+The learner distinguishes number/amount, distribution, totality and degree. The learner also recognizes that a short word such as too can express different relations in different contexts.
+
+### Proposed teaching flow
+
+#### 1. Distribution and totality
+
+Compare:
+- each: members considered separately;
+- altogether: the total amount, or in some contexts completely;
+- whole: the group taken as one complete unit.
+
+Use examples that make the difference visible: one-by-one vs total count vs the complete group.
+
+#### 2. Small and large amounts
+
+Compare:
+- few: a small number;
+- many: a large number.
+
+Keep the source's warning: when the exact amount matters, use a more explicit expression rather than relying on an unclear vague quantity.
+
+#### 3. too: amount, degree or addition
+
+Teach the source's distinct uses separately:
+
+- too many: more than enough;
+- too tired to go: degree so high that it prevents an action;
+- ill too: another/additional condition.
+
+Do not teach too as a single translation.
+
+#### 4. once: quantity or time
+
+- once = one time only belongs here;
+- once = at one time / in the past cross-links to C11.
+
+#### 5. Guided practice and reverse check
+
+Ask:
+1. Is the sentence counting separately, giving a total, or describing a whole?
+2. Is the amount small/large?
+3. Does too mean excess, disabling degree or addition?
+4. Does once mean one occurrence or a past period?
+
+Then give Basic expressions and ask the learner to reconstruct the quantity/degree relation.
+
+### Scope controls
+
+- Basic counting and number expressions are already in the 45-Step foundation; C10 teaches the source's additional contextual uses.
+- Time senses of once move to C11.
+- next to is spatial adjacency and cross-links to C04, not a time expression.
+- Do not treat all uses of too as quantity.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson is viable if the three uses of too and the two uses of once are taught as explicit contrasts. The common decision is how much, how many, how completely, or to what degree something applies.
+
+---
+
+## C11 — Time & Sequence
+
+### Teaching objective
+
+The learner identifies the exact time relation: how long ago, whether something has happened by now, whether it has not happened yet, what point a period starts from, what comes next, whether something repeats, or whether it continues always.
+
+### Proposed teaching flow
+
+#### 1. Past time and time up to now
+
+Compare:
+- ago / a long time back;
+- already / before;
+- so far / up to now;
+- yet in a negative sentence.
+
+The learner must identify the reference point: a past time, the present moment, or the period continuing to the present.
+
+#### 2. since: time or reason
+
+Teach two different relations:
+- since as a time starting point;
+- since as a reason, equivalent to because.
+
+The reason use cross-links to the sentence relation foundation; do not force it into the time rule.
+
+#### 3. next: sequence, repetition or position
+
+Compare:
+- next = after this;
+- next = do the same thing again on the next occasion;
+- next to = nearest/beside something.
+
+The last is spatial and cross-links to C04.
+
+#### 4. always: frequency or continuation
+
+Compare:
+- at all times;
+- frequently in the source's relevant context;
+- for ever when future continuation is emphasized.
+
+Do not teach always as one fixed frequency word.
+
+#### 5. Guided practice and reverse check
+
+For each sentence, ask:
+1. What is the reference time?
+2. Is the relation past, up to now, not yet, starting point, reason, sequence, repetition, adjacency or continuation?
+3. Which part of the sentence proves that reading?
+
+Then give the Basic expression and ask the learner to recover the time relation.
+
+### Scope controls
+
+- Calendar, clock and basic tense foundations are not repeated.
+- Quantity once = one time only remains in C10; past-time once is handled here.
+- Since = because is cross-linked to sentence relations.
+- next to is spatial and belongs by cross-link to C04.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson is viable. The items are diverse words, but the learner's task is consistently to identify the time/sequence relation rather than memorize a single translation.
+
+---
+
+## C12 — Context-Dependent Words & Paraphrase
+
+### Teaching objective
+
+The learner takes an ordinary-English word that is not directly available as a Basic expression, identifies what it means in this particular context, and describes that meaning with Basic words.
+
+### Proposed teaching flow
+
+#### 1. Describe a Quality with Basic words
+
+Use:
+- busy → someone working hard / having much to do;
+- deaf → someone whose hearing is bad.
+
+Ask what observable condition the ordinary adjective describes, then build a Basic description.
+
+#### 2. Compare different meanings of the same Name
+
+Use world, life, hill, home and address:
+
+- world can refer to the earth, people, or conditions/things, depending on the sentence;
+- life can mean existence, living things, or the activity of living;
+- hill can require a description based on height/shape/size;
+- home refers to the place where a person lives, not automatically a house;
+- address can mean a home location, business location or the heading of a letter.
+
+The learner should never memorize a single replacement without the context.
+
+#### 3. Context-first paraphrase method
+
+For every prompt:
+1. identify the exact intended meaning in the sentence;
+2. ignore the ordinary word temporarily;
+3. describe the referent or condition using Basic words;
+4. read the Basic description back and check whether it preserves the intended meaning.
+
+#### 4. Guided practice
+
+Use contrast pairs:
+- world as earth vs world as people/conditions;
+- life as existence vs living things vs the activity of living;
+- home vs house;
+- personal address vs business address vs letter heading.
+
+Ask the learner to explain why one Basic paraphrase does not fit all contexts.
+
+#### 5. Reverse check
+
+Give a Basic description and ask which context-dependent sense it could represent. Where more than one sense remains possible, the learner must request or use more context rather than guess.
+
+### Scope controls
+
+- C12 starts from an ordinary-English word outside the Basic set and constructs a Basic paraphrase.
+- C15 starts from a Basic word and interprets a contextually narrowed use. The direction of the task is different.
+- C13/C14 explain how an already-known Basic word can carry a source-recognized related meaning; C12 does not.
+- Do not teach busy/deaf as Names of Qualities expansions.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson is viable. The words are diverse, but the common operation is context-first paraphrase: identify the intended sense, then describe it with Basic words. The contrast examples are essential; one-to-one replacement cards would be incorrect.
+
+---
+
+## Module 2 flow checkpoint — all C01–C12 drafted
+
+| Candidate | Main learner decision | Current flow result |
+|---|---|---|
+| C01 | Identify communication event and roles/medium | One Lesson viable |
+| C02 | Identify bodily intake/expulsion or contact/impact | One Lesson viable |
+| C03 | Distinguish physical action, damage/effect and result | One Lesson viable; Step 17 prerequisite |
+| C04 | Identify movement, path, destination, viewpoint and posture | One Lesson viable |
+| C05 | Identify the mental/knowledge operation or relation | One coherent cognitive Lesson |
+| C06 | Identify experience, attitude, preference, desire or need | One coherent affective Lesson |
+| C07 | Identify exchange, sale arrangement, payment/value or commitment | One compact Lesson viable with selected fixed-group reinforcement |
+| C08 | Distinguish state, entry, process, beginning and ending | One coherent process Lesson |
+| C09 | Identify ability, possibility, duty, advice, probability or intention | One coherent functional Lesson |
+| C10 | Identify distribution, totality, amount and degree | One Lesson viable with explicit too/once contrasts |
+| C11 | Identify temporal position, starting point, sequence, repetition or continuation | One Lesson viable with cross-links for non-time senses |
+| C12 | Identify contextual meaning of a non-Basic word and paraphrase it | One coherent synthesis Lesson |
+
+**All 12 Module 2 candidate flows now have a first draft.** The next step is a whole-course audit of lesson size, overlap, prerequisite order and repeated examples across all 15 flows. No final syllabus acceptance or App integration is made by this draft.
