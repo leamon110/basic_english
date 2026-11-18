@@ -2092,3 +2092,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated BASIC_ENGLISH_EXPRESSION_CURRICULUM.md with the numbering legend and complete disposition of the five early prototypes; updated the knowledge map with checkpoint 89. Changes are documentation-only; no App source or Android workflow input changed.
 - Next concrete action remains Module 2 Lesson 11 — Time & Sequence. Keep using Module/Lesson labels for the teaching sequence and C IDs only as research cross-references.
 
+
+
+### Module 2 Lesson 11 — Time & Sequence source audit (2026-11-19)
+
+- Reopened the original English scan of *The ABC of Basic English*, printed pp.258 and 260. The relevant pages were visually checked directly, not inferred only from the project index.
+- Verified the full source set: once (past-time sense) → at one time / in the past; a long time ago → a long time back / in the old days; already (completed event) → in the past / before; already there → is there now; so far / up to now; negative yet → still not / so far he has not come; and yet as a joining statement → at the same time.
+- Verified since's three contexts: since last year in the source's friends example is paraphrased at sentence level as not having seen them for a long time; since then → after then; since it is late → because. The first is not recorded as a universal word-for-word substitution.
+- Verified next's three contexts: after this; do it again on the next occasion; next to → nearest to it (spatial, C04 cross-link).
+- Verified always: at all times; in some connections frequently; in a future-focused statement, for ever is a better way of putting it. Without change and without end are noted by the source as suitable in other connections, not as universal direct replacements.
+- Updated BASIC_ENGLISH_NAMES_OF_ACTS.md, BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md and the current C11 row in BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md. Added checkpoint 90 to BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md.
+- This source audit does not change the accepted architecture (2 Modules / 15 Lessons). C11 remains Module 2 · Lesson 11; C11 is only the internal Candidate ID.
+- No App source, Android workflow input or audio assets changed; no Android build was triggered.
+- Next concrete action: author and internally review BASIC_ENGLISH_EXPRESSION_M2_L11_DRAFT.md. Keep the separate contexts explicit and do not turn the source examples into one-to-one translation rules.
