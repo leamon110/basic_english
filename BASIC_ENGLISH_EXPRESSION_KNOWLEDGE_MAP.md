@@ -2501,3 +2501,15 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - No App source or Android workflow input changed; no build was triggered.
 - Next: author Module 2 Lesson 9 — Ability, Obligation & Intention from the verified source distinctions.
 
+## 86. Module 2 Lesson 9 — Ability, Obligation & Intention first draft and internal review (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L9_DRAFT.md from the accepted C09 flow and original *The ABC of Basic English* printed p.256. The conditional-boundary reference to unless → if ... not is identified as p.260 material, not a C09 modal rule.
+- Verified can: be able to do it (ability) / it is possible for me to do it (possibility).
+- Verified ought: it is right / wise for me to do it (advisability); it is my business to do it (duty/responsibility); it is probable from the fact that it will be so (probability from a fact). Corrected the source-index singular “fact”.
+- Verified shall: in non-question statements → will; “Shall I do it?” → “Am I going to do it or not?” or “Am I wise to do it?” according to context.
+- Confirmed the current 850-word arrays do not contain can, ought or shall; able, possible, right, wise, business, probable, fact and will are present. The fixed group be able to reinforces only ability.
+- Internal answer audit: A 4/4, B 5/5, C 4/4, D 2/2, E 10/10 — **25 closed prompts and 25 matching answers**. The independent-construction task is explicitly unscored by the current App.
+- C09 is source-reviewed and internally reviewed, but not user-tested or App-integrated. Actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no build was triggered.
+- Next: begin Module 2 Lesson 10 — Quantity, Amount & Degree, preserving the distinctions among each, altogether, whole, few, many, too and once.
+
