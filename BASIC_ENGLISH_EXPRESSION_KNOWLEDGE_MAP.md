@@ -2201,3 +2201,13 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - The destroy / put an end to boundary remains restricted to animals, as in the source. Other C03 action/result distinctions remain unchanged.
 - This completes the source-wording correction pass. Final answer coverage, exercise volume and actual learner time still require review.
 
+## 63. C03 internal source and teaching review complete (2026-11-18)
+
+- Rechecked the saved C03 draft against original pp.246–247 and p.254 after the two source-fidelity corrections.
+- Confirmed the complete distinction set: get it cut; the thread is broken / get it broken; the plate may be smashed; a plate breaking by itself → come to bits; an object destroyed by burning/smashing/breaking; animals destroyed by putting an end to them; hurt → give them pain; possible wounds; wounds may do serious damage.
+- Confirmed that “put an end to them” is restricted to the animal example in the source, and “give wounds” is not a source expression. The corrected source index and lesson now preserve the wording.
+- Confirmed Step 17 sections 4–6 are the existing prerequisite and C03 only applies the structures to its own examples. The lesson does not reteach the passive/get-passive foundation.
+- Checked that all closed exercises have answer keys and that C02 contact / C04 movement boundaries are explicit. The open construction task is not claimed to be automatically scored.
+- C03 is source-reviewed and internally reviewed, but not user-tested or App-accepted. Actual learner time remains unmeasured.
+- Next: author Module 2 Lesson 4 — Movement & Position.
+
