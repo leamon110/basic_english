@@ -2014,3 +2014,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - The accepted sequence is C08 — State and Process: Change, Entry & Ending; C09 — Ability, Obligation & Intention.
 - Corrected the C07 draft and next-step records to point to C08 State and Process. No curriculum scope change was made.
 
+### C08 source-fidelity correction — begin / finish and process examples (2026-11-18)
+
+- Reopened the original The ABC of Basic English, printed p.256, from the full-text scanned volume and compared the exact passage with the C08 source index, candidate and flow.
+- Verified the source mappings: grow taller/higher/fatter/greater → get + Quality; be growing → be in the process of growth/development; sleep → go to sleep / be in sleep; die → go to one's death / come to one's end / take one's last breath; begin → make a start.
+- Corrected a material error in the previous C08 planning: the sentence “everything that begins will later finish” is explanatory English, not a Basic expression. The passage gives no Basic rendering for the general verb finish. The current 850-word arrays in docs/js/data.js also do not contain finish. Do not teach finish → finish or claim that finish is an accepted Basic word.
+- Reworked the C08 flow and candidate scope around change in Quality, process under way, entry into a state, state itself, event occurrence and ending/cessation.
+- Fixed-group placement refined: in motion / in use (state or activity); go to sleep (entry); lights go out (state change); come to a stop (reaching a stopped state); put a stop to (causing cessation); take place (event occurrence). “In the end” is primarily C11 Time & Sequence, with a C08 cross-link only when it describes a process outcome.
+- Updated BASIC_ENGLISH_NAMES_OF_ACTS.md, BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md, BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md and BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md (checkpoint 83).
+- Startup facts for this session: branch head at start cb52ec5676a56e860ce727c6b653c653eed3ce8c; Run 48 / 44197915524 remains latest, completed / success, built commit 9a1793905b4abc7d24bd1c598a5a3004450f6748. Branch run list returned 48/48 and all were completed; no active run exists. Run 48 job had 18 main steps + 5 post-job steps, all successful; audio 850/850 restored from cache, 0 downloads, 0 errors; Gradle BUILD SUCCESSFUL; APK artifact 14379604453 and coverage artifact 14380462964 are present and unexpired. Compared with Run 48, the branch was 253 commits ahead / 0 behind across 24 changed files, all root-level Markdown; no workflow-watched path changed. Workflow concurrency is cancel-in-progress: true. No new build was triggered.
+- This correction changes only root-level Markdown research files. No App source or Android workflow input changed.
+- Next concrete action: author Module 2 Lesson 8 — State and Process: Change, Entry & Ending from the corrected source mappings; then review its closed answer keys, boundary checks and lesson volume. No App integration or APK build is planned at this stage.
+
