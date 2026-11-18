@@ -4,6 +4,8 @@
 > **来源基础**：C. K. Ogden, *The ABC of Basic English*, “Some Common Needs: Simple Acts”, p.244。
 > **课程性质**：原作者的三个 speak 例子是原文；本课的分析步骤、练习题和评分标准是本项目新增的教学设计。
 
+> **当前课程映射：** 本文件是正式课程架构确定前形成的 speak 教学原型。其 speak 三语境内容将作为 Module 2 · Lesson 1（C01 — Communication & Information）的开场部分复用；它不是已接受的 2 Modules / 15 Lessons 之外的额外一课。
+
 ## 1. 本课目标
 
 完成本课后，学习者应能：
