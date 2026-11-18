@@ -1331,3 +1331,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Next concrete action: draft short real teaching-unit outlines and sample exercises for the uncertain boundaries, beginning with (a) bodily action/contact vs physical effects/result and (b) object transfer vs body position/posture. Then test knowledge/learning/teaching, exchange/commitment, state/process, modality/condition, quantity/time, and expansion/narrowing. Only after these tests should the final Module/Lesson count be decided.
 - No App source changed and no Android build was triggered.
 
+
+
+### Teaching-size test 01 — Bodily action/contact vs physical effects/result (2026-11-18)
+
+- Built short teaching outlines and source-based practice prompts for candidate 02 and candidate 03; recorded them in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md`.
+- Candidate 02 can remain one compact bodily-action theme only if it keeps two visible subtopics: (A) intake/biting/expulsion; (B) contact/impact/rubbing. The common task is identifying the actual bodily event and body/object relation; there is no single grammar formula.
+- Candidate 03 is a genuinely different task: distinguish an action that changes/damages something, a resulting state, and a change that happens by itself. The source's cut/break examples explicitly concern changes of form. Keep it separate and rename it **Physical Effects: Damage, Change & Result**.
+- Boundary outcome: retain 02 and 03 as separate provisional Lessons; candidate 02's internal unity remains conditional on keeping its two sections explicit. No final Module/Lesson count assigned.
+- No App code changed and no Android build triggered.
+- Next concrete step: perform the same teaching-size test for candidate 04 (object transfer vs body position/posture), then test the knowledge/learning/show material.
