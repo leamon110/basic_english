@@ -43,15 +43,14 @@ The source later gives two related but different ideas:
 |---|---|---|
 | a thing is destroyed | it has been burned / smashed / broken | The source describes the physical result of destruction |
 | destroy an animal | put an end to it | The animal's life is ended |
-| hurt someone | give them pain / possibly give wounds | The person suffers pain or wounds |
-| wounds may do serious damage | do serious damage | The source describes this as a possible effect of wounds |
+| hurt someone | give them pain; possibly wounds which may do serious damage | Pain is caused; wounds are a further possible effect |
 | an attempt to destroy an animal fails | do no more than hurt it | The result is injury, not destruction |
 
 A few distinctions matter:
 
 - **destroy** does not have one fixed Basic replacement. For an object, the source describes the result as having been burned, smashed or broken. For animals, it gives **put an end to them**.
 - **hurt** describes pain or wounds. The source adds that wounds may do serious damage. Hurt is not simply another word for **hit**.
-- **hit / give a blow** belongs to C02 when the focus is forceful contact. **Hurt / give pain / give wounds** belongs here when the focus is the injury; **do serious damage** describes a possible effect of wounds.
+- **hit / give a blow** belongs to C02 when the focus is forceful contact. **Hurt / give them pain** belongs here when the focus is injury; **wounds may do serious damage** describes a further possible effect.
 - The source says that some attempts at destroying animals do no more than hurt them. That contrast helps show that causing pain or wounds is not the same as destroying.
 
 ## 3. A short reminder from Step 17
@@ -96,7 +95,7 @@ The correct expression depends on the event and result, not only on the ordinary
 
 Choose the best description.
 
-1. A person cuts through a thread and gets it cut.
+1. Someone gets a thread cut.
    - A. The object is caused or arranged to be cut
    - B. The thread breaks by itself
    - C. The object is moved across a place
@@ -148,10 +147,10 @@ Choose the expression that preserves the result.
    - B. give them a song
    - C. have a meal
 
-4. A person is hurt and has wounds.
-   - A. give wounds
-   - B. put it out of the mouth
-   - C. make a statement
+4. A person is hurt and has wounds. What further effect does the source mention?
+   - A. The wounds may do serious damage
+   - B. The person comes to bits
+   - C. The person is sent across the river
 
 5. An attempt to destroy an animal does not destroy it but causes pain and wounds.
    - A. it is only hurt
@@ -163,7 +162,7 @@ Choose the expression that preserves the result.
 1. A — The source gives burning as one concrete way of destroying an object.
 2. A — Put an end to it expresses bringing it to an end.
 3. A — The source uses give them pain for hurt.
-4. A — The source includes giving wounds as a way of describing hurt.
+4. A — The source says that wounds may do serious damage.
 5. A — The source explicitly contrasts an unsuccessful attempt to destroy with the lesser result of hurting.
 
 ### C. Keep the neighbouring lessons separate
@@ -192,8 +191,7 @@ Explain what each Basic expression says about the physical event:
 6. burn it / smash it / break it;
 7. put an end to it;
 8. give them pain;
-9. give wounds;
-10. wounds may do serious damage.
+9. wounds may do serious damage.
 
 **Suggested answers**
 
@@ -205,8 +203,7 @@ Explain what each Basic expression says about the physical event:
 6. Destroy the object through a concrete physical action.
 7. Bring the animal's life to an end.
 8. Cause someone to feel pain.
-9. Cause wounds.
-10. The wounds may cause serious harm.
+9. The wounds may cause serious harm.
 
 ### E. Step 17 prerequisite check
 
