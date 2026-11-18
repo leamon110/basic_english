@@ -493,3 +493,132 @@ The priority fixed groups provide natural reinforcement:
 - Candidate 08 survives only in the narrowed transaction/commitment scope; the old “Social Exchange, Relations & Participation” label is withdrawn.
 - Candidate 09 survives with the process/state-transition objective; its source examples and selected fixed groups can support one concise lesson.
 - No new total Lesson count is assigned.
+
+
+## Teaching-size test 05 — Other Suggestions, checked against the original English pages
+
+The original English pages pp.256, 258, 260 and 262 have now been inspected directly. This test therefore uses the actual examples on those pages, not only the shorter project index.
+
+### Candidate 10 — Ability, Obligation & Intention
+
+The source groups can, ought and shall together as words used in a special way with Names of Acts.
+
+The source distinctions are:
+
+- can: ability (“be able to”) or possibility (“it is possible for me to do it”);
+- ought: right/wise action or one's business/duty to do something;
+- ought in a statement about what is expected to happen: probability based on the facts;
+- shall in non-question statements: will;
+- “Shall I do it?”: asking whether one is going to do it or whether it is wise to do it.
+
+**Teaching objective:** identify the speaker's relation to the action — ability, possibility, duty/advisability, probability or intention — before selecting the Basic expression.
+
+**Project-created test prompts based on the original page:**
+
+1. “I can do it.” Is the meaning personal ability or possibility?
+2. “It is possible for me to do it.” Express possibility without changing it into an obligation.
+3. “I ought to do it.” Is the intended sense that it is right/wise, or that it is one's business to do?
+4. “The train ought to be here in half an hour.” Here the source explains an expectation based on facts, not a duty imposed on the train.
+5. “Shall I do it?” Distinguish asking about intention from asking whether the action is wise.
+
+**Test result:** the three words are sufficiently related for one compact lesson because the learner is deciding what stance or relation the speaker expresses toward an action. The individual meanings must remain distinct; they are not interchangeable modal replacements.
+
+**Decision:** retain one provisional Lesson, renamed **Ability, Obligation & Intention**. Do not include unless in this lesson.
+
+### Candidate 11 — Quantity / Amount and Time / Sequence
+
+The original pages put number/amount examples first, then move to time words. The learning decisions are different.
+
+**A. Quantity, amount and degree**
+
+The source covers:
+
+- each → every one separately;
+- altogether → total amount, or quite/completely in a different use;
+- whole → all the group;
+- few → a small number;
+- many → a great number / quite a number;
+- too many → more than enough / overmuch;
+- too tired to go → so tired that one cannot go;
+- ill too → ill in addition;
+- once → one time only, in one use.
+
+**B. Time and sequence**
+
+The source covers:
+
+- ago → a long time back / in the old days;
+- already → in the past / before;
+- so far / up to now → what has happened up to the present;
+- yet in a negative sentence → still not / so far not;
+- and yet → at the same time;
+- since as a time relation → after then / for a long time, depending on construction;
+- since as a reason → because;
+- next → after this / again / nearest to it;
+- always → at all times, sometimes frequently; for ever when future continuation is emphasized.
+
+**Project-created test prompts:**
+
+1. “Each person gets one.” Preserve the separate distribution to every person.
+2. “Six altogether.” Express the total, not six separate events.
+3. “A few people came.” Use a small-number expression; do not replace it with many.
+4. “Too tired to go.” Express the degree that prevents the action.
+5. “He has not come yet.” Preserve that the event has not happened up to now.
+6. “Since last year.” Express a time relation.
+7. “Since it is late, let us go to bed.” Here since means because, not a starting time.
+8. “The house next to this one.” Here next means nearest, not the next event in time.
+9. “I will always be your friend.” When future continuation is emphasized, compare always with for ever.
+
+**Test result:** quantity/amount and time/sequence have different learner decisions. The source's placement next to each other does not make them one teaching task. Both groups have enough indexed distinctions to warrant separate short-unit prototypes; once needs to be cross-linked because it can express either one-time frequency or a past-time sense.
+
+**Decision:** split candidate 11 into two provisional topics: **Quantity, Amount & Degree** and **Time & Sequence**. Do not preserve the combined title merely to keep the Lesson count unchanged.
+
+### Condition: unless
+
+The source gives one compact transformation:
+
+- unless → if ... not.
+
+This is a conditional-clause relation, not a modal meaning. The original 45 Steps / Teaching sentence-structure foundation is the natural place to teach the conditional construction. It can be linked from the Expression System, but one source example does not justify a standalone Lesson.
+
+### Candidate topic — Context-dependent paraphrase of qualities and common names
+
+The original pages group two kinds of examples:
+
+**Qualities**
+
+- busy → one with much business; more naturally, someone who is working hard / has much to do;
+- deaf → someone whose hearing is bad.
+
+**General names**
+
+- world → earth / everyone / things or conditions, according to context;
+- life → existence / living things / all living things / living as an activity;
+- hill → slope / small mountain / highlands, depending on the landform and area;
+- home → a place where one is living / being with one's family;
+- address → the place where one lives / the place of business / the heading at the top of a letter.
+
+**Teaching objective:** identify the intended meaning of an ordinary word in its sentence, then express that meaning with the appropriate Basic words. The task is not to interpret an expanded meaning of a Basic word; it is to reconstruct the ordinary-English meaning in Basic.
+
+**Project-created test prompts:**
+
+1. “He is busy.” Choose between “working hard” and “has much to do” according to the context.
+2. “He is deaf.” Express the condition through hearing.
+3. “The world is shocked.” Do not use earth; the source gives everyone.
+4. “The world is changing.” Choose things or conditions, not everyone.
+5. “Life has existence.” Distinguish existence from living things.
+6. “The hill is steep.” Choose a suitable Basic landform description such as slope or small mountain.
+7. “He is happy at home.” Distinguish a place where he lives from being with his family.
+8. “Write your address.” Distinguish a private address from a business address or letter-heading.
+
+**Test result:** these examples share a practical Meaning → Basic task: the word cannot be translated in isolation; first identify the contextual sense, then choose a Basic description. The Quality examples and general-name examples are different subgroups, but the same decision method applies. The indexed material is sufficient for a compact lesson prototype.
+
+**Decision:** create one provisional Module 1 topic, **Context-Dependent Words & Paraphrase**, containing the two subgroups. This is not the “Special Use / Meaning Narrowing” topic from Names of Things and Qualities; it belongs to ordinary-meaning-to-Basic expression.
+
+### Boundary decision after Teaching-size test 05
+
+- Keep one modality Lesson: Ability, Obligation & Intention.
+- Split Quantity/Amount/Degree and Time/Sequence into separate candidate Lessons.
+- Move unless to conditional sentence-structure foundations; no standalone Lesson.
+- Move busy/deaf and world/life/hill/home/address into one Module 1 candidate topic: Context-Dependent Words & Paraphrase.
+- The former candidate 14 label “Special Use & Contextual Meaning” is withdrawn. The Special Use / narrowing material from Names of Things and Qualities remains a separate Module 2 question to test.
