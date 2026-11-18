@@ -1977,7 +1977,7 @@ Progress:
 - Remaining: 20 other Operations / Directions uses and 100 uses from the rest of the Basic word list = **120 items**. The candidate progress note has been corrected below to retain this exact count.
 
 
-## 42. Fixed Word-Groups instance index — all 200 non-priority items complete
+## 42. Fixed Word-Groups instance index — all 250 source items complete
 
 The original printed pp.216–242 have now been reviewed across all English pages in the scan. The new instance index contains all four source parts:
 
@@ -1986,9 +1986,9 @@ The original printed pp.216–242 have now been reviewed across all English page
 - C: 10 additional Operations/Directives × 2 uses = 20;
 - D: other Basic word classes = 100 (Operations 13; General Names 51; Picturable Things 18; Qualities 15; Opposites 3).
 
-Count check on the saved index tables: **50 + 80 + 20 + 100 = 250 rows/items** for the 250 source structure. The separate A Basic Selection list of 50 priority groups is separately indexed and is not included in that 250 count.
+Count check on the saved index tables: **50 + 80 + 20 + 100 = 250 rows/items** for the 250 source structure. The separate A Basic Selection list of 50 Most Necessary groups is a priority subset selected from those 250, not 50 additional groups; it is cross-mapped separately.
 
-The 200 items outside the priority list are now all individually summarized in Chinese and provisionally mapped to C01–C15, foundation or reference. The entries are meaning summaries, not verbatim transcription. Grouped source examples retain their original numbering. This closes the former “200 items not indexed” gap at the level of individual source-item coverage.
+All 250 source items are now individually summarized in Chinese and provisionally mapped to C01–C15, foundation or reference. The entries are meaning summaries, not verbatim transcription. Grouped source examples retain their original numbering. This closes the former instance-level source coverage gap for the 250 Fixed Word-Groups.
 
 ### C07 size retest
 
