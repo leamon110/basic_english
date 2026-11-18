@@ -1,10 +1,77 @@
-# Basic English Expression System — Candidate Module / Lesson Structure v0.2
+# Basic English Expression System — Candidate Module / Lesson Structure v0.3
 
-> **Status: v0.2 is a revised working candidate after six teaching-size tests. It is not the final syllabus. The original v0.1 draft is retained below as a historical record and is explicitly withdrawn.**
+> **Status: v0.3 is the current working candidate after source-coverage, dependency and teaching-size audits. It is not the final syllabus. v0.1 and v0.2 are retained below as historical drafts and are explicitly withdrawn.**
 >
 > This structure is the first result after auditing the major source groups by learner decision problem. It deliberately does not inherit the source's Simple Acts / Complex Acts / Other Suggestions headings as Lesson boundaries.
 
-## Current revised candidate v0.2 — 2 Modules / 14 provisional Lessons
+## Current revised candidate v0.3 — 2 Modules / 15 provisional Lessons
+
+**The count is an outcome of the source and teaching-size tests, not a target.** The additional Lesson in Module 1 is based on the complete p.154/p.160 source review: Names of Things has a broad set of expansion relations, while Names of Qualities includes both quality extensions and a substantial Quality-as-Thing group. These are now treated as separate teaching tasks, not split merely to match word classes.
+
+### Module 1 — Understanding Basic Word Meanings
+
+Core operation: identify the root meaning → identify the source-supported semantic relation or contextual narrowing → interpret the word in context.
+
+| Candidate ID | Provisional Lesson | Scope and boundary |
+|---|---|---|
+| C13 | **Names of Things — Meaning Expansion** | Body/structure, sensory, use/behavior, “as if”, cause/process, part/whole, substance/object and other source-recognized relations. Teach representative examples by relation family; keep the full index as reference. |
+| C14 | **Names of Qualities — Meaning Expansion & Use as Things** | Quality extensions through human response/associated properties, plus the source-listed Quality words that also function as Names of Things. Keep the two subgroups explicit. |
+| C15 | **Special Use — Meaning Narrowing** | Material-name uses, important subclasses and contextually expected narrower senses. Distinguish from expansion and from fixed-word-group idioms. |
+
+### Module 2 — Expressing Common Meanings in Basic English
+
+Core operation: identify the actual ordinary-English meaning in context → choose/construct a Basic expression → reverse-check the meaning.
+
+| Candidate ID | Provisional Lesson | Scope and boundary |
+|---|---|---|
+| C01 | **Communication & Information** | speak, tell, sing, hear, listen, write, read, send; include all senses of show and the “try to show interest” example as one contrast set. “Speak a language” cross-links to C05/C09. |
+| C02 | **Bodily Action & Contact** | eat, bite, spit; touch, hit, scratch. Keep intake/expulsion and contact/impact as two explicit sections. |
+| C03 | **Physical Effects: Damage, Change & Result** | cut, break, smash, destroy, hurt. Distinguish caused action, physical damage/change, resulting state and self-occurring change. Include a short be/get + past-participle result pattern. |
+| C04 | **Movement & Position: Transfer, Posture & Viewpoint** | throw, catch, hold, bring, lie, stand, sit, run, slip; include source/destination/path examples. Keep object transfer and body position/posture as two sections. |
+| C05 | **Thinking, Knowledge, Memory & Learning** | think, know, understand, mean, remember, forget, learn, be taught, teach. |
+| C06 | **Feeling, Preference, Desire & Need** | feel, like, want, need. “Feel a wall” cross-links to C02; “show interest” stays in C01's show contrast set and links here by meaning. |
+| C07 | **Exchange, Sale & Commitment** | buy, sell, keep goods for sale, promise to pay later; “let a house” is a directly relevant fixed-group reinforcement. |
+| C08 | **State and Process: Change, Entry & Ending** | grow, be growing, sleep, die, begin, finish; reinforce with relevant fixed groups such as in motion, in use, come to a stop, go to sleep, in the end, take place and put a stop to. |
+| C09 | **Ability, Obligation & Intention** | can, ought, shall. Teach ability/possibility, duty/advisability, probability and intention inside this Lesson. |
+| C10 | **Quantity, Amount & Degree** | each, altogether, whole, few, many, too, once. Cross-link the past-time sense of once to C11. |
+| C11 | **Time & Sequence** | ago, already, yet, since, next, always; preserve the multiple meanings of since, next and always, and the past-time sense of once. |
+| C12 | **Context-Dependent Words & Paraphrase** | busy, deaf, world, life, hill, home, address. This is ordinary-English-to-Basic paraphrase, not Basic-word expansion or narrowing. |
+
+### Cross-cutting material and foundation
+
+- 850 words, Operators, Directives, basic word forms and sentence structure remain foundations in Structured Teaching / the original 45 Steps. The Expression Lessons apply them rather than repeat the full explanations.
+- -er / -ing / -ed remains a word-form foundation with selected semantic examples; it is not a separate Expression Module.
+- The 250 Fixed Word-Groups remain phrase-level reinforcement. The 50 Most Necessary groups have all been mapped; the other 200 are not yet individually transcribed in the current index.
+- unless → if ... not belongs to conditional sentence-structure foundations, not C09.
+- find / lose / discover are cross-linked by actual meaning: encounter/location → C04; seeing that something is happening → C01; knowledge/discovery → C05; inability to locate → C04/C05; an object being taken away → C04.
+- All show senses remain together in C01; “show interest” links to C06 but is not duplicated.
+- try remains a supporting “make an attempt” pattern inside the show example, not a separate Lesson.
+- finish remains in C08 as a contrast where the source itself uses the word directly.
+
+### Current evidence and remaining work
+
+- Seven teaching-size/source-boundary tests have been recorded.
+- All 91 currently indexed Simple Acts / Complex Acts rows have a primary home or explicit cross-link.
+- All 24 Other Suggestions target words/categories have a current destination.
+- All 50 Most Necessary Fixed Word-Groups have been reviewed and placed in a Lesson, foundation topic or cross-topic reference.
+- The current candidate has been compared with the 13 Structured Teaching units, the 45-Step source map, and the two existing Expression prototypes.
+- Module order recommendation: Module 1 (C13–C15) before Module 2 (C01–C12), aligned with the 1932 source sequence and the dependency of some mental/feeling expressions on expanded meanings.
+
+Still required before final acceptance:
+
+1. test the full 15-Lesson sequence as a learner progression;
+2. decide the exact foundation prerequisites/reminders for C03 and C09;
+3. check every adjacent Lesson for remaining overlap or excessive size;
+4. keep the 200 other Fixed Word-Groups as an explicit coverage gap until their examples are indexed;
+5. reconcile current App prototype labels with the final display numbering in a separate migration plan.
+
+**No final syllabus or App Lesson IDs are assigned yet.** The 15 is a provisional candidate count, not a project commitment.
+
+---
+
+## Historical candidate v0.2 — withdrawn after complete p.154/p.160 review
+
+
 
 **The count is an outcome of the revisions, not a target.** Compared with v0.1, one mixed Lesson was dissolved, one mixed topic was narrowed, Quantity and Time were separated, Things and Qualities expansion were combined, and the contextual-paraphrase material was moved out of Module 2 into Module 1. The number happens to remain 14; it is not being preserved as a quota.
 
@@ -57,7 +124,7 @@ Core operation: identify the root sense → identify the source-supported relati
 5. Other Suggestions: modality, quantity, time, condition, quality paraphrase and contextual names.
 6. Module 2: Things/Qualities expansion vs Special Use / narrowing.
 
-**Still required before accepting v0.2:**
+**What remained open when v0.2 was withdrawn:**
 - Check overlap and prerequisites across all 14 candidates as a whole.
 - Verify every currently indexed Some Common Needs example has a primary home or an explicit cross-link.
 - Check the 50 priority fixed groups for natural insertion without forcing them into unrelated Lessons.
@@ -65,7 +132,7 @@ Core operation: identify the root sense → identify the source-supported relati
 - Keep the 200 other Fixed Word-Groups as an acknowledged coverage limitation until their individual examples are indexed.
 - Confirm the module order and whether any adjacent candidate Lessons should merge after the whole-sequence review.
 
-**No final syllabus or App Lesson IDs are assigned yet.** v0.2 is the current working candidate for the next coverage/prerequisite audit.
+**No final syllabus or App Lesson IDs were assigned in v0.2.** This draft was superseded after the p.154/p.160 scope review.
 
 ---
 
