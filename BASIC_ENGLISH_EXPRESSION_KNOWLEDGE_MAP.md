@@ -2587,3 +2587,13 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Run 48 job 134444107771 had 23 steps (18 main + 5 post-job), all successful. Logs confirm 850/850 restored from cache, 0 new downloads, 0 errors, Gradle BUILD SUCCESSFUL. APK artifact 14379604453 (9,272,570 bytes) and coverage artifact 14380462964 (21,467 bytes) are unexpired.
 - Compared the current branch with the Run 48 build SHA: 303 commits ahead / 0 behind; 27 changed files, all root-level Markdown. The workflow watches `docs/**`, `android-offline/**`, `scripts/**` and its own workflow file, and has `cancel-in-progress: true`. No watched path changed and no build was triggered.
 - Next: author `BASIC_ENGLISH_EXPRESSION_M2_L12_DRAFT.md`, keeping the seven target words' distinct contexts, and audit the closed answer keys and boundary checks.
+## 93. Module 2 Lesson 12 — first complete draft and internal review (2026-11-19)
+
+- Created `BASIC_ENGLISH_EXPRESSION_M2_L12_DRAFT.md` (349 lines) from the source-checked C12 flow and *The ABC of Basic English*, printed pp.260–262.
+- The lesson covers all seven source targets: busy, deaf, world, life, hill, home and address. It preserves the source contexts: busy's two preferred work descriptions; deaf as a hearing condition; world as physical planet / people collectively / changing conditions; life as abstract existence / living objects / the -ing activity used as a Name; hill as one raised landform / a region of hills; home as actual residence / family state; address as private / business / letter heading.
+- Verified all seven target words are absent from both identical project 850-word files. The source's regional term highlands is also absent from the 850 list and is not taught as a Basic entry.
+- Internal answer audit: A 4/4, B 6/6, C 8/8, D 4/4 = 22 multiple-choice prompts and 22 matching answer keys. Reverse understanding: 15 prompts and 15 suggested answers. Independent construction: 4 open tasks, explicitly not auto-scored by the current App.
+- The lesson explicitly distinguishes C12 ordinary-English-to-Basic paraphrase from C15 Basic-word meaning narrowing and C13/C14 meaning expansion. unless remains in the conditional foundation; finish is not added.
+- C12 is complete at the document/internal-review level only. Learner time, user feedback and App/device acceptance remain unmeasured; the lesson is not App-integrated.
+- No App source, Android workflow input or audio assets changed; no Android build was triggered.
+- Next concrete action: whole-course cross-Lesson audit of all 15 accepted drafts for duplicate teaching examples, unclear boundaries, prerequisite gaps and inconsistent terminology.
