@@ -2513,3 +2513,22 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - No App source or Android workflow input changed; no build was triggered.
 - Next: begin Module 2 Lesson 10 — Quantity, Amount & Degree, preserving the distinctions among each, altogether, whole, few, many, too and once.
 
+## 87. Module 2 Lesson 10 — Quantity, Amount & Degree source audit (2026-11-18)
+
+- Rechecked the original *The ABC of Basic English*, printed pp.257–258, against the C10 flow, source index and accepted curriculum.
+- Verified the source distinctions:
+  - each → every one separately (distribution to members one by one);
+  - altogether → total count (“six of them altogether”; the source explains the result with “there would make six”); in “altogether wrong” it means quite or completely so;
+  - whole group → all the group; whole story → the complete story;
+  - few → a small number (the source says “few men” are frequently two or three, but advises “a small number” when the exact amount is uncertain);
+  - many → a great number / quite a number;
+  - too many → more than enough / overmuch;
+  - too tired to go → so tired that the person is unable to go;
+  - ill too → ill in addition;
+  - once → one time only OR at one time / in the past. The past-time use remains cross-linked to C11.
+- The three uses of too remain separate: excess quantity, degree that prevents an action, and addition. The two uses of once remain separate: frequency/count and past time.
+- Updated BASIC_ENGLISH_NAMES_OF_ACTS.md and the C10 section of BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md to preserve the complete source distinctions for altogether and whole.
+- Current 850-word arrays do not include each, altogether, whole, few, many, too or once; the lesson therefore teaches the source's Basic expressions and contextual paraphrases, not these words as 850 entries.
+- No App source or Android workflow input changed; no build was triggered.
+- Next: author Module 2 Lesson 10 — Quantity, Amount & Degree, with explicit exercises for each/altogether/whole, few/many, all three meanings of too, and both meanings of once.
+
