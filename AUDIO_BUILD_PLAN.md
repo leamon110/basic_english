@@ -1303,3 +1303,31 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is the first candidate structure produced from the audited source material rather than from a preselected Lesson count. It now needs a source-coverage and lesson-size stress test before final numbering.
 - Updated candidate structure document and kept no formal final Lesson numbers in the App.
 - No App code changed and no Android build triggered.
+
+
+### Candidate Structure v0.1 — first source-coverage / lesson-coherence stress test (2026-11-18)
+
+- Repeated the mandatory startup check before continuing: read `AGENTS.md` (53 lines) and the complete `AUDIO_BUILD_PLAN.md` (1,306 lines); fetched the live branch head and latest Actions state; inspected Run 48 job steps, logs and artifacts.
+- Startup facts: branch head at the beginning of this work was `abf578c64eb75675c93df949798346802307b7b4`; Run 48 / `44197915524` remains the newest run, completed / success, built commit `9a1793905b4abc7d24bd1c598a5a3004450f6748`. All 23 main/post-job steps completed successfully. Logs confirm the Meaning-to-Basic and Expression Lesson 02 validations passed, final human audio coverage 850/850, 0 new downloads, 0 errors, Gradle `BUILD SUCCESSFUL`, and successful APK / coverage artifact uploads. Artifact IDs `14379604453` and `14380462964` remain unexpired. No active or queued run exists.
+- Compared the live branch with the Run 48 build commit. At the end of this work the branch is 53 commits ahead / 0 behind; the changed-file set contains only nine root-level Markdown research/plan files. No `docs/**`, `android-offline/**`, `scripts/**` or workflow file changed. The workflow's `cancel-in-progress: true` setting was checked; no new build was triggered.
+- Performed the first stress test of `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md` against the source-indexed Some Common Needs examples, the Names of Things and Qualities research index, and the complete 50-item priority fixed-group list.
+- Result: the provisional **2 Module / 14 Lesson v0.1 list is not accepted as a syllabus**. The two broad learning tracks remain plausible, but the Lesson boundaries need correction. Key results:
+  - Communication remains a coherent candidate theme with production/transmission and reception/processing strands.
+  - Bodily action/contact has two different subgroups (5 intake/expulsion rows; 6 contact/force rows); one Lesson is not yet proven.
+  - Cut/break/smash plus destroy/hurt form a stronger physical-effects / damage / change / result theme.
+  - Movement contains object transfer and body position/posture decisions; run and slip are supporting contrasts.
+  - Thinking/knowledge/memory remains coherent; learn/teach may join it.
+  - Feeling/attitude/desire/need remains coherent.
+  - The former learn/teach/show/try Lesson is dissolved; show is distributed by meaning and try remains a supporting “make an attempt” pattern.
+  - The broad social/economic/life group is redistributed: 5 transaction/commitment examples; 5 find/lose/location examples; 2 damage/injury examples; 6 state/process examples. A narrower exchange/sale/commitment topic still needs a size test.
+  - State/process is a plausible candidate but needs a concise lesson-size test.
+  - Modality is separated from condition; unless is linked to conditional sentence structure.
+  - Quantity/degree and time/sequence are separate decision problems and need separate size tests.
+  - Names of Things and Names of Qualities should first be tested together as one meaning-expansion teaching task; the 6 currently indexed Quality examples do not yet justify a separate Lesson.
+  - Special Use / meaning narrowing remains distinct from expansion. Other Suggestions words (world/life/hill/home/address; busy/deaf) must not be misclassified as Basic-word expansion/special use. Qualities used as Names of Things is a word-class boundary, not meaning narrowing.
+- Corrected one project-index duplication: `a plate breaks itself → it comes to bits` appeared once in the physical-change table and again in movement/posture. Removed the misplaced second row from `BASIC_ENGLISH_NAMES_OF_ACTS.md`; the example remains under physical change. Movement/posture now has 14 unique indexed rows.
+- Recorded the full matrix and corrections in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md` (205 lines) and summarized the result in `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` (1,664 lines). No replacement Lesson count has been assigned.
+- Source limitations remain explicit: the 1932 *The ABC of Basic English* p.154 scan image remains unread; a complete English text of the 1930 *Basic English: A General Introduction with Rules and Grammar* has not been acquired; the 250 Fixed Word-Groups file verifies the 250-item structure and all 50 priority entries but does not transcribe all 250 examples. Current counts are project-index row counts, not claims of a complete verbatim source transcription.
+- Next concrete action: draft short real teaching-unit outlines and sample exercises for the uncertain boundaries, beginning with (a) bodily action/contact vs physical effects/result and (b) object transfer vs body position/posture. Then test knowledge/learning/teaching, exchange/commitment, state/process, modality/condition, quantity/time, and expansion/narrowing. Only after these tests should the final Module/Lesson count be decided.
+- No App source changed and no Android build was triggered.
+
