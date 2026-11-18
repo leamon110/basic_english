@@ -1984,3 +1984,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated the C07 flow and knowledge map (checkpoint 79). No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author C07 using only these source-supported transaction and commitment examples, with explicit buyer/seller roles and payment-status distinctions.
 
+### Module 2 Lesson 7 — Exchange, Sale & Commitment first complete draft (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L7_DRAFT.md from the p.254 source audit and selected fixed-group examples.
+- The lesson has three internal strands: exchange roles (buyer vs seller); sale arrangements and conditions (store, market, let a house, on approval, on credit); promises, agreements and business commitment (give/keep one's word, come to agreement, put the business through).
+- Added selected business contexts: taking one object in exchange for another; taking part in a company's organization; profit/loss/interest on a business; goods much in request. These are reinforcement, not separate topics.
+- Explicitly distinguished on approval (sale arrangement) from C06's attitude “it has our approval”; on credit (deferred payment) from “to one's credit” (merit/reputation); and “at a loss for something to do” (uncertainty) from financial loss.
+- Kept find/lose/discover examples in C04/C05 by meaning; damage/hurt in C03; life/process in C08. Excluded the horse-race money-risk example as a betting context rather than a sale lesson.
+- Added buyer/seller role recognition, sale-condition recognition, commitment, business-context explanation, boundary checks, reverse understanding and independent construction. The open task is explicitly not auto-scored by the current App.
+- Updated BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md with checkpoint 80.
+- This is a first complete draft, not final acceptance. Source/answer coverage, lesson volume and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: review C07 against the original source and accepted flow, then author Module 2 Lesson 8 — Social Exchange, Relations & Participation.
+
