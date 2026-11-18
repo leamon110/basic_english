@@ -8,32 +8,28 @@ When people communicate, information can be expressed, delivered, received, read
 
 **What is happening to the information, who is involved, and how does it move?**
 
-This lesson keeps three connected parts together:
+This lesson keeps two core strands together:
 
 1. expressing or delivering information;
-2. receiving and processing information;
-3. a short comparison showing how the word **show** changes meaning in different contexts.
+2. receiving and processing information.
 
-The first two parts are one lesson because they describe the two sides of the same information event. They are not separate lessons or a list of unrelated verbs.
+A short **show** comparison is included as a cross-topic example, not as a third communication topic. The two core strands are one lesson because they describe the two sides of the same information event.
 
 ## 1. Reuse the existing speak prototype
 
-The project already has a complete teaching prototype:
+The project already has a complete speak teaching prototype:
 
 - BASIC_ENGLISH_EXPRESSION_LESSON_01.md
-- the current App prototype in docs/js/expression-system.js
+- the current App implementation in docs/js/expression-system.js
 
-**Reuse that material. Do not copy it into this lesson as a second speak lesson.**
+**Reuse that prototype as the opening segment of C01. Do not create another copy of its speak lesson, quiz or writing exercise.**
 
-Keep its three-way speak comparison as the opening demonstration:
+Reuse its existing three-context explanation, context quiz, target writing task and reverse check. The mapping is:
 
-| Ordinary English | Basic expression | Place in this lesson |
-|---|---|---|
-| speak to a person | say something to him | Core communication example |
-| speak at a meeting | give a talk / make a statement | Core communication example |
-| speak a language | have a knowledge of it | Boundary example; cross-link to the knowledge topic |
+- **speak to a person** and **speak at a meeting** belong to this Communication lesson;
+- **speak a language** means having knowledge of a language, so it remains a short boundary link to the later Thinking / Knowledge topic, not a communication event.
 
-The third example is important because it proves that context decides the meaning. But **speak a language** describes having knowledge of a language, not a communication event taking place. Keep it as a short boundary example and link it to the later Thinking / Knowledge topic.
+The existing prototype's section 6 and the App's “next content” preview already list some further source examples (tell a story, give directions, sing, listen and read carefully). This C01 draft develops those examples into the lesson sections below; they are not another numbered lesson. The old preview also mentions **eat**, which belongs with Bodily Action & Contact (Module 2 Lesson 2), not C01.
 
 The existing prototype's writing checker is deliberately limited to the target sentence **I say something to him.** It checks that taught pattern only. It must not be presented as an automatic grammar or meaning checker for every expression in this lesson.
 
@@ -49,7 +45,7 @@ The source examples can be understood through the role of the information and wh
 | “as I was telling you” | “as I was saying” | The speaker refers back to what was being said |
 | sing | give a song | The song is treated as something given to listeners |
 | write one's views | put one's views into writing / down on paper | The speaker's views are put into written form |
-| send a letter to a newspaper | send a letter to the paper | A written message is sent to its destination |
+| send a letter to a newspaper | send a letter to the paper | A written message is sent to its destination, possibly giving a different opinion |
 
 A few distinctions matter:
 
@@ -151,30 +147,27 @@ Choose the expression that matches each event.
 1. A person puts their views into written form.
 2. A person reads an account carefully.
 3. A person sends a letter to a newspaper.
+4. A person sends a different opinion to a newspaper.
 
 **Suggested answers**
 
 1. put one's views into writing / down on paper;
 2. go through it with care;
-3. send a letter to the paper.
+3. send a letter to the paper;
+4. send a letter to the paper, giving a different opinion.
 
-These are different actions: recording information, examining written information, and sending a written message to a destination.
+These are different actions: recording information, examining written information, and sending a written message to a destination. The last two prompts share the same source expression; the fourth makes the purpose of the letter explicit.
 
-### C. Keep the speak boundary clear
+### C. Speak boundary — reuse, do not repeat
 
-Classify each meaning:
+The existing speak prototype already tests all three speak contexts. Do not repeat its three quiz questions here.
 
-1. speak to a person;
-2. speak at a meeting;
-3. speak a language.
+For C01, retain only this course boundary:
 
-**Answers**
+- speaking to a person / speaking at a meeting → communication;
+- speaking a language → knowledge of a language, cross-linked to the Thinking / Knowledge topic.
 
-1. Communication: say something to him.
-2. Communication: give a talk / make a statement.
-3. Knowledge of a language: have a knowledge of it. Cross-link this use to the knowledge topic; do not classify it as an ordinary speaking event.
-
-This reuses the existing speak prototype. It is not a second copy of that prototype's full quiz or writing exercise.
+The reused prototype's quiz remains the assessment for that opening segment.
 
 ### D. Distinguish the meanings of show
 
@@ -203,7 +196,8 @@ Explain the event described by each Basic expression:
 3. give it their attention;
 4. have news of it;
 5. put one's views down on paper;
-6. go through it with care.
+6. go through it with care;
+7. send a letter to the paper.
 
 **Suggested answers**
 
@@ -213,6 +207,7 @@ Explain the event described by each Basic expression:
 4. Learn information about an event or account later.
 5. Write one's views.
 6. Read or examine something carefully.
+7. Send a written message to the newspaper.
 
 ### F. Independent construction
 
