@@ -2121,3 +2121,20 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - This review is an internal source/flow/duplication review. Actual learner time and learner feedback remain unmeasured; C01 is still a reviewed draft, not user-tested or App-accepted content.
 - Next: author Module 2 Lesson 2 — Bodily Action & Contact, preserving the same concise meaning → Basic expression → learner use / reverse-check approach.
 
+## 56. Module 2 Lesson 2 — Bodily Action & Contact source audit (2026-11-18)
+
+- Reopened the original English scan pp.245–248 and compared it with the accepted C02 teaching flow, the C02 rows in BASIC_ENGLISH_NAMES_OF_ACTS.md, and the accepted curriculum.
+- p.245 introduces eating: taking food / having a meal; when there is more food than one has room for, being unable to get through it.
+- pp.246–247 provide the core C02 examples:
+  - biting: bite hard / get one's teeth into it; bite off a bit → have a bite of it or at it;
+  - expulsion: spit it out → put it out of one's mouth;
+  - direct touch: put a hand, finger or other body part on it; or give it a touch;
+  - accidental contact: come up against it;
+  - forceful contact: hit it / give it a blow;
+  - scratching: make a mark on it; give an insect bite a rub; get one's nails into it for a deep scratch.
+- The same source passage begins the transition to cut/break. Keep cut a person → give the person a cut as a short boundary example only; cutting material, break/smash and resulting/self-occurring change belong to C03 Physical Effects: Damage, Change & Result.
+- p.248 begins object movement and transfer (throw/send/catch/hold/bring) and then body position/posture. These belong to C04 Movement & Position, not C02.
+- The source therefore supports the accepted C02 scope: one Lesson with two explicit sections (intake/biting/expulsion; contact/impact/rubbing). They share the need to identify the body/object relation, but they are not one grammatical formula.
+- The source/flow boundary is clear. No new source category or Lesson split is needed. No App source changed and no Android build triggered.
+- Next: author the C02 teaching-content draft with the p.245 “get through it” phrase as a brief completion-focused extension, cut as a boundary to C03, and movement as a boundary to C04.
+
