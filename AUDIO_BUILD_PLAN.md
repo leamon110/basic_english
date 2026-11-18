@@ -1497,3 +1497,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md and BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md with the progression matrix, exact Step 17 prerequisite, C09 self-contained scope, C07 size warning and next action.
 - Current structure remains 2 Modules / 15 provisional Lessons. No final syllabus acceptance or App ID migration.
 - Next concrete step: complete an instance-level index of the remaining 200 Fixed Word-Groups, then re-evaluate C07 and all cross-topic placements. No App code changed and no Android build triggered.
+
+
+### Fixed Word-Groups instance-index milestone 01 (2026-11-18)
+
+- Reopened the original scan pages printed pp.216–230 for the 10 Operator groups and 8 relation-word groups.
+- Individually indexed all 50 Operator examples and all 80 relation-word examples in BASIC_ENGLISH_250_FIXED_WORD_GROUPS_INSTANCE_INDEX.md.
+- Each item has a Chinese meaning summary and a provisional primary Lesson/foundation destination; cross-links are used where the meaning genuinely crosses themes.
+- Count verified: Part A 50 + Part B 80 = **130 / 200** items outside the priority 50.
+- Remaining: Part C 20 other Operations/Directives special uses + Part D 100 uses from the remaining Basic word classes = **120 / 200**, not 70.
+- Updated the candidate structure and knowledge map. C07 remains provisional; the remaining source items may add naturally related exchange/commitment uses, but unrelated phrases will not be forced into it.
+- Source pages visually checked from the original 162-page scan; the relevant English pages are printed pp.216, 218, 220, 222, 224, 226, 228 and 230. The PDF page index for printed page 212 is 103, so the printed-page mapping is grounded.
+- Next concrete step: index Part C (20 items, printed pp.230–232) and Part D (100 items, printed pp.232–242), then re-evaluate all 200 placements and C07.
+- No App code changed and no Android build triggered.
