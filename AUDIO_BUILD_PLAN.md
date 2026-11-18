@@ -1842,3 +1842,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is a source-wording review; C04 answer coverage and teaching volume still require a full review. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: complete the C04 exercise/answer review, then proceed to Module 2 Lesson 5.
 
+### C04 answer review — stand as state vs posture change (2026-11-18)
+
+- Reviewed the C04 position table and answer key against p.248. The first draft's “things stand in a certain position” row gave “be placed” as if it were the only Basic expression and included “still be standing” in the expression column.
+- Corrected the distinction: a person gets up / stands when moving from lying down to an upright position; a person who remains standing is on one's feet; a thing can stand / be placed in a certain position without describing a person getting up.
+- Updated BASIC_ENGLISH_EXPRESSION_M2_L4_DRAFT.md and BASIC_ENGLISH_NAMES_OF_ACTS.md. The matching exercise and answer now test the static-object use.
+- The run/slip contrasts, exact balance/movement phrases and path/destination examples remain source-aligned. C04 still needs a final full review of answer coverage and teaching volume.
+- No App source or Android workflow input changed; no build was triggered.
+- Next: complete C04 full review, then proceed to Module 2 Lesson 5.
+
