@@ -778,12 +778,15 @@ The learner distinguishes a state, entering a state, a process that is under way
 
 #### 1. Change into a Quality or state
 
-Use grow:
+Use the source's growth examples:
 
-- getting taller, higher, fatter or greater;
-- being in the process of growth/development.
+- ordinary meaning: boys and girls grow taller → Basic: get taller;
+- trees grow higher → get higher;
+- old men grow fatter → get fatter;
+- a person's powers grow greater → get greater;
+- when things are increasing in these ways → be in the process of growth or development.
 
-Show the difference between the resulting Quality and the process that produces it.
+Show the difference between a change in Quality (get + Quality) and the process under way (be in the process of ...). Do not treat grow itself as a Basic verb.
 
 #### 2. Entering or being in a state
 
@@ -803,23 +806,27 @@ Use die as a contrast set:
 
 These expressions describe the end of a life process from different viewpoints. Do not turn them into three unrelated rules.
 
-#### 4. Beginning and finishing
+#### 4. Beginning and ending
 
-Use begin → make a start, and preserve the source's important boundary that finish can itself be used in Basic.
+Use begin → make a start.
 
-The learner must not assume every ordinary verb needs to be replaced.
+The source's sentence that everything which begins will later finish is explanatory English, not a Basic construction. The passage gives no Basic equivalent for the general verb finish, and finish is not one of the 850 base words. Do not teach finish → finish or invent a universal replacement.
+
+Teach ending through the source-supported death expressions and the fixed-group contrasts below.
 
 #### 5. Fixed-group reinforcement
 
 Use a small set of naturally related fixed groups:
-- being in motion / in use;
-- coming to a stop;
-- going to sleep;
-- something happening in the end;
-- an event taking place;
-- putting a stop to an activity.
+- being in motion / in use — a state or continuing activity;
+- going to sleep — entering a state;
+- lights going out — a change of state;
+- coming to a stop — reaching a stopped state;
+- putting a stop to an activity — causing an activity to end;
+- an event taking place — occurrence.
 
-These reinforce state, occurrence and cessation.
+**in the end** belongs primarily to C11 Time & Sequence. Cross-link it here only when discussing the eventual outcome of a process, not as a core C08 state/process example.
+
+These reinforce state, transition, occurrence and cessation.
 
 #### 6. Guided practice and reverse check
 
@@ -833,7 +840,7 @@ Ask:
 - C08 does not cover physical damage/result; that belongs to C03.
 - C08 does not cover spatial movement/path; that belongs to C04.
 - C08 does not teach modal intention or obligation; that belongs to C09.
-- Preserve the source's use of finish without forced replacement.
+- Do not treat the explanatory word finish as a Basic word or as a source-provided Basic rendering; no general finish equivalent is supplied in this passage.
 
 ### Lesson-size test
 
