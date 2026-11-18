@@ -2607,3 +2607,12 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - The audit is a document-level consistency review, not learner testing, duration validation or App acceptance. Existing open construction tasks remain unscored by the current App unless a finite checker is separately designed and tested.
 - No App source, Android workflow input or audio assets changed; no Android build was triggered.
 - Next: prepare a consolidated 15-Lesson review sheet showing source scope, learner decision, prerequisites, cross-links, practice coverage and implementation/testing status; use it as the handoff before any App integration.
+## 95. Consolidated 15-Lesson review sheet and current-state alignment (2026-11-19)
+
+- Created `BASIC_ENGLISH_EXPRESSION_15_LESSON_REVIEW.md` (83 lines) as the consolidated handoff for all 15 accepted Lessons. It records official Module/Lesson numbering, C01–C15 mapping, printed source scope, main learner decision, prerequisites, cross-links, practice coverage, draft status and implementation/testing status.
+- Updated `BASIC_ENGLISH_EXPRESSION_CURRICULUM.md` so its remaining-work section no longer says that authored teaching content and the cross-Lesson audit are pending. First complete teaching-content drafts exist for all 15; learner testing, duration measurement, final revisions and App/device acceptance remain open.
+- Updated the status headers/current-state notes in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md` and `BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md`. Historical v0.1/v0.2/v0.3 decisions remain for traceability; the accepted curriculum is the architecture authority.
+- Confirmed the architecture remains exactly 2 Modules / 15 Lessons (Module 1 = 3; Module 2 = 12). C01–C12 map to Module 2 Lessons 1–12; C13–C15 map to Module 1 Lessons 1–3. No Lesson was added, removed, merged or renumbered.
+- The review sheet explicitly distinguishes document-level completion from learner-tested content and App integration. It does not claim final duration, general semantic checking, App implementation or device acceptance.
+- No App source, Android workflow input or audio assets changed; no Android build was triggered.
+- Next phase requires a separate App migration plan before any prototype renumbering or screen migration. The review sheet is the handoff for that phase; no App code has been changed.
