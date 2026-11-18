@@ -1,6 +1,6 @@
 # Module 2 · Lesson 12 — Context-Dependent Words & Paraphrase
 
-> **Draft status:** first complete teaching-content draft, based on *The ABC of Basic English*, printed pp.260–262, and the source-checked C12 teaching flow. It covers the seven source examples and preserves their different contexts. Closed exercises have answer keys. Actual learner time and feedback are unmeasured; this draft is not user-tested or App-integrated.
+> **Draft status:** first complete teaching-content draft, based on *The ABC of Basic English*, printed pp.260–262, and the source-checked C12 teaching flow. Internal review: 22 multiple-choice prompts with 22 matching answer keys; 15 reverse-understanding prompts with 15 suggested answers; 4 independent-construction tasks. Actual learner time and feedback are unmeasured; this draft is not user-tested or App-integrated.
 
 ## What this lesson teaches
 
@@ -23,7 +23,7 @@ The source first gives a description built around the Name business. It then say
 Choose according to the intended meaning:
 
 - If the sentence emphasizes that the person has many tasks waiting, the Basic description is **has much to do**.
-- If it emphasizes the person's active effort, use a description of the work being done, rather than treating busy as the name of a job or profession.
+- If it emphasizes the person's active effort, use **working hard**. This describes what the person is doing, not a job or profession.
 
 The source's first description is not the preferred everyday form. Do not teach busy as meaning that someone is a business person.
 
@@ -65,7 +65,7 @@ The third use cross-links to the existing -ing word-form foundation. It does not
 
 A hill is a piece of land that stands higher than the land around it.
 
-The source gives **a slope** as one short description. It also allows a comparison with a small mountain when the size fits the particular landform.
+The source gives **a slope** as one short description. It also allows a comparison with a mountain-like landform when the size fits the particular case.
 
 Do not force the mountain comparison onto every hill. The scale and shape matter.
 
