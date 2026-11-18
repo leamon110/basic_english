@@ -1,6 +1,6 @@
 # Basic English Expression System — Candidate Module / Lesson Structure v0.1
 
-> **Status: provisional design for stress-testing, not final acceptance.**
+> **Status: v0.1 has failed its first structural stress test; it is retained as a record of the initial candidate, not an accepted syllabus. See “Stress Test 01” below.**
 >
 > This structure is the first result after auditing the major source groups by learner decision problem. It deliberately does not inherit the source's Simple Acts / Complex Acts / Other Suggestions headings as Lesson boundaries.
 
@@ -131,3 +131,74 @@ The candidate structure can become the final structure only if every Lesson pass
 7. No Lesson exists merely because the source has a heading or because a target count needs another item.
 
 Until those tests are passed, **14 is a candidate count, not a project commitment.**
+
+
+---
+
+## Stress Test 01 — Source coverage and learning-task coherence
+
+**Result: v0.1 does not pass as written.** The two high-level learning tracks remain plausible, but several Lesson boundaries are too broad, too narrow, or based on the source heading rather than the learner's actual decision.
+
+### Evidence boundary
+
+This audit uses the examples currently indexed in `BASIC_ENGLISH_NAMES_OF_ACTS.md`, the source-checked Names of Things and Qualities index, and the complete 50-item priority fixed-group list.
+
+The counts below are counts of **project-indexed example rows**, not a claim that the index is a verbatim transcription of every line on the original pages. The 250 Fixed Word-Groups file verifies the 250-item structure and the 50 priority entries, but it does not transcribe all 250 original examples. The English scan page p.154 of the 1932 *The ABC of Basic English* remains unread; the complete English text of the 1930 *Basic English: A General Introduction with Rules and Grammar* has not been acquired. No missing source text is filled in by inference.
+
+### 1. Candidate-by-candidate result
+
+| v0.1 candidate | Indexed source coverage | Stress-test result | Required correction |
+|---|---:|---|---|
+| 01 Communication & Information | 13 examples | **Keep as one candidate theme.** Production/transmission and reception/processing are two natural strands within the same information-transfer theme. “Speak a language” is a knowledge/ability contrast, not ordinary speech. | Keep the two strands visible; cross-link “speak a language” to knowledge/ability. Do not split into two Lessons without a teaching-size test. |
+| 02 Bodily Action & Contact | 5 eating/biting/expulsion examples + 6 contact/force examples | **Not yet proven as one Lesson.** These are both bodily actions, but the learner distinguishes intake/expulsion in one group and physical contact/force/effect in the other. | Keep as two internal sections for now. Test whether they can form one concise, natural unit; do not assume the broad label proves coherence. |
+| 03 Physical Change & Result | 5 cut/break/smash examples + destroy/hurt examples from Complex Acts | **Keep, but rename.** The shared issue is physical effect and outcome: action, damage/change, resulting state, or an event that happens by itself. “Physical Change” alone does not cover injury/pain. | Rename to **Physical Effects: Damage, Change & Result**. Keep it distinct from simple contact/impact. |
+| 04 Movement, Transfer & Position | 14 unique examples after removing a duplicated plate-break row | **Too broad as one undivided unit.** Object transfer/path/viewpoint and body position/posture are different decisions. Run has three different meanings; slip is an event/result expression. | Keep two internal strands: (A) moving/holding/transferring objects; (B) body position and posture change. Treat run as a meaning-contrast set and slip as a supporting event-expression example. Test whether A/B need separate Lessons. |
+| 05 Thinking, Knowledge, Meaning & Memory | 11 examples | **Keep.** The group has one coherent mental/cognitive decision: identify the mental relation or state before choosing a Basic construction. | Add learn/teach here as a possible knowledge-acquisition/transfer subsection; test the combined size. |
+| 06 Feeling, Preference, Desire & Need | 11 examples | **Keep.** Feeling, attitude, preference, desire and need form a coherent internal-state/relationship theme. | Keep “feel a wall” as a cross-link to physical contact; place “show interest” here only when it means giving signs of an attitude. |
+| 07 Learning, Teaching, Showing & Attempting | 8 examples: 3 learning/teaching, 4 show, 1 try | **Reject as one Lesson.** The examples do not share one dominant decision. | Move learn/teach to 05; distribute show by meaning (make clear → knowledge/understanding; let someone see / put on view / take someone round → communication/perception; give signs of interest → attitude); keep try as a supporting “make an attempt” pattern, not a standalone Lesson. |
+| 08 Social Exchange, Relations & Participation | The source's broader social/economic/life group has 18 rows; only 5 concern buying/selling/commitment | **Current title is too broad.** The source rows actually separate into transaction/commitment (5), finding/losing/location (5), damage/injury (2), and state/process (6). “Take part in” and “one another” are fixed groups, not proof that all these meanings form one lesson. | If retained, narrow to **Exchange, Sale & Commitment** and test the five transaction examples plus directly relevant fixed groups such as “let a house”. Move find/lose to location/knowledge; destroy/hurt to 03; life/process items to 09. |
+| 09 State, Growth, Life & Process | 6 examples | **Plausible but still provisional.** The examples can be organized around state/process transitions: get + Quality; be in a state/process; go to a state; make a start; come to an end. | Retitle **State and Process: Change, Entry & Ending**. Test whether the six source examples plus relevant priority fixed groups form a concise lesson rather than a miscellaneous list. “Finish” is retained as an important contrast because the source uses the word itself. |
+| 10 Modality & Condition | can / ought / shall + unless | **The title combines different tasks.** can/ought/shall concern ability, possibility, duty, advisability or intended action; unless is a conditional relation. | Keep a modality candidate, retitled **Ability, Obligation & Intention**. Move unless to the existing conditional/sentence-structure foundation unless further source material justifies a separate condition topic. |
+| 11 Quantity, Degree & Time | 7 quantity/degree terms + 6 time terms | **Two different decision problems.** Amount/distribution/degree is not temporal location or sequence. | Split internally into quantity/degree and time/sequence. Whether these become one or two Lessons depends on the actual teaching-size test; do not group them merely because both are function words. |
+| 12 Expansion of Names of Things | 11 body-part extensions + sensory, use/behavior and “as if” examples | **Keep the content, but not necessarily as its own Lesson.** | Combine with 13 for the first teaching-size test because both train the learner to trace a relation from root meaning to extended meaning. |
+| 13 Expansion of Names of Qualities | 6 indexed examples | **Too small to justify a separate Lesson on current evidence.** | Merge into a shared **Meaning Expansion: Things & Qualities** candidate, with separate subsections for the different kinds of relation. Reconsider only if a complete source review reveals substantially more material. |
+| 14 Special Use & Contextual Meaning | material-to-object, subclass and contextual-default examples; also incorrectly absorbs Other Suggestions items | **The candidate mixes separate source problems.** Special use/narrowing belongs with Names of Things and Qualities. “World/life/hill/home/address” are Other Suggestions ordinary-word expression examples, not automatically examples of Basic-word narrowing. | Keep only **Special Use / Meaning Narrowing** here. Move the Other Suggestions words back to Module 1 for context-dependent Meaning → Basic treatment. |
+
+### 2. Important source-classification corrections
+
+These corrections matter more than the current Lesson count:
+
+1. **“Busy” and “deaf” are Other Suggestions expression examples.** Their task is to describe an ordinary-English Quality with Basic words (e.g. “working hard / has much to do”; “whose hearing is bad”). They are not Names of Qualities meaning-expansion examples.
+2. **“World”, “life”, “hill”, “home” and “address” are also Other Suggestions.** They require context-sensitive expression decisions. They must not automatically be placed in the Names of Things special-use/narrowing lesson.
+3. **Qualities used as Names of Things** is a word-class/function boundary. It is not the same as Special Use / narrowing. Link it to the existing word-class foundation and include it in a semantic lesson only if the source examples require it.
+4. **“Unless”** is the conditional pattern “if ... not”; it should not be grouped with modal meanings merely because both occur in Other Suggestions.
+5. **The 50 priority fixed groups are reinforcement material, not a reason to create a “social relations” lesson.** For example, “take part in”, “one another”, “respect for”, “dependent on” and “let a house” have different natural uses. Insert each where its meaning belongs.
+6. The “special use” discussed in Names of Things and Qualities (meaning narrowing) must not be confused with the 250 Fixed Word-Groups section's special/idiomatic uses.
+
+### 3. Source-index correction made during this audit
+
+The project index had duplicated the “a plate breaks itself → it comes to bits” example: once under physical change in section 2.3 and again under movement/posture in section 2.4. The second, misplaced row has been removed. The example remains once under physical change. The movement/posture group therefore has **14 unique indexed rows**, not 15.
+
+### 4. What currently survives the stress test
+
+- The two high-level tracks remain a useful working hypothesis:
+  - ordinary meaning → Basic expression;
+  - understanding expansion and narrowing of Basic word meanings.
+- Strong candidate themes: Communication; Thinking/Knowledge/Memory; Feeling/Attitude/Need; Physical Effects; State and Process.
+- Candidate topics requiring a size/boundary test: Bodily Action/Contact; Movement/Position; Exchange/Sale/Commitment; Modality; Quantity/Time; Meaning Expansion.
+- The old 14-Lesson list is **not accepted**. It contains at least one false grouping (07), one overly broad grouping (08), one split based mainly on word class (12/13), and one source-category mix-up (14). Several other boundaries remain untested.
+- No replacement total is assigned. A different count could emerge after the mini-lesson tests; do not preserve 14 just because it was the first candidate.
+
+### 5. Next practical test
+
+Before producing another numbered syllabus, build short teaching-unit outlines for the uncertain boundaries:
+
+1. Bodily action/contact vs physical effects/result (02/03);
+2. Object transfer vs body position/posture (04);
+3. Knowledge/learning/teaching and the different meanings of show (05/07);
+4. Exchange/sale/commitment (08);
+5. State/process (09);
+6. Modality vs condition; quantity vs time (10/11);
+7. Things/Qualities expansion vs meaning narrowing (12/13/14).
+
+For each outline, test the same three steps: identify the meaning in context → explain why the Basic expression fits → learner constructs and reverse-checks. If two sections cannot be taught through one coherent decision, split them; if a section is too small, merge it into the nearest genuine theme. Only after these tests should the final Module/Lesson count be decided.
