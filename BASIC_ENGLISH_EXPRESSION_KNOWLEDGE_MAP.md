@@ -2556,3 +2556,14 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Verified that the five current Module 2 Lesson drafts (M2_L1 through M2_L5) all exist in the branch and remain the first five Lessons of Module 2.
 - No App source or Android workflow input changed; no build was triggered.
 
+
+## 90. Module 2 Lesson 11 — Time & Sequence source audit (2026-11-19)
+
+- Reopened the original English scan of *The ABC of Basic English*, printed pp.258 and 260, and compared it with the C11 candidate, the C11 teaching flow, the C10 draft and the Other Suggestions source index.
+- Verified the source distinctions: once = at one time / in the past (C11; one time only remains in C10); a long time ago = a long time back / in the old days; already for a completed event = in the past / before, while a person already there = is there now; so far / up to now describes an account of events through the present; negative yet = still not / so far not come; and yet as a joining statement = at the same time.
+- Verified since in three different contexts: the source's since last year example is paraphrased as not having seen the friends for a long time (this is a paraphrase of the whole example, not a universal replacement for since); since then = after then; since it is late = because.
+- Verified next in three contexts: after this; do it again on the next occasion; next to = nearest to it (spatial, cross-link C04).
+- Verified always: at all times; sometimes frequently; in a future-focused statement such as I will always be your friend, for ever is a better way of putting. The source separately says without change and without end are right words in other connections; they are not universal replacements for always.
+- Updated the Other Suggestions source index, C11 teaching flow and current candidate C11 scope to preserve these distinctions. No new Module/Lesson boundary is needed; the accepted 2 Modules / 15 Lessons architecture remains unchanged.
+- Source audit only: no App code, Android workflow input or audio assets changed; no build was triggered.
+- Next: author BASIC_ENGLISH_EXPRESSION_M2_L11_DRAFT.md, keeping the source contexts separate and using concise recognition, contrast, reverse-understanding and independent-construction practice.
