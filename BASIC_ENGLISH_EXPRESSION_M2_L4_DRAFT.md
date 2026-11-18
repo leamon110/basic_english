@@ -1,6 +1,6 @@
 # Module 2 · Lesson 4 — Movement & Position: Transfer, Posture & Viewpoint
 
-> **Draft status:** first complete teaching-content draft. It is based on Ogden's *The ABC of Basic English*, especially pp.248 and 250. The source examples are distinguished from project-created contexts and exercises. Existing Operators and Directives are prerequisites; this lesson applies them and does not reteach the foundation. Clarity, answer coverage and actual learner time still require review.
+> **Draft status:** source-reviewed first complete teaching-content draft. It is based on Ogden's *The ABC of Basic English*, especially pp.248 and 250. The source examples are distinguished from project-created contexts and exercises. Existing Operators and Directives are prerequisites; this lesson applies them and does not reteach the foundation. Clarity, answer coverage and actual learner time still require review.
 
 ## What this lesson teaches
 
