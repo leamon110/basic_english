@@ -207,8 +207,8 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | 词 | 原书说明的意思 | Basic 表达或判断 |
 |---|---|---|
 | each | 群体中的每一个分别得到某物 | every one separately |
-| altogether | 总数、合计 | six altogether；表示完全/彻底时可用 quite 或 completely |
-| whole | 整个群体 | all the group |
+| altogether | 总数、合计；完全/彻底 | “six of them altogether”表示总数，原书以“there would make six”说明结果；“altogether wrong”则为 quite / completely so |
+| whole | 整个群体；完整的事物 | whole group → all the group；whole story → the complete story |
 | few | 数量小 | a small number；原书建议不确定时使用较明确的说法 |
 | many | 数量大 | a great number；quite a number |
 | too many | 超过足够数量 | more than enough；overmuch |
