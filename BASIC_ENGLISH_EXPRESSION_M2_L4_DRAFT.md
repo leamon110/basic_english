@@ -95,8 +95,8 @@ The second use is a source-listed extension of **slip**. It does not mean that e
 
 The source also says:
 
-- a sudden noise may **throw** or **put** someone **off balance**;
-- a sufficiently hard blow may **send** someone violently **against** a table.
+- a sudden noise may **throw** or **put us off our balance**;
+- a blow, given hard enough, will **send us violently against the table**.
 
 These examples show two different effects:
 
@@ -241,11 +241,11 @@ Choose the Basic expression.
 
 ### D. Understand balance and movement
 
-1. A sudden noise throws someone off balance. Is the main point the sound, or the person's change of balance?
+1. A sudden noise throws or puts us off our balance. Is the main point the sound, or the person's change of balance?
 
    **Answer:** The person's change of balance.
 
-2. A hard blow sends someone against a table. Which part belongs to C02, and which part belongs to C04?
+2. A blow, given hard enough, sends us violently against the table. Which part belongs to C02, and which part belongs to C04?
 
    **Answer:** The blow/contact belongs to C02; the resulting movement against the table belongs to C04.
 
