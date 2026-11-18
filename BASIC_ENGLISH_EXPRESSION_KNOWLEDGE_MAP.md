@@ -1747,3 +1747,55 @@ Coverage boundary:
 
 Next: inspect the actual Teaching / 45 Steps foundation map and compare each candidate Lesson's required tools against what is already taught. Identify missing prerequisites, unnecessary duplication and the correct order before accepting v0.2.
 
+
+
+## 36. Whole-sequence audit 02 — prerequisites and existing App overlap
+
+The candidate v0.2 has now been compared with both the current Structured Teaching implementation and the original 45-Step source map.
+
+### Foundation already implemented in Structured Teaching
+
+The current `docs/js/rule-learning.js` defines 13 units covering:
+
+- plural forms, -er/-ing/-ed, -ly adverbs, comparison and un-;
+- Operators, Directives and Operator + Directive combinations;
+- Names of Acts;
+- Expansions;
+- 250 Fixed Word-Groups;
+- sentence structure / semantic roles;
+- Meaning → Basic method.
+
+These units are the reusable foundation. The Expression candidate track should apply them to concrete meaning problems rather than repeat their definitions.
+
+### Original 45-Step course overlap
+
+The source map confirms:
+
+- Step 25 marks completion of the source's explicit Basic structure-teaching stage.
+- Steps 36–41 include numbers, time/calendar, money, weights and measures.
+- Steps 33–35 contain explanations of word extensions and fixed combinations.
+- Step 42 already applies Basic to five everyday-service situations and includes a Basic account-of-a-journey exercise.
+- Steps 43–45 are longer integrated readings, including the Step 44 accident/injury narrative.
+
+Therefore Expression System is a supplementary, systematic practice track. It does not replace the 45 Steps and must not claim that applied expression was absent from the original course.
+
+### Existing Expression prototypes
+
+- Current App Expression Lesson 01 is the three-sense speak prototype; it belongs inside candidate C01 Communication & Information.
+- Current App Expression Lesson 02 is the body-part expansion prototype; it belongs inside candidate C13 Meaning Expansion, not candidate C02 Bodily Action.
+- These current UI labels are prototype IDs, not the final course order. No App content is to be renumbered before the syllabus is accepted.
+
+### Prerequisite risks
+
+- C03 Physical Effects needs the active/result/passive structures it uses. Step 22 covers passive/complex tense forms; the derivative -ed rule alone is not sufficient.
+- C09 Ability/Obligation/Intention needs explicit can/ought/shall meaning distinctions. The current 13 Structured Teaching units have no dedicated modal unit; Step 21/22 auxiliary material is related but not a complete substitute.
+- C10 Quantity and C11 Time must not repeat the basic number, quantity and time/calendar teaching already present in Steps 5, 7, 11, 36–39. They should focus on the additional contextual meanings from Other Suggestions.
+- C13 Meaning Expansion must reuse and extend the existing body-part prototype rather than recreate its 11 examples and quiz unchanged.
+- C14 Special Use must expand the brief distinction already in the Teaching Expansions unit and must not be confused with Fixed Word-Groups.
+
+### Current conclusion
+
+The Structured Teaching units can serve as the foundation for the candidate track without requiring learners to complete all 45 original Steps first. However, result/passive forms and modal meanings require explicit coverage decisions before implementation. The remaining candidate Lessons mainly apply already introduced Operators, Directives, word forms, fixed groups and sentence roles.
+
+The next audit is to decide which foundation items are true prerequisites, which need only a brief reminder inside a Lesson, and which require a new small foundation unit. It must also prevent repeated explanations and quizzes between Structured Teaching and the Expression track.
+
