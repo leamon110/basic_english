@@ -147,7 +147,7 @@ Choose the expression that matches each event.
 1. A person puts their views into written form.
 2. A person reads an account carefully.
 3. A person sends a letter to a newspaper.
-4. A person sends a different opinion to a newspaper.
+4. A person sends a letter to the paper to give a different opinion.
 
 **Suggested answers**
 
