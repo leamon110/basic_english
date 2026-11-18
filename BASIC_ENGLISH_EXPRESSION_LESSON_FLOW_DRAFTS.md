@@ -442,3 +442,227 @@ Give a result expression and ask what physical event or state it describes. Chec
 | C03 | Distinguish physical action, damage/effect and resulting state | One Lesson viable; Step 17 is the prerequisite |
 
 No final App IDs or implementation changes are made.
+
+
+---
+
+## C04 — Movement & Position: Transfer, Posture & Viewpoint
+
+### Teaching objective
+
+The learner identifies what or who changes place, the path/destination or position involved, and whose viewpoint determines the expression.
+
+### Proposed teaching flow
+
+#### 1. Moving an object
+
+Start with throw, catch and hold:
+
+- sending an object to a receiver or along a path;
+- getting it into the hand;
+- having or keeping a grip on it.
+
+Ask: does the object move to a destination, arrive at a position, or remain held?
+
+#### 2. Direction and viewpoint
+
+Use bring/take and come/go contrasts:
+
+- the same movement can be described differently depending on the speaker's reference point;
+- destination and path can be stated with the relevant Directives;
+- bring/take should not be taught as a fixed Chinese translation pair.
+
+Use the source's examples of sending something over a wall/across a river and moving an arm out of a coat or money into a pocket.
+
+#### 3. Body position and posture change
+
+Compare:
+
+- being in a position;
+- moving into a position;
+- taking a seat / being seated;
+- getting up.
+
+The learner must distinguish a state from the action that changes the state.
+
+#### 4. Run and slip as meaning contrasts
+
+Keep run's different uses together as a short contrast:
+
+- speed of movement;
+- an activity undertaken for health;
+- escaping at a run.
+
+Slip is expressed as an event (a slip/fall). It is a supporting example, not a new rule for all movement verbs.
+
+#### 5. Guided practice and reverse check
+
+Ask the learner to identify:
+1. the moving person/object;
+2. the starting point, destination or path;
+3. the reference viewpoint;
+4. whether the sentence describes movement or a position/state.
+
+Then give Basic expressions and ask the learner to reconstruct the movement or posture.
+
+### Scope controls
+
+- C04 applies Directives and source/destination tools; it does not reteach them.
+- Physical contact/impact belongs to C02; physical damage/result belongs to C03.
+- Keep state vs posture change explicit, but do not create a separate Lesson just for sit/stand/lie.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson remains viable with two main sections — object transfer/viewpoint and body position/posture — plus short run/slip contrasts. The common task is to make movement, path, destination and position explicit.
+
+---
+
+## C05 — Thinking, Knowledge, Memory & Learning
+
+### Teaching objective
+
+The learner identifies the mental operation or relation intended — thinking, opinion, certainty, understanding, meaning, memory, or acquisition/transfer of knowledge — and expresses that relation in Basic.
+
+### Proposed teaching flow
+
+#### 1. Thinking and opinion
+
+Compare:
+- having/giving thought;
+- holding an opinion;
+- taking a view.
+
+The learner first decides whether the sentence describes a mental activity or a stated judgment.
+
+#### 2. Knowing and understanding
+
+Compare:
+- being certain or conscious of something;
+- having knowledge or experience of it;
+- being clear about it / having a grip of it;
+- seeing another person's point of view or the point of an argument.
+
+The point is not to teach these as interchangeable phrases. Each expresses a different degree or kind of mental relation.
+
+#### 3. Meaning and memory
+
+Use:
+- having the sense of something;
+- having a memory of it;
+- keeping it in mind;
+- putting it out of the mind / having no memory of it.
+
+Contrast keeping a thought available with the absence/removal of memory.
+
+#### 4. Learning and teaching
+
+Add the acquisition/transfer perspective:
+
+- getting facts or knowledge into one's head;
+- giving training/teaching;
+- being taught.
+
+This belongs here because the learner is still expressing how knowledge is acquired or transferred, rather than how information is communicated to an audience.
+
+#### 5. Guided practice
+
+For each prompt, ask:
+1. Is this thinking, judging, knowing, understanding, remembering, forgetting, learning or teaching?
+2. Is the Basic expression a state, a mental activity, possession of knowledge, or transfer/acquisition?
+3. Which Name/Quality/Operator/Directive relation carries the meaning?
+
+Include contrasts such as “know a fact” vs “understand an argument” and “remember” vs “keep in mind”.
+
+#### 6. Reverse check
+
+Give the Basic expression and ask what mental relation it expresses. Reject answers that flatten certainty, opinion, understanding and memory into one generic “know”.
+
+### Scope controls
+
+- C05 is about mental knowledge and cognition; C06 is about feeling, preference and desire.
+- “Speak a language” cross-links here because it means having knowledge of a language, not simply speaking to someone.
+- “Show interest” remains in C01's short show comparison, with a cross-link to C06; do not duplicate it here.
+- Names of Things/Qualities expansion is taught in Module 1 and referenced where it helps explain expressions such as mind, grip and point of view.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson is viable. The four sections are different stages of the same broad mental-knowledge task: form a thought, hold/judge knowledge, retain/lose it, and acquire/transfer it.
+
+---
+
+## C06 — Feeling, Preference, Desire & Need
+
+### Teaching objective
+
+The learner distinguishes an internal experience, an attitude toward something, a preference, a desire and a need. The Basic expression should make the relevant relation clear rather than treating feel/like/want/need as one-word replacements.
+
+### Proposed teaching flow
+
+#### 1. Feeling and experience
+
+Use pain, pleasure, a feeling that something is so, and feeling angry.
+
+Ask whether the sentence describes:
+- a feeling as an experience;
+- an idea or impression;
+- a Quality/state.
+
+Keep the physical use of feel — touching a wall to test it — as a cross-link to C02, not as part of the internal-feeling rule.
+
+#### 2. Liking and approval
+
+Compare:
+- being pleased with something;
+- having or giving approval;
+- being friends with a person / getting on well;
+- having a taste for food or pictures.
+
+The learner must identify whether like means approval, friendship or taste.
+
+#### 3. Desire and need
+
+Compare:
+- having a desire for something;
+- being in need of something;
+- needing more because the available amount is insufficient.
+
+The learner should distinguish wanting from a need arising from circumstances.
+
+#### 4. Guided practice
+
+Use short contexts where the ordinary verb is ambiguous:
+- like a person vs like a picture;
+- feel pain vs feel that something is true;
+- want something vs need more of it.
+
+Require the learner to state the intended relation before choosing the Basic expression.
+
+#### 5. Reverse check
+
+Give the Basic expression and ask whether it describes an experience, attitude, preference, desire or need.
+
+### Scope controls
+
+- C06 does not absorb C05's knowledge/understanding meanings.
+- Physical touch belongs to C02.
+- Show interest remains in C01's comparison panel, with a cross-link to attitude/feeling here.
+- Do not treat desire and need as identical.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson is viable. The examples form a progression from internal experience to attitude/preference and then desire/need. The same ordinary words have several senses, so context comparison is essential.
+
+---
+
+## Module 2 flow checkpoint — C01–C06
+
+| Candidate | Main learner decision | Current flow result |
+|---|---|---|
+| C01 | Identify the communication event and its roles/medium | One Lesson viable; show remains a short contrast |
+| C02 | Identify bodily intake/expulsion or contact/impact | One Lesson viable; two sections |
+| C03 | Distinguish physical action, damage/effect and result | One Lesson viable; Step 17 prerequisite |
+| C04 | Identify movement, path, destination, viewpoint and posture | One Lesson viable; two sections |
+| C05 | Identify the mental/knowledge operation or relation | One coherent cognitive Lesson |
+| C06 | Identify experience, attitude, preference, desire or need | One coherent affective Lesson |
+
+The six flows do not yet prove final lesson duration. That will be tested after all 12 Module 2 flows have been drafted and compared.
