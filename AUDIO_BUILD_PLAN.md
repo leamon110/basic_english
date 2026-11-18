@@ -1695,3 +1695,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Verification boundary: this is a first integrated draft, not final acceptance. Clarity, exercise volume, duplicate examples against later Module 2 lessons and actual learner time remain to be reviewed. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: review C01 against the original source pages and accepted C01 flow, then author Module 2 Lesson 2 — Bodily Action & Contact. Preserve the 2 Modules / 15 Lessons architecture; do not revive the withdrawn 14- or 23-Lesson proposals.
 
+### C01 integrated-draft post-write verification (2026-11-18)
+
+- Post-write branch HEAD before this final handoff record: 7cddd030e2eb8b3769bc2ef1351e9f1d39bda3a5, commit “Record Module 2 Lesson 1 integrated draft and startup check”.
+- Verified the new BASIC_ENGLISH_EXPRESSION_M2_L1_DRAFT.md exists (243 lines) and contains all planned source groups: tell/story/directions/song; hear/listen/later news; writing/reading/sending; and the compact p.252 show comparison. The file explicitly marks the existing Lesson 01 speak prototype for reuse and the current checker limitation.
+- Verified BASIC_ENGLISH_EXPRESSION_COMMUNICATION_DRAFT.md (77 lines) now maps to C01 / Module 2 Lesson 1 and no longer leaves the one-vs-two-Lesson decision open.
+- Verified BASIC_ENGLISH_EXPRESSION_LESSON_01.md (315 lines) carries the prototype-mapping note: the old Lesson 01 label is not an extra Lesson outside the accepted 2 Modules / 15 Lessons.
+- Verified the knowledge map includes checkpoint 54 and this plan includes the C01 draft checkpoint. No App source was modified.
+- Compared the post-write branch HEAD with Run 48 build commit 9a1793905b4abc7d24bd1c598a5a3004450f6748: 154 commits ahead / 0 behind. All changed files are root-level Markdown; zero paths under docs/**, android-offline/**, scripts/** or the workflow file changed.
+- Requeried the branch Actions collection after the writes: 48 total / 48 returned; all 48 completed; newest remains Run 48 / 44197915524 completed / success; no active or queued run exists. No build was triggered.
+- C01 status: first integrated content draft exists and its structural/source-presence checks passed. It is not yet final accepted teaching content; a focused review of explanation clarity, answer coverage, duplication with later Module 2 Lessons and actual learner time remains.
+- Next concrete action: perform that C01 source/flow/teaching review; then continue in accepted curriculum order with Module 2 Lesson 2 — Bodily Action & Contact.
+
