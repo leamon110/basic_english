@@ -723,7 +723,27 @@ Contrast an actual exchange with a promise about a future exchange. The learner 
 
 #### 4. Fixed-group reinforcement
 
-Select only the fixed uses that naturally reinforce the transaction/commitment theme, such as agreement, letting a house, exchange, carrying an undertaking through, money risk, approval, credit, profit/loss, demand, company participation and keeping one's word.
+Use a small, selected set of fixed uses that directly reinforces transactions and commitment:
+
+- **in exchange** — one object is given for another;
+- **on approval** — goods are sent under an approval arrangement;
+- **on credit** — goods are obtained with payment deferred;
+- **let a house** — rent a house to someone;
+- **come to agreement** — reach an agreed arrangement;
+- **put the business through** — carry the business undertaking to completion;
+- **keep one's word** — do what one has promised;
+- **take part in a company's organization** — participate in a business;
+- **profit / loss / interest on a business** and **much in request** — financial result and demand for goods.
+
+These examples reinforce the main transaction and commitment decisions; they are not nine new subtopics.
+
+Keep three nearby expressions separate:
+
+- **on approval** is a sale arrangement, not the C06 attitude “it has our approval”;
+- **on credit** is a purchase/payment condition, while **to one's credit** describes merit or reputation;
+- **at a loss for something to do** describes uncertainty about what action to take, not a financial loss.
+
+Do not use the horse-race “put money on” example as a sale lesson. It is a betting/risk context, not a buying or selling transaction.
 
 Do not import unrelated social or emotional phrases merely to make the lesson longer.
 
