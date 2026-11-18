@@ -413,7 +413,7 @@ Original section: “100 More Uses”, printed pp.232–242. The source numbers 
 | 99 | A person being one hundred years old | C10 — age/quantity |
 | 100 | A person not being made worse by drink | C12/C06 — contextual evaluation and condition |
 
-**Part D count: 13 + 51 + 18 + 15 + 3 = 102?** The source category ranges are 1–13, 14–64, 65–82, 83–97, and 98–100. Their inclusive counts are 13 + 51 + 18 + 15 + 3 = **100**. The table above retains every source number exactly once.
+**Part D count: 13 + 51 + 18 + 15 + 3 = 100.** The table above retains every source number exactly once.
 
 ## Verified source counts and current completion
 
