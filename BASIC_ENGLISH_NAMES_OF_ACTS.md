@@ -1,17 +1,19 @@
-# Basic English：Names of Acts / 常见动作的重新表达（原作者规则研究）
+# Basic English：动作表达研究索引——Names of Acts 与 Some Common Needs
 
-> 本文依据 C. K. Ogden《The ABC of Basic English》的 “Names of Acts” 与 “Some Common Needs” 整理。原书例句与本项目的结构归类分开标注。
+> 本文是项目的跨章节研究索引，不是 Ogden 原书中某一章的完整转录。必须区分两部分：
+> - **Names of Acts（《The ABC》pp.162–186）**：原书逐个讨论 BE、COME、DO 等核心 Operators 的用法和意义，详见 \`BASIC_ENGLISH_OPERATORS.md\`。
+> - **Some Common Needs（《The ABC》pp.242–262）**：原书在 A Basic Selection 下列出 Simple Acts、Complex Acts、Other Suggestions，给出常见动作和其他意思的 Basic 表达。
 >
-> 目标不是编一本普通英语动词的同义词表，而是学习：普通英语一个动词在当前语境中表示什么动作、状态或关系，Basic 如何用850词重新表达它。
+> 本文后续的动作分类表主要整理第二部分 Some Common Needs，并与 Names of Acts 的 Operator 用法交叉对照。项目新增的结构归类与练习说明，不应误称为原书的章节结构。
 
-## 1. 原作者为什么单独安排 Names of Acts
+## 1. 为什么必须区分这两个相邻部分
 
-Ogden 在《The ABC of Basic English》目录中，把 “Names of Acts” 放在 Expansions 部分；随后在 “A Basic Selection” 中又安排 “Some Common Needs”，分为：
+Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Names of Acts”，逐个讨论 Operators；随后在 A Basic Selection 中安排 “Some Common Needs”，分为：
 - Simple Acts
 - Complex Acts
 - Other Suggestions
 
-原作者在 Common Needs 开头明确说明：要熟练使用 Basic，必须掌握如何用850词覆盖那些不在850词表中的常见动作和事物；他还说明，这些常见问题是经过长期使用经验整理出来的现成答案。
+原作者在 Some Common Needs 开头明确说明：要熟练使用 Basic，必须掌握如何用850词覆盖那些不在850词表中的常见动作和事物；这些常见问题是经过长期使用经验整理出来的实际答案。
 
 这直接说明：
 - 850词表本身不是一张普通英语动词的一对一替换表；

@@ -877,3 +877,20 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Current APK status is unchanged: Run 48 APK/archive verification is complete, but the user's combined device acceptance remains unconfirmed.
 - Next action: rebuild the curriculum from the source hierarchy and learning objectives. Do not assign new lesson counts or IDs until the unit boundaries, prerequisites, scope and assessment criteria are justified.
 
+
+
+### Expression curriculum first-pass structure — source levels and practical learning path (2026-11-18)
+
+- Re-read AGENTS.md (53 lines) and the complete AUDIO_BUILD_PLAN.md (880 lines, read in consecutive ranges). Refreshed branch and Actions before editing.
+- Live branch head before this update: a958a1fb9bf880f016b357432575f7c021dee560. Latest Actions: Run 48 / 44197915524, completed / success, built 9a1793905b4abc7d24bd1c598a5a3004450f6748. All 23 job/post-job steps completed. Logs show 850/850 recordings restored from cache, 0 downloads, 0 errors, and Android Gradle BUILD SUCCESSFUL. APK artifact 14379604453 and coverage artifact 14380462964 were present and not expired. No active or queued runs. Workflow concurrency remains cancel-in-progress: true.
+- Rechecked the original source distinction: The ABC's “Names of Acts” (pp.162–186) begins with BE and COME and discusses the Operators; “Some Common Needs” (pp.242–262) is a later A Basic Selection section with Simple Acts, Complex Acts and Other Suggestions. The three speak examples are from Some Common Needs, p.244. The previous project index title blurred these two sections.
+- Updated BASIC_ENGLISH_EXPRESSION_SYSTEM.md:
+  - Corrected the Names of Acts / Some Common Needs distinction.
+  - Replaced the generic syllabus-planning section with a practical first-pass course map: existing Teaching rules as foundations; Some Common Needs as the main applied-expression material; Things/Qualities as a meaning-extension topic; Fixed Word-Groups as phrase-level support/reference; Meaning → Basic as the practice method across topics.
+  - Recorded the actual scope and problems of the five existing App prototypes, including the overlap between current Lessons 03 and 05 and the inaccurate Names of Acts label on Lesson 03.
+  - Kept the final module count, Lesson count and numbering open.
+- Clarified BASIC_ENGLISH_NAMES_OF_ACTS.md: it is a cross-chapter index; its Simple Acts / Complex Acts / Other Suggestions material comes from Some Common Needs, while the Operators' source chapter is separately indexed in BASIC_ENGLISH_OPERATORS.md.
+- No App code or Android workflow input changed. Only root-level Markdown files changed; the workflow watches docs/**, android-offline/**, scripts/** and the workflow file, so this documentation update does not trigger a build.
+- APK status unchanged: Run 48 archive verification is recorded in this plan, but the user's combined device acceptance remains unconfirmed.
+- Next action: map every Some Common Needs source example to its actual meaning and Basic structure, then test the course grouping against a complete set of examples before fixing lesson boundaries or counts.
+
