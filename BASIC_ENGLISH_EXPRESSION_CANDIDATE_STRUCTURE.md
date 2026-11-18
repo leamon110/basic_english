@@ -272,3 +272,73 @@ Two internal sections are needed:
 - Candidate 03 remains a separate Lesson because it teaches action/result/state distinctions that candidate 02 does not.
 - The boundary is based on the learner's decision, not the source's page break.
 - This test does not yet establish the final total Lesson count.
+
+
+## Teaching-size test 02 — Movement, transfer and body position
+
+### Candidate 04 — Movement and Position: Transfer, Posture & Viewpoint
+
+**Teaching objective:** describe where a person or thing is, where it moves, and how the movement/position relates to a reference point. The learner must distinguish transfer/path, held position, posture change and the speaker's viewpoint.
+
+Two internal sections are needed.
+
+**A. Moving, sending and holding an object**
+
+Source examples:
+
+- throw a ball to a baby → send the ball to a baby;
+- throw over a wall / across a river → send the ball over / across;
+- a blow pushes someone against a table → the blow sends the person against the table;
+- catch a ball → get it in the hand;
+- hold a ball → get a grip of it / keep it / have it in the hand;
+- bring delicate things → take them / come with them, depending on viewpoint.
+
+The central decision is: **what moves, what is the destination/path, and from whose viewpoint is the movement described?**
+
+**B. Position and change of posture**
+
+Source examples:
+
+- lie on something → be on it / rest on it;
+- stand up → get up;
+- sit → take a seat / be seated.
+
+The central decision is: **is the sentence describing an existing position, or the action of moving into that position?**
+
+**Supporting meaning contrasts**
+
+- run quickly → go quickly;
+- run for health → take a run;
+- run away from danger → go (off) at a run;
+- slip → have a slip / have a fall.
+
+These examples are useful because they show that one ordinary word can describe speed, purposeful activity or escape, and that an accidental event can be expressed as a Name. They do not need to become independent Lessons.
+
+**Additional source examples for path practice**
+
+- take your arm out of your coat;
+- put money into your pocket;
+- go quickly out of the house.
+
+**Project-created test prompts based on the source examples:**
+
+1. A ball is thrown across a river. Preserve the path: “send the ball across the river”.
+2. A child catches a ball. Express the new position: “get it in the hand”.
+3. A person keeps a ball in their hand. Compare “keep it”, “have it in the hand” and “get a grip of it”; do not treat them as identical in every context.
+4. A person is bringing eggs toward the speaker. Decide between “take them” and “come with them” from the speaker's viewpoint.
+5. A person is already sitting. Use the state expression “be seated”; when telling someone to sit, use the action expression “take a seat”.
+6. A person stands up from lying down. Express the change of posture: “get up”.
+7. Compare “run quickly”, “run for health” and “run away from danger”. Do not give all three the same Basic rendering.
+8. Someone slips and falls. Express the event with “have a slip / have a fall”.
+
+### Test result
+
+The two internal sections ask different local questions, but both belong to the same spatial theme:
+
+- object: movement, path, destination, holding and viewpoint;
+- person: position, movement into a position, and posture.
+
+The examples are sufficient for one coherent lesson if the objective stays at **movement and position relative to a reference point** and the two sections remain explicit. The run/slip examples are supporting contrasts, not the centre of the lesson.
+
+**Decision:** retain candidate 04 as one provisional Lesson, with two sections. Do not split object transfer and posture into separate Lessons at this stage. Reconsider only if the full lesson prototype becomes too long or the learner tasks cannot be taught in one progression.
+
