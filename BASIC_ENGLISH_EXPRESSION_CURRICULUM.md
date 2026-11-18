@@ -15,6 +15,14 @@
 
 The count comes from the learner's distinct decision tasks and the tested teaching-flow boundaries. It is not a target derived from the number of source chapters or vocabulary items.
 
+### Numbering — important distinction
+
+- **Module** is the top-level division: there are exactly two, Module 1 and Module 2.
+- **Lesson numbers restart inside each Module**: Module 1 has Lessons 1–3; Module 2 has Lessons 1–12.
+- **C01–C15 are internal Candidate IDs** retained from the research/candidate-structure documents. They are not Module numbers, global Lesson numbers or final App screen IDs.
+- Mapping: **C01–C12 = Module 2 Lessons 1–12**; **C13–C15 = Module 1 Lessons 1–3**. The C numbers preserve the order in which candidate topics were tracked; they do not determine the final teaching order.
+- In learner-facing discussion and App planning, use **Module 1 · Lesson 1** or **Module 2 · Lesson 1**. Add the C ID in parentheses only when cross-referencing research files (for example, Module 2 · Lesson 3 (C03)).
+
 ## 2. Module 1 — Understanding Basic Word Meanings
 
 **Module objective:** understand how a known Basic word can refer to a related meaning, function as another word class in source-listed cases, or be narrowed by context.
@@ -120,12 +128,17 @@ The original course already contains applied everyday scenes and integrated read
 
 ## 6. Existing App prototype mapping
 
-| Existing prototype | Final curriculum destination |
-|---|---|
-| Expression prototype Lesson 01 — speak | Module 2, Lesson 1 — Communication & Information |
-| Expression prototype Lesson 02 — body-part expansion | Module 1, Lesson 1 — Names of Things: Meaning Expansion |
+The five numbered lessons in the early App were **prototypes**, not five accepted curriculum Lessons. Their content is handled as follows:
 
-These are mappings only. Do not renumber or move App screens until a separate migration plan is prepared and approved by the project's implementation workflow.
+| Early App prototype | What happens in the accepted curriculum |
+|---|---|
+| Lesson 01 — speak | Its teaching example is retained in **Module 2 · Lesson 1 (C01) — Communication & Information**. |
+| Lesson 02 — body-part expansion | Its content is retained and expanded in **Module 1 · Lesson 1 (C13) — Names of Things: Meaning Expansion**. |
+| Lesson 03 — mixed “Names of Acts” examples | It is not kept as one Lesson. The communication examples go to Module 2 · Lesson 1 (C01); touch/hit examples to Lesson 2 (C02); catch/run/movement examples to Lesson 4 (C04); think/understand/remember/forget examples to Lesson 5 (C05). |
+| Lesson 04 — Fixed Word-Groups overview | It is not a standalone Lesson. Relevant fixed groups are used as reinforcement inside the Lessons where they support the meaning being taught. |
+| Lesson 05 — Some Common Needs overview | It is not a standalone Lesson. Its material is redistributed by meaning: can/ought to Module 2 · Lesson 9 (C09); unless to the conditional-sentence foundation; busy/deaf/home/world to Module 2 · Lesson 12 (C12). The source's “finish” sentence is explanatory English, not a Basic rendering, so it is not taught as a replacement. |
+
+Do not count these five early prototypes as five extra Lessons. The current accepted curriculum has 15 Lessons in total. Do not renumber or move App screens until a separate migration plan is prepared and approved by the project's implementation workflow.
 
 ## 7. Evidence supporting the 2 / 15 structure
 
