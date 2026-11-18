@@ -2114,3 +2114,9 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - The draft is complete at the document level, but actual learner time, learner feedback and App/device acceptance remain unmeasured. It is not yet App-integrated.
 - No App source, Android workflow input or audio assets changed; no Android build was triggered.
 - Next: source-audit and author Module 2 Lesson 12 — Context-Dependent Words & Paraphrase, then run the final cross-Lesson duplication and consistency review.
+
+### Research baseline and accepted curriculum status clarification (2026-11-19)
+
+- Added a prominent status note to `BASIC_ENGLISH_EXPRESSION_SYSTEM.md`: its early course-structure passages predate the accepted architecture and must not override `BASIC_ENGLISH_EXPRESSION_CURRICULUM.md` (2 Modules / 15 Lessons). The research baseline remains useful for source-system explanations; current progress remains in this plan.
+- This is a documentation consistency clarification only. No App source, Android workflow input or audio assets changed; no Android build was triggered.
+- Next: continue with Module 2 Lesson 12 — Context-Dependent Words & Paraphrase.
