@@ -2249,3 +2249,13 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - The rest of C04's source distinctions remain unchanged: send with receiver/path; catch/get in the hand; grip/hold/keep; take/come with; posture; run's three uses; slip's two uses.
 - Next: complete the C04 exercise/answer review and then proceed to Module 2 Lesson 5.
 
+## 67. C04 position review — stand as state vs posture change (2026-11-18)
+
+- Reviewed the C04 position table and answer key against p.248. Found that the first draft's “things stand in a certain position” row gave “be placed” as if it were the only Basic expression and included “still be standing” in the expression column.
+- Corrected the distinction:
+  - a person gets up / stands when moving from lying down to an upright position;
+  - a person who remains standing is on one's feet;
+  - a thing can stand / be placed in a certain position without describing a person getting up.
+- Updated BASIC_ENGLISH_EXPRESSION_M2_L4_DRAFT.md and BASIC_ENGLISH_NAMES_OF_ACTS.md. The matching exercise and answer now test the static-object use.
+- The run/slip contrasts, exact balance/movement phrases and path/destination examples remain source-aligned. C04 still needs a final full review of answer coverage and teaching volume.
+
