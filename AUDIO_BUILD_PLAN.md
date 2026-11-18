@@ -1810,3 +1810,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author Module 2 Lesson 4 — Movement & Position.
 
+### Module 2 Lesson 4 — Movement & Position source audit (2026-11-18)
+
+- Reopened original English p.248 and its continuation examples on p.250; compared them with the accepted C04 flow, source index, candidate structure and curriculum.
+- Object movement/transfer: throw a ball to someone / over a wall / across a river → send it to someone / over / across; catch a ball → get it in the hand; get a grip of it; hold/keep it or have it in the hand; when given something to hold, take it; delicate things such as eggs are safer to carry/take or come with than to throw.
+- Body position/posture: lying on something → be on it / rest on it; getting upright from lying down → stand / get up; being on one's feet → still standing; sit → take a seat / be seated; things can stand/be placed in a position.
+- Run has three source uses: movement speed → go quickly; exercise → take a run; escaping danger → go (off) at a run.
+- Found a missing source distinction in the first C04 flow: slip is used both for losing one's footing (have a slip / have a fall) and for a quick, simple action (take an arm out of a coat; put money into a pocket; go quickly out of a house). Updated BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md to preserve both as a compact contrast, not a general rule for all quick actions.
+- Added brief supporting position examples: a noise may throw/put someone off balance; a sufficiently hard blow may send someone against a table. The impact itself cross-links to C02; C04 focuses on balance or movement.
+- Directives remain foundation tools; C04 applies path/destination and position without reteaching Names of Directions. One Lesson remains viable with two internal strands: object transfer/viewpoint and body position/posture.
+- Updated the C04 flow and knowledge map. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author C04 with the source distinctions above and practice that makes viewpoint, path/destination and position/state explicit.
+
