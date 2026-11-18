@@ -83,7 +83,7 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 |---|---|---|
 | throw a ball to a baby | send the ball to a baby | send + 对象 + to |
 | throw a ball over a wall / across a river | send the ball over the wall / across the river | send + 路径 Directive |
-| throw someone off balance | put / throw someone off balance | put + off + 名称 |
+| a sudden noise throws someone off balance | throw or put us off our balance | put / throw + off + 名称 |
 | a sufficiently hard blow pushes someone against a table | the blow will send us violently against the table | send + against |
 | catch a ball | get it in the hand | get + 对象 + 位置 |
 | hold a ball | get a grip of it；keep it；have it in the hand | get / keep / have + 名称 |
