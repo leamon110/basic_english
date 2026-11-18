@@ -917,3 +917,81 @@ Now check the candidate sequence as a whole:
 3. compare adjacent Lesson boundaries for overlap;
 4. verify that the proposed order moves from concrete, familiar decisions toward more abstract ones without unnecessary backtracking;
 5. only then decide whether v0.2 should be retained, merged or split and assign the final count.
+
+
+## Whole-sequence audit 02 — Foundation prerequisites and overlap with existing App content
+
+### 1. Existing foundation already present in the App
+
+The current `docs/js/rule-learning.js` defines 13 structured Teaching units:
+
+- plural;
+- -er / -ing / -ed derivatives;
+- -ly adverbs;
+- comparison;
+- un- prefix;
+- 16 core Operators;
+- 20 proper Directives;
+- Operator + Directive combinations;
+- Names of Acts;
+- Expansions;
+- 250 Fixed Word-Groups;
+- sentence structure / semantic roles;
+- Meaning → Basic method.
+
+These are the foundation/reference layer. The Expression candidate Lessons should **apply** these tools to the Some Common Needs material, not repeat the same explanations.
+
+The original 45-Step course map also confirms:
+
+- Step 25 states that the source's explicit Basic structure teaching has been completed at that point;
+- Steps 36–41 cover numbers, time/calendar, money, weights and measures;
+- Steps 33–35 contain explanatory notes on word extensions and fixed combinations;
+- Step 42 already applies Basic in five everyday-service situations and includes a Basic account-of-a-journey exercise;
+- Steps 43–45 continue with longer dialogues/readings, including The Smash accident/injury narrative in Step 44.
+
+Therefore the Expression System is a **supplementary, more explicit and systematic expression-practice track**. It must not claim that the original 45 Steps contain no applied expression, and it must not replace the 45-Step course.
+
+### 2. Candidate Lesson prerequisites and overlap controls
+
+| Candidate Lesson | Foundation needed before the lesson | Existing coverage / overlap control |
+|---|---|---|
+| C01 Communication & Information | Operators; Names of Acts; basic sentence roles; recipient/content relations | The existing Expression prototype “speak” is the opening example. The Teaching Names of Acts unit already repeats the three speak senses; use it as a reference and make the Expression lesson deeper through the wider communication set, not a duplicate explanation. |
+| C02 Bodily Action & Contact | Operators; Names of Acts; body-part/object names; relevant relation words such as on, out of and into | The Teaching Names of Acts unit already uses eat → take food / have a meal. Refer to that foundation example, then extend to bite, spit, touch, hit and scratch. |
+| C03 Physical Effects: Damage, Change & Result | Operators; active/result distinction; be/get + past-participle forms where used | Step 22 in the 45-Step map covers complex tense/passive forms; the word-form unit covers -ed derivation but is not a substitute for teaching result/passive sentence structure. If the learner has not met the required structure, introduce it briefly or link to the correct foundation. |
+| C04 Movement & Position | Directives; Operator + Directive; source/destination/path; come/go viewpoint | Steps 1–2 and the Directives/Operator+Directive units already introduce spatial relations. Do not reteach the whole Directive list; apply it to transfer, holding and posture examples. |
+| C05 Thinking, Knowledge, Memory & Learning | Names of Acts; Name + relation patterns such as knowledge of / clear about / keep in mind; clause structure | Reuse the existing Operator/Name/Directive and sentence-role foundation. The new Lesson is about selecting the mental relation, not redefining Operators. |
+| C06 Feeling, Preference, Desire & Need | Names of Qualities; Names of Acts; relations such as of / for / with; be/have/give | The Quality and relation-word foundations should be referenced. The Lesson adds context distinctions such as liking a person vs liking food/pictures. |
+| C07 Exchange, Sale & Commitment | get/give/take; source, recipient, price and purpose relations (to / for / at / from); relevant fixed phrases | The Fixed Word-Groups unit is the source for “let a house”; the new Lesson teaches the transaction roles, not the whole fixed-group mechanism. |
+| C08 State and Process | be/get/go/come/make; Quality and Name patterns; state vs transition; relevant fixed groups | The fixed-group unit already introduces phrases such as go to sleep / come to a stop. Use them as examples in a process sequence rather than reteaching each phrase in isolation. |
+| C09 Ability, Obligation & Intention | auxiliary/modal sentence patterns and infinitive structures | No dedicated can/ought/shall unit appears in the current 13-unit Structured Teaching list. The source distinctions therefore need to be taught here or added to the foundation before this Lesson. Step 21's would/might and Step 22's auxiliary forms are related foundations, not a complete substitute. |
+| C10 Quantity, Amount & Degree | number, count/non-count nouns, quantity words and degree structures | Steps 5, 7 and 11 already cover some/every/no, count/substance nouns and much/little; Steps 36–37 cover numbers. This Lesson must focus on the additional source meanings of each, altogether, whole, few, many, too and once, not reteach number names or basic plural rules. |
+| C11 Time & Sequence | tense/aspect and basic time relations | Steps 6, 12, 18–20 and 37–39 cover routine/time/calendar material. This Lesson focuses on the source's nuanced uses of ago, already, yet, since, next and always; it is not a second basic clock/calendar lesson. |
+| C12 Context-Dependent Words & Paraphrase | 850-word vocabulary; word classes; sentence structure; relative-clause patterns where needed | No single existing unit covers these exact paraphrases. Use the foundation to explain the construction, but keep the lesson focused on identifying the intended sense of the ordinary word. |
+| C13 Meaning Expansion: Things & Qualities | root meanings of Basic Things/Qualities; relation categories; word-class awareness | The Teaching Expansions unit and current Expression prototype Lesson 02 already cover some body-part extensions and a small Quality set. Reuse that prototype as the first subsection, then extend it with the newly indexed p.154 relations and the full source coverage. Do not duplicate the existing 11 body-part examples as a new lesson from scratch. |
+| C14 Special Use / Meaning Narrowing | broad category meanings; context selection; distinction between expansion and narrowing | The Teaching Expansions unit already states the distinction briefly. This candidate Lesson should provide the source's material-name, subclass and contextual-default examples as practice. Keep it distinct from Fixed Word-Groups / idiomatic special uses. |
+
+### 3. Existing Expression prototypes are not the same as final candidate numbering
+
+The current App's `expression-system.js` has:
+
+- Expression Lesson 01: the three meanings of speak;
+- an integrated Expression Lesson 02 prototype: body-part meaning expansion (11 terms and 10 choice questions).
+
+In v0.2, the speak prototype belongs inside C01; the body-part expansion prototype belongs inside C13, not C02.
+
+**These current App labels are prototype IDs, not proof of the final syllabus order.** The candidate C01–C14 numbers are research sequence labels only. Do not rename, move, delete or renumber App content until the overall syllabus is accepted and a separate migration plan is prepared.
+
+### 4. Foundation vs applied track — current boundary
+
+- Teaching / Structured Teaching explains reusable tools and general rules.
+- The original 45 Steps supplies the source sequence, vocabulary, readings and some applied exercises.
+- Expression System applies the tools to specific meaning-to-Basic and Basic-word-meaning problems, with explicit context comparison, construction and reverse interpretation.
+- Existing examples may appear in both places only when their instructional role is different: foundation explanation vs applied practice. Avoid repeating the same explanation and quiz unchanged.
+- Step 42 is a source example of applied use; the Expression System should deepen that method, not claim to invent it.
+- The current App has 14 locally adapted Steps out of 45; do not imply that all original Step prerequisites are already available as local Chinese lessons.
+
+### 5. Whole-sequence prerequisite finding
+
+The current candidate sequence can use the Structured Teaching units as its foundation without requiring learners to complete all 45 original Steps first. However, C03's result/passive forms and C09's modal meanings need an explicit coverage check before implementation. The other candidates primarily apply already-listed Operators, Directives, word forms, fixed groups and sentence roles.
+
+The next design pass must decide which foundation units are true prerequisites, which are quick reminders inside a Lesson, and which need a new short foundation item. It must not silently assume that every relevant grammar form is already taught.
