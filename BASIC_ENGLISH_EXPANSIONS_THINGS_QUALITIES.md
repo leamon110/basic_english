@@ -222,9 +222,9 @@ pp.154–156 补充说明：并非所有 Names of Things 的扩展都建立在�
 
 ## 7. Qualities 也可以作为 Names of Things 使用
 
-《The ABC》p.160 列出一组可作为事物名称使用的性质词，包括：
+《The ABC》p.160 列出35个可作为事物名称使用的性质词形式，并另列颜色词：
 
-acid、chief、chemical、cold、complex、cut、elastic、equal、fat、female、first、flat、future、good(s)、hollow、last、living、male、natural、opposite、parallel、past、present、public、quiet、right、safe、same、second、secret、solid、sweet、waiting、wrong、young，以及作为事物名称使用的颜色词。
+acid、chief、chemical、cold、complex、cut、elastic、equal、fat、female、first、flat、future、good(s)、hollow、last、living、male、natural、opposite、parallel、past、present、public、quiet、right、safe、same、second、secret、solid、sweet、waiting、wrong、young。
 
 原书特别说明，其中 dark、first、last、quiet、same 只与 the 连用。
 
