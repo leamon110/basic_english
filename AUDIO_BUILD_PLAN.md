@@ -1466,3 +1466,21 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Branch head: `c1274f472538963f8305ae53d9fde20e86e14e59`.
 - Latest Actions remains Run 48 / `44197915524`, completed / success, built commit `9a1793905b4abc7d24bd1c598a5a3004450f6748`. The latest run's 23 steps/logs and both unexpired artifacts were inspected at startup; no active or queued run exists.
 - Compare against Run 48: 79 commits ahead / 0 behind; changed files remain ten root-level Markdown research/plan documents only. No `docs/**`, `android-offline/**`, `scripts/**` or workflow file changed. No new build was triggered.
+
+
+### Whole-sequence audit 04 — Module order recommendation (2026-11-18)
+
+- Compared three possible sequences: source-aligned (Expansion → Special Use → Common Needs application); application-first; and interleaved concrete-expression / expansion / abstract-expression.
+- Current recommendation: **Module 1 — Understanding Basic Word Meanings** (Meaning Expansion; Special Use/Meaning Narrowing), followed by **Module 2 — Expressing Common Meanings in Basic English** (the 12 application candidates).
+- Reason: this matches the 1932 *The ABC* order (Names of Things and Qualities before Names of Acts and Some Common Needs) and gives the learner the expansion concepts before C05/C06 use extended meanings such as mind, grip, point of view and taste. The expansion module can begin with concrete body-part examples; it need not be taught as abstract theory.
+- Application-first is more immediately practical, but risks introducing extended meanings before explaining them or repeating mini-explanations later. Interleaving adds structural complexity without a sufficiently clear benefit.
+- This is a recommendation, not final acceptance. C01–C14 remain research IDs, not App Lesson IDs. If retained, final display numbering will be Module 1 Lesson 1–2 and Module 2 Lesson 1–12. Existing App prototypes (speak and body-part expansion) will be reconciled during a later migration; no App code changed.
+- Updated `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md` and `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md`.
+- Remaining before final acceptance: inspect whole-course scope for any adjacent candidate Lessons that should merge/split; check the order and all 50 priority fixed-group placements in the new module order; confirm no foundation duplication and that C03/C09 prerequisite handling is explicit.
+- No Android build triggered.
+
+### Live GitHub / Actions recheck (2026-11-18)
+
+- Branch head before this plan update: `b204d728eed9f09351d2f47861756726410a5578`.
+- Latest Actions remains Run 48 / `44197915524`, completed / success, built commit `9a1793905b4abc7d24bd1c598a5a3004450f6748`; no active or queued run exists.
+- Compare against Run 48: 82 commits ahead / 0 behind; changed-file set remains ten root-level Markdown research/plan files only. No App, Android, script or workflow files changed. No new build was triggered.
