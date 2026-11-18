@@ -2390,3 +2390,15 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - C06 remains a draft pending a final answer-key/teaching-volume check. It is not user-tested or App-integrated. No App source or Android workflow input changed; no build was triggered.
 - Next: re-review the corrected C06 draft and its closed exercises against p.252, then continue to Module 2 Lesson 7 — Exchange, Sale & Commitment.
 
+## 78. C06 internal answer and teaching review complete (2026-11-18)
+
+- Rechecked the corrected C06 draft against original p.252 and the accepted three-part flow: feeling/internal experience; liking, friendship, preference and approval; desire and need.
+- Verified the source mappings: feel pain/pleasure → have a feeling of pain/pleasure; feel that something is so → have a feeling/idea that it is so; feel angry → be feeling angry; like a thing → be pleased with it; like a person → be friends with them / get on well with them; like good food or pictures → have a taste for them; anything liked more generally has our approval; we give our approval to it; want → have a desire for; need for well-being / insufficient amount → be in need of / be in need of more.
+- Clarified that “be friends with” expresses friendship while “get on well with” expresses a good relationship. Both are source expressions for liking persons, but they are not identical relationships.
+- Confirmed that p.252 gives positive approval only and no separate Basic negative counterpart; the corrected lesson does not invent one.
+- Verified all closed exercises and answers: A 4/4, B 4/4, C 3/3, D 3/3, E 4/4, F 13/13 — 31 prompts and 31 corresponding answers. The independent-construction task is explicitly not auto-scored by the current App.
+- Corrected the reverse-understanding answers so “get on well with them” is explained as “have a good relationship with them” and “it has our approval” as “we approve of the thing”. Corrected the C02 distractor to the source form “give it a touch”.
+- C06 is source-reviewed and internally reviewed, but not user-tested or App-integrated. Actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no build was triggered.
+- Next: author Module 2 Lesson 7 — Exchange, Sale & Commitment.
+
