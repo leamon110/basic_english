@@ -628,7 +628,8 @@ Keep the physical use of feel — touching a wall to test it — as a cross-link
 
 Compare:
 - being pleased with something;
-- having or giving approval;
+- having or giving approval, or being in agreement with something;
+- giving disapproval, or being in disagreement with something;
 - being friends with a person / getting on well;
 - having a taste for food or pictures.
 
