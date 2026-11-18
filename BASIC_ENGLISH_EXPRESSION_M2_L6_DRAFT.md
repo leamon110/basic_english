@@ -1,6 +1,6 @@
 # Module 2 · Lesson 6 — Feeling, Preference, Desire & Need
 
-> **Draft status:** first complete teaching-content draft. It is based on Ogden's *The ABC of Basic English*, p.252. The source examples are distinguished from project-created explanations and exercises. Physical touch, knowledge/awareness and the different meanings of show remain cross-linked to their own lessons. Clarity, answer coverage and actual learner time still require review.
+> **Draft status:** source-reviewed first complete teaching-content draft. It is based on Ogden's *The ABC of Basic English*, p.252. The source examples are distinguished from project-created explanations and exercises. Physical touch, knowledge/awareness and the different meanings of show remain cross-linked to their own lessons. Clarity, answer coverage and actual learner time still require review.
 
 ## What this lesson teaches
 
