@@ -537,3 +537,154 @@ speak 很适合做总示范，但还没有证明整个 Communication and Informa
 - 最新成功 Android 构建：Run 48；不因本研究触发新构建。
 - 下一步：继续检查 Some Common Needs 的剩余主题，先完成“教学任务边界”，再决定课程数量。
 
+
+
+## 14. Theme-boundary audit 01 — Simple Acts: eating / body action / physical contact / change of form
+
+### 14.1 Source material checked
+
+The relevant `Some Common Needs / Simple Acts` material has been checked at the level of the original examples and the project index.
+
+The source sequence first treats:
+
+- eat
+- bite
+- spit
+
+and then moves through:
+
+- touch
+- hit
+- scratch
+- cut
+- break
+
+The source itself makes an important internal transition: after the touch/hit/scratch/cut/break examples, it explicitly identifies **cutting and breaking as the important operations connected with changes of form**, and then moves on to changing the places of things. This is direct evidence that “physical action” is not one undifferentiated learning problem.
+
+### 14.2 First candidate learning tasks
+
+#### Task A — Taking in / biting / putting out
+
+Examples:
+
+- eat → take food / have a meal
+- bite → have a bite of it / at it
+- spit → put it out of your mouth
+- eat until unable to continue → be unable to get through it
+
+The common learning problem is not “food vocabulary”.
+
+It is:
+
+> **How is a bodily action represented when the ordinary verb is replaced by an Operator plus a Name and/or a relation describing the object or route?**
+
+The learner must notice:
+
+- what is being acted on;
+- whether the action is intake, biting, or expulsion;
+- whether a body part or body location must be stated;
+- whether a direction such as out / of is needed;
+- whether the expression describes the action itself or completion/result.
+
+This is a coherent candidate task, but it is not yet proven to deserve a complete Lesson by itself.
+
+#### Task B — Contact and force
+
+Examples:
+
+- touch → put a hand/finger/body part on it / give it a touch
+- touch by chance → come up against it
+- hit → give it a blow
+- scratch → make a mark on it / give it a rub / get one's nails into it
+
+The central judgment changes:
+
+> **What kind of physical contact is occurring, and what relation or effect must Basic make explicit?**
+
+The same ordinary verb family changes its Basic construction when the physical relation changes:
+
+- simple contact;
+- accidental contact;
+- forceful contact;
+- contact producing a mark;
+- contact involving a body part.
+
+This is a distinct learning task from simply expressing eating/biting/spitting.
+
+#### Task C — Change of form / result
+
+Examples:
+
+- cut → give it a cut / get it cut
+- break → be broken / get it broken
+- smash → may be smashed
+- break by itself → come to bits
+
+The central judgment changes again:
+
+> **Is the sentence describing an action that changes an object's form, the resulting state, or the object's coming apart by itself?**
+
+This introduces:
+
+- active action vs resulting state;
+- get + object + past participle;
+- be + past participle;
+- self-occurring change;
+- the result of cutting/breaking.
+
+The original source explicitly identifies cutting and breaking as the important operations for changes of form, so this boundary is supported by the source itself rather than being an arbitrary project grouping.
+
+### 14.3 Current boundary conclusion
+
+**Confirmed design evidence:**
+
+The current project label “饮食与身体动作” is too broad to be treated as a single established Lesson merely because the examples are adjacent in the source.
+
+There are at least **three different candidate learning tasks**:
+
+1. bodily intake / biting / expulsion;
+2. contact / force / physical effect;
+3. change of form / result.
+
+However, this does **not** yet mean “three Lessons”.
+
+The next design test must ask whether Task A is large and coherent enough to justify its own teaching unit, and whether Tasks B and C are better taught together as one physical-action progression or separately.
+
+### 14.4 What this changes in the course map
+
+The previous first-round grouping:
+
+> Simple Acts → “饮食与身体动作”
+
+should now be treated only as a **source-material bucket**, not a candidate Lesson.
+
+For curriculum design purposes it should temporarily be represented as:
+
+> **Simple Acts / physical actions**
+> → bodily intake and expulsion
+> → contact and force
+> → change of form
+
+This is a better representation of the actual learning-task boundaries.
+
+### 14.5 What remains unresolved
+
+- Whether Task A becomes a formal Lesson or is combined with another bodily-action topic.
+- Whether Task B and Task C form one continuous “physical action → physical result” lesson or two lessons.
+- Whether the next “movement / posture” material naturally continues from these tasks or creates a new decision problem.
+- Whether any of the fixed word-groups should be introduced inside these tasks or left for later reinforcement.
+
+No formal Lesson number is assigned from this audit.
+
+## 15. Current research checkpoint after Theme Audit 01
+
+The first non-communication Simple Acts theme has now been tested against the project’s Lesson-boundary rule.
+
+The result is useful: **source adjacency is not sufficient evidence for a Lesson boundary**. The correct unit of analysis is the learner's decision problem.
+
+Next:
+
+1. audit Simple Acts / movement and posture;
+2. compare its decision problem with the three physical-action tasks above;
+3. only then decide whether these topics merge or separate.
+
