@@ -136,6 +136,8 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | like things | be pleased with them；have approval of them；give approval to them | be / have / give + 名称或性质 |
 | like persons | be friends with them；get on well with them | be + 名称 + with / get + on + well |
 | like good food or pictures | have a taste for them | have + 名称 + for |
+| approve of something | give approval；be in agreement with it | give + 名称 / be + in + 名称 + with |
+| disapprove of something | give disapproval；be in disagreement with it | give + 名称 / be + in + 名称 + with |
 | want something | have a desire for it | have + 名称 + for |
 | need something for well-being | be in need of it | be + in + 名称 + of |
 | want more because there is not enough | be in need of more | be + in + 名称 + of |
