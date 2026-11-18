@@ -1,6 +1,6 @@
 # Module 2 · Lesson 8 — State and Process: Change, Entry & Ending
 
-> **Draft status:** first complete teaching-content draft. It is based on *The ABC of Basic English*, printed pp.255–256, and selected Fixed Word-Groups. The source's use of the ordinary-English word **finish** is explicitly not treated as a Basic expression. Source distinctions, closed answer keys and cross-topic boundaries are included; actual learner time and user feedback remain unmeasured.
+> **Draft status:** source-reviewed and internally reviewed teaching-content draft. It is based on *The ABC of Basic English*, printed pp.255–256, and selected Fixed Word-Groups. The source's use of the ordinary-English word **finish** is explicitly not treated as a Basic expression. All 34 closed practice prompts have matching answers. Actual learner time and user feedback remain unmeasured; the lesson is not user-tested or App-integrated.
 
 ## What this lesson teaches
 
