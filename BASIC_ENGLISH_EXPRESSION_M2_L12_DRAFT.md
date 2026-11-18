@@ -47,7 +47,7 @@ The source gives three different readings.
 | A statement about the people of the world as one group | All the people being considered | every one |
 | A statement about the state of society or what is changing | The things or conditions involved | things or conditions |
 
-The same ordinary-English word does not have one fixed Basic replacement. The sentence decides whether it refers to the physical earth, people as a group, or the state of things.
+The same ordinary-English word does not have one fixed Basic replacement. The sentence decides which of the three readings in the table is intended.
 
 ## 3. life — existence, living things or the activity of living
 
@@ -83,7 +83,7 @@ A short stay in a hotel does not, by itself, make that hotel the person's home.
 
 ### The family-state context
 
-The source also gives a context in which being at home is explained by the person being **with his family**.
+The source also gives a context in which the home situation is explained by the person's family relationship.
 
 This is a particular reading about the person's family situation. It is not a universal replacement for home. When the sentence is about the place of residence, keep the place meaning.
 
@@ -183,7 +183,7 @@ Choose the description that preserves the intended meaning.
    - C. A single raised landform.
 
 8. A sentence uses life to mean the fact that something exists. Which sense is intended?
-   - A. The existence sense.
+   - A. The abstract sense.
    - B. The group of living objects.
    - C. The activity of learning.
 
@@ -202,8 +202,8 @@ Choose the description that preserves the intended meaning.
 5. B — The context is physical space, not people or social conditions.
 6. C — The word refers to the people as a group.
 7. A — The sentence concerns changing circumstances, not the planet itself.
-8. A — The sentence is about the fact of being in existence.
-9. B — The reference is to the entities that have life, not the abstract fact.
+8. A — The sentence is about the abstract meaning of life.
+9. B — The reference is to living entities, not an abstract idea.
 10. A — The source's example uses the -ing form as a Name. It cross-links to the existing word-form foundation.
 
 ### C. hill, home and address
@@ -232,7 +232,7 @@ Choose the description that preserves the intended meaning.
    - B. No. A short stay alone does not establish that it is the person's home.
 
 16. In the source's family-state context, what is being described?
-   - A. The person being with his family.
+   - A. The person's family situation.
    - B. The address written on a letter.
    - C. A region of hills.
 
@@ -288,7 +288,7 @@ For each Basic description, identify the source word and the context that it can
 1. The physical planet considered as a place in space.
 2. People considered together as one group.
 3. The changing state of society or circumstances.
-4. The fact that something exists.
+4. The abstract sense of life.
 5. People, animals or plants considered as entities that have life.
 6. An -ing form used by itself as a Name for an activity.
 7. A raised piece of land, described by its sloping form.
@@ -306,7 +306,7 @@ For each Basic description, identify the source word and the context that it can
 1. world — physical/planet sense.
 2. world — people-as-a-group sense.
 3. world — social conditions / changing circumstances.
-4. life — abstract existence sense.
+4. life — the abstract sense.
 5. life — living-object sense.
 6. life — the activity sense, using the -ing word form.
 7. hill — one raised landform.
@@ -315,7 +315,7 @@ For each Basic description, identify the source word and the context that it can
 10. home — family-state sense.
 11. address — private address.
 12. address — business address.
-13. address — the letter-heading context.
+13. address — the heading written at the top of a letter.
 14. busy — amount-of-work sense.
 15. deaf — hearing condition.
 
@@ -338,7 +338,7 @@ You should now be able to:
 
 - describe busy and deaf by identifying the condition in context;
 - distinguish the physical, collective-people and changing-conditions readings of world;
-- distinguish life as existence, living objects or the activity of living;
+- distinguish the abstract sense of life, living objects and the activity of living;
 - describe one hill separately from a whole region of hills;
 - distinguish home as a residence from a family-state context;
 - distinguish a private address, a business address and a letter heading;
