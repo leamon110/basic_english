@@ -2438,3 +2438,15 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - This is a first complete draft, not final acceptance. Source/answer coverage, lesson volume and actual learner time still require review. No App source changed and no Android build triggered.
 - Next: review C07 against the original source and accepted flow, then author Module 2 Lesson 8 — Social Exchange, Relations & Participation.
 
+## 81. C07 internal source and answer review complete (2026-11-18)
+
+- Rechecked the C07 draft against original English p.254 and the selected fixed-group examples (pp.216, 220, 225, 227, 236–239, and the 50 Most Necessary group “let a house”).
+- Confirmed the core source distinctions: buyer gets the thing in exchange for money / at a price or gives money for it; seller gets money for what is given; a promise to give money later is expressed as giving one's word; regular sellers keep goods in a store; what they make is put on the market.
+- Confirmed the selected fixed contexts: in exchange; on approval; on credit; let a house; come to agreement; put the business through; keep one's word; take part in a company's organization; profit/loss/interest on a business; much in request. The small slips in the source, not generic goods, are the direct “much in request” example.
+- Added an explicit distinction between “on credit” (purchase/payment condition) and “give one's word to do so” (personal commitment to give money later). Clarified that “promise” is the ordinary-English meaning; the Basic expression is “give one's word to do so”.
+- Rechecked boundaries: on approval vs C06 “has our approval”; on credit vs “to one's credit”; at a loss for something to do vs financial loss; finding money by chance vs a sale.
+- Verified all closed practice items and answers: A 4/4, B 5/5, C 4/4, D 3/3, E 4/4, F 15/15 — 35 prompts and 35 corresponding answers. The independent-construction task is explicitly not auto-scored by the current App.
+- C07 is source-reviewed and internally reviewed, but not user-tested or App-integrated. Actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no build was triggered.
+- Next: author Module 2 Lesson 8 — Social Exchange, Relations & Participation.
+
