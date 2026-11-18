@@ -90,7 +90,7 @@ The 50 Most Necessary Fixed Word-Groups contain several expressions that reinfor
 | Fixed group | Relation | What the learner should notice |
 |---|---|---|
 | in motion | State / activity | Something is moving |
-| in use / operation | State / activity | Something is being used or is operating |
+| in use (operation) | State / activity | Something is being used or is operating |
 | go to sleep | Entry into a state | A person enters the state of sleep |
 | lights go out | Change of state | The lights stop shining |
 | come to a stop | Reaching a stopped state | The subject reaches a stopping point |
@@ -185,7 +185,7 @@ Match the situation with the fixed group.
 
 **Suggested answers**
 
-1. in use / in operation;
+1. in use (operation);
 2. in motion;
 3. lights go out;
 4. come to a stop;
