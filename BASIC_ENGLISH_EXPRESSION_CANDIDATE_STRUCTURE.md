@@ -995,3 +995,92 @@ In v0.2, the speak prototype belongs inside C01; the body-part expansion prototy
 The current candidate sequence can use the Structured Teaching units as its foundation without requiring learners to complete all 45 original Steps first. However, C03's result/passive forms and C09's modal meanings need an explicit coverage check before implementation. The other candidates primarily apply already-listed Operators, Directives, word forms, fixed groups and sentence roles.
 
 The next design pass must decide which foundation units are true prerequisites, which are quick reminders inside a Lesson, and which need a new short foundation item. It must not silently assume that every relevant grammar form is already taught.
+
+
+## Whole-sequence audit 03 — Dependency map and module order
+
+### 1. Shared foundation required by the track
+
+The candidate course should assume or briefly review these foundations:
+
+- 850-word vocabulary and the relevant word classes;
+- 16 core Operators and their individual meanings;
+- 20 proper Directives and the distinction from out / for / of / till;
+- Operator + Directive combinations, plus Name / Quality patterns;
+- basic sentence roles and clause structure;
+- productive word forms where the target expression requires them;
+- fixed-group recognition and the Meaning → Basic method.
+
+The current Structured Teaching units already provide most of this foundation. The candidate Lessons should not repeat the full explanation.
+
+### 2. Two local gaps that need explicit handling
+
+**C03 — Physical Effects: Damage, Change & Result**
+
+The source examples use forms such as:
+
+- the thread is broken;
+- get it broken;
+- the plate may be smashed;
+- the plate comes to bits.
+
+The -ed derivation unit does not by itself teach passive/result sentence structure. The original 45-Step map places passive and complex tense forms in Step 22, but Step 22 is not currently one of the 14 locally adapted Steps. Therefore C03 must include a short, directly relevant explanation of the result/passive pattern or link to a completed foundation unit before asking learners to use it. Do not create a separate full Lesson solely for this small prerequisite.
+
+**C09 — Ability, Obligation & Intention**
+
+The current Structured Teaching list has no dedicated can/ought/shall unit. These are the content of C09 itself, so teach the distinctions inside this Lesson rather than pretending they are already covered. Step 21/22 auxiliary material is related but is not a substitute for the source's specific meanings.
+
+### 3. Existing content that must be reused rather than duplicated
+
+| Existing App content | Relationship to candidate v0.2 | Implementation rule |
+|---|---|---|
+| Structured Teaching — Names of Acts | Foundation for C01–C08; already includes speak, tell, sing, eat and listen examples | Do not repeat its basic operator/action explanation. Expression Lessons add wider context comparisons and production practice. |
+| Expression prototype Lesson 01 — speak | Opening prototype for C01 | Reuse and extend it; do not duplicate its current three-question quiz unchanged. |
+| Structured Teaching — Expansions | Foundation overview for C13/C14 | Keep the short overview as a reference; do not treat it as complete coverage of the chapter. |
+| Expression prototype Lesson 02 — body-part expansion | First detailed subsection for C13 | Reuse it as the start of Meaning Expansion; add the p.154 relations and the remaining source material rather than recreating the 11 body-part examples. |
+| Structured Teaching — Fixed Word-Groups | Reference layer for all candidate Lessons | Insert priority phrases where they naturally support a meaning; do not reteach the 250-item structure in each Lesson. |
+| Structured Teaching — Meaning → Basic method | Shared method for C01–C12 | Teach the method once. Each Lesson should practise its own semantic decision rather than repeat the general four-step method. |
+| Original 45-Step Step 42 | Existing source example of applied everyday use | Use as a wider integrated reading/application reference; do not claim the Expression System invented applied Basic expression. |
+| Original Steps 33–35 and Step 44 | Existing readings with word extensions/fixed combinations and accident/injury content | Use as optional reinforcement/cross-reading where relevant; do not reproduce the source readings as new Lessons. |
+
+### 4. Candidate-by-candidate prerequisite summary
+
+- **C01:** Names of Acts + sentence roles; use the speak prototype and extend it to the full communication set.
+- **C02:** Operators + body/object relations; refer to eat as an existing Names of Acts example.
+- **C03:** action/result distinction plus a short be/get + past-participle reminder.
+- **C04:** Directives + source/destination/path + come/go viewpoint.
+- **C05:** Names of Acts + Name/Quality/Directive combinations; add learn/teach as knowledge acquisition/transfer.
+- **C06:** Names of Qualities + of/for/with relations.
+- **C07:** get/give/take and exchange roles; use “let a house” as fixed-group reinforcement.
+- **C08:** be/get/go/come/make patterns for state, entry, change and ending; relevant fixed groups.
+- **C09:** teach can/ought/shall meanings inside the Lesson; no assumed modal prerequisite.
+- **C10:** assume basic number/counting/quantity foundation; teach only the additional contextual meanings in Other Suggestions.
+- **C11:** assume basic tense/time/calendar foundation; teach the source's additional senses of ago/already/yet/since/next/always.
+- **C12:** word classes and sentence structure; focus on contextual sense selection and Basic paraphrase.
+- **C13:** known root meanings and the existing Expansion overview; extend the current body-part prototype.
+- **C14:** known broad categories and C13's expansion/narrowing contrast; teach the narrower-use examples.
+
+### 5. Module order is still an open decision
+
+The current v0.2 table lists ordinary-meaning expression first and Basic-word expansion second. This is convenient for a practical application track, but it has **not** yet passed the dependency/order test.
+
+The original 1932 *The ABC of Basic English* presents the Names of Things and Qualities expansion material (pp.146–161) before Names of Acts (pp.162–186), and Some Common Needs later (pp.242–262). This is evidence for an alternative sequence:
+
+1. understand how Basic word meanings can extend or narrow;
+2. learn the Operators/Directives and other foundations;
+3. apply them to common meanings.
+
+The source order is a meaningful reference, not an automatic rule. The current App prototypes also begin with speak and then show body-part expansion, but prototype order is not proof of the final curriculum order.
+
+Dependency analysis suggests that C13 can help learners understand expressions in C05 and C06 (e.g. mind, grip, point of view, taste), but it is not a prerequisite for all concrete application Lessons. Therefore the final course may place C13 early, or keep the two tracks separate with a clear prerequisite link. This needs one explicit order decision before final numbering.
+
+### 6. Current dependency conclusion
+
+- Most foundations already exist; the Expression track should call them rather than repeat them.
+- C03 needs a local result/passive explanation or a verified foundation link.
+- C09 must teach its own modal distinctions.
+- C10/C11 must focus on the additional source meanings, not duplicate basic number/time teaching.
+- Existing Expression prototypes must be reused and reconciled with the final order; their current Lesson labels are not final IDs.
+- Module order remains open pending comparison of practical learner progression with the source sequence and the C13 → C05/C06 semantic dependency.
+
+No final Module order, Lesson count or App IDs are assigned by this audit.
