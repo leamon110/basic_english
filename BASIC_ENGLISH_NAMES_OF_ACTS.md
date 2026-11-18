@@ -89,7 +89,9 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | hold a ball | get a grip of it；keep it；have it in the hand | get / keep / have + 名称 |
 | bring delicate things such as eggs | take them；come with them | take 或 come with，依说话视角和动作关系选择 |
 | lie on something | be on it；rest on it | be / rest + on |
-| stand up from lying down | get up | get + up |
+| stand up from lying down | stand；get up | change into an upright position |
+| remain standing on one's feet | be on one's feet | continuing body position |
+| a thing stands in a certain place | stand；be placed in a certain position | static position of an object |
 | sit | take a seat；be seated | take + 名称 / be + 过去分词 |
 | run quickly | go quickly | go + 方式副词 |
 | run for health | take a run | take + 名称 |
