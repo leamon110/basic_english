@@ -2270,3 +2270,30 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - C04 is source-reviewed and internally reviewed, but not user-tested or App-accepted. Actual learner time remains unmeasured.
 - Next: author Module 2 Lesson 5 — Thinking, Knowledge, Memory & Learning.
 
+## 69. Module 2 Lesson 5 — Thinking, Knowledge, Memory & Learning source audit (2026-11-18)
+
+- Reopened original English p.250 (thinking, opinion, certainty, knowledge, understanding, meaning, memory) and p.252 (learning and teaching). Compared them with the accepted C05 flow, source index, candidate structure and curriculum.
+- p.250 source distinctions:
+  - think → give thought to / be in thought;
+  - think that something is so → be of the opinion / take the view that;
+  - know that something is so → be certain of it / be conscious of it;
+  - know other facts → have knowledge or experience of them;
+  - know a person → be a friend of theirs / have come across them; the source extends come across to books, pictures and other things seen;
+  - understand → be clear about it / have a grip of it; understand horses → have a good knowledge of them; understand a friend → see his point of view; understand an argument → see the point of the argument;
+  - mean something → have the sense of it;
+  - remember → have a memory of it / keep it in mind;
+  - forget → put it out of the mind / have no memory of it.
+- p.252 source distinctions:
+  - learn → get facts into one's head / get knowledge of them;
+  - learning is generally through being taught;
+  - teach → give training or teaching; be taught retains the passive relation.
+- Scope boundaries:
+  - feeling, liking, approval, desire and need on p.252 belong to C06, not C05;
+  - the physical use feel a wall → put one's hands on it belongs to C02;
+  - show meanings remain in C01's short comparison panel with cross-links to C05 (make it clear) and C06 (show interest); do not duplicate the show panel in C05;
+  - try / make an attempt remains a supporting pattern, not a separate C05 topic.
+- Updated BASIC_ENGLISH_NAMES_OF_ACTS.md and the C05 flow to include the source's know-a-person / come-across familiarity distinction, which was missing from the first flow.
+- C05 remains one Lesson with four internal parts: thinking/opinion; knowing/understanding; meaning/memory; learning/teaching. The common decision is to identify the mental relation before choosing the Basic construction.
+- Source audit complete. No App source changed and no Android build triggered.
+- Next: author C05 with the source distinctions and the explicit C02/C06/C01 boundaries.
+
