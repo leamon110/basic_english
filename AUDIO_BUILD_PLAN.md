@@ -1636,3 +1636,16 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete step: review Module 1 Lesson 2 against the original source and C14 teaching flow, then proceed to Module 1 Lesson 3 — Special Use / Meaning Narrowing.
 
+### Module 1 Lesson 2 source and teaching-flow review (2026-11-18)
+
+- Compared BASIC_ENGLISH_EXPRESSION_M1_L2_DRAFT.md with original English pp.152 and 160 and the accepted C14 flow.
+- Confirmed the four Quality extensions on p.152: bitter taste / bitter experience; cold day / cold look; smooth floor / smooth words; bright colour / bright face.
+- Confirmed cheap as a bad-taste judgment even when the price is high, and simple for an act that gives little trouble. The draft preserves these as source-recognized uses based on human response or association, not universal logical rules.
+- Recounted the p.160 list: exactly 35 Quality forms plus colour words. Confirmed dark, first, last, quiet and same are used only with the.
+- Kept Quality meaning extension separate from Quality words functioning as Names of Things. The draft does not repeat C13 body-part material, teach C15 narrowing, or imply that all adjectives can become Names of Things.
+- Clarified that the short example phrases built from the source-listed forms are project-created illustrations, not quotations from Ogden. Added a concrete colour-word example (red) from the source's colour-word category.
+- Updated BASIC_ENGLISH_EXPANSIONS_THINGS_QUALITIES.md with the exact 35-form count and updated BASIC_ENGLISH_EXPRESSION_M1_L2_DRAFT.md and BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md.
+- Internal source/flow review is complete. Actual learner time and learner feedback remain unmeasured; this is a reviewed draft, not user-tested or App-accepted content.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete step: prepare Module 1 Lesson 3 — Special Use / Meaning Narrowing.
+
