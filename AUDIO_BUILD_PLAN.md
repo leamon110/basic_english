@@ -1510,3 +1510,19 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Source pages visually checked from the original 162-page scan; the relevant English pages are printed pp.216, 218, 220, 222, 224, 226, 228 and 230. The PDF page index for printed page 212 is 103, so the printed-page mapping is grounded.
 - Next concrete step: index Part C (20 items, printed pp.230–232) and Part D (100 items, printed pp.232–242), then re-evaluate all 200 placements and C07.
 - No App code changed and no Android build triggered.
+
+
+### Fixed Word-Groups instance-index milestone 02 — all 200 non-priority items complete (2026-11-18)
+
+- Reopened and reviewed all relevant original English scan pages printed pp.212–242. The first tranche (pp.216–230) was already indexed; this tranche completed Part C (20 special Operations/Directives uses, pp.230–232) and Part D (100 uses from the remaining Basic word classes, pp.232–242).
+- Created/updated BASIC_ENGLISH_250_FIXED_WORD_GROUPS_INSTANCE_INDEX.md. It now contains:
+  - Part A: 50 Operator examples;
+  - Part B: 80 relation-word examples;
+  - Part C: 20 additional Operations/Directives uses;
+  - Part D: 100 uses from Operations, General Names, Picturable Things, Qualities and Opposites.
+- Programmatic count of saved table rows: A=50, B=80, C=20, D=100. Total = **250 / 250**. The separate 50-item A Basic Selection priority list remains a separate list and is not included in the 250 total.
+- The 200 items outside that priority list are now individually summarized and provisionally mapped; these are Chinese meaning summaries, not verbatim transcription. All original item numbers are retained, including source entries where multiple numbers share one sentence.
+- Re-evaluated C07 against the full fixed-group set. The full index adds naturally related agreement, renting, exchange, undertaking, financial risk, credit, approval, profit/loss, demand, company participation, business accounts and commitment examples. C07 now has enough related source material to remain a coherent compact Lesson candidate without padding it with unrelated social phrases. Its final duration/exercise volume still requires an authored-lesson test.
+- Updated the candidate structure and knowledge map. Current working structure remains 2 Modules / 15 provisional Lessons; the former missing-200-index blocker is closed.
+- Next concrete step: conduct a final acceptance-oriented curriculum audit of the 15 candidate scopes and source placements, then begin drafting Lesson teaching flows (not App integration yet). C07's actual lesson size must be checked when authored.
+- No App source changed and no Android build triggered.
