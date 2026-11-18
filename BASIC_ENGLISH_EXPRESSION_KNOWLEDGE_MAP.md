@@ -2326,3 +2326,27 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - C05 is source-reviewed and internally reviewed, but not user-tested or App-accepted. Actual learner time remains unmeasured.
 - Next: author Module 2 Lesson 6 — Feeling, Preference, Desire & Need.
 
+## 73. Module 2 Lesson 6 — Feeling, Preference, Desire & Need source audit (2026-11-18)
+
+- Reopened original English p.252 and compared it with the accepted C06 flow, source index, candidate structure and curriculum.
+- Source distinctions:
+  - feel pain/pleasure → have a feeling of pain/pleasure;
+  - feel that something is so → have a feeling / idea that it is so;
+  - feel angry → be feeling angry;
+  - feel a wall to test whether it is dry → put one's hands on it (physical touch, C02);
+  - like things → be pleased with them / have approval of them / give approval to them;
+  - like persons → be friends with them / get on well with them;
+  - like good food or pictures → have a taste for them;
+  - approve → give approval / be in agreement with something;
+  - disapprove → give disapproval / be in disagreement with something;
+  - want → have a desire for something;
+  - need → be in need of it; when more is required because there is not enough, be in need of more.
+- C05/C02 boundaries:
+  - feel that something is so remains a C06 feeling/idea expression, not automatically the C05 think/opinion expression;
+  - be conscious of something moving is cross-linked to C05 knowledge/awareness;
+  - physical feel-a-wall is C02.
+- The C06 teaching task is to distinguish internal experience, liking/social relation, approval/disapproval, taste/preference, desire and need. Desire and need must not be collapsed into one meaning.
+- Found that the source index / first flow recorded approval but omitted the source's explicit disapproval / disagreement pair. Updated BASIC_ENGLISH_NAMES_OF_ACTS.md and the C06 flow to include both sides.
+- Source audit complete. No App source changed and no Android build triggered.
+- Next: author C06 with the source distinctions and explicit C02/C05/C01 boundaries.
+
