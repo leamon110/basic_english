@@ -1130,3 +1130,77 @@ Reasons:
 
 The C01–C14 labels remain research IDs, not final App Lesson numbers. If this order is retained in the final syllabus, the display numbering will be assigned as Module 1 Lesson 1–2 and Module 2 Lesson 1–12. The current App speak and body-part prototypes will be reconciled during a separate migration step; no App code is changed now.
 
+
+
+## Teaching-size test 07 — Reassess Module 1 after the complete p.154 / p.160 source review
+
+The earlier decision to combine Names of Things and Names of Qualities into one Lesson was made when the p.154 scan was unread and the p.160 Quality-as-Thing list had not been fully incorporated into the size test. The complete source review changes the evidence, so that earlier merge must be reconsidered.
+
+### A. Names of Things expansion
+
+The current source index now contains several substantial relation families:
+
+1. body-part / structure / position;
+2. sensory similarity;
+3. use, function and behavior;
+4. “as if” comparison and abstract use;
+5. cause and producing process;
+6. use of an object name for its function;
+7. part and whole;
+8. substance and an object formed from it;
+9. other source-recognized connections such as color, family relation, force, library contents and seasons.
+
+**Teaching objective:** identify the root referent and the source-supported relation that allows the Name of Things to be used for another referent.
+
+**Test outline:**
+
+- Part 1: body/shape/position and structural relations (head, foot, leg, mouth, neck, etc.).
+- Part 2: sensory, use and behavior relations.
+- Part 3: cause, process, part/whole, substance/object and other true connections.
+- Part 4: the “as if” examples and abstract uses.
+
+This is one learner operation, but the source material is large. The lesson should teach representative examples from each relation family and keep the full source-indexed examples in the reference table. It should not become a separate Lesson for every relation type.
+
+### B. Names of Qualities expansion and Quality-as-Thing
+
+The complete source has two related but distinct subgroups:
+
+**Meaning extension of Qualities:**
+
+- bitter taste → bitter experience;
+- cold day → cold look;
+- smooth floor → smooth words;
+- bright color → bright face;
+- cheap → a quality associated with poor taste;
+- simple → an act requiring little effort/trouble.
+
+**Qualities used as Names of Things (p.160):**
+
+The source lists 35 Quality forms that can also function as Names of Things, plus color names. It adds restrictions: dark, first, last, quiet and same occur only with “the”.
+
+**Teaching objective:** recognize how a Quality word can (1) extend to a related property/experience, and (2) function as a Name of Things in the source-listed cases.
+
+This is more than the six expansion examples previously counted. The p.160 list provides substantial additional material, and the two subgroups are both about the semantic/function range of Quality words. They can form one compact Lesson with two sections.
+
+### C. Special Use / Meaning Narrowing
+
+This remains separate:
+
+- material names used for particular pieces/objects (card, chalk, cloth, paper);
+- important subclasses (shoes/boots; watches/clocks);
+- contextually expected narrower senses (ball, business man, judge, man, pictures);
+- the curtain example, which warns that a special use is not necessarily the most common use.
+
+Its decision is different: context selects a narrower referent, rather than extending the root meaning.
+
+### Result of the size test
+
+The revised Module 1 should contain **three** candidate Lessons, not two:
+
+1. **Names of Things — Meaning Expansion**;
+2. **Names of Qualities — Meaning Expansion & Use as Things**;
+3. **Special Use — Meaning Narrowing**.
+
+This is not a return to the original arbitrary split. The new evidence is that Things expansion has a broad set of relation families, while Qualities has both extension examples and a substantial source-listed Quality-as-Thing group. Each Lesson now has a distinct teaching objective and enough material to justify a separate unit.
+
+The earlier v0.2 decision to merge Things and Qualities is superseded. The overall candidate count increases by one, from 14 to **15 provisional Lessons**. This is still a working count, not final acceptance.
