@@ -1,6 +1,6 @@
 # Module 2 · Lesson 10 — Quantity, Amount & Degree
 
-> **Draft status:** first complete teaching-content draft. It is based on *The ABC of Basic English*, printed pp.257–258, and the accepted C10 teaching flow. It does not reteach basic number names or counting from the 45-Step foundation. The source distinctions among each, altogether, whole, few, many, too and once are kept separate; the past-time sense of once is cross-linked to C11. Source/answer coverage is included; actual learner time and user feedback remain unmeasured.
+> **Draft status:** source-reviewed and internally reviewed teaching-content draft. It is based on *The ABC of Basic English*, printed pp.257–258, and the accepted C10 teaching flow. It does not reteach basic number names or counting from the 45-Step foundation. The source distinctions among each, altogether, whole, few, many, too and once are kept separate; the past-time sense of once is cross-linked to C11. All 30 closed practice prompts have matching answers. Actual learner time and user feedback remain unmeasured; the lesson is not user-tested or App-integrated.
 
 ## What this lesson teaches
 
