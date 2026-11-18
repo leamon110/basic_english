@@ -2050,3 +2050,11 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Remaining authoring gate: review the lesson's clarity, answer explanations, practice volume and actual learner time. Do not call C13 fully accepted solely because source mismatches have been corrected.
 - Next: use the same source-first method to prepare Module 1 Lesson 2 — Names of Qualities: Meaning Expansion & Use as Things, keeping Quality extensions distinct from Quality words functioning as Names of Things.
 
+## 49. C13 internal teaching-content review (2026-11-18)
+
+- Checked the revised Module 1 Lesson 1 draft against the accepted C13 flow: body-part anchors; sensory comparisons; purpose/behavior comparisons; “as if” examples; other source-recognized relations; guided recognition/explanation/transfer; and reverse understanding.
+- Exercise coverage initially under-tested the source's cause relation and its “other true connections” group. Added a cause item (amusement) and an explanation item (library → books kept in a library).
+- Rechecked answer explanations against the source examples. The lesson now has multiple-choice recognition, learner explanation, transfer to a further source example, an explicitly project-created unsupported-association contrast, and reverse interpretation.
+- Internal editorial review is complete for this pass. Actual learner time and learner feedback remain unmeasured; therefore this is a reviewed draft, not a claim of user-tested duration or final App acceptance.
+- Next: author Module 1 Lesson 2 — Names of Qualities: Meaning Expansion & Use as Things, preserving the distinction between Quality extensions and Quality words used as Names of Things.
+
