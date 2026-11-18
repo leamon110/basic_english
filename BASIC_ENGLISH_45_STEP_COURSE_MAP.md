@@ -127,8 +127,87 @@ The App's current 45-step directory is therefore a hybrid: 14 locally adapted le
 - **The reading pages are not all mere vocabulary lists.** Several contain notes explaining how familiar words extend to new senses and how fixed combinations work; Steps 33–35 and 42 are especially rich in such explanatory material and exercises.
 - **Illustrations remain a separate audit item.** Page-level image links are visible on multiple Steps, but a complete image inventory and local image archive have not yet been made.
 
-## 6. Recommended next project action
+## 6. Completed source-fidelity audit of the 14 local adaptations
 
-Before adapting the 31 remaining Steps, audit the 14 existing Chinese adaptations against their corresponding source pages. Check that each adaptation preserves the source's teaching point, examples, sequence and exercise intent, and clearly labels any project-written explanation or rewritten reading. Record discrepancies first; do not expand the course by inventing extra lesson divisions.
+The detailed source-to-App audit is complete. See [BASIC_ENGLISH_45_STEP_ADAPTATION_AUDIT.md](./BASIC_ENGLISH_45_STEP_ADAPTATION_AUDIT.md).
 
-After that source-fidelity pass, use the 45-step map to choose the next unadapted Step based on prerequisite order and practical learning value. Do not start a new Android build merely for this research document.
+- All 14 locally adapted Steps were checked: 1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18, 20 and 25.
+- Step 2 is substantially aligned. The other 13 preserve broad lesson themes but have documented rule omissions, reading omissions/meaning changes and/or exercise-coverage gaps.
+- The audit compares source teaching points, notable examples, reading fidelity and exercise prompt coverage. Individual answer-key correctness and a complete illustration archive remain separate validation tasks.
+- No App code, user progress, audio assets or Android workflow inputs were changed; no Android build was triggered.
+
+## 7. Adaptation order for the remaining 31 Steps
+
+**Decision: preserve the original Step sequence.** The remaining pages are not to be regrouped into new Modules or Lessons. The batch labels below are project work batches only; the learner-facing course remains the original 45 Steps.
+
+### Batch A — fill the gaps in the original structure / early-reading sequence (11 Steps)
+
+| Order | Step | Original title | Main adaptation focus |
+|---:|---:|---|---|
+| 1 | 4 | At the Station | Station/travel reading; tickets, porter, directions, movement and the relations introduced in Steps 1–3. |
+| 2 | 7 | Vocabulary and Structure | Collective nouns; all/every/no; quantity-pronoun use; keep, let, seem, who and if. |
+| 3 | 8 | In the Garden | Apply collective nouns, quantity, location/direction and keep/let/if in a connected reading. |
+| 4 | 11 | Trouble with a Tooth | Tooth/teeth; countable vs substance use; much/little/a little and quantity-pronoun use. |
+| 5 | 14 | A Ship Comes In | Harbour-arrival reading; first/last and all; take a step, have a look, give/get a wave. |
+| 6 | 16 | A Talk in the Train | Train conversation using accumulated vocabulary and structures; abstract and social vocabulary. |
+| 7 | 19 | News of Old Friends | Hair as a collective substance noun; -ing activity nouns; any, enough, ever, now and then. |
+| 8 | 21 | Summer Time | Sheep with unchanged plural; same / same as; would/might and hypothetical if-clauses, including past counterfactuals. |
+| 9 | 22 | Vocabulary and Structure | Trousers as plural-only; complex tense combinations; perfect/progressive/passive; auxiliary questions and negatives. |
+| 10 | 23 | The Last Minute in Bed | Reading about sleep, routine and reluctance to get up; apply abstract nouns and complex forms. |
+| 11 | 24 | Getting a New Cook | -er/-ing/-ed endings with nouns: act, doer and affected/result senses; spelling rules and exercises. |
+
+### Batch B — complete the ten further vocabulary lessons (10 Steps)
+
+| Order | Step | Original title | Main adaptation focus |
+|---:|---:|---|---|
+| 12 | 26 | Looking at a House | Buildings, fittings, materials, condition, size and property. |
+| 13 | 27 | Taxes | Taxation, equality, rights, government, payment and political/social ideas. |
+| 14 | 28 | Getting Ones Picture Taken | Appearance, body/face vocabulary, camera and being photographed. |
+| 15 | 29 | The Dressmaker | Clothing, fabric, sewing, fit, comfort, comparison and alteration. |
+| 16 | 30 | Fishing | Fish, insects, equipment, movement, ability and fishing methods. |
+| 17 | 31 | Housework | Household routine, domestic work, tools, materials and everyday work. |
+| 18 | 32 | Moving In | Moving and arranging a household; furniture, repair, support and practical action expressions. |
+| 19 | 33 | Men and Machines | Industrial work and machinery; word extensions, fixed combinations and exercises. |
+| 20 | 34 | Looking at Pictures | Art, representation, design, perception and opinion. |
+| 21 | 35 | War and Peace | Newspaper-style discussion; political/social vocabulary and detailed word-use notes. |
+
+This batch follows Step 25's explicit boundary: the source says the Basic structure has been learned and ten further lessons complete the 850-word vocabulary. These are those ten lessons.
+
+### Batch C — practical reference topics (6 Steps)
+
+| Order | Step | Original title | Main adaptation focus |
+|---:|---:|---|---|
+| 22 | 36 | A Poor Family | Number names, ordinals, fractions and a reading. |
+| 23 | 37 | The Radio | Clock time, spoken/written forms, a.m./p.m. and a reading. |
+| 24 | 38 | A Day In Town | Extended integrated reading about a day in town. |
+| 25 | 39 | A Talk on the Telephone | Weekdays, months, dates, years and time prepositions. |
+| 26 | 40 | A Letter to a Friend | Extended letter-form reading about travel and experiences. |
+| 27 | 41 | Goes Marketing | Currency, weights, measures, dimensions, fractions and rates per unit; preserve the index/body title discrepancy. |
+
+### Batch D — integrated use and longer reading (4 Steps)
+
+| Order | Step | Original title | Main adaptation focus |
+|---:|---:|---|---|
+| 28 | 42 | Basic for Everyday Needs | Railway station, hotel, bank, post office and library; tests and a Basic account of a journey. |
+| 29 | 43 | Going to the Pictures | Choosing a film, tickets, seats, preferences and cinema conversation. |
+| 30 | 44 | The Smash | Accident narrative, injuries, medical response, police, notes and exercises. |
+| 31 | 45 | Some Notes about England | Cultural reading; preserve the historical/period-specific status of its observations. |
+
+**Complete remaining order (31/31):**
+
+`4 → 7 → 8 → 11 → 14 → 16 → 19 → 21 → 22 → 23 → 24 → 26 → 27 → 28 → 29 → 30 → 31 → 32 → 33 → 34 → 35 → 36 → 37 → 38 → 39 → 40 → 41 → 42 → 43 → 44 → 45`
+
+### Adaptation rules for this order
+
+1. Preserve the original Step numbers, titles and sequence. The batches above are not new curriculum modules.
+2. For every Step, compare the complete teaching points, examples, reading, explanatory notes, exercises and linked illustrations with the source page. A title/topic match alone is not acceptance.
+3. Preserve the source's meaning and event sequence in readings. If a reading is shortened or rewritten, label it as an adaptation and do not change who did what, when, where or why.
+4. Structure pages must preserve prerequisite order and source qualifications; reading pages must preserve the source's practical context and its explanatory notes.
+5. Steps 26–35 complete the vocabulary stage after the Step 25 structure boundary. Steps 36–41 remain reference topics; Steps 42–45 remain integrated-use material.
+6. Keep the original 45-Step course separate from the accepted 2 Modules / 15 Expression Lessons. Do not add a third Module, a 850-word dictionary or extra Lessons.
+7. The 14 existing correction findings remain open for a later approved content update. Do not silently treat the 14 current adaptations as fully accepted.
+8. The next unadapted page in the original sequence is **Step 4 — At the Station**. Actual App code changes remain subject to the separate migration/implementation approval gate.
+
+## 8. Next project action
+
+The 14-Step source-fidelity audit and the remaining 31-Step adaptation order are complete. The next phase is to review the draft [Expression System App Migration Plan](./BASIC_ENGLISH_EXPRESSION_APP_MIGRATION_PLAN.md), resolve any approval questions and obtain explicit approval before changing App code, screen numbering or progress storage. The 45-Step course remains a separate learning area and is not rewritten as part of the 15-Lesson migration.
