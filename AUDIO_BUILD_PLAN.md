@@ -1739,3 +1739,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md with checkpoint 56. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: author C02 with the p.245 get-through-it phrase as a brief completion-focused extension, cut as a C03 boundary, and movement as a C04 boundary.
 
+### Module 2 Lesson 2 — Bodily Action & Contact first complete draft (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L2_DRAFT.md from the source audit of pp.245–247 and the accepted C02 flow.
+- The draft keeps two clear sections: intake/biting/expulsion; contact/impact/rubbing. It explains the different source constructions rather than implying one grammar formula.
+- Included the p.245 get-through-it phrase as a brief completion-focused extension; treated get-your-teeth-into-it as the source's literal hard-biting description; preserved have a bite of it/at it; put it out of your mouth; direct/accidental contact; blow; mark; rub; and nails-into-it.
+- Kept cut as a C03 boundary and throw/catch/hold/bring/body position as C04 boundaries.
+- Added recognition questions, distinctions among contact types, C03/C04 boundary checks, reverse understanding and independent construction. The open response is explicitly not automatically scored by the current App.
+- Updated BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md with checkpoint 57.
+- This is a first complete draft, not final acceptance. Clarity, answer coverage, duplication with C03/C04 and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: review C02 against the original pages and accepted flow, then author Module 2 Lesson 3 — Physical Effects: Damage, Change & Result.
+
