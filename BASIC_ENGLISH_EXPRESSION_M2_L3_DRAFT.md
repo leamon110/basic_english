@@ -41,18 +41,18 @@ The source later gives two related but different ideas:
 
 | Ordinary English meaning | Basic expressions from the source | What changes |
 |---|---|---|
-| destroy an object | burn it / smash it / break it | The thing is destroyed by a concrete physical action |
-| destroy something more generally | put an end to it | The thing or process is brought to an end |
+| a thing is destroyed | it has been burned / smashed / broken | The source describes the physical result of destruction |
 | destroy an animal | put an end to it | The animal's life is ended |
-| hurt someone | give them pain / give wounds / do serious damage | The person suffers pain, wounds or injury |
-| attempt to destroy something but fail | do no more than hurt it | The result is injury, not destruction |
+| hurt someone | give them pain / possibly give wounds | The person suffers pain or wounds |
+| wounds may do serious damage | do serious damage | The source describes this as a possible effect of wounds |
+| an attempt to destroy an animal fails | do no more than hurt it | The result is injury, not destruction |
 
 A few distinctions matter:
 
-- **destroy** does not have one fixed Basic replacement. The source describes what actually happens: burning, smashing, breaking or putting an end to something.
-- **hurt** describes pain, wounds or damage. It is not simply another word for **hit**.
-- **hit / give a blow** belongs to C02 when the focus is forceful contact. **Hurt / give pain / give wounds / do serious damage** belongs here when the focus is the injury or effect.
-- The source says that some attempts at destroying an animal do no more than hurt it. That contrast helps show that causing pain or wounds is not the same as destroying.
+- **destroy** does not have one fixed Basic replacement. For an object, the source describes the result as having been burned, smashed or broken. For animals, it gives **put an end to them**.
+- **hurt** describes pain or wounds. The source adds that wounds may do serious damage. Hurt is not simply another word for **hit**.
+- **hit / give a blow** belongs to C02 when the focus is forceful contact. **Hurt / give pain / give wounds** belongs here when the focus is the injury; **do serious damage** describes a possible effect of wounds.
+- The source says that some attempts at destroying animals do no more than hurt them. That contrast helps show that causing pain or wounds is not the same as destroying.
 
 ## 3. A short reminder from Step 17
 
@@ -138,7 +138,7 @@ Choose the expression that preserves the result.
    - B. give it a rub
    - C. come up against it
 
-2. Something is destroyed by bringing it to an end.
+2. An animal is destroyed by bringing its life to an end.
    - A. put an end to it
    - B. put a hand on it
    - C. give it a touch
@@ -193,7 +193,7 @@ Explain what each Basic expression says about the physical event:
 7. put an end to it;
 8. give them pain;
 9. give wounds;
-10. do serious damage.
+10. wounds may do serious damage.
 
 **Suggested answers**
 
@@ -203,10 +203,10 @@ Explain what each Basic expression says about the physical event:
 4. The plate may be smashed by a caused action.
 5. The plate breaks by itself into pieces.
 6. Destroy the object through a concrete physical action.
-7. Bring the thing or life/process to an end.
+7. Bring the animal's life to an end.
 8. Cause someone to feel pain.
 9. Cause wounds.
-10. Cause serious injury or damage.
+10. The wounds may cause serious harm.
 
 ### E. Step 17 prerequisite check
 
