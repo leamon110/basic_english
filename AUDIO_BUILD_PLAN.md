@@ -1255,3 +1255,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 06.
 - Next concrete step: audit Other Suggestions, then compare all major application themes before mapping fixed groups, endings and expansion material into them.
 - No App code changed and no Android build triggered.
+
+
+### Theme Audit 07 — Other Suggestions (2026-11-18)
+
+- Audited the complete first-round Other Suggestions material: modality (can/ought/shall), quantity/extent, time, condition (unless), quality paraphrase (busy/deaf), and context-dependent common names (world/life/hill/home/address).
+- Confirmed Other Suggestions is not a usable Lesson or Module boundary. It is a source-level collection that must be redistributed by actual learning task.
+- Identified coherent candidate areas for later comparison: modality; quantity/degree; time; condition; quality paraphrase; contextual noun meaning.
+- No formal Lesson number assigned.
+- Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 07.
+- Next concrete step: compare the complete candidate learning-task set and map the cross-cutting supplements (250 Fixed Word-Groups, 50 priority groups, Words Formed by Endings, Names of Things and Qualities) onto those tasks.
+- No App code changed and no Android build triggered.
