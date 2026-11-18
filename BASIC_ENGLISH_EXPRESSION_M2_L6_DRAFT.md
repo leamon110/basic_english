@@ -21,8 +21,8 @@ The source gives three internal uses of **feel**:
 
 | Ordinary English meaning | Basic expression from the source | What is being described |
 |---|---|---|
-| feel pain | have a feeling of pain | An unpleasant physical or internal experience |
-| feel pleasure | have a feeling of pleasure | A pleasant experience |
+| feel pain | have a feeling of pain | An experience of pain |
+| feel pleasure | have a feeling of pleasure | An experience of pleasure |
 | feel that something is so | have a feeling / idea that it is so | An impression or idea, not necessarily a firm judgment |
 | feel angry | be feeling angry | An emotional state |
 
@@ -48,7 +48,7 @@ The source uses different expressions depending on whether the object is a thing
 | like a thing | be pleased with it | A positive personal response |
 | have approval of a thing | have approval of it | A positive judgment |
 | give approval to a thing | give approval to it / be in agreement with it | Expressing approval or agreement |
-| like a person / be friends with a person | be friends with them / get on well with them | A social relationship |
+| get on well with a person | be friends with them | A social relationship |
 | like good food or pictures | have a taste for them | A preference or liking |
 
 Do not collapse these into one meaning:
@@ -155,14 +155,14 @@ Match the situation with the Basic expression.
 
 1. A person likes a thing.
 2. A person has a positive judgment of a thing.
-3. A person likes someone and has a friendly relationship with them.
+3. A person gets on well with another person.
 4. A person likes good food or pictures.
 
 **Suggested answers**
 
 1. be pleased with it;
 2. have approval of it / give approval to it / be in agreement with it;
-3. be friends with them / get on well with them;
+3. be friends with them;
 4. have a taste for them.
 
 ### C. Approval and disapproval
