@@ -2105,3 +2105,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This source audit does not change the accepted architecture (2 Modules / 15 Lessons). C11 remains Module 2 · Lesson 11; C11 is only the internal Candidate ID.
 - No App source, Android workflow input or audio assets changed; no Android build was triggered.
 - Next concrete action: author and internally review BASIC_ENGLISH_EXPRESSION_M2_L11_DRAFT.md. Keep the separate contexts explicit and do not turn the source examples into one-to-one translation rules.
+
+### Module 2 Lesson 11 — First complete draft and internal review (2026-11-19)
+
+- Created `BASIC_ENGLISH_EXPRESSION_M2_L11_DRAFT.md` from the updated C11 flow and the original *The ABC of Basic English*, printed pp.258–260.
+- The lesson keeps distinct: once's past-time sense vs C10's one-occurrence sense; ago's long-period example; already for a completed event vs present location; the present-reaching account; negative yet vs the joining use; since as a past-time relation / later-than-point relation / reason; next as sequence / repetition / spatial position; always as general continuation / context-dependent frequency / future continuation.
+- Internal answer audit: 23 multiple-choice prompts and 23 matching answer keys; 5 foundation/boundary checks; 14 reverse-understanding prompts and 14 suggested answers; one independent-construction task explicitly marked as not automatically scored by the current App. All question/key counts match.
+- The draft is complete at the document level, but actual learner time, learner feedback and App/device acceptance remain unmeasured. It is not yet App-integrated.
+- No App source, Android workflow input or audio assets changed; no Android build was triggered.
+- Next: source-audit and author Module 2 Lesson 12 — Context-Dependent Words & Paraphrase, then run the final cross-Lesson duplication and consistency review.
