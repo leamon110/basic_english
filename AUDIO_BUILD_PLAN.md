@@ -1444,3 +1444,25 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This completes source-index coverage for the currently indexed material, but does not yet prove correct prerequisites, no overlap or whole-sequence lesson size.
 - Next concrete step: inspect the actual Teaching / 45 Steps course map and adaptation audit; compare each candidate Lesson's required tools with what is already taught; identify missing prerequisites, duplication and appropriate order.
 - No App source changed and no Android build triggered.
+
+
+### Whole-sequence audit 02–03 — Foundations, overlap and prerequisites (2026-11-18)
+
+- Inspected the complete `BASIC_ENGLISH_45_STEP_COURSE_MAP.md` and `BASIC_ENGLISH_45_STEP_ADAPTATION_AUDIT.md`, plus the current Structured Teaching definitions in `docs/js/rule-learning.js`, the Expression prototype in `docs/js/expression-system.js` and `docs/js/expression-curriculum.js`.
+- Confirmed that the current Structured Teaching implementation defines 13 reusable units: plural; -er/-ing/-ed; -ly adverbs; comparison; un-; Operators; Directives; Operator + Directive; Names of Acts; Expansions; Fixed Word-Groups; sentence structure/semantic roles; Meaning → Basic method.
+- Confirmed original 45-Step context: Step 25 marks completion of the source's explicit structure-teaching stage; Steps 36–41 cover numbers/time/calendar/money/weights/measures; Steps 33–35 include word-extension/fixed-combination explanations; Step 42 already contains five everyday-service scenes and a Basic account-of-a-journey exercise; Steps 43–45 are longer integrated readings, including the Step 44 accident/injury narrative. The Expression System is supplementary systematic practice, not the first appearance of applied Basic expression.
+- Existing Expression prototype mapping: current App Lesson 01 (speak) belongs inside candidate C01; current App Lesson 02 (body-part expansion) belongs inside candidate C13, not candidate C02. These current UI labels are prototype IDs, not the final syllabus order. No App renumbering or movement is to be done before acceptance.
+- Candidate prerequisites were mapped. Most candidates rely on existing foundation tools. Two local gaps require explicit handling:
+  - C03 needs a short be/get + past-participle result/passive explanation or a verified foundation link; the -ed derivative rule alone is insufficient.
+  - C09 must teach the source's can/ought/shall distinctions; no dedicated modal unit exists in the current 13 Structured Teaching units. Related Step 21/22 auxiliary content is not a full substitute.
+- C10/C11 must focus on the additional contextual meanings of quantity/time words, not repeat basic quantity/time/calendar content in the 45 Steps. C13/C14 must reuse and extend the existing Expansion overview/prototype without repeating the same body-part examples or confusing meaning narrowing with fixed-group idioms.
+- Module order remains open. The original 1932 *The ABC* places Names of Things and Qualities before Names of Acts and Some Common Needs; this supports expansion before application. Dependency analysis shows C13 helps C05/C06 but is not a hard prerequisite for all concrete expression lessons. Three orders remain under consideration: source order; practical concrete-to-abstract order; or a dependency-based interleaving that introduces expansion before C05/C06.
+- Recorded the foundation/overlap matrix and module-order question in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md` and `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md`.
+- Next concrete step: test the whole learning progression and settle the module order. Compare the three sequences against prerequisites, learner familiarity, unnecessary backtracking and the original source's order; then re-check adjacent lesson boundaries before accepting v0.2.
+- No App source changed and no Android build triggered.
+
+### Live GitHub / Actions check after whole-sequence audits (2026-11-18)
+
+- Branch head: `c1274f472538963f8305ae53d9fde20e86e14e59`.
+- Latest Actions remains Run 48 / `44197915524`, completed / success, built commit `9a1793905b4abc7d24bd1c598a5a3004450f6748`. The latest run's 23 steps/logs and both unexpired artifacts were inspected at startup; no active or queued run exists.
+- Compare against Run 48: 79 commits ahead / 0 behind; changed files remain ten root-level Markdown research/plan documents only. No `docs/**`, `android-offline/**`, `scripts/**` or workflow file changed. No new build was triggered.
