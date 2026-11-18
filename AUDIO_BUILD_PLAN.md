@@ -1402,3 +1402,30 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Source gap update: the 1932 *The ABC* p.154 page gap is resolved. The complete English text of the 1930 *Basic English: A General Introduction with Rules and Grammar* remains unavailable; the 250-item fixed-group index still does not transcribe all 250 examples.
 - No final overall Lesson count assigned; no App code changed and no Android build triggered.
 - Next concrete step: consolidate the tested Module 1 and Module 2 candidate boundaries, then inspect all candidate scopes for overlap, prerequisites and source coverage before drafting a revised numbered structure.
+
+
+### Revised Expression candidate v0.2 consolidated (2026-11-18)
+
+- Consolidated the results of six teaching-size/source-boundary tests into `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md` v0.2 and recorded the current map in `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md`.
+- Current working candidate: **2 Modules / 14 provisional Lessons**, not a final syllabus and not a target count. The number happens to remain 14 after:
+  - dissolving the mixed learning/teaching/showing/trying Lesson;
+  - absorbing learn/teach into Thinking/Knowledge/Learning and keeping all show senses together in Communication;
+  - narrowing the old social/economic/life group to Exchange/Sale/Commitment;
+  - splitting Quantity/Amount/Degree from Time/Sequence;
+  - merging Names of Things and Names of Qualities expansion;
+  - moving busy/deaf/world/life/hill/home/address into a Module 1 Context-Dependent Words & Paraphrase topic;
+  - keeping Special Use / Meaning Narrowing as a distinct Module 2 topic.
+- Module 1 currently has 12 provisional Lessons: Communication & Information; Bodily Action & Contact; Physical Effects; Movement & Position; Thinking/Knowledge/Memory/Learning; Feeling/Preference/Desire/Need; Exchange/Sale/Commitment; State and Process; Ability/Obligation/Intention; Quantity/Amount/Degree; Time/Sequence; Context-Dependent Words & Paraphrase.
+- Module 2 currently has 2 provisional Lessons: Meaning Expansion (Things & Qualities) and Special Use / Meaning Narrowing.
+- The 1932 *The ABC of Basic English* p.154 English scan, previously unread, was retrieved and read. `BASIC_ENGLISH_EXPANSIONS_THINGS_QUALITIES.md` now includes its cause/process/use/part-whole/substance/object/other-connection expansion types. Its older Lesson 02–06 proposal was withdrawn and its teaching flow aligned with the current three-part method.
+- `BASIC_ENGLISH_NAMES_OF_ACTS.md` now includes a detailed source-based Other Suggestions index from original English pp.256–262. This distinguishes modality, quantity/amount, time/sequence, condition, quality paraphrase and context-dependent common names.
+- The duplicated “plate breaks itself → it comes to bits” row was removed from the movement table; it remains once under physical change.
+- Six teaching-size tests are recorded in the candidate file. Local boundaries have provisional outcomes, but the whole sequence has not yet passed its audit.
+- **Next required step:** whole-sequence audit of the 14 candidates for complete source-index coverage, natural placement of the 50 priority Fixed Word-Groups, prerequisites against Teaching / 45 Steps, overlap between adjacent Lessons, and overall lesson size. The 200 other Fixed Word-Groups remain a documented instance-level coverage gap because they are not all transcribed in the current index.
+- No final Module/Lesson count or App Lesson IDs have been assigned. No App source changed and no Android build triggered.
+
+### Live GitHub / Actions recheck after candidate v0.2 (2026-11-18)
+
+- Current branch head: `57773d85b95735c6cf71f3c72b52dc8d8503ea4f` (`Record revised candidate structure v0.2`).
+- Latest Actions remains Run 48 / `44197915524`, completed / success, built commit `9a1793905b4abc7d24bd1c598a5a3004450f6748`. All 23 job/post-job steps succeeded. Logs confirm 850/850 final human audio coverage, 0 downloads, 0 errors, `BUILD SUCCESSFUL`, and successful upload of APK artifact `14379604453` and coverage artifact `14380462964`; both remain unexpired. No active or queued run exists.
+- Compare against the Run 48 build commit: 71 commits ahead / 0 behind; changed files are ten root-level Markdown research/plan documents only. No `docs/**`, `android-offline/**`, `scripts/**` or workflow file changed. The workflow uses `cancel-in-progress: true`, but no build was active and no new build was triggered.
