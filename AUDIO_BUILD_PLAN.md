@@ -2151,3 +2151,13 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Reconfirmed accepted architecture: 2 Modules / 15 Lessons (Module 1 = 3; Module 2 = 12); C01–C12 map to Module 2 Lessons 1–12; C13–C15 map to Module 1 Lessons 1–3. No Lesson was added, removed, merged or renumbered.
 - The consolidated sheet makes clear that document-level drafts are not learner-tested scripts or App/device acceptance. No App source, Android workflow input or audio assets changed; no Android build was triggered.
 - Next phase: prepare a separate App migration plan from the five early prototypes to the accepted 15-Lesson architecture. Do not move/renumber App screens or change build-affecting files until that migration plan is reviewed and approved.
+
+### Final verification after the 15-Lesson review sheet (2026-11-19)
+
+- Verified all 15 lesson draft files exist on the branch. Verified `BASIC_ENGLISH_EXPRESSION_15_LESSON_REVIEW.md` exists (83 lines) and contains 15 draft links plus numbering, source scope, learner decisions, prerequisites, cross-links, practice status, implementation/testing status and remaining gates.
+- Re-read the current curriculum/candidate/flow status summaries: the curriculum no longer says authored content and the cross-Lesson audit are pending; candidate history is explicitly marked historical; the flow file states all 15 flows and first content drafts exist.
+- Final Actions check before this plan entry: branch HEAD `2555319993af2e790b92a415f028aa3e9f305d68`; 48 runs total; latest Run 48 / 44197915524 completed / success; 0 active, 0 queued.
+- Compared HEAD with Run 48 build SHA `9a1793905b4abc7d24bd1c598a5a3004450f6748`: 327 commits ahead / 0 behind; 29 changed files, all root-level Markdown. No `docs/**`, `android-offline/**`, `scripts/**` or workflow file changed. No Android build was triggered.
+- Run 48 artifacts remain the latest known build outputs: APK artifact 14379604453 and coverage artifact 14380462964; both were confirmed unexpired during startup verification. No new artifacts were generated in this documentation-only phase.
+- Current completion: 2 Modules / 15 Lessons; all 15 first content drafts exist; cross-Lesson boundary audit and consolidated review sheet complete. Learner testing, duration measurement, App migration, App implementation and device acceptance remain open.
+- Next: prepare a separate App migration plan from the five early App prototypes to the accepted 15-Lesson architecture. Do not renumber screens or change App code until that migration plan is reviewed and approved.
