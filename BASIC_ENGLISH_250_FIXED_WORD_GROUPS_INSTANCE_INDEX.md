@@ -1,6 +1,6 @@
 # The 250 Fixed Word-Groups — Instance-Level Teaching Index
 
-> Status: staged source-based index. This document indexes the 200 items outside the separately audited 50-item Most Necessary list. The summaries below paraphrase the original examples; they are not presented as verbatim quotations. Candidate IDs refer to Expression System v0.3 and are provisional.
+> Status: staged source-based index. This document indexes all 250 source items in the 250 Fixed Word-Groups. The separate A Basic Selection list of 50 Most Necessary groups is a priority subset of those 250 and is cross-mapped separately in the project research index. The summaries below paraphrase the original examples; they are not presented as verbatim quotations. Candidate IDs refer to Expression System v0.3 and are provisional.
 >
 > Source: C. K. Ogden, *The ABC of Basic English* (1932), Part III, “The 250 Fixed Word-Groups”, printed pp.212–242. The original English scan pages were visually checked in the linked 162-page PDF. The printed-page sequence was verified from the page headers.
 
@@ -251,7 +251,7 @@ Destination labels:
 
 - Part A: 50 / 50 items indexed.
 - Part B: 80 / 80 items indexed.
-- Total completed in this file so far: **130 / 200** items outside the priority 50.
+- Total completed in this file so far: **130 / 250** source items.
 - Remaining: Part C, 20 special uses; Part D, 100 uses of other Basic words.
 
 
@@ -425,6 +425,6 @@ Original section: “100 More Uses”, printed pp.232–242. The source numbers 
 | D | remaining Basic word classes | 100 / 100 |
 | **Total** | **250 Fixed Word-Groups** | **250 / 250** |
 
-The separate A Basic Selection priority list contains another 50 items and is indexed in the project research document. It is not added to the 250 count.
+The separate A Basic Selection list of 50 Most Necessary groups is selected from the 250 Fixed Word-Groups; it is a priority subset, not 50 additional groups. It is cross-mapped in the project research document.
 
-**Instance-index status: 200 / 200 of the non-priority 250 groups are now individually summarized and provisionally mapped.** The summaries are not verbatim transcriptions. Every numbered source item has an entry; grouped original examples retain their original number references.
+**Instance-index status: 250 / 250 source items are now individually summarized and provisionally mapped.** The summaries are not verbatim transcriptions. Every numbered source item has an entry; grouped original examples retain their original number references.
