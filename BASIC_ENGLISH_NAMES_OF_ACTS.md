@@ -250,31 +250,34 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 
 ### 5.5 busy、deaf：用 Basic 描述性质（p.260）
 
-| 普通英语 | 原书给出的 Basic 表达 |
+| 普通英语 | 原书给出的 Basic 表达或解释 |
 |---|---|
-| a busy person | one with much business；更自然的表达是 he is working hard / has much to do |
-| a deaf person | one whose hearing is bad |
+| a busy person | 原书先给出以 business 构成的说明，随后明确说更自然的说法是 working hard 或 has much to do。教学时按语境区分：强调正在投入工作，或强调手头有很多事要做 |
+| a deaf person | one whose hearing is bad；教学释义可理解为听觉状况不好，而不是把 deaf 扩展成不能说话或其他身体状况 |
 
-**教学重点：** 这是把普通英语性质词改写成 Basic 描述，不是 Names of Qualities 的意义扩展，也不是词尾派生。
+**教学重点：** busy、deaf 都是普通英语中常见、但不在850词表中的性质词。任务是把它们所描述的状况用 Basic 词汇说清楚，不是把某个 Basic Quality 扩展出新义，也不是词尾派生。
 
 ### 5.6 world、life、hill、home、address：根据语境选择表达（pp.260–262）
 
-| 普通英语词 | 原书区分的语境 | Basic 表达或解释 |
+| 普通英语词 | 原书区分的语境 | Basic 表达或项目处理 |
 |---|---|---|
-| world | 空间意义 | earth |
-| world | “全世界震惊”一类表达 | every one |
-| world | “世界正在变化”一类表达 | things；conditions |
-| life | 存在意义 | existence |
+| world | 空间/地球意义 | earth |
+| world | 把全世界的人作为整体 | every one |
+| world | 社会状况或事物正在变化 | things or conditions |
+| life | 抽象的存在意义 | existence |
 | life | 指有生命的对象 | living things；all living things |
-| living | 把生活/活着作为活动来谈 | living（如 Living is interesting） |
-| hill | 一块高于周围地面的土地 | a slope；small mountain（大小合适时）；highlands（指多山地区） |
-| home | 人实际居住的地方，不一定是 house | a place where one is living |
-| at home | 与家人在一起的家庭状态 | with his family |
-| address | 个人住址 | the place where one is living |
-| address | 商务信件所用地址 | one's place of business |
-| address at the top of a letter | 信件顶部的地址栏 | letter-heading |
+| living | -ing 形式单独用作名称，指生活/活着这一活动 | 原书用一个关于生活本身有趣的句子说明；交叉参照既有 -ing 词形基础，不把它教成 life 的通用一对一替换 |
+| hill | 高于周围地面的地形 | a slope；也可用一个大小合适的小型山地来说明 |
+| hill / highlands | 指一整片多山地区，而非单独一个 hill | 可用“一个有许多山丘的地区/国家”描述。原书同时出现 highlands，但它不在项目850词表中，因此不把它作为850词答案 |
+| home | 人实际居住的地点，不要求一定拥有一栋 house | where the person lives；原书特别指出，短暂住一晚的旅馆不因此成为此人的 home |
+| the home/family context | 句子强调一个人在家中的家庭状态 | with his family；这是该语境的表达，不是 home 的通用替换 |
+| address | 个人用途的住址 | where the person lives |
+| address | 商务信件所用地址 | the business location |
+| address at the top of a letter | 信件顶部列出的地址 | letter-heading；这是原书给出的组合形式，可与 head 的 -ing 词形基础交叉参照 |
 
-**教学重点：** 同一个普通英语词在不同语境中可能需要完全不同的 Basic 表达。不能把 world = earth、life = existence、home = house 这类一对一替换当成规则。
+**850词表核对：** busy、deaf、world、life、hill、home、address 七个目标词均不在当前项目的850词表中。上表列出的 Basic 表达使用词表中的基础词、允许的词形或项目明确标注的描述性组合。highlands 不在词表中，不作为 Basic 词条使用。
+
+**教学重点：** 同一个普通英语词在不同语境中可能需要不同的 Basic 表达。world、life、home、address 尤其不能做成一对一替换卡；hill 的单个地形与整片多山地区也必须分开。
 
 ### 5.7 对课程设计的直接影响
 
