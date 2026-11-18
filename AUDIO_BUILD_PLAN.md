@@ -1220,3 +1220,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 03.
 - Next concrete step: audit Complex Acts / feeling, liking, wanting and needing.
 - No App code changed and no Android build triggered.
+
+
+### Theme Audit 04 — Complex Acts feeling / liking / wanting / needing (2026-11-18)
+
+- Audited feel, like, want and need.
+- Identified a coherent candidate task: express internal experience, attitude, preference, desire and need as explicit relations rather than one-word ordinary-English verbs.
+- Confirmed important semantic variation inside feel and like. In particular, “feel a wall” is a physical-contact use and should cross-link to the earlier physical-action theme rather than force the whole word into one category.
+- Current evidence supports keeping this as one candidate teaching theme; no formal Lesson number assigned.
+- Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 04.
+- Next concrete step: audit Complex Acts / learning, teaching, showing and trying.
+- No App code changed and no Android build triggered.
