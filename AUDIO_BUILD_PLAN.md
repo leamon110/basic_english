@@ -1178,3 +1178,18 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This checkpoint confirms that the next work is **not** to draft another Lesson yet. The next step is to test the remaining Some Common Needs themes against the same teaching-task scale used for Communication, beginning with Simple Acts: eating/body action, then movement/posture. After each meaningful theme-level research step, update this file and the knowledge map before proceeding.
 - Startup/CI verification for this step: `AGENTS.md` was read in full (53 lines); `AUDIO_BUILD_PLAN.md` was read in full (current prior snapshot 1,199 lines); branch head before this knowledge-map commit was `465484f45a51128e174d360f231d6a51f12e32c5`; latest Actions remains Run 48 / `44197915524`, completed / success, built commit `9a1793905b4abc7d24bd1c598a5a3004450f6748`. The Run 48 build job completed all main/post-job steps successfully; logs confirm the Meaning-to-Basic and Expression Lesson 02 tests passed, final human audio coverage 850/850 with 0 downloads and 0 errors, `BUILD SUCCESSFUL`, and successful upload of APK artifact `14379604453` plus coverage artifact `14380462964`. Both artifacts are unexpired. No active or queued run exists.
 - The knowledge-map commit is root-level Markdown only; it does not touch `docs/**`, `android-offline/**`, `scripts/**` or the workflow, so it does not trigger the Android workflow. No build was started or cancelled.
+
+
+### Theme Audit 01 — Simple Acts physical-action boundary (2026-11-18)
+
+- Audited the first remaining Simple Acts topic against the original `Some Common Needs / Simple Acts` examples and the project source index.
+- The former project bucket “饮食与身体动作” is now treated only as a **source-material bucket**, not a Lesson candidate.
+- Three distinct candidate learning tasks were identified:
+  1. bodily intake / biting / expulsion: eat, bite, spit;
+  2. contact / force / physical effect: touch, accidental contact, hit, scratch;
+  3. change of form / result: cut, break, smash and the resulting/passive/self-occurring forms.
+- The source itself supports the third boundary: after the cut/break discussion it explicitly describes cutting and breaking as the important operations connected with changes of form, then moves on to changing the places of things.
+- No Lesson number was assigned. This is a boundary finding, not a final course split.
+- Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Theme Audit 01 and the resulting unresolved questions.
+- Next concrete step: audit Simple Acts / movement and posture, then compare its learning task with the three physical-action tasks before deciding any Lesson boundary.
+- No App code changed and no Android build triggered.
