@@ -41,7 +41,7 @@ Core operation: identify the actual ordinary-English meaning in context → choo
 
 - 850 words, Operators, Directives, basic word forms and sentence structure remain foundations in Structured Teaching / the original 45 Steps. The Expression Lessons apply them rather than repeat the full explanations.
 - -er / -ing / -ed remains a word-form foundation with selected semantic examples; it is not a separate Expression Module.
-- The 250 Fixed Word-Groups remain phrase-level reinforcement. The 50 Most Necessary groups have all been mapped; the other 200 are not yet individually transcribed in the current index.
+- The 250 Fixed Word-Groups remain phrase-level reinforcement. The 50 Most Necessary groups have all been mapped; of the other 200, 130 now have an instance-level teaching index and 70 remain.
 - unless → if ... not belongs to conditional sentence-structure foundations, not C09.
 - find / lose / discover are cross-linked by actual meaning: encounter/location → C04; seeing that something is happening → C01; knowledge/discovery → C05; inability to locate → C04/C05; an object being taken away → C04.
 - All show senses remain together in C01; “show interest” links to C06 but is not duplicated.
@@ -62,7 +62,7 @@ Still required before final acceptance:
 1. test the full 15-Lesson sequence as a learner progression;
 2. decide the exact foundation prerequisites/reminders for C03 and C09;
 3. check every adjacent Lesson for remaining overlap or excessive size;
-4. keep the 200 other Fixed Word-Groups as an explicit coverage gap until their examples are indexed;
+4. complete the remaining 70 of the 200 other Fixed Word-Groups in the instance-level index;
 5. reconcile current App prototype labels with the final display numbering in a separate migration plan.
 
 **No final syllabus or App Lesson IDs are assigned yet.** The 15 is a provisional candidate count, not a project commitment.
