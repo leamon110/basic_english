@@ -1625,3 +1625,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - No App source or Android workflow input changed; no build was triggered.
 - Next concrete step: author Module 1 Lesson 2 — Names of Qualities: Meaning Expansion & Use as Things. Keep Quality meaning extensions distinct from Quality words functioning as Names of Things, and preserve the source restriction that dark, first, last, quiet and same occur only with “the”.
 
+### Module 1 Lesson 2 first complete content draft (2026-11-18)
+
+- Rechecked the original English source pages printed p.152 and p.160.
+- p.152 confirms four Quality extensions: bitter taste → bitter experience; cold day → cold look; smooth floor → smooth words; bright colour → bright face. It also explains cheap as a bad-taste judgment even when a high price was paid, and simple for an act that gives little trouble. These are recognized meaning extensions based on human response or associated qualities, not universal logical rules.
+- p.160 lists exactly 35 Quality forms plus colour words for use as Names of Things. The source explicitly restricts dark, first, last, quiet and same to use with the. The count of the 35 listed forms was checked against the project source index.
+- Created BASIC_ENGLISH_EXPRESSION_M1_L2_DRAFT.md. It keeps the two learning tasks separate, includes the full source list, explains the five-word the restriction, and adds recognition, explanation, classification and reverse-check practice with answer explanations.
+- Updated BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md with the source verification and draft checkpoint.
+- This is a first complete draft, not final acceptance. Clarity, answer quality, exercise volume and actual learner time still require review. Do not imply all adjectives can become Names of Things, and do not merge this lesson with C15 Special Use / Meaning Narrowing.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete step: review Module 1 Lesson 2 against the original source and C14 teaching flow, then proceed to Module 1 Lesson 3 — Special Use / Meaning Narrowing.
+
