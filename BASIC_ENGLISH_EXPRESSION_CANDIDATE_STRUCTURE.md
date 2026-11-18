@@ -67,6 +67,124 @@ Still required before final acceptance:
 
 **No final syllabus or App Lesson IDs are assigned yet.** The 15 is a provisional candidate count, not a project commitment.
 
+
+## Whole-sequence progression test 01 — order, boundaries and prerequisites (2026-11-18)
+
+### A. Module 1 progression: C13 → C14 → C15
+
+| Transition | Learner task | Progression result |
+|---|---|---|
+| C13 Names of Things expansion | Recognize the root referent and the relation that extends it to another object/situation | Start with concrete object/structure relations, then move to sensory, function, process, part/whole and abstract connections |
+| C13 → C14 | Move from expanded object Names to expanded Quality meanings and Quality-as-Thing use | Different word class and semantic operation; keep separate, but reuse the same “root sense → relation → contextual meaning” method |
+| C14 → C15 | Move from related meaning extension to contextually narrowed reference | A real change in decision: C14 asks why a related sense is valid; C15 asks which narrower referent the context selects |
+
+**Result:** the three-lesson sequence is coherent. C15 depends on the expansion/narrowing contrast established in C13/C14. C13 and C14 should not be merged solely to reduce count: the source material and teaching tasks have separate enough scope. No evidence in this pass supports splitting either into smaller Lessons.
+
+### B. Module 2 progression: C01 → C12
+
+| Lesson | Main decision taught | Why it follows here |
+|---|---|---|
+| C01 Communication & Information | Identify what communication/information action is meant; compare several Basic constructions for the same ordinary word | Familiar, observable starting point; reuses Names of Acts foundation |
+| C02 Bodily Action & Contact | Identify intake/expulsion vs contact/impact and express the body/object relation | Moves from communication to concrete physical action |
+| C03 Physical Effects: Damage, Change & Result | Distinguish the action causing change, the resulting state, and a change occurring by itself | Builds on C02's physical-action vocabulary but changes focus from action/contact to effect/result |
+| C04 Movement & Position | Identify object transfer, path/destination, viewpoint, and body position/posture | Completes the concrete physical domain; shares Directives with C02/C03 but has a different spatial decision |
+| C05 Thinking, Knowledge, Memory & Learning | Identify a mental process, state, content or acquisition/transfer of knowledge | Moves from visible physical relations to internal/cognitive relations; C13 meaning expansion is already available |
+| C06 Feeling, Preference, Desire & Need | Identify internal experience, attitude, preference, desire or need | Follows cognition with affect/attitude; reuses C14 Quality meanings and relations such as of/for/with |
+| C07 Exchange, Sale & Commitment | Identify exchange, payment/value, sale and a commitment to pay | Moves from personal internal states to transactions and commitments between people |
+| C08 State and Process | Express growth, entry into a state, life process and process boundaries | Moves from transactions to states and changes over time |
+| C09 Ability, Obligation & Intention | Identify ability/possibility, duty/advisability, probability or intention | Adds the speaker's stance toward an action/state; it is a distinct function, not another physical/mental action |
+| C10 Quantity, Amount & Degree | Identify distribution, totality, amount and degree | Moves to quantification of people/things/qualities |
+| C11 Time & Sequence | Identify temporal position, continuation, expectation and sequence | Uses the time foundation but focuses on the source's additional contextual meanings |
+| C12 Context-Dependent Words & Paraphrase | Identify the intended sense of an ordinary word outside the Basic list and describe it with Basic words | Integrates earlier expression skills; it is a suitable final application/synthesis lesson |
+
+**Result:** the sequence has a visible concrete → cognitive/affective → social/process → functional/contextual progression. No adjacent pair in this pass has the same dominant learner decision, so there is no evidence to merge them merely because they share Operators or Directives.
+
+### C. Exact prerequisite handling — C03
+
+The current candidate previously said “include a short be/get + past-participle result pattern.” The repository's actual Step 17 adaptation already teaches this material:
+
+- past-participle forms of Operators;
+- the distinction between an action's receiver/result and the -ing form;
+- **be + past participle** passive/result construction;
+- passive examples with and without an agent introduced by by;
+- **get + past participle**, including “get some stockings made”, “gets food sent” and “got the work done”;
+- a passive transformation exercise.
+
+This is confirmed in docs/js/course.js under lessonHTML[17], and the Step 17 adaptation audit records passive and get + past participle as covered topics.
+
+**Revised C03 prerequisite:**
+
+1. Prerequisite/reference: completed App Step 17, sections 4–6 (past participle, be-passive, get + past participle).
+2. C03 should provide a brief reminder using its own source examples (“the thread is broken”; “get it broken”; “the plate may be smashed”; “it comes to bits”).
+3. Do **not** reteach the full passive/get-passive rule and do not create another foundation Lesson.
+4. If a learner has not completed Step 17, the C03 lesson should link back to that foundation section before the result-form exercise.
+
+This resolves the earlier statement that Step 17 was not locally adapted: Step 17 **is** adapted in the current App. Step 22 is not locally adapted, but it is not the only relevant source of passive teaching.
+
+### D. Exact prerequisite handling — C09
+
+The source-derived Other Suggestions index gives C09 enough material to teach its own distinctions. It must not assume that the learner already knows a dedicated modal unit.
+
+Teach the source's separate uses:
+
+- **can**: ability / possibility;
+- **ought**: what is right or wise; what is someone's business/duty; and a probability inferred from the facts;
+- **shall** in a statement: will;
+- **Shall I ...?**: asking about intention (“Am I going to do it or not?”) or whether doing it is wise.
+
+**Revised C09 prerequisite:**
+
+1. Basic sentence patterns, Operators and infinitive forms from the existing foundation.
+2. Teach the above can/ought/shall meanings inside C09 itself.
+3. Keep **unless → if ... not** outside C09; it belongs to conditional clause/sentence-structure teaching.
+4. Do not assume Step 21/22 auxiliary material is already available in the local App; the source-specific C09 meanings are still taught here.
+
+C09 is therefore self-contained for its target meaning distinctions, while relying on the already-taught sentence foundation.
+
+### E. Remaining scope warning — C07
+
+C07 remains the smallest candidate Lesson.
+
+The directly indexed Some Common Needs material is buy, sell, keep goods for sale and promise to pay later. The priority fixed-group list supplies the directly related “let a house” use, but most of the other 50 priority groups do not belong to exchange/sale and must not be forced into C07.
+
+The remaining 200 of the 250 Fixed Word-Groups are not individually indexed. Therefore:
+
+- C07 remains a **provisional compact Lesson**, not yet proven to have the same teaching size as the others;
+- do not pad it with unrelated social/relationship phrases;
+- after the remaining 200 fixed groups are indexed, recheck whether they contain source-supported exchange/sale/commitment material that naturally belongs here;
+- if not, test whether C07 should be a shorter subsection of a broader transaction/relationship theme rather than a standalone Lesson.
+
+This is the only adjacent-scope/lesson-size concern that remains material after this progression pass. The current evidence does not justify changing the 15-count yet.
+
+### F. Cross-cutting and non-duplication check
+
+- Operators / Directives: prerequisite tools, not repeated as separate theory in every Lesson.
+- Names of Acts: existing foundation; C01–C08 deepen semantic choices and context.
+- Names of Directions: existing foundation; C02–C04 apply spatial relations in physical contexts.
+- Step 17: C03 prerequisite for passive/result forms, with a short local reminder only.
+- Meaning → Basic: shared method; each Lesson trains its own semantic choice rather than re-teaching the method.
+- Fixed Word-Groups: insert only where meaning naturally reinforces the current topic.
+- -er / -ing / -ed: retain as word-form foundation; do not confuse derived-word morphology with passive/result syntax.
+- C12 vs C15: C12 starts from a non-Basic ordinary-English word and constructs a Basic paraphrase; C15 starts from a Basic word and interprets a contextually narrowed use. The direction of the learner's task is different.
+
+### G. Result and next step
+
+This pass supports retaining the **2 Modules / 15 provisional Lesson** structure and the source-aligned order.
+
+Resolved:
+- the C03 passive/get-passive prerequisite;
+- the C09 modal content/prerequisite;
+- the progression and dominant decision boundary of all 15 candidates;
+- the distinction between C12 contextual paraphrase and C15 meaning narrowing.
+
+Still open:
+- C07 lesson size, pending a complete instance-level index of the remaining 200 Fixed Word-Groups;
+- exact final lesson duration and exercise volume, which should be decided during lesson authoring rather than by adding/removing Lessons on paper;
+- App prototype migration and final display IDs, which remain a separate implementation task.
+
+No final syllabus acceptance or App ID migration is made by this audit.
+
+
 ---
 
 ## Historical candidate v0.2 — withdrawn after complete p.154/p.160 review
