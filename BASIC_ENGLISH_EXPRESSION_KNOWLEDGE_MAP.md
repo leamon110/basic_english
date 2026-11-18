@@ -2402,3 +2402,28 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - No App source or Android workflow input changed; no build was triggered.
 - Next: author Module 2 Lesson 7 — Exchange, Sale & Commitment.
 
+## 79. Module 2 Lesson 7 — Exchange, Sale & Commitment source audit (2026-11-18)
+
+- Reopened original English p.254 and compared the accepted C07 flow with the source index and the complete 250 Fixed Word-Groups instance index.
+- Direct Some Common Needs examples:
+  - buy → get the things in exchange for money / at a price; or give money for them;
+  - promise to give money later → give one's word to do so;
+  - sell → get money for what one gives;
+  - sell things regularly → keep them in a store;
+  - sell what one makes → put it on the market.
+- Selected fixed-group reinforcement with direct transaction/commitment relevance:
+  - come to agreement about taxes (p.216);
+  - let a house to a friend (p.220; also in the 50 Most Necessary groups);
+  - put the business through (p.220);
+  - take an object in exchange for another (p.225);
+  - send a coat on approval and obtain a coat on credit (p.236);
+  - take part in the organization of a company, with a chance of profit (p.237);
+  - profit/loss/interest on a business (p.227);
+  - goods much in request and keeping one's word (p.239).
+- Kept fixed groups as contextual reinforcement, not a second vocabulary course. Excluded “put money on a horse” as a betting/risk context rather than a sale transaction.
+- Added essential ambiguity boundaries: “on approval” is a sale arrangement, not C06's attitude “it has our approval”; “on credit” is a purchase condition, while “to one's credit” means merit/reputation; “at a loss for something to do” means uncertainty, not financial loss.
+- Confirmed the source's “find/lose/discover” examples do not belong to C07 as a single topic: they are assigned to C04/C05 according to location, encounter, information or knowledge. Damage/hurt remains C03; life/process examples remain C08.
+- The accepted C07 scope remains one compact Lesson with three internal strands: exchange roles; sale arrangements/conditions; commitment and business context. The exercise volume will be checked in the authored draft.
+- No App source or Android workflow input changed; no build was triggered.
+- Next: author C07 using only these source-supported transaction and commitment examples, with explicit buyer/seller roles and payment-status distinctions.
+
