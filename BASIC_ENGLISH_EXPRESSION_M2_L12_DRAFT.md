@@ -43,21 +43,21 @@ The source gives three different readings.
 
 | Context | Meaning to identify | Basic description |
 |---|---|---|
-| A statement about the physical world or space | The planet / physical earth | earth |
+| A statement about the physical world or space | The planet itself | earth |
 | A statement about the people of the world as one group | All the people being considered | every one |
-| A statement about the state of society or what is changing | The things or conditions involved | things or conditions |
+| A statement about the state of society or what is changing | The state of society | things or conditions |
 
 The same ordinary-English word does not have one fixed Basic replacement. The sentence decides which of the three readings in the table is intended.
 
-## 3. life — existence, living things or the activity of living
+## 3. life — an abstract sense, living objects or the activity of living
 
 The source distinguishes three uses:
 
 1. **Abstract meaning:** life can refer to the fact that something exists. The Basic meaning is **existence**.
-2. **Objects that have life:** when the sentence refers to people, animals or plants as living objects, use **living things** or **all living things**.
+2. **Objects that have life:** when the sentence refers to people, animals or plants as living objects, use **living things** or all of these objects.
 3. **The activity itself:** the source also shows the -ing form used by itself as a Name for the activity of living.
 
-Keep these apart. A sentence about the existence of life is not necessarily talking about the living objects themselves. A sentence about the activity is different again.
+Keep these apart. A sentence about the abstract sense of life is not necessarily talking about the living objects themselves. A sentence about the activity is different again.
 
 The third use cross-links to the existing -ing word-form foundation. It does not make the -ing form a universal replacement for every use of life.
 
@@ -71,7 +71,7 @@ Do not force the mountain comparison onto every hill. The scale and shape matter
 
 The source also discusses a whole region whose land contains many hills. That is not one hill. Describe the region itself, for example as an area or country with many hills.
 
-**850-word boundary:** the source mentions the term highlands for this regional context, but highlands is not an entry in the project's 850-word list. Do not present it as a Basic word. Use a description built from Basic words instead.
+**850-word boundary:** the source mentions highlands for this regional context, but that term is absent from the project's 850-word list. Do not present it as a Basic word. Use a description built from Basic words instead.
 
 ## 5. home — residence or family state
 
@@ -83,7 +83,7 @@ A short stay in a hotel does not, by itself, make that hotel the person's home.
 
 ### The family-state context
 
-The source also gives a context in which the home situation is explained by the person's family relationship.
+The source also gives a context in which the intended meaning is **with his family**.
 
 This is a particular reading about the person's family situation. It is not a universal replacement for home. When the sentence is about the place of residence, keep the place meaning.
 
@@ -169,7 +169,7 @@ Choose the description that preserves the intended meaning.
 
 5. A sentence uses world to refer to the physical planet. Which reading is intended?
    - A. The people considered as one group.
-   - B. The physical earth.
+   - B. The physical planet.
    - C. The changing state of society.
 
 6. A sentence uses world to refer to all the people considered together. Which reading is intended?
@@ -178,7 +178,7 @@ Choose the description that preserves the intended meaning.
    - C. The collective-people reading.
 
 7. A sentence says that the world is changing, and the context concerns the state of society. Which description fits?
-   - A. The changing things or conditions.
+   - A. The changing state of society.
    - B. A person's home.
    - C. A single raised landform.
 
@@ -190,7 +190,7 @@ Choose the description that preserves the intended meaning.
 9. A sentence uses life to refer to people, animals and plants as objects that have life. Which sense is intended?
    - A. A private location.
    - B. Living objects.
-   - C. The physical earth.
+   - C. The physical planet.
 
 10. The source uses an -ing form by itself as a Name for an activity. Which foundation does this example connect to?
    - A. The word-form foundation for -ing.
@@ -310,7 +310,7 @@ For each Basic description, identify the source word and the context that it can
 5. life — living-object sense.
 6. life — the activity sense, using the -ing word form.
 7. hill — one raised landform.
-8. hill / the regional hills context — describe the region, not one hill; do not use highlands as a Basic entry.
+8. hill / the regional hills context — describe the region, not one hill; do not use the source's regional term as a Basic entry.
 9. home — residence sense.
 10. home — family-state sense.
 11. address — private address.
@@ -324,7 +324,7 @@ For each Basic description, identify the source word and the context that it can
 Complete all four tasks. First identify the intended sense, then construct a Basic description, and finally explain why another sense does not fit.
 
 1. Write two short contexts for world: one about the physical planet and one about people as a group. Give a different Basic description for each.
-2. Write two contexts for life: one about existence and one about living objects. Explain why the same description cannot be used automatically in both.
+2. Write two contexts for life: one about its abstract sense and one about living objects. Explain why the same description cannot be used automatically in both.
 3. Describe a hill as one landform, then describe a whole region containing many hills. Keep the two referents separate.
 4. Write three contexts for address: private, business and the heading on a letter. Give a separate Basic description for each.
 
