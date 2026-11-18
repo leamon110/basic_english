@@ -1960,3 +1960,18 @@ The other 200 Fixed Word-Groups are not yet individually indexed. C07 remains pr
 
 Complete an instance-level index of the remaining 200 Fixed Word-Groups, then re-evaluate C07 and the cross-topic placements. Do not accept the final 15-Lesson count before this coverage gap is resolved.
 
+
+
+## 41. Fixed Word-Groups instance index — first tranche complete
+
+The original scan pages for the first two parts of the 250 list have now been reopened and checked:
+
+- printed pp.216–220: all 50 Operator examples;
+- printed pp.222–230: all 80 examples under the eight relation words.
+
+A new file, BASIC_ENGLISH_250_FIXED_WORD_GROUPS_INSTANCE_INDEX.md, records all 130 examples individually with Chinese meaning summaries and provisional candidate destinations.
+
+Progress:
+- 50 Most Necessary priority groups: separately indexed and mapped.
+- Other 200 groups: 130 / 200 indexed (50 Operator + 80 relation-word examples).
+- Remaining: 20 other Operations / Directions uses and 100 uses from the rest of the Basic word list = **120 items**. The candidate progress note has been corrected below to retain this exact count.
