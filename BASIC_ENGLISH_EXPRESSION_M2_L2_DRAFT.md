@@ -57,6 +57,8 @@ Do not treat all of these as synonyms:
 - **give it a rub** describes rubbing an insect bite;
 - **get one's nails into it** describes a deeper scratch.
 
+A related cross-link from the feeling topic is **feel a wall to test whether it is dry** → **put one's hands on it**. Here feel means physical contact, so it belongs with this lesson; emotional or internal feeling belongs in Module 2 Lesson 6.
+
 The ordinary word **touch** therefore does not always lead to one Basic expression. The context tells us whether the action is simple contact, accidental contact or forceful contact.
 
 ## 3. Boundaries with the next physical-action lessons
@@ -139,6 +141,11 @@ Choose the expression that matches the event.
    - B. have a bite of it
    - C. take a seat
 
+9. A person feels a wall to test whether it is dry.
+   - A. put one's hands on it
+   - B. give it a blow
+   - C. put it out of one's mouth
+
 **Answers and reasons**
 
 1. A — The source describes eating as taking food or having a meal.
@@ -149,6 +156,7 @@ Choose the expression that matches the event.
 6. A — The source connects scratching with a pointed object to making a mark.
 7. B — The source uses give it a rub for scratching an insect bite.
 8. A — The source uses get one's nails into it for a deep scratch.
+9. A — In this context feel describes physical contact; the source gives put one's hands on it.
 
 ### B. Distinguish kinds of contact
 
