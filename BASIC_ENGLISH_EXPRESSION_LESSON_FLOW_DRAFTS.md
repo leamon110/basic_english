@@ -1075,62 +1075,86 @@ Then give the Basic expression and ask the learner to reconstruct the original t
 
 ### Teaching objective
 
-The learner takes an ordinary-English word that is not directly available as a Basic expression, identifies what it means in this particular context, and describes that meaning with Basic words.
+The learner starts with an ordinary-English word outside the Basic list, identifies what it means in the sentence, and describes that meaning with Basic words. The lesson uses the seven source examples busy, deaf, world, life, hill, home and address. It is not a general promise that every English word has one fixed Basic substitute.
 
 ### Proposed teaching flow
 
 #### 1. Describe a Quality with Basic words
 
-Use:
-- busy → someone working hard / having much to do;
-- deaf → someone whose hearing is bad.
+- **busy:** the source first gives a form built around business, then prefers a more natural description. The learner decides whether the context emphasizes active effort or a large amount of work to do.
+- **deaf:** describe the person's hearing condition. Do not infer inability to speak or any other condition that the sentence does not state.
 
-Ask what observable condition the ordinary adjective describes, then build a Basic description.
+These are ordinary-English Quality words being paraphrased. They are not examples of Names of Qualities expansion and are not new 850 entries.
 
-#### 2. Compare different meanings of the same Name
+#### 2. world — identify the referent
 
-Use world, life, hill, home and address:
+Use three separate contexts:
+- the physical world / space around us → the earth;
+- the people considered as one collective group → every one;
+- the changing state of society or things → things or conditions.
 
-- world can refer to the earth, people, or conditions/things, depending on the sentence;
-- life can mean existence, living things, or the activity of living;
-- hill can require a description based on height/shape/size;
-- home refers to the place where a person lives, not automatically a house;
-- address can mean a home location, business location or the heading of a letter.
+The sentence must tell the learner which referent is intended. The word world itself does not select one of these descriptions.
 
-The learner should never memorize a single replacement without the context.
+#### 3. life — existence, living things or the activity of living
 
-#### 3. Context-first paraphrase method
+- When life means the fact that something exists, use the source's existence sense.
+- When it refers to objects that have life, use living things / all living things.
+- The source also shows the -ing form used by itself as a Name for the activity of living. Cross-link this to the existing word-form foundation; do not teach it as a universal replacement for every use of life.
 
-For every prompt:
-1. identify the exact intended meaning in the sentence;
-2. ignore the ordinary word temporarily;
-3. describe the referent or condition using Basic words;
-4. read the Basic description back and check whether it preserves the intended meaning.
+#### 4. hill — one landform or a region
 
-#### 4. Guided practice
+- A single hill is a piece of land higher than the ground around it.
+- The source gives a slope as a short description and permits a small mountain description only when the size fits.
+- When the sentence refers to a whole region with many hills, describe the region itself, not one hill. The source mentions highlands for this context, but highlands is absent from the project's 850 list; do not present it as a Basic word. Use a description built from Basic words instead.
 
-Use contrast pairs:
-- world as earth vs world as people/conditions;
-- life as existence vs living things vs the activity of living;
-- home vs house;
-- personal address vs business address vs letter heading.
+#### 5. home — residence or family state
 
-Ask the learner to explain why one Basic paraphrase does not fit all contexts.
+- As a place, home means where the person actually lives. It does not require the person to own or live in a separate house.
+- A short stay in a hotel does not by itself make that hotel the person's home.
+- In the source's family-state example, the intended sense is being with the person's family. This is a context-specific reading, not a replacement for every use of home.
 
-#### 5. Reverse check
+#### 6. address — three different contexts
 
-Give a Basic description and ask which context-dependent sense it could represent. Where more than one sense remains possible, the learner must request or use more context rather than guess.
+- A private address identifies where the person lives.
+- A business address identifies the business location.
+- An address written at the top of a letter is the letter's heading. The source's compound form cross-links to the existing head / -ing word-form foundation.
+
+This lesson covers address as a Name for a location or letter heading. It does not add the verb use of address someone.
+
+#### 7. Context-first paraphrase method
+
+For each sentence:
+1. identify the ordinary-English target word;
+2. identify what it refers to in this particular sentence;
+3. choose the Basic description that preserves that meaning;
+4. read the Basic description back and check whether it still refers to the same thing or condition;
+5. if the context does not decide between two readings, ask for more context instead of guessing.
+
+#### 8. Guided contrast and reverse check
+
+Use contrast sets:
+- world: physical earth / people as a group / changing conditions;
+- life: existence / living objects / the activity of living;
+- hill: one raised landform / a region of many hills;
+- home: actual residence / family state;
+- address: private / business / letter heading.
+
+Then reverse the direction: give a Basic description and ask which source word and context it could represent. If more than one remains possible, the learner must explain what extra context is needed.
 
 ### Scope controls
 
-- C12 starts from an ordinary-English word outside the Basic set and constructs a Basic paraphrase.
-- C15 starts from a Basic word and interprets a contextually narrowed use. The direction of the task is different.
-- C13/C14 explain how an already-known Basic word can carry a source-recognized related meaning; C12 does not.
-- Do not teach busy/deaf as Names of Qualities expansions.
+- C12 starts with a non-Basic ordinary-English word and builds a Basic paraphrase.
+- C15 starts with a Basic word and identifies a contextually narrower referent. The direction of the task is opposite.
+- C13/C14 teach source-recognized related meanings of already-known Basic words; C12 does not.
+- busy/deaf are not Names of Qualities expansion examples.
+- unless → if ... not remains in the conditional-sentence foundation, not C12.
+- finish is not a Basic replacement and is not added to C12.
+- highlands is not in the current 850 list and must not be shown as a Basic entry.
+- Do not teach the seven target words as seven one-to-one flashcards. Each needs the relevant context distinction.
 
 ### Lesson-size test
 
-**Current judgment:** one Lesson is viable. The words are diverse, but the common operation is context-first paraphrase: identify the intended sense, then describe it with Basic words. The contrast examples are essential; one-to-one replacement cards would be incorrect.
+**Current judgment:** one Lesson is viable. The seven words are diverse, but the learner performs one shared decision: identify the intended referent/condition in context, then express it with Basic words. The multiple senses are necessary contrasts inside one paraphrase skill, not reasons to create more Lessons.
 
 ---
 
