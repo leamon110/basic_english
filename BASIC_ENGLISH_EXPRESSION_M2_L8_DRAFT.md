@@ -65,6 +65,8 @@ The source gives three expressions for die:
 
 All three describe the end of a life. They are alternative source expressions, not three unrelated grammar rules.
 
+Keep the perspective distinct from C03: C03 describes an action performed on an animal to cause its death; C08 describes the animal/person dying, not the agent's action.
+
 Do not replace the exact phrase **come to one's end** with **come to an end** and then assume the source has supplied a general translation for every kind of ending. The example on this page is about death.
 
 ## 4. Beginning, and the source boundary around finish
