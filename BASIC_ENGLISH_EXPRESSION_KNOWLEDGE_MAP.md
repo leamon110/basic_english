@@ -2211,3 +2211,23 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - C03 is source-reviewed and internally reviewed, but not user-tested or App-accepted. Actual learner time remains unmeasured.
 - Next: author Module 2 Lesson 4 — Movement & Position.
 
+## 64. Module 2 Lesson 4 — Movement & Position source audit (2026-11-18)
+
+- Reopened the original English source page p.248 and its continuation examples on p.250; compared them with the accepted C04 flow, source index, candidate structure and curriculum.
+- Object movement/transfer:
+  - throw a ball to someone / over a wall / across a river → send it to someone / over / across;
+  - catch a ball → get it in the hand; get a grip of it; hold/keep it or have it in the hand;
+  - when given something to hold, take it; carrying delicate things such as eggs is safer than throwing them, and the source also uses come with them.
+- Body position/posture:
+  - lying on something → be on it / rest on it;
+  - getting upright from lying down → stand / get up;
+  - being on one's feet → still standing;
+  - sit → take a seat / be seated;
+  - things can stand/be placed in a position.
+- Run has three distinct source uses: movement speed → go quickly; exercise → take a run; escaping danger → go (off) at a run.
+- Slip has two source uses that the first flow draft had not fully recorded: losing one's footing → have a slip / have a fall; and a quick, simple action, illustrated by taking an arm out of a coat, putting money into a pocket, or going quickly out of a house. Updated the C04 flow to retain both as a compact meaning contrast.
+- Added two brief supporting position examples from p.248: a noise may throw/put someone off balance; a sufficiently hard blow may send someone against a table. The blow/contact itself cross-links to C02; the change in balance or movement is the C04 angle.
+- Directives remain foundation tools; C04 applies path/destination and position without reteaching the general Names of Directions unit. The accepted one-Lesson scope remains two internal strands: object transfer/viewpoint and body position/posture.
+- Source audit complete. No App source changed and no Android build triggered.
+- Next: author C04 with the source distinctions above and practice that makes viewpoint, path/destination and position/state explicit.
+
