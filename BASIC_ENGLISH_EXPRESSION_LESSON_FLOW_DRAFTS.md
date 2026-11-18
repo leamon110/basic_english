@@ -666,3 +666,223 @@ Give the Basic expression and ask whether it describes an experience, attitude, 
 | C06 | Identify experience, attitude, preference, desire or need | One coherent affective Lesson |
 
 The six flows do not yet prove final lesson duration. That will be tested after all 12 Module 2 flows have been drafted and compared.
+
+
+---
+
+## C07 — Exchange, Sale & Commitment
+
+### Teaching objective
+
+The learner describes a transaction by identifying what is exchanged, who gives or receives value, and whether the expression describes a sale, payment, keeping goods for sale or a commitment.
+
+### Proposed teaching flow
+
+#### 1. Understand the exchange
+
+Start with buy and sell as two viewpoints of a transaction:
+
+- the buyer gets the thing in exchange for money / gives money for it;
+- the seller gets money for what is given.
+
+Ask the learner to identify the object, the money/value, and each participant's role before choosing the Basic expression.
+
+#### 2. Extend to sale arrangements
+
+Use the source examples of:
+- keeping goods in a store for sale;
+- putting what is made on the market.
+
+These are not simply “buy/sell” synonyms. They describe preparing or offering goods for a transaction.
+
+#### 3. Express commitment
+
+Use the promise-to-pay-later example:
+
+- giving one's word;
+- the action the person commits to do.
+
+Contrast an actual exchange with a promise about a future exchange. The learner must not treat a promise as if payment has already happened.
+
+#### 4. Fixed-group reinforcement
+
+Select only the fixed uses that naturally reinforce the transaction/commitment theme, such as agreement, letting a house, exchange, carrying an undertaking through, money risk, approval, credit, profit/loss, demand, company participation and keeping one's word.
+
+Do not import unrelated social or emotional phrases merely to make the lesson longer.
+
+#### 5. Guided practice and reverse check
+
+For each context, ask:
+1. Is this an exchange, sale arrangement, payment/credit, financial risk or promise?
+2. Who gives what, and who gets what?
+3. Has the transaction happened, or is it only promised/planned?
+
+Then give Basic expressions and ask the learner to reconstruct the transaction roles.
+
+### Scope controls
+
+- C07 covers exchange and commercial commitment, not general feelings about people; those belong to C06.
+- Fixed Word-Groups are selected reinforcement, not a second 50-item vocabulary lesson.
+- Business/legal context examples should not turn C07 into a general law or social-relations course.
+
+### Lesson-size test
+
+**Current judgment:** one compact but coherent Lesson is justified. The direct Some Common Needs material is small, but the complete fixed-group index adds a meaningful cluster of transaction, credit, agreement and commitment uses. The lesson should remain focused and use selected examples rather than attempting to teach every business-related fixed phrase.
+
+---
+
+## C08 — State and Process: Change, Entry & Ending
+
+### Teaching objective
+
+The learner distinguishes a state, entering a state, a process that is under way, and the beginning or ending of a process.
+
+### Proposed teaching flow
+
+#### 1. Change into a Quality or state
+
+Use grow:
+
+- getting taller, higher, fatter or greater;
+- being in the process of growth/development.
+
+Show the difference between the resulting Quality and the process that produces it.
+
+#### 2. Entering or being in a state
+
+Use sleep:
+
+- going to sleep;
+- being in sleep.
+
+The learner distinguishes the change into the state from the state itself.
+
+#### 3. Life process and ending
+
+Use die as a contrast set:
+- going to one's death;
+- coming to one's end;
+- taking one's last breath.
+
+These expressions describe the end of a life process from different viewpoints. Do not turn them into three unrelated rules.
+
+#### 4. Beginning and finishing
+
+Use begin → make a start, and preserve the source's important boundary that finish can itself be used in Basic.
+
+The learner must not assume every ordinary verb needs to be replaced.
+
+#### 5. Fixed-group reinforcement
+
+Use a small set of naturally related fixed groups:
+- being in motion / in use;
+- coming to a stop;
+- going to sleep;
+- something happening in the end;
+- an event taking place;
+- putting a stop to an activity.
+
+These reinforce state, occurrence and cessation.
+
+#### 6. Guided practice and reverse check
+
+Ask:
+1. Is the sentence describing a state or a change into it?
+2. Is a process continuing, beginning or ending?
+3. Does the Basic expression describe the event, its state or its result?
+
+### Scope controls
+
+- C08 does not cover physical damage/result; that belongs to C03.
+- C08 does not cover spatial movement/path; that belongs to C04.
+- C08 does not teach modal intention or obligation; that belongs to C09.
+- Preserve the source's use of finish without forced replacement.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson is viable. Growth, sleep, death, beginning and ending share the state/process decision, and the fixed groups reinforce the same theme.
+
+---
+
+## C09 — Ability, Obligation & Intention
+
+### Teaching objective
+
+The learner identifies whether the sentence expresses ability, possibility, duty, advisability, probability or intention, and chooses the Basic construction that preserves that specific force.
+
+### Proposed teaching flow
+
+#### 1. can: ability and possibility
+
+Compare:
+- a person is able to do something;
+- something is possible for a person.
+
+Do not reduce both to a single Chinese gloss without checking whether the sentence describes a person's capacity or the possibility of an event.
+
+#### 2. ought: several distinct meanings
+
+Teach the source's contrasts explicitly:
+
+- what is right or wise for someone to do;
+- what is someone's business/duty;
+- what is probable from the facts.
+
+These are not interchangeable. The learner must identify whether the sentence is advice, obligation or an expectation based on evidence.
+
+#### 3. shall: statement vs question
+
+- In a statement, shall is expressed with will.
+- In “Shall I ...?”, the question can ask whether the speaker is going to do it, or whether doing it is wise.
+
+Do not teach shall as a single future-tense translation in every sentence.
+
+#### 4. Fixed-group reinforcement
+
+Use “be able to” as a priority fixed group. “Have to” can be used as a related contrast when the sentence expresses necessity, but do not claim it is a direct replacement for every ought meaning.
+
+#### 5. Guided practice
+
+For every prompt, require the learner to label the intended force first:
+
+- ability;
+- possibility;
+- duty;
+- advice/wisdom;
+- probability from facts;
+- intention.
+
+Then construct the Basic expression.
+
+#### 6. Reverse check
+
+Give a Basic sentence and ask whether it expresses capacity, possibility, duty, advice, probability or intention. Reject an answer that preserves only the rough topic but changes the speaker's stance.
+
+### Scope controls
+
+- C09 is self-contained for the source's can/ought/shall distinctions; it assumes only the existing sentence/Operator/infinitive foundation.
+- unless → if ... not belongs to conditional sentence structure, not this Lesson.
+- Do not assume unadapted Step 21/22 auxiliary content is available in the local App.
+- Keep ability distinct from obligation, and intention distinct from prediction.
+
+### Lesson-size test
+
+**Current judgment:** one Lesson is justified. The three source words have different meanings, but they share one learner decision: identify the speaker's stance toward an action or event. The internal sections prevent them from being flattened into one “modal” rule.
+
+---
+
+## Module 2 flow checkpoint — C01–C09
+
+| Candidate | Main learner decision | Current flow result |
+|---|---|---|
+| C01 | Identify the communication event and its roles/medium | One Lesson viable |
+| C02 | Identify bodily intake/expulsion or contact/impact | One Lesson viable |
+| C03 | Distinguish physical action, damage/effect and result | One Lesson viable; Step 17 prerequisite |
+| C04 | Identify movement, path, destination, viewpoint and posture | One Lesson viable |
+| C05 | Identify the mental/knowledge operation or relation | One coherent cognitive Lesson |
+| C06 | Identify experience, attitude, preference, desire or need | One coherent affective Lesson |
+| C07 | Identify exchange, sale arrangement, payment/value or commitment | One compact Lesson viable with selected fixed-group reinforcement |
+| C08 | Distinguish state, entry, process, beginning and ending | One coherent process Lesson |
+| C09 | Identify ability, possibility, duty, advice, probability or intention | One coherent functional Lesson |
+
+The final duration and exercise volume remain open until the complete 12-Lesson Module 2 draft is available.
