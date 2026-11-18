@@ -1561,3 +1561,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated the flow document. Candidate and knowledge map remain at 2 Modules / 15 provisional Lessons; no App IDs assigned.
 - Next concrete step: draft C07 Exchange/Sale/Commitment, C08 State/Process, and C09 Ability/Obligation/Intention.
 - No App code changed and no Android build triggered.
+
+
+### Module 2 teaching-flow milestone 03 — C07 through C12 completed (2026-11-18)
+
+- Completed first teaching-flow drafts for all remaining Module 2 candidates: C07 Exchange/Sale/Commitment; C08 State/Process; C09 Ability/Obligation/Intention; C10 Quantity/Amount/Degree; C11 Time/Sequence; C12 Context-Dependent Words/Paraphrase.
+- C07 uses the newly complete 250 Fixed Word-Groups index for selected commercial/transaction reinforcement; it does not pad the lesson with unrelated social phrases.
+- C08 separates state, entry, process, beginning and ending; C09 separates ability, possibility, duty, advice, probability and intention.
+- C10 explicitly distinguishes quantity, degree and the different uses of too/once. C11 explicitly distinguishes temporal senses of since/next/always from causal or spatial cross-links. C12 teaches context-first paraphrase and remains distinct from C15 narrowing.
+- BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md now contains first flows for all 15 candidate Lessons (C13–C15 and C01–C12).
+- This completes the first full teaching-flow draft pass. It does not yet establish final duration/exercise volume; the next step is a whole-course overlap, prerequisite and workload audit across all 15 flows.
+- No App source changed and no Android build triggered.
