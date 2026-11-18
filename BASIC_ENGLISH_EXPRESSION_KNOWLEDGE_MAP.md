@@ -2058,3 +2058,12 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - Internal editorial review is complete for this pass. Actual learner time and learner feedback remain unmeasured; therefore this is a reviewed draft, not a claim of user-tested duration or final App acceptance.
 - Next: author Module 1 Lesson 2 — Names of Qualities: Meaning Expansion & Use as Things, preserving the distinction between Quality extensions and Quality words used as Names of Things.
 
+## 50. Module 1 Lesson 2 — source review and first complete draft (2026-11-18)
+
+- Rechecked the original English scan p.152 for Quality meaning extensions and p.160 for Quality words used as Names of Things.
+- Confirmed the p.152 examples: bitter taste / bitter experience; cold day / cold look; smooth floor / smooth words; bright colour / bright face. The same page also gives cheap as a bad-taste judgment even when a high price was paid, and simple for an act that gives little trouble.
+- Counted the p.160 source list: exactly 35 Quality forms, plus colour words. Preserved the explicit restriction that dark, first, last, quiet and same are used only with the.
+- Created BASIC_ENGLISH_EXPRESSION_M1_L2_DRAFT.md. It keeps the two operations separate: Quality meaning extension, and Quality words functioning as Names of Things. It includes the complete 35-item list, source restriction, guided exercises, answer explanations and reverse checks.
+- This is a first complete content draft, not final acceptance. Clarity, answer quality, lesson length and learner time still require review. It must not be merged with C15 Special Use / Meaning Narrowing or presented as a rule that all adjectives can become nouns.
+- Next: review the Lesson 2 draft against the source and teaching flow, then proceed to Module 1 Lesson 3 — Special Use / Meaning Narrowing.
+
