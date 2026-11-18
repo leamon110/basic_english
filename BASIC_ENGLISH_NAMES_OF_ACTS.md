@@ -221,22 +221,26 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 
 ### 5.3 时间与先后关系（pp.258–260）
 
-| 词 | 原书展示的意思 | Basic 表达或判断 |
+| 词或结构 | 原书给出的语境/意思 | Basic 表达或判断 |
 |---|---|---|
-| ago | 很久以前 | a long time back；in the old days |
-| already | 已经发生 | in the past；before |
-| so far / up to now | 截至目前已经发生的事情 | what has taken place so far / up to now |
-| yet（否定语境） | 到现在仍然没有发生 | still not；so far ... not |
-| and yet | 前后两个判断同时成立 | at the same time |
-| since（时间起点） | 从某个过去时间延续到现在或之后 | for a long time；after then，依句子关系判断 |
-| since（原因） | 因为 | because |
-| next（时间顺序） | 在这件事之后 | after this |
-| next（再次发生） | 下一次做同一件事 | do it again |
-| next to | 紧邻某物 | nearest to it |
-| always | 在所有时间都如此 | at all times；某些语境可表示 frequently |
-| always（强调未来持续） | 永远 | for ever |
+| once（过去时间，C11；与 C10 的“一次”区分） | 事情在过去某个时期曾经如此 | at one time；in the past |
+| ago（原书例句为 a long time ago） | 很久以前 | a long time back；in the old days。原书没有在这里建立任意数字时长 + ago 的通用改写公式 |
+| already（事件） | 某事件已经发生 | the event has taken place in the past；before |
+| already（人在某处） | 某人已经在那里 | the person is there now |
+| so far / up to now | 对截至现在已经发生的事件作说明 | an account of what has taken place so far / up to now |
+| yet（否定句） | 到现在仍未发生/到达 | still not there；so far he has not come |
+| and yet（连接语句） | 两个判断同时成立 | at the same time。不要与否定句中的 yet 混为一谈 |
+| since last year（原书完整例句） | “从去年以来没有见过”这一整句所表达的持续时间 | the source paraphrases the full idea as “for a long time”；不要把 since 单独固定替换成 for a long time |
+| since then | 某一过去时间之后发生的事 | after then |
+| since（原因） | 给出原因 | because |
+| next（时间顺序） | 接下来要做的事 | after this |
+| next（下一次发生） | 下一次做同一件事 | do it again |
+| next to（空间关系，C04） | 与某物紧邻 | nearest to it；空间用法交叉参照 C04 |
+| always（一般用法） | 在所有时间如此；某些语境表示频繁 | at all times；in some connections, frequently |
+| always（未来关系特别突出） | 如 “I will always be your friend” | for ever is a better way of putting |
+| without change / without end | 原书指出在其他关系中这两个说法更合适 | 这是其他语境的表达，不是 always 的通用直接替换 |
 
-**教学重点：** since、next、always 都有不同关系，不能只记一个固定中文释义。必须看它们连接的是时间起点、原因、先后、重复、相邻位置，还是持续状态。
+**教学重点：** 不能把这些词做成一对一中文替换表。必须识别句中的时间参照点和关系；尤其区分 already 与 yet、否定 yet 与连接语句 and yet、since 的时间/原因用法、next 的先后/重复/空间用法，以及 always 的一般持续与未来持续。
 
 ### 5.4 unless：条件关系（p.260）
 
