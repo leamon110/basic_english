@@ -2138,3 +2138,13 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - The source/flow boundary is clear. No new source category or Lesson split is needed. No App source changed and no Android build triggered.
 - Next: author the C02 teaching-content draft with the p.245 “get through it” phrase as a brief completion-focused extension, cut as a boundary to C03, and movement as a boundary to C04.
 
+## 57. Module 2 Lesson 2 — Bodily Action & Contact first complete draft (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L2_DRAFT.md from the source audit of pp.245–247 and the accepted C02 flow.
+- The draft keeps two clear sections: intake/biting/expulsion; contact/impact/rubbing. It explains the different source constructions rather than implying one grammar formula.
+- It includes the p.245 get-through-it example as a brief completion-focused extension; literal get-your-teeth-into-it as a hard-biting description; have a bite of it/at it; put it out of your mouth; direct and accidental contact; blow; mark; rub; and nails-into-it.
+- Cut is retained only as a C03 boundary; throw/catch/hold/bring and body position are retained as C04 boundaries.
+- Added recognition questions, contact distinctions, boundary checks, reverse understanding, and independent construction. The open response is explicitly not auto-scored by the current App.
+- This is a first complete draft, not final acceptance. Clarity, answer coverage, duplication with C03/C04 and actual learner time still require review. No App source changed and no Android build triggered.
+- Next: review C02 against the original pages and accepted flow, then author Module 2 Lesson 3 — Physical Effects: Damage, Change & Result.
+
