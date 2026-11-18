@@ -1,6 +1,6 @@
 # Module 2 · Lesson 7 — Exchange, Sale & Commitment
 
-> **Draft status:** first complete teaching-content draft. It is based on Ogden's *The ABC of Basic English*, p.254, with selected examples from the 250 Fixed Word-Groups and the 50 Most Necessary groups. The fixed phrases are supporting contexts, not a second vocabulary lesson. Clarity, answer coverage and actual learner time still require review.
+> **Draft status:** source-reviewed and internally reviewed teaching-content draft. It is based on Ogden's *The ABC of Basic English*, p.254, with selected examples from the 250 Fixed Word-Groups and the 50 Most Necessary groups. The fixed phrases are supporting contexts, not a second vocabulary lesson. All 35 closed practice items have matching answers; actual learner time and user feedback remain unmeasured.
 
 ## What this lesson teaches
 
