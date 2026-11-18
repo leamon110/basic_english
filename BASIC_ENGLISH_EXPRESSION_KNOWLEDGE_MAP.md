@@ -1138,3 +1138,120 @@ Next:
 2. then audit Other Suggestions;
 3. after all major application material is tested, return to the cross-cutting supplements: fixed groups, endings and meaning-expansion material.
 
+
+
+## 24. Theme-boundary audit 06 — Complex Acts: social, economic and life-process examples
+
+### 24.1 Source material checked
+
+The project index records examples including:
+
+- buy
+- sell
+- promise
+- find
+- lose
+- destroy
+- hurt
+- grow
+- sleep
+- die
+- begin
+- finish
+
+The project notes explicitly identify this as an internal convenience grouping taken from the Complex Acts material; it is not a new source-level section.
+
+### 24.2 What the examples actually contain
+
+This group is highly heterogeneous.
+
+#### A. Exchange / transaction / commitment
+
+- buy
+- sell
+- promise
+
+The common relations are exchange, price/payment, giving/getting, and commitment.
+
+#### B. Finding / losing / locating
+
+- find
+- lose
+
+These are about whether an object or fact is located/identified, not about a physical action itself.
+
+They can connect to the existing movement/location framework and to knowledge/awareness.
+
+#### C. Damage / injury / destruction
+
+- destroy
+- hurt
+
+These connect directly to the previously audited physical-effect material:
+
+- destroy → burn / smash / break / put an end to
+- hurt → give pain / give wounds / do damage
+
+This is strong evidence that some Complex Acts examples should be **cross-linked into earlier physical-action themes**, not automatically placed in a separate “social/life” Lesson.
+
+#### D. Change and life process
+
+- grow
+- sleep
+- die
+
+These represent very different kinds of state/process:
+
+- grow → get + Quality;
+- sleep → go to sleep / be in sleep;
+- die → go to one's death / come to one's end / take one's last breath.
+
+They share “process/state change” at a high level, but the actual learner decisions are different.
+
+#### E. Beginning and ending a process
+
+- begin → make a start
+- finish → finish
+
+These are process-boundary expressions. They are related, but the current examples are too small to establish a standalone theme.
+
+### 24.3 Current boundary conclusion
+
+This is the clearest evidence so far that the source's **Complex Acts** section must not be converted directly into a single Lesson or even a fixed set of sub-Lessons.
+
+The material contains examples that naturally belong with themes already identified elsewhere:
+
+- destroy / hurt → physical effect and damage;
+- find / lose → location/knowledge;
+- grow → change of state/degree;
+- begin / finish → process boundaries;
+- sleep / die → life states/processes;
+- buy / sell / promise → exchange and commitment.
+
+Therefore the correct curriculum operation is:
+
+> **classify each example by its actual learning task, then place it into the most natural teaching theme, even when that means crossing the original Simple Acts / Complex Acts source grouping.**
+
+This is exactly why the course map cannot simply follow the source headings.
+
+No formal Lesson number is assigned.
+
+## 25. Current research checkpoint after Theme Audit 06
+
+The entire first-round Complex Acts material has now been tested.
+
+Result:
+
+- first group: relatively coherent;
+- second group: relatively coherent;
+- third group: mixed, with learning/teaching as the strongest subtheme;
+- social/economic/life examples: strongly cross-topic and heterogeneous.
+
+The course design should therefore be based on **learning task**, not the source's three Complex Acts subgroups.
+
+Next:
+
+1. audit Other Suggestions;
+2. then compare all major application themes;
+3. after that, map the cross-cutting supplements into those themes.
+
