@@ -1388,3 +1388,17 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Recorded the detailed source-based test prompts and boundary results in `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md`.
 - No App source changed and no Android build triggered.
 - Next concrete step: test the Module 2 boundary — whether Things/Qualities expansion and Special Use/meaning narrowing should be one teaching unit with two parts or separate Lessons. Also check the unread p.154 source scan if accessible before finalizing that track.
+
+
+### Teaching-size test 06 — Module 2: Meaning Expansion vs Special Use / narrowing (2026-11-18)
+
+- Re-opened the exact original *The ABC of Basic English* English scan page p.154, which the earlier research index had marked unread after repeated timeouts. The page is now successfully read; pp.154, 156, 158, 160 and 162 were also checked directly.
+- Updated `BASIC_ENGLISH_EXPANSIONS_THINGS_QUALITIES.md`: added p.154's additional expansion relations (cause, producing process, use, part/whole, substance/object and other true connections); corrected the source-access record; removed the old five-Lesson suggestion and replaced it with open boundary questions; aligned its teaching flow with the project's natural three-part lesson method.
+- The expansion material is broader than the earlier four-category summary. Names of Things now include multiple source-supported relation types; Names of Qualities contain fewer examples but use the same core learner operation: identify the root sense and explain the relation to the expanded use.
+- Decision: first test **Meaning Expansion: Names of Things & Qualities** as one Lesson with separate subsections. Do not split the two mainly by word class.
+- The source explicitly distinguishes Special Use from expansion: Special Use narrows rather than widens a word's meaning. Its material-name, subclass and contextual-default examples form a distinct learner decision.
+- Decision: retain **Special Use / Meaning Narrowing** as a second provisional Lesson. Quality words used as Names of Things are a bounded word-class/function subsection, not a third Lesson. The 250 Fixed Word-Groups chapter's special/idiomatic uses remain distinct.
+- Updated `BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md` and `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with the detailed test and corrected p.154 status.
+- Source gap update: the 1932 *The ABC* p.154 page gap is resolved. The complete English text of the 1930 *Basic English: A General Introduction with Rules and Grammar* remains unavailable; the 250-item fixed-group index still does not transcribe all 250 examples.
+- No final overall Lesson count assigned; no App code changed and no Android build triggered.
+- Next concrete step: consolidate the tested Module 1 and Module 2 candidate boundaries, then inspect all candidate scopes for overlap, prerequisites and source coverage before drafting a revised numbered structure.
