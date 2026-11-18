@@ -1833,3 +1833,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This is a first complete draft, not final acceptance. Clarity, answer coverage, duplication with other lessons and actual learner time still require review. No App source or Android workflow input changed; no build was triggered.
 - Next concrete action: review C04 against the original source and accepted flow, then author Module 2 Lesson 5 — Thinking, Knowledge, Memory & Learning.
 
+### C04 source wording review — balance and movement examples (2026-11-18)
+
+- Rechecked the supporting p.248 examples against the original scan. The exact source wording is that a sudden noise may “throw” or put us “off our balance”, and a blow given hard enough will send us “violently against the table”.
+- Corrected BASIC_ENGLISH_EXPRESSION_M2_L4_DRAFT.md, BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md and BASIC_ENGLISH_NAMES_OF_ACTS.md to preserve the source wording rather than paraphrase it as “someone off balance” / “against a table”.
+- The teaching distinction remains: the sudden noise changes balance; the physical blow is C02 contact/impact, while the resulting movement against the table is C04.
+- The other C04 source distinctions remain unchanged: send with receiver/path; catch/get in the hand; grip/hold/keep; take/come with; posture; run's three uses; slip's two uses.
+- This is a source-wording review; C04 answer coverage and teaching volume still require a full review. No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: complete the C04 exercise/answer review, then proceed to Module 2 Lesson 5.
+
