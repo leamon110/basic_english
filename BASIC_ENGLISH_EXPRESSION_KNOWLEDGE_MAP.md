@@ -2012,3 +2012,8 @@ Created BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md with first teaching-flow 
 ## 44. Module 2 flow prototypes C01–C06
 
 First teaching-flow drafts now exist for C01–C06 in BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md. The six candidates remain one Lesson each with explicit internal sections; the full duration/workload test awaits C07–C12.
+
+
+## 45. First teaching-flow drafts complete for all 15 candidates
+
+BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md now contains first flow drafts for C13–C15 and C01–C12. Next gate: compare all 15 flows for overlap, prerequisites and workload before accepting the architecture. Actual duration/exercise volume remains to be tested during lesson authoring.
