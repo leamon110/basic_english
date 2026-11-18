@@ -202,3 +202,73 @@ Before producing another numbered syllabus, build short teaching-unit outlines f
 7. Things/Qualities expansion vs meaning narrowing (12/13/14).
 
 For each outline, test the same three steps: identify the meaning in context → explain why the Basic expression fits → learner constructs and reverse-checks. If two sections cannot be taught through one coherent decision, split them; if a section is too small, merge it into the nearest genuine theme. Only after these tests should the final Module/Lesson count be decided.
+
+
+## Teaching-size test 01 — Bodily action/contact vs physical effects/result
+
+The purpose of this test is to see whether candidate 02 and 03 can be taught as two short, natural units with different decisions, rather than merely splitting a source paragraph.
+
+### Candidate 02 — Bodily actions and contact
+
+**Teaching objective:** identify what bodily action is happening and what relation between the body, the object and the action must be made explicit.
+
+Two internal sections are needed:
+
+**A. Intake, biting and expulsion**
+
+- eat → take food / have a meal
+- bite a piece → have a bite of it / at it
+- spit food out → put it out of your mouth
+
+**B. Contact, impact and rubbing**
+
+- touch something → put a hand/finger on it / give it a touch
+- touch by chance → come up against it
+- hit something hard → give it a blow
+- scratch with a pointed object → make a mark on it
+- scratch an insect bite → give it a rub
+- scratch deeply → get one's nails into it
+
+**Project-created test prompts based on the source examples:**
+
+1. Someone is eating a meal. Choose between “take food” and “have a meal” according to what the sentence emphasizes.
+2. Someone bites a piece off an apple. Express the action with “have a bite”.
+3. Someone spits food out. Preserve the outward direction and body location: “put it out of your mouth”.
+4. Someone touches a wall to test whether it is dry. Express the body part and contact relation: “put a hand on it”.
+5. Someone hits an object hard. Express the impact as “give it a blow”.
+6. Someone scratches an insect bite to reduce irritation. Do not use “make a mark”; the source gives “give it a rub”.
+7. Someone scratches a surface with a pointed object. Here the relevant result is “make a mark”.
+
+**Test result:** this can be taught as one compact bodily-action theme if the two sections remain explicit. The common task is identifying the actual bodily event and the body/object relation; it is **not** a single reusable grammar formula. It is therefore retained as one candidate Lesson for now, but it must not be described as one uniform construction.
+
+### Candidate 03 — Physical effects: damage, change and result
+
+**Teaching objective:** distinguish an action that changes or damages something from the resulting state, and from a change that happens by itself.
+
+**Source-grounded contrasts:**
+
+- cut a person → give the person a cut;
+- cut through thread or cake → get it cut;
+- break a thread → the thread is broken / get it broken;
+- smash a plate → the plate may be smashed;
+- a plate breaks by itself → it comes to bits;
+- destroy something → burn it / smash it / break it / put an end to it;
+- hurt someone → give them pain / give wounds / do serious damage.
+
+**Project-created test prompts based on the source examples:**
+
+1. A person cuts another person. Express the injury event, not the physical route of a cutting tool.
+2. A thread is cut through. Distinguish the affected object and the result construction.
+3. A thread is already broken. Describe the resulting state rather than the action that caused it.
+4. A plate is smashed by someone. Keep the agent-caused result distinct from the plate breaking by itself.
+5. A plate breaks by itself. Use “come to bits”, not the agentive “give it a blow”.
+6. Someone hurts another person. Choose whether the context concerns pain, wounds or serious damage.
+
+**Test result:** this is a genuinely different teaching task from candidate 02. The learner must distinguish action, caused result, resulting state and self-occurring change. The source itself marks cutting/breaking as operations connected with changes of form. Keep this as a separate candidate Lesson and rename it **Physical Effects: Damage, Change & Result**.
+
+### Boundary decision after Teaching-size test 01
+
+- Candidate 02 remains one provisional Lesson with two explicit subtopics: intake/expulsion and contact/force.
+- Candidate 03 remains a separate Lesson because it teaches action/result/state distinctions that candidate 02 does not.
+- The boundary is based on the learner's decision, not the source's page break.
+- This test does not yet establish the final total Lesson count.
