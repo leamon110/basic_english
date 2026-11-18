@@ -2380,3 +2380,13 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - C06 is source-reviewed and internally reviewed, but not user-tested or App-accepted. Actual learner time remains unmeasured.
 - Next: author Module 2 Lesson 7 — Exchange, Sale & Commitment.
 
+## 77. C06 source-fidelity correction — approval and friendship (2026-11-18)
+
+- Rechecked the exact original p.252 wording. It says that people are pleased with things or friends with persons when they like them; they may also get on well with those persons. It then says that anything liked has our approval and that we give our approval to it.
+- Corrected a reversed mapping introduced in the first C06 review: the source does **not** say “get on well with a person → be friends with them”. It gives “be friends with persons” and “get on well with them” as expressions for liking persons. Restored this direction in the C06 draft, source index and flow.
+- Corrected a more substantial source error: p.252 gives approval, but does not give a separate negative counterpart. The first draft's extra “disapproval/disagreement” forms were not source expressions and are not Basic 850 words. Removed them from the lesson, flow and source index.
+- Kept only the source-supported approval forms: a thing has our approval; we give our approval to it. Merged approval into the liking/relationship/preference section, returning C06 to the accepted three-part flow: feeling/experience; liking/friendship/preference/approval; desire/need.
+- Confirmed the source word list includes “approval” but not “disapproval” or “disagreement”. “Be in agreement with it” was removed from the source table because it is not the phrase used on p.252.
+- C06 remains a draft pending a final answer-key/teaching-volume check. It is not user-tested or App-integrated. No App source or Android workflow input changed; no build was triggered.
+- Next: re-review the corrected C06 draft and its closed exercises against p.252, then continue to Module 2 Lesson 7 — Exchange, Sale & Commitment.
+
