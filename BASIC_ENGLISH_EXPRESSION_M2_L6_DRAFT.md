@@ -6,7 +6,7 @@
 
 The source uses several expressions for a person's inner experience and attitude. Do not treat **feel**, **like**, **approve**, **want** and **need** as interchangeable.
 
-This lesson has four parts:
+This lesson has three parts:
 
 1. feeling and internal experience;
 2. liking, friendship, preference and approval;
@@ -53,7 +53,7 @@ The source uses different expressions depending on whether the object is a thing
 Keep the different relations clear:
 
 - **be pleased with a thing** describes a positive response to it;
-- **be friends with a person** and **get on well with a person** are the source's expressions for liking persons;
+- **be friends with a person** expresses a friendship; **get on well with a person** expresses having a good relationship. The source gives both as ways to express liking a person, but they are not identical relationships;
 - **have a taste for** food or pictures describes preference;
 - **it has our approval** and **give our approval to it** express the more general approval relation.
 
@@ -191,7 +191,7 @@ Choose the expression that preserves the relation.
 3. There is not enough of something, so more is required.
    - A. be in need of more
    - B. have a taste for it
-   - C. give a touch to it
+   - C. give it a touch
 
 **Answers and reasons**
 
@@ -243,9 +243,9 @@ Explain the relation described by each Basic expression:
 4. Feel angry.
 5. Like it / have a positive response to it.
 6. Have a friendly relationship with them.
-7. Get on well with them.
+7. Have a good relationship with them.
 8. Like or prefer the food or pictures.
-9. The thing has our approval.
+9. We approve of the thing.
 10. Express approval of it.
 11. Want it.
 12. Need it.
