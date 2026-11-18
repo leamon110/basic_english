@@ -2026,3 +2026,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - This correction changes only root-level Markdown research files. No App source or Android workflow input changed.
 - Next concrete action: author Module 2 Lesson 8 — State and Process: Change, Entry & Ending from the corrected source mappings; then review its closed answer keys, boundary checks and lesson volume. No App integration or APK build is planned at this stage.
 
+### Module 2 Lesson 8 — State and Process: Change, Entry & Ending first complete draft and internal review (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_M2_L8_DRAFT.md (284 lines) from the corrected C08 flow and original *The ABC of Basic English* printed pp.255–256.
+- Source mappings checked: grow taller/higher/fatter/greater → get + Quality; be growing → be in the process of growth/development; sleep → go to sleep / be in sleep; die → go to one's death / come to one's end / take one's last breath; begin → make a start.
+- Preserved the correction recorded above: finish appears only in the explanatory English sentence “everything that begins will later finish”; the passage does not give a Basic rendering for the general verb finish, and finish is not in the 850 base list. The lesson does not teach finish → finish.
+- Fixed-group teaching distinguishes in motion and in use (operation) as states/activities; go to sleep as entry; lights go out as a state change; come to a stop as reaching a stopped state; put a stop to as causing cessation; take place as event occurrence. In the end remains primarily C11 Time & Sequence, with a process-outcome cross-link only.
+- Internal answer audit completed: A 7/7, B 7/7, C 3/3, D 17/17 = 34 closed prompts and 34 corresponding answers. The open construction task is explicitly not auto-scored by the current App.
+- Updated BASIC_ENGLISH_EXPRESSION_M2_L8_DRAFT.md status and BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md (checkpoint 84). C08 is source-reviewed and internally reviewed, not user-tested or App-integrated; actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no Android build was triggered.
+- Next concrete action: begin Module 2 Lesson 9 — Ability, Obligation & Intention, checking the source-specific can / ought / shall distinctions against original pp.256–258.
+
