@@ -1975,3 +1975,24 @@ Progress:
 - 50 Most Necessary priority groups: separately indexed and mapped.
 - Other 200 groups: 130 / 200 indexed (50 Operator + 80 relation-word examples).
 - Remaining: 20 other Operations / Directions uses and 100 uses from the rest of the Basic word list = **120 items**. The candidate progress note has been corrected below to retain this exact count.
+
+
+## 42. Fixed Word-Groups instance index — all 200 non-priority items complete
+
+The original printed pp.216–242 have now been reviewed across all English pages in the scan. The new instance index contains all four source parts:
+
+- A: 10 Operators × 5 examples = 50;
+- B: 8 relation words × 10 examples = 80;
+- C: 10 additional Operations/Directives × 2 uses = 20;
+- D: other Basic word classes = 100 (Operations 13; General Names 51; Picturable Things 18; Qualities 15; Opposites 3).
+
+Count check on the saved index tables: **50 + 80 + 20 + 100 = 250 rows/items** for the 250 source structure. The separate A Basic Selection list of 50 priority groups is separately indexed and is not included in that 250 count.
+
+The 200 items outside the priority list are now all individually summarized in Chinese and provisionally mapped to C01–C15, foundation or reference. The entries are meaning summaries, not verbatim transcription. Grouped source examples retain their original numbering. This closes the former “200 items not indexed” gap at the level of individual source-item coverage.
+
+### C07 size retest
+
+The full index reveals additional naturally related commercial/transaction material for C07: agreement, letting a house, exchange, carrying an undertaking through, financial risk, credit, approval, profit/loss, demand, participation in a company, business accounts and keeping one's word.
+
+This gives C07 enough related material to remain a coherent compact Lesson candidate without forcing unrelated social/relationship phrases into it. C07 is no longer blocked by missing source indexing. Its final duration and exercise volume still need validation during actual lesson authoring.
+
