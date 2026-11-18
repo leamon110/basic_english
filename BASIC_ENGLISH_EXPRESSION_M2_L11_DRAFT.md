@@ -27,7 +27,7 @@ The source gives two meanings:
 - a single occurrence — Module 2 · Lesson 10;
 - something that was true during an earlier period — this lesson.
 
-Here, once places a situation in the past. It does not count how many times an event happened.
+Here, once places a situation in an earlier period. It does not count how many times an event happened.
 
 ### ago
 
@@ -246,7 +246,7 @@ Choose the meaning that matches the context.
 
 1. The sentence asks what will be done next. Which relation is intended?
    - A. The action that follows in the sequence.
-   - B. The same action happened in the past.
+   - B. The same action happened earlier.
    - C. A place is beside another place.
 
 2. The sentence says that a person next performs the same action. What does next indicate?
