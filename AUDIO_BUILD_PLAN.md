@@ -1937,3 +1937,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - C06 still needs final answer/volume review and actual learner-time testing. No App source or Android workflow input changed; no build was triggered.
 - Next: finish C06 review, then author Module 2 Lesson 7 — Exchange, Sale & Commitment.
 
+### C06 internal source and teaching review complete (2026-11-18)
+
+- Rechecked BASIC_ENGLISH_EXPRESSION_M2_L6_DRAFT.md against original p.252, the corrected C06 flow and BASIC_ENGLISH_NAMES_OF_ACTS.md.
+- Confirmed source expressions: have a feeling of pain/pleasure; have a feeling/idea that it is so; be feeling angry; be pleased with; have/give approval; be in agreement; be friends with persons → get on well with them; have a taste for food/pictures; give disapproval / be in disagreement; have a desire for; be in need of / be in need of more.
+- Confirmed the source-direction correction: “being friends with persons” is expressed as “getting on well with them”. The lesson does not generalize this to every meaning of liking a person.
+- Confirmed approval/disapproval are both represented and distinct from personal liking; desire and need are not collapsed.
+- Confirmed cross-links: physical feel-a-wall → C02; be conscious of movement → C05; show interest → C01 panel; feeling/idea that something is so is taught in C06 and contrasted with C05 think/opinion.
+- All closed exercises have answer explanations or suggested answers. The independent construction task is not claimed to be auto-scored.
+- C06 is source-reviewed and internally reviewed, but not user-tested or App-accepted. Actual learner time remains unmeasured.
+- No App source or Android workflow input changed; no build was triggered.
+- Next concrete action: author Module 2 Lesson 7 — Exchange, Sale & Commitment.
+
