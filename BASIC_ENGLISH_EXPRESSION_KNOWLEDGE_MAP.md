@@ -2484,3 +2484,20 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - No App source or Android workflow input changed; no build was triggered.
 - Next: begin Module 2 Lesson 9 — Ability, Obligation & Intention, checking the source-specific can / ought / shall distinctions against the original pages.
 
+## 85. Module 2 Lesson 9 — Ability, Obligation & Intention source audit (2026-11-18)
+
+- Reopened the original *The ABC of Basic English*, printed p.256, and checked the exact can / ought / shall paragraph against the accepted C09 flow, source index and curriculum.
+- Verified:
+  - can → be able to do it (ability) OR it is possible for me to do it (possibility);
+  - ought → it is right / wise for me to do it (advisability) OR it is my business to do it (duty/responsibility);
+  - train ought to be here in half an hour → the source explains this as “it is probable from the fact that it will be so” (probability from evidence, not an obligation);
+  - shall in non-question statements → will;
+  - “Shall I do it?” → “Am I going to do it or not?” OR “Am I wise to do it?” (intention/decision vs advisability, selected by context).
+- Confirmed in the current docs/js/data.js 850-word arrays: can, ought and shall are not 850 entries; able, possible, right, wise, business, probable, fact and will are present. The priority Fixed Word-Group “be able to” reinforces only the ability reading, not all meanings of can.
+- Corrected a small source-index wording issue: the original p.256 says “from the fact” (singular), not “from the facts”. Removed the unsourced have-to contrast from the C09 flow; it is not needed to teach the source's own expressions.
+- unless → if ... not remains in conditional sentence structure and is not absorbed into C09.
+- C09 remains one Lesson because the learner decision is to identify the speaker's relation to an action/event: ability, possibility, advisability, duty, probability or intention. These forces must remain distinct.
+- Updated BASIC_ENGLISH_NAMES_OF_ACTS.md, BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md and BASIC_ENGLISH_EXPRESSION_CANDIDATE_STRUCTURE.md.
+- No App source or Android workflow input changed; no build was triggered.
+- Next: author Module 2 Lesson 9 — Ability, Obligation & Intention from the verified source distinctions.
+
