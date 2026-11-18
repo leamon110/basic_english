@@ -2131,3 +2131,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated the C12 source mapping in `BASIC_ENGLISH_NAMES_OF_ACTS.md` and the C12 flow in `BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md`. The accepted 2 Modules / 15 Lessons structure and C01–C15 Candidate IDs remain unchanged.
 - No App source, Android workflow input or audio assets changed; no Android build was triggered.
 - Next: author and internally review `BASIC_ENGLISH_EXPRESSION_M2_L12_DRAFT.md`, then perform the whole-course cross-Lesson duplication and consistency audit.
+
+### Module 2 Lesson 12 — first complete draft and internal review (2026-11-19)
+
+- Created `BASIC_ENGLISH_EXPRESSION_M2_L12_DRAFT.md` (349 lines) from the source-checked C12 flow and *The ABC of Basic English*, printed pp.260–262.
+- Preserved all seven source targets and their contexts: busy (active work / amount of work); deaf (hearing condition); world (physical planet / people collectively / changing conditions); life (abstract existence / living objects / -ing activity used as a Name); hill (one raised landform / region of hills); home (actual residence / family state); address (private / business / letter heading).
+- Verified all seven targets are absent from the two identical project 850-word files. The source's regional term highlands is also absent from the 850 list and is not taught as a Basic entry.
+- Internal answer audit: 22 multiple-choice prompts and 22 matching answer keys (A 4/4, B 6/6, C 8/8, D 4/4); 15 reverse-understanding prompts and 15 suggested answers; 4 independent-construction tasks explicitly not auto-scored by the current App.
+- Explicitly distinguishes C12 ordinary-English non-Basic word → contextual Basic paraphrase from C15 Basic word → narrower contextual referent and C13/C14 meaning expansion. unless remains in the conditional foundation; finish is not added.
+- The draft is complete at the document/internal-review level only. Learner time, user feedback and App/device acceptance remain unmeasured; no App integration has been made.
+- No App source, Android workflow input or audio assets changed; no Android build was triggered.
+- Next: whole-course cross-Lesson audit of all 15 accepted drafts for duplicated teaching examples, unclear boundaries, prerequisite gaps and inconsistent terminology.
