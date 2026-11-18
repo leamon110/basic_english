@@ -166,8 +166,9 @@ Ogden 在《The ABC of Basic English》中先于 Expansions 部分安排 “Name
 | discover new land | make a discovery of new land | make + 名称 + of |
 | lose something because one cannot locate it | be unable to put one's hands on it；have no idea where it is | put + 身体部位 + on / have + 名称 |
 | lose something because it was taken | it has gone for ever | go + 时间/结果表达 |
-| destroy something | burn it；smash it；break it；put an end to it | 用具体动作或 put + 名称表达 |
-| hurt someone | give them pain；give wounds；do serious damage | give / do + 名称 |
+| a thing is destroyed | it has been burned；smashed；broken | 具体毁坏结果 |
+| destroy animals | put an end to them | 结束动物的生命 |
+| hurt someone | give them pain；possibly give wounds；wounds may do serious damage | 区分伤害、疼痛与伤口造成的进一步损害 |
 | grow taller / higher / fatter / greater | get taller / higher / fatter / greater | get + Quality，表示变化过程 |
 | be growing | be in the process of growth / development | be + in + 名称 + of |
 | sleep | go to sleep；be in sleep | go + to + 名称 / be + in + 名称 |
