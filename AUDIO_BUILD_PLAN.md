@@ -1278,3 +1278,15 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Cross-cutting Audit 01.
 - Next concrete step: audit Names of Things and Qualities / Expansions against the application themes, especially whether meaning-expansion examples belong inside expression themes or form a distinct semantic-learning track.
 - No App code changed and no Android build triggered.
+
+
+### Cross-cutting Audit 02 — Names of Things and Qualities / Expansions (2026-11-18)
+
+- Audited the project’s Expansions research against the relevant `The ABC of Basic English` material.
+- Confirmed a different central learning task from Some Common Needs: Expansions asks why an already-known Basic word can refer to a related/different object, property or situation; it is semantic interpretation rather than ordinary-English-to-Basic reconstruction.
+- Identified the main internal tasks: meaning expansion; special/narrow use; quality-to-thing / related word-form boundary cases.
+- Confirmed that Expansions should not be forced into every application theme. It can be taught as a reusable semantic resource and then referenced by application lessons when needed.
+- This provides the first strong evidence for a possible module-level boundary, but no final Module/Lesson count is assigned.
+- Updated `BASIC_ENGLISH_EXPRESSION_KNOWLEDGE_MAP.md` with Expansions Audit 02.
+- Next concrete step: compare all identified application themes with the Expansions track and determine which groups share the same learner decision problem; only then draft a candidate Module/Lesson map for source-coverage testing.
+- No App code changed and no Android build triggered.
