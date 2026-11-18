@@ -34,7 +34,7 @@ Core operation: identify the actual ordinary-English meaning in context → choo
 | C08 | **State and Process: Change, Entry & Ending** | grow / be growing → get + Quality / be in the process of growth or development; sleep → go to sleep / be in sleep; die → go to one's death / come to one's end / take one's last breath; begin → make a start. The source's “finish” is explanatory English, not a Basic rendering. Reinforce with in motion, in use, come to a stop, go to sleep, lights go out, take place and put a stop to; cross-link in the end to C11 for time/sequence. |
 | C09 | **Ability, Obligation & Intention** | can, ought, shall. Teach ability/possibility, duty/advisability, probability and intention inside this Lesson. |
 | C10 | **Quantity, Amount & Degree** | each, altogether, whole, few, many, too, once. Cross-link the past-time sense of once to C11. |
-| C11 | **Time & Sequence** | ago, already, yet, since, next, always; preserve the multiple meanings of since, next and always, and the past-time sense of once. |
+| C11 | **Time & Sequence** | once (past-time sense), ago, already, so far/up to now, yet / and yet, since, next, always; preserve each source-context distinction, including since's time/reason uses and next's sequence/repetition/spatial uses. |
 | C12 | **Context-Dependent Words & Paraphrase** | busy, deaf, world, life, hill, home, address. This is ordinary-English-to-Basic paraphrase, not Basic-word expansion or narrowing. |
 
 ### Cross-cutting material and foundation
