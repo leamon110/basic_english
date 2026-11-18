@@ -2067,3 +2067,14 @@ Created BASIC_ENGLISH_EXPRESSION_M1_L1_DRAFT.md for Module 1 Lesson 1 — Names 
 - This is a first complete content draft, not final acceptance. Clarity, answer quality, lesson length and learner time still require review. It must not be merged with C15 Special Use / Meaning Narrowing or presented as a rule that all adjectives can become nouns.
 - Next: review the Lesson 2 draft against the source and teaching flow, then proceed to Module 1 Lesson 3 — Special Use / Meaning Narrowing.
 
+## 51. Module 1 Lesson 2 — source and teaching-flow review (2026-11-18)
+
+- Compared BASIC_ENGLISH_EXPRESSION_M1_L2_DRAFT.md with the original English pages p.152 and p.160 and the accepted C14 flow.
+- Confirmed the four p.152 Quality extensions: bitter taste / bitter experience; cold day / cold look; smooth floor / smooth words; bright colour / bright face.
+- Confirmed the two associated-Quality uses: cheap can describe bad taste even when a high price was paid; simple can describe an act that gives little trouble. The draft states these as source-recognized uses, not universal logical rules.
+- Recounted the p.160 Quality-as-Thing list: exactly 35 forms plus colour words. Confirmed the restriction for dark, first, last, quiet and same: only with the.
+- Kept the two C14 operations separate and checked that the draft does not repeat C13 body-part material, teach C15 narrowing, or imply that all adjectives can become Names of Things.
+- Marked constructed example phrases as project-created illustrations rather than quotations from Ogden. The draft includes separate recognition, Quality-as-Thing, article-restriction and reverse-check exercises with answer explanations.
+- Internal source/flow review is complete. Actual learner time and learner feedback remain unmeasured; this is a reviewed draft, not user-tested or App-accepted content.
+- Next: prepare Module 1 Lesson 3 — Special Use / Meaning Narrowing.
+
