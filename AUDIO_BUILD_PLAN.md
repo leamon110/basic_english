@@ -1535,3 +1535,14 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - The 50 Most Necessary priority list was separately checked: exactly 50 entries, numbered 1–50, and its mapping remains in BASIC_ENGLISH_250_FIXED_WORD_GROUPS.md.
 - Corrected the index's status line and the current candidate's fixed-group progress reference. Earlier plan entries that referred to a “remaining 200” are retained as historical checkpoints; the current state is 250/250 indexed.
 - This completes fixed-group source-instance coverage. It does not mean all 250 are separate lessons or all should be taught at once; they remain phrase-level reinforcement distributed by meaning.
+
+
+### Module 1 teaching-flow prototype milestone (2026-11-18)
+
+- Created BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md with teaching-flow prototypes for C13 Names of Things expansion, C14 Names of Qualities expansion/Quality-as-Thing, and C15 Special Use/meaning narrowing.
+- C13 uses representative relation families and a shared root Name → relation → related referent operation; it does not turn every source example into a separate rule.
+- C14 keeps the source's two different tasks explicit: Quality meaning extension and Quality words functioning as Names of Things, including the five-form “the” restriction.
+- C15 focuses on context narrowing, with material/object, broad category/subclass, and contextual-default patterns. It is kept distinct from expansion and from Fixed Word-Group idioms.
+- First flow-size test supports keeping the three Module 1 Lessons separate. This is a prototype judgment; final acceptance waits for all 15 flows and a cross-course workload/duplication audit.
+- Updated the candidate structure and knowledge map. No App source changed and no Android build triggered.
+- Next concrete step: draft Module 2 C01 Communication & Information flow, then continue through C02–C12 in candidate order.
