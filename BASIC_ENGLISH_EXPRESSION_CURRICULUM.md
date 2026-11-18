@@ -149,6 +149,7 @@ Do not count these five early prototypes as five extra Lessons. The current acce
 - C03 and C09 prerequisite handling is explicit.
 - First teaching-flow drafts exist for all 15 accepted Lessons in `BASIC_ENGLISH_EXPRESSION_LESSON_FLOW_DRAFTS.md`.
 - First complete teaching-content drafts exist for all 15 accepted Lessons (Module 1 Lessons 1–3; Module 2 Lessons 1–12).
+- The consolidated handoff `BASIC_ENGLISH_EXPRESSION_15_LESSON_REVIEW.md` records source scope, learner decisions, prerequisites, cross-links, practice coverage and implementation/testing status for all 15 Lessons.
 - A whole-course cross-Lesson audit was completed on 2026-11-19. It confirmed the main adjacent-Lesson boundaries and required no Lesson merge, addition, deletion or renumbering.
 - Two cross-boundary clarifications were recorded: C03 destroy-an-animal vs C08 dying; C12 business-as-work vs C07 commercial exchange, and C12 noun life vs C08 dying.
 - Module 1 and Module 2 each retain a visible progression; the source-aligned order is retained.
