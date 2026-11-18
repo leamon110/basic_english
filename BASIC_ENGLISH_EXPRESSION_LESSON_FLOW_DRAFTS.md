@@ -489,13 +489,27 @@ The learner must distinguish a state from the action that changes the state.
 
 Keep run's different uses together as a short contrast:
 
-- speed of movement;
-- an activity undertaken for health;
-- escaping at a run.
+- speed of movement → go quickly;
+- an activity undertaken for health → take a run;
+- escaping at a run → go (off) at a run.
 
-Slip is expressed as an event (a slip/fall). It is a supporting example, not a new rule for all movement verbs.
+Keep slip's source uses together as a small contrast:
 
-#### 5. Guided practice and reverse check
+- losing one's footing on ice → have a slip / have a fall;
+- a quick, simple action → take your arm out of your coat; put money into your pocket; go quickly out of the house.
+
+These are source examples, not a general rule that every quick action is called a slip.
+
+#### 5. Supporting position changes
+
+Keep two further examples brief:
+
+- a sudden noise may throw or put someone off balance;
+- a sufficiently hard blow may send someone against a table.
+
+The first describes a change in balance; the second describes movement to a position. The physical blow itself remains cross-linked to C02.
+
+#### 6. Guided practice and reverse check
 
 Ask the learner to identify:
 1. the moving person/object;
