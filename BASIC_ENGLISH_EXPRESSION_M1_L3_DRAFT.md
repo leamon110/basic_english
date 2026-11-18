@@ -13,6 +13,8 @@ This is different from meaning expansion:
 
 The word does not lose all its other meanings. The narrower use applies when the context supports it.
 
+This lesson does not cover Quality words used as Names of Things (Lesson 2), word-form endings, or the 250 Fixed Word-Groups.
+
 ## 1. First compare expansion and Special Use
 
 The difference can be seen with material names:
@@ -72,7 +74,7 @@ A word may also have a Special Use that is understood when the context gives no 
 | rail | engine rail |
 | ring | finger ring |
 
-The first five examples are explained in the source's discussion on p.156. The last four are supplied as questions and answers on p.160.
+The first five examples are explained in the source's discussion on p.156. The last four are supplied as questions and answers on p.160. The same p.160 page also gives army, reaction, society, worm and wing as separate meaning-expansion exercises; those are not Special Use examples.
 
 These are not new universal definitions. For example, the source's use of pictures as motion-pictures does not mean that every occurrence of picture refers to a film. Context still matters.
 
@@ -145,7 +147,7 @@ Choose the best answer.
 
 Identify the narrower sense.
 
-1. “They went to the pictures last night.”
+1. “The pictures began at eight.”
 2. “The judge spoke before the court.”
 3. “He is a man, not a woman.”
 4. “Please give me a paper so I can write a note.”
