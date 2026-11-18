@@ -118,3 +118,37 @@ Source: https://basicenglish.org/step-5/index.html
 - Detailed source audit completed: 4 of the 14 locally adapted Steps (1, 2, 3 and 5).
 - Step 2 is substantially aligned; Steps 1, 3 and 5 need source-fidelity corrections or explicit coverage notes before they can be called fully aligned.
 - This is an audit/documentation pass only. No App source was changed. The remaining locally adapted Steps are 6, 9, 10, 12, 13, 15, 17, 18, 20 and 25.
+
+## Detailed source-fidelity audit — second batch (Steps 6, 9 and 10)
+
+### Step 6 — Partial
+
+Source: https://basicenglish.org/step-6/index.html
+
+- The App preserves several central points: full of + a following noun phrase, adjective placement after a noun when completed by a phrase, in the morning / at night / on the days or nights, have a meal, come in / go out, the pictures as cinema, and the two senses of day/night.
+- **Reading omissions and one meaning change:** the original names the married daughter in the country, the daughter Ellen, and the sons Fred and Tom; gives the bedroom arrangement; says Ellen eats early before the others and takes food with her; distinguishes where the father, Tom and Fred eat; and explains that Mr Robinson may have a late meal after the others. The App removes these details. More importantly, the source says Fred and Tom sometimes take Ellen and their mother to the pictures, Mr Robinson does not go, and on the described night the family will not go out. The App says "the family goes to the pictures" and then says the father does not go, which changes the participants and creates an internal contradiction.
+- **Missing source notes:** titles Mr / Mrs / Miss / Ms / Master; the wider relation expressed by `of` in "the work of the house"; `at` with back/front/side; a shared adjective applying to two associated nouns; time/place phrase order; `at the other side of`; `after that` referring back to an action; `in` used adverbially in `come in / be in`; `plates of meat` as container/content; and `before` introducing a dependent statement. The App covers some but not all of these notes.
+- Exercise coverage is incomplete. The source has a family-relationship picture task, six preposition blanks, three sentence-making prompts, and six Basic-answer questions. The App omits the relationship picture task, includes only four of the six preposition blanks, and has five reading questions rather than six; the source's final "describe the Robinson's house" task is absent.
+
+### Step 9 — Partial
+
+Source: https://basicenglish.org/step-9/index.html
+
+- The App covers the main topics: `what` = "that which"; old/young/new; see forms; positive and negative orders; be + -ing; the main exceptions for state verbs; same-subject omission in when/while clauses; till; very; -ly; because; yes/no questions and short answers.
+- **Missing rule detail:** the source lists all 15 operator -ing forms and gives their spelling changes; the App gives examples and spelling notes but does not present the full list. The source also teaches `till` as both a time preposition and a conjunction; the App only teaches the preposition use. The source explains that simple present is used when an act is not being described as in progress, and gives restrictions on fronting -ly adverbs plus their order relative to place/time adverbials; the App omits these distinctions.
+- Exercise coverage is incomplete. The source has four picture-based questions, a passage to rewrite using -ing forms where possible, three orders, five question transformations, and five Basic-answer questions. The App includes three separate continuous-form transformations (not the passage rewrite), the three orders and five question transformations, but omits the picture questions and the final five Basic-answer questions.
+
+### Step 10 — Partial
+
+Source: https://basicenglish.org/step-10/index.html
+
+- The App covers several source expansions: in the middle, made of glass/steel, steel frames, on her back, high/low, get a view of, in front of, inside/outside, go over/go back, and early/late.
+- **Reading omissions / altered detail:** the source includes the school and its red building, children going with their parents to get books from the library, and the market-place in front of the church; these are omitted from the App reading. The source says almost all the new buildings have steel frames, while the App's wording can be read as saying the buildings in that paragraph all have steel frames. Most importantly, the source says men are taking a young woman into the hospital and she is on her back; the App retains only "a young woman is on her back", removing the action and the people taking her into the hospital. The source's "they" in the market sentence refers to the market stall-holders; the App attributes the stock to the market itself.
+- **Missing source notes:** the group reference of we/they; with pleasure for non-physical relations; the general/habitual present in "my train does not go till"; end of the morning; go used beyond physical movement; the source's detailed limits for in the middle; here/there and adverb fronting; almost everything / something / nothing; the generalized class use of the; near as a preposition; very near; the specific meaning of workman; over meaning across (and its limits); and on a train.
+- Exercise coverage is incomplete. The source has numbered-picture sentences, plural forms, five words for "Some of the ___ is here", sentences using inside/everything/workman, and nine Basic-answer questions. The App preserves the plural, five-word, and three sentence-making tasks, but omits the numbered-picture task and has six rather than nine comprehension questions. One App question asks "Who is on her back by the hospital?" where the source asks "Who is being taken into the hospital?", so it no longer tests the source event.
+
+### Batch 2 result
+
+- Detailed source audit completed: 7 of the 14 locally adapted Steps (1, 2, 3, 5, 6, 9 and 10).
+- Steps 6, 9 and 10 preserve the broad lesson themes but have documented reading, note and exercise omissions; Step 6 also contains a contradiction in the adapted picture-going passage, and Step 10 removes the hospital action from a comprehension question.
+- Audit-only work: no App code was changed. Remaining adapted Steps: 12, 13, 15, 17, 18, 20 and 25.
