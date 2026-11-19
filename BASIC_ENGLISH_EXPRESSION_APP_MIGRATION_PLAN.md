@@ -232,3 +232,96 @@ Before any code migration:
 - APK artifact ID: `14485622177`. The real APK was downloaded and extracted to `/mnt/data/Basic-English-Human-Voice-run51.apk` (9,968,282 bytes; SHA-256 `11d41bf69c5c456ce653a631878c7d496011b326e451656f1170f0bb981787b9`). APK archive integrity passed. The package contains the five local Expression course JS assets, course CSS, and exactly 850 matching MP3 files.
 - Coverage report: 850 target/matched/cached/completed, 0 missing, 0 pending, 0 failed, 0 download errors; its separate `primary_coverage` field is 845 and remains distinct from `matched_words=850`.
 - The build deliverable is ready for installation. Real-device install, offline checks, navigation, audio playback and user acceptance are still pending. Do not call the overall acceptance complete before device verification.
+
+## 17. Run 51 Android device acceptance checklist (2026-11-19)
+
+**Target build:** Run 51 / workflow 44430168437; code commit `4afc2da2313518e6c093fe93cfd000ab60e8d961`; APK `Basic-English-Human-Voice-run51.apk`; 9,968,282 bytes; SHA-256 `11d41bf69c5c456ce653a631878c7d496011b326e451656f1170f0bb981787b9`.
+
+**CI/archive state:** Run 51 completed successfully; all 23 job and post-job steps succeeded. The 2/15 course model, all 15 bundled lesson drafts, 27 MB mappings, 250 Fixed Word-Groups, prototype mapping, separate progress key, offline asset wiring and learner-facing numbering assertion passed automated tests. The APK ZIP integrity passed and contains exactly 850 unique, non-zero MP3 files plus `credits.json`, `THIRD_PARTY_AUDIO_CREDITS.md`, all five Expression JS files and the Expression CSS. Audio package: 850/850, missing 0, errors 0. These are build/archive checks, not a substitute for the user's phone test.
+
+### Before testing
+
+1. Install the exact Run 51 APK identified above. First try the normal install/update path. If Android reports a signature conflict or installation failure, stop and report the exact message; do not uninstall the old app or clear its data before checking, because that can erase local learning progress.
+2. Test the app online first for navigation, then repeat the offline checks with Airplane Mode enabled and both Wi-Fi and mobile data disabled.
+3. Mark each item Pass / Fail / Not tested. For a failure, record the Module/Lesson or screen, the exact action, actual result, expected result, and a screenshot if possible.
+
+### A. Installation and main navigation
+
+- [ ] **A1 — Install and launch.** Method: install Run 51 and open it from the launcher. Pass: installation completes, the app opens to its home screen, and there is no crash, blank screen or package-parse error.
+- [ ] **A2 — Main navigation.** Method: open Home, Teaching, 课程学习, 表达系统 and 句型练习 in turn, then return Home. Pass: every local screen opens and returns normally; no page is blank or stuck.
+
+### B. Expression System structure and all 15 Lessons
+
+- [ ] **B1 — Module count.** Method: Home → 表达系统. Count the Module cards. Pass: exactly 2 Modules are shown; Module 1 has 3 Lessons and Module 2 has 12 Lessons; total = 15.
+- [ ] **B2 — Learner-facing numbering.** Method: inspect the overview, both Module lists, lesson headings and cross-links. Pass: labels use `Module X · Lesson Y`; no internal `C01–C15` IDs and no old global “Lesson 01–05” appear as extra Lessons.
+- [ ] **B3 — Open every Lesson.** Method: enter each item below, confirm the heading and teaching content appear, then return to its Module list:
+  - Module 1 · Lesson 1 — Names of Things — Meaning Expansion
+  - Module 1 · Lesson 2 — Names of Qualities — Meaning Expansion & Use as Things
+  - Module 1 · Lesson 3 — Special Use — Meaning Narrowing
+  - Module 2 · Lesson 1 — Communication & Information
+  - Module 2 · Lesson 2 — Bodily Action & Contact
+  - Module 2 · Lesson 3 — Physical Effects: Damage, Change & Result
+  - Module 2 · Lesson 4 — Movement & Position: Transfer, Posture & Viewpoint
+  - Module 2 · Lesson 5 — Thinking, Knowledge, Memory & Learning
+  - Module 2 · Lesson 6 — Feeling, Preference, Desire & Need
+  - Module 2 · Lesson 7 — Exchange, Sale & Commitment
+  - Module 2 · Lesson 8 — State and Process: Change, Entry & Ending
+  - Module 2 · Lesson 9 — Ability, Obligation & Intention
+  - Module 2 · Lesson 10 — Quantity, Amount & Degree
+  - Module 2 · Lesson 11 — Time & Sequence
+  - Module 2 · Lesson 12 — Context-Dependent Words & Paraphrase
+
+  Pass: all 15 open; each shows its own title, objective and teaching content; none displays “本课内容尚未加载”, an empty body or another Lesson's content.
+- [ ] **B4 — Answer reveals.** Method: in each Lesson, find at least one collapsed answer/explanation disclosure (where present), open it and close it again. Pass: answer material is hidden initially and appears when expanded; the page remains usable.
+
+### C. Exercises and bounded checkers
+
+- [ ] **C1 — Module 1 legacy question split.** Method: open the guided-practice area in Module 1 Lessons 1, 2 and 3. Pass: the migrated body-part question bank is split as 8 questions in M1L1, 1 in M1L2 and 1 in M1L3 (8 + 1 + 1 = 10); each question accepts a selection, checks once and shows feedback/explanation. No question is duplicated into an extra Lesson.
+- [ ] **C2 — Speak context quiz.** Method: Module 2 · Lesson 1 → guided practice. Answer its three context questions and tap 检查答案. Pass: the three questions can be selected and checked; feedback and explanations appear.
+- [ ] **C3 — Speak writing checker.** Method: Module 2 · Lesson 1, enter these sentences one at a time:
+  - `I say something to him.` → vocabulary, sentence-pattern and target-meaning checks all pass.
+  - `I says something to him.` → vocabulary passes; sentence-pattern check rejects subject–verb agreement.
+  - `I say something to her.` → vocabulary and sentence-pattern checks pass; target-meaning check reports the recipient mismatch.
+  - `I say something to my friend.` → the checker reports “暂时无法判断” for a structure outside its registered pattern; it must not claim this proves the sentence is ungrammatical.
+  - Edit the sentence after a check. Pass: later-stage results clear and later-stage buttons lock until earlier stages pass again.
+- [ ] **C4 — Meaning → Basic prompt bank.** Method: inspect the selector in the Lessons that contain the registered checker. Pass: all 27 registered prompts are present in their intended Lessons, with this distribution: M2L1 = 4; M2L2 = 3; M2L3 = 1; M2L4 = 9; M2L5 = 6; M2L6 = 2; M2L8 = 2. Total = 27. M2L7 and M2L9–L12 do not have a registered MB checker panel in this build; their absence there is expected.
+- [ ] **C5 — Meaning → Basic stages.** Method: in at least one prompt from each Lesson that has a checker, complete vocabulary → sentence-pattern → meaning in order; for one prompt, deliberately change a semantic role or direction and check the meaning stage. For the come/go viewpoint prompt, test both speaker-position choices. Pass: stages unlock in order; a registered correct answer can pass; a known role/viewpoint mismatch is reported at the meaning stage; an unregistered structure says “暂时无法判断” rather than guessing.
+- [ ] **C6 — Checker scope.** Pass: the app does not imply that every free-writing task is automatically scored. The speak checker and 27 MB prompts are finite registered checks, not a general English grammar, naturalness or semantic parser. Open construction tasks without a registered checker are for the learner to review using the displayed source/answer guidance.
+
+### D. Fixed Word-Groups reference
+
+- [ ] **D1 — All 250 items.** Method: Expression System overview → 250 固定词组参考. Leave filters at 全部 250 项. Pass: the index reports 250 items and displays the complete searchable list.
+- [ ] **D2 — Search and filters.** Method: search a known group such as `come`; then use the destination filter. Pass: search results respond to the text; Expression Lessons filter returns 249 items; 基础教学 filter returns 1 item.
+- [ ] **D3 — Priority subset.** Method: expand 50 Most Necessary Fixed Word-Groups. Pass: 50 entries appear as a priority subset; the total remains 250, not 300.
+- [ ] **D4 — Lesson cross-reference.** Method: open a Lesson with linked fixed groups and expand its “本课关联的固定词组项目” section. Pass: its items and “查看完整 250 项索引” link work.
+
+### E. Progress and preservation
+
+- [ ] **E1 — New Lesson progress.** Method: open Module 1 · Lesson 1, use one guided question, then tap 标记本课完成. Return to the Expression overview. Pass: completed count changes from 0/15 to 1/15 and the Lesson shows 已标记完成.
+- [ ] **E2 — Persistence.** Method: close/force-stop the app, reopen it and revisit the Expression overview. Pass: the 1/15 completion and the recorded practice count remain.
+- [ ] **E3 — Existing learning data.** Method: if the previous installation already had Word Cards spaced-review progress, open that area and confirm its prior records remain. Pass: existing records are still present. Automated migration tests separately verify that legacy Expression keys are not overwritten and the new course uses `BE_EXPR_COURSE_PROGRESS_V1`.
+
+### F. Existing Teaching, 45 Steps and audio regression
+
+- [ ] **F1 — Word Cards.** Method: Teaching → Word Cards; search `apple` or another known word. Tap the word text, then tap a different area of its card. Pass: tapping the word text plays pronunciation; tapping the other card area opens the detail modal.
+- [ ] **F2 — Word detail modal.** Method: in the modal, inspect the word, Chinese meaning and category; tap its pronunciation control. Pass: the existing detail content remains and the pronunciation control plays the word.
+- [ ] **F3 — Teaching rule learning.** Method: open 规则学习与练习. Pass: the 13 rule units load, their 47 questions can be opened, and answer feedback/explanations work.
+- [ ] **F4 — Spaced review and quick reference.** Method: open 间隔复习 and 规则速查. Pass: both screens load and prior word-review data remains; the rule reference is searchable/usable.
+- [ ] **F5 — Original 45 Steps.** Method: open 课程学习 and inspect the directory; open a locally adapted Step such as Step 1 and Step 17. Pass: the 45-Step area remains separate from the 15 Expression Lessons; local Steps open inside the app and their vocabulary tiles play pronunciation. The current App has 14 locally adapted Steps; the other 31 are original-page links and require a network connection. Those 31 external pages are not expected to work in Airplane Mode.
+- [ ] **F6 — Sentence Practice.** Method: open 句型练习 and try one example and one exercise. Pass: the screen loads and its controls respond; it remains a separate area from the Expression System.
+
+### G. Offline and human-audio acceptance
+
+- [ ] **G1 — Cold offline launch.** Method: enable Airplane Mode, confirm Wi-Fi and mobile data are off, force-stop the app, then launch it again. Pass: the app opens without a network connection.
+- [ ] **G2 — Expression offline.** Method: while still offline, open both Modules, all 15 Lessons, answer disclosures, registered checkers and the 250-item search/filter. Pass: all these local resources work without a network request or missing-content screen.
+- [ ] **G3 — Human word audio offline.** Method: while offline, play at least three 850-list words from different Word Cards categories; also play a word from a locally adapted 45-Step vocabulary tile and the detail-modal pronunciation control. Pass: audible human recordings play, with no network connection, no missing-file error, no stutter and no noticeable delay.
+- [ ] **G4 — Offline boundary.** Pass: local Teaching, Expression, Sentence Practice and locally adapted Step content remain available. Conversation services and the 31 original-page Step links are network-dependent and are not part of the offline acceptance claim.
+
+### H. Layout and navigation
+
+- [ ] **H1 — Screen fit.** Method: inspect the Expression overview, Module list, a long Lesson and the 250-item reference on the phone. Pass: headings, text, buttons and controls are readable; no important content is clipped or overlapped; horizontal scrolling is limited to tables that explicitly need it.
+- [ ] **H2 — Back navigation.** Method: move overview → Module → Lesson → Module → overview → reference → overview. Pass: every return control goes to the expected screen and the app does not lose the current screen or freeze.
+
+### Overall device acceptance
+
+The Run 51 migration is device-accepted only when all applicable items A1–H2 pass. Record a failed item with its ID and exact reproduction steps; do not mark the whole App accepted because the APK installed or the CI build passed. CI and APK archive checks are already complete; this checklist is specifically for the remaining real-phone acceptance.
