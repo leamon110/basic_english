@@ -2341,3 +2341,22 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Step 15, `Build debug APK`, is currently in progress. APK naming and artifact uploads (steps 16–18) have not yet completed; no artifacts are listed at this moment.
 - No watched-path changes after the fix commit. Do not modify watched paths while Run 50 remains active.
 - Next: wait for Gradle completion and both artifact uploads; inspect full job logs for exact 850/850 coverage, download/error counts, Gradle result and artifact metadata. Device acceptance remains pending.
+
+## 105. Run 50 successful build, artifact verification and learner-label correction (2026-11-19)
+
+- Run 50 / 44429176259 completed successfully on implementation/fix SHA `3a0872d59a1da7a41d43c916acb4a66804ed3909`; job 135241804645 completed 23/23 successful steps.
+- Exact automated test results from the job log:
+  - Meaning-to-Basic: 40 accepted patterns, 28 known semantic mismatches, 2 viewpoint mismatches, 1 unsupported boundary, 1 punctuation case — passed.
+  - Teaching rules: 13 rule units, 47 questions, 16 Operators, 20 Directives; Basic examples and spaced schedule — passed.
+  - Expression prototype split: 11 terms; C13=8, C14=1, C15=1 — passed.
+  - Expression follow-on prototypes: 3 lessons and 23 questions — passed.
+  - New Expression System migration test: 2 Modules / 15 Lessons, 27 MB mappings, 250 fixed groups, 5 prototypes, offline assets and isolated progress — passed.
+  - Repository JavaScript syntax checks — passed.
+- Audio log: `850 / 850 complete (0 downloaded, 850 restored from cache, 0 errors)`; packaged all 850 human recordings, 9.45 MB MP3 total (0 new, 850 cached). The coverage JSON reports `target_words=850`, `matched_words=850`, `primary_coverage=845`, `missing_count=0`, `downloaded_count=0`, `cached_count=850`, `completed_count=850`, `pending_count=0`, `failed_count=0`, and no download errors or missing words. Preserve both the 845 primary-coverage field and the 850 overall matched count as distinct report fields; do not infer a cause for the difference.
+- Android Gradle build: `BUILD SUCCESSFUL in 39s`, 33 actionable tasks. APK and coverage artifacts uploaded successfully:
+  - APK artifact ID 14486405337, 9,370,796 bytes, digest `sha256:f13e3a2e45f0e1bdf9fec90eb57f06db3f18c354256d6a1d3f870e04c054e2cb`, expires 2026-12-19T00:30:29Z.
+  - Coverage artifact ID 14485861012, 21,467 bytes, digest `sha256:eb84947aead96f24b9386f07e63a7d86bb2e5788d88595188933c8bb137db1ab`, expires 2026-12-19T00:30:32Z.
+- Downloaded both artifact ZIPs and verified their SHA-256 digests against GitHub metadata. Extracted the real APK to `/mnt/data/Basic-English-Human-Voice.apk`: 9,968,250 bytes; SHA-256 `518094ea63b89f83b73bb1a9dbcc8dbf9e6c23c0c58f85c24fcbcb4c67636db4`. The APK is recognized as an Android package; ZIP integrity test passes; it contains `AndroidManifest.xml`, DEX files, all 850 MP3 assets and all six new Expression course JS/CSS assets. No local `aapt`/APK analyzer is installed, so package ID/signature metadata was not independently decoded here.
+- Post-build source review caught a learner-facing labeling issue: the renderer displayed internal Candidate IDs (C01 in a practice heading, and C01–C15 in a note/cross-link). Corrected in commit `4afc2da2313518e6c093fe93cfd000ab60e8d961`: internal Candidate IDs are now converted to official Module/Lesson labels in cross-links and removed from learner-facing text. Added a regression assertion that the renderer does not expose C01–C15.
+- Run 51 / 44430168437 is now in progress on that UI-label correction commit; job 135245213806. Step 5 `Install FFmpeg` is running; step 9 validation and rebuild are pending. No queued runs. Do not modify watched paths while Run 51 is active.
+- **Current status:** Run 50 proves the prior implementation/test/build and artifact path; Run 51 must revalidate the final learner-label correction. Device acceptance has not been performed. The extracted APK is ready for the user to install and test. Next: wait for Run 51 success, then request on-device navigation, progress-persistence and airplane-mode checks before marking Phases 6–7 fully accepted.
