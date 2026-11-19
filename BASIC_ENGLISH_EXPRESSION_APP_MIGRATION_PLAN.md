@@ -224,3 +224,11 @@ Before any code migration:
 - Final source review found internal C01–C15 Candidate IDs visible in a practice heading/note/cross-links. These are not permitted in learner-facing UI. The renderer now converts cross-links to official Module/Lesson labels and removes the visible Candidate-ID note; regression test added.
 - Correction commit: `4afc2da2313518e6c093fe93cfd000ab60e8d961`. Run 51 / 44430168437 is revalidating this correction and rebuilding the APK.
 - Phases 1–5 have passed automated verification. Phase 6 UI/offline device checks and Phase 7 device acceptance remain pending; the user must install the verified APK and test the app on-device before final acceptance.
+
+## 16. Run 51 implementation build and APK verification
+
+- The final learner-facing UI correction (hide internal Candidate IDs; show Module/Lesson labels only) was committed in `4afc2da2313518e6c093fe93cfd000ab60e8d961`; the automated regression assertion passed.
+- Run 51 / 44430168437 completed successfully. All 23 job steps succeeded; all course/migration regression tests passed; Gradle APK build and both artifact uploads succeeded.
+- APK artifact ID: `14485622177`. The real APK was downloaded and extracted to `/mnt/data/Basic-English-Human-Voice-run51.apk` (9,968,282 bytes; SHA-256 `11d41bf69c5c456ce653a631878c7d496011b326e451656f1170f0bb981787b9`). APK archive integrity passed. The package contains the five local Expression course JS assets, course CSS, and exactly 850 matching MP3 files.
+- Coverage report: 850 target/matched/cached/completed, 0 missing, 0 pending, 0 failed, 0 download errors; its separate `primary_coverage` field is 845 and remains distinct from `matched_words=850`.
+- The build deliverable is ready for installation. Real-device install, offline checks, navigation, audio playback and user acceptance are still pending. Do not call the overall acceptance complete before device verification.
