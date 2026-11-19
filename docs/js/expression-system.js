@@ -814,6 +814,39 @@
     }
   }
 
+  function analyzeSpeakAnswer(text) {
+    const grammar = analyzeLessonSentence(text);
+    if (grammar.status !== 'pass') {
+      return {
+        grammar: grammar,
+        meaning: {
+          status: 'unsupported',
+          message: '请先通过本课已登记的句型检查，再核对题目要求的意思。'
+        }
+      };
+    }
+    const subjectNames = { i: '我', you: '你', he: '他', she: '她', it: '它', we: '我们', they: '他们' };
+    const objectNames = { me: '我', you: '你', him: '他', her: '她', it: '它', us: '我们', them: '他们' };
+    const mismatches = [];
+    if (grammar.subject !== 'i') {
+      mismatches.push('主语 ' + grammar.subject + ' 表示“' + subjectNames[grammar.subject] + '”，题目要求的是“我”。');
+    }
+    if (grammar.content !== 'something') {
+      mismatches.push(grammar.content === 'nothing'
+        ? 'nothing 表示“没有内容”，题目要求的是“一些内容”。'
+        : '表达内容与题目不一致。');
+    }
+    if (grammar.recipient !== 'him') {
+      mismatches.push('to ' + grammar.recipient + ' 表示“向' + objectNames[grammar.recipient] + '”，题目要求的是“向他”。');
+    }
+    return {
+      grammar: grammar,
+      meaning: mismatches.length
+        ? { status: 'fail', message: '意思检查未通过：' + mismatches.join(' ') }
+        : { status: 'pass', message: '意思检查通过：I = 我；say = 说出/表达；something = 一些内容；to him = 向他。句子保留了题目中的说话者、表达内容和接受者。' }
+    };
+  }
+
   window.BE = window.BE || {};
-  window.BE.expression = { render: render, inspectVocabulary: inspectVocabulary };
+  window.BE.expression = { render: render, inspectVocabulary: inspectVocabulary, analyzeLessonSentence: analyzeLessonSentence, analyzeSpeakAnswer: analyzeSpeakAnswer, quiz: quiz };
 })();

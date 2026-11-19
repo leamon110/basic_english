@@ -74,6 +74,8 @@ jobs:
           node scripts/test_expression_curriculum.js
           node --check scripts/test_expression_more_lessons.js
           node scripts/test_expression_more_lessons.js
+          node --check scripts/test_expression_course.js
+          node scripts/test_expression_course.js
 
       - name: Package the learning site as local app assets
         run: |
