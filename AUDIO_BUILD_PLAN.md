@@ -2290,3 +2290,24 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Workflow inspection confirms push triggers watch `docs/**`, `android-offline/**`, `scripts/**` and the workflow file; `workflow_dispatch` is also enabled; concurrency uses `cancel-in-progress: true`. At approval/startup, no build was active or queued.
 - The approved migration plan remains the implementation scope. Preserve 2 Modules / 15 Lessons (Module 1 = 3; Module 2 = 12), keep C01–C15 as internal IDs only, split the five old prototypes into their approved destinations, retain all 27 MB IDs and finite checker behavior, preserve all 250 Fixed Word-Groups, leave legacy progress keys untouched and create separate new progress, keep the app offline/no-AI/no-API, and do not alter the separate 45-Step course, 850-word list or audio files.
 - Implementation has not yet started at this checkpoint. Next: Phase 1 — inspect the exact current App render/load architecture and tests, then add the accepted 2-Module / 15-Lesson data model and its exhaustive mapping tests. Before any change to workflow-watched paths, recheck Actions to avoid cancelling an active run. Update this plan after each verified phase/milestone.
+
+## 101. Expression System implementation commit submitted to Run 49 (2026-11-19)
+
+- Approved implementation changes were committed atomically in one Git tree commit: `b16e290bc313f092fb84cb688ee6f7fcc59bd233` (`Implement the accepted 2-Module 15-Lesson Expression System`). This was deliberately one watched-path push so the workflow's `cancel-in-progress: true` concurrency policy would not cancel a competing run.
+- The single commit changes 13 files:
+  - Updated `docs/index.html`, `docs/js/app.js`, `docs/sw.js`, `docs/js/expression-system.js`, and `.github/workflows/build-android-offline.yml`.
+  - Added `docs/js/expression-course-data.js`, three locally bundled lesson-content scripts, `docs/js/expression-course.js`, `docs/css/expression-course.css`, and `scripts/test_expression_course.js`.
+  - Updated `scripts/test_expression_curriculum.js` to assert the C13/C14/C15 question split.
+- Implemented (verification still pending):
+  - Exact 2 Modules / 15 Lessons metadata, with official per-Module lesson numbers and internal C01–C15 IDs kept out of learner-facing numbering.
+  - All 15 authored lesson drafts bundled locally; answer sections are collapsed by default.
+  - Old speak prototype's three contexts and finite checker are placed in Module 2 Lesson 1. The finite checker exposes a testable analysis result without widening its registered five-part say/says pattern.
+  - The old 11 body-part terms remain in C13 content; the old 10-question mixed bank is split 8/1/1 across C13/C14/C15.
+  - All 27 MB IDs are mapped to their approved primary Lessons; the existing accepted/wrong patterns and unsupported boundary are reused, not expanded into a general parser.
+  - All 250 Fixed Word-Groups instance summaries are bundled and searchable (50/80/20/100); 249 map to a Lesson and 1 to the conditional foundation. The 50 Most Necessary groups remain a subset.
+  - New progress uses `BE_EXPR_COURSE_PROGRESS_V1`; legacy keys `BE_EXPR_LESSON_02_PROGRESS` and `BE_EXPR_MORE_LESSONS_PROGRESS` are not migrated, deleted or written.
+  - Module/Lesson navigation, lesson completion, lesson progress summaries and the fixed-group reference are added. Service Worker cache is bumped to `basic-english-v39` and precaches all new local assets.
+  - The Android workflow now runs `scripts/test_expression_course.js` in addition to the existing regression tests.
+- No 45-Step content, 850-word source data, human audio files, Word Cards, Teaching screens or Android Gradle files were changed. No AI/API/network dependency was added to the Expression System.
+- Live Actions immediately after the push: Run 49 / 44428857337 on the exact commit above; job 135240699676 is `in_progress`. Steps 1–4 succeeded; step 5 `Install FFmpeg` was running; JavaScript validation is step 9 and has not run yet. No queued runs. Do not modify any watched path until Run 49 completes.
+- **Verification status:** code is committed; automated tests, APK build, artifact upload and device acceptance are not yet verified. Do not call Phases 1–7 complete until their actual checks pass. Next: monitor Run 49 through completion, inspect the JavaScript test logs, Gradle result and both artifacts, then update this plan with the real result. Device acceptance remains pending the user's install/playback test.
