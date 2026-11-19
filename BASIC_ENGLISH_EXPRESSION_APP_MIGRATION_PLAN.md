@@ -195,3 +195,11 @@ Before any code migration:
 - Approved scope: this migration plan's Phases 1–7 and acceptance checklist, preserving the 2 Modules / 15 Lessons architecture and all non-goals and data-safety rules above.
 - Phase 0: complete.
 - Approval does not waive verification gates, expand the checker into general AI grammar/semantic analysis, permit network/API dependencies, or authorize changes to the separate 45-Step course, 850-word list or human audio assets.
+
+## 13. Implementation checkpoint — automated verification pending
+
+- Implementation commit: `b16e290bc313f092fb84cb688ee6f7fcc59bd233`.
+- The first integrated implementation covers Phases 1–6: 2/15 data model, all 15 bundled lesson drafts, prototype destination mapping, finite MB/speak checker integration, searchable 250-item reference, separate new progress key, Module/Lesson UI and local offline assets.
+- Run 49 / 44428857337 is currently in progress on this commit. The new migration test is scheduled in the workflow's JavaScript validation step; it has not yet run at this checkpoint.
+- Phases 1–6 are **implemented but not yet verified**. Phase 7 Android build/artifact checks and device acceptance are also pending. Do not mark the acceptance checklist complete until CI and device results are confirmed.
+- No App code changes are to be pushed while Run 49 is active; the workflow uses `cancel-in-progress: true`.
