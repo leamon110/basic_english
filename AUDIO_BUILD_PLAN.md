@@ -2273,3 +2273,20 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Latest job 134444107771 remains 23/23 successful steps. Cache outcome remains 850/850 human recordings restored, 0 downloads, 0 errors; Gradle `BUILD SUCCESSFUL`; artifacts 14379604453 (9,272,570 bytes) and 14380462964 (21,467 bytes) remain unexpired.
 - The current files were read back and verified: course map 214 lines, coverage audit 278 lines, migration plan 190 lines, and this plan 2,263 lines. The migration plan remains unapproved; no App code, screen numbering, user progress, audio or Android workflow was changed; no build was triggered.
 - Next: present the 31-Step order and the draft 15-Lesson migration plan for explicit Phase 0 review/approval. Do not begin implementation until approval is received.
+
+## 100. Expression System App migration approved — Phase 0 complete (2026-11-19)
+
+- User approval received at 2026-11-19T00:00:45Z for `BASIC_ENGLISH_EXPRESSION_APP_MIGRATION_PLAN.md`, including its Phases 1–7 and acceptance checklist. The migration plan now records approved status and the approval timestamp. Phase 0 is complete.
+- Mandatory startup verification performed before implementation:
+  - Read `AGENTS.md` in full: 53 lines.
+  - Read the complete `AUDIO_BUILD_PLAN.md`: 2,276 lines, in consecutive ranges.
+  - Read the complete `BASIC_ENGLISH_EXPRESSION_APP_MIGRATION_PLAN.md`: 190 lines.
+  - Live branch HEAD: `c3ad702f764792aa6ef0b601ff36811dc45208d9`.
+  - Branch Actions collection: 48 runs total; latest Run 48 / 44197915524 is completed / success on build SHA `9a1793905b4abc7d24bd1c598a5a3004450f6748`; 0 active and 0 queued runs.
+  - Latest job 134444107771 has 23 steps (18 main + 5 post-job); every step completed successfully.
+  - Inspected the latest job logs: final audio coverage 850/850; progress lines report 0 newly downloaded, 850 restored from cache, 0 errors; Android Gradle reports `BUILD SUCCESSFUL`; APK and audio-coverage artifacts were both successfully uploaded. The post-job cache step reports read-only because the matching cache key already exists; this is not a build failure.
+  - Latest artifacts remain unexpired: APK `basic-english-human-voice-apk`, ID 14379604453, 9,272,570 bytes, digest `sha256:c6ca5160739813e556232e027fe389747087f9a44043cbd63d19ed25bbbab863`; coverage `basic-english-human-audio-coverage`, ID 14380462964, 21,467 bytes, digest `sha256:b5795138694e56cdc4fb3f29033d069b669c370b3930114309e7761a55635d98`.
+  - Compared live branch HEAD with Run 48 build SHA: 355 commits ahead / 0 behind; 33 changed files, all root-level Markdown. No `docs/**`, `android-offline/**`, `scripts/**` or workflow file changed since Run 48.
+- Workflow inspection confirms push triggers watch `docs/**`, `android-offline/**`, `scripts/**` and the workflow file; `workflow_dispatch` is also enabled; concurrency uses `cancel-in-progress: true`. At approval/startup, no build was active or queued.
+- The approved migration plan remains the implementation scope. Preserve 2 Modules / 15 Lessons (Module 1 = 3; Module 2 = 12), keep C01–C15 as internal IDs only, split the five old prototypes into their approved destinations, retain all 27 MB IDs and finite checker behavior, preserve all 250 Fixed Word-Groups, leave legacy progress keys untouched and create separate new progress, keep the app offline/no-AI/no-API, and do not alter the separate 45-Step course, 850-word list or audio files.
+- Implementation has not yet started at this checkpoint. Next: Phase 1 — inspect the exact current App render/load architecture and tests, then add the accepted 2-Module / 15-Lesson data model and its exhaustive mapping tests. Before any change to workflow-watched paths, recheck Actions to avoid cancelling an active run. Update this plan after each verified phase/milestone.
