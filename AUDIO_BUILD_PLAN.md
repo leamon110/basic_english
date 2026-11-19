@@ -2319,3 +2319,12 @@ This is a separate learning-product workstream; it does not alter the accepted a
 - Corrected the test by replacing those three literal sequences with actual line breaks. Fix commit: `3a0872d59a1da7a41d43c916acb4a66804ed3909` (`Fix newline syntax in the Expression prototype split test`). Only the test file changed in this fix commit.
 - Run 50 / 44429176259 is now in progress on the fix commit; job 135241804645. Steps 1–4 succeeded, step 5 `Install FFmpeg` is running, and step 9 JavaScript validation is pending. There are 0 queued runs.
 - No further watched-path edits until Run 50 completes. Next: inspect step 9 output and the new migration tests; if successful, confirm packaging, 850 audio coverage, Gradle build and APK/coverage uploads. Phase 1–6 implementation remains submitted but not yet verified; Phase 7 and device acceptance remain pending.
+
+## 103. Run 50 JavaScript validation passed; Android build still running (2026-11-19)
+
+- Run 50 / 44429176259 is running on fix commit `3a0872d59a1da7a41d43c916acb4a66804ed3909`.
+- The previously failing workflow step 9, `Validate JavaScript and Meaning-to-Basic rules`, has now completed successfully. This step includes the repository-wide `node --check` sweep, all existing Meaning-to-Basic and Teaching tests, the C13/C14/C15 split test, the 3 old follow-on prototype lesson test, and the new `scripts/test_expression_course.js` migration test.
+- Site asset packaging (step 10), human-recording directory preparation (step 11) and cache restoration (step 12) have also succeeded.
+- Step 13, `Fetch and package all 850 human word recordings`, is currently in progress. Steps 14–18 (cache save, Gradle APK build, naming and artifact uploads) are pending. No artifact is available yet.
+- No code or workflow changes have been made after the fix commit. Do not modify watched paths while Run 50 is active.
+- **Current verified milestone:** Phases 1–6 implementation passes the automated JavaScript validation step. Phase 7 is not complete: 850-audio packaging, Gradle build, APK/coverage uploads and device acceptance remain outstanding. Next: monitor Run 50 to completion, inspect full logs and artifacts, then record actual build and audio results.
