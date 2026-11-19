@@ -24,6 +24,9 @@ function renderPage(page) {
   if (page === 'home') renderHome(main)
   else if (page === 'conversation') window.BE.chat.renderChat(main)
   else if (page === 'teaching') window.BE.teaching.renderTeaching(main)
+  else if (page === 'course') window.BE.course.render()
+  else if (page === 'expression') window.BE.expressionCourse.render(main)
+  else if (page === 'sentences') window.BE.sentences.render(main)
 }
 
 function renderHome(container) {
@@ -41,6 +44,24 @@ function renderHome(container) {
         </p>
       </div>
       <div class="home-cards">
+        <div class="home-card" onclick="navigateTo('course')">
+          <div class="home-card-icon">🧭</div>
+          <h2>原版 45 步课程</h2>
+          <p>按照 Ogden 原版 45 个 Step 学习。目前 14 课完成中文改编，其余仍是原版网页入口。</p>
+          <span class="home-card-link">进入课程目录 →</span>
+        </div>
+        <div class="home-card" onclick="navigateTo('expression')">
+          <div class="home-card-icon">🧠</div>
+          <h2>表达系统 · Expression System</h2>
+          <p>按 2 个 Module、15 个 Lesson 学习：先理解 Basic 词本身的意义，再用 Basic English 表达具体意思。包含有限句型检查和 250 个固定词组参考。</p>
+          <span class="home-card-link">开始表达训练 →</span>
+        </div>
+        <div class="home-card" onclick="navigateTo('sentences')">
+          <div class="home-card-icon">🧩</div>
+          <h2>句型练习</h2>
+          <p>100 个完整例句、20 道句子组装练习、10 组情景对话，帮助你练习用基础词汇组织表达。</p>
+          <span class="home-card-link">开始练习 →</span>
+        </div>
         <div class="home-card" onclick="navigateTo('conversation')">
           <div class="home-card-icon">💬</div>
           <h2>Conversation</h2>
@@ -49,9 +70,9 @@ function renderHome(container) {
         </div>
         <div class="home-card" onclick="navigateTo('teaching')">
           <div class="home-card-icon">📖</div>
-          <h2>Teaching</h2>
-          <p>Learn the 850 words by category. Practice Ogden's grammar rules with interactive exercises.</p>
-          <span class="home-card-link">Start Learning →</span>
+          <h2>850 词汇学习 · Teaching</h2>
+          <p>浏览完整 850 个基础词。点击单词打开独立词卡，查看中文释义和英语发音；还可练习构词与语法规则。</p>
+          <span class="home-card-link">进入单词卡 →</span>
         </div>
       </div>
       <div class="home-stats">
@@ -77,100 +98,176 @@ function renderHome(container) {
 }
 
 // ============================================================
-// SPEECH SYNTHESIS (cross-browser)
-// Chrome works with a bare speak(); Firefox/Safari need extra care:
-//  - voices load asynchronously (getVoices() is empty at first)
-//  - an explicit English voice avoids silent/wrong-language playback
-//  - calling cancel() right before speak() in the same tick is swallowed
-// Android WebView / WeChat browser often have speechSynthesis API but
-// no actual TTS engine — we detect this and hide speak buttons.
+// SPEECH PLAYBACK
+// Basic English words use bundled human recordings. Browser TTS remains
+// only as a fallback for multi-word sentences and other text not in the 850.
 // ============================================================
 var _beVoices = []
-var _beSpeechAvailable = false // true only if TTS actually works
+var _beSpeechAvailable = false
+var _beSpeechLastState = 'not-initialized'
+var _beSpeechLastError = null
+var _beCurrentWordAudio = null
 
-function _beLoadVoices() {
-  if (!window.speechSynthesis) return
-  _beVoices = window.speechSynthesis.getVoices() || []
-  // If we have voices, speech is likely available
-  if (_beVoices.length > 0) {
-    _beSpeechAvailable = true
+function _beHasBrowserSpeechApi() {
+  return !!(window.speechSynthesis &&
+            typeof window.SpeechSynthesisUtterance === 'function')
+}
+
+function _beSetSpeechAvailable(available) {
+  _beSpeechAvailable = !!available
+  if (!document.body) return
+  if (_beSpeechAvailable) {
     document.body.classList.add('speech-available')
     document.body.classList.remove('speech-unavailable')
+  } else {
+    document.body.classList.add('speech-unavailable')
+    document.body.classList.remove('speech-available')
   }
 }
 
 function _beInitSpeech() {
-  if (!window.speechSynthesis) {
-    _beSpeechAvailable = false
-    document.body.classList.add('speech-unavailable')
-    return
-  }
-  
-  _beLoadVoices()
-  
-  // Fired when voices become available (Firefox/Safari/some Android load them async)
-  try { 
-    window.speechSynthesis.addEventListener('voiceschanged', _beLoadVoices) 
-  } catch (e) { 
-    window.speechSynthesis.onvoiceschanged = _beLoadVoices 
-  }
-  
-  // Give async voice loading 2 seconds, then check
-  setTimeout(function() {
-    _beLoadVoices()
-    if (_beVoices.length === 0) {
-      // No voices available — TTS won't work
-      _beSpeechAvailable = false
-      document.body.classList.add('speech-unavailable')
-      document.body.classList.remove('speech-available')
+  // Audio playback is available independently of Android's selected TTS engine.
+  _beSetSpeechAvailable(typeof window.Audio === 'function')
+
+  // Load browser voices only for sentence fallback; word cards do not use them.
+  if (_beHasBrowserSpeechApi()) {
+    try {
+      _beVoices = window.speechSynthesis.getVoices() || []
+      var synth = window.speechSynthesis
+      if (typeof synth.addEventListener === 'function') {
+        synth.addEventListener('voiceschanged', function() {
+          try { _beVoices = synth.getVoices() || [] } catch (e) {}
+        })
+      } else {
+        synth.onvoiceschanged = function() {
+          try { _beVoices = synth.getVoices() || [] } catch (e) {}
+        }
+      }
+    } catch (e) {
+      _beVoices = []
     }
-  }, 2000)
+  }
 }
 
 function _bePickEnglishVoice() {
-  if (!_beVoices.length) _beLoadVoices()
   return _beVoices.find(function(v) { return /en[-_]US/i.test(v.lang) }) ||
          _beVoices.find(function(v) { return /^en/i.test(v.lang) }) ||
          null
 }
 
-function speak(text, rate) {
-  if (!_beSpeechAvailable || !window.speechSynthesis || !text) return false
+function _bePlayHumanWord(word) {
+  if (typeof window.Audio !== 'function') return false
+  var normalized = String(word || '').trim().toLowerCase()
+  if (!/^[a-z]+$/.test(normalized)) return false
+
+  if (_beCurrentWordAudio) {
+    try {
+      _beCurrentWordAudio.pause()
+      _beCurrentWordAudio.currentTime = 0
+    } catch (e) {}
+  }
+
+  var audio = new Audio('audio/words/' + encodeURIComponent(normalized) + '.mp3')
+  _beCurrentWordAudio = audio
+  audio.onplay = function() {
+    _beSpeechLastState = 'human-audio-playing'
+    _beSpeechLastError = null
+  }
+  audio.onended = function() {
+    _beSpeechLastState = 'human-audio-ended'
+  }
+  audio.onerror = function() {
+    _beSpeechLastState = 'human-audio-error'
+    _beSpeechLastError = 'audio-file-unavailable:' + normalized
+    console.warn('[Basic English] Human pronunciation file failed:', normalized)
+  }
+
   try {
-    var synth = window.speechSynthesis
-    var speakNow = function() {
-      var u = new SpeechSynthesisUtterance(text)
-      u.lang = 'en-US'
-      u.rate = rate || 0.9
-      u.volume = 1
-      u.pitch = 1
-      var v = _bePickEnglishVoice()
-      if (v) u.voice = v
-      synth.speak(u)
+    var result = audio.play()
+    if (result && typeof result.catch === 'function') {
+      result.catch(function(error) {
+        _beSpeechLastState = 'human-audio-error'
+        _beSpeechLastError = String(error)
+        console.warn('[Basic English] Human pronunciation playback failed:', error)
+      })
     }
-    // Only cancel when something is actually playing, and defer the new
-    // utterance a tick — otherwise Safari/Firefox swallow it.
-    if (synth.speaking || synth.pending) {
-      synth.cancel()
-      setTimeout(speakNow, 80)
-    } else {
-      speakNow()
-    }
+    _beSpeechLastState = 'human-audio-queued'
     return true
-  } catch (e) { 
+  } catch (e) {
+    _beSpeechLastState = 'human-audio-error'
+    _beSpeechLastError = String(e)
+    return false
+  }
+}
+
+function speak(text, rate) {
+  if (!text) return false
+
+  // A single word from the 850-word list is played from its local human recording.
+  var raw = String(text).trim()
+  var word = raw.replace(/^[^A-Za-z]+|[^A-Za-z]+$/g, '')
+  if (word && !/\s/.test(raw) && _bePlayHumanWord(word)) return true
+
+  // Keep existing sentence playback as a browser fallback. This path is not
+  // used for the 850 single-word pronunciation buttons.
+  if (!_beHasBrowserSpeechApi()) {
+    _beSpeechLastState = 'unsupported-for-sentence'
+    _beSpeechLastError = 'browser-speech-api-unavailable'
+    return false
+  }
+
+  var synth = window.speechSynthesis
+  try {
+    var u = new window.SpeechSynthesisUtterance(String(text))
+    u.lang = 'en-US'
+    u.rate = rate || 0.9
+    u.volume = 1
+    u.pitch = 1
+    var v = _bePickEnglishVoice()
+    if (v) u.voice = v
+    u.onstart = function() {
+      _beSpeechLastState = 'sentence-speaking'
+      _beSpeechLastError = null
+    }
+    u.onend = function() {
+      _beSpeechLastState = 'sentence-ended'
+    }
+    u.onerror = function(event) {
+      _beSpeechLastState = 'sentence-error'
+      _beSpeechLastError = event && event.error ? event.error : 'unknown'
+      console.warn('[Basic English] Sentence speech error:', _beSpeechLastError)
+    }
+    if (synth.paused && typeof synth.resume === 'function') synth.resume()
+    if (synth.speaking || synth.pending) synth.cancel()
+    synth.speak(u)
+    return true
+  } catch (e) {
+    _beSpeechLastState = 'sentence-error'
+    _beSpeechLastError = String(e)
+    console.warn('[Basic English] Sentence speech failed:', e)
     return false
   }
 }
 
 function isSpeechAvailable() {
-  return _beSpeechAvailable
+  return typeof window.Audio === 'function' || _beHasBrowserSpeechApi()
+}
+
+function getSpeechDiagnostics() {
+  return {
+    humanWordAudio: typeof window.Audio === 'function',
+    browserSentenceTTS: _beHasBrowserSpeechApi(),
+    voiceCount: _beVoices.length,
+    state: _beSpeechLastState,
+    lastError: _beSpeechLastError
+  }
 }
 
 window.BE = window.BE || {}
 window.BE.speak = speak
 window.BE.isSpeechAvailable = isSpeechAvailable
+window.BE.getSpeechDiagnostics = getSpeechDiagnostics
 
-// Initialize speech detection on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', _beInitSpeech)
 
 // ---- INIT ----

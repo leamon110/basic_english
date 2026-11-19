@@ -97,8 +97,12 @@ function isAllowedWord(word) {
     }
     // simple -> simply; true -> truly
     if (lower.endsWith("ly")) {
-      const baseBle = lower.slice(0, -3) + "le"
+      // simple -> simply: replace the final -le with -ly.
+      const baseBle = lower.slice(0, -2) + "le"
       if (BE.ALL_850.has(baseBle)) return { ok: true }
+      // true -> truly: retain the final -e before adding -ly.
+      const baseE = lower.slice(0, -2) + "e"
+      if (BE.ALL_850.has(baseE)) return { ok: true }
     }
     // -tic -> -tically: automatic -> automatically
     if (lower.endsWith("ally")) {
@@ -121,30 +125,45 @@ function isAllowedWord(word) {
     }
   }
 
-  // 9. Check -est superlatives
+  // 9. Check -est superlatives, including spelling changes
+  const qualityWords = [...BE.QUALITIES_100, ...BE.QUALITIES_50]
   if (lower.endsWith("est")) {
     const base = lower.slice(0, -3)
-    if (BE.ALL_850.has(base)) return { ok: true }
-    // -iest: happiest, angriest
+    if (BE.ALL_850.has(base) && qualityWords.includes(base)) return { ok: true }
+    // Adjectives ending in e drop e: wise -> wisest
+    if (BE.ALL_850.has(base + "e") && qualityWords.includes(base + "e")) return { ok: true }
+    // -iest: early -> earliest, happy -> happiest
     if (lower.endsWith("iest")) {
       const baseY = lower.slice(0, -4) + "y"
-      if (BE.ALL_850.has(baseY)) return { ok: true }
+      if (BE.ALL_850.has(baseY) && qualityWords.includes(baseY)) return { ok: true }
     }
   }
 
   // 10. Comparatives (-er as comparative, not derivative)
   if (lower.endsWith("er")) {
-    // already checked in #6 above; check if adjective
     const base = lower.slice(0, -2)
-    if (BE.ALL_850.has(base)) {
-      // Check if it's an adjective (single-syllable can use -er comparative)
-      const isAdj = [...BE.QUALITIES_100, ...BE.QUALITIES_50].includes(base)
-      if (isAdj) return { ok: true }
-    }
+    if (BE.ALL_850.has(base) && qualityWords.includes(base)) return { ok: true }
+    // Adjectives ending in e drop e: wise -> wiser
+    if (BE.ALL_850.has(base + "e") && qualityWords.includes(base + "e")) return { ok: true }
+  }
+  // Adjectives ending in consonant + y change y to i: early -> earlier
+  if (lower.endsWith("ier")) {
+    const baseY = lower.slice(0, -3) + "y"
+    if (BE.ALL_850.has(baseY) && qualityWords.includes(baseY)) return { ok: true }
   }
 
-  // 11. Check for single-letter words that should be valid
-  if (lower === "a" || lower === "i") return { ok: true }
+  // Possessive nouns and contractions formed with apostrophe-s.
+  if (lower.endsWith("'s")) {
+    const base = lower.slice(0, -2)
+    if (isAllowedWord(base).ok) return { ok: true, isPossessiveOrContraction: true }
+  }
+
+  // 11. Articles and compounds explicitly taught in the Basic course
+  // "an" is the grammatical form of "a" before a vowel sound.
+  // "another", "into", and these compounds are taught as Basic constructions.
+  if (["a", "an", "i", "one", "ones", "what", "which", "another", "into", "bedroom", "bookshelf", "ticket-office", "work-room", "bathroom", "inside", "outside", "everything", "something", "someone", "nothing", "everywhere", "somewhere", "nowhere", "workman", "workmen", "gotten", "completed", "housework", "tonight", "anywhere", "away", "raincoat", "snowman", "snowmen", "snowball", "snowballs", "ice-box", "i've", "i'll", "its", "hearer", "hearers", "learner", "learners", "teacher", "teachers", "writer", "writers", "reader", "readers", "gardener", "gardeners", "cutter", "cutters", "separating", "separator", "separators", "shutter", "shutters", "boiler", "boilers", "hanger", "hangers", "waiter", "waiters", "pleasing", "pleased"].includes(lower)) {
+    return { ok: true, isBasicConstruction: true }
+  }
 
   // 12. Numerals (basic)
   if (/^\d+(?:st|nd|rd|th)?$/.test(lower)) return { ok: true, isNumeral: true }
@@ -162,8 +181,9 @@ function validateBasicEnglish(text) {
   for (let i = 0; i < words.length; i++) {
     const raw = words[i]
     // Remove leading/trailing punctuation for checking
-    const clean = raw.replace(/^[^a-zA-Z0-9']+|[,.;:!?\"'()\[\]{}<>]+$/g, '')
-                     .replace(/^[,.!?;:'"()]+/, "")
+    const normalized = raw.replace(/[’‘]/g, "'")
+    const clean = normalized.replace(/^[^a-zA-Z0-9']+|[,.;:!?\"'()\[\]{}<>“”‘’—–…]+$/g, '')
+                             .replace(/^[,.!?;:'"()“”‘’—–…]+/, "")
     if (!clean || clean.length === 0) continue
 
     // Skip proper names (capitalized in middle of sentence)

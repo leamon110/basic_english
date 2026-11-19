@@ -11,6 +11,9 @@ The app has two main modes:
   Both your input and the AI's reply are checked against the 850-word list.
 - **📖 Teaching** — browse the 850 words by category, drill Ogden's word-building
   and grammar rules, run spaced-repetition review, and look up the rules quickly.
+- **🧭 Course learning** — follow Ogden's original 45-step order. Fourteen lessons
+  (Steps 1, 2, 3, 5, 6, 9, 10, 12, 13, 15, 17, 18, 20 and 25) currently have Chinese-guided vocabulary, grammar,
+  reading and practice; other steps link to the original course until adapted.
 
 It is built with plain HTML, CSS, and vanilla JavaScript — **no build step, no
 frameworks, no runtime dependencies.**
@@ -61,6 +64,7 @@ basic_english/
 │       ├── validator.js        # Basic English word/forms validator
 │       ├── chat.js             # Conversation mode + LLM API client
 │       ├── teaching.js         # Word cards, exercises, SR, reference
+│       ├── course.js           # Chinese-guided 45-step course module
 │       └── app.js              # Router + home page
 │
 ├── basic-english-package/      # PWA Builder output: Android APK/AAB
@@ -69,10 +73,12 @@ basic_english/
 └── ogden-rules-and-techniques.md  # Reference notes on Ogden's rules
 ```
 
-> The app lives in a single folder, `docs/`, which is also what GitHub Pages
-> serves (Settings → Pages → Source: `main` branch, `/docs` folder). It is
-> published at <https://mythquan.github.io/basic_english/>. All asset paths are
-> relative so the app works correctly under that sub-path.
+> The app lives in a single folder, `docs/`. This repository is a fork of
+> `mythquan/basic_english`; the upstream site at
+> <https://mythquan.github.io/basic_english/> is separate and is not updated by
+> commits to this fork. The fork's planned project-site URL is
+> <https://leamon110.github.io/basic_english/> after GitHub Pages is enabled.
+> All asset paths are relative so the app works correctly under a sub-path.
 
 ---
 
@@ -112,22 +118,31 @@ The default preset is DeepSeek (`https://api.deepseek.com`, `deepseek-chat`).
 
 ## Deployment
 
-The app is fully static. It is published with **GitHub Pages** from the `/docs`
-folder of the `main` branch (Settings → Pages → Source). No build step is
-required — commit to `docs/` and the live site updates.
+The app is fully static. The workflow
+`.github/workflows/deploy-pages.yml` publishes the `docs/` folder when changes
+reach the `master` branch, or when the workflow is run manually. No site build
+step is required.
+
+**One-time fork setup:** GitHub Pages is not enabled for this fork yet. A
+repository administrator must open Settings → Pages and set **Source** to
+**GitHub Actions**. After that, merging the course changes to `master` will
+trigger the deployment workflow.
 
 The Android package in `basic-english-package/` was generated with
 [PWABuilder](https://www.pwabuilder.com/); the included `Readme.html` links to
-the signing / next-steps guide.
+the signing / next-steps guide. A refreshed APK has not yet been built from this
+fork's updated course.
 
 ---
+
+- **Sentence practice** — 100 complete example sentences in ten groups, 20 interactive word-order assembly exercises, and 10 original everyday/work dialogues (80 lines), with Chinese translations and browser speech playback.
 
 ## Tech notes
 
 - **No dependencies / no build.** Scripts load in a fixed order in `index.html`:
-  `data.js → validator.js → chat.js → teaching.js → app.js`. Each module attaches
+  `data.js → validator.js → chat.js → teaching.js → course.js → sentence-practice.js → app.js`. Each module attaches
   itself to a single global `window.BE` namespace.
-- **Routing** is hash-based (`#conversation`, `#teaching`) in `app.js`.
+- **Routing** is hash-based (`#conversation`, `#teaching`, `#course`, `#sentences`) in `app.js`.
 - **Pronunciation** uses the browser's `SpeechSynthesis` API and degrades
   gracefully when unavailable.
 - **Persistence** (API settings, SR progress) uses `localStorage` only — there

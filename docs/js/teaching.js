@@ -13,21 +13,21 @@ const CATEGORIES = [
 
 // ---- RENDER TEACHING MODE ----
 function renderTeaching(container) {
-  const BE = window.BE.WORDS
-
   container.innerHTML = `
     <div class="teaching-layout">
       <div class="teaching-tabs">
-        <button class="tab-btn active" data-tab="cards" onclick="BE.teaching.switchTab('cards')">📖 Word Cards</button>
-        <button class="tab-btn" data-tab="exercises" onclick="BE.teaching.switchTab('exercises')">✏ Rule Exercises</button>
-        <button class="tab-btn" data-tab="spaced" onclick="BE.teaching.switchTab('spaced')">🧠 Spaced Repetition</button>
-        <button class="tab-btn" data-tab="reference" onclick="BE.teaching.switchTab('reference')">📚 Quick Reference</button>
+        <button class="tab-btn active" data-tab="cards" onclick="BE.teaching.switchTab('cards')">📖 单词卡 Word Cards</button>
+        <button class="tab-btn" data-tab="exercises" onclick="BE.teaching.switchTab('exercises')">✏ 规则学习与练习</button>
+        <button class="tab-btn" data-tab="spaced" onclick="BE.teaching.switchTab('spaced')">🧠 间隔复习</button>
+        <button class="tab-btn" data-tab="reference" onclick="BE.teaching.switchTab('reference')">📚 规则速查</button>
       </div>
       <div id="teaching-content" class="teaching-content"></div>
     </div>
   `
 
-  BE.teaching.switchTab('cards')
+  window.BE.teaching.switchTab('cards')
+  // Entering Teaching should start at the top, not reuse the previous page's scroll offset.
+  window.scrollTo(0, 0)
 }
 
 function switchTab(tab) {
@@ -68,9 +68,10 @@ function renderWordCards(container) {
     <div class="cards-section">
       <div class="cards-controls">
         <div class="cards-search">
-          <input type="text" id="card-search" placeholder="Search words..." value="${cardFilter}" oninput="BE.teaching.filterCards()" />
+          <input type="text" id="card-search" placeholder="搜索850个单词..." value="${cardFilter}" oninput="BE.teaching.filterCards()" />
         </div>
         <div class="cards-categories" id="cards-categories">
+          <button class="cat-btn ${cardCategory==='all'?'active':''}" data-cat="all" style="--cat-color:#315b9d">全部 850 词</button>
           ${CATEGORIES.map(c =>
             `<button class="cat-btn ${cardCategory===c.id?'active':''}" data-cat="${c.id}" style="--cat-color:${c.color}">${c.name}</button>`
           ).join('')}
@@ -140,7 +141,9 @@ function updateCards() {
     var item = pageWords[i]
     var cat = item.category
     html += '<div class="word-card" style="border-color:' + cat.color + '" onclick="BE.teaching.showWordDetail(\'' + item.word + '\')">' +
-      '<div class="word-card-word">' + item.word + '</div>' +
+      '<div class="word-card-word-row">' +
+      '<button type="button" class="word-card-word" onclick="event.stopPropagation(); BE.teaching.playWord(\'' + item.word + '\')" aria-label="播放 ' + item.word + ' 发音" title="播放发音">' + item.word + '</button>' +
+      '</div>' +
       '<div class="word-card-cat" style="background:' + cat.color + '">' + cat.name + '</div>' +
       '</div>'
   }
@@ -149,10 +152,10 @@ function updateCards() {
   // Pagination controls
   const pagEl = document.getElementById('cards-pagination')
   if (totalPages <= 1) {
-    pagEl.innerHTML = '<span class="page-info">' + allWords.length + ' words</span>'
+    pagEl.innerHTML = '<span class="page-info">共 ' + allWords.length + ' 个词</span>'
   } else {
     pagEl.innerHTML = '<button class="btn btn-sm" onclick="BE.teaching.goPage(-1)"' + (cardPage <= 0 ? ' disabled' : '') + '>&#9664; Prev</button>' +
-      '<span class="page-info">' + (cardPage + 1) + ' / ' + totalPages + ' (' + allWords.length + ' words)</span>' +
+      '<span class="page-info">第 ' + (cardPage + 1) + ' / ' + totalPages + ' 页（共 ' + allWords.length + ' 个词）</span>' +
       '<button class="btn btn-sm" onclick="BE.teaching.goPage(1)"' + (cardPage >= totalPages - 1 ? ' disabled' : '') + '>Next &#9654;</button>'
   }
 }
@@ -331,6 +334,7 @@ let currentExercise = 0
 let exerciseResults = { correct: 0, total: 0 }
 
 function renderExercises(container) {
+  if (window.BE.ruleLearning) return window.BE.ruleLearning.renderExercises(container)
   container.innerHTML = `
     <div class="exercises-section">
       <div class="exercises-header">
@@ -414,6 +418,7 @@ function checkAnswer(index) {
 // QUICK REFERENCE
 // ============================================================
 function renderReference(container) {
+  if (window.BE.ruleLearning) return window.BE.ruleLearning.renderReference(container)
   container.innerHTML = `
     <div class="reference-section">
       <h3>Ogden's Basic English Rules — Quick Look-up</h3>
@@ -490,8 +495,7 @@ function renderReference(container) {
 // WORD DETAIL MODAL (Chinese Translation + Pronunciation)
 // ============================================================
 function showWordDetail(word) {
-  const cn = window.BE.WORDS.CHINESE_TRANSLATIONS[word]
-  if (!cn) return
+  const cn = window.BE.WORDS.CHINESE_TRANSLATIONS[word] || '暂无中文释义'
   let catName = 'General'
   let catColor = '#4f8cff'
   for (const c of CATEGORIES) {
@@ -537,6 +541,7 @@ function srSave(key, data) {
 }
 
 function renderSR(container) {
+  if (window.BE.ruleLearning) return window.BE.ruleLearning.renderSpaced(container)
   var p = srLoad(SR_KEY) || { w: {}, s: { sc: 0, tl: 0, ms: 0 } }
   var session = srLoad(SR_SESSION_KEY)
   var now = Date.now()
@@ -599,7 +604,7 @@ function srShowCard() {
   var word = session.words[session.idx]
   var p = srLoad(SR_KEY) || { w: {}, s: { sc: 0, tl: 0, ms: 0 } }
   var wp = p.w[word]
-  var cn = window.BE.WORDS.CHINESE_TRANSLATIONS[word] || ''
+  var cn = window.BE.WORDS.CHINESE_TRANSLATIONS[word] || '暂无中文释义'
   var level = wp ? wp.l : 0
   var area = document.getElementById('sr-area')
   if (!area) return

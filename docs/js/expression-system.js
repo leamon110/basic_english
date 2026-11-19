@@ -1,0 +1,852 @@
+// ============================================================
+// EXPRESSION SYSTEM — Meaning to Basic English
+// A supplementary learning track, separate from Ogden's original 45 Steps.
+// ============================================================
+
+(function () {
+  const quiz = [
+    {
+      id: 'q1',
+      question: 'I speak to him.',
+      prompt: '这里的 speak 表达什么？',
+      options: [
+        { value: 'say', label: 'say something to him' },
+        { value: 'talk', label: 'give a talk' },
+        { value: 'knowledge', label: 'have a knowledge of it' }
+      ],
+      answer: 'say',
+      explanation: '这里有明确的说话对象。Ogden 的表达是 say something to him。'
+    },
+    {
+      id: 'q2',
+      question: 'She speaks at a meeting.',
+      prompt: '下面哪一项正确表达了这句话？',
+      options: [
+        { value: 'both', label: 'give a talk 或 make a statement' },
+        { value: 'say', label: 'say something to him' },
+        { value: 'knowledge', label: 'have a knowledge of it' }
+      ],
+      answer: 'both',
+      explanation: '两种表达都来自原文：give a talk 强调进行讲话；make a statement 强调发表陈述。'
+    },
+    {
+      id: 'q3',
+      question: 'He speaks a language.',
+      prompt: '这里的 speak 表达什么？',
+      options: [
+        { value: 'talk', label: 'give a talk' },
+        { value: 'knowledge', label: 'have a knowledge of it' },
+        { value: 'say', label: 'say something to him' }
+      ],
+      answer: 'knowledge',
+      explanation: '这里表达的是具有某种语言知识或能力，不是某一次说话行为。'
+    }
+  ];
+
+  function render(container) {
+    if (!container) return;
+    container.innerHTML = `
+      <section class="expression-page">
+        <header class="expression-hero">
+          <p class="expression-kicker">SUPPLEMENTARY LEARNING TRACK · BASED ON OGDEN</p>
+          <h1>表达系统 <span>Expression System</span></h1>
+          <p>从你真正想表达的意思出发，学习怎样用850个基础词重新组织句子。</p>
+          <div class="expression-track-note">
+            <strong>这是新增的补充课程，不属于原版45 Steps。</strong>
+            <span>原版45步课程、850词单词卡和已完成的发音功能均保持独立，不会被本课程替换。</span>
+          </div>
+        </header>
+
+        <section class="expression-overview">
+          <div>
+            <span class="expression-step-label">LESSON 01 · 已上线</span>
+            <h2>一个普通动词，三种不同意思：speak</h2>
+            <p>同一个普通英语单词，在不同语境中承担不同意思。先判断意思，再选择 Basic 的表达结构。</p>
+          </div>
+          <div class="expression-principle">
+            <span>学习流程</span>
+            <strong>意思 → 结构 → 组合 → 表达</strong>
+          </div>
+        </section>
+
+        <section class="expression-context-grid" aria-label="speak 的三个语境">
+          <article class="expression-context-card">
+            <span class="expression-context-no">01 · 对某人说话</span>
+            <p class="expression-original">speak to a person</p>
+            <div class="expression-arrow">↓</div>
+            <p class="expression-basic">say something to him</p>
+            <p class="expression-reason">重点：把内容说给某个接受者。</p>
+          </article>
+          <article class="expression-context-card">
+            <span class="expression-context-no">02 · 在会议上讲话</span>
+            <p class="expression-original">speak at a meeting</p>
+            <div class="expression-arrow">↓</div>
+            <p class="expression-basic">give a talk</p>
+            <p class="expression-basic expression-alternative">make a statement</p>
+            <p class="expression-reason">重点：进行一次讲话，或发表一项陈述。</p>
+          </article>
+          <article class="expression-context-card">
+            <span class="expression-context-no">03 · 会说一种语言</span>
+            <p class="expression-original">speak a language</p>
+            <div class="expression-arrow">↓</div>
+            <p class="expression-basic">have a knowledge of it</p>
+            <p class="expression-reason">重点：具有某种语言知识或能力。</p>
+          </article>
+        </section>
+
+        <section class="expression-analysis">
+          <h2>为什么是这几种结构？</h2>
+          <div class="expression-analysis-grid">
+            <article>
+              <h3>say something to him</h3>
+              <p><b>say</b>：表达、说出</p>
+              <p><b>something</b>：被说出的内容</p>
+              <p><b>to him</b>：指出说话的接受者</p>
+              <p class="expression-mini-note">something 是原书教授并由当前词汇检查器允许的课程构式，不是850个基础词条中的独立词条。</p>
+            </article>
+            <article>
+              <h3>give a talk / make a statement</h3>
+              <p><b>give / make</b>：承担不同的基本操作</p>
+              <p><b>a talk / a statement</b>：把讲话或陈述作为一个动作名称表达</p>
+            </article>
+            <article>
+              <h3>have a knowledge of it</h3>
+              <p><b>have</b>：表示具有、拥有</p>
+              <p><b>knowledge</b>：知识</p>
+              <p><b>of it</b>：连接知识与其对象</p>
+            </article>
+          </div>
+          <p class="expression-caution">注意：这里不是让你记住 speak = say / give / have。你必须先判断 speak 在当前句子中的意思。</p>
+        </section>
+
+        <section class="expression-quiz">
+          <div class="expression-section-heading">
+            <span class="expression-step-label">CHECK YOUR UNDERSTANDING</span>
+            <h2>练习一：先判断语境</h2>
+            <p>每道题只选一个最符合题目意思的表达。</p>
+          </div>
+          ${quiz.map(function (q, index) {
+            return `
+              <fieldset class="expression-question" data-question="${q.id}">
+                <legend>${index + 1}. ${q.question}</legend>
+                <p>${q.prompt}</p>
+                <div class="expression-options">
+                  ${q.options.map(function (option) {
+                    return `
+                      <label class="expression-option">
+                        <input type="radio" name="expression-${q.id}" value="${option.value}">
+                        <span>${option.label}</span>
+                      </label>
+                    `;
+                  }).join('')}
+                </div>
+                <div class="expression-feedback" id="feedback-${q.id}" aria-live="polite"></div>
+              </fieldset>
+            `;
+          }).join('')}
+          <div class="expression-quiz-actions">
+            <button type="button" class="expression-primary" id="expression-check">检查答案</button>
+            <button type="button" class="expression-secondary" id="expression-reset">重新练习</button>
+            <strong id="expression-score" aria-live="polite"></strong>
+          </div>
+        </section>
+
+        <section class="expression-practice">
+          <span class="expression-step-label">MAKE YOUR OWN SENTENCE</span>
+          <h2>练习二：自己构造 Basic 表达</h2>
+          <p>请用 Basic 表达“我向他表达一些内容”。先写完整句子，再依次完成词汇、语法结构和意思检查。</p>
+          <textarea id="expression-writing" rows="3" placeholder="Write your Basic English sentence here..."></textarea>
+          <p class="expression-check-intro">请按顺序完成三项检查。只有前一步通过后，下一步才会开放。</p>
+          <p class="expression-check-intro">词汇检查会逐词说明：它属于850基础词、允许的词形、课程特殊形式、国际通用词，还是不符合当前规则。词汇通过不代表语法和意思也正确。</p>
+          <div class="expression-writing-actions">
+            <button type="button" class="expression-primary" id="expression-check-words">① 检查 Basic 词汇规则</button>
+            <button type="button" class="expression-primary" id="expression-check-grammar" disabled>② 检查语法结构</button>
+            <button type="button" class="expression-primary" id="expression-check-meaning" disabled>③ 检查意思</button>
+            <button type="button" class="expression-secondary" id="expression-show-hint">显示提示</button>
+          </div>
+          <p class="expression-hint" id="expression-hint" hidden>提示：本课的原作者例子是 “say something to him”。请自己组织完整句子。</p>
+          <div class="expression-writing-feedback" id="expression-vocabulary-feedback" aria-live="polite"></div>
+          <div class="expression-writing-feedback" id="expression-grammar-feedback" aria-live="polite"></div>
+          <div class="expression-writing-feedback" id="expression-meaning-feedback" aria-live="polite"></div>
+          <p class="expression-limitation">自动检查范围：本题的目标句型是“主语 + say/says + something/nothing + to + 宾格代词”。其他句型暂不支持自动判断；未识别不等于语法错误。本功能不是通用英语语法或自然度检查。</p>
+        </section>
+
+        <section class="expression-reverse">
+          <h2>练习三：反向理解</h2>
+          <p>看到 Basic 表达，也要能理解它在当前语境中表示什么。</p>
+          <div class="expression-reverse-grid">
+            <div><b>say something to him</b><span>向他表达一些内容</span></div>
+            <div><b>give a talk</b><span>进行一次讲话</span></div>
+            <div><b>make a statement</b><span>发表一项陈述</span></div>
+            <div><b>have a knowledge of it</b><span>具有关于它的知识；在原例中指掌握一种语言</span></div>
+          </div>
+          <p class="expression-caution">单独看到 have a knowledge of it，不能断定 it 一定指语言；原句语境决定具体含义。</p>
+        </section>
+
+        <section class="expression-next">
+          <span class="expression-step-label">NEXT CONTENT · RESEARCHED, NOT YET IN APP</span>
+          <h2>接下来要学习的原作者例子</h2>
+          <div class="expression-next-list">
+            <span>tell a story → give it</span>
+            <span>sing → give a song</span>
+            <span>listen → give attention</span>
+            <span>read carefully → go through it with care</span>
+            <span>eat → take food / have a meal</span>
+          </div>
+          <p>这些原作者例子已在下方 Names of Acts 课程和 Meaning → Basic 题库中部分练习；并非每个例子都有独立自动评分。未覆盖的用法仍以研究索引为依据。</p>
+        </section>
+
+        <footer class="expression-source">
+          <b>原作者依据</b>
+          <p>C. K. Ogden, <i>The ABC of Basic English</i>, “Some Common Needs: Simple Acts”, pp.244–245.</p>
+          <a href="https://upload.wikimedia.org/wikipedia/commons/d/d3/NLC511-023031404015268-27413_%E5%9F%BA%E6%9C%AC%E8%8B%B1%E8%AA%9E%E4%B9%8B%E5%88%9D%E6%AD%A5._%E4%B8%8B.pdf" target="_blank" rel="noopener noreferrer">查看原作者原书</a>
+          <p class="expression-project-note">本课的原始表达来自 Ogden；结构拆解、互动练习和教学流程是本项目新增的教学设计。</p>
+        </footer>
+      </section>
+    `;
+
+    const checkButton = container.querySelector('#expression-check');
+    const resetButton = container.querySelector('#expression-reset');
+    const wordButton = container.querySelector('#expression-check-words');
+    const grammarButton = container.querySelector('#expression-check-grammar');
+    const meaningButton = container.querySelector('#expression-check-meaning');
+    const writingInput = container.querySelector('#expression-writing');
+    const hintButton = container.querySelector('#expression-show-hint');
+
+    container.querySelectorAll('.expression-option input').forEach(function (input) {
+      input.addEventListener('change', function () {
+        container.querySelectorAll('input[name="' + input.name + '"]').forEach(function (peer) {
+          const label = peer.closest('.expression-option');
+          if (label) label.classList.toggle('is-selected', peer.checked);
+        });
+      });
+    });
+
+    if (checkButton) checkButton.addEventListener('click', function () { checkQuiz(container); });
+    if (resetButton) resetButton.addEventListener('click', function () { resetQuiz(container); });
+    if (wordButton) wordButton.addEventListener('click', function () { checkVocabulary(container); });
+    if (grammarButton) grammarButton.addEventListener('click', function () { checkGrammar(container); });
+    if (meaningButton) meaningButton.addEventListener('click', function () { checkMeaning(container); });
+    if (writingInput) writingInput.addEventListener('input', function () { resetWritingChecks(container); });
+    if (hintButton) hintButton.addEventListener('click', function () {
+      const hint = container.querySelector('#expression-hint');
+      if (hint) hint.hidden = !hint.hidden;
+    });
+
+    window.scrollTo(0, 0);
+  }
+
+  function checkQuiz(container) {
+    let score = 0;
+    let unanswered = 0;
+    quiz.forEach(function (q) {
+      const selected = container.querySelector('input[name="expression-' + q.id + '"]:checked');
+      const feedback = container.querySelector('#feedback-' + q.id);
+      if (!selected) {
+        unanswered++;
+        if (feedback) {
+          feedback.textContent = '请先选择一个答案。';
+          feedback.className = 'expression-feedback is-pending';
+        }
+        return;
+      }
+      const correct = selected.value === q.answer;
+      if (correct) score++;
+      if (feedback) {
+        feedback.textContent = (correct ? '判断正确。' : '这次不正确。') + q.explanation;
+        feedback.className = 'expression-feedback ' + (correct ? 'is-correct' : 'is-wrong');
+      }
+    });
+    const scoreBox = container.querySelector('#expression-score');
+    if (scoreBox) scoreBox.textContent = unanswered ? '已答 ' + (quiz.length - unanswered) + ' / ' + quiz.length + '；请完成剩余题目。' : '得分：' + score + ' / ' + quiz.length;
+  }
+
+  function resetQuiz(container) {
+    container.querySelectorAll('input[name^="expression-"]').forEach(function (input) { input.checked = false; });
+    container.querySelectorAll('.expression-option').forEach(function (label) { label.classList.remove('is-selected'); });
+    container.querySelectorAll('.expression-feedback').forEach(function (feedback) {
+      feedback.textContent = '';
+      feedback.className = 'expression-feedback';
+    });
+    const scoreBox = container.querySelector('#expression-score');
+    if (scoreBox) scoreBox.textContent = '';
+  }
+
+  function resetWritingChecks(container) {
+    ['expression-vocabulary-feedback', 'expression-grammar-feedback', 'expression-meaning-feedback'].forEach(function (id) {
+      const feedback = container.querySelector('#' + id);
+      if (feedback) {
+        feedback.textContent = '';
+        feedback.className = 'expression-writing-feedback';
+      }
+    });
+    const grammarButton = container.querySelector('#expression-check-grammar');
+    const meaningButton = container.querySelector('#expression-check-meaning');
+    if (grammarButton) grammarButton.disabled = true;
+    if (meaningButton) meaningButton.disabled = true;
+  }
+
+  const VOCABULARY_CATEGORIES = [
+    { key: 'base', label: '850基础词' },
+    { key: 'forms', label: '允许的词形变化/语法形式' },
+    { key: 'course', label: '课程明确允许的特殊词项/构式' },
+    { key: 'international', label: '额外允许的国际通用词' },
+    { key: 'numeral', label: '数字形式' },
+    { key: 'other', label: '其他已登记允许形式' },
+    { key: 'invalid', label: '不符合当前词汇规则' }
+  ];
+
+  const KNOWN_CONTRACTIONS = new Set([
+    "i'll", "i'd", "i've", "don't", "doesn't", "didn't", "won't", "can't",
+    "isn't", "aren't", "wasn't", "weren't", "haven't", "hasn't", "hadn't",
+    "we'll", "we'd", "you'll", "you'd", "he'll", "he'd", "she'll", "she'd",
+    "they'll", "they'd", "it's", "that's", "there's", "here's", "let's"
+  ]);
+
+  function findDerivedVocabularyForm(word, words) {
+    const all = words.ALL_850;
+    const nouns = words.NOUNS_WITH_DERIVATIVES;
+    const adjErIng = words.ADJ_ER_ING;
+    const qualities = new Set([].concat(words.QUALITIES_100 || [], words.QUALITIES_50 || []));
+    const knownBase = function (base) {
+      return all.has(base) || nouns.has(base);
+    };
+
+    if (word.endsWith("ies")) {
+      const base = word.slice(0, -3) + "y";
+      if (all.has(base)) return { base: base, rule: "复数 -ies" };
+    }
+    if (word.endsWith("es")) {
+      const base1 = word.slice(0, -2);
+      const base2 = word.slice(0, -1);
+      if (all.has(base1)) return { base: base1, rule: "复数 -es" };
+      if (all.has(base2)) return { base: base2, rule: "复数 -es" };
+    }
+    if (word.endsWith("s") && !word.endsWith("ss")) {
+      const base = word.slice(0, -1);
+      if (all.has(base)) return { base: base, rule: "复数 -s" };
+    }
+
+    if (word.endsWith("ed")) {
+      const base = word.slice(0, -2);
+      if (knownBase(base)) return { base: base, rule: "-ed 形式" };
+      if (word.length >= 4) {
+        const base2 = word.slice(0, -3);
+        if (knownBase(base2)) return { base: base2, rule: "双写末辅音后加 -ed" };
+      }
+      if (word.endsWith("ied")) {
+        const baseY = word.slice(0, -3) + "y";
+        if (all.has(baseY)) return { base: baseY, rule: "y 变 i 后加 -ed" };
+      }
+    }
+
+    if (word.endsWith("ing")) {
+      const base = word.slice(0, -3);
+      if (knownBase(base)) return { base: base, rule: "-ing 形式" };
+      const base2 = word.slice(0, -4);
+      if (base2.length >= 2 && all.has(base2)) return { base: base2, rule: "双写末辅音后加 -ing" };
+      if (word.endsWith("ying")) {
+        const baseY = word.slice(0, -3) + "y";
+        if (all.has(baseY) || all.has(baseY.slice(0, -1))) {
+          return { base: all.has(baseY) ? baseY : baseY.slice(0, -1), rule: "-ying 形式" };
+        }
+      }
+    }
+
+    if (word.endsWith("er")) {
+      const base = word.slice(0, -2);
+      if (all.has(base) || nouns.has(base) || adjErIng.has(base)) {
+        return { base: base, rule: "-er 派生形式" };
+      }
+      if (word.endsWith("ier")) {
+        const baseY = word.slice(0, -3) + "y";
+        if (all.has(baseY)) return { base: baseY, rule: "y 变 i 后加 -er" };
+      }
+      if (word.endsWith("yer")) {
+        const baseY = word.slice(0, -3);
+        if (all.has(baseY)) return { base: baseY, rule: "-yer 形式" };
+      }
+    }
+
+    if (word.endsWith("ly")) {
+      const base = word.slice(0, -2);
+      if (all.has(base)) return { base: base, rule: "-ly 派生形式" };
+      if (word.endsWith("ily")) {
+        const baseY = word.slice(0, -3) + "y";
+        if (all.has(baseY)) return { base: baseY, rule: "y 变 i 后加 -ly" };
+      }
+      const baseBle = word.slice(0, -3) + "le";
+      if (all.has(baseBle)) return { base: baseBle, rule: "去 e 后加 -ly" };
+      if (word.endsWith("ally")) {
+        const baseTic = word.slice(0, -5) + "ic";
+        if (all.has(baseTic)) return { base: baseTic, rule: "-ic 变 -ically" };
+      }
+    }
+
+    if (word.startsWith("un") && word.length > 3) {
+      const base = word.slice(2);
+      if (words.UN_PREFIX_ADJECTIVES.has(base) || all.has(base)) {
+        return { base: base, rule: "un- 前缀" };
+      }
+      if (base.endsWith("ed") || base.endsWith("ing") || base.endsWith("ly")) {
+        const baseBase = base.endsWith("ed") ? base.slice(0, -2) :
+          base.endsWith("ing") ? base.slice(0, -3) : base.slice(0, -2);
+        if (words.UN_PREFIX_ADJECTIVES.has(baseBase)) {
+          return { base: baseBase, rule: "un- 前缀加词形变化" };
+        }
+      }
+    }
+
+    if (word.endsWith("est")) {
+      const base = word.slice(0, -3);
+      if (all.has(base) && qualities.has(base)) return { base: base, rule: "最高级 -est" };
+      if (all.has(base + "e") && qualities.has(base + "e")) {
+        return { base: base + "e", rule: "去 e 后加 -est" };
+      }
+      if (word.endsWith("iest")) {
+        const baseY = word.slice(0, -4) + "y";
+        if (all.has(baseY) && qualities.has(baseY)) return { base: baseY, rule: "y 变 i 后加 -est" };
+      }
+    }
+
+    if (word.endsWith("er")) {
+      const base = word.slice(0, -2);
+      if (all.has(base) && qualities.has(base)) return { base: base, rule: "比较级 -er" };
+      if (all.has(base + "e") && qualities.has(base + "e")) {
+        return { base: base + "e", rule: "去 e 后加 -er" };
+      }
+    }
+    if (word.endsWith("ier")) {
+      const baseY = word.slice(0, -3) + "y";
+      if (all.has(baseY) && qualities.has(baseY)) return { base: baseY, rule: "y 变 i 后加 -er" };
+    }
+    return null;
+  }
+
+  function explainVocabularyWord(word) {
+    const words = window.BE && window.BE.WORDS;
+    if (!words || typeof window.BE.isAllowed !== 'function') {
+      return { ok: false, category: 'invalid', detail: '当前无法读取词汇规则。' };
+    }
+
+    const lower = String(word || '').toLowerCase();
+    const allowed = window.BE.isAllowed(lower);
+    if (!allowed || !allowed.ok) {
+      return {
+        ok: false,
+        category: 'invalid',
+        detail: '当前规则没有找到对应的850基础词、允许词形、课程特殊形式或国际词依据。'
+      };
+    }
+
+    if (words.ALL_850.has(lower)) {
+      const groups = [
+        { key: 'OPERATIONS', label: '操作词' },
+        { key: 'THINGS_400', label: '一般事物词' },
+        { key: 'THINGS_200', label: '可图示事物词' },
+        { key: 'QUALITIES_100', label: '一般性质词' },
+        { key: 'QUALITIES_50', label: '相反性质词' }
+      ];
+      const group = groups.find(function (item) {
+        return Array.isArray(words[item.key]) && words[item.key].includes(lower);
+      });
+      const translation = words.CHINESE_TRANSLATIONS[lower];
+      return {
+        ok: true,
+        category: 'base',
+        detail: '属于850基础词表' + (group ? '中的' + group.label : '') +
+          (translation ? '；词表释义：' + translation : '') + '。'
+      };
+    }
+
+    if (words.INTERNATIONAL_WORDS.has(lower)) {
+      return {
+        ok: true,
+        category: 'international',
+        detail: '列在额外允许的国际通用词清单中；它不计入850个基础词条。'
+      };
+    }
+
+    const operatorBase = words.CONJUGATED_MAP && words.CONJUGATED_MAP[lower];
+    if (operatorBase && operatorBase !== lower) {
+      const translation = words.CHINESE_TRANSLATIONS[operatorBase];
+      return {
+        ok: true,
+        category: 'forms',
+        detail: '动词变形，原形为 ' + operatorBase +
+          (translation ? '（' + translation + '）' : '') +
+          '；词汇层面允许，是否符合本句语法由下一阶段检查。'
+      };
+    }
+
+    const pronounBase = words.PRONOUN_MAP && words.PRONOUN_MAP[lower];
+    if (pronounBase) {
+      const pronounKinds = {
+        me: '宾格形式', him: '宾格形式', her: '宾格/所有格形式',
+        us: '宾格形式', them: '宾格形式', whom: '宾格形式',
+        my: '所有格限定形式', our: '所有格限定形式', your: '所有格限定形式',
+        his: '所有格形式', its: '所有格限定形式', their: '所有格限定形式',
+        mine: '名词性所有格', ours: '名词性所有格', hers: '名词性所有格',
+        yours: '名词性所有格', theirs: '名词性所有格', whose: '所有格形式',
+        we: '人称代词形式', she: '人称代词形式', it: '人称代词形式', they: '人称代词形式',
+        these: '复数指示代词形式', those: '复数指示代词形式'
+      };
+      const pronounGlosses = {
+        we: '我们', she: '她', it: '它', they: '他们', these: '这些', those: '那些'
+      };
+      const translation = words.CHINESE_TRANSLATIONS[pronounBase] || pronounGlosses[lower];
+      const detail = lower === pronounBase
+        ? (pronounKinds[lower] || '代词形式') + '；当前程序将它作为允许的代词词项登记，但它不属于850基础词表' +
+          (translation ? '（释义：' + translation + '）' : '') + '。'
+        : (pronounKinds[lower] || '代词相关形式') + '，对应代词词条 ' + pronounBase +
+          (translation ? '（释义：' + translation + '）' : '') + '。';
+      return { ok: true, category: 'forms', detail: detail };
+    }
+
+    const irregularBase = words.IRREGULAR_PLURALS && words.IRREGULAR_PLURALS[lower];
+    if (irregularBase && irregularBase !== lower) {
+      return {
+        ok: true,
+        category: 'forms',
+        detail: '不规则复数形式，对应单数基础词 ' + irregularBase + '。'
+      };
+    }
+
+    const comparativeBase = words.COMPARATIVE_EXCEPTIONS && words.COMPARATIVE_EXCEPTIONS[lower];
+    if (comparativeBase && comparativeBase !== lower) {
+      return {
+        ok: true,
+        category: 'forms',
+        detail: '比较级、最高级或词表列出的相关例外形式，对应词条 ' + comparativeBase + '。'
+      };
+    }
+
+    if (KNOWN_CONTRACTIONS.has(lower)) {
+      return {
+        ok: true,
+        category: 'forms',
+        detail: '当前词汇规则明确登记的缩写形式；具体在句中的用法仍需结合语法判断。'
+      };
+    }
+
+    if (lower.endsWith("'s")) {
+      const base = lower.slice(0, -2);
+      if (window.BE.isAllowed(base).ok) {
+        return {
+          ok: true,
+          category: 'forms',
+          detail: '由允许词项 ' + base + " 加 's 构成；可能表示所有格或缩写，具体功能需结合句子判断。"
+        };
+      }
+    }
+
+    if (allowed.isBasicConstruction) {
+      return {
+        ok: true,
+        category: 'course',
+        detail: '这是 validator.js 中课程明确允许的特殊词项/构式；不属于850基础词条本身。'
+      };
+    }
+
+    if (allowed.isNumeral || /^\d+(?:st|nd|rd|th)?$/.test(lower)) {
+      return {
+        ok: true,
+        category: 'numeral',
+        detail: '符合当前词汇检查器允许的数字/序数词写法。'
+      };
+    }
+
+    const derived = findDerivedVocabularyForm(lower, words);
+    if (derived) {
+      const translation = words.CHINESE_TRANSLATIONS[derived.base];
+      return {
+        ok: true,
+        category: 'forms',
+        detail: '由基础词 ' + derived.base + (translation ? '（' + translation + '）' : '') +
+          ' 按' + derived.rule + '规则构成；当前词汇规则允许。'
+      };
+    }
+
+    if (words.ALLOWED_WORDS.has(lower)) {
+      return {
+        ok: true,
+        category: 'other',
+        detail: '在当前程序的 ALLOWED_WORDS 允许集合中直接登记；不属于850基础词。'
+      };
+    }
+
+    return {
+      ok: true,
+      category: 'other',
+      detail: '被当前词汇规则接受，但没有匹配到更具体的来源分类。'
+    };
+  }
+
+  function inspectVocabulary(text) {
+    const byWord = new Map();
+    let totalWordCount = 0;
+
+    String(text || '').split(/\s+/).forEach(function (raw, index) {
+      const normalized = raw.replace(/[’‘]/g, "'");
+      const clean = normalized
+        .replace(/^[^a-zA-Z0-9']+|[,.;:!?\\"'()\[\]{}<>“”‘’—–…]+$/g, '')
+        .replace(/^[,.!?;:'"()“”‘’—–…]+/, "");
+      if (!clean) return;
+
+      totalWordCount++;
+      const key = clean.toLowerCase();
+      if (!byWord.has(key)) {
+        const explanation = explainVocabularyWord(clean);
+        byWord.set(key, {
+          word: clean,
+          count: 0,
+          index: index,
+          ok: explanation.ok,
+          category: explanation.category,
+          detail: explanation.detail
+        });
+      }
+      byWord.get(key).count++;
+    });
+
+    const items = Array.from(byWord.values());
+    return {
+      valid: items.length > 0 && items.every(function (item) { return item.ok; }),
+      totalWordCount: totalWordCount,
+      uniqueWordCount: items.length,
+      words: items
+    };
+  }
+
+  function formatVocabularyFeedback(result) {
+    const lines = [];
+    lines.push(result.valid
+      ? '词汇检查通过：句子中的词均符合当前 Basic 词汇规则。'
+      : '词汇检查未通过：发现不符合当前 Basic 词汇规则的词。');
+    lines.push('共检查 ' + result.totalWordCount + ' 次词语出现，' +
+      result.uniqueWordCount + ' 个不同词项。');
+
+    const counts = {};
+    VOCABULARY_CATEGORIES.forEach(function (category) {
+      counts[category.key] = result.words.filter(function (item) {
+        return item.category === category.key;
+      }).length;
+    });
+    lines.push('分类统计：' + VOCABULARY_CATEGORIES.map(function (category) {
+      return category.label + ' ' + counts[category.key];
+    }).join('；') + '。');
+
+    VOCABULARY_CATEGORIES.forEach(function (category) {
+      const items = result.words.filter(function (item) {
+        return item.category === category.key;
+      });
+      if (!items.length) return;
+      lines.push('');
+      lines.push('【' + category.label + ' · ' + items.length + '】');
+      items.forEach(function (item) {
+        lines.push('• ' + item.word + (item.count > 1 ? ' ×' + item.count : '') + '：' + item.detail);
+      });
+    });
+    return lines.join('\n');
+  }
+
+  function checkVocabulary(container) {
+    const input = container.querySelector('#expression-writing');
+    const feedback = container.querySelector('#expression-vocabulary-feedback');
+    const grammarButton = container.querySelector('#expression-check-grammar');
+    if (!input || !feedback) return;
+    resetWritingChecks(container);
+    feedback.style.whiteSpace = 'pre-line';
+    feedback.style.overflowWrap = 'anywhere';
+
+    const text = input.value.trim();
+    if (!text) {
+      feedback.textContent = '请先写一句 Basic English。';
+      feedback.className = 'expression-writing-feedback is-wrong';
+      return;
+    }
+    if (!window.BE || typeof window.BE.isAllowed !== 'function' || !window.BE.WORDS) {
+      feedback.textContent = '当前无法调用词汇检查器，暂时不能继续。';
+      feedback.className = 'expression-writing-feedback is-wrong';
+      return;
+    }
+
+    const result = inspectVocabulary(text);
+    if (!result.totalWordCount) {
+      feedback.textContent = '没有识别到可检查的英文词项，请输入句子后重试。';
+      feedback.className = 'expression-writing-feedback is-wrong';
+      return;
+    }
+
+    feedback.textContent = formatVocabularyFeedback(result);
+    feedback.className = 'expression-writing-feedback ' + (result.valid ? 'is-correct' : 'is-wrong');
+    if (result.valid && grammarButton) grammarButton.disabled = false;
+  }
+
+  function analyzeLessonSentence(text) {
+    const subjectPronouns = ['i', 'you', 'he', 'she', 'it', 'we', 'they'];
+    const objectPronouns = ['me', 'you', 'him', 'her', 'it', 'us', 'them'];
+    const contentWords = ['something', 'nothing'];
+    const normalized = String(text || '').trim().toLowerCase()
+      .replace(/[.!?;:,。！？；，]+$/g, '')
+      .replace(/\s+/g, ' ');
+    const tokens = normalized ? normalized.split(' ') : [];
+    if (!tokens.length) return { status: 'error', message: '请先输入句子。' };
+
+    const subject = tokens[0];
+    const verb = tokens[1];
+
+    if (tokens.length === 4 && subjectPronouns.includes(subject) &&
+        ['say', 'says'].includes(verb) && contentWords.includes(tokens[2]) &&
+        (objectPronouns.includes(tokens[3]) || subjectPronouns.includes(tokens[3]))) {
+      return { status: 'error', message: 'say 后面的内容与接受者之间缺少 to。应使用：say + 内容 + to + 接受者。' };
+    }
+    if (tokens.length === 4 && subjectPronouns.includes(subject) &&
+        ['say', 'says'].includes(verb) && objectPronouns.includes(tokens[2]) &&
+        contentWords.includes(tokens[3])) {
+      return { status: 'error', message: '本课结构的顺序是 say + 内容 + to + 接受者，不能把接受者直接放在内容前面。' };
+    }
+    if (tokens.length === 5 && subjectPronouns.includes(subject) &&
+        ['say', 'says'].includes(verb) && tokens[2] === 'to' &&
+        objectPronouns.includes(tokens[3]) && contentWords.includes(tokens[4])) {
+      return { status: 'error', message: '词序不符合本课结构。应把表达内容放在 to 前面：say + something + to + him。' };
+    }
+    if (tokens.length !== 5) {
+      return { status: 'unsupported', message: '本课自动检查目前只识别五部分句型：主语 + say/says + something/nothing + to + 宾格代词。其他长度的句子暂不在检查范围内。' };
+    }
+
+    const sentence = tokens;
+    const s = sentence[0];
+    const v = sentence[1];
+    const content = sentence[2];
+    const preposition = sentence[3];
+    const recipient = sentence[4];
+
+    if (!subjectPronouns.includes(s)) {
+      return { status: 'unsupported', message: '本课自动检查目前要求句首使用人称代词（I、you、he、she、it、we、they）；其他主语暂不在检查范围内。' };
+    }
+    if (!['say', 'says'].includes(v)) {
+      return { status: 'unsupported', message: '本课自动检查目前只检查 say/says 这一表达结构；其他动词结构暂不在检查范围内。' };
+    }
+
+    const requiredVerb = ['he', 'she', 'it'].includes(s) ? 'says' : 'say';
+    if (v !== requiredVerb) {
+      return {
+        status: 'error',
+        message: ['he', 'she', 'it'].includes(s)
+          ? '主谓一致错误：主语是 he/she/it 时，本句型使用 says。'
+          : '主谓一致错误：主语是 I/you/we/they 时，本句型使用 say。'
+      };
+    }
+    if (!contentWords.includes(content)) {
+      return { status: 'unsupported', message: '本课自动检查目前只识别 something 或 nothing 作为 say 后面的内容词；其他内容表达暂不在检查范围内。' };
+    }
+    if (preposition !== 'to') {
+      return { status: 'error', message: '这里要指出说话内容的接受者，应使用介词 to。结构是 say + 内容 + to + 接受者。' };
+    }
+    if (!objectPronouns.includes(recipient)) {
+      if (subjectPronouns.includes(recipient)) {
+        return { status: 'error', message: 'to 后面需要宾格代词：例如 him，而不是 he；her，而不是 she。' };
+      }
+      return { status: 'unsupported', message: '本课自动检查目前只识别 me、you、him、her、it、us、them 作为 to 后面的接受者。' };
+    }
+    return { status: 'pass', subject: s, verb: v, content: content, recipient: recipient };
+  }
+
+  function checkGrammar(container) {
+    const input = container.querySelector('#expression-writing');
+    const feedback = container.querySelector('#expression-grammar-feedback');
+    const meaningFeedback = container.querySelector('#expression-meaning-feedback');
+    const meaningButton = container.querySelector('#expression-check-meaning');
+    if (!input || !feedback) return;
+    if (meaningFeedback) {
+      meaningFeedback.textContent = '';
+      meaningFeedback.className = 'expression-writing-feedback';
+    }
+    if (meaningButton) meaningButton.disabled = true;
+
+    const result = analyzeLessonSentence(input.value);
+    if (result.status === 'pass') {
+      feedback.textContent = '语法结构检查通过：句子符合“主语 + say/says + 内容 + to + 接受者”的本课句型。下一步请点击“③ 检查意思”。注意：这只检查本课句型，不代表完整英语语法已全部检查。';
+      feedback.className = 'expression-writing-feedback is-correct';
+      if (meaningButton) meaningButton.disabled = false;
+    } else if (result.status === 'error') {
+      feedback.textContent = '语法结构检查未通过：' + result.message;
+      feedback.className = 'expression-writing-feedback is-wrong';
+    } else {
+      feedback.textContent = '暂时无法判断：' + result.message + '这不等于你的句子一定有语法错误。';
+      feedback.className = 'expression-writing-feedback is-pending';
+    }
+  }
+
+  function checkMeaning(container) {
+    const input = container.querySelector('#expression-writing');
+    const feedback = container.querySelector('#expression-meaning-feedback');
+    if (!input || !feedback) return;
+    const parsed = analyzeLessonSentence(input.value);
+    if (parsed.status !== 'pass') {
+      feedback.textContent = '请先通过“② 检查语法结构”，再检查意思。';
+      feedback.className = 'expression-writing-feedback is-pending';
+      return;
+    }
+
+    const subjectNames = { i: '我', you: '你', he: '他', she: '她', it: '它', we: '我们', they: '他们' };
+    const objectNames = { me: '我', you: '你', him: '他', her: '她', it: '它', us: '我们', them: '他们' };
+    const mismatches = [];
+    if (parsed.subject !== 'i') {
+      mismatches.push('主语 ' + parsed.subject + ' 表示“' + subjectNames[parsed.subject] + '”，题目要求的是“我”。');
+    }
+    if (parsed.content !== 'something') {
+      mismatches.push(parsed.content === 'nothing'
+        ? 'nothing 表示“没有内容”，题目要求的是“一些内容”。'
+        : '表达内容与题目不一致。');
+    }
+    if (parsed.recipient !== 'him') {
+      mismatches.push('to ' + parsed.recipient + ' 表示“向' + objectNames[parsed.recipient] + '”，题目要求的是“向他”。');
+    }
+
+    if (mismatches.length === 0) {
+      feedback.textContent = '意思检查通过：I = 我；say = 说出/表达；something = 一些内容；to him = 向他。句子保留了题目中的说话者、表达内容和接受者。';
+      feedback.className = 'expression-writing-feedback is-correct';
+    } else {
+      feedback.textContent = '意思检查未通过：' + mismatches.join(' ');
+      feedback.className = 'expression-writing-feedback is-wrong';
+    }
+  }
+
+  function analyzeSpeakAnswer(text) {
+    const grammar = analyzeLessonSentence(text);
+    if (grammar.status !== 'pass') {
+      return {
+        grammar: grammar,
+        meaning: {
+          status: 'unsupported',
+          message: '请先通过本课已登记的句型检查，再核对题目要求的意思。'
+        }
+      };
+    }
+    const subjectNames = { i: '我', you: '你', he: '他', she: '她', it: '它', we: '我们', they: '他们' };
+    const objectNames = { me: '我', you: '你', him: '他', her: '她', it: '它', us: '我们', them: '他们' };
+    const mismatches = [];
+    if (grammar.subject !== 'i') {
+      mismatches.push('主语 ' + grammar.subject + ' 表示“' + subjectNames[grammar.subject] + '”，题目要求的是“我”。');
+    }
+    if (grammar.content !== 'something') {
+      mismatches.push(grammar.content === 'nothing'
+        ? 'nothing 表示“没有内容”，题目要求的是“一些内容”。'
+        : '表达内容与题目不一致。');
+    }
+    if (grammar.recipient !== 'him') {
+      mismatches.push('to ' + grammar.recipient + ' 表示“向' + objectNames[grammar.recipient] + '”，题目要求的是“向他”。');
+    }
+    return {
+      grammar: grammar,
+      meaning: mismatches.length
+        ? { status: 'fail', message: '意思检查未通过：' + mismatches.join(' ') }
+        : { status: 'pass', message: '意思检查通过：I = 我；say = 说出/表达；something = 一些内容；to him = 向他。句子保留了题目中的说话者、表达内容和接受者。' }
+    };
+  }
+
+  window.BE = window.BE || {};
+  window.BE.expression = { render: render, inspectVocabulary: inspectVocabulary, analyzeLessonSentence: analyzeLessonSentence, analyzeSpeakAnswer: analyzeSpeakAnswer, quiz: quiz };
+})();

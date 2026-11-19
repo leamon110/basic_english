@@ -1,0 +1,27 @@
+.meaning-basic-section{margin:18px 0 28px;padding:22px;background:#fff;border:1px solid #dfe6f0;border-radius:14px}
+.meaning-basic-section h2{font-size:20px;margin:7px 0 10px}
+.meaning-basic-section p{font-size:14px;line-height:1.7;color:#5d697b}
+.mb-heading>p{max-width:760px}
+.mb-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0}
+.mb-controls label,.mb-prompt-card label,.mb-answer-label{font-size:13px;font-weight:700;color:#43536a}
+.mb-controls select,.mb-prompt-card select{min-width:220px;max-width:100%;padding:10px 12px;border:1px solid #ccd6e4;border-radius:8px;background:#fff;color:#26364b;font:inherit;font-size:14px}
+.mb-prompt-card{padding:16px;border:1px solid #e3eaf3;border-radius:11px;background:#f8fafd;margin:12px 0 16px}
+.mb-prompt-card>span{font-size:11px;font-weight:800;letter-spacing:.05em;color:#60799f}
+.mb-prompt-card>p:first-of-type{font-size:18px;font-weight:800;color:#26364b;margin:7px 0}
+.mb-prompt-card .mb-roles{font-size:13px;color:#58677c}
+.mb-hint{margin:10px 0 0;padding-top:10px;border-top:1px solid #e5ebf3;font-size:13px!important}
+#mb-perspective-wrap{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
+#mb-perspective-wrap[hidden]{display:none}
+.mb-answer-label{display:block;margin:12px 0 7px}
+#mb-answer{width:100%;box-sizing:border-box;min-height:82px;padding:12px;border:1px solid #ccd6e4;border-radius:9px;resize:vertical;font:inherit;font-size:14px;line-height:1.6}
+#mb-answer:focus{outline:2px solid #a9c3ed;border-color:#7298d4}
+.mb-actions{display:flex;gap:9px;flex-wrap:wrap;margin:13px 0}
+.mb-actions button{flex:1 1 150px}
+.mb-actions button:disabled{opacity:.45;cursor:not-allowed}
+.mb-feedback{display:none;margin-top:9px;padding:10px 12px;border-radius:8px;font-size:13px;line-height:1.65;overflow-wrap:anywhere}
+.mb-feedback:not(:empty){display:block}
+.mb-feedback.is-pass{background:#edf8f0;color:#28633a}
+.mb-feedback.is-fail{background:#fff1ef;color:#a13e35}
+.mb-feedback.is-pending{background:#fff8e8;color:#85621b}
+.mb-limitation{font-size:12px!important;color:#758196!important;margin-top:14px}
+@media(max-width:600px){.meaning-basic-section{padding:16px}.mb-controls{align-items:stretch;flex-direction:column}.mb-controls select{width:100%;min-width:0}.mb-actions button{flex:1 1 calc(50% - 9px)}}

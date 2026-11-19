@@ -1,0 +1,134 @@
+name: Build Basic English Human Voice APK
+
+on:
+  push:
+    branches:
+      - basic-english-learning-upgrade
+    paths:
+      - 'docs/**'
+      - 'android-offline/**'
+      - 'scripts/**'
+      - '.github/workflows/build-android-offline.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: basic-english-human-audio-build
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Use the Android SDK preinstalled on the runner
+        run: |
+          echo "ANDROID_HOME=$ANDROID_HOME"
+          SDKMANAGER="$(find "$ANDROID_HOME/cmdline-tools" -type f -name sdkmanager | head -n 1)"
+          if [ -z "$SDKMANAGER" ]; then
+            echo "Android SDK command-line tools were not found."
+            exit 1
+          fi
+          echo "$(dirname "$SDKMANAGER")" >> "$GITHUB_PATH"
+          "$SDKMANAGER" --version
+
+      - name: Install Android platform and build tools
+        run: |
+          yes | sdkmanager --licenses
+          sdkmanager "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Validate JavaScript and Meaning-to-Basic rules
+        run: |
+          find docs/js -type f -name '*.js' -print0 | xargs -0 -n1 node --check
+          node --check scripts/test_meaning_basic.js
+          node scripts/test_meaning_basic.js
+          node --check scripts/test_teaching.js
+          node scripts/test_teaching.js
+          node --check scripts/test_expression_curriculum.js
+          node scripts/test_expression_curriculum.js
+          node --check scripts/test_expression_more_lessons.js
+          node scripts/test_expression_more_lessons.js
+          node --check scripts/test_expression_course.js
+          node scripts/test_expression_course.js
+
+      - name: Package the learning site as local app assets
+        run: |
+          mkdir -p android-offline/app/src/main/assets/www
+          cp -R docs/. android-offline/app/src/main/assets/www/
+
+      - name: Prepare human recording cache directories
+        run: |
+          mkdir -p android-offline/app/src/main/assets/www/audio/words
+          mkdir -p .audio-build-cache/words
+
+      - name: Restore previously downloaded human recordings
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            android-offline/app/src/main/assets/www/audio/words
+            .audio-build-cache/words
+          key: basic-english-human-audio-v1-${{ hashFiles('docs/js/data.js') }}-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: |
+            basic-english-human-audio-v1-${{ hashFiles('docs/js/data.js') }}-
+
+      - name: Fetch and package all 850 human word recordings
+        run: python scripts/build_human_word_audio.py
+
+      - name: Save completed and partial human recording cache
+        if: always() && hashFiles('android-offline/app/src/main/assets/www/audio/words/*.mp3') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            android-offline/app/src/main/assets/www/audio/words
+            .audio-build-cache/words
+          key: basic-english-human-audio-v1-${{ hashFiles('docs/js/data.js') }}-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Build debug APK
+        working-directory: android-offline
+        run: gradle --no-daemon --stacktrace :app:assembleDebug
+
+      - name: Give the APK a clear file name
+        run: cp android-offline/app/build/outputs/apk/debug/app-debug.apk Basic-English-Human-Voice.apk
+
+      - name: Upload installable APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: basic-english-human-voice-apk
+          path: Basic-English-Human-Voice.apk
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload audio coverage and licence report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: basic-english-human-audio-coverage
+          path: audio-coverage-report.json
+          if-no-files-found: ignore
+          retention-days: 30
