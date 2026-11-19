@@ -145,6 +145,7 @@ for (const file of ['expression-course-data.js','expression-course-content-m1.js
 assert.ok(sw.includes('./css/expression-course.css'));
 assert.ok(/basic-english-v39/.test(sw), 'service-worker cache version must change');
 assert.ok(!/\bfetch\s*\(/.test(courseJs) && !/XMLHttpRequest|WebSocket/.test(courseJs), 'course UI must not add network dependencies');
+assert.ok(!/C0[1-9]|C1[0-5]/.test(courseJs), 'internal Candidate IDs must not appear in learner-facing UI templates');
 assert.ok(index.includes("window.BE.expressionCourse") || fs.readFileSync(path.join(__dirname, '../docs/js/app.js'), 'utf8').includes('window.BE.expressionCourse.render(main)'));
 
 console.log('Expression System migration tests passed: 2 Modules / 15 Lessons, 27 MB mappings, 250 fixed groups, 5 prototypes, offline assets, and isolated progress.');
