@@ -1,6 +1,6 @@
 # Expression System App Migration Plan — Draft
 
-> **Status:** draft for review; **not approved for implementation**. This plan is based on the accepted 2 Modules / 15 Lessons curriculum and inspection of the current GitHub App source. No App code, build workflow, Android assets or user progress has been changed by this plan.
+> **Status:** **approved for implementation by the user on 2026-11-19**. Phase 0 is complete; implementation may proceed through Phases 1–7 in order. This plan remains the scope and acceptance authority for the migration.
 >
 > Architecture authority: `BASIC_ENGLISH_EXPRESSION_CURRICULUM.md`  
 > Content and boundary handoff: `BASIC_ENGLISH_EXPRESSION_15_LESSON_REVIEW.md`  
@@ -152,7 +152,7 @@ Before any code migration:
 
 | Phase | Work | Completion condition |
 |---|---|---|
-| 0. Plan review | Review this mapping and the progress-preservation rules | User approves the migration plan |
+| 0. Plan review | Review this mapping and the progress-preservation rules | <text>Approved by the user on 2026-11-19; complete</text> |
 | 1. Data model | Add the accepted 2-Module / 15-Lesson metadata and navigation model | Unit tests confirm 2/15 and C-ID mapping |
 | 2. Content split | Move prototype content to the correct Lesson; split C13/C14/C15 questions | Every old example has one primary destination; no accidental duplicate Lesson |
 | 3. Checker integration | Attach the 27 MB prompts to C01–C08; retain finite accepted patterns | Existing and new checker tests pass |
@@ -161,7 +161,7 @@ Before any code migration:
 | 6. UI and offline tests | Build Module/Lesson navigation and test all learning areas offline | 15 Lessons usable; Word Cards/45 Steps/audio unchanged |
 | 7. Build and device acceptance | Run the approved Android build and test on device | Build succeeds and the agreed device acceptance checklist passes |
 
-**No implementation phase starts until Phase 0 is approved.** The current plan is a mapping and risk-control document only.
+**Phase 0 was approved on 2026-11-19.** Proceed with Phases 1–7 in order. Before each code-changing phase, verify the live branch and Actions state; preserve the progress and offline constraints above.
 
 ## 10. Acceptance checklist
 
@@ -178,7 +178,7 @@ Before any code migration:
 - [ ] Automated tests pass.
 - [ ] Android build and device acceptance pass.
 
-**Current result:** repository inspection and the migration mapping are complete. No App code, test, CSS, HTML, Android workflow or user progress was modified. This draft awaits review before implementation.
+**Current result at approval:** repository inspection and the migration mapping were complete; the user approved implementation on 2026-11-19. At the moment of approval, no App code, test, CSS, HTML, Android workflow or user progress had yet been modified.
 
 ## 11. Relationship to the separate 45-Step course
 
@@ -186,4 +186,12 @@ Before any code migration:
 - The source-fidelity audit of all 14 locally adapted 45 Steps is complete; the detailed findings are in `BASIC_ENGLISH_45_STEP_ADAPTATION_AUDIT.md`.
 - The remaining 31 source Steps have a source-ordered adaptation plan in `BASIC_ENGLISH_45_STEP_COURSE_MAP.md`: gaps within Steps 1–25 first, then Steps 26–35 vocabulary, Steps 36–41 reference topics, and Steps 42–45 integrated use. The next unadapted source page is Step 4 — At the Station.
 - Do not rewrite, renumber, merge or convert the 45 Steps into the 15 Expression Lessons during this migration. The 14-step correction queue and 31-step adaptation work remain a separate 45-Step content workstream.
-- The current draft remains **not approved for implementation**. Phase 0 approval is still required before any App code, UI numbering or progress-store changes.
+- The user explicitly approved this migration plan on 2026-11-19. Phase 0 is complete. The 45-Step course remains separate and must not be rewritten, renumbered, merged or converted during this migration.
+
+
+## 12. Approval record
+
+- User approval received: 2026-11-19T00:00:45Z.
+- Approved scope: this migration plan's Phases 1–7 and acceptance checklist, preserving the 2 Modules / 15 Lessons architecture and all non-goals and data-safety rules above.
+- Phase 0: complete.
+- Approval does not waive verification gates, expand the checker into general AI grammar/semantic analysis, permit network/API dependencies, or authorize changes to the separate 45-Step course, 850-word list or human audio assets.
