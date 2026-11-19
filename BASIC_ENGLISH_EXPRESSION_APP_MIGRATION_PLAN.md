@@ -209,3 +209,9 @@ Before any code migration:
 - Run 49 failed only because the edit to `scripts/test_expression_curriculum.js` inserted literal backslash-n text, causing a JavaScript SyntaxError. The repository-wide `docs/js` syntax check, Meaning-to-Basic regression test and Teaching regression test had passed before this test-file failure.
 - The malformed test was corrected in commit `3a0872d59a1da7a41d43c916acb4a66804ed3909`.
 - Run 50 / 44429176259 is in progress on the correction commit. Automated migration tests, Android packaging/build, artifacts and device acceptance remain pending; Phases 1–6 are implemented but not yet verified.
+
+## 15. Run 50 automated validation milestone
+
+- Run 50 / 44429176259 passed workflow step 9, `Validate JavaScript and Meaning-to-Basic rules`, including the new migration test and all existing regression tests.
+- Site asset packaging and audio-cache restore steps also passed. The 850-recording packaging step is still running; APK build/artifact upload and device acceptance remain pending.
+- Phases 1–6 are now implemented and have passed the automated JavaScript validation step. Phase 7 is not yet complete.
