@@ -203,3 +203,9 @@ Before any code migration:
 - Run 49 / 44428857337 is currently in progress on this commit. The new migration test is scheduled in the workflow's JavaScript validation step; it has not yet run at this checkpoint.
 - Phases 1–6 are **implemented but not yet verified**. Phase 7 Android build/artifact checks and device acceptance are also pending. Do not mark the acceptance checklist complete until CI and device results are confirmed.
 - No App code changes are to be pushed while Run 49 is active; the workflow uses `cancel-in-progress: true`.
+
+## 14. Run 49 test failure and correction
+
+- Run 49 failed only because the edit to `scripts/test_expression_curriculum.js` inserted literal backslash-n text, causing a JavaScript SyntaxError. The repository-wide `docs/js` syntax check, Meaning-to-Basic regression test and Teaching regression test had passed before this test-file failure.
+- The malformed test was corrected in commit `3a0872d59a1da7a41d43c916acb4a66804ed3909`.
+- Run 50 / 44429176259 is in progress on the correction commit. Automated migration tests, Android packaging/build, artifacts and device acceptance remain pending; Phases 1–6 are implemented but not yet verified.
