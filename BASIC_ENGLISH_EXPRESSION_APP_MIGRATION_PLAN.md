@@ -1,6 +1,6 @@
 # Expression System App Migration Plan — Draft
 
-> **Status:** **approved for implementation by the user on 2026-11-19**. Phase 0 is complete; implementation may proceed through Phases 1–7 in order. This plan remains the scope and acceptance authority for the migration.
+> **Status:** approved on 2026-11-19; Phases 1–5 have passed automated verification and Run 50 Android build succeeded. A learner-label correction is being revalidated in Run 51. Device acceptance remains pending.
 >
 > Architecture authority: `BASIC_ENGLISH_EXPRESSION_CURRICULUM.md`  
 > Content and boundary handoff: `BASIC_ENGLISH_EXPRESSION_15_LESSON_REVIEW.md`  
@@ -215,3 +215,12 @@ Before any code migration:
 - Run 50 / 44429176259 passed workflow step 9, `Validate JavaScript and Meaning-to-Basic rules`, including the new migration test and all existing regression tests.
 - Site asset packaging and audio-cache restore steps also passed. The 850-recording packaging step is still running; APK build/artifact upload and device acceptance remain pending.
 - Phases 1–6 are now implemented and have passed the automated JavaScript validation step. Phase 7 is not yet complete.
+
+## 16. Run 50 build/artifact success and final-label revalidation
+
+- Run 50 / 44429176259 completed successfully: all 23 workflow steps passed, including all regression/migration tests, 850 human audio packaging, Gradle build and artifact uploads.
+- The audio coverage report confirms 850 matched, 0 missing, 850 cached, 0 newly downloaded and 0 errors. It separately reports primary_coverage=845; this field is not being conflated with matched_words=850.
+- The real APK was extracted and integrity-checked at `/mnt/data/Basic-English-Human-Voice.apk` (9,968,250 bytes; SHA-256 `518094ea63b89f83b73bb1a9dbcc8dbf9e6c23c0c58f85c24fcbcb4c67636db4`). It contains the new local course assets and 850 audio files.
+- Final source review found internal C01–C15 Candidate IDs visible in a practice heading/note/cross-links. These are not permitted in learner-facing UI. The renderer now converts cross-links to official Module/Lesson labels and removes the visible Candidate-ID note; regression test added.
+- Correction commit: `4afc2da2313518e6c093fe93cfd000ab60e8d961`. Run 51 / 44430168437 is revalidating this correction and rebuilding the APK.
+- Phases 1–5 have passed automated verification. Phase 6 UI/offline device checks and Phase 7 device acceptance remain pending; the user must install the verified APK and test the app on-device before final acceptance.
